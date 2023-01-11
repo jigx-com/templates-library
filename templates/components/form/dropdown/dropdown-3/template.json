@@ -1,0 +1,24 @@
+{
+  "instanceId": "dropdown-3",
+  "options": {
+    "data": "=@ctx.datasources.dropdown",
+    "helperText": "With icons",
+    "item": {
+      "options": {
+        "title": "=@ctx.current.item.value",
+        "subtitle": "=@ctx.current.item.subtitle",
+        "description": "=@ctx.current.item.description",
+        "leftElement": {
+          "element": "icon",
+          "isContained": true,
+          "isDuotone": true,
+          "name": "=@ctx.current.item.icon"
+        },
+        "value": "=@ctx.current.item.value"
+      },
+      "type": "component.dropdown-item"
+    },
+    "label": "Dropdown 3"
+  },
+  "type": "component.dropdown"
+}

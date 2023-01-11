@@ -1,0 +1,68 @@
+{
+  "options": {
+    "children": [
+      {
+        "options": {
+          "children": [
+            {
+              "options": {
+                "label": "Title",
+                "value": "Value"
+              },
+              "type": "component.entity-field"
+            },
+            {
+              "options": {
+                "children": [
+                  {
+                    "options": {
+                      "label": "Title",
+                      "value": "Value"
+                    },
+                    "type": "component.entity-field"
+                  },
+                  {
+                    "options": {
+                      "label": "Title",
+                      "value": "Value"
+                    },
+                    "type": "component.entity-field"
+                  }
+                ]
+              },
+              "type": "component.field-row"
+            },
+            {
+              "options": {
+                "title": "Section title",
+                "children": [
+                  {
+                    "options": {
+                      "isMultiline": true,
+                      "label": "Title",
+                      "value": "Value"
+                    },
+                    "type": "component.entity-field"
+                  }
+                ]
+              },
+              "type": "component.section"
+            }
+          ]
+        },
+        "type": "component.entity"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        },
+        "type": "component.titles"
+      }
+    },
+    "isInitiallyCollapsed": false
+  },
+  "type": "component.expander"
+}

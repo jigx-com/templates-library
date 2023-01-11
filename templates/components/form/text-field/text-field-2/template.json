@@ -1,0 +1,15 @@
+{
+  "instanceId": "text-field-2",
+  "options": {
+    "color": [
+      {
+        "color": "color1",
+        "when": true
+      }
+    ],
+    "helperText": "With color",
+    "isRequired": false,
+    "label": "Label 2"
+  },
+  "type": "component.text-field"
+}

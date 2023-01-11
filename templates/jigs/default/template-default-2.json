@@ -1,0 +1,144 @@
+{
+  "title": "=@ctx.datasources.employeeDetail.employee-first-name & ' ' & @ctx.datasources.employeeDetail.employee-surname",
+  "type": "jig.default",
+  "actions": [
+    {
+      "children": [
+        {
+          "options": {
+            "title": "Edit employee",
+            "linkTo": "editEmployee"
+          },
+          "type": "action.go-to"
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "employeeDetail": {
+      "options": {
+        "provider": "DATA_PROVIDER_DYNAMIC",
+        "entities": [
+          {
+            "entity": "default/employees"
+          }
+        ],
+        "query": "SELECT \n  id, \n  '\\$.employee-id',\n  '\\$.employee-first-name', \n  '\\$.employee-surname',\n  '\\$.employee-date-of-birth',\n  '\\$.employee-photo',\n  '\\$.employee-email',\n  '\\$.employee-phone-number',\n  '\\$.employee-position',\n  '\\$.employee-startWork',\n  '\\$.employee-contract'\nFROM [default/employees]\nORDER BY '\\$.employee-id' DESC\nLIMIT 1\n"
+      },
+      "type": "datasource.sqlite"
+    }
+  },
+  "children": [
+    {
+      "options": {
+        "align": "center",
+        "size": "large",
+        "text": "=\\$substring(@ctx.datasources.employeeDetail.employee-first-name, 0, 1) & \\$substring(@ctx.datasources.employeeDetail.employee-surname, 0, 1)",
+        "uri": "=@ctx.datasources.employeeDetail.employee-photo"
+      },
+      "type": "component.avatar"
+    },
+    {
+      "options": {
+        "children": [
+          {
+            "options": {
+              "title": "Personal information",
+              "children": [
+                {
+                  "options": {
+                    "label": "Date of birth",
+                    "value": "=\\$fromMillis(\\$toMillis(@ctx.datasources.employeeDetail.employee-date-of-birth), '[D1o] [MNn] [Y]')"
+                  },
+                  "type": "component.entity-field"
+                },
+                {
+                  "options": {
+                    "contentType": "phone",
+                    "label": "Phone number",
+                    "value": "=@ctx.datasources.employeeDetail.employee-phone-number"
+                  },
+                  "type": "component.entity-field"
+                },
+                {
+                  "options": {
+                    "contentType": "email",
+                    "label": "E-mail",
+                    "value": "=@ctx.datasources.employeeDetail.employee-email"
+                  },
+                  "type": "component.entity-field"
+                }
+              ]
+            },
+            "type": "component.section"
+          },
+          {
+            "options": {
+              "title": "Internal information",
+              "children": [
+                {
+                  "options": {
+                    "label": "Date of starting work",
+                    "value": "=\\$fromMillis(\\$toMillis(@ctx.datasources.employeeDetail.employee-startWork), '[D1o] [MNn] [Y]')"
+                  },
+                  "type": "component.entity-field"
+                },
+                {
+                  "options": {
+                    "label": "Position",
+                    "value": "=@ctx.datasources.employeeDetail.employee-position"
+                  },
+                  "type": "component.entity-field"
+                }
+              ]
+            },
+            "type": "component.section"
+          }
+        ]
+      },
+      "type": "component.entity"
+    },
+    {
+      "options": {
+        "data": "=@ctx.datasources.employeeDetail",
+        "isHorizontal": true,
+        "item": {
+          "options": {
+            "title": "Contract",
+            "horizontalItemSize": "large",
+            "leftElement": {
+              "element": "image",
+              "text": "",
+              "uri": "=@ctx.current.item.employee-contract"
+            },
+            "onPress": {
+              "options": {
+                "parameters": {
+                  "contract-image": "=@ctx.datasources.employeeDetail.employee-contract",
+                  "first-name": "=@ctx.datasources.employeeDetail.employee-first-name",
+                  "surname": "=@ctx.datasources.employeeDetail.employee-surname"
+                },
+                "linkTo": "template-default-2-1"
+              },
+              "type": "action.go-to"
+            },
+            "style": {
+              "isHighlighted": true
+            }
+          },
+          "type": "component.list-item"
+        },
+        "maximumItemsToRender": 4
+      },
+      "type": "component.list"
+    }
+  ],
+  "header": {
+    "options": {
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
+      }
+    },
+    "type": "component.image"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "instanceId": "number-field5",
+  "options": {
+    "helperText": "Is Busy",
+    "isReturnKeyEnabledAutomatically": true,
+    "label": "Number",
+    "stepper": {
+      "isEnabled": true,
+      "value": 1
+    },
+    "style": {
+      "isBusy": true
+    },
+    "value": 1
+  },
+  "type": "component.number-field"
+}

@@ -1,0 +1,89 @@
+{
+  "instanceId": "form",
+  "options": {
+    "children": [
+      {
+        "options": {
+          "title": "General info",
+          "children": [
+            {
+              "options": {
+                "children": [
+                  {
+                    "instanceId": "first-name",
+                    "options": {
+                      "label": "First Name"
+                    },
+                    "type": "component.text-field"
+                  },
+                  {
+                    "instanceId": "last-name",
+                    "options": {
+                      "label": "Last Name"
+                    },
+                    "type": "component.text-field"
+                  }
+                ]
+              },
+              "type": "component.field-row"
+            },
+            {
+              "instanceId": "phone",
+              "options": {
+                "icon": "phone",
+                "label": "Phone"
+              },
+              "type": "component.text-field"
+            },
+            {
+              "instanceId": "email",
+              "options": {
+                "icon": "email",
+                "label": "Email"
+              },
+              "type": "component.text-field"
+            }
+          ]
+        },
+        "type": "component.section"
+      },
+      {
+        "options": {
+          "title": "Address",
+          "children": [
+            {
+              "instanceId": "address",
+              "options": {
+                "label": "Address"
+              },
+              "type": "component.text-field"
+            },
+            {
+              "instanceId": "city",
+              "options": {
+                "label": "City"
+              },
+              "type": "component.text-field"
+            },
+            {
+              "instanceId": "country",
+              "options": {
+                "label": "Country"
+              },
+              "type": "component.text-field"
+            },
+            {
+              "instanceId": "postal-code",
+              "options": {
+                "label": "Postal Code"
+              },
+              "type": "component.text-field"
+            }
+          ]
+        },
+        "type": "component.section"
+      }
+    ]
+  },
+  "type": "component.form"
+}

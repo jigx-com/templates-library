@@ -1,0 +1,11 @@
+{
+  "instanceId": "email-field4",
+  "options": {
+    "label": "Busy",
+    "style": {
+      "isBusy": true
+    },
+    "value": "email@jigx.com"
+  },
+  "type": "component.email-field"
+}

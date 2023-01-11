@@ -1,0 +1,9 @@
+{
+  "instanceId": "text-field-12",
+  "options": {
+    "helperText": "Required",
+    "isRequired": true,
+    "label": "Label 12"
+  },
+  "type": "component.text-field"
+}

@@ -1,0 +1,91 @@
+{
+  "title": "Swipe & icon",
+  "type": "jig.list",
+  "datasources": {
+    "swipeable-list": {
+      "options": {
+        "data": [
+          {
+            "icon": "home",
+            "id": 1,
+            "subtitle": "Subtitle",
+            "title": "Title"
+          },
+          {
+            "icon": "cog-double",
+            "id": 2,
+            "subtitle": "Subtitle",
+            "title": "Title"
+          },
+          {
+            "icon": "car-garage",
+            "id": 3,
+            "subtitle": "Subtitle",
+            "title": "Title"
+          },
+          {
+            "icon": "home",
+            "id": 4,
+            "subtitle": "Subtitle",
+            "title": "Title"
+          },
+          {
+            "icon": "car-garage",
+            "id": 5,
+            "subtitle": "Subtitle",
+            "title": "Title"
+          },
+          {
+            "icon": "cog-double",
+            "id": 6,
+            "subtitle": "Subtitle",
+            "title": "Title"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "data": "=@ctx.datasources.swipeable-list",
+  "item": {
+    "options": {
+      "title": "=@ctx.current.item.title",
+      "subtitle": "=@ctx.current.item.subtitle",
+      "rightElement": {
+        "element": "icon",
+        "name": "=@ctx.current.item.icon"
+      },
+      "swipeable": {
+        "right": [
+          {
+            "color": "primary",
+            "icon": "alarm-bell",
+            "label": "Primary Action",
+            "onPress": {
+              "type": "action.go-back"
+            }
+          },
+          {
+            "color": "warning",
+            "icon": "alert-triangle",
+            "label": "Secondary Action",
+            "onPress": {
+              "type": "action.go-back"
+            }
+          }
+        ]
+      }
+    },
+    "type": "component.list-item"
+  },
+  "header": {
+    "options": {
+      "title": "Swipe & icon",
+      "subtitle": "Swipeable list with the right icon",
+      "source": {
+        "uri": "https://builder.jigx.com/assets/images/header.jpg"
+      }
+    },
+    "type": "component.image"
+  }
+}

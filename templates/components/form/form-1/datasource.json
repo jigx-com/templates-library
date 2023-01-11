@@ -1,0 +1,17 @@
+{
+  "dropdown": {
+    "options": {
+      "data": [
+        {
+          "label": "Label1",
+          "value": "Value1"
+        },
+        {
+          "label": "Label2",
+          "value": "Value2"
+        }
+      ]
+    },
+    "type": "datasource.static"
+  }
+}

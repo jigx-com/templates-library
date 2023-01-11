@@ -1,0 +1,27 @@
+{
+  "instanceId": "form",
+  "options": {
+    "children": [
+      {
+        "options": {
+          "title": "Date Time",
+          "children": [
+            {
+              "instanceId": "date-time-picker1",
+              "options": {
+                "format": "lll",
+                "helperText": "Date Time picker with format lll",
+                "isRequired": true,
+                "label": "Date picker mode - datetime",
+                "mode": "datetime"
+              },
+              "type": "component.date-picker"
+            }
+          ]
+        },
+        "type": "component.section"
+      }
+    ]
+  },
+  "type": "component.form"
+}

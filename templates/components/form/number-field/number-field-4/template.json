@@ -1,0 +1,17 @@
+{
+  "instanceId": "number-field4",
+  "options": {
+    "helperText": "Is Positive",
+    "isReturnKeyEnabledAutomatically": true,
+    "label": "Number",
+    "stepper": {
+      "isEnabled": true,
+      "value": 1
+    },
+    "style": {
+      "isPositive": true
+    },
+    "value": 1
+  },
+  "type": "component.number-field"
+}

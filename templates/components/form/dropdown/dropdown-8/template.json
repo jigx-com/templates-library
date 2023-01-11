@@ -1,0 +1,19 @@
+{
+  "instanceId": "dropdown-8",
+  "options": {
+    "data": "=@ctx.datasources.dropdown",
+    "helperText": "With initial value",
+    "initialValue": "=@ctx.datasources.dropdown[0].value",
+    "item": {
+      "options": {
+        "title": "=@ctx.current.item.value",
+        "subtitle": "=@ctx.current.item.subtitle",
+        "description": "=@ctx.current.item.description",
+        "value": "=@ctx.current.item.value"
+      },
+      "type": "component.dropdown-item"
+    },
+    "label": "Dropdown 8"
+  },
+  "type": "component.dropdown"
+}

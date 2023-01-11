@@ -1,0 +1,27 @@
+{
+    "children": [
+      {
+        "options": {
+          "series": [
+            {
+              "color": "color3",
+              "data": "=@ctx.datasources.barchart"
+            }
+          ]
+        },
+        "type": "component.bar-chart"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        },
+        "type": "component.titles"
+      }
+    },
+    "isInitiallyCollapsed": false
+  },
+  "type": "component.expander"
+}

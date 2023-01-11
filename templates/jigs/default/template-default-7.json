@@ -1,0 +1,107 @@
+{
+  "title": "Leads by Status",
+  "type": "jig.default",
+  "datasources": {
+    "closed-converted": {
+      "options": {
+        "data": [
+          {
+            "color": "color3",
+            "x": "Closed - Converted",
+            "y": 3
+          }
+        ]
+      },
+      "type": "datasource.static"
+    },
+    "closed-not-converted": {
+      "options": {
+        "data": [
+          {
+            "color": "color4",
+            "x": "Closed - Not converted",
+            "y": 4
+          }
+        ]
+      },
+      "type": "datasource.static"
+    },
+    "open-not-contacted": {
+      "options": {
+        "data": [
+          {
+            "color": "color5",
+            "x": "Open",
+            "y": 3
+          }
+        ]
+      },
+      "type": "datasource.static"
+    },
+    "working-contacted": {
+      "options": {
+        "data": [
+          {
+            "color": "color6",
+            "x": "Working",
+            "y": 12
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "children": [
+    {
+      "options": {
+        "chart": {
+          "height": 200,
+          "isAnimated": true
+        },
+        "legend": {
+          "isHidden": false
+        },
+        "plotOptions": {
+          "series": {
+            "pointWidth": 12
+          }
+        },
+        "series": [
+          {
+            "color": "positive",
+            "data": "=@ctx.datasources.closed-converted",
+            "name": "=@ctx.datasources.closed-converted.x"
+          },
+          {
+            "color": "positive",
+            "data": "=@ctx.datasources.closed-not-converted",
+            "name": "=@ctx.datasources.closed-not-converted.x"
+          },
+          {
+            "color": "positive",
+            "data": "=@ctx.datasources.open-not-contacted",
+            "name": "=@ctx.datasources.open-not-contacted.x"
+          },
+          {
+            "color": "positive",
+            "data": "=@ctx.datasources.working-contacted",
+            "name": "=@ctx.datasources.working-contacted.x"
+          }
+        ],
+        "xAxis": {
+          "isHidden": true,
+          "tickAmount": 3
+        }
+      },
+      "type": "component.bar-chart"
+    }
+  ],
+  "header": {
+    "options": {
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+      }
+    },
+    "type": "component.image"
+  }
+}

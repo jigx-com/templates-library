@@ -1,0 +1,46 @@
+{
+  "options": {
+    "children": [
+      {
+        "options": {
+          "data": "=@ctx.datasources.list",
+          "item": {
+            "options": {
+              "title": "=@ctx.current.item.title",
+              "subtitle": "=@ctx.current.item.subtitle",
+              "leftElement": {
+                "element": "avatar",
+                "text": "",
+                "uri": "=@ctx.current.item.uri"
+              },
+              "rightElement": {
+                "element": "icon",
+                "name": "arrow-right"
+              }
+            },
+            "type": "component.list-item"
+          },
+          "maximumItemsToRender": 8
+        },
+        "type": "component.list"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "left": {
+            "subtitle": "Start subtitle",
+            "title": "Start title"
+          },
+          "right": {
+            "subtitle": "End subtitle",
+            "title": "End title"
+          }
+        },
+        "type": "component.stage"
+      }
+    },
+    "isInitiallyCollapsed": false
+  },
+  "type": "component.expander"
+}

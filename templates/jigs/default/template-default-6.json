@@ -1,0 +1,101 @@
+{
+  "title": "Pyramid Construction Inc.",
+  "type": "jig.default",
+  "children": [
+    {
+      "options": {
+        "align": "center",
+        "size": "large",
+        "text": "PC"
+      },
+      "type": "component.avatar"
+    },
+    {
+      "options": {
+        "children": [
+          {
+            "options": {
+              "title": "Lead details",
+              "children": [
+                {
+                  "options": {
+                    "label": "Lead Name",
+                    "value": "Pad Stumuller"
+                  },
+                  "type": "component.entity-field"
+                },
+                {
+                  "options": {
+                    "label": "Company",
+                    "value": "Pyramid Construction Inc."
+                  },
+                  "type": "component.entity-field"
+                },
+                {
+                  "options": {
+                    "contentType": "email",
+                    "label": "Email",
+                    "value": "pat@pyramid.net"
+                  },
+                  "type": "component.entity-field"
+                },
+                {
+                  "options": {
+                    "label": "Lead Status",
+                    "value": "Closed - Converted"
+                  },
+                  "type": "component.entity-field"
+                },
+                {
+                  "options": {
+                    "contentType": "date",
+                    "label": "Created Date",
+                    "value": "28/09/2022"
+                  },
+                  "type": "component.entity-field"
+                }
+              ]
+            },
+            "type": "component.section"
+          },
+          {
+            "options": {
+              "title": "Address",
+              "children": [
+                {
+                  "options": {
+                    "label": "City",
+                    "value": "Redmond"
+                  },
+                  "type": "component.entity-field"
+                },
+                {
+                  "options": {
+                    "label": "State",
+                    "value": "WA"
+                  },
+                  "type": "component.entity-field"
+                },
+                {
+                  "options": {
+                    "label": "Street",
+                    "value": "1 Microsoft Way"
+                  },
+                  "type": "component.entity-field"
+                }
+              ]
+            },
+            "type": "component.section"
+          }
+        ]
+      },
+      "type": "component.entity"
+    },
+    {
+      "options": {
+        "address": "Redmond, 1 Microsoft Way"
+      },
+      "type": "component.location"
+    }
+  ]
+}

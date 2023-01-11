@@ -1,0 +1,30 @@
+{
+  "options": {
+    "children": [
+      {
+        "options": {
+          "height": 400,
+          "uri": "https://www.google.com/"
+        },
+        "type": "component.web-view"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "left": {
+            "subtitle": "Start subtitle",
+            "title": "Start title"
+          },
+          "right": {
+            "subtitle": "End subtitle",
+            "title": "End title"
+          }
+        },
+        "type": "component.stage"
+      }
+    },
+    "isInitiallyCollapsed": false
+  },
+  "type": "component.expander"
+}

@@ -1,0 +1,11 @@
+{
+  "instanceId": "checkbox4",
+  "options": {
+    "label": "Checkbox - Warning",
+    "style": {
+      "isWarning": true
+    },
+    "value": true
+  },
+  "type": "component.checkbox"
+}

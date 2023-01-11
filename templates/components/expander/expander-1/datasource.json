@@ -1,0 +1,17 @@
+{
+  "piechart": {
+    "options": {
+      "data": [
+        {
+          "color": "color6",
+          "y": 25
+        },
+        {
+          "color": "color3",
+          "y": 50
+        }
+      ]
+    },
+    "type": "datasource.static"
+  }
+}

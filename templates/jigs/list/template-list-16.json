@@ -1,0 +1,81 @@
+{
+  "title": "Horizontal list",
+  "type": "jig.list",
+  "datasources": {
+    "components": {
+      "options": {
+        "data": [
+          {
+            "color": "color8",
+            "description": "Description",
+            "highlight": false,
+            "icon": "conversation-chat-2",
+            "name": "Title",
+            "subtitle": "Subtitle",
+            "switch-value": false
+          },
+          {
+            "color": "color1",
+            "description": "Description",
+            "highlight": true,
+            "icon": "gallery",
+            "name": "Title",
+            "subtitle": "Subtitle",
+            "switch-value": true
+          },
+          {
+            "color": "color5",
+            "description": "Description",
+            "highlight": false,
+            "icon": "graph-stats-square",
+            "name": "Title",
+            "subtitle": "Subtitle",
+            "switch-value": false
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "data": "=@ctx.datasources.components",
+  "item": {
+    "options": {
+      "title": "=@ctx.current.item.name",
+      "subtitle": "=@ctx.current.item.subtitle",
+      "color": [
+        {
+          "color": "=@ctx.current.item.color",
+          "when": true
+        }
+      ],
+      "description": "=@ctx.current.item.description",
+      "divider": "solid",
+      "horizontalItemSize": "regular",
+      "leftElement": {
+        "element": "icon",
+        "isContained": true,
+        "isDuotone": true,
+        "name": "=@ctx.current.item.icon"
+      },
+      "rightElement": {
+        "element": "switch",
+        "value": "=@ctx.current.item.switch-value"
+      },
+      "style": {
+        "isHighlighted": "=@ctx.current.item.highlight"
+      }
+    },
+    "type": "component.list-item"
+  },
+  "header": {
+    "options": {
+      "title": "Icon and switch",
+      "subtitle": "List with horizontal scrolling using icon and switch",
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1631427962232-803d4f30c64f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+      }
+    },
+    "type": "component.image"
+  },
+  "isHorizontal": true
+}

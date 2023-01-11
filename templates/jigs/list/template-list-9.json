@@ -1,0 +1,101 @@
+{
+  "title": "Expander (titles)",
+  "type": "jig.list",
+  "datasources": {
+    "expander-titles": {
+      "options": {
+        "data": [
+          {
+            "id": 1,
+            "subtitle": "Subtitle",
+            "title": "Title",
+            "value-entity-field-1": "Value 1",
+            "value-entity-field-2": "Value 2",
+            "value-entity-field-3": "Value 3"
+          },
+          {
+            "id": 2,
+            "subtitle": "Subtitle",
+            "title": "Title",
+            "value-entity-field-1": "Value 1",
+            "value-entity-field-2": "Value 2",
+            "value-entity-field-3": "Value 3"
+          },
+          {
+            "id": 3,
+            "subtitle": "Subtitle",
+            "title": "Title",
+            "value-entity-field-1": "Value 1",
+            "value-entity-field-2": "Value 2",
+            "value-entity-field-3": "Value 3"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "data": "=@ctx.datasources.expander-titles",
+  "item": {
+    "options": {
+      "children": [
+        {
+          "options": {
+            "children": [
+              {
+                "options": {
+                  "children": [
+                    {
+                      "options": {
+                        "label": "Title 1",
+                        "value": "=@ctx.current.item.value-entity-field-1"
+                      },
+                      "type": "component.entity-field"
+                    },
+                    {
+                      "options": {
+                        "label": "Title 2",
+                        "value": "=@ctx.current.item.value-entity-field-2"
+                      },
+                      "type": "component.entity-field"
+                    }
+                  ]
+                },
+                "type": "component.field-row"
+              },
+              {
+                "options": {
+                  "label": "Title 3",
+                  "value": "=@ctx.current.item.value-entity-field-3"
+                },
+                "type": "component.entity-field"
+              }
+            ]
+          },
+          "type": "component.entity"
+        }
+      ],
+      "header": {
+        "centerElement": {
+          "options": {
+            "title": "=@ctx.current.item.title",
+            "subtitle": "=@ctx.current.item.subtitle",
+            "align": "left",
+            "icon": "person"
+          },
+          "type": "component.titles"
+        }
+      }
+    },
+    "type": "component.expander"
+  },
+  "header": {
+    "options": {
+      "title": "Expander (titles)",
+      "subtitle": "List with Expanders (using Titles)",
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+      }
+    },
+    "type": "component.image"
+  }
+}

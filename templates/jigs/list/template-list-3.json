@@ -1,0 +1,92 @@
+{
+  "title": "Task list",
+  "type": "jig.list",
+  "actions": [
+    {
+      "children": [
+        {
+          "options": {
+            "title": "Add task",
+            "linkTo": "template-list-3"
+          },
+          "type": "action.go-to"
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "list": {
+      "options": {
+        "data": [
+          {
+            "icon": "person",
+            "name": "Meet With Colleagues",
+            "status": "waiting",
+            "task-number": "Task 4"
+          },
+          {
+            "icon": "checklist",
+            "name": "Use Jigx App",
+            "status": "waiting",
+            "task-number": "Task 5"
+          },
+          {
+            "icon": "synchronize-arrows-1",
+            "name": "Meet Your Manager",
+            "status": "done",
+            "task-number": "Task 3"
+          },
+          {
+            "icon": "synchronize-arrows-1",
+            "name": "Set Email & Calendar",
+            "status": "done",
+            "task-number": "Task 2"
+          },
+          {
+            "icon": "play",
+            "name": "Watch Jigx Intro Video",
+            "status": "done",
+            "task-number": "Task 1"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "data": "=@ctx.datasources.list",
+  "item": {
+    "options": {
+      "title": "=@ctx.current.item.task-number",
+      "subtitle": "=@ctx.current.item.name",
+      "avatars": [
+        {
+          "text": "VM"
+        }
+      ],
+      "color": [
+        {
+          "color": "color14",
+          "when": "=(@ctx.current.item.status = 'done' ? true :false)"
+        },
+        {
+          "color": "color1",
+          "when": "=(@ctx.current.item.status = 'waiting' ? true :false)"
+        }
+      ],
+      "divider": "solid",
+      "label": {
+        "title": "category"
+      },
+      "leftElement": {
+        "element": "checkbox",
+        "value": "=(@ctx.current.item.status = 'done' ? true :false)"
+      },
+      "style": {
+        "isDisabled": "=(@ctx.current.item.status = 'done' ? true :false)",
+        "isHighlighted": "=@ctx.component.state.checked = 'done' ? true :false)",
+        "isStrikeThrough": "=(@ctx.current.item.status = 'done' ? true :false)"
+      }
+    },
+    "type": "component.list-item"
+  }
+}

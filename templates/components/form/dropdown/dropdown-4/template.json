@@ -1,0 +1,23 @@
+{
+  "instanceId": "dropdown-4",
+  "options": {
+    "data": "=@ctx.datasources.dropdown",
+    "helperText": "With images",
+    "item": {
+      "options": {
+        "title": "=@ctx.current.item.value",
+        "subtitle": "=@ctx.current.item.subtitle",
+        "description": "=@ctx.current.item.description",
+        "leftElement": {
+          "element": "image",
+          "text": "",
+          "uri": "=@ctx.current.item.image"
+        },
+        "value": "=@ctx.current.item.value"
+      },
+      "type": "component.dropdown-item"
+    },
+    "label": "Dropdown 4"
+  },
+  "type": "component.dropdown"
+}

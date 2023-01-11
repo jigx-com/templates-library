@@ -1,0 +1,109 @@
+{
+  "title": "Bar charts list",
+  "type": "jig.list",
+  "datasources": {
+    "bar": {
+      "options": {
+        "data": [
+          {
+            "color": "color1",
+            "data": [
+              {
+                "x": "x-value",
+                "y": 1851
+              },
+              {
+                "x": "x-value",
+                "y": 1232
+              },
+              {
+                "x": "x-value",
+                "y": 2139
+              },
+              {
+                "x": "x-value",
+                "y": 2941
+              }
+            ],
+            "subtitle": "subtitle",
+            "title": "title"
+          },
+          {
+            "color": "color2",
+            "data": [
+              {
+                "x": "x-value",
+                "y": 1731
+              },
+              {
+                "x": "x-value",
+                "y": 1942
+              },
+              {
+                "x": "x-value",
+                "y": 2419
+              },
+              {
+                "x": "x-value",
+                "y": 2918
+              }
+            ],
+            "subtitle": "subtitle",
+            "title": "title"
+          },
+          {
+            "color": "color3",
+            "data": [
+              {
+                "x": "x-value",
+                "y": 8932
+              },
+              {
+                "x": "x-value",
+                "y": 7231
+              },
+              {
+                "x": "x-value",
+                "y": 6327
+              },
+              {
+                "x": "x-value",
+                "y": 9412
+              }
+            ],
+            "subtitle": "subtitle",
+            "title": "title"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "data": "=@ctx.datasources.bar",
+  "item": {
+    "options": {
+      "chart": {
+        "height": 260,
+        "subtitle": "=@ctx.current.item.subtitle",
+        "title": "=@ctx.current.item.title"
+      },
+      "series": [
+        {
+          "color": "=@ctx.current.item.color",
+          "data": "=@ctx.current.item.data"
+        }
+      ]
+    },
+    "type": "component.bar-chart"
+  },
+  "header": {
+    "options": {
+      "title": "Bar charts list",
+      "subtitle": "List with Bar charts",
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+      }
+    },
+    "type": "component.image"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Stage",
+  "type": "jig.list",
+  "datasources": {
+    "stage": {
+      "options": {
+        "data": [
+          {
+            "endSubtitle": "End subtitle",
+            "endTitle": "End title",
+            "id": 1,
+            "startSubtitle": "Start subtitle",
+            "startTitle": "Start title"
+          },
+          {
+            "endSubtitle": "End subtitle",
+            "endTitle": "End title",
+            "id": 2,
+            "startSubtitle": "Start subtitle",
+            "startTitle": "Start title"
+          },
+          {
+            "endSubtitle": "End subtitle",
+            "endTitle": "End title",
+            "id": 3,
+            "startSubtitle": "Start subtitle",
+            "startTitle": "Start title"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "data": "=@ctx.datasources.stage",
+  "item": {
+    "options": {
+      "icon": "arrow-right",
+      "left": {
+        "subtitle": "=@ctx.current.item.startSubtitle",
+        "title": "=@ctx.current.item.startTitle"
+      },
+      "right": {
+        "subtitle": "=@ctx.current.item.endSubtitle",
+        "title": "=@ctx.current.item.endTitle"
+      }
+    },
+    "type": "component.stage"
+  },
+  "header": {
+    "options": {
+      "title": "Stage",
+      "subtitle": "List with Stage",
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1511312817910-ffa2ca5d954e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHJpdmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+      }
+    },
+    "type": "component.image"
+  }
+}

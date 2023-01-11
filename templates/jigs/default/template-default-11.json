@@ -1,0 +1,51 @@
+{
+  "title": "Location",
+  "type": "jig.default",
+  "datasources": {
+    "address": {
+      "options": {
+        "data": [
+          {
+            "city": "New York",
+            "country": "US",
+            "street": "768 5th Ave"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    },
+    "coordinates": {
+      "options": {
+        "data": [
+          {
+            "lat": 38.916383,
+            "lng": -77.0473912
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "children": [
+    {
+      "options": {
+        "address": "=@ctx.datasources.address.street & ',' & @ctx.datasources.address.city & ',' & @ctx.datasources.address.country"
+      },
+      "type": "component.location"
+    },
+    {
+      "options": {
+        "markersData": "=@ctx.datasources.coordinates"
+      },
+      "type": "component.location"
+    }
+  ],
+  "header": {
+    "options": {
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
+      }
+    },
+    "type": "component.image"
+  }
+}

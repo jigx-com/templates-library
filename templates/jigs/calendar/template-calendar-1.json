@@ -1,0 +1,109 @@
+{
+  "title": "Calendar",
+  "type": "jig.calendar",
+  "actions": [
+    {
+      "children": [
+        {
+          "options": {
+            "title": "Add appointment",
+            "linkTo": "new-appointment"
+          },
+          "type": "action.go-to"
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "calendar-data": {
+      "options": {
+        "data": [
+          {
+            "allday": true,
+            "description": "picovina na ennout",
+            "id": "1",
+            "location": "Redmond, WA",
+            "people": [
+              {
+                "avatarUrl": "https://randomuser.me/api/portraits/men/1.jpg",
+                "fullName": "Tim Cook"
+              }
+            ],
+            "seconds": 3600000,
+            "tags": [
+              {
+                "color": "color2",
+                "title": "Negotiation"
+              }
+            ],
+            "title": "Negotiation with Microsoft"
+          },
+          {
+            "id": "2",
+            "location": "Palo Alto, CA",
+            "people": [
+              {
+                "avatarUrl": "https://jollycontrarian.com/images/6/6c/Rickroll.jpg",
+                "fullName": "Michael Tong"
+              }
+            ],
+            "seconds": 3600000,
+            "tags": [
+              {
+                "color": "color5",
+                "title": "Qualification"
+              }
+            ],
+            "title": "Demo for Facebook"
+          },
+          {
+            "id": "3",
+            "location": "Menlo Park, CA",
+            "people": [
+              {
+                "avatarUrl": "https://profile-images.xing.com/images/96508f00bdc74c9f2ffd7f63010ea5bd-5/markus-dopp.1024x1024.jpg",
+                "fullName": "Michael Tong"
+              }
+            ],
+            "seconds": 48000000,
+            "tags": [
+              {
+                "color": "color6",
+                "title": "Verbal"
+              }
+            ],
+            "title": "Sign contract"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "data": "=@ctx.datasources.calendar-data",
+  "item": {
+    "options": {
+      "title": "=@ctx.current.item.title",
+      "buttonTitle": "teestt",
+      "description": "=@ctx.current.item.description",
+      "from": {
+        "format": {
+          "dateFormat": "l"
+        },
+        "text": "=\\$fromMillis(\\$toMillis(\\$now()) + (\\$number(@ctx.current.item.id)- 1) * @ctx.current.item.seconds)"
+      },
+      "isAllDay": "=@ctx.current.item.allday",
+      "location": "=@ctx.current.item.location",
+      "onButtonPress": {
+        "options": {
+          "title": "Bežněkam",
+          "linkTo": "composite-avatar"
+        },
+        "type": "action.go-to"
+      },
+      "people": "=@ctx.current.item.people",
+      "tags": "=@ctx.current.item.tags",
+      "to": "=\\$fromMillis(\\$toMillis(\\$now()) + \\$number(@ctx.current.item.id) * 3600000)"
+    },
+    "type": "component.event"
+  }
+}

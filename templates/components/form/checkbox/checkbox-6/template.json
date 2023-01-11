@@ -1,0 +1,12 @@
+{
+  "instanceId": "checkbox6",
+  "options": {
+    "helperText": "Default state",
+    "label": "Checkbox - Disabled",
+    "style": {
+      "isDisabled": true
+    },
+    "value": false
+  },
+  "type": "component.checkbox"
+}

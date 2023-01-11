@@ -1,0 +1,207 @@
+{
+  "title": "Team budget",
+  "type": "jig.default",
+  "actions": [
+    {
+      "children": [
+        {
+          "options": {
+            "title": "New Expense",
+            "linkTo": "template-default-1"
+          },
+          "type": "action.go-to"
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "list": {
+      "options": {
+        "data": [
+          {
+            "category": "list",
+            "color": "negative",
+            "description": "25 / 10 / 2022",
+            "isPositive": false,
+            "subtitle": "Payment by card",
+            "title": "Teambuilding",
+            "value": "-\\\\$144"
+          },
+          {
+            "category": "truck-cargo",
+            "color": "negative",
+            "description": "22 / 10 / 2022",
+            "isPositive": false,
+            "subtitle": "Payment by card",
+            "title": "Transport Brno to Prague",
+            "value": "-\\\\$87.30"
+          },
+          {
+            "category": "shopping-cart-empty-1",
+            "color": "negative",
+            "description": "20 / 10 / 2022",
+            "isPositive": false,
+            "subtitle": "Payment by card",
+            "title": "Team t-shirts",
+            "value": "-\\\\$21.50"
+          },
+          {
+            "category": "shopping-cart-empty-1",
+            "color": "negative",
+            "description": "13 / 10 / 2022",
+            "isPositive": false,
+            "subtitle": "Payment by card",
+            "title": "Cinema tickets",
+            "value": "-\\\\$218.70"
+          },
+          {
+            "category": "chevron-up",
+            "color": "positive",
+            "description": "5 / 10 / 2022",
+            "isPositive": true,
+            "subtitle": "Income payment",
+            "title": "Team bonus",
+            "value": "\\\\$120"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    },
+    "series1": {
+      "options": {
+        "data": [
+          {
+            "x": 0,
+            "y": "1000"
+          },
+          {
+            "x": 5,
+            "y": "1120"
+          },
+          {
+            "x": 13,
+            "y": "901.3"
+          },
+          {
+            "x": 20,
+            "y": "879.8"
+          },
+          {
+            "x": 22,
+            "y": "645.5"
+          },
+          {
+            "x": 25,
+            "y": "523.5"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    },
+    "series2": {
+      "options": {
+        "data": [
+          {
+            "x": "0-7"
+          },
+          {
+            "x": "8-14"
+          },
+          {
+            "x": "15-21"
+          },
+          "22-28",
+          "29-31"
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "children": [
+    {
+      "options": {
+        "chart": {
+          "height": 300,
+          "subtitle": {
+            "align": "center",
+            "text": "=\"Team budget \\\\$1.000\"",
+            "verticalAlign": "bottom"
+          },
+          "title": {
+            "align": "center",
+            "text": "\\\\$523.5",
+            "verticalAlign": "bottom"
+          }
+        },
+        "legend": {
+          "isHidden": true
+        },
+        "plotOptions": {
+          "series": {
+            "pointWidth": 10
+          }
+        },
+        "series": [
+          {
+            "data": "=@ctx.datasources.series1",
+            "layout": "area-gradient"
+          }
+        ],
+        "xAxis": {
+          "max": 31,
+          "min": 0
+        },
+        "yAxis": {
+          "isHidden": false,
+          "labels": {
+            "format": {
+              "compactDisplay": "short",
+              "currency": "USD",
+              "numberStyle": "currency"
+            }
+          },
+          "max": 1200,
+          "min": 0
+        }
+      },
+      "type": "component.line-chart"
+    },
+    {
+      "options": {
+        "data": "=@ctx.datasources.list",
+        "item": {
+          "options": {
+            "title": "=@ctx.current.item.title",
+            "subtitle": "=@ctx.current.item.subtitle",
+            "description": "=@ctx.current.item.description",
+            "divider": "solid",
+            "label": {
+              "color": [
+                {
+                  "color": "=@ctx.current.item.color",
+                  "when": true
+                }
+              ],
+              "title": "=@ctx.current.item.value"
+            },
+            "leftElement": {
+              "element": "icon",
+              "isContained": true,
+              "isDuotone": true,
+              "name": "=@ctx.current.item.category"
+            },
+            "rightElement": {
+              "element": "icon",
+              "name": "information-circle"
+            },
+            "style": {
+              "isPositive": "=@ctx.current.item.isPositive"
+            }
+          },
+          "type": "component.list-item"
+        }
+      },
+      "type": "component.list"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "options": {
+    "children": [
+      {
+        "options": {
+          "series": [
+            {
+              "color": "color2",
+              "data": "=@ctx.datasources.linechart",
+              "layout": "area-gradient"
+            }
+          ]
+        },
+        "type": "component.line-chart"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "left": {
+            "subtitle": "Start subtitle",
+            "title": "Start title"
+          },
+          "right": {
+            "subtitle": "End subtitle",
+            "title": "End title"
+          }
+        },
+        "type": "component.stage"
+      }
+    },
+    "isInitiallyCollapsed": false
+  },
+  "type": "component.expander"
+}

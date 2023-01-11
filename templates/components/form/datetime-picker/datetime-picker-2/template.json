@@ -1,0 +1,32 @@
+{
+  "instanceId": "form",
+  "options": {
+    "children": [
+      {
+        "options": {
+          "title": "Date Time",
+          "children": [
+            {
+              "instanceId": "date-time-picker2",
+              "options": {
+                "color": [
+                  {
+                    "color": "color6",
+                    "when": true
+                  }
+                ],
+                "helperText": "Date Time picker with the custom color",
+                "isRequired": true,
+                "label": "Date picker mode - datetime",
+                "mode": "datetime"
+              },
+              "type": "component.date-picker"
+            }
+          ]
+        },
+        "type": "component.section"
+      }
+    ]
+  },
+  "type": "component.form"
+}

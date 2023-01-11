@@ -1,0 +1,180 @@
+{
+  "title": "General form",
+  "type": "jig.default",
+  "actions": [
+    {
+      "children": [
+        {
+          "options": {
+            "title": "Submit",
+            "provider": "DATA_PROVIDER_DYNAMIC",
+            "entity": "default/generalForm",
+            "formId": "general-form",
+            "method": "save"
+          },
+          "type": "action.submit-form"
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "dropdownOptions": {
+      "options": {
+        "data": [
+          {
+            "color": "Blue",
+            "url": "https://images.unsplash.com/photo-1582138956924-e0b579cce05f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Qmx1ZSUyMGNvbG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+          },
+          {
+            "color": "Green",
+            "url": "https://images.unsplash.com/photo-1561016444-14f747499547?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80"
+          },
+          {
+            "color": "Red",
+            "url": "https://images.unsplash.com/photo-1568535904307-f48b760a39f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80"
+          },
+          {
+            "color": "Yellow",
+            "url": "https://images.unsplash.com/flagged/photo-1593005510329-8a4035a7238f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "children": [
+    {
+      "instanceId": "general-form",
+      "options": {
+        "children": [
+          {
+            "options": {
+              "title": "Fields for insert",
+              "children": [
+                {
+                  "instanceId": "gf-avatar",
+                  "options": {
+                    "label": "Avatar"
+                  },
+                  "type": "component.avatar-field"
+                },
+                {
+                  "instanceId": "df-media-field",
+                  "options": {
+                    "label": "Add image",
+                    "mediaType": "image"
+                  },
+                  "type": "component.media-field"
+                },
+                {
+                  "instanceId": "gf-signature-field",
+                  "options": {
+                    "label": "Signature"
+                  },
+                  "type": "component.signature-field"
+                }
+              ]
+            },
+            "type": "component.section"
+          },
+          {
+            "options": {
+              "title": "Fields for select",
+              "children": [
+                {
+                  "instanceId": "gf-checkbox",
+                  "options": {
+                    "label": "Checkbox"
+                  },
+                  "type": "component.checkbox"
+                },
+                {
+                  "options": {
+                    "children": [
+                      {
+                        "instanceId": "gf-datepicker-from",
+                        "options": {
+                          "label": "From",
+                          "mode": "datetime"
+                        },
+                        "type": "component.date-picker"
+                      },
+                      {
+                        "instanceId": "gf-datepicker-to",
+                        "options": {
+                          "label": "To",
+                          "mode": "datetime"
+                        },
+                        "type": "component.date-picker"
+                      }
+                    ]
+                  },
+                  "type": "component.field-row"
+                },
+                {
+                  "instanceId": "gf-dropdown",
+                  "options": {
+                    "data": "=@ctx.datasources.dropdownOptions",
+                    "item": {
+                      "options": {
+                        "title": "=@ctx.current.item.color",
+                        "leftElement": {
+                          "element": "avatar",
+                          "text": "",
+                          "uri": "=@ctx.current.item.url"
+                        },
+                        "value": "=@ctx.current.item.color"
+                      },
+                      "type": "component.dropdown-item"
+                    },
+                    "label": "Dropdown"
+                  },
+                  "type": "component.dropdown"
+                }
+              ]
+            },
+            "type": "component.section"
+          },
+          {
+            "options": {
+              "title": "Fields for write",
+              "children": [
+                {
+                  "instanceId": "email",
+                  "options": {
+                    "label": "Email"
+                  },
+                  "type": "component.email-field"
+                },
+                {
+                  "instanceId": "gf-numberfield",
+                  "options": {
+                    "label": "Numberfield"
+                  },
+                  "type": "component.number-field"
+                },
+                {
+                  "instanceId": "gf-text-field",
+                  "options": {
+                    "label": "Text field"
+                  },
+                  "type": "component.text-field"
+                }
+              ]
+            },
+            "type": "component.section"
+          }
+        ]
+      },
+      "type": "component.form"
+    }
+  ],
+  "header": {
+    "options": {
+      "source": {
+        "uri": "https://media.istockphoto.com/id/157580156/photo/checklist.jpg?b=1&s=170667a&w=0&k=20&c=_rgoIwuX0j5G7kfbSp0Ogv12RZveJu46Y_juHxyOvTI="
+      }
+    },
+    "type": "component.image"
+  }
+}

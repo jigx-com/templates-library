@@ -1,0 +1,13 @@
+{
+  "instanceId": "time-picker1",
+  "options": {
+    "format": "HH:mm",
+    "helperText": "Time picker with min and max",
+    "isRequired": true,
+    "label": "Date picker mode - time",
+    "maximum": 1020,
+    "minimum": "08:00",
+    "mode": "time"
+  },
+  "type": "component.date-picker"
+}

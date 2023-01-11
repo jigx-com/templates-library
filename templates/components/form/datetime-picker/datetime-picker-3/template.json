@@ -1,0 +1,27 @@
+{
+  "instanceId": "form",
+  "options": {
+    "children": [
+      {
+        "options": {
+          "title": "Date Time",
+          "children": [
+            {
+              "instanceId": "date-time-picker3",
+              "options": {
+                "helperText": "Date Time picker with initial value now",
+                "initialValue": "=\\$now()",
+                "isRequired": true,
+                "label": "Date picker mode - datetime",
+                "mode": "datetime"
+              },
+              "type": "component.date-picker"
+            }
+          ]
+        },
+        "type": "component.section"
+      }
+    ]
+  },
+  "type": "component.form"
+}

@@ -1,0 +1,42 @@
+{
+  "instanceId": "form",
+  "options": {
+    "children": [
+      {
+        "instanceId": "section",
+        "options": {
+          "title": "Section 1",
+          "children": [
+            {
+              "instanceId": "text-field",
+              "options": {
+                "label": "Label",
+                "value": "Value"
+              },
+              "type": "component.text-field"
+            }
+          ]
+        },
+        "type": "component.section"
+      },
+      {
+        "instanceId": "section2",
+        "options": {
+          "title": "Section 2",
+          "children": [
+            {
+              "instanceId": "text-field",
+              "options": {
+                "label": "Label",
+                "value": "Value"
+              },
+              "type": "component.text-field"
+            }
+          ]
+        },
+        "type": "component.section"
+      }
+    ]
+  },
+  "type": "component.form"
+}

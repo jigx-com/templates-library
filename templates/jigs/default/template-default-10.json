@@ -1,0 +1,121 @@
+{
+  "title": "Horizontal list",
+  "type": "jig.default",
+  "datasources": {
+    "list1": {
+      "options": {
+        "data": [
+          {
+            "firstName": "July",
+            "id": 1,
+            "img": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+            "position": "manager",
+            "surname": "Nellson"
+          },
+          {
+            "firstName": "Karl",
+            "id": 2,
+            "img": "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+            "position": "Salesman",
+            "surname": "Fisher"
+          },
+          {
+            "firstName": "Mary",
+            "id": 3,
+            "img": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+            "position": "DEV",
+            "surname": "Gomez"
+          },
+          {
+            "firstName": "John",
+            "id": 4,
+            "img": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+            "position": "Marketing",
+            "surname": "Doe"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    },
+    "list2": {
+      "options": {
+        "data": [
+          {
+            "img": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1258&q=80",
+            "section": "Furniture"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1617576683096-00fc8eecb3af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+            "section": "Workshop and garden"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+            "section": "Large appliances"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1595935736128-db1f0a261263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80",
+            "section": "TV"
+          },
+          {
+            "img": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+            "section": "Computers and laptops"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "children": [
+    {
+      "options": {
+        "data": "=@ctx.datasources.list1",
+        "isHorizontal": true,
+        "item": {
+          "options": {
+            "title": "=@ctx.current.item.firstName & ' ' & @ctx.current.item.surname",
+            "subtitle": "=@ctx.current.item.position",
+            "horizontalItemSize": "large",
+            "leftElement": {
+              "element": "avatar",
+              "text": "=\\$substring(@ctx.current.item.firstName, 0, 1) & \\$substring(@ctx.current.item.surname, 0, 1)",
+              "uri": "=@ctx.current.item.img"
+            },
+            "style": {
+              "isHighlighted": true
+            }
+          },
+          "type": "component.list-item"
+        },
+        "maximumItemsToRender": 8
+      },
+      "type": "component.list"
+    },
+    {
+      "options": {
+        "data": "=@ctx.datasources.list2",
+        "isHorizontal": true,
+        "item": {
+          "options": {
+            "title": "=@ctx.current.item.section",
+            "leftElement": {
+              "element": "image",
+              "text": "",
+              "uri": "=@ctx.current.item.img"
+            }
+          },
+          "type": "component.list-item"
+        },
+        "maximumItemsToRender": 8
+      },
+      "type": "component.list"
+    }
+  ],
+  "header": {
+    "options": {
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1586281380901-171d7fd8b6db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+      }
+    },
+    "type": "component.image"
+  }
+}

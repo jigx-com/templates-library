@@ -1,0 +1,241 @@
+{
+  "title": "Create new invoice",
+  "type": "jig.default",
+  "actions": [
+    {
+      "children": [
+        {
+          "options": {
+            "title": "Create invoice",
+            "provider": "DATA_PROVIDER_DYNAMIC",
+            "entity": "default/invoices",
+            "formId": "new-invoice",
+            "method": "save"
+          },
+          "type": "action.submit-form"
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "currency": {
+      "options": {
+        "data": [
+          {
+            "currency": "USD"
+          },
+          {
+            "currency": "EUR"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    },
+    "invoices": {
+      "options": {
+        "provider": "DATA_PROVIDER_DYNAMIC",
+        "entities": [
+          {
+            "entity": "default/invoices"
+          }
+        ],
+        "query": "SELECT \n  id, \n  '\\$.invoice-number'\nFROM [default/invoices]\n"
+      },
+      "type": "datasource.sqlite"
+    },
+    "methodOfPayment": {
+      "options": {
+        "data": [
+          {
+            "method": "By conversion"
+          },
+          {
+            "method": "By card"
+          },
+          {
+            "method": "Cash"
+          },
+          {
+            "method": "PayPal"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    },
+    "subscriberId": {
+      "options": {
+        "provider": "DATA_PROVIDER_LOCAL",
+        "entities": [
+          {
+            "entity": "default/subscribers"
+          }
+        ],
+        "query": "SELECT\n  id,\n  '\\$.subscriber',\n  '\\$.subscriber-id'\nFROM [default/subscribers]\nWHERE '\\$.subscriber' = @selected\n",
+        "queryParameters": {
+          "selected": "=@ctx.components.subscriber.state.value"
+        }
+      },
+      "type": "datasource.sqlite"
+    },
+    "subscribers": {
+      "options": {
+        "provider": "DATA_PROVIDER_DYNAMIC",
+        "entities": [
+          {
+            "entity": "default/subscribers"
+          }
+        ],
+        "query": "SELECT\n  id,\n  '\\$.subscriber',\n  '\\$.subscriber-id'\nFROM [default/subscribers]\n"
+      },
+      "type": "datasource.sqlite"
+    }
+  },
+  "children": [
+    {
+      "instanceId": "new-invoice",
+      "options": {
+        "children": [
+          {
+            "instanceId": "invoice-number",
+            "options": {
+              "initialValue": "=\\$fromMillis(\\$toMillis(\\$now()), '[Y0001]') & \"000\" & (\\$count(@ctx.datasources.invoices.id) = 0 ? 1 :\\$count(@ctx.datasources.invoices.id) + 1)",
+              "label": "Invoice number"
+            },
+            "type": "component.text-field"
+          },
+          {
+            "instanceId": "date-of-issue",
+            "options": {
+              "initialValue": "=\\$fromMillis(\\$toMillis(now()))",
+              "label": "Date of issue"
+            },
+            "type": "component.date-picker"
+          },
+          {
+            "instanceId": "due-date",
+            "options": {
+              "initialValue": "=\\$fromMillis(\\$toMillis(@ctx.components.date-of-issue.state.value) + (86400000 * 14))",
+              "label": "Due date"
+            },
+            "type": "component.date-picker"
+          },
+          {
+            "instanceId": "subscriber",
+            "options": {
+              "data": "=@ctx.datasources.subscribers",
+              "item": {
+                "options": {
+                  "title": "=@ctx.current.item.subscriber",
+                  "value": "=@ctx.current.item.subscriber"
+                },
+                "type": "component.dropdown-item"
+              },
+              "label": "Subscriber"
+            },
+            "type": "component.dropdown"
+          },
+          {
+            "instanceId": "subscriber-id",
+            "options": {
+              "initialValue": "=@ctx.datasources.subscriberId.subscriber-id",
+              "label": "Subscriber ID"
+            },
+            "type": "component.text-field"
+          },
+          {
+            "instanceId": "method-of-payment",
+            "options": {
+              "data": "=@ctx.datasources.methodOfPayment",
+              "item": {
+                "options": {
+                  "title": "=@ctx.current.item.method",
+                  "value": "=@ctx.current.item.method"
+                },
+                "type": "component.dropdown-item"
+              },
+              "label": "Method of payment"
+            },
+            "type": "component.dropdown"
+          },
+          {
+            "instanceId": "item",
+            "options": {
+              "isMultiline": true,
+              "label": "Description"
+            },
+            "type": "component.text-field"
+          },
+          {
+            "instanceId": "currency",
+            "options": {
+              "data": "=@ctx.datasources.currency",
+              "item": {
+                "options": {
+                  "title": "=@ctx.current.item.currency",
+                  "value": "=@ctx.current.item.currency"
+                },
+                "type": "component.dropdown-item"
+              },
+              "label": "Currency"
+            },
+            "type": "component.dropdown"
+          },
+          {
+            "instanceId": "unit-price",
+            "options": {
+              "initialValue": 0,
+              "label": "Unit price per hour"
+            },
+            "type": "component.number-field"
+          },
+          {
+            "instanceId": "quantity",
+            "options": {
+              "initialValue": 1,
+              "label": "Quantity"
+            },
+            "type": "component.number-field"
+          },
+          {
+            "instanceId": "signature",
+            "options": {
+              "label": "Signature"
+            },
+            "type": "component.signature-field"
+          }
+        ]
+      },
+      "type": "component.form"
+    }
+  ],
+  "header": {
+    "options": {
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+      }
+    },
+    "type": "component.image"
+  },
+  "summary": {
+    "children": {
+      "options": {
+        "title": {
+          "format": {
+            "currency": "=@ctx.components.currency.state.value",
+            "numberStyle": "currency"
+          },
+          "text": "=@ctx.components.unit-price.state.value * @ctx.components.quantity.state.value"
+        },
+        "subtitle": "Total invoice amount",
+        "layout": "default",
+        "leftIcon": {
+          "element": "icon",
+          "isContained": true,
+          "isDuotone": true,
+          "name": "form"
+        }
+      },
+      "type": "component.summary"
+    }
+  }
+}

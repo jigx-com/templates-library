@@ -1,0 +1,19 @@
+{
+  "instanceId": "dropdown-7",
+  "options": {
+    "data": "=@ctx.datasources.dropdown",
+    "helperText": "With custom right icon [not working]",
+    "icon": "delivery-truck-5",
+    "item": {
+      "options": {
+        "title": "=@ctx.current.item.value",
+        "subtitle": "=@ctx.current.item.subtitle",
+        "description": "=@ctx.current.item.description",
+        "value": "=@ctx.current.item.value"
+      },
+      "type": "component.dropdown-item"
+    },
+    "label": "Dropdown 7"
+  },
+  "type": "component.dropdown"
+}

@@ -1,0 +1,37 @@
+{
+  "options": {
+    "children": [
+      {
+        "options": {
+          "chart": {
+            "subtitle": {
+              "text": "Subtitle",
+              "verticalAlign": "center"
+            },
+            "title": {
+              "text": "Title",
+              "verticalAlign": "center"
+            }
+          },
+          "series": [
+            {
+              "data": "=@ctx.datasources.piechart"
+            }
+          ]
+        },
+        "type": "component.pie-chart"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        },
+        "type": "component.titles"
+      }
+    },
+    "isInitiallyCollapsed": false
+  },
+  "type": "component.expander"
+}

@@ -1,0 +1,23 @@
+{
+  "instanceId": "dropdown-2",
+  "options": {
+    "data": "=@ctx.datasources.dropdown",
+    "helperText": "With avatars",
+    "item": {
+      "options": {
+        "title": "=@ctx.current.item.value",
+        "subtitle": "=@ctx.current.item.subtitle",
+        "description": "=@ctx.current.item.description",
+        "leftElement": {
+          "element": "avatar",
+          "text": "N/A",
+          "uri": "=@ctx.current.item.image"
+        },
+        "value": "=@ctx.current.item.value"
+      },
+      "type": "component.dropdown-item"
+    },
+    "label": "Dropdown 2"
+  },
+  "type": "component.dropdown"
+}

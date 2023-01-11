@@ -1,0 +1,23 @@
+{
+  "instanceId": "dropdown-11",
+  "options": {
+    "data": "=\\$filter(@ctx.datasources.employees, function(\\$v){@ctx.datasources.employees ? \\$contains(\\$string(\\$v.name),\\$string(@ctx.components.dropdown-11.state.searchText != null ? @ctx.components.dropdown-11.state.searchText:'')) :true})[]",
+    "helperText": "Searchable",
+    "isSearchable": true,
+    "item": {
+      "options": {
+        "title": "=@ctx.current.item.name",
+        "subtitle": "=@ctx.current.item.position",
+        "leftElement": {
+          "element": "avatar",
+          "text": "N/A",
+          "uri": "=@ctx.current.item.img"
+        },
+        "value": "=@ctx.current.item.name"
+      },
+      "type": "component.dropdown-item"
+    },
+    "label": "Dropdown 11"
+  },
+  "type": "component.dropdown"
+}

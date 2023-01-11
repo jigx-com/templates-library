@@ -1,0 +1,25 @@
+{
+  "options": {
+    "children": [
+      {
+        "options": {
+          "autoplay": false,
+          "ratio": 969,
+          "url": "https://www.youtube.com/watch?v=mUlty9YwT4c"
+        },
+        "type": "component.video-player"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        },
+        "type": "component.titles"
+      }
+    },
+    "isInitiallyCollapsed": false
+  },
+  "type": "component.expander"
+}

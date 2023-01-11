@@ -1,0 +1,61 @@
+{
+  "options": {
+    "children": [
+      {
+        "options": {
+          "data": "=(@ctx.datasources.interactiveimg)\n",
+          "groups": [
+            {
+              "color": "color2",
+              "id": "selected",
+              "title": "Your selected seats"
+            },
+            {
+              "color": "color14",
+              "id": "reserved",
+              "title": "Reserved seats"
+            }
+          ],
+          "item": {
+            "options": {
+              "title": "=@ctx.current.item.name",
+              "color": "=@ctx.current.item.isReserved = true ? 'color4' :null",
+              "groupId": "=@ctx.current.item.groupId",
+              "icon": "=@ctx.current.item.isReserved = true ? 'close' :null",
+              "id": "=@ctx.current.item.id",
+              "percentageCoordinates": {
+                "x": "=@ctx.current.item.xCoordinate",
+                "y": "=@ctx.current.item.yCoordinate"
+              },
+              "style": {
+                "isDisabled": "=@ctx.current.item.isReserved = true ? true :false"
+              }
+            },
+            "type": "component.interactive-image-item"
+          },
+          "source": {
+            "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxnSPwgDIBx10pBXM2omf9twq7LnqQFtKXQZdVvOCORlcVd6h-woQc1fbvoILSKe4pqo&usqp=CAU"
+          }
+        },
+        "type": "component.interactive-image"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "left": {
+            "subtitle": "Start subtitle",
+            "title": "Start title"
+          },
+          "right": {
+            "subtitle": "End subtitle",
+            "title": "End title"
+          }
+        },
+        "type": "component.stage"
+      }
+    },
+    "isInitiallyCollapsed": false
+  },
+  "type": "component.expander"
+}

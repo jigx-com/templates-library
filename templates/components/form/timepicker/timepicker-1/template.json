@@ -1,0 +1,11 @@
+{
+  "instanceId": "time-picker1",
+  "options": {
+    "format": "HH:mm",
+    "helperText": "Time picker with format HH:mm",
+    "isRequired": true,
+    "label": "Date picker mode - time",
+    "mode": "time"
+  },
+  "type": "component.date-picker"
+}

@@ -1,0 +1,36 @@
+{
+  "options": {
+    "chart": {
+      "height": 300,
+      "isAnimated": false
+    },
+    "legend": {
+      "isHidden": false
+    },
+    "plotOptions": {
+      "series": {
+        "pointWidth": 16
+      }
+    },
+    "series": [
+      {
+        "color": "color1",
+        "data": "=@ctx.datasources.population",
+        "name": "USA Population"
+      }
+    ],
+    "xAxis": {
+      "categories": ["2018", "2019", "2020", "2021", "2022"]
+    },
+    "yAxis": {
+      "labels": {
+        "format": {
+          "notation": "compact"
+        }
+      },
+      "max": 400000000,
+      "min": 300000000
+    }
+  },
+  "type": "component.bar-chart"
+}

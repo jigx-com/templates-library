@@ -1,0 +1,65 @@
+{
+  "title": "Pie charts list",
+  "type": "jig.list",
+  "datasources": {
+    "pie": {
+      "options": {
+        "data": [
+          {
+            "color": "color6",
+            "data": [25],
+            "subtitle": "subtitle",
+            "title": "title"
+          },
+          {
+            "color": "color7",
+            "data": [45],
+            "subtitle": "subtitle",
+            "title": "title"
+          },
+          {
+            "color": "color8",
+            "data": [33],
+            "subtitle": "subtitle",
+            "title": "title"
+          }
+        ]
+      },
+      "type": "datasource.static"
+    }
+  },
+  "data": "=@ctx.datasources.pie",
+  "item": {
+    "options": {
+      "chart": {
+        "height": 160,
+        "subtitle": {
+          "text": "=@ctx.current.item.subtitle",
+          "verticalAlign": "center"
+        },
+        "title": {
+          "text": "=@ctx.current.item.title",
+          "verticalAlign": "center"
+        }
+      },
+      "series": [
+        {
+          "color": "=@ctx.current.item.color",
+          "data": "=@ctx.current.item.data",
+          "layout": "pie"
+        }
+      ]
+    },
+    "type": "component.pie-chart"
+  },
+  "header": {
+    "options": {
+      "title": "Pie charts list",
+      "subtitle": "List with pie charts",
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+      }
+    },
+    "type": "component.image"
+  }
+}

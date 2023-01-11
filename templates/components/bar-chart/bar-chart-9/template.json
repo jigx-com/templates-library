@@ -1,0 +1,30 @@
+{
+  "options": {
+    "chart": {
+      "subtitle": "legend: isHidden: true",
+      "title": "Without legend"
+    },
+    "legend": {
+      "isHidden": true
+    },
+    "plotOptions": {
+      "series": {
+        "pointWidth": 24
+      }
+    },
+    "series": [
+      {
+        "data": "=@ctx.datasources.mydata"
+      }
+    ],
+    "xAxis": {
+      "categories": ["1", "2", "3", "4"]
+    },
+    "yAxis": {
+      "max": 50000,
+      "min": 10000,
+      "tickAmount": 5
+    }
+  },
+  "type": "component.bar-chart"
+}

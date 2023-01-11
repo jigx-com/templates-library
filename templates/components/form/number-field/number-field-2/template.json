@@ -1,0 +1,14 @@
+{
+  "instanceId": "number-field2",
+  "options": {
+    "helperText": "Number Field with the stepper",
+    "isReturnKeyEnabledAutomatically": true,
+    "label": "Number",
+    "stepper": {
+      "isEnabled": true,
+      "value": 5
+    },
+    "value": 1
+  },
+  "type": "component.number-field"
+}

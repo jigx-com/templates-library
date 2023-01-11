@@ -1,0 +1,11 @@
+{
+  "instanceId": "checkbox3",
+  "options": {
+    "label": "Checkbox - Positive",
+    "style": {
+      "isPositive": true
+    },
+    "value": true
+  },
+  "type": "component.checkbox"
+}

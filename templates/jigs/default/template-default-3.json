@@ -1,0 +1,143 @@
+{
+  "title": "Add new employee",
+  "type": "jig.default",
+  "actions": [
+    {
+      "children": [
+        {
+          "options": {
+            "title": "Add employee",
+            "provider": "DATA_PROVIDER_DYNAMIC",
+            "entity": "default/employees",
+            "formId": "new-employee",
+            "method": "save"
+          },
+          "type": "action.submit-form"
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "employees": {
+      "options": {
+        "provider": "DATA_PROVIDER_DYNAMIC",
+        "entities": [
+          {
+            "entity": "default/employees"
+          }
+        ],
+        "query": "SELECT \n  id\nFROM [default/employees] \n"
+      },
+      "type": "datasource.sqlite"
+    }
+  },
+  "children": [
+    {
+      "instanceId": "new-employee",
+      "options": {
+        "children": [
+          {
+            "instanceId": "employee-id",
+            "options": {
+              "initialValue": "=(\\$count(@ctx.datasources.employees.id) = 0 ? 1 :\\$count(@ctx.datasources.employees.id) + 1)",
+              "isHidden": true,
+              "label": "employeeId"
+            },
+            "type": "component.number-field"
+          },
+          {
+            "instanceId": "employee-photo",
+            "options": {
+              "label": "Photo"
+            },
+            "type": "component.avatar-field"
+          },
+          {
+            "options": {
+              "title": "Personal informations",
+              "children": [
+                {
+                  "instanceId": "employee-first-name",
+                  "options": {
+                    "label": "First name"
+                  },
+                  "type": "component.text-field"
+                },
+                {
+                  "instanceId": "employee-surname",
+                  "options": {
+                    "label": "Surname"
+                  },
+                  "type": "component.text-field"
+                },
+                {
+                  "instanceId": "employee-date-of-birth",
+                  "options": {
+                    "label": "Date of birth"
+                  },
+                  "type": "component.date-picker"
+                },
+                {
+                  "instanceId": "employee-email",
+                  "options": {
+                    "icon": "email",
+                    "label": "Email"
+                  },
+                  "type": "component.email-field"
+                },
+                {
+                  "instanceId": "employee-phone-number",
+                  "options": {
+                    "icon": "phone",
+                    "label": "Phone number"
+                  },
+                  "type": "component.number-field"
+                }
+              ]
+            },
+            "type": "component.section"
+          },
+          {
+            "options": {
+              "title": "Business informations",
+              "children": [
+                {
+                  "instanceId": "employee-position",
+                  "options": {
+                    "label": "Position"
+                  },
+                  "type": "component.text-field"
+                },
+                {
+                  "instanceId": "employee-startWork",
+                  "options": {
+                    "label": "Date of starting work"
+                  },
+                  "type": "component.date-picker"
+                },
+                {
+                  "instanceId": "employee-contract",
+                  "options": {
+                    "label": "Contract",
+                    "mediaType": "image"
+                  },
+                  "type": "component.media-field"
+                }
+              ]
+            },
+            "type": "component.section"
+          }
+        ]
+      },
+      "type": "component.form"
+    }
+  ],
+  "header": {
+    "options": {
+      "source": {
+        "uri": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+      }
+    },
+    "type": "component.image"
+  }
+}

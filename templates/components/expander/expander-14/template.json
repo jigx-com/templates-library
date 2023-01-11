@@ -1,0 +1,44 @@
+{
+  "options": {
+    "children": [
+      {
+        "options": {
+          "chart": {
+            "subtitle": {
+              "text": "Subtitle",
+              "verticalAlign": "center"
+            },
+            "title": {
+              "text": "Title",
+              "verticalAlign": "center"
+            }
+          },
+          "series": [
+            {
+              "data": "=@ctx.datasources.piechart",
+              "layout": "arch"
+            }
+          ]
+        },
+        "type": "component.pie-chart"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "left": {
+            "subtitle": "Start subtitle",
+            "title": "Start title"
+          },
+          "right": {
+            "subtitle": "End subtitle",
+            "title": "End title"
+          }
+        },
+        "type": "component.stage"
+      }
+    },
+    "isInitiallyCollapsed": false
+  },
+  "type": "component.expander"
+}

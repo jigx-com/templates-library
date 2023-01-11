@@ -1,0 +1,10 @@
+{
+  "instanceId": "text-field-3",
+  "options": {
+    "errorText": "With error description",
+    "helperText": "With error text",
+    "isRequired": false,
+    "label": "Label 3"
+  },
+  "type": "component.text-field"
+}

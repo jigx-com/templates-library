@@ -1,0 +1,11 @@
+{
+  "instanceId": "checkbox5",
+  "options": {
+    "label": "Checkbox - Danger",
+    "style": {
+      "isDanger": true
+    },
+    "value": true
+  },
+  "type": "component.checkbox"
+}
