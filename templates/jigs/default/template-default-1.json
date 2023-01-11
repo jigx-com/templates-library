@@ -25,7 +25,7 @@
             "isPositive": false,
             "subtitle": "Payment by card",
             "title": "Teambuilding",
-            "value": "-\\\\$144"
+            "value": "-\\$144"
           },
           {
             "category": "truck-cargo",
@@ -34,7 +34,7 @@
             "isPositive": false,
             "subtitle": "Payment by card",
             "title": "Transport Brno to Prague",
-            "value": "-\\\\$87.30"
+            "value": "-\\$87.30"
           },
           {
             "category": "shopping-cart-empty-1",
@@ -43,7 +43,7 @@
             "isPositive": false,
             "subtitle": "Payment by card",
             "title": "Team t-shirts",
-            "value": "-\\\\$21.50"
+            "value": "-\\$21.50"
           },
           {
             "category": "shopping-cart-empty-1",
@@ -52,7 +52,7 @@
             "isPositive": false,
             "subtitle": "Payment by card",
             "title": "Cinema tickets",
-            "value": "-\\\\$218.70"
+            "value": "-\\$218.70"
           },
           {
             "category": "chevron-up",
@@ -61,7 +61,7 @@
             "isPositive": true,
             "subtitle": "Income payment",
             "title": "Team bonus",
-            "value": "\\\\$120"
+            "value": "\\$120"
           }
         ]
       },
@@ -124,12 +124,12 @@
           "height": 300,
           "subtitle": {
             "align": "center",
-            "text": "=\"Team budget \\\\$1.000\"",
+            "text": "=\"Team budget \\$1.000\"",
             "verticalAlign": "bottom"
           },
           "title": {
             "align": "center",
-            "text": "\\\\$523.5",
+            "text": "\\$523.5",
             "verticalAlign": "bottom"
           }
         },
