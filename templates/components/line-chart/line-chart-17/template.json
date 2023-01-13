@@ -1,0 +1,38 @@
+{
+  "options": {
+    "chart": {
+      "title": "Currency number style",
+      "subtitle": "Currency: USD"
+    },
+    "plotOptions": {
+      "series": {
+        "pointWidth": 24
+      }
+    },
+    "yAxis": {
+      "tickAmount": 3,
+      "labels": {
+        "format": {
+          "numberStyle": "currency",
+          "currency": "USD"
+        }
+      },
+      "max": 10000,
+      "min": 0
+    },
+    "xAxis": {
+      "categories": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "series": [
+      {
+        "data": "=@ctx.datasources.line",
+        "color": "color3"
+      }
+    ]
+  }
+}

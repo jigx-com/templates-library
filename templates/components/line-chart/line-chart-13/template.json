@@ -1,0 +1,39 @@
+{
+  "options": {
+    "chart": {
+      "title": "Custom name of series"
+    },
+    "yAxis": {
+      "max": 10000,
+      "min": 0
+    },
+    "xAxis": {
+      "categories": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "legend": {
+      "isHidden": false
+    },
+    "series": [
+      {
+        "data": "=@ctx.datasources.line1",
+        "color": "color6",
+        "name": "My data 1"
+      },
+      {
+        "data": "=@ctx.datasources.line2",
+        "color": "color7",
+        "name": "My data 2"
+      },
+      {
+        "data": "=@ctx.datasources.line3",
+        "color": "color8",
+        "name": "My data 3"
+      }
+    ]
+  }
+}
