@@ -1,0 +1,27 @@
+{
+    "options": {
+      "isHorizontal": true,
+      "maximumItemsToRender": 8,
+      "data": "=@ctx.datasources.horizontal",
+      "item": {
+        "type": "component.list-item",
+        "options": {
+          "title": "=@ctx.current.item.title",
+          "subtitle": "=@ctx.current.item.subtitle",
+          "leftElement": {
+            "element": "image",
+            "text": "",
+            "uri": "=@ctx.current.item.image"
+          },
+          "rightElement": {
+            "element": "value",
+            "text": "=@ctx.current.item.rightElement"
+          },
+          "divider": "solid",
+          "style": {
+            "isHighlighted": "=@ctx.current.item.highlight"
+          }
+        }
+      }
+    }
+  }

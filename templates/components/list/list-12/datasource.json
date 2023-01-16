@@ -1,0 +1,45 @@
+{
+    "sections-list": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "id": 1,
+            "title": "Title inactive",
+            "subtitle": "Subtitle",
+            "active": false
+          },
+          {
+            "id": 2,
+            "title": "Title active",
+            "subtitle": "Subtitle",
+            "active": true
+          },
+          {
+            "id": 3,
+            "title": "Title inactive",
+            "subtitle": "Subtitle",
+            "active": false
+          },
+          {
+            "id": 4,
+            "title": "Title active",
+            "subtitle": "Subtitle",
+            "active": true
+          },
+          {
+            "id": 5,
+            "title": "Title active",
+            "subtitle": "Subtitle",
+            "active": true
+          },
+          {
+            "id": 6,
+            "title": "Title inactive",
+            "subtitle": "Subtitle",
+            "active": false
+          }
+        ]
+      }
+    }
+  }

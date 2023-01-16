@@ -1295,6 +1295,41 @@
       "previewImgSrc": "templates/components/list/list-10/preview.png",
       "datasource": "templates/components/list/list-10/datasource.json",
       "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Filter, progress and label",
+      "filePath": "templates/components/list/list-11/template.json",
+      "previewImgSrc": "templates/components/list/list-11/preview.png",
+      "datasource": "templates/components/list/list-11/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Sections and button",
+      "filePath": "templates/components/list/list-12/template.json",
+      "previewImgSrc": "templates/components/list/list-12/preview.png",
+      "datasource": "templates/components/list/list-12/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Product item",
+      "filePath": "templates/components/list/list-13/template.json",
+      "previewImgSrc": "templates/components/list/list-13/preview.png",
+      "datasource": "templates/components/list/list-13/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Product item and summary",
+      "filePath": "templates/components/list/list-14/template.json",
+      "previewImgSrc": "templates/components/list/list-14/preview.png",
+      "datasource": "templates/components/list/list-14/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Horizontal list",
+      "filePath": "templates/components/list/list-15/template.json",
+      "previewImgSrc": "templates/components/list/list-15/preview.png",
+      "datasource": "templates/components/list/list-15/datasource.json",
+      "jigLibraryRef": "jc-list"
     }
   ]
 }
