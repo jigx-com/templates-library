@@ -1,0 +1,73 @@
+{
+    "options": {
+      "data": "=@ctx.datasources.inventory",
+      "maximumItemsToRender": 20,
+      "item": {
+        "type": "component.list-item",
+        "options": {
+          "label": {
+            "title": "=@ctx.current.item.current & ' / ' & @ctx.current.item.total",
+            "color": [
+              {
+                "when": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25)",
+                "color": "color4"
+              },
+              {
+                "when": "=((@ctx.current.item.current / @ctx.current.item.total) > 0.25)",
+                "color": "color2"
+              }
+            ]
+          },
+          "color": [
+            {
+              "when": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25)",
+              "color": "color4"
+            },
+            {
+              "when": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.50)",
+              "color": "color3"
+            }
+          ],
+          "title": "=@ctx.current.item.name",
+          "description": "=@ctx.current.item.description",
+          "subtitle": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25) ? \"Low inventory\" :\"\"",
+          "style": {
+            "isError": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25) ? true :false"
+          },
+          "progress": "=(@ctx.current.item.current / @ctx.current.item.total)",
+          "leftElement": {
+            "element": "avatar",
+            "text": "=@ctx.current.item.avatar-text"
+          },
+          "swipeable": {
+            "left": [
+              {
+                "label": "label",
+                "icon": "pencil-2",
+                "color": "warning",
+                "onPress": {
+                  "type": "action.go-to",
+                  "options": {
+                    "linkTo": "comp-list-var-1"
+                  }
+                }
+              }
+            ],
+            "right": [
+              {
+                "label": "label",
+                "icon": "pencil-2",
+                "color": "primary",
+                "onPress": {
+                  "type": "action.go-to",
+                  "options": {
+                    "linkTo": "comp-list-var-1"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,30 @@
+{
+    "options": {
+      "data": "=@ctx.datasources.list",
+      "item": {
+        "type": "component.list-item",
+        "options": {
+          "color": [
+            {
+              "when": true,
+              "color": "color2"
+            }
+          ],
+          "divider": "solid",
+          "title": "Function",
+          "subtitle": "Description",
+          "description": "Additional information",
+          "leftElement": {
+            "element": "icon",
+            "isContained": true,
+            "isDuotone": true,
+            "name": "headphones-customer-support"
+          },
+          "rightElement": {
+            "element": "switch",
+            "initialValue": true
+          }
+        }
+      }
+    }
+  }

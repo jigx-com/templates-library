@@ -1,0 +1,31 @@
+{
+    "options": {
+      "data": "=@ctx.datasources.list",
+      "item": {
+        "type": "component.list-item",
+        "options": {
+          "title": "Customer name",
+          "subtitle": "Stopped because of high price",
+          "color": [
+            {
+              "when": true,
+              "color": "color2"
+            }
+          ],
+          "progress": 0.75,
+          "leftElement": {
+            "element": "checkbox",
+            "value": true
+          },
+          "style": {
+            "isError": true,
+            "isStrikeThrough": true
+          },
+          "rightElement": {
+            "element": "value",
+            "text": "$ 38.500"
+          }
+        }
+      }
+    }
+  }
