@@ -1,0 +1,17 @@
+{
+  "progress": {
+    "type": "datasource.static",
+    "options": {
+      "data": [
+        {
+          "y": 75,
+          "color": "color2"
+        },
+        {
+          "y": 25,
+          "color": "transparent"
+        }
+      ]
+    }
+  }
+}
