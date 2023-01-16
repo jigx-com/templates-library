@@ -1246,6 +1246,55 @@
       "previewImgSrc": "templates/components/list/list-3/preview.png",
       "datasource": "templates/components/list/list-3/datasource.json",
       "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Avatar and Icon",
+      "filePath": "templates/components/list/list-4/template.json",
+      "previewImgSrc": "templates/components/list/list-4/preview.png",
+      "datasource": "templates/components/list/list-4/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Icon and Value",
+      "filePath": "templates/components/list/list-5/template.json",
+      "previewImgSrc": "templates/components/list/list-5/preview.png",
+      "datasource": "templates/components/list/list-5/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Progress and label",
+      "filePath": "templates/components/list/list-6/template.json",
+      "previewImgSrc": "templates/components/list/list-6/preview.png",
+      "datasource": "templates/components/list/list-6/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Stage",
+      "filePath": "templates/components/list/list-7/template.json",
+      "previewImgSrc": "templates/components/list/list-7/preview.png",
+      "datasource": "templates/components/list/list-7/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Expander (stage)",
+      "filePath": "templates/components/list/list-8/template.json",
+      "previewImgSrc": "templates/components/list/list-8/preview.png",
+      "datasource": "templates/components/list/list-8/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Expander (titles)",
+      "filePath": "templates/components/list/list-9/template.json",
+      "previewImgSrc": "templates/components/list/list-9/preview.png",
+      "datasource": "templates/components/list/list-9/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Search and left image",
+      "filePath": "templates/components/list/list-10/template.json",
+      "previewImgSrc": "templates/components/list/list-10/preview.png",
+      "datasource": "templates/components/list/list-10/datasource.json",
+      "jigLibraryRef": "jc-list"
     }
   ]
 }
