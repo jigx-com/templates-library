@@ -1,0 +1,16 @@
+{
+  "simple": {
+    "type": "datasource.static",
+    "options": {
+      "data": [
+        {
+          "y": 1,
+          "color": "color2",
+          "name": "Lable title",
+          "title": "Chart title",
+          "subtitle": "Chart subtitle"
+        }
+      ]
+    }
+  }
+}

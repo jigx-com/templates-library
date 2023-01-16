@@ -1,0 +1,29 @@
+{
+  "options": {
+    "chart": {
+      "width": 300,
+      "title": {
+        "text": "Custom size",
+        "verticalAlign": "center"
+      },
+      "subtitle": {
+        "text": "Width: 300",
+        "verticalAlign": "center"
+      }
+    },
+    "legend": {
+      "isHidden": false
+    },
+    "series": [
+      {
+        "data": "=@ctx.datasources.issues",
+        "dataLabels": [
+          {
+            "isEnabled": true
+          }
+        ],
+        "layout": "arch"
+      }
+    ]
+  }
+}

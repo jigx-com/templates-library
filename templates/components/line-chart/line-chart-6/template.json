@@ -1,0 +1,29 @@
+{
+  "options": {
+    "chart": {
+      "title": "Width change",
+      "subtitle": "Width = \"250\"",
+      "width": 250
+    },
+    "yAxis": {
+      "max": 50000,
+      "min": 20000,
+      "tickAmount": 3
+    },
+    "xAxis": {
+      "categories": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "series": [
+      {
+        "data": "=@ctx.datasources.line",
+        "color": "color9",
+        "layout": "area-gradient"
+      }
+    ]
+  }
+}
