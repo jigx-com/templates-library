@@ -1,0 +1,33 @@
+{
+    "pie": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color6",
+            "data": [
+              25
+            ]
+          },
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color7",
+            "data": [
+              45
+            ]
+          },
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color8",
+            "data": [
+              33
+            ]
+          }
+        ]
+      }
+    }
+  }

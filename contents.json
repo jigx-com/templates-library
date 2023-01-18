@@ -724,7 +724,6 @@
       "previewImgSrc": "templates/components/form/datepicker/datepicker-5/preview.png",
       "jigLibraryRef": "jc-date-picker"
     },
-
     {
       "name": "Form time picker with format HH:mm",
       "filePath": "templates/components/form/timepicker/timepicker-1/template.json",
@@ -749,7 +748,6 @@
       "previewImgSrc": "templates/components/form/timepicker/timepicker-4/preview.png",
       "jigLibraryRef": "jc-date-picker"
     },
-
     {
       "name": "Form Date picker mode - datetime",
       "filePath": "templates/components/form/datetime-picker/datetime-picker-1/template.json",
@@ -846,7 +844,6 @@
       "datasource": "templates/components/form/dropdown/shared/datasource-2.json",
       "jigLibraryRef": "jc-dropdown"
     },
-
     {
       "name": "Form empty email field",
       "filePath": "templates/components/form/email-field/email-field-1/template.json",
@@ -902,7 +899,6 @@
       "previewImgSrc": "templates/components/form/field-row/field-row-3/preview.png",
       "jigLibraryRef": "jc-field-row"
     },
-
     {
       "name": "Form checkbox default state",
       "filePath": "templates/components/form/checkbox/checkbox-1/template.json",
@@ -945,7 +941,6 @@
       "previewImgSrc": "templates/components/form/checkbox/checkbox-7/preview.png",
       "jigLibraryRef": "jc-checkbox"
     },
-
     {
       "name": "Form media Field - Single select (optional)",
       "filePath": "templates/components/form/media-field/media-field-1/template.json",
@@ -1393,6 +1388,319 @@
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-8/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-8/datasource.json",
       "jigLibraryRef": "jc-pie-chart"
+    },
+    {
+      "name": "Percentage · Left avatar · Right label",
+      "filePath": "templates/components/list/list-item/list-item-1/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-1/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Percentage · Left checkbox · Right value",
+      "filePath": "templates/components/list/list-item/list-item-2/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-2/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left checkbox · Label · Avatars",
+      "filePath": "templates/components/list/list-item/list-item-3/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-3/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left avatar · Right icon",
+      "filePath": "templates/components/list/list-item/list-item-4/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-4/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left icon · Right value",
+      "filePath": "templates/components/list/list-item/list-item-5/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-5/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left progress · Right icon · Label",
+      "filePath": "templates/components/list/list-item/list-item-6/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-6/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left image · Right icon",
+      "filePath": "templates/components/list/list-item/list-item-7/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-7/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left image · Right checkbox",
+      "filePath": "templates/components/list/list-item/list-item-8/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-8/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left icon · Right switch",
+      "filePath": "templates/components/list/list-item/list-item-9/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-9/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left image · Right amount control",
+      "filePath": "templates/components/list/list-item/list-item-10/template.json",
+      "previewImgSrc": "templates/components/list/list-item/list-item-10/preview.png",
+      "datasource": "templates/components/list/list-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Image · Amount control · Price · Discount",
+      "filePath": "templates/components/list/product-item/product-item-1/template.json",
+      "previewImgSrc": "templates/components/list/product-item/product-item-1/preview.png",
+      "datasource": "templates/components/list/product-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Image · Tag · Price",
+      "filePath": "templates/components/list/product-item/product-item-2/template.json",
+      "previewImgSrc": "templates/components/list/product-item/product-item-2/preview.png",
+      "datasource": "templates/components/list/product-item/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Expander header - Stage",
+      "filePath": "templates/components/list/expander/expander-1/template.json",
+      "previewImgSrc": "templates/components/list/expander/expander-1/preview.png",
+      "datasource": "templates/components/list/expander/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Expander header - Titles · Left aligned",
+      "filePath": "templates/components/list/expander/expander-2/template.json",
+      "previewImgSrc": "templates/components/list/expander/expander-2/preview.png",
+      "datasource": "templates/components/list/expander/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Expander header - Titles · Center aligned",
+      "filePath": "templates/components/list/expander/expander-3/template.json",
+      "previewImgSrc": "templates/components/list/expander/expander-3/preview.png",
+      "datasource": "templates/components/list/expander/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left title & subtitle · Icon · Right title & subtitle",
+      "filePath": "templates/components/list/stage/stage-1/template.json",
+      "previewImgSrc": "templates/components/list/stage/stage-1/preview.png",
+      "datasource": "templates/components/list/stage/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Left title · Icon · Right title",
+      "filePath": "templates/components/list/stage/stage-2/template.json",
+      "previewImgSrc": "templates/components/list/stage/stage-2/preview.png",
+      "datasource": "templates/components/list/stage/shared/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Stock Inventory",
+      "filePath": "templates/components/list/list-1/template.json",
+      "previewImgSrc": "templates/components/list/list-1/preview.png",
+      "datasource": "templates/components/list/list-1/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Opportunities",
+      "filePath": "templates/components/list/list-2/template.json",
+      "previewImgSrc": "templates/components/list/list-2/preview.png",
+      "datasource": "templates/components/list/list-2/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Task list",
+      "filePath": "templates/components/list/list-3/template.json",
+      "previewImgSrc": "templates/components/list/list-3/preview.png",
+      "datasource": "templates/components/list/list-3/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Avatar and Icon",
+      "filePath": "templates/components/list/list-4/template.json",
+      "previewImgSrc": "templates/components/list/list-4/preview.png",
+      "datasource": "templates/components/list/list-4/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Icon and Value",
+      "filePath": "templates/components/list/list-5/template.json",
+      "previewImgSrc": "templates/components/list/list-5/preview.png",
+      "datasource": "templates/components/list/list-5/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Progress and label",
+      "filePath": "templates/components/list/list-6/template.json",
+      "previewImgSrc": "templates/components/list/list-6/preview.png",
+      "datasource": "templates/components/list/list-6/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Stage",
+      "filePath": "templates/components/list/list-7/template.json",
+      "previewImgSrc": "templates/components/list/list-7/preview.png",
+      "datasource": "templates/components/list/list-7/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Expander (stage)",
+      "filePath": "templates/components/list/list-8/template.json",
+      "previewImgSrc": "templates/components/list/list-8/preview.png",
+      "datasource": "templates/components/list/list-8/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Expander (titles)",
+      "filePath": "templates/components/list/list-9/template.json",
+      "previewImgSrc": "templates/components/list/list-9/preview.png",
+      "datasource": "templates/components/list/list-9/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Search and left image",
+      "filePath": "templates/components/list/list-10/template.json",
+      "previewImgSrc": "templates/components/list/list-10/preview.png",
+      "datasource": "templates/components/list/list-10/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Filter, progress and label",
+      "filePath": "templates/components/list/list-11/template.json",
+      "previewImgSrc": "templates/components/list/list-11/preview.png",
+      "datasource": "templates/components/list/list-11/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Sections and button",
+      "filePath": "templates/components/list/list-12/template.json",
+      "previewImgSrc": "templates/components/list/list-12/preview.png",
+      "datasource": "templates/components/list/list-12/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Product item",
+      "filePath": "templates/components/list/list-13/template.json",
+      "previewImgSrc": "templates/components/list/list-13/preview.png",
+      "datasource": "templates/components/list/list-13/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Product item and summary",
+      "filePath": "templates/components/list/list-14/template.json",
+      "previewImgSrc": "templates/components/list/list-14/preview.png",
+      "datasource": "templates/components/list/list-14/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Horizontal list",
+      "filePath": "templates/components/list/list-15/template.json",
+      "previewImgSrc": "templates/components/list/list-15/preview.png",
+      "datasource": "templates/components/list/list-15/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Horizontal list",
+      "filePath": "templates/components/list/list-16/template.json",
+      "previewImgSrc": "templates/components/list/list-16/preview.png",
+      "datasource": "templates/components/list/list-16/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Swipe & icon",
+      "filePath": "templates/components/list/list-17/template.json",
+      "previewImgSrc": "templates/components/list/list-17/preview.png",
+      "datasource": "templates/components/list/list-17/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Checkbox and avatar",
+      "filePath": "templates/components/list/list-18/template.json",
+      "previewImgSrc": "templates/components/list/list-18/preview.png",
+      "datasource": "templates/components/list/list-18/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Switch & image",
+      "filePath": "templates/components/list/list-19/template.json",
+      "previewImgSrc": "templates/components/list/list-19/preview.png",
+      "datasource": "templates/components/list/list-19/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Select & icon",
+      "filePath": "templates/components/list/list-20/template.json",
+      "previewImgSrc": "templates/components/list/list-20/preview.png",
+      "datasource": "templates/components/list/list-20/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Avatar & Progress",
+      "filePath": "templates/components/list/list-21/template.json",
+      "previewImgSrc": "templates/components/list/list-21/preview.png",
+      "datasource": "templates/components/list/list-21/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Bar charts list",
+      "filePath": "templates/components/list/list-22/template.json",
+      "previewImgSrc": "templates/components/list/list-22/preview.png",
+      "datasource": "templates/components/list/list-22/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Pie charts list",
+      "filePath": "templates/components/list/list-23/template.json",
+      "previewImgSrc": "templates/components/list/list-23/preview.png",
+      "datasource": "templates/components/list/list-23/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Arch charts list",
+      "filePath": "templates/components/list/list-24/template.json",
+      "previewImgSrc": "templates/components/list/list-24/preview.png",
+      "datasource": "templates/components/list/list-24/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Stepper in progress",
+      "filePath": "templates/components/stepper/stepper-1/template.json",
+      "previewImgSrc": "templates/components/stepper/stepper-1/preview.png",
+      "datasource": "templates/components/stepper/stepper-1/datasource.json",
+      "jigLibraryRef": "jc-stepper"
+    },
+    {
+      "name": "Completed stepper",
+      "filePath": "templates/components/stepper/stepper-2/template.json",
+      "previewImgSrc": "templates/components/stepper/stepper-2/preview.png",
+      "datasource": "templates/components/stepper/stepper-2/datasource.json",
+      "jigLibraryRef": "jc-stepper"
+    },
+    {
+      "name": "Web view with the default height",
+      "filePath": "templates/components/web-view/web-view-1/template.json",
+      "previewImgSrc": "templates/components/web-view/web-view-1/preview.png",
+      "jigLibraryRef": "jc-web-view"
+    },
+    {
+      "name": "Web view with the height 400",
+      "filePath": "templates/components/web-view/web-view-2/template.json",
+      "previewImgSrc": "templates/components/web-view/web-view-2/preview.png",
+      "jigLibraryRef": "jc-web-view"
     }
   ]
 }

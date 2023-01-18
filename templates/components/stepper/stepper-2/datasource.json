@@ -1,0 +1,46 @@
+{
+    "steps": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "title": "Step 1",
+            "value": "step1",
+            "icon": "checkbox-checked",
+            "isActive": false,
+            "isCompleted": true,
+            "isWaiting": false,
+            "isSkipped": false
+          },
+          {
+            "description": "Step skipped",
+            "title": "Step 2",
+            "value": "step2",
+            "icon": "alert-circle",
+            "isActive": false,
+            "isCompleted": false,
+            "isWaiting": false,
+            "isSkipped": true
+          },
+          {
+            "title": "Step 3",
+            "value": "step3",
+            "icon": "checkbox-checked",
+            "isActive": false,
+            "isCompleted": true,
+            "isWaiting": false,
+            "isSkipped": false
+          },
+          {
+            "title": "Step 4",
+            "value": "step4",
+            "icon": "checkbox-checked",
+            "isActive": false,
+            "isCompleted": true,
+            "isWaiting": false,
+            "isSkipped": false
+          }
+        ]
+      }
+    }
+  }

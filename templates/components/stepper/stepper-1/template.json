@@ -1,0 +1,27 @@
+{
+    "options": {
+      "isExpandable": true,
+      "data": "=@ctx.datasources.steps",
+      "title": "=@ctx.datasources.steps[isActive = true].title",
+      "subtitle": "=@ctx.datasources.steps[isActive = true].description",
+      "item": {
+        "type": "component.step",
+        "options": {
+          "title": "=@ctx.current.item.title",
+          "description": "=@ctx.current.item.description",
+          "value": "=@ctx.current.item.value",
+          "leftElement": {
+            "element": "icon",
+            "name": "=@ctx.current.item.icon"
+          },
+          "style": {
+            "isPositive": "=@ctx.current.item.isCompleted",
+            "isActive": "=@ctx.current.item.isActive",
+            "isStrikeThrough": "=@ctx.current.item.isCompleted",
+            "isDisabled": "=@ctx.current.item.isWaiting"
+          }
+        }
+      },
+      "completedPercentage": "=($count(@ctx.datasources.steps[isCompleted = true]) / $count(@ctx.datasources.steps.title))"
+    }
+  }
