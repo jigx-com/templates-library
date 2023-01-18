@@ -1,0 +1,37 @@
+{
+    "options": {
+      "maximumItemsToRender": 8,
+      "data": "=@ctx.datasources.swipeable-list",
+      "item": {
+        "type": "component.list-item",
+        "options": {
+          "title": "=@ctx.current.item.title",
+          "subtitle": "=@ctx.current.item.subtitle",
+          "rightElement": {
+            "element": "icon",
+            "name": "=@ctx.current.item.icon"
+          },
+          "swipeable": {
+            "right": [
+              {
+                "onPress": {
+                  "type": "action.go-back"
+                },
+                "label": "Primary Action",
+                "color": "primary",
+                "icon": "alarm-bell"
+              },
+              {
+                "onPress": {
+                  "type": "action.go-back"
+                },
+                "label": "Secondary Action",
+                "color": "warning",
+                "icon": "alert-triangle"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }

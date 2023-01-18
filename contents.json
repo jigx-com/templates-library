@@ -1330,6 +1330,69 @@
       "previewImgSrc": "templates/components/list/list-15/preview.png",
       "datasource": "templates/components/list/list-15/datasource.json",
       "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Horizontal list",
+      "filePath": "templates/components/list/list-16/template.json",
+      "previewImgSrc": "templates/components/list/list-16/preview.png",
+      "datasource": "templates/components/list/list-16/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Swipe & icon",
+      "filePath": "templates/components/list/list-17/template.json",
+      "previewImgSrc": "templates/components/list/list-17/preview.png",
+      "datasource": "templates/components/list/list-17/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Checkbox and avatar",
+      "filePath": "templates/components/list/list-18/template.json",
+      "previewImgSrc": "templates/components/list/list-18/preview.png",
+      "datasource": "templates/components/list/list-18/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Switch & image",
+      "filePath": "templates/components/list/list-19/template.json",
+      "previewImgSrc": "templates/components/list/list-19/preview.png",
+      "datasource": "templates/components/list/list-19/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Select & icon",
+      "filePath": "templates/components/list/list-20/template.json",
+      "previewImgSrc": "templates/components/list/list-20/preview.png",
+      "datasource": "templates/components/list/list-20/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Avatar & Progress",
+      "filePath": "templates/components/list/list-21/template.json",
+      "previewImgSrc": "templates/components/list/list-21/preview.png",
+      "datasource": "templates/components/list/list-21/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Bar charts list",
+      "filePath": "templates/components/list/list-22/template.json",
+      "previewImgSrc": "templates/components/list/list-22/preview.png",
+      "datasource": "templates/components/list/list-22/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Pie charts list",
+      "filePath": "templates/components/list/list-23/template.json",
+      "previewImgSrc": "templates/components/list/list-23/preview.png",
+      "datasource": "templates/components/list/list-23/datasource.json",
+      "jigLibraryRef": "jc-list"
+    },
+    {
+      "name": "Arch charts list",
+      "filePath": "templates/components/list/list-24/template.json",
+      "previewImgSrc": "templates/components/list/list-24/preview.png",
+      "datasource": "templates/components/list/list-24/datasource.json",
+      "jigLibraryRef": "jc-list"
     }
   ]
 }
