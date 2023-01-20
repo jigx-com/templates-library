@@ -4,10 +4,10 @@
   "children": [
     {
       "isTitleHidden": true,
-      "jigId": "type-default-7"
+      "jigId": "type-default"
     },
     {
-      "jigId": "type-list-2"
+      "jigId": "type-list"
     }
   ],
   "header": {

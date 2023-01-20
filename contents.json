@@ -229,11 +229,11 @@
       "jigLibraryRef": "jig-composite",
       "jigFiles": [
         {
-          "name": "type-default-7",
+          "name": "type-default",
           "path": "templates/jigs/composite/composite-1/element-1.json"
         },
         {
-          "name": "type-list-2",
+          "name": "type-list",
           "path": "templates/jigs/composite/composite-1/element-2.json"
         }
       ]
