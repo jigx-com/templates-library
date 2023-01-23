@@ -7,7 +7,7 @@
         {
           "options": {
             "title": "Add new opportunity",
-            "linkTo": "type-list-2"
+            "linkTo": "create the file for this action"
           },
           "type": "action.go-to"
         }

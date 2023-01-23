@@ -7,7 +7,7 @@
         {
           "options": {
             "title": "Add appointment",
-            "linkTo": "new-appointment"
+            "linkTo": "create the file for this action"
           },
           "type": "action.go-to"
         }
@@ -96,7 +96,7 @@
       "onButtonPress": {
         "options": {
           "title": "Bežněkam",
-          "linkTo": "composite-avatar"
+          "linkTo": "create the file for this action"
         },
         "type": "action.go-to"
       },

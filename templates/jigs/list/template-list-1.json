@@ -7,7 +7,7 @@
         {
           "options": {
             "title": "Buy products with low inventory",
-            "linkTo": "template-document-1"
+            "linkTo": "create the file for this action"
           },
           "type": "action.go-to"
         }
@@ -170,7 +170,7 @@
             "label": "label",
             "onPress": {
               "options": {
-                "linkTo": "template-list-1"
+                "linkTo": "create the file for this action"
               },
               "type": "action.go-to"
             }
@@ -183,7 +183,7 @@
             "label": "label",
             "onPress": {
               "options": {
-                "linkTo": "template-list-1"
+                "linkTo": "create the file for this action"
               },
               "type": "action.go-to"
             }

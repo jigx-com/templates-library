@@ -7,7 +7,7 @@
         {
           "options": {
             "title": "Edit employee",
-            "linkTo": "editEmployee"
+            "linkTo": "create the file for this action"
           },
           "type": "action.go-to"
         }
@@ -118,7 +118,7 @@
                   "first-name": "=@ctx.datasources.employeeDetail.employee-first-name",
                   "surname": "=@ctx.datasources.employeeDetail.employee-surname"
                 },
-                "linkTo": "template-default-2-1"
+                "linkTo": "create the file for this action"
               },
               "type": "action.go-to"
             },

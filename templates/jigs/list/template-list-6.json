@@ -7,7 +7,7 @@
         {
           "options": {
             "title": "Add",
-            "linkTo": "template-list-6"
+            "linkTo": "create the file for this action"
           },
           "type": "action.go-to"
         }
