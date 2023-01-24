@@ -1691,6 +1691,18 @@
       "jigLibraryRef": "jc-stepper"
     },
     {
+      "name": "Video player - Autoplay: True / Ratio 16:9",
+      "filePath": "templates/components/video-player/video-player-1/template.json",
+      "previewImgSrc": "templates/components/video-player/video-player-1/preview.png",
+      "jigLibraryRef": "jc-video-player-on-jig"
+    },
+    {
+      "name": "Video player - Autoplay: False / Ratio 4:3",
+      "filePath": "templates/components/video-player/video-player-2/template.json",
+      "previewImgSrc": "templates/components/video-player/video-player-2/preview.png",
+      "jigLibraryRef": "jc-video-player-on-jig"
+    },
+    {
       "name": "Web view with the default height",
       "filePath": "templates/components/web-view/web-view-1/template.json",
       "previewImgSrc": "templates/components/web-view/web-view-1/preview.png",
