@@ -1,4 +1,5 @@
 {
+  "type": "component.line-chart",
   "options": {
     "chart": {
       "title": "Legend isHidden: false"
