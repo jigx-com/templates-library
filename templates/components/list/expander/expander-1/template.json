@@ -1,64 +1,59 @@
 {
-    "options": {
-      "data": "=@ctx.datasources.list",
-      "item": {
-        "type": "component.expander",
+  "options": {
+    "children": [
+      {
         "options": {
-          "header": {
-            "centerElement": {
-              "type": "component.stage",
-              "options": {
-                "icon": "plane-2",
-                "right": {
-                  "title": "Start title",
-                  "subtitle": "Start subtitle"
-                },
-                "left": {
-                  "title": "End title",
-                  "subtitle": "End subtile"
-                }
-              }
-            }
-          },
           "children": [
             {
-              "type": "component.entity",
               "options": {
-                "isCompact": true,
                 "children": [
                   {
-                    "type": "component.field-row",
                     "options": {
-                      "children": [
-                        {
-                          "type": "component.entity-field",
-                          "options": {
-                            "label": "Title 1",
-                            "value": "Value"
-                          }
-                        },
-                        {
-                          "type": "component.entity-field",
-                          "options": {
-                            "label": "Title 2",
-                            "value": "Value"
-                          }
-                        }
-                      ]
-                    }
+                      "label": "Title 1",
+                      "value": "Value"
+                    },
+                    "type": "component.entity-field"
                   },
                   {
-                    "type": "component.entity-field",
                     "options": {
-                      "label": "Title 3",
+                      "label": "Title 2",
                       "value": "Value"
-                    }
+                    },
+                    "type": "component.entity-field"
                   }
                 ]
-              }
+              },
+              "type": "component.field-row"
+            },
+            {
+              "options": {
+                "label": "Title 3",
+                "value": "Value"
+              },
+              "type": "component.entity-field"
             }
-          ]
-        }
+          ],
+          "isCompact": true
+        },
+        "type": "component.entity"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "icon": "plane-2",
+          "left": {
+            "subtitle": "End subtile",
+            "title": "End title"
+          },
+          "right": {
+            "subtitle": "Start subtitle",
+            "title": "Start title"
+          }
+        },
+        "type": "component.stage"
       }
     }
-  }
+  },
+  "type": "component.expander"
+}

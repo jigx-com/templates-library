@@ -1,59 +1,54 @@
 {
-    "options": {
-      "data": "=@ctx.datasources.list",
-      "item": {
-        "type": "component.expander",
+  "options": {
+    "children": [
+      {
         "options": {
-          "header": {
-            "centerElement": {
-              "type": "component.titles",
-              "options": {
-                "title": "Title",
-                "subtitle": "Subtitle",
-                "icon": "truck-cargo",
-                "align": "center",
-                "iconColor": "color6"
-              }
-            }
-          },
           "children": [
             {
-              "type": "component.entity",
               "options": {
                 "children": [
                   {
-                    "type": "component.field-row",
                     "options": {
-                      "children": [
-                        {
-                          "type": "component.entity-field",
-                          "options": {
-                            "label": "Title 1",
-                            "value": "Value"
-                          }
-                        },
-                        {
-                          "type": "component.entity-field",
-                          "options": {
-                            "label": "Title 2",
-                            "value": "Value"
-                          }
-                        }
-                      ]
-                    }
+                      "label": "Title 1",
+                      "value": "Value"
+                    },
+                    "type": "component.entity-field"
                   },
                   {
-                    "type": "component.entity-field",
                     "options": {
-                      "label": "Title 3",
+                      "label": "Title 2",
                       "value": "Value"
-                    }
+                    },
+                    "type": "component.entity-field"
                   }
                 ]
-              }
+              },
+              "type": "component.field-row"
+            },
+            {
+              "options": {
+                "label": "Title 3",
+                "value": "Value"
+              },
+              "type": "component.entity-field"
             }
           ]
-        }
+        },
+        "type": "component.entity"
+      }
+    ],
+    "header": {
+      "centerElement": {
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle",
+          "align": "center",
+          "icon": "truck-cargo",
+          "iconColor": "color6"
+        },
+        "type": "component.titles"
       }
     }
-  }
+  },
+  "type": "component.expander"
+}
