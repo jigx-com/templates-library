@@ -1,13 +1,6 @@
 {
-    "options": {
-      "title": "Web view with the default height",
-      "children": [
-        {
-          "type": "component.web-view",
-          "options": {
-            "uri": "https://www.jigx.com/process-automation/"
-          }
-        }
-      ]
-    }
+  "type": "component.web-view",
+  "options": {
+    "uri": "https://www.jigx.com/process-automation/"
   }
+}

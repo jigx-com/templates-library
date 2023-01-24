@@ -1,14 +1,7 @@
 {
-    "options": {
-      "title": "Web view with the height 400",
-      "children": [
-        {
-          "type": "component.web-view",
-          "options": {
-            "uri": "https://www.jigx.com/terms-of-service/",
-            "height": 400
-          }
-        }
-      ]
-    }
+  "type": "component.web-view",
+  "options": {
+    "uri": "https://www.jigx.com/terms-of-service/",
+    "height": 400
   }
+}
