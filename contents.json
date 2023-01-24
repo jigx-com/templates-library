@@ -1478,21 +1478,21 @@
       "filePath": "templates/components/list/expander/expander-1/template.json",
       "previewImgSrc": "templates/components/list/expander/expander-1/preview.png",
       "datasource": "templates/components/list/expander/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-expander"
     },
     {
       "name": "Expander header - Titles - Left aligned",
       "filePath": "templates/components/list/expander/expander-2/template.json",
       "previewImgSrc": "templates/components/list/expander/expander-2/preview.png",
       "datasource": "templates/components/list/expander/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-expander"
     },
     {
       "name": "Expander header - Titles - Center aligned",
       "filePath": "templates/components/list/expander/expander-3/template.json",
       "previewImgSrc": "templates/components/list/expander/expander-3/preview.png",
       "datasource": "templates/components/list/expander/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-expander"
     },
     {
       "name": "Left title & subtitle - Icon - Right title & subtitle",
