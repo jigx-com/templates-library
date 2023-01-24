@@ -1,24 +1,31 @@
 {
+  "type": "component.expander",
+  "options": {
+    "isInitiallyCollapsed": false,
+    "header": {
+      "centerElement": {
+        "type": "component.stage",
+        "options": {
+          "right": {
+            "title": "End title",
+            "subtitle": "End subtitle"
+          },
+          "left": {
+            "title": "Start title",
+            "subtitle": "Start subtitle"
+          }
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.avatar",
         "options": {
           "align": "center",
           "text": "",
           "uri": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-        },
-        "type": "component.avatar"
+        }
       }
-    ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "title": "Title",
-          "subtitle": "Subtitle"
-        },
-        "type": "component.titles"
-      }
-    },
-    "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+    ]
+  }
 }

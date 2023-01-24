@@ -1,27 +1,34 @@
 {
+  "type": "component.expander",
+  "options": {
+    "isInitiallyCollapsed": false,
+    "header": {
+      "centerElement": {
+        "type": "component.stage",
+        "options": {
+          "right": {
+            "title": "End title",
+            "subtitle": "End subtitle"
+          },
+          "left": {
+            "title": "Start title",
+            "subtitle": "Start subtitle"
+          }
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.bar-chart",
         "options": {
           "series": [
             {
-              "color": "color3",
-              "data": "=@ctx.datasources.barchart"
+              "data": "=@ctx.datasources.barchart",
+              "color": "color2"
             }
           ]
-        },
-        "type": "component.bar-chart"
+        }
       }
-    ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "title": "Title",
-          "subtitle": "Subtitle"
-        },
-        "type": "component.titles"
-      }
-    },
-    "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+    ]
+  }
 }
