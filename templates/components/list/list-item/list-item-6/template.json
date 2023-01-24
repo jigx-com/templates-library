@@ -1,38 +1,33 @@
 {
-    "options": {
-      "data": "=@ctx.datasources.list",
-      "item": {
-        "type": "component.list-item",
-        "options": {
-          "divider": "solid",
-          "label": {
-            "title": "!!",
-            "color": [
-              {
-                "when": true,
-                "color": "color4"
-              }
-            ]
-          },
-          "color": [
-            {
-              "when": true,
-              "color": "color4"
-            }
-          ],
-          "title": "Item 1",
-          "subtitle": "Subtitle",
-          "description": "Description",
-          "leftElement": {
-            "element": "progress",
-            "title": "10 m",
-            "value": 0.3
-          },
-          "rightElement": {
-            "element": "icon",
-            "name": "information-circle"
-          }
+  "type": "component.list-item",
+  "options": {
+    "divider": "solid",
+    "label": {
+      "title": "!!",
+      "color": [
+        {
+          "when": true,
+          "color": "color4"
         }
+      ]
+    },
+    "color": [
+      {
+        "when": true,
+        "color": "color4"
       }
+    ],
+    "title": "Item 1",
+    "subtitle": "Subtitle",
+    "description": "Description",
+    "leftElement": {
+      "element": "progress",
+      "title": "10 m",
+      "value": 0.3
+    },
+    "rightElement": {
+      "element": "icon",
+      "name": "information-circle"
     }
   }
+}

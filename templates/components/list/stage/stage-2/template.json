@@ -1,17 +1,12 @@
 {
-    "options": {
-      "data": "=@ctx.datasources.list",
-      "item": {
-        "type": "component.stage",
-        "options": {
-          "icon": "truck-cargo",
-          "left": {
-            "title": "Start time"
-          },
-          "right": {
-            "title": "End time"
-          }
-        }
-      }
+  "type": "component.stage",
+  "options": {
+    "icon": "truck-cargo",
+    "left": {
+      "title": "Start time"
+    },
+    "right": {
+      "title": "End time"
     }
   }
+}

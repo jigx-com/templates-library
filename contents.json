@@ -1394,84 +1394,84 @@
       "filePath": "templates/components/list/list-item/list-item-1/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-1/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Percentage - Left checkbox - Right value",
       "filePath": "templates/components/list/list-item/list-item-2/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-2/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Left checkbox - Label - Avatars",
       "filePath": "templates/components/list/list-item/list-item-3/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-3/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Left avatar - Right icon",
       "filePath": "templates/components/list/list-item/list-item-4/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-4/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Left icon - Right value",
       "filePath": "templates/components/list/list-item/list-item-5/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-5/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Left progress - Right icon - Label",
       "filePath": "templates/components/list/list-item/list-item-6/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-6/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Left image - Right icon",
       "filePath": "templates/components/list/list-item/list-item-7/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-7/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Left image - Right checkbox",
       "filePath": "templates/components/list/list-item/list-item-8/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-8/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Left icon - Right switch",
       "filePath": "templates/components/list/list-item/list-item-9/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-9/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Left image - Right amount control",
       "filePath": "templates/components/list/list-item/list-item-10/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-10/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-list-item"
     },
     {
       "name": "Image - Amount control - Price - Discount",
       "filePath": "templates/components/list/product-item/product-item-1/template.json",
       "previewImgSrc": "templates/components/list/product-item/product-item-1/preview.png",
       "datasource": "templates/components/list/product-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-product-item"
     },
     {
       "name": "Image - Tag - Price",
       "filePath": "templates/components/list/product-item/product-item-2/template.json",
       "previewImgSrc": "templates/components/list/product-item/product-item-2/preview.png",
       "datasource": "templates/components/list/product-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-product-item"
     },
     {
       "name": "Expander header - Stage",
@@ -1499,14 +1499,14 @@
       "filePath": "templates/components/list/stage/stage-1/template.json",
       "previewImgSrc": "templates/components/list/stage/stage-1/preview.png",
       "datasource": "templates/components/list/stage/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-stage"
     },
     {
       "name": "Left title - Icon - Right title",
       "filePath": "templates/components/list/stage/stage-2/template.json",
       "previewImgSrc": "templates/components/list/stage/stage-2/preview.png",
       "datasource": "templates/components/list/stage/shared/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "jigLibraryRef": "jc-stage"
     },
     {
       "name": "Stock Inventory",
