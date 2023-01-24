@@ -90,13 +90,19 @@
     }
   ],
   "header": {
+    "type": "component.jig-header",
     "options": {
-      "title": "Filter, progress and label",
-      "subtitle": "List with filter, progress and label",
-      "source": {
-        "uri": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGFzayUyMGxpc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGFzayUyMGxpc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
+          },
+          "title": "Filter, progress and label",
+          "subtitle": "List with filter, progress and label"
+        }
       }
-    },
-    "type": "component.image"
+    }
   }
 }

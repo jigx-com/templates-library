@@ -89,13 +89,19 @@
     "type": "component.expander"
   },
   "header": {
+    "type": "component.jig-header",
     "options": {
-      "title": "Expander (titles)",
-      "subtitle": "List with Expanders (using Titles)",
-      "source": {
-        "uri": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+          },
+          "title": "Expander (titles)",
+          "subtitle": "List with Expanders (using Titles)"
+        }
       }
-    },
-    "type": "component.image"
+    }
   }
 }

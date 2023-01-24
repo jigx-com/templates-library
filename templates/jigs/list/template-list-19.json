@@ -70,13 +70,19 @@
     "type": "component.list-item"
   },
   "header": {
+    "type": "component.jig-header",
     "options": {
-      "title": "Switch & image",
-      "subtitle": "List with switch and image",
-      "source": {
-        "uri": "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1535905557558-afc4877a26fc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
+          },
+          "title": "Switch & image",
+          "subtitle": "List with switch and image"
+        }
       }
-    },
-    "type": "component.image"
+    }
   }
 }

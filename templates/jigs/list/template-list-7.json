@@ -47,13 +47,19 @@
     "type": "component.stage"
   },
   "header": {
+    "type": "component.jig-header",
     "options": {
-      "title": "Stage",
-      "subtitle": "List with Stage",
-      "source": {
-        "uri": "https://images.unsplash.com/photo-1511312817910-ffa2ca5d954e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHJpdmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1511312817910-ffa2ca5d954e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHJpdmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+          },
+          "title": "Stage",
+          "subtitle": "List with Stage"
+        }
       }
-    },
-    "type": "component.image"
+    }
   }
 }

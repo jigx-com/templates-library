@@ -59,14 +59,20 @@
     "type": "component.list-item"
   },
   "header": {
+    "type": "component.jig-header",
     "options": {
-      "title": "Select & icon",
-      "subtitle": "List with select and icon",
-      "source": {
-        "uri": "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvY3VtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvY3VtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+          },
+          "title": "Select & icon",
+          "subtitle": "List with select and icon"
+        }
       }
-    },
-    "type": "component.image"
+    }
   },
   "isSelectable": true
 }

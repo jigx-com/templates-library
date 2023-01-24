@@ -68,14 +68,20 @@
     "type": "component.list-item"
   },
   "header": {
+    "type": "component.jig-header",
     "options": {
-      "title": "Icon and switch",
-      "subtitle": "List with horizontal scrolling using icon and switch",
-      "source": {
-        "uri": "https://images.unsplash.com/photo-1631427962232-803d4f30c64f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1631427962232-803d4f30c64f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+          },
+          "title":  "Icon and switch",
+          "subtitle": "List with horizontal scrolling using icon and switch"
+        }
       }
-    },
-    "type": "component.image"
+    }
   },
   "isHorizontal": true
 }

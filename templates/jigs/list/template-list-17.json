@@ -79,13 +79,19 @@
     "type": "component.list-item"
   },
   "header": {
+    "type": "component.jig-header",
     "options": {
-      "title": "Swipe & icon",
-      "subtitle": "Swipeable list with the right icon",
-      "source": {
-        "uri": "https://builder.jigx.com/assets/images/header.jpg"
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://builder.jigx.com/assets/images/header.jpg"
+          },
+          "title": "Swipe & icon",
+          "subtitle": "Swipeable list with the right icon"
+        }
       }
-    },
-    "type": "component.image"
+    }
   }
 }

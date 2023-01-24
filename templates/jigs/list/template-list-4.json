@@ -64,13 +64,19 @@
     "type": "component.list-item"
   },
   "header": {
+    "type": "component.jig-header",
     "options": {
-      "title": "Avatar and icon",
-      "subtitle": "List with left avatar and right icon",
-      "source": {
-        "uri": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+          },
+          "title": "Avatar and icon",
+          "subtitle": "List with left avatar and right icon"
+        }
       }
-    },
-    "type": "component.image"
+    }
   }
 }

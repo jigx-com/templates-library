@@ -170,11 +170,17 @@
     }
   ],
   "header": {
+    "type": "component.jig-header",
     "options": {
-      "source": {
-        "uri": "https://media.istockphoto.com/id/157580156/photo/checklist.jpg?b=1&s=170667a&w=0&k=20&c=_rgoIwuX0j5G7kfbSp0Ogv12RZveJu46Y_juHxyOvTI="
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://media.istockphoto.com/id/157580156/photo/checklist.jpg?b=1&s=170667a&w=0&k=20&c=_rgoIwuX0j5G7kfbSp0Ogv12RZveJu46Y_juHxyOvTI="
+          }
+        }
       }
-    },
-    "type": "component.image"
+    }
   }
 }
