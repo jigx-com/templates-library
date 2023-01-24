@@ -1,4 +1,5 @@
 {
+  "type": "component.pie-chart",
   "options": {
     "chart": {
       "width": 300,
