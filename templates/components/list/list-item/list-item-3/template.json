@@ -1,35 +1,29 @@
 {
-    "options": {
-      "maximumItemsToRender": 8,
-      "data": "=@ctx.datasources.list",
-      "item": {
-        "type": "component.list-item",
-        "options": {
-          "divider": "solid",
-          "color": [
-            {
-              "when": true,
-              "color": "color14"
-            }
-          ],
-          "title": "Task name",
-          "subtitle": "Description of the task",
-          "leftElement": {
-            "element": "checkbox",
-            "value": true
-          },
-          "style": {
-            "isStrikeThrough": true
-          },
-          "avatars": [
-            {
-              "text": "VM"
-            }
-          ],
-          "label": {
-            "title": "category"
-          }
-        }
+  "type": "component.list-item",
+  "options": {
+    "divider": "solid",
+    "color": [
+      {
+        "when": true,
+        "color": "color14"
       }
+    ],
+    "title": "Task name",
+    "subtitle": "Description of the task",
+    "leftElement": {
+      "element": "checkbox",
+      "value": true
+    },
+    "style": {
+      "isStrikeThrough": true
+    },
+    "avatars": [
+      {
+        "text": "VM"
+      }
+    ],
+    "label": {
+      "title": "category"
     }
   }
+}
