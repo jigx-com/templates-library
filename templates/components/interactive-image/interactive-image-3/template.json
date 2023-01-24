@@ -1,4 +1,5 @@
 {
+  "type": "component.interactive-image",
   "options": {
     "imageHeight": 1500,
     "source": {

@@ -1,4 +1,5 @@
 {
+  "type": "component.interactive-image",
   "options": {
     "data": "=(@ctx.datasources.interactiveimg)\n",
     "item": {
