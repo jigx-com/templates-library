@@ -81,5 +81,8 @@ Here is the list of currently available ref names:
 | jc-checkbox          |          Checkbox |
 | jc-field-row         |         Field Row |
 | jc-avatar-field      |      Avatar Field |
+| jc-stage             |             Stage |
+| jc-list-item         |         List item |
+| jc-product-item      |      Product Item |
 
 The list will be updated with more references.
