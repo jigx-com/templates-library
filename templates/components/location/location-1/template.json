@@ -1,4 +1,5 @@
 {
+  "type": "component.location",
   "options": {
     "address": "=@ctx.datasources.address.street & ',' & @ctx.datasources.address.city & ',' & @ctx.datasources.address.country"
   }
