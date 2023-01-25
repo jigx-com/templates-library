@@ -225,7 +225,7 @@
     {
       "name": "Composite jig Lead overview",
       "filePath": "templates/jigs/composite/composite-1/template.json",
-      "previewImgSrc": "templates/jigs/composite/composite-1/preview.png",
+      "previewImgSrc": "templates/jigs/composite/composite-1/preview.jpeg",
       "jigLibraryRef": "jig-composite",
       "jigFiles": [
         {
