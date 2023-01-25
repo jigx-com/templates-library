@@ -1607,14 +1607,14 @@
       "jigLibraryRef": "jc-list"
     },
     {
-      "name": "Horizontal list",
+      "name": "Image and value (horizontal)",
       "filePath": "templates/components/list/list-15/template.json",
       "previewImgSrc": "templates/components/list/list-15/preview.png",
       "datasource": "templates/components/list/list-15/datasource.json",
       "jigLibraryRef": "jc-list"
     },
     {
-      "name": "Horizontal list",
+      "name": "Icon and switch (horizontal)",
       "filePath": "templates/components/list/list-16/template.json",
       "previewImgSrc": "templates/components/list/list-16/preview.png",
       "datasource": "templates/components/list/list-16/datasource.json",
@@ -1639,13 +1639,6 @@
       "filePath": "templates/components/list/list-19/template.json",
       "previewImgSrc": "templates/components/list/list-19/preview.png",
       "datasource": "templates/components/list/list-19/datasource.json",
-      "jigLibraryRef": "jc-list"
-    },
-    {
-      "name": "Select & icon",
-      "filePath": "templates/components/list/list-20/template.json",
-      "previewImgSrc": "templates/components/list/list-20/preview.png",
-      "datasource": "templates/components/list/list-20/datasource.json",
       "jigLibraryRef": "jc-list"
     },
     {

@@ -1,24 +1,25 @@
 {
-    "options": {
-      "maximumItemsToRender": 8,
-      "data": "=@ctx.datasources.progress",
-      "item": {
-        "type": "component.list-item",
-        "options": {
-          "title": "=@ctx.current.item.title",
-          "subtitle": "=@ctx.current.item.subtitle",
-          "progress": "=@ctx.current.item.progress",
-          "color": [
-            {
-              "when": true,
-              "color": "=@ctx.current.item.color"
-            }
-          ],
-          "leftElement": {
-            "element": "avatar",
-            "text": "=@ctx.current.item.avatar-text"
+  "type": "component.list",
+  "options": {
+    "maximumItemsToRender": 8,
+    "data": "=@ctx.datasources.progress",
+    "item": {
+      "type": "component.list-item",
+      "options": {
+        "title": "=@ctx.current.item.title",
+        "subtitle": "=@ctx.current.item.subtitle",
+        "progress": "=@ctx.current.item.progress",
+        "color": [
+          {
+            "when": true,
+            "color": "=@ctx.current.item.color"
           }
+        ],
+        "leftElement": {
+          "element": "avatar",
+          "text": "=@ctx.current.item.avatar-text"
         }
       }
     }
   }
+}

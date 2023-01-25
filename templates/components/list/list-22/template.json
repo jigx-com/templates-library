@@ -1,22 +1,23 @@
 {
-    "options": {
-      "maximumItemsToRender": 8,
-      "data": "=@ctx.datasources.bar",
-      "item": {
-        "type": "component.bar-chart",
-        "options": {
-          "chart": {
-            "title": "=@ctx.current.item.title",
-            "subtitle": "=@ctx.current.item.subtitle",
-            "height": 260
-          },
-          "series": [
-            {
-              "data": "=@ctx.current.item.data",
-              "color": "=@ctx.current.item.color"
-            }
-          ]
-        }
+  "type": "component.list",
+  "options": {
+    "maximumItemsToRender": 8,
+    "data": "=@ctx.datasources.bar",
+    "item": {
+      "type": "component.bar-chart",
+      "options": {
+        "chart": {
+          "title": "=@ctx.current.item.title",
+          "subtitle": "=@ctx.current.item.subtitle",
+          "height": 260
+        },
+        "series": [
+          {
+            "data": "=@ctx.current.item.data",
+            "color": "=@ctx.current.item.color"
+          }
+        ]
       }
     }
   }
+}

@@ -1,4 +1,5 @@
 {
+  "type": "component.list",
   "options": {
     "data": "=@ctx.datasources.inventory",
     "maximumItemsToRender": 20,

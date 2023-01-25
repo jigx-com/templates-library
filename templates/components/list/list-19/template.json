@@ -1,22 +1,23 @@
 {
-    "options": {
-      "maximumItemsToRender": 8,
-      "data": "=@ctx.datasources.switch-list",
-      "item": {
-        "type": "component.list-item",
-        "options": {
-          "title": "=@ctx.current.item.title",
-          "subtitle": "=@ctx.current.item.subtitle",
-          "rightElement": {
-            "element": "switch",
-            "value": "=@ctx.current.item.active = true ? true :false"
-          },
-          "leftElement": {
-            "element": "image",
-            "text": "",
-            "uri": "=@ctx.current.item.image"
-          }
+  "type": "component.list",
+  "options": {
+    "maximumItemsToRender": 8,
+    "data": "=@ctx.datasources.switch-list",
+    "item": {
+      "type": "component.list-item",
+      "options": {
+        "title": "=@ctx.current.item.title",
+        "subtitle": "=@ctx.current.item.subtitle",
+        "rightElement": {
+          "element": "switch",
+          "value": "=@ctx.current.item.active = true ? true :false"
+        },
+        "leftElement": {
+          "element": "image",
+          "text": "",
+          "uri": "=@ctx.current.item.image"
         }
       }
     }
   }
+}

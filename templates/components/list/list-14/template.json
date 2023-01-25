@@ -1,26 +1,27 @@
 {
-    "options": {
-      "maximumItemsToRender": 8,
-      "data": "=@ctx.datasources.product-item",
-      "item": {
-        "type": "component.product-item",
-        "options": {
-          "title": "=@ctx.current.item.title",
-          "image": {
-            "uri": "=@ctx.current.item.uri"
-          },
-          "discount": "=@ctx.current.item.discount",
-          "price": {
-            "value": "=@ctx.current.item.price",
-            "format": {
-              "numberStyle": "currency"
-            }
-          },
-          "amountControl": {
-            "maximum": 10,
-            "initialValue": "=@ctx.current.item.amount"
+  "type": "component.list",
+  "options": {
+    "maximumItemsToRender": 8,
+    "data": "=@ctx.datasources.product-item",
+    "item": {
+      "type": "component.product-item",
+      "options": {
+        "title": "=@ctx.current.item.title",
+        "image": {
+          "uri": "=@ctx.current.item.uri"
+        },
+        "discount": "=@ctx.current.item.discount",
+        "price": {
+          "value": "=@ctx.current.item.price",
+          "format": {
+            "numberStyle": "currency"
           }
+        },
+        "amountControl": {
+          "maximum": 10,
+          "initialValue": "=@ctx.current.item.amount"
         }
       }
     }
   }
+}
