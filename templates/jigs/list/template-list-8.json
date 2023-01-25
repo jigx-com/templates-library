@@ -1,105 +1,6 @@
 {
-  "title": "Expander (stage)",
+  "title": "Arch charts list",
   "type": "jig.list",
-  "datasources": {
-    "expander-stage": {
-      "options": {
-        "data": [
-          {
-            "endSubtitle": "Subtitle",
-            "endTitle": "End title",
-            "id": 1,
-            "startSubtitle": "Subtitle",
-            "startTitle": "Start title",
-            "value-entity-field-1": "Value 1",
-            "value-entity-field-2": "Value 2",
-            "value-entity-field-3": "Value 3"
-          },
-          {
-            "endSubtitle": "Subtitle",
-            "endTitle": "End title",
-            "id": 2,
-            "startSubtitle": "Subtitle",
-            "startTitle": "Start title",
-            "value-entity-field-1": "Value 1",
-            "value-entity-field-2": "Value 2",
-            "value-entity-field-3": "Value 3"
-          },
-          {
-            "endSubtitle": "Subtitle",
-            "endTitle": "End title",
-            "id": 3,
-            "startSubtitle": "Subtitle",
-            "startTitle": "Start title",
-            "value-entity-field-1": "Value 1",
-            "value-entity-field-2": "Value 2",
-            "value-entity-field-3": "Value 3"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "data": "=@ctx.datasources.expander-stage",
-  "item": {
-    "options": {
-      "children": [
-        {
-          "options": {
-            "children": [
-              {
-                "options": {
-                  "children": [
-                    {
-                      "options": {
-                        "label": "Title 1",
-                        "value": "=@ctx.current.item.value-entity-field-1"
-                      },
-                      "type": "component.entity-field"
-                    },
-                    {
-                      "options": {
-                        "label": "Title 2",
-                        "value": "=@ctx.current.item.value-entity-field-2"
-                      },
-                      "type": "component.entity-field"
-                    }
-                  ]
-                },
-                "type": "component.field-row"
-              },
-              {
-                "options": {
-                  "label": "Title 3",
-                  "value": "=@ctx.current.item.value-entity-field-3"
-                },
-                "type": "component.entity-field"
-              }
-            ],
-            "variant": "row"
-          },
-          "type": "component.entity"
-        }
-      ],
-      "header": {
-        "centerElement": {
-          "options": {
-            "icon": "plane-2",
-            "left": {
-              "subtitle": "=@ctx.current.item.startSubtitle",
-              "title": "=@ctx.current.item.startTitle"
-            },
-            "right": {
-              "subtitle": "=@ctx.current.item.endSubtitle",
-              "title": "=@ctx.current.item.endTitle"
-            }
-          },
-          "type": "component.stage"
-        }
-      }
-    },
-    "type": "component.expander"
-  },
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -108,12 +9,69 @@
         "type": "component.image",
         "options": {
           "source": {
-            "uri": "https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGxhbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
+            "uri": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
           },
-          "title": "Expander (stage)",
-          "subtitle": "List with Expanders (using Stage)"
+          "title": "Arch charts list",
+          "subtitle": "List with arch charts"
         }
       }
+    }
+  },
+  "datasources": {
+    "arch": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color6",
+            "data": [
+              25
+            ]
+          },
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color7",
+            "data": [
+              45
+            ]
+          },
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color8",
+            "data": [
+              33
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "data": "=@ctx.datasources.arch",
+  "item": {
+    "type": "component.pie-chart",
+    "options": {
+      "chart": {
+        "height": 160,
+        "title": {
+          "text": "=@ctx.current.item.title",
+          "verticalAlign": "center"
+        },
+        "subtitle": {
+          "text": "=@ctx.current.item.subtitle",
+          "verticalAlign": "center"
+        }
+      },
+      "series": [
+        {
+          "data": "=@ctx.current.item.data",
+          "color": "=@ctx.current.item.color",
+          "layout": "arch"
+        }
+      ]
     }
   }
 }

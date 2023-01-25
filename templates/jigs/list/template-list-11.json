@@ -1,94 +1,36 @@
 {
-  "title": "Filter, progress and label",
+  "title": "Stage",
   "type": "jig.list",
   "datasources": {
-    "filter-list": {
+    "stage": {
+      "type": "datasource.static",
       "options": {
         "data": [
           {
-            "progress": 0.2,
-            "status": "active",
-            "subtitle": "Subtitle - active",
-            "title": "Title 1"
+            "id": 1,
+            "startTitle": "Start title",
+            "startSubtitle": "Start subtitle",
+            "endTitle": "End title",
+            "endSubtitle": "End subtitle"
           },
           {
-            "progress": 0.56,
-            "status": "active",
-            "subtitle": "Subtitle - active",
-            "title": "Title 2"
+            "id": 2,
+            "startTitle": "Start title",
+            "startSubtitle": "Start subtitle",
+            "endTitle": "End title",
+            "endSubtitle": "End subtitle"
           },
           {
-            "progress": 0.8,
-            "status": "inactive",
-            "subtitle": "Subtitle - inactive",
-            "title": "Title 3"
-          },
-          {
-            "progress": 0.3,
-            "status": "inactive",
-            "subtitle": "Subtitle - inactive",
-            "title": "Title 4"
-          },
-          {
-            "progress": 0.1,
-            "status": "active",
-            "subtitle": "Subtitle - active",
-            "title": "Title 5"
-          },
-          {
-            "progress": 0.9,
-            "status": "inactive",
-            "subtitle": "Subtitle - inactive",
-            "title": "Title 6"
+            "id": 3,
+            "startTitle": "Start title",
+            "startSubtitle": "Start subtitle",
+            "endTitle": "End title",
+            "endSubtitle": "End subtitle"
           }
         ]
-      },
-      "type": "datasource.static"
+      }
     }
   },
-  "data": "=\\$filter(@ctx.datasources.filter-list, function(\\$v, \\$i, \\$a) {\n  @ctx.jig.state.filter = 'ALL' or \\$v.status = @ctx.jig.state.filter\n}) \n",
-  "item": {
-    "options": {
-      "title": "=@ctx.current.item.title",
-      "subtitle": "=@ctx.current.item.subtitle",
-      "color": [
-        {
-          "color": "color2",
-          "when": "=@ctx.current.item.status = 'active'"
-        },
-        {
-          "color": "color4",
-          "when": "=@ctx.current.item.status  = 'inactive'"
-        }
-      ],
-      "label": {
-        "color": [
-          {
-            "color": "color2",
-            "when": "=@ctx.current.item.status = 'active'"
-          }
-        ],
-        "isHidden": "=@ctx.current.item.status  = 'inactive'",
-        "title": "Label active"
-      },
-      "progress": "=@ctx.current.item.progress"
-    },
-    "type": "component.list-item"
-  },
-  "filter": [
-    {
-      "title": "All",
-      "value": "ALL"
-    },
-    {
-      "title": "Active",
-      "value": "active"
-    },
-    {
-      "title": "Inactive",
-      "value": "inactive"
-    }
-  ],
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -97,11 +39,26 @@
         "type": "component.image",
         "options": {
           "source": {
-            "uri": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGFzayUyMGxpc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
+            "uri": "https://images.unsplash.com/photo-1511312817910-ffa2ca5d954e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHJpdmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
           },
-          "title": "Filter, progress and label",
-          "subtitle": "List with filter, progress and label"
+          "title": "Stage",
+          "subtitle": "List with Stage"
         }
+      }
+    }
+  },
+  "data": "=@ctx.datasources.stage",
+  "item": {
+    "type": "component.stage",
+    "options": {
+      "icon": "arrow-right",
+      "right": {
+        "title": "=@ctx.current.item.endTitle",
+        "subtitle": "=@ctx.current.item.endSubtitle"
+      },
+      "left": {
+        "title": "=@ctx.current.item.startTitle",
+        "subtitle": "=@ctx.current.item.startSubtitle"
       }
     }
   }

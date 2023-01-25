@@ -1,46 +1,6 @@
 {
-  "title": "Search and left image",
+  "title": "Pie charts list",
   "type": "jig.list",
-  "datasources": {
-    "search": {
-      "options": {
-        "data": [
-          {
-            "id": 1,
-            "image": "https://images.unsplash.com/photo-1500281781950-6cd80847ebcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80",
-            "subtitle": "Subtitle 1",
-            "title": "Title 1"
-          },
-          {
-            "id": 2,
-            "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1431&q=80",
-            "subtitle": "Subtitle 2",
-            "title": "Title 2"
-          },
-          {
-            "id": 3,
-            "image": "https://images.unsplash.com/photo-1522791465802-47616431a4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1451&q=80",
-            "subtitle": "Subtitle 3",
-            "title": "Title 3"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "data": "=\\$filter(@ctx.datasources.search, function(\\$v){@ctx.datasources.search ? \\$contains(\\$string(\\$v.title),\\$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) :true})[]\n",
-  "item": {
-    "options": {
-      "title": "=@ctx.current.item.title",
-      "subtitle": "=@ctx.current.item.subtitle",
-      "leftElement": {
-        "element": "image",
-        "text": "",
-        "uri": "=@ctx.current.item.image"
-      }
-    },
-    "type": "component.list-item"
-  },
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -49,13 +9,69 @@
         "type": "component.image",
         "options": {
           "source": {
-            "uri": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNlYXJjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+            "uri": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
           },
-          "title": "Search and left image",
-          "subtitle": "List with search and left image"
+          "title": "Pie charts list",
+          "subtitle": "List with pie charts"
         }
       }
     }
   },
-  "isSearchable": true
+  "datasources": {
+    "pie": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color6",
+            "data": [
+              25
+            ]
+          },
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color7",
+            "data": [
+              45
+            ]
+          },
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color8",
+            "data": [
+              33
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "data": "=@ctx.datasources.pie",
+  "item": {
+    "type": "component.pie-chart",
+    "options": {
+      "chart": {
+        "height": 160,
+        "title": {
+          "text": "=@ctx.current.item.title",
+          "verticalAlign": "center"
+        },
+        "subtitle": {
+          "text": "=@ctx.current.item.subtitle",
+          "verticalAlign": "center"
+        }
+      },
+      "series": [
+        {
+          "data": "=@ctx.current.item.data",
+          "color": "=@ctx.current.item.color",
+          "layout": "pie"
+        }
+      ]
+    }
+  }
 }

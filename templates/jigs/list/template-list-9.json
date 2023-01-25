@@ -1,93 +1,6 @@
 {
-  "title": "Expander (titles)",
+  "title": "Bar charts list",
   "type": "jig.list",
-  "datasources": {
-    "expander-titles": {
-      "options": {
-        "data": [
-          {
-            "id": 1,
-            "subtitle": "Subtitle",
-            "title": "Title",
-            "value-entity-field-1": "Value 1",
-            "value-entity-field-2": "Value 2",
-            "value-entity-field-3": "Value 3"
-          },
-          {
-            "id": 2,
-            "subtitle": "Subtitle",
-            "title": "Title",
-            "value-entity-field-1": "Value 1",
-            "value-entity-field-2": "Value 2",
-            "value-entity-field-3": "Value 3"
-          },
-          {
-            "id": 3,
-            "subtitle": "Subtitle",
-            "title": "Title",
-            "value-entity-field-1": "Value 1",
-            "value-entity-field-2": "Value 2",
-            "value-entity-field-3": "Value 3"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "data": "=@ctx.datasources.expander-titles",
-  "item": {
-    "options": {
-      "children": [
-        {
-          "options": {
-            "children": [
-              {
-                "options": {
-                  "children": [
-                    {
-                      "options": {
-                        "label": "Title 1",
-                        "value": "=@ctx.current.item.value-entity-field-1"
-                      },
-                      "type": "component.entity-field"
-                    },
-                    {
-                      "options": {
-                        "label": "Title 2",
-                        "value": "=@ctx.current.item.value-entity-field-2"
-                      },
-                      "type": "component.entity-field"
-                    }
-                  ]
-                },
-                "type": "component.field-row"
-              },
-              {
-                "options": {
-                  "label": "Title 3",
-                  "value": "=@ctx.current.item.value-entity-field-3"
-                },
-                "type": "component.entity-field"
-              }
-            ]
-          },
-          "type": "component.entity"
-        }
-      ],
-      "header": {
-        "centerElement": {
-          "options": {
-            "title": "=@ctx.current.item.title",
-            "subtitle": "=@ctx.current.item.subtitle",
-            "align": "left",
-            "icon": "person"
-          },
-          "type": "component.titles"
-        }
-      }
-    },
-    "type": "component.expander"
-  },
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -96,12 +9,107 @@
         "type": "component.image",
         "options": {
           "source": {
-            "uri": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+            "uri": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
           },
-          "title": "Expander (titles)",
-          "subtitle": "List with Expanders (using Titles)"
+          "title": "Bar charts list",
+          "subtitle": "List with Bar charts"
         }
       }
+    }
+  },
+  "datasources": {
+    "bar": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color1",
+            "data": [
+              {
+                "x": "x-value",
+                "y": 1851
+              },
+              {
+                "x": "x-value",
+                "y": 1232
+              },
+              {
+                "x": "x-value",
+                "y": 2139
+              },
+              {
+                "x": "x-value",
+                "y": 2941
+              }
+            ]
+          },
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color2",
+            "data": [
+              {
+                "x": "x-value",
+                "y": 1731
+              },
+              {
+                "x": "x-value",
+                "y": 1942
+              },
+              {
+                "x": "x-value",
+                "y": 2419
+              },
+              {
+                "x": "x-value",
+                "y": 2918
+              }
+            ]
+          },
+          {
+            "title": "title",
+            "subtitle": "subtitle",
+            "color": "color3",
+            "data": [
+              {
+                "x": "x-value",
+                "y": 8932
+              },
+              {
+                "x": "x-value",
+                "y": 7231
+              },
+              {
+                "x": "x-value",
+                "y": 6327
+              },
+              {
+                "x": "x-value",
+                "y": 9412
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "data": "=@ctx.datasources.bar",
+  "item": {
+    "type": "component.bar-chart",
+    "options": {
+      "chart": {
+        "title": "=@ctx.current.item.title",
+        "subtitle": "=@ctx.current.item.subtitle",
+        "height": 260
+      },
+      "series": [
+        {
+          "data": "=@ctx.current.item.data",
+          "color": "=@ctx.current.item.color"
+        }
+      ]
     }
   }
 }

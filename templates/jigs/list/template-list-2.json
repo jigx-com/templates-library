@@ -1,76 +1,6 @@
 {
   "title": "Opportunities",
   "type": "jig.list",
-  "actions": [
-    {
-      "children": [
-        {
-          "options": {
-            "title": "Add new opportunity",
-            "linkTo": "create the file for this action"
-          },
-          "type": "action.go-to"
-        }
-      ]
-    }
-  ],
-  "datasources": {
-    "chart-data": {
-      "options": {
-        "data": [
-          {
-            "y": "=ctx.datasources.components"
-          },
-          {
-            "color": "transparent",
-            "y": 23
-          }
-        ]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "data": "=\\$filter(@ctx.datasources.components, function(\\$v, \\$i, \\$a) {\n  @ctx.jig.state.filter = 'ALL' or \\$v.result = @ctx.jig.state.filter\n}) \n",
-  "item": {
-    "options": {
-      "title": "=@ctx.current.item.name",
-      "subtitle": "=@ctx.current.item.reason",
-      "color": [
-        {
-          "color": "color2",
-          "when": "=(@ctx.current.item.result= 'Success' ? true :false)"
-        }
-      ],
-      "leftElement": {
-        "element": "checkbox",
-        "value": "=(@ctx.current.item.status= 'Finished' ? true :false)"
-      },
-      "progress": "=@ctx.current.item.progress",
-      "rightElement": {
-        "element": "value",
-        "text": "=\"\\$ \" & @ctx.current.item.value"
-      },
-      "style": {
-        "isError": "=(@ctx.current.item.result= 'Unsuccess' ? true :false)",
-        "isStrikeThrough": "=(@ctx.current.item.status= 'Finished' ? true :false)"
-      }
-    },
-    "type": "component.list-item"
-  },
-  "filter": [
-    {
-      "title": "All",
-      "value": "ALL"
-    },
-    {
-      "title": "Won",
-      "value": "Success"
-    },
-    {
-      "title": "Lost",
-      "value": "Unsuccess"
-    }
-  ],
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -87,15 +17,85 @@
       }
     }
   },
+  "filter": [
+    {
+      "title": "All",
+      "value": "ALL"
+    },
+    {
+      "title": "Won",
+      "value": "Success"
+    },
+    {
+      "title": "Lost",
+      "value": "Unsuccess"
+    }
+  ],
   "summary": {
     "children": {
+      "type": "component.summary",
       "options": {
-        "title": "Opportunities",
-        "subtitle": "=\"Worth than\" & \" \\$ \" & \\$sum(@ctx.datasources.components.value)",
         "layout": "counter",
-        "value": "=\\$count(@ctx.datasources.components)"
+        "value": "=$count(@ctx.datasources.components)",
+        "title": "Opportunities",
+        "subtitle": "=\"Worth than\" & \" $ \" & $sum(@ctx.datasources.components.value)"
+      }
+    }
+  },
+  "actions": [
+    {
+      "children": [
+        {
+          "type": "action.go-to",
+          "options": {
+            "title": "Add new opportunity",
+            "linkTo": "type-list-2"
+          }
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "chart-data": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "y": "=ctx.datasources.components"
+          },
+          {
+            "y": 23,
+            "color": "transparent"
+          }
+        ]
+      }
+    }
+  },
+  "data": "=$filter(@ctx.datasources.components, function($v, $i, $a) {\n  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter\n}) \n",
+  "item": {
+    "type": "component.list-item",
+    "options": {
+      "title": "=@ctx.current.item.name",
+      "subtitle": "=@ctx.current.item.reason",
+      "color": [
+        {
+          "when": "=(@ctx.current.item.result= 'Success' ? true :false)",
+          "color": "color2"
+        }
+      ],
+      "progress": "=@ctx.current.item.progress",
+      "leftElement": {
+        "element": "checkbox",
+        "value": "=(@ctx.current.item.status= 'Finished' ? true :false)"
       },
-      "type": "component.summary"
+      "style": {
+        "isError": "=(@ctx.current.item.result= 'Unsuccess' ? true :false)",
+        "isStrikeThrough": "=(@ctx.current.item.status= 'Finished' ? true :false)"
+      },
+      "rightElement": {
+        "element": "value",
+        "text": "=\"$ \" & @ctx.current.item.value"
+      }
     }
   }
 }

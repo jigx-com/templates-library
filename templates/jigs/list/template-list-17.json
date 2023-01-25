@@ -1,82 +1,35 @@
 {
-  "title": "Swipe & icon",
+  "title": "Product item",
   "type": "jig.list",
   "datasources": {
-    "swipeable-list": {
+    "product-item": {
+      "type": "datasource.static",
       "options": {
         "data": [
           {
-            "icon": "home",
-            "id": 1,
-            "subtitle": "Subtitle",
-            "title": "Title"
+            "title": "Title",
+            "uri": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80",
+            "tag": "free transport",
+            "price": 211.96,
+            "discount": 0.1
           },
           {
-            "icon": "cog-double",
-            "id": 2,
-            "subtitle": "Subtitle",
-            "title": "Title"
+            "title": "Title",
+            "uri": "https://images.unsplash.com/photo-1611850698562-ae3d28934080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+            "tag": "in stock",
+            "price": 59.96,
+            "discount": null
           },
           {
-            "icon": "car-garage",
-            "id": 3,
-            "subtitle": "Subtitle",
-            "title": "Title"
-          },
-          {
-            "icon": "home",
-            "id": 4,
-            "subtitle": "Subtitle",
-            "title": "Title"
-          },
-          {
-            "icon": "car-garage",
-            "id": 5,
-            "subtitle": "Subtitle",
-            "title": "Title"
-          },
-          {
-            "icon": "cog-double",
-            "id": 6,
-            "subtitle": "Subtitle",
-            "title": "Title"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "data": "=@ctx.datasources.swipeable-list",
-  "item": {
-    "options": {
-      "title": "=@ctx.current.item.title",
-      "subtitle": "=@ctx.current.item.subtitle",
-      "rightElement": {
-        "element": "icon",
-        "name": "=@ctx.current.item.icon"
-      },
-      "swipeable": {
-        "right": [
-          {
-            "color": "primary",
-            "icon": "alarm-bell",
-            "label": "Primary Action",
-            "onPress": {
-              "type": "action.go-back"
-            }
-          },
-          {
-            "color": "warning",
-            "icon": "alert-triangle",
-            "label": "Secondary Action",
-            "onPress": {
-              "type": "action.go-back"
-            }
+            "title": "Title",
+            "uri": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80",
+            "tag": "in stock",
+            "price": 191.6,
+            "discount": 0.15
           }
         ]
       }
-    },
-    "type": "component.list-item"
+    }
   },
   "header": {
     "type": "component.jig-header",
@@ -86,12 +39,30 @@
         "type": "component.image",
         "options": {
           "source": {
-            "uri": "https://builder.jigx.com/assets/images/header.jpg"
+            "uri": "https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dGVjaG5vbG9neSUyMHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
           },
-          "title": "Swipe & icon",
-          "subtitle": "Swipeable list with the right icon"
+          "title": "Product item",
+          "subtitle": "List with product item"
         }
       }
+    }
+  },
+  "data": "=@ctx.datasources.product-item",
+  "item": {
+    "type": "component.product-item",
+    "options": {
+      "title": "=@ctx.current.item.title",
+      "image": {
+        "uri": "=@ctx.current.item.uri"
+      },
+      "discount": "=@ctx.current.item.discount",
+      "price": {
+        "value": "=@ctx.current.item.price",
+        "format": {
+          "numberStyle": "currency"
+        }
+      },
+      "tag": "=@ctx.current.item.tag"
     }
   }
 }

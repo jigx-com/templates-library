@@ -1,51 +1,6 @@
 {
-  "title": "Stage",
+  "title": "Progress and label",
   "type": "jig.list",
-  "datasources": {
-    "stage": {
-      "options": {
-        "data": [
-          {
-            "endSubtitle": "End subtitle",
-            "endTitle": "End title",
-            "id": 1,
-            "startSubtitle": "Start subtitle",
-            "startTitle": "Start title"
-          },
-          {
-            "endSubtitle": "End subtitle",
-            "endTitle": "End title",
-            "id": 2,
-            "startSubtitle": "Start subtitle",
-            "startTitle": "Start title"
-          },
-          {
-            "endSubtitle": "End subtitle",
-            "endTitle": "End title",
-            "id": 3,
-            "startSubtitle": "Start subtitle",
-            "startTitle": "Start title"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "data": "=@ctx.datasources.stage",
-  "item": {
-    "options": {
-      "icon": "arrow-right",
-      "left": {
-        "subtitle": "=@ctx.current.item.startSubtitle",
-        "title": "=@ctx.current.item.startTitle"
-      },
-      "right": {
-        "subtitle": "=@ctx.current.item.endSubtitle",
-        "title": "=@ctx.current.item.endTitle"
-      }
-    },
-    "type": "component.stage"
-  },
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -54,11 +9,90 @@
         "type": "component.image",
         "options": {
           "source": {
-            "uri": "https://images.unsplash.com/photo-1511312817910-ffa2ca5d954e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHJpdmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
+            "uri": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
           },
-          "title": "Stage",
-          "subtitle": "List with Stage"
+          "title": "Progress and label",
+          "subtitle": "List with left progress and right label"
         }
+      }
+    }
+  },
+  "actions": [
+    {
+      "children": [
+        {
+          "type": "action.go-to",
+          "options": {
+            "title": "Add",
+            "linkTo": "type-list-6"
+          }
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "list": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "name": "Item 1",
+            "description": "Description",
+            "progress": 0.78,
+            "label": "priority-3"
+          },
+          {
+            "name": "Item 2",
+            "description": "Description",
+            "progress": 0.3,
+            "label": "priority-1"
+          },
+          {
+            "name": "Item 3",
+            "description": "Description",
+            "progress": 1,
+            "label": "priority-2"
+          }
+        ]
+      }
+    }
+  },
+  "data": "=@ctx.datasources.list",
+  "item": {
+    "type": "component.list-item",
+    "options": {
+      "divider": "solid",
+      "label": {
+        "isHidden": "=@ctx.current.item.label = \"priority-3\" ? true :false",
+        "title": "=(@ctx.current.item.label = \"priority-1\" ? \"!!\" :\"!\")",
+        "color": [
+          {
+            "when": "=@ctx.current.item.label = 'priority-1' or @ctx.current.item.label = 'priority-2' ? true :false",
+            "color": "color4"
+          }
+        ]
+      },
+      "color": [
+        {
+          "when": "=@ctx.current.item.progress < 0.25",
+          "color": "color4"
+        },
+        {
+          "when": "=@ctx.current.item.progress = 1",
+          "color": "color2"
+        }
+      ],
+      "title": "=@ctx.current.item.name",
+      "description": "=@ctx.current.item.description",
+      "subtitle": "=@ctx.current.item.progress < 0.25 ? \"Low inventory\" :\"\"",
+      "leftElement": {
+        "element": "progress",
+        "title": "10 m",
+        "value": "=@ctx.current.item.progress"
+      },
+      "rightElement": {
+        "element": "icon",
+        "name": "information-circle"
       }
     }
   }

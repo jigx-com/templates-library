@@ -1,198 +1,6 @@
 {
   "title": "Stock Inventory",
   "type": "jig.list",
-  "actions": [
-    {
-      "children": [
-        {
-          "options": {
-            "title": "Buy products with low inventory",
-            "linkTo": "create the file for this action"
-          },
-          "type": "action.go-to"
-        }
-      ]
-    }
-  ],
-  "datasources": {
-    "inventory": {
-      "options": {
-        "data": [
-          {
-            "avatar-text": "A",
-            "current": 23,
-            "description": "Description",
-            "name": "Product 1",
-            "progress": 0.78,
-            "subtitle": "Low inventory",
-            "total": 100,
-            "value": "\\$154.000"
-          },
-          {
-            "avatar-text": "B",
-            "current": 213,
-            "description": "Description",
-            "name": "Product 2",
-            "progress": 0.3,
-            "total": 800,
-            "value": "\\$120.000"
-          },
-          {
-            "avatar-text": "C",
-            "current": 335,
-            "description": "Description",
-            "name": "Product 3",
-            "total": 800,
-            "value": "\\$115.000"
-          },
-          {
-            "avatar-text": "D",
-            "avatar-uri": null,
-            "current": 78,
-            "description": "Description",
-            "name": "Product 4",
-            "total": 100,
-            "value": "\\$107.000"
-          },
-          {
-            "avatar-text": "E",
-            "avatar-uri": null,
-            "current": 985,
-            "description": "Description",
-            "name": "Product 5",
-            "total": 1000,
-            "value": "\\$102.500"
-          },
-          {
-            "avatar-text": "F",
-            "avatar-uri": null,
-            "current": 280,
-            "description": "Description",
-            "name": "Product 6",
-            "total": 400,
-            "value": "\\$98.000"
-          },
-          {
-            "avatar-text": "G",
-            "avatar-uri": null,
-            "current": 335,
-            "description": "Description",
-            "name": "Product 7",
-            "total": 800,
-            "value": "\\$56.000"
-          },
-          {
-            "avatar-text": "H",
-            "avatar-uri": null,
-            "current": 366,
-            "description": "Description",
-            "name": "Product 8",
-            "total": 1000,
-            "value": "\\$42.000"
-          },
-          {
-            "avatar-text": "I",
-            "avatar-uri": null,
-            "current": 15,
-            "description": "Description",
-            "name": "Product 9",
-            "total": 200,
-            "value": "\\$38.500"
-          },
-          {
-            "avatar-text": "J",
-            "avatar-uri": null,
-            "current": 1876,
-            "description": "Description",
-            "name": "Product 10",
-            "total": 2000,
-            "value": "\\$37.000"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    },
-    "static-data": {
-      "options": {
-        "data": [30, 45, 55, 62]
-      },
-      "type": "datasource.static"
-    },
-    "static-data2": {
-      "options": {
-        "data": [57, 50, 40, 89]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "data": "=@ctx.datasources.inventory",
-  "item": {
-    "options": {
-      "title": "=@ctx.current.item.name",
-      "subtitle": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25) ? \"Low inventory\" :\"\"",
-      "color": [
-        {
-          "color": "color4",
-          "when": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25)"
-        },
-        {
-          "color": "color3",
-          "when": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.50)"
-        }
-      ],
-      "description": "=@ctx.current.item.description",
-      "label": {
-        "color": [
-          {
-            "color": "color4",
-            "when": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25)"
-          },
-          {
-            "color": "color2",
-            "when": "=((@ctx.current.item.current / @ctx.current.item.total) > 0.25)"
-          }
-        ],
-        "title": "=@ctx.current.item.current & ' / ' & @ctx.current.item.total"
-      },
-      "leftElement": {
-        "element": "avatar",
-        "text": "=@ctx.current.item.avatar-text"
-      },
-      "progress": "=(@ctx.current.item.current / @ctx.current.item.total)",
-      "style": {
-        "isError": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25) ? true :false"
-      },
-      "swipeable": {
-        "left": [
-          {
-            "color": "warning",
-            "icon": "pencil-2",
-            "label": "label",
-            "onPress": {
-              "options": {
-                "linkTo": "create the file for this action"
-              },
-              "type": "action.go-to"
-            }
-          }
-        ],
-        "right": [
-          {
-            "color": "primary",
-            "icon": "pencil-2",
-            "label": "label",
-            "onPress": {
-              "options": {
-                "linkTo": "create the file for this action"
-              },
-              "type": "action.go-to"
-            }
-          }
-        ]
-      }
-    },
-    "type": "component.list-item"
-  },
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -211,18 +19,220 @@
   },
   "summary": {
     "children": {
+      "type": "component.summary",
       "options": {
-        "title": "=\\$count(@ctx.datasources.inventory) & \" Products\"",
-        "subtitle": "In total",
         "layout": "default",
+        "title": "=$count(@ctx.datasources.inventory) & \" Products\"",
+        "subtitle": "In total",
         "leftIcon": {
           "element": "icon",
+          "name": "shopping-cart-empty-1",
           "isContained": true,
-          "isDuotone": true,
-          "name": "shopping-cart-empty-1"
+          "isDuotone": true
         }
+      }
+    }
+  },
+  "actions": [
+    {
+      "children": [
+        {
+          "type": "action.go-to",
+          "options": {
+            "title": "Buy products with low inventory",
+            "linkTo": "type-document-1"
+          }
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "static-data": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          30,
+          45,
+          55,
+          62
+        ]
+      }
+    },
+    "static-data2": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          57,
+          50,
+          40,
+          89
+        ]
+      }
+    },
+    "inventory": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "name": "Product 1",
+            "description": "Description",
+            "subtitle": "Low inventory",
+            "avatar-text": "A",
+            "progress": 0.78,
+            "value": "$154.000",
+            "total": 100,
+            "current": 23
+          },
+          {
+            "name": "Product 2",
+            "description": "Description",
+            "avatar-text": "B",
+            "progress": 0.3,
+            "value": "$120.000",
+            "total": 800,
+            "current": 213
+          },
+          {
+            "name": "Product 3",
+            "description": "Description",
+            "avatar-text": "C",
+            "value": "$115.000",
+            "total": 800,
+            "current": 335
+          },
+          {
+            "name": "Product 4",
+            "description": "Description",
+            "avatar-text": "D",
+            "avatar-uri": null,
+            "value": "$107.000",
+            "total": 100,
+            "current": 78
+          },
+          {
+            "name": "Product 5",
+            "description": "Description",
+            "avatar-text": "E",
+            "avatar-uri": null,
+            "value": "$102.500",
+            "total": 1000,
+            "current": 985
+          },
+          {
+            "name": "Product 6",
+            "description": "Description",
+            "avatar-text": "F",
+            "avatar-uri": null,
+            "value": "$98.000",
+            "total": 400,
+            "current": 280
+          },
+          {
+            "name": "Product 7",
+            "description": "Description",
+            "avatar-text": "G",
+            "avatar-uri": null,
+            "value": "$56.000",
+            "total": 800,
+            "current": 335
+          },
+          {
+            "name": "Product 8",
+            "description": "Description",
+            "avatar-text": "H",
+            "avatar-uri": null,
+            "value": "$42.000",
+            "total": 1000,
+            "current": 366
+          },
+          {
+            "name": "Product 9",
+            "description": "Description",
+            "avatar-text": "I",
+            "avatar-uri": null,
+            "value": "$38.500",
+            "total": 200,
+            "current": 15
+          },
+          {
+            "name": "Product 10",
+            "description": "Description",
+            "avatar-text": "J",
+            "avatar-uri": null,
+            "value": "$37.000",
+            "total": 2000,
+            "current": 1876
+          }
+        ]
+      }
+    }
+  },
+  "data": "=@ctx.datasources.inventory",
+  "item": {
+    "type": "component.list-item",
+    "options": {
+      "label": {
+        "title": "=@ctx.current.item.current & ' / ' & @ctx.current.item.total",
+        "color": [
+          {
+            "when": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25)",
+            "color": "color4"
+          },
+          {
+            "when": "=((@ctx.current.item.current / @ctx.current.item.total) > 0.25)",
+            "color": "color2"
+          }
+        ]
       },
-      "type": "component.summary"
+      "color": [
+        {
+          "when": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25)",
+          "color": "color4"
+        },
+        {
+          "when": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.50)",
+          "color": "color3"
+        }
+      ],
+      "title": "=@ctx.current.item.name",
+      "description": "=@ctx.current.item.description",
+      "subtitle": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25) ? \"Low inventory\" :\"\"",
+      "style": {
+        "isError": "=((@ctx.current.item.current / @ctx.current.item.total) < 0.25) ? true :false"
+      },
+      "progress": "=(@ctx.current.item.current / @ctx.current.item.total)",
+      "leftElement": {
+        "element": "avatar",
+        "text": "=@ctx.current.item.avatar-text"
+      },
+      "swipeable": {
+        "left": [
+          {
+            "label": "label",
+            "icon": "pencil-2",
+            "color": "warning",
+            "onPress": {
+              "type": "action.go-to",
+              "options": {
+                "linkTo": "template-list-1"
+              }
+            }
+          }
+        ],
+        "right": [
+          {
+            "label": "label",
+            "icon": "pencil-2",
+            "color": "primary",
+            "onPress": {
+              "type": "action.go-to",
+              "options": {
+                "linkTo": "template-list-1"
+              }
+            }
+          }
+        ]
+      }
     }
   }
 }

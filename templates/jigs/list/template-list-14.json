@@ -1,60 +1,7 @@
 {
-  "title": "Product item and summary",
+  "title": "Search and left image",
   "type": "jig.list",
-  "datasources": {
-    "product-item": {
-      "options": {
-        "data": [
-          {
-            "amount": 2,
-            "discount": 0.1,
-            "id": 1,
-            "price": 211.96,
-            "title": "Title",
-            "uri": "https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
-          },
-          {
-            "amount": 1,
-            "discount": null,
-            "id": 2,
-            "price": 59.96,
-            "title": "Title",
-            "uri": "https://images.unsplash.com/photo-1611850698562-ae3d28934080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-          },
-          {
-            "amount": 0,
-            "discount": 0.15,
-            "id": 3,
-            "price": 191.6,
-            "title": "Title",
-            "uri": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "data": "=@ctx.datasources.product-item",
-  "item": {
-    "options": {
-      "title": "=@ctx.current.item.title",
-      "amountControl": {
-        "initialValue": "=@ctx.current.item.amount",
-        "maximum": 10
-      },
-      "discount": "=@ctx.current.item.discount",
-      "image": {
-        "uri": "=@ctx.current.item.uri"
-      },
-      "price": {
-        "format": {
-          "numberStyle": "currency"
-        },
-        "value": "=@ctx.current.item.price"
-      }
-    },
-    "type": "component.product-item"
-  },
+  "isSearchable": true,
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -63,22 +10,52 @@
         "type": "component.image",
         "options": {
           "source": {
-            "uri": "https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dGVjaG5vbG9neSUyMHByb2R1Y3RzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            "uri": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNlYXJjaHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60"
           },
-          "title": "Product item and summary",
-          "subtitle": "List with product item and summary"
+          "title": "Search and left image",
+          "subtitle": "List with search and left image"
         }
       }
     }
   },
-  "summary": {
-    "children": {
+  "datasources": {
+    "search": {
+      "type": "datasource.static",
       "options": {
-        "title": "Items in your cart",
-        "layout": "cart",
-        "value": 3
-      },
-      "type": "component.summary"
+        "data": [
+          {
+            "id": 1,
+            "title": "Title 1",
+            "subtitle": "Subtitle 1",
+            "image": "https://images.unsplash.com/photo-1500281781950-6cd80847ebcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80"
+          },
+          {
+            "id": 2,
+            "title": "Title 2",
+            "subtitle": "Subtitle 2",
+            "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1431&q=80"
+          },
+          {
+            "id": 3,
+            "title": "Title 3",
+            "subtitle": "Subtitle 3",
+            "image": "https://images.unsplash.com/photo-1522791465802-47616431a4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1451&q=80"
+          }
+        ]
+      }
+    }
+  },
+  "data": "=$filter(@ctx.datasources.search, function($v){@ctx.datasources.search ? $contains($string($v.title),$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) :true})[]\n",
+  "item": {
+    "type": "component.list-item",
+    "options": {
+      "title": "=@ctx.current.item.title",
+      "subtitle": "=@ctx.current.item.subtitle",
+      "leftElement": {
+        "element": "image",
+        "text": "",
+        "uri": "=@ctx.current.item.image"
+      }
     }
   }
 }

@@ -93,7 +93,7 @@
     {
       "name": "List jig 3",
       "filePath": "templates/jigs/list/template-list-3.json",
-      "previewImgSrc": "templates/jigs/list/template-list-3.jpeg",
+      "previewImgSrc": "templates/jigs/list/template-list-3.png",
       "jigLibraryRef": "jig-list"
     },
     {
@@ -171,7 +171,7 @@
     {
       "name": "List jig 16",
       "filePath": "templates/jigs/list/template-list-16.json",
-      "previewImgSrc": "templates/jigs/list/template-list-16.jpeg",
+      "previewImgSrc": "templates/jigs/list/template-list-16.png",
       "jigLibraryRef": "jig-list"
     },
     {
@@ -201,31 +201,31 @@
     {
       "name": "List jig 21",
       "filePath": "templates/jigs/list/template-list-21.json",
-      "previewImgSrc": "templates/jigs/list/template-list-21.jpeg",
+      "previewImgSrc": "templates/jigs/list/template-list-21.png",
       "jigLibraryRef": "jig-list"
     },
     {
       "name": "List jig 22",
       "filePath": "templates/jigs/list/template-list-22.json",
-      "previewImgSrc": "templates/jigs/list/template-list-22.jpeg",
+      "previewImgSrc": "templates/jigs/list/template-list-22.png",
       "jigLibraryRef": "jig-list"
     },
     {
       "name": "List jig 23",
       "filePath": "templates/jigs/list/template-list-23.json",
-      "previewImgSrc": "templates/jigs/list/template-list-23.jpeg",
+      "previewImgSrc": "templates/jigs/list/template-list-23.png",
       "jigLibraryRef": "jig-list"
     },
     {
       "name": "List jig 24",
       "filePath": "templates/jigs/list/template-list-24.json",
-      "previewImgSrc": "templates/jigs/list/template-list-24.jpeg",
+      "previewImgSrc": "templates/jigs/list/template-list-24.png",
       "jigLibraryRef": "jig-list"
     },
     {
       "name": "Composite jig Lead overview",
       "filePath": "templates/jigs/composite/composite-1/template.json",
-      "previewImgSrc": "templates/jigs/composite/composite-1/preview.jpeg",
+      "previewImgSrc": "templates/jigs/composite/composite-1/preview.png",
       "jigLibraryRef": "jig-composite",
       "jigFiles": [
         {
