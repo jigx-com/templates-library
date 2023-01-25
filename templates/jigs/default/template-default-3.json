@@ -1,137 +1,6 @@
 {
   "title": "Add new employee",
   "type": "jig.default",
-  "actions": [
-    {
-      "children": [
-        {
-          "options": {
-            "title": "Add employee",
-            "provider": "DATA_PROVIDER_DYNAMIC",
-            "entity": "default/employees",
-            "formId": "new-employee",
-            "method": "save"
-          },
-          "type": "action.submit-form"
-        }
-      ]
-    }
-  ],
-  "datasources": {
-    "employees": {
-      "options": {
-        "provider": "DATA_PROVIDER_DYNAMIC",
-        "entities": [
-          {
-            "entity": "default/employees"
-          }
-        ],
-        "query": "SELECT \n  id\nFROM [default/employees] \n"
-      },
-      "type": "datasource.sqlite"
-    }
-  },
-  "children": [
-    {
-      "instanceId": "new-employee",
-      "options": {
-        "children": [
-          {
-            "instanceId": "employee-id",
-            "options": {
-              "initialValue": "=(\\$count(@ctx.datasources.employees.id) = 0 ? 1 :\\$count(@ctx.datasources.employees.id) + 1)",
-              "isHidden": true,
-              "label": "employeeId"
-            },
-            "type": "component.number-field"
-          },
-          {
-            "instanceId": "employee-photo",
-            "options": {
-              "label": "Photo"
-            },
-            "type": "component.avatar-field"
-          },
-          {
-            "options": {
-              "title": "Personal informations",
-              "children": [
-                {
-                  "instanceId": "employee-first-name",
-                  "options": {
-                    "label": "First name"
-                  },
-                  "type": "component.text-field"
-                },
-                {
-                  "instanceId": "employee-surname",
-                  "options": {
-                    "label": "Surname"
-                  },
-                  "type": "component.text-field"
-                },
-                {
-                  "instanceId": "employee-date-of-birth",
-                  "options": {
-                    "label": "Date of birth"
-                  },
-                  "type": "component.date-picker"
-                },
-                {
-                  "instanceId": "employee-email",
-                  "options": {
-                    "icon": "email",
-                    "label": "Email"
-                  },
-                  "type": "component.email-field"
-                },
-                {
-                  "instanceId": "employee-phone-number",
-                  "options": {
-                    "icon": "phone",
-                    "label": "Phone number"
-                  },
-                  "type": "component.number-field"
-                }
-              ]
-            },
-            "type": "component.section"
-          },
-          {
-            "options": {
-              "title": "Business informations",
-              "children": [
-                {
-                  "instanceId": "employee-position",
-                  "options": {
-                    "label": "Position"
-                  },
-                  "type": "component.text-field"
-                },
-                {
-                  "instanceId": "employee-startWork",
-                  "options": {
-                    "label": "Date of starting work"
-                  },
-                  "type": "component.date-picker"
-                },
-                {
-                  "instanceId": "employee-contract",
-                  "options": {
-                    "label": "Contract",
-                    "mediaType": "image"
-                  },
-                  "type": "component.media-field"
-                }
-              ]
-            },
-            "type": "component.section"
-          }
-        ]
-      },
-      "type": "component.form"
-    }
-  ],
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -145,5 +14,136 @@
         }
       }
     }
-  }
+  },
+  "actions": [
+    {
+      "children": [
+        {
+          "type": "action.submit-form",
+          "options": {
+            "formId": "new-employee",
+            "provider": "DATA_PROVIDER_DYNAMIC",
+            "entity": "default/employees",
+            "method": "save",
+            "title": "Add employee"
+          }
+        }
+      ]
+    }
+  ],
+  "datasources": {
+    "employees": {
+      "type": "datasource.sqlite",
+      "options": {
+        "provider": "DATA_PROVIDER_DYNAMIC",
+        "entities": [
+          {
+            "entity": "default/employees"
+          }
+        ],
+        "query": "SELECT \n  id\nFROM [default/employees] \n"
+      }
+    }
+  },
+  "children": [
+    {
+      "type": "component.form",
+      "instanceId": "new-employee",
+      "options": {
+        "children": [
+          {
+            "type": "component.number-field",
+            "instanceId": "employee-id",
+            "options": {
+              "label": "employeeId",
+              "isHidden": true,
+              "initialValue": "=($count(@ctx.datasources.employees.id) = 0 ? 1 :$count(@ctx.datasources.employees.id) + 1)"
+            }
+          },
+          {
+            "type": "component.avatar-field",
+            "instanceId": "employee-photo",
+            "options": {
+              "label": "Photo"
+            }
+          },
+          {
+            "type": "component.section",
+            "options": {
+              "title": "Personal informations",
+              "children": [
+                {
+                  "type": "component.text-field",
+                  "instanceId": "employee-first-name",
+                  "options": {
+                    "label": "First name"
+                  }
+                },
+                {
+                  "type": "component.text-field",
+                  "instanceId": "employee-surname",
+                  "options": {
+                    "label": "Surname"
+                  }
+                },
+                {
+                  "type": "component.date-picker",
+                  "instanceId": "employee-date-of-birth",
+                  "options": {
+                    "label": "Date of birth"
+                  }
+                },
+                {
+                  "type": "component.email-field",
+                  "instanceId": "employee-email",
+                  "options": {
+                    "label": "Email",
+                    "icon": "email"
+                  }
+                },
+                {
+                  "type": "component.number-field",
+                  "instanceId": "employee-phone-number",
+                  "options": {
+                    "label": "Phone number",
+                    "icon": "phone"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "component.section",
+            "options": {
+              "title": "Business informations",
+              "children": [
+                {
+                  "type": "component.text-field",
+                  "instanceId": "employee-position",
+                  "options": {
+                    "label": "Position"
+                  }
+                },
+                {
+                  "type": "component.date-picker",
+                  "instanceId": "employee-startWork",
+                  "options": {
+                    "label": "Date of starting work"
+                  }
+                },
+                {
+                  "type": "component.media-field",
+                  "instanceId": "employee-contract",
+                  "options": {
+                    "label": "Contract",
+                    "mediaType": "image"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

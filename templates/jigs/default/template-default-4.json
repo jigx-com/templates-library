@@ -1,49 +1,61 @@
 {
   "title": "Create new invoice",
   "type": "jig.default",
+  "header": {
+    "type": "component.jig-header",
+    "options": {
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+          }
+        }
+      }
+    }
+  },
   "actions": [
     {
       "children": [
         {
+          "type": "action.submit-form",
           "options": {
-            "title": "Create invoice",
+            "formId": "new-invoice",
             "provider": "DATA_PROVIDER_DYNAMIC",
             "entity": "default/invoices",
-            "formId": "new-invoice",
-            "method": "save"
-          },
-          "type": "action.submit-form"
+            "method": "save",
+            "title": "Create invoice"
+          }
         }
       ]
     }
   ],
+  "summary": {
+    "children": {
+      "type": "component.summary",
+      "options": {
+        "layout": "default",
+        "leftIcon": {
+          "element": "icon",
+          "name": "form",
+          "isContained": true,
+          "isDuotone": true
+        },
+        "title": {
+          "text": "=@ctx.components.unit-price.state.value * @ctx.components.quantity.state.value",
+          "format": {
+            "numberStyle": "currency",
+            "currency": "=@ctx.components.currency.state.value"
+          }
+        },
+        "subtitle": "Total invoice amount"
+      }
+    }
+  },
   "datasources": {
-    "currency": {
-      "options": {
-        "data": [
-          {
-            "currency": "USD"
-          },
-          {
-            "currency": "EUR"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    },
-    "invoices": {
-      "options": {
-        "provider": "DATA_PROVIDER_DYNAMIC",
-        "entities": [
-          {
-            "entity": "default/invoices"
-          }
-        ],
-        "query": "SELECT \n  id, \n  '\\$.invoice-number'\nFROM [default/invoices]\n"
-      },
-      "type": "datasource.sqlite"
-    },
     "methodOfPayment": {
+      "type": "datasource.static",
       "options": {
         "data": [
           {
@@ -59,25 +71,35 @@
             "method": "PayPal"
           }
         ]
-      },
-      "type": "datasource.static"
+      }
     },
-    "subscriberId": {
+    "currency": {
+      "type": "datasource.static",
       "options": {
-        "provider": "DATA_PROVIDER_LOCAL",
+        "data": [
+          {
+            "currency": "USD"
+          },
+          {
+            "currency": "EUR"
+          }
+        ]
+      }
+    },
+    "invoices": {
+      "type": "datasource.sqlite",
+      "options": {
+        "provider": "DATA_PROVIDER_DYNAMIC",
         "entities": [
           {
-            "entity": "default/subscribers"
+            "entity": "default/invoices"
           }
         ],
-        "query": "SELECT\n  id,\n  '\\$.subscriber',\n  '\\$.subscriber-id'\nFROM [default/subscribers]\nWHERE '\\$.subscriber' = @selected\n",
-        "queryParameters": {
-          "selected": "=@ctx.components.subscriber.state.value"
-        }
-      },
-      "type": "datasource.sqlite"
+        "query": "SELECT \n  id, \n  '$.invoice-number'\nFROM [default/invoices]\n"
+      }
     },
     "subscribers": {
+      "type": "datasource.sqlite",
       "options": {
         "provider": "DATA_PROVIDER_DYNAMIC",
         "entities": [
@@ -85,163 +107,141 @@
             "entity": "default/subscribers"
           }
         ],
-        "query": "SELECT\n  id,\n  '\\$.subscriber',\n  '\\$.subscriber-id'\nFROM [default/subscribers]\n"
-      },
-      "type": "datasource.sqlite"
-    }
-  },
-  "children": [
-    {
-      "instanceId": "new-invoice",
+        "query": "SELECT\n  id,\n  '$.subscriber',\n  '$.subscriber-id'\nFROM [default/subscribers]\n"
+      }
+    },
+    "subscriberId": {
+      "type": "datasource.sqlite",
       "options": {
-        "children": [
+        "provider": "DATA_PROVIDER_LOCAL",
+        "entities": [
           {
-            "instanceId": "invoice-number",
-            "options": {
-              "initialValue": "=\\$fromMillis(\\$toMillis(\\$now()), '[Y0001]') & \"000\" & (\\$count(@ctx.datasources.invoices.id) = 0 ? 1 :\\$count(@ctx.datasources.invoices.id) + 1)",
-              "label": "Invoice number"
-            },
-            "type": "component.text-field"
-          },
-          {
-            "instanceId": "date-of-issue",
-            "options": {
-              "initialValue": "=\\$fromMillis(\\$toMillis(now()))",
-              "label": "Date of issue"
-            },
-            "type": "component.date-picker"
-          },
-          {
-            "instanceId": "due-date",
-            "options": {
-              "initialValue": "=\\$fromMillis(\\$toMillis(@ctx.components.date-of-issue.state.value) + (86400000 * 14))",
-              "label": "Due date"
-            },
-            "type": "component.date-picker"
-          },
-          {
-            "instanceId": "subscriber",
-            "options": {
-              "data": "=@ctx.datasources.subscribers",
-              "item": {
-                "options": {
-                  "title": "=@ctx.current.item.subscriber",
-                  "value": "=@ctx.current.item.subscriber"
-                },
-                "type": "component.dropdown-item"
-              },
-              "label": "Subscriber"
-            },
-            "type": "component.dropdown"
-          },
-          {
-            "instanceId": "subscriber-id",
-            "options": {
-              "initialValue": "=@ctx.datasources.subscriberId.subscriber-id",
-              "label": "Subscriber ID"
-            },
-            "type": "component.text-field"
-          },
-          {
-            "instanceId": "method-of-payment",
-            "options": {
-              "data": "=@ctx.datasources.methodOfPayment",
-              "item": {
-                "options": {
-                  "title": "=@ctx.current.item.method",
-                  "value": "=@ctx.current.item.method"
-                },
-                "type": "component.dropdown-item"
-              },
-              "label": "Method of payment"
-            },
-            "type": "component.dropdown"
-          },
-          {
-            "instanceId": "item",
-            "options": {
-              "isMultiline": true,
-              "label": "Description"
-            },
-            "type": "component.text-field"
-          },
-          {
-            "instanceId": "currency",
-            "options": {
-              "data": "=@ctx.datasources.currency",
-              "item": {
-                "options": {
-                  "title": "=@ctx.current.item.currency",
-                  "value": "=@ctx.current.item.currency"
-                },
-                "type": "component.dropdown-item"
-              },
-              "label": "Currency"
-            },
-            "type": "component.dropdown"
-          },
-          {
-            "instanceId": "unit-price",
-            "options": {
-              "initialValue": 0,
-              "label": "Unit price per hour"
-            },
-            "type": "component.number-field"
-          },
-          {
-            "instanceId": "quantity",
-            "options": {
-              "initialValue": 1,
-              "label": "Quantity"
-            },
-            "type": "component.number-field"
-          },
-          {
-            "instanceId": "signature",
-            "options": {
-              "label": "Signature"
-            },
-            "type": "component.signature-field"
+            "entity": "default/subscribers"
           }
-        ]
-      },
-      "type": "component.form"
-    }
-  ],
-  "header": {
-    "type": "component.jig-header",
-    "options": {
-      "height": "medium",
-      "children": {
-        "type": "component.image",
-        "options": {
-          "source": {
-            "uri": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
-          }
+        ],
+        "query": "SELECT\n  id,\n  '$.subscriber',\n  '$.subscriber-id'\nFROM [default/subscribers]\nWHERE '$.subscriber' = @selected\n",
+        "queryParameters": {
+          "selected": "=@ctx.components.subscriber.state.value"
         }
       }
     }
   },
-  "summary": {
-    "children": {
+  "children": [
+    {
+      "type": "component.form",
+      "instanceId": "new-invoice",
       "options": {
-        "title": {
-          "format": {
-            "currency": "=@ctx.components.currency.state.value",
-            "numberStyle": "currency"
+        "children": [
+          {
+            "type": "component.text-field",
+            "instanceId": "invoice-number",
+            "options": {
+              "label": "Invoice number",
+              "initialValue": "=$fromMillis($toMillis($now()), '[Y0001]') & \"000\" & ($count(@ctx.datasources.invoices.id) = 0 ? 1 :$count(@ctx.datasources.invoices.id) + 1)"
+            }
           },
-          "text": "=@ctx.components.unit-price.state.value * @ctx.components.quantity.state.value"
-        },
-        "subtitle": "Total invoice amount",
-        "layout": "default",
-        "leftIcon": {
-          "element": "icon",
-          "isContained": true,
-          "isDuotone": true,
-          "name": "form"
-        }
-      },
-      "type": "component.summary"
+          {
+            "type": "component.date-picker",
+            "instanceId": "date-of-issue",
+            "options": {
+              "label": "Date of issue",
+              "initialValue": "=$fromMillis($toMillis(now()))"
+            }
+          },
+          {
+            "type": "component.date-picker",
+            "instanceId": "due-date",
+            "options": {
+              "label": "Due date",
+              "initialValue": "=$fromMillis($toMillis(@ctx.components.date-of-issue.state.value) + (86400000 * 14))"
+            }
+          },
+          {
+            "type": "component.dropdown",
+            "instanceId": "subscriber",
+            "options": {
+              "label": "Subscriber",
+              "data": "=@ctx.datasources.subscribers",
+              "item": {
+                "type": "component.dropdown-item",
+                "options": {
+                  "title": "=@ctx.current.item.subscriber",
+                  "value": "=@ctx.current.item.subscriber"
+                }
+              }
+            }
+          },
+          {
+            "type": "component.text-field",
+            "instanceId": "subscriber-id",
+            "options": {
+              "label": "Subscriber ID",
+              "initialValue": "=@ctx.datasources.subscriberId.subscriber-id"
+            }
+          },
+          {
+            "type": "component.dropdown",
+            "instanceId": "method-of-payment",
+            "options": {
+              "label": "Method of payment",
+              "data": "=@ctx.datasources.methodOfPayment",
+              "item": {
+                "type": "component.dropdown-item",
+                "options": {
+                  "title": "=@ctx.current.item.method",
+                  "value": "=@ctx.current.item.method"
+                }
+              }
+            }
+          },
+          {
+            "type": "component.text-field",
+            "instanceId": "item",
+            "options": {
+              "label": "Description",
+              "isMultiline": true
+            }
+          },
+          {
+            "type": "component.dropdown",
+            "instanceId": "currency",
+            "options": {
+              "label": "Currency",
+              "data": "=@ctx.datasources.currency",
+              "item": {
+                "type": "component.dropdown-item",
+                "options": {
+                  "title": "=@ctx.current.item.currency",
+                  "value": "=@ctx.current.item.currency"
+                }
+              }
+            }
+          },
+          {
+            "type": "component.number-field",
+            "instanceId": "unit-price",
+            "options": {
+              "label": "Unit price per hour",
+              "initialValue": 0
+            }
+          },
+          {
+            "type": "component.number-field",
+            "instanceId": "quantity",
+            "options": {
+              "label": "Quantity",
+              "initialValue": 1
+            }
+          },
+          {
+            "type": "component.signature-field",
+            "instanceId": "signature",
+            "options": {
+              "label": "Signature"
+            }
+          }
+        ]
+      }
     }
-  }
+  ]
 }

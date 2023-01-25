@@ -1,31 +1,23 @@
 {
   "title": "Revenues and expenses",
   "type": "jig.default",
-  "datasources": {
-    "expenses": {
-      "options": {
-        "data": [
-          {
-            "x": "2019",
-            "y": 22000
-          },
-          {
-            "x": "2020",
-            "y": 19000
-          },
-          {
-            "x": "2021",
-            "y": 28000
-          },
-          {
-            "x": "2022",
-            "y": 39000
+  "header": {
+    "type": "component.jig-header",
+    "options": {
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
           }
-        ]
-      },
-      "type": "datasource.static"
-    },
+        }
+      }
+    }
+  },
+  "datasources": {
     "revenues": {
+      "type": "datasource.static",
       "options": {
         "data": [
           {
@@ -45,10 +37,33 @@
             "y": 51000
           }
         ]
-      },
-      "type": "datasource.static"
+      }
+    },
+    "expenses": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "x": "2019",
+            "y": 22000
+          },
+          {
+            "x": "2020",
+            "y": 19000
+          },
+          {
+            "x": "2021",
+            "y": 28000
+          },
+          {
+            "x": "2022",
+            "y": 39000
+          }
+        ]
+      }
     },
     "transactions": {
+      "type": "datasource.sqlite",
       "options": {
         "provider": "DATA_PROVIDER_DYNAMIC",
         "entities": [
@@ -56,23 +71,44 @@
             "entity": "default/revenues"
           }
         ],
-        "query": "SELECT \n  id, \n  '\\$.year', \n  '\\$.date',\n  '\\$.company',\n  '\\$.description',\n  '\\$.amount',\n  '\\$.positive'\nFROM [default/revenues]\nWHERE '\\$.year' LIKE @filter or @filter IS NULL\nORDER BY '\\$.date' DESC\n",
+        "query": "SELECT \n  id, \n  '$.year', \n  '$.date',\n  '$.company',\n  '$.description',\n  '$.amount',\n  '$.positive'\nFROM [default/revenues]\nWHERE '$.year' LIKE @filter or @filter IS NULL\nORDER BY '$.date' DESC\n",
         "queryParameters": {
           "filter": "=@ctx.components.transactions-list.state.filter"
         }
-      },
-      "type": "datasource.sqlite"
+      }
     }
   },
   "children": [
     {
+      "type": "component.bar-chart",
       "options": {
+        "legend": {
+          "isHidden": false
+        },
         "chart": {
           "height": 280,
           "isAnimated": true
         },
-        "legend": {
-          "isHidden": false
+        "yAxis": {
+          "max": 65000,
+          "min": 10000,
+          "labels": {
+            "format": {
+              "numberStyle": "currency",
+              "currency": "USD",
+              "compactDisplay": "short",
+              "notation": "compact"
+            }
+          }
+        },
+        "xAxis": {
+          "tickAmount": 3,
+          "categories": [
+            "2019",
+            "2020",
+            "2021",
+            "2022"
+          ]
         },
         "plotOptions": {
           "series": {
@@ -81,49 +117,32 @@
         },
         "series": [
           {
-            "color": "positive",
             "data": "=@ctx.datasources.revenues",
+            "name": "Revenues",
+            "color": "positive",
             "dataLabels": [
               {
                 "isEnabled": false
               }
-            ],
-            "name": "Revenues"
+            ]
           },
           {
-            "color": "negative",
             "data": "=@ctx.datasources.expenses",
+            "name": "Expenses",
+            "color": "negative",
             "dataLabels": [
               {
                 "isEnabled": false
               }
-            ],
-            "name": "Expenses"
+            ]
           }
-        ],
-        "xAxis": {
-          "categories": ["2019", "2020", "2021", "2022"],
-          "tickAmount": 3
-        },
-        "yAxis": {
-          "labels": {
-            "format": {
-              "compactDisplay": "short",
-              "currency": "USD",
-              "notation": "compact",
-              "numberStyle": "currency"
-            }
-          },
-          "max": 65000,
-          "min": 10000
-        }
-      },
-      "type": "component.bar-chart"
+        ]
+      }
     },
     {
+      "type": "component.list",
       "instanceId": "transactions-list",
       "options": {
-        "data": "=@ctx.datasources.transactions",
         "filter": [
           {
             "title": "2019",
@@ -142,54 +161,40 @@
             "value": 2022
           }
         ],
+        "data": "=@ctx.datasources.transactions",
+        "maximumItemsToRender": 10,
         "item": {
+          "type": "component.list-item",
           "options": {
+            "divider": "solid",
             "title": "=@ctx.current.item.company",
             "subtitle": "=@ctx.current.item.description",
-            "description": "=\\$fromMillis(\\$toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')",
-            "divider": "solid",
+            "description": "=$fromMillis($toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')",
             "label": {
+              "title": "=@ctx.current.item.amount & '$'",
+              "isHidden": false,
               "color": [
                 {
-                  "color": "color2",
-                  "when": "=(@ctx.current.item.positive = \"true\")"
+                  "when": "=(@ctx.current.item.positive = \"true\")",
+                  "color": "color2"
                 },
                 {
-                  "color": "color4",
-                  "when": "=(@ctx.current.item.positive = \"false\")"
+                  "when": "=(@ctx.current.item.positive = \"false\")",
+                  "color": "color4"
                 }
-              ],
-              "isHidden": false,
-              "title": "=@ctx.current.item.amount & '\\$'"
+              ]
             },
             "leftElement": {
               "element": "icon",
               "name": "=@ctx.current.item.positive = \"true\" ? 'up' :'down'"
             },
             "style": {
-              "isError": "=@ctx.current.item.positive = \"false\" ? \"true\" :\"false\"",
-              "isPositive": "=@ctx.current.item.positive"
+              "isPositive": "=@ctx.current.item.positive",
+              "isError": "=@ctx.current.item.positive = \"false\" ? \"true\" :\"false\""
             }
-          },
-          "type": "component.list-item"
-        },
-        "maximumItemsToRender": 10
-      },
-      "type": "component.list"
-    }
-  ],
-  "header": {
-    "type": "component.jig-header",
-    "options": {
-      "height": "medium",
-      "children": {
-        "type": "component.image",
-        "options": {
-          "source": {
-            "uri": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
           }
         }
       }
     }
-  }
+  ]
 }

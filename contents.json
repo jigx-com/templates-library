@@ -9,19 +9,19 @@
     {
       "name": "Default jig 1",
       "filePath": "templates/jigs/default/template-default-1.json",
-      "previewImgSrc": "templates/jigs/default/template-default-1.jpeg",
+      "previewImgSrc": "templates/jigs/default/template-default-1.png",
       "jigLibraryRef": "jig-default"
     },
     {
       "name": "Default jig 2",
       "filePath": "templates/jigs/default/template-default-2.json",
-      "previewImgSrc": "templates/jigs/default/template-default-2.jpeg",
+      "previewImgSrc": "templates/jigs/default/template-default-2.png",
       "jigLibraryRef": "jig-default"
     },
     {
       "name": "Default jig 3",
       "filePath": "templates/jigs/default/template-default-3.json",
-      "previewImgSrc": "templates/jigs/default/template-default-3.jpeg",
+      "previewImgSrc": "templates/jigs/default/template-default-3.png",
       "jigLibraryRef": "jig-default"
     },
     {
@@ -39,7 +39,7 @@
     {
       "name": "Default jig 6",
       "filePath": "templates/jigs/default/template-default-6.json",
-      "previewImgSrc": "templates/jigs/default/template-default-6.jpeg",
+      "previewImgSrc": "templates/jigs/default/template-default-6.png",
       "jigLibraryRef": "jig-default"
     },
     {
@@ -51,19 +51,19 @@
     {
       "name": "Default jig 8",
       "filePath": "templates/jigs/default/template-default-8.json",
-      "previewImgSrc": "templates/jigs/default/template-default-8.jpeg",
+      "previewImgSrc": "templates/jigs/default/template-default-8.png",
       "jigLibraryRef": "jig-default"
     },
     {
       "name": "Default jig 9",
       "filePath": "templates/jigs/default/template-default-9.json",
-      "previewImgSrc": "templates/jigs/default/template-default-9.jpeg",
+      "previewImgSrc": "templates/jigs/default/template-default-9.png",
       "jigLibraryRef": "jig-default"
     },
     {
       "name": "Default jig 10",
       "filePath": "templates/jigs/default/template-default-10.json",
-      "previewImgSrc": "templates/jigs/default/template-default-10.jpeg",
+      "previewImgSrc": "templates/jigs/default/template-default-10.png",
       "jigLibraryRef": "jig-default"
     },
     {

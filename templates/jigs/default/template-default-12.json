@@ -1,59 +1,74 @@
 {
   "title": "Pie chart",
   "type": "jig.default",
+  "header": {
+    "type": "component.jig-header",
+    "options": {
+      "height": "medium",
+      "children": {
+        "type": "component.image",
+        "options": {
+          "source": {
+            "uri": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
+          }
+        }
+      }
+    }
+  },
   "datasources": {
-    "arch": {
-      "options": {
-        "data": [
-          {
-            "color": "color1",
-            "y": 2
-          },
-          {
-            "color": "transparent",
-            "y": 1
-          }
-        ]
-      },
-      "type": "datasource.static"
-    },
     "issues": {
+      "type": "datasource.static",
       "options": {
         "data": [
           {
+            "y": 1,
             "color": "color2",
-            "name": "closed",
-            "y": 1
+            "name": "closed"
           },
           {
+            "y": 2,
             "color": "color3",
-            "name": "open",
-            "y": 2
+            "name": "open"
           },
           {
+            "y": 1,
             "color": "color1",
-            "name": "new",
-            "y": 1
+            "name": "new"
           }
         ]
-      },
-      "type": "datasource.static"
+      }
+    },
+    "arch": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "y": 2,
+            "color": "color1"
+          },
+          {
+            "y": 1,
+            "color": "transparent"
+          }
+        ]
+      }
     }
   },
   "children": [
     {
+      "type": "component.pie-chart",
       "options": {
         "chart": {
-          "height": 160,
-          "subtitle": {
-            "text": "in total",
-            "verticalAlign": "center"
-          },
           "title": {
             "text": "47 issues",
             "verticalAlign": "center"
           },
-          "width": 160
+          "subtitle": {
+            "text": "in total",
+            "verticalAlign": "center"
+          },
+          "width": 160,
+          "height": 160
         },
         "legend": {
           "isHidden": false
@@ -69,22 +84,22 @@
             "layout": "pie"
           }
         ]
-      },
-      "type": "component.pie-chart"
+      }
     },
     {
+      "type": "component.pie-chart",
       "options": {
         "chart": {
-          "height": 180,
-          "subtitle": {
-            "text": "complete",
-            "verticalAlign": "center"
-          },
           "title": {
             "text": "73%",
             "verticalAlign": "center"
           },
-          "width": 180
+          "subtitle": {
+            "text": "complete",
+            "verticalAlign": "center"
+          },
+          "width": 180,
+          "height": 180
         },
         "legend": {
           "isHidden": true
@@ -92,30 +107,15 @@
         "series": [
           {
             "data": "=@ctx.datasources.arch",
+            "layout": "arch",
             "dataLabels": [
               {
                 "isEnabled": false
               }
-            ],
-            "layout": "arch"
+            ]
           }
         ]
-      },
-      "type": "component.pie-chart"
-    }
-  ],
-  "header": {
-    "type": "component.jig-header",
-    "options": {
-      "height": "medium",
-      "children": {
-        "type": "component.image",
-        "options": {
-          "source": {
-            "uri": "https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60"
-          }
-        }
       }
     }
-  }
+  ]
 }

@@ -1,101 +1,6 @@
 {
   "title": "Leads by Status",
   "type": "jig.default",
-  "datasources": {
-    "closed-converted": {
-      "options": {
-        "data": [
-          {
-            "color": "color3",
-            "x": "Closed - Converted",
-            "y": 3
-          }
-        ]
-      },
-      "type": "datasource.static"
-    },
-    "closed-not-converted": {
-      "options": {
-        "data": [
-          {
-            "color": "color4",
-            "x": "Closed - Not converted",
-            "y": 4
-          }
-        ]
-      },
-      "type": "datasource.static"
-    },
-    "open-not-contacted": {
-      "options": {
-        "data": [
-          {
-            "color": "color5",
-            "x": "Open",
-            "y": 3
-          }
-        ]
-      },
-      "type": "datasource.static"
-    },
-    "working-contacted": {
-      "options": {
-        "data": [
-          {
-            "color": "color6",
-            "x": "Working",
-            "y": 12
-          }
-        ]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "children": [
-    {
-      "options": {
-        "chart": {
-          "height": 200,
-          "isAnimated": true
-        },
-        "legend": {
-          "isHidden": false
-        },
-        "plotOptions": {
-          "series": {
-            "pointWidth": 12
-          }
-        },
-        "series": [
-          {
-            "color": "positive",
-            "data": "=@ctx.datasources.closed-converted",
-            "name": "=@ctx.datasources.closed-converted.x"
-          },
-          {
-            "color": "positive",
-            "data": "=@ctx.datasources.closed-not-converted",
-            "name": "=@ctx.datasources.closed-not-converted.x"
-          },
-          {
-            "color": "positive",
-            "data": "=@ctx.datasources.open-not-contacted",
-            "name": "=@ctx.datasources.open-not-contacted.x"
-          },
-          {
-            "color": "positive",
-            "data": "=@ctx.datasources.working-contacted",
-            "name": "=@ctx.datasources.working-contacted.x"
-          }
-        ],
-        "xAxis": {
-          "isHidden": true,
-          "tickAmount": 3
-        }
-      },
-      "type": "component.bar-chart"
-    }
-  ],
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -109,5 +14,103 @@
         }
       }
     }
-  }
+  },
+  "datasources": {
+    "closed-converted": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "x": "Closed - Converted",
+            "y": 3,
+            "color": "color3"
+          }
+        ]
+      }
+    },
+    "closed-not-converted": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "x": "Closed - Not converted",
+            "y": 4,
+            "color": "color4"
+          }
+        ]
+      }
+    },
+    "open-not-contacted": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "x": "Open",
+            "y": 3,
+            "color": "color5"
+          }
+        ]
+      }
+    },
+    "working-contacted": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "x": "Working",
+            "y": 12,
+            "color": "color6"
+          }
+        ]
+      }
+    }
+  },
+  "children": [
+    {
+      "type": "component.bar-chart",
+      "options": {
+        "legend": {
+          "isHidden": false
+        },
+        "chart": {
+          "height": 200,
+          "isAnimated": true
+        },
+        "xAxis": {
+          "tickAmount": 3,
+          "isHidden": true
+        },
+        "plotOptions": {
+          "series": {
+            "pointWidth": 16,
+            "marker": {
+              "isHidden": false
+            }
+          }
+        },
+        "series": [
+          {
+            "data": "=@ctx.datasources.closed-converted",
+            "color": "positive",
+            "name": "=@ctx.datasources.closed-converted.x"
+          },
+          {
+            "data": "=@ctx.datasources.closed-not-converted",
+            "color": "positive",
+            "name": "=@ctx.datasources.closed-not-converted.x"
+          },
+          {
+            "data": "=@ctx.datasources.open-not-contacted",
+            "color": "positive",
+            "name": "=@ctx.datasources.open-not-contacted.x"
+          },
+          {
+            "data": "=@ctx.datasources.working-contacted",
+            "color": "positive",
+            "name": "=@ctx.datasources.working-contacted.x"
+          }
+        ]
+      }
+    }
+  ]
 }

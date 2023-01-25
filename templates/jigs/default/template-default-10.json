@@ -1,115 +1,6 @@
 {
   "title": "Horizontal list",
   "type": "jig.default",
-  "datasources": {
-    "list1": {
-      "options": {
-        "data": [
-          {
-            "firstName": "July",
-            "id": 1,
-            "img": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-            "position": "manager",
-            "surname": "Nellson"
-          },
-          {
-            "firstName": "Karl",
-            "id": 2,
-            "img": "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
-            "position": "Salesman",
-            "surname": "Fisher"
-          },
-          {
-            "firstName": "Mary",
-            "id": 3,
-            "img": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-            "position": "DEV",
-            "surname": "Gomez"
-          },
-          {
-            "firstName": "John",
-            "id": 4,
-            "img": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
-            "position": "Marketing",
-            "surname": "Doe"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    },
-    "list2": {
-      "options": {
-        "data": [
-          {
-            "img": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1258&q=80",
-            "section": "Furniture"
-          },
-          {
-            "img": "https://images.unsplash.com/photo-1617576683096-00fc8eecb3af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-            "section": "Workshop and garden"
-          },
-          {
-            "img": "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-            "section": "Large appliances"
-          },
-          {
-            "img": "https://images.unsplash.com/photo-1595935736128-db1f0a261263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80",
-            "section": "TV"
-          },
-          {
-            "img": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-            "section": "Computers and laptops"
-          }
-        ]
-      },
-      "type": "datasource.static"
-    }
-  },
-  "children": [
-    {
-      "options": {
-        "data": "=@ctx.datasources.list1",
-        "isHorizontal": true,
-        "item": {
-          "options": {
-            "title": "=@ctx.current.item.firstName & ' ' & @ctx.current.item.surname",
-            "subtitle": "=@ctx.current.item.position",
-            "horizontalItemSize": "large",
-            "leftElement": {
-              "element": "avatar",
-              "text": "=\\$substring(@ctx.current.item.firstName, 0, 1) & \\$substring(@ctx.current.item.surname, 0, 1)",
-              "uri": "=@ctx.current.item.img"
-            },
-            "style": {
-              "isHighlighted": true
-            }
-          },
-          "type": "component.list-item"
-        },
-        "maximumItemsToRender": 8
-      },
-      "type": "component.list"
-    },
-    {
-      "options": {
-        "data": "=@ctx.datasources.list2",
-        "isHorizontal": true,
-        "item": {
-          "options": {
-            "title": "=@ctx.current.item.section",
-            "leftElement": {
-              "element": "image",
-              "text": "",
-              "uri": "=@ctx.current.item.img"
-            }
-          },
-          "type": "component.list-item"
-        },
-        "maximumItemsToRender": 8
-      },
-      "type": "component.list"
-    }
-  ],
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -123,5 +14,505 @@
         }
       }
     }
-  }
+  },
+  "datasources": {
+    "list1": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "id": 1,
+            "firstName": "July",
+            "surname": "Nellson",
+            "position": "Manager",
+            "img": "https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          },
+          {
+            "id": 2,
+            "firstName": "Karl",
+            "surname": "Fisher",
+            "position": "Salesman",
+            "img": "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80"
+          },
+          {
+            "id": 3,
+            "firstName": "Mary",
+            "surname": "Gomez",
+            "position": "DEV",
+            "img": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          },
+          {
+            "id": 4,
+            "firstName": "John",
+            "surname": "Doe",
+            "position": "Marketing",
+            "img": "https://images.unsplash.com/photo-1548449112-96a38a643324?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          }
+        ]
+      }
+    },
+    "list2": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "section": "Furniture",
+            "img": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1258&q=80"
+          },
+          {
+            "section": "Workshop and garden",
+            "img": "https://images.unsplash.com/photo-1617576683096-00fc8eecb3af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+          },
+          {
+            "section": "Large appliances",
+            "img": "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+          },
+          {
+            "section": "TV",
+            "img": "https://images.unsplash.com/photo-1595935736128-db1f0a261263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
+          },
+          {
+            "section": "Computers and laptops",
+            "img": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+          }
+        ]
+      }
+    },
+    "pie-chart": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "title": "25%",
+            "subtitle": "As",
+            "data": [
+              25,
+              {
+                "y": 75,
+                "color": "transparent"
+              }
+            ]
+          },
+          {
+            "title": "45%",
+            "subtitle": "Brno",
+            "data": [
+              45,
+              {
+                "y": 55,
+                "color": "transparent"
+              }
+            ]
+          },
+          {
+            "title": "33%",
+            "subtitle": "Prague",
+            "data": [
+              33,
+              {
+                "y": 67,
+                "color": "transparent"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "stage": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "id": 1,
+            "from": "Boston",
+            "time-from": 690,
+            "to": "New York",
+            "time-to": 750,
+            "airline": "Ryanair",
+            "flight": "FR 9749",
+            "seatWidth": "44 cm",
+            "seatFold": "7 cm"
+          },
+          {
+            "id": 2,
+            "from": "Las Vegas",
+            "time-from": "09:45",
+            "to": "London",
+            "time-to": 1140,
+            "airline": "American Airlines",
+            "flight": "AA 6642",
+            "seatWidth": "47 cm",
+            "seatFold": "9 cm"
+          },
+          {
+            "id": 3,
+            "from": "Paris",
+            "time-from": 795,
+            "to": "Prague",
+            "time-to": 1050,
+            "airline": "Air France",
+            "flight": "AF 7438",
+            "seatWidth": "46 cm",
+            "seatFold": "8 cm"
+          }
+        ]
+      }
+    },
+    "products": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "name": "Kenwood KVC85.124SI",
+            "subtitle": "584 USD",
+            "description": "Food processor planetary mixing method, power input 1200 W, internal gear material metal, bowl volume 5 l, bowl material stainless steel, shell material stainless steel, continuous speed control, whipping, mixing and kneading, weight 9.5 kg, kneading hook, for whisk, balloon whisk and whisk, silver color",
+            "highlight": false,
+            "label": true,
+            "label-title": "New",
+            "color": "color2",
+            "uri": "https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=KENKR323"
+          },
+          {
+            "name": "Huawei Watch GT Runner",
+            "subtitle": "304 USD",
+            "description": "Smart watch - men's, GPS, calling from the watch via a paired phone (within Bluetooth range), heart rate measurement, sleep monitoring, pedometer,",
+            "highlight": true,
+            "label": true,
+            "label-title": "-10 %",
+            "color": "color4",
+            "uri": "https://g.denik.cz/1/8f/mkt-runner-product-image-black-front-30-right-en-hq-png-20210908-v1_denik-galerie-800.png"
+          },
+          {
+            "name": "ASUS ROG Fusion II 500",
+            "subtitle": "169 USD",
+            "description": "Wired gaming headset, with microphone, over the head, around the ears, closed design, 3.5 mm Jack, USB-A, USB-C, for PC, PlayStation 4, PlayStation 5, Xbox ONE, Xbox Series and Nintendo Switch, Hi- Res audio, with volume control, frequency range 20 Hz-40000 Hz",
+            "highlight": false,
+            "label": true,
+            "label-title": "-13 %",
+            "color": "color4",
+            "uri": "https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=NM362a8b"
+          },
+          {
+            "name": "Eternico Wireless set KS4001",
+            "subtitle": "16 USD",
+            "description": "Wireless keyboard and mouse set, for office and home, range up to 10m, low-profile keys, power saving mode technology, 6 multimedia keys, scissor key mechanism, Plug & Play, 2*AAA batteries (included), USB nano receiver 2.4Ghz + mouse, wireless, optical, 800 - 1200 DPI, power saving technology",
+            "highlight": false,
+            "label": true,
+            "label-title": "-28 %",
+            "color": "color4",
+            "uri": "https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=AET4001a"
+          }
+        ]
+      }
+    },
+    "house": {
+      "type": "datasource.static",
+      "options": {
+        "data": [
+          {
+            "name": "Hue Table 1",
+            "subtitle": "Living room",
+            "highlight": false,
+            "switch-value": false,
+            "icon": "house-signal",
+            "color": "color8"
+          },
+          {
+            "name": "Hue Table 2",
+            "subtitle": "Bedroom",
+            "highlight": true,
+            "switch-value": true,
+            "icon": "house-signal",
+            "color": "color1"
+          },
+          {
+            "name": "House lock",
+            "subtitle": "Unlocked",
+            "highlight": false,
+            "switch-value": false,
+            "icon": "lock-unlock-4",
+            "color": "color5"
+          }
+        ]
+      }
+    }
+  },
+  "children": [
+    {
+      "type": "component.section",
+      "options": {
+        "title": "List-item with avatar",
+        "children": [
+          {
+            "type": "component.list",
+            "options": {
+              "data": "=@ctx.datasources.list1",
+              "maximumItemsToRender": 8,
+              "isHorizontal": true,
+              "item": {
+                "type": "component.list-item",
+                "options": {
+                  "title": "=@ctx.current.item.firstName & ' ' & @ctx.current.item.surname",
+                  "subtitle": "=@ctx.current.item.position",
+                  "horizontalItemSize": "large",
+                  "style": {
+                    "isHighlighted": true
+                  },
+                  "leftElement": {
+                    "element": "avatar",
+                    "text": "=$substring(@ctx.current.item.firstName, 0, 1) & $substring(@ctx.current.item.surname, 0, 1)",
+                    "uri": "=@ctx.current.item.img"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "component.section",
+      "options": {
+        "title": "List-item with image",
+        "children": [
+          {
+            "type": "component.list",
+            "options": {
+              "data": "=@ctx.datasources.list2",
+              "maximumItemsToRender": 8,
+              "isHorizontal": true,
+              "item": {
+                "type": "component.list-item",
+                "options": {
+                  "title": "=@ctx.current.item.section",
+                  "leftElement": {
+                    "element": "image",
+                    "text": "",
+                    "uri": "=@ctx.current.item.img"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "component.section",
+      "options": {
+        "title": "List with pie-chart",
+        "children": [
+          {
+            "type": "component.list",
+            "options": {
+              "data": "=@ctx.datasources.pie-chart",
+              "isHorizontal": true,
+              "item": {
+                "type": "component.pie-chart",
+                "options": {
+                  "chart": {
+                    "title": {
+                      "text": "=@ctx.current.item.title",
+                      "verticalAlign": "center"
+                    },
+                    "subtitle": {
+                      "text": "=@ctx.current.item.subtitle",
+                      "verticalAlign": "center"
+                    },
+                    "width": 100,
+                    "height": 100
+                  },
+                  "legend": {
+                    "isHidden": true
+                  },
+                  "series": [
+                    {
+                      "data": "=@ctx.current.item.data",
+                      "layout": "pie"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "component.section",
+      "options": {
+        "title": "List with expander",
+        "children": [
+          {
+            "type": "component.list",
+            "options": {
+              "data": "=@ctx.datasources.stage",
+              "maximumItemsToRender": 8,
+              "isHorizontal": true,
+              "item": {
+                "type": "component.expander",
+                "options": {
+                  "header": {
+                    "centerElement": {
+                      "type": "component.stage",
+                      "options": {
+                        "right": {
+                          "title": "=@ctx.current.item.from",
+                          "subtitle": "=@ctx.current.item.time-from"
+                        },
+                        "left": {
+                          "title": "=@ctx.current.item.to",
+                          "subtitle": "=@ctx.current.item.time-to"
+                        }
+                      }
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "component.entity",
+                      "options": {
+                        "children": [
+                          {
+                            "type": "component.entity-field",
+                            "options": {
+                              "label": "Airline",
+                              "value": "=@ctx.current.item.airline"
+                            }
+                          },
+                          {
+                            "type": "component.entity-field",
+                            "options": {
+                              "label": "Flight No.",
+                              "value": "=@ctx.current.item.flight"
+                            }
+                          },
+                          {
+                            "type": "component.entity-field",
+                            "options": {
+                              "label": "Seat width",
+                              "value": "=@ctx.current.item.seatWidth"
+                            }
+                          },
+                          {
+                            "type": "component.entity-field",
+                            "options": {
+                              "label": "Seat fold",
+                              "value": "=@ctx.current.item.seatFold"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "component.section",
+      "options": {
+        "title": "List-item products",
+        "children": [
+          {
+            "type": "component.list",
+            "options": {
+              "data": "=@ctx.datasources.products",
+              "isHorizontal": true,
+              "item": {
+                "type": "component.list-item",
+                "options": {
+                  "title": "=@ctx.current.item.name",
+                  "subtitle": "=@ctx.current.item.subtitle",
+                  "description": "=@ctx.current.item.description",
+                  "label": {
+                    "title": "=@ctx.current.item.label-title",
+                    "color": [
+                      {
+                        "when": "=@ctx.current.item.label",
+                        "color": "=@ctx.current.item.color"
+                      }
+                    ]
+                  },
+                  "divider": "solid",
+                  "horizontalItemSize": "large",
+                  "style": {
+                    "isPositive": false,
+                    "isHighlighted": "=@ctx.current.item.highlight",
+                    "isStrikeThrough": false,
+                    "isError": false,
+                    "isWarning": false,
+                    "isDisabled": false
+                  },
+                  "leftElement": {
+                    "element": "image",
+                    "resizeMode": "contain",
+                    "uri": "=@ctx.current.item.uri",
+                    "text": "N/A"
+                  },
+                  "rightElement": {
+                    "element": "amount-control",
+                    "value": 2,
+                    "onChange": {
+                      "type": "action.go-back"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "component.section",
+      "options": {
+        "title": "List-item with icon and switch",
+        "children": [
+          {
+            "type": "component.list",
+            "options": {
+              "data": "=@ctx.datasources.house",
+              "isHorizontal": true,
+              "item": {
+                "type": "component.list-item",
+                "options": {
+                  "title": "=@ctx.current.item.name",
+                  "subtitle": "=@ctx.current.item.subtitle",
+                  "color": [
+                    {
+                      "when": true,
+                      "color": "=@ctx.current.item.color"
+                    }
+                  ],
+                  "divider": "solid",
+                  "horizontalItemSize": "regular",
+                  "style": {
+                    "isPositive": false,
+                    "isHighlighted": "=@ctx.current.item.highlight",
+                    "isStrikeThrough": false,
+                    "isError": false,
+                    "isWarning": false,
+                    "isDisabled": false
+                  },
+                  "leftElement": {
+                    "element": "icon",
+                    "name": "=@ctx.current.item.icon",
+                    "isContained": true,
+                    "isDuotone": true
+                  },
+                  "rightElement": {
+                    "element": "switch",
+                    "value": "=@ctx.current.item.switch-value"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
 }
