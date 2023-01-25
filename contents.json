@@ -445,13 +445,13 @@
       "jigLibraryRef": "jc-entity"
     },
     {
-      "name": "With Entity Field, Sections and Field Row",
+      "name": "With Entity Field, Sections and Field Row (compact)",
       "filePath": "templates/components/entity/entity-3/template.json",
       "previewImgSrc": "templates/components/entity/entity-3/preview.png",
       "jigLibraryRef": "jc-entity"
     },
     {
-      "name": "With all possible components of the entity",
+      "name": "With all possible components of the entity (compact)",
       "filePath": "templates/components/entity/entity-4/template.json",
       "previewImgSrc": "templates/components/entity/entity-4/preview.png",
       "jigLibraryRef": "jc-entity"
