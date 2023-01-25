@@ -8,7 +8,7 @@
           "type": "action.go-to",
           "options": {
             "title": "New Expense",
-            "linkTo": "type-default-1"
+            "linkTo": "create the file for this action"
           }
         }
       ]

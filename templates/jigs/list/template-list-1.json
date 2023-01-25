@@ -40,7 +40,7 @@
           "type": "action.go-to",
           "options": {
             "title": "Buy products with low inventory",
-            "linkTo": "type-document-1"
+            "linkTo": "create the file for this action"
           }
         }
       ]
@@ -50,23 +50,13 @@
     "static-data": {
       "type": "datasource.static",
       "options": {
-        "data": [
-          30,
-          45,
-          55,
-          62
-        ]
+        "data": [30, 45, 55, 62]
       }
     },
     "static-data2": {
       "type": "datasource.static",
       "options": {
-        "data": [
-          57,
-          50,
-          40,
-          89
-        ]
+        "data": [57, 50, 40, 89]
       }
     },
     "inventory": {
@@ -214,7 +204,7 @@
             "onPress": {
               "type": "action.go-to",
               "options": {
-                "linkTo": "template-list-1"
+                "linkTo": "create the file for this action"
               }
             }
           }
@@ -227,7 +217,7 @@
             "onPress": {
               "type": "action.go-to",
               "options": {
-                "linkTo": "template-list-1"
+                "linkTo": "create the file for this action"
               }
             }
           }
