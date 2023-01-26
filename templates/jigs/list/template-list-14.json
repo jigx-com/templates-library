@@ -45,7 +45,7 @@
       }
     }
   },
-  "data": "=$filter(@ctx.datasources.search, function($v){@ctx.datasources.search ? $contains($string($v.title),$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) :true})[]\n",
+  "data": "=\\$filter(@ctx.datasources.search, function(\\$v){@ctx.datasources.search ? \\$contains(\\$string(\\$v.title),\\$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) :true})[]\n",
   "item": {
     "type": "component.list-item",
     "options": {

@@ -73,7 +73,7 @@
             "title": "Teambuilding",
             "subtitle": "Payment by card",
             "description": "25 / 10 / 2022",
-            "value": "-$144",
+            "value": "-\\$144",
             "color": "negative",
             "isPositive": false
           },
@@ -82,7 +82,7 @@
             "title": "Transport Brno to Prague",
             "subtitle": "Payment by card",
             "description": "22 / 10 / 2022",
-            "value": "-$87.30",
+            "value": "-\\$87.30",
             "color": "negative",
             "isPositive": false
           },
@@ -91,7 +91,7 @@
             "title": "Team t-shirts",
             "subtitle": "Payment by card",
             "description": "20 / 10 / 2022",
-            "value": "-$21.50",
+            "value": "-\\$21.50",
             "color": "negative",
             "isPositive": false
           },
@@ -100,7 +100,7 @@
             "title": "Cinema tickets",
             "subtitle": "Payment by card",
             "description": "13 / 10 / 2022",
-            "value": "-$218.70",
+            "value": "-\\$218.70",
             "color": "negative",
             "isPositive": false
           },
@@ -109,7 +109,7 @@
             "title": "Team bonus",
             "subtitle": "Income payment",
             "description": "5 / 10 / 2022",
-            "value": "$120",
+            "value": "\\$120",
             "color": "positive",
             "isPositive": true
           }
@@ -148,12 +148,12 @@
         "chart": {
           "height": 300,
           "title": {
-            "text": "$523.5",
+            "text": "\\$523.5",
             "horizontalAlign": "center",
             "verticalAlign": "bottom"
           },
           "subtitle": {
-            "text": "=\"Team budget $1.000\"",
+            "text": "=\"Team budget \\$1.000\"",
             "horizontalAlign": "center",
             "verticalAlign": "bottom"
           }

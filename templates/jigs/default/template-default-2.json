@@ -52,7 +52,7 @@
     {
       "type": "component.avatar",
       "options": {
-        "text": "=$substring(@ctx.datasources.employeeDetail.employee-first-name, 0, 1) & $substring(@ctx.datasources.employeeDetail.employee-surname, 0, 1)",
+        "text": "=\\$substring(@ctx.datasources.employeeDetail.employee-first-name, 0, 1) & \\$substring(@ctx.datasources.employeeDetail.employee-surname, 0, 1)",
         "uri": "=@ctx.datasources.employeeDetail.employee-photo",
         "size": "large",
         "align": "center"
@@ -71,7 +71,7 @@
                   "type": "component.entity-field",
                   "options": {
                     "label": "Date of birth",
-                    "value": "=$fromMillis($toMillis(@ctx.datasources.employeeDetail.employee-date-of-birth), '[D1o] [MNn] [Y]')"
+                    "value": "=\\$fromMillis(\\$toMillis(@ctx.datasources.employeeDetail.employee-date-of-birth), '[D1o] [MNn] [Y]')"
                   }
                 },
                 {
@@ -102,7 +102,7 @@
                   "type": "component.entity-field",
                   "options": {
                     "label": "Date of starting work",
-                    "value": "=$fromMillis($toMillis(@ctx.datasources.employeeDetail.employee-startWork), '[D1o] [MNn] [Y]')"
+                    "value": "=\\$fromMillis(\\$toMillis(@ctx.datasources.employeeDetail.employee-startWork), '[D1o] [MNn] [Y]')"
                   }
                 },
                 {

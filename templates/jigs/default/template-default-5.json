@@ -71,7 +71,7 @@
             "entity": "default/revenues"
           }
         ],
-        "query": "SELECT \n  id, \n  '$.year', \n  '$.date',\n  '$.company',\n  '$.description',\n  '$.amount',\n  '$.positive'\nFROM [default/revenues]\nWHERE '$.year' LIKE @filter or @filter IS NULL\nORDER BY '$.date' DESC\n",
+        "query": "SELECT \n  id, \n  '\\$.year', \n  '\\$.date',\n  '\\$.company',\n  '\\$.description',\n  '\\$.amount',\n  '\\$.positive'\nFROM [default/revenues]\nWHERE '\\$.year' LIKE @filter or @filter IS NULL\nORDER BY '\\$.date' DESC\n",
         "queryParameters": {
           "filter": "=@ctx.components.transactions-list.state.filter"
         }
@@ -169,9 +169,9 @@
             "divider": "solid",
             "title": "=@ctx.current.item.company",
             "subtitle": "=@ctx.current.item.description",
-            "description": "=$fromMillis($toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')",
+            "description": "=\\$fromMillis(\\$toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')",
             "label": {
-              "title": "=@ctx.current.item.amount & '$'",
+              "title": "=@ctx.current.item.amount & '\\$'",
               "isHidden": false,
               "color": [
                 {
