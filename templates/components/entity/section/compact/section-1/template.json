@@ -1,4 +1,5 @@
 {
+  "type": "component.section",
   "options": {
     "title": "Section name",
     "children": [
