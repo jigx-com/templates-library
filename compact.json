@@ -448,13 +448,15 @@
       "name": "With Entity Field, Sections and Field Row (compact)",
       "filePath": "templates/components/entity/entity-3/template.json",
       "previewImgSrc": "templates/components/entity/entity-3/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "jigLibraryRef": "jc-entity",
+      "isCompact": true
     },
     {
       "name": "With all possible components of the entity (compact)",
       "filePath": "templates/components/entity/entity-4/template.json",
       "previewImgSrc": "templates/components/entity/entity-4/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "jigLibraryRef": "jc-entity",
+      "isCompact": true
     },
     {
       "name": "Section",
@@ -473,6 +475,13 @@
       "filePath": "templates/components/entity/section/basic/section-3/template.json",
       "previewImgSrc": "templates/components/entity/section/basic/section-3/preview.jpg",
       "jigLibraryRef": "jc-entity-section"
+    },
+    {
+      "name": "Section compact",
+      "filePath": "templates/components/entity/section/compact/section-1/template.json",
+      "previewImgSrc": "templates/components/entity/section/compact/section-1/preview.jpg",
+      "jigLibraryRef": "jc-entity-section",
+      "isCompact": true
     },
     {
       "name": "Field row",
@@ -563,6 +572,97 @@
       "filePath": "templates/components/entity/entity-field/basic/entity-field-13/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-13/preview.jpg",
       "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-1/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-1/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-2/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-2/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-3/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-3/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-4/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-4/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-5/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-5/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-6/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-6/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-7/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-7/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-8/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-8/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-9/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-9/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-10/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-10/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-11/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-11/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-12/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-12/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-13/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-13/preview.jpg",
+      "jigLibraryRef": "jc-entity-field",
+      "isCompact": true
     },
     {
       "name": "Expander with titles header and Arch chart component",
