@@ -1,0 +1,11 @@
+{
+  "options": {
+    "label": "Style",
+    "rightIcon": "alert-circle",
+    "style": {
+      "isWarning": true
+    },
+    "value": "isWarning"
+  },
+  "type": "component.entity-field"
+}

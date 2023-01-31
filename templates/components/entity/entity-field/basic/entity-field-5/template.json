@@ -1,0 +1,11 @@
+{
+  "options": {
+    "label": "Style",
+    "rightIcon": "check-circle-1",
+    "style": {
+      "isPositive": true
+    },
+    "value": "isPositive"
+  },
+  "type": "component.entity-field"
+}

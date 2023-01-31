@@ -1,0 +1,9 @@
+{
+  "options": {
+    "contentType": "default",
+    "label": "Name",
+    "rightIcon": "person",
+    "value": "Name"
+  },
+  "type": "component.entity-field"
+}

@@ -1,0 +1,9 @@
+{
+  "options": {
+    "contentType": "phone",
+    "label": "Phone",
+    "rightIcon": "phone",
+    "value": "+987 654 321"
+  },
+  "type": "component.entity-field"
+}

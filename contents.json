@@ -457,49 +457,161 @@
       "jigLibraryRef": "jc-entity"
     },
     {
-      "name": "Regular Entity Field",
-      "filePath": "templates/components/entity/entity-5/template.json",
-      "previewImgSrc": "templates/components/entity/entity-5/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-1/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-1/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
     },
     {
-      "name": "Compact Entity Field",
-      "filePath": "templates/components/entity/entity-6/template.json",
-      "previewImgSrc": "templates/components/entity/entity-6/preview.png",
-      "jigLibraryRef": "jc-entity"
-    },
-
-    {
-      "name": "Field row with 2 Entity fields",
-      "filePath": "templates/components/entity/entity-7/template.json",
-      "previewImgSrc": "templates/components/entity/entity-7/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-2/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-2/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
     },
     {
-      "name": "Field row with 3 Entity fields",
-      "filePath": "templates/components/entity/entity-8/template.json",
-      "previewImgSrc": "templates/components/entity/entity-8/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-3/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-3/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
     },
     {
-      "name": "Section - Field row & 2 Entity fields",
-      "filePath": "templates/components/entity/entity-9/template.json",
-      "previewImgSrc": "templates/components/entity/entity-9/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-4/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-4/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
     },
     {
-      "name": "Section - Field row & 3 Entity fields",
-      "filePath": "templates/components/entity/entity-10/template.json",
-      "previewImgSrc": "templates/components/entity/entity-10/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-5/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-5/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
     },
     {
-      "name": "Section with Entity field",
-      "filePath": "templates/components/entity/entity-11/template.json",
-      "previewImgSrc": "templates/components/entity/entity-11/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-6/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-6/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
     },
-
+    {
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-7/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-7/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-8/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-8/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-9/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-9/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-10/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-10/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-11/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-11/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-12/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-12/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field",
+      "filePath": "templates/components/entity/entity-field/basic/entity-field-13/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-13/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-1/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-1/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-2/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-2/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-3/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-3/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-4/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-4/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-5/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-5/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-6/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-6/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-7/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-7/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-8/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-8/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-9/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-9/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-10/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-10/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-11/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-11/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-12/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-12/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
+    {
+      "name": "Entity field (compact)",
+      "filePath": "templates/components/entity/entity-field/compact/entity-field-13/template.json",
+      "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-13/preview.jpg",
+      "jigLibraryRef": "jc-entity-field"
+    },
     {
       "name": "Expander with titles header and Arch chart component",
       "filePath": "templates/components/expander/expander-1/template.json",

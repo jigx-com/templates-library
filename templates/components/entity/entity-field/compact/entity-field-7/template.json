@@ -1,0 +1,11 @@
+{
+  "options": {
+    "label": "Style",
+    "rightIcon": "alert-triangle",
+    "style": {
+      "isNegative": true
+    },
+    "value": "isNegative"
+  },
+  "type": "component.entity-field"
+}
