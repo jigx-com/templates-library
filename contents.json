@@ -457,6 +457,42 @@
       "jigLibraryRef": "jc-entity"
     },
     {
+      "name": "Section",
+      "filePath": "templates/components/entity/section/basic/section-1/template.json",
+      "previewImgSrc": "templates/components/entity/section/basic/section-1/preview.jpg",
+      "jigLibraryRef": "jc-entity-section"
+    },
+    {
+      "name": "Section",
+      "filePath": "templates/components/entity/section/basic/section-2/template.json",
+      "previewImgSrc": "templates/components/entity/section/basic/section-2/preview.jpg",
+      "jigLibraryRef": "jc-entity-section"
+    },
+    {
+      "name": "Section",
+      "filePath": "templates/components/entity/section/basic/section-3/template.json",
+      "previewImgSrc": "templates/components/entity/section/basic/section-3/preview.jpg",
+      "jigLibraryRef": "jc-entity-section"
+    },
+    {
+      "name": "Section compact",
+      "filePath": "templates/components/entity/section/compact/section-1/template.json",
+      "previewImgSrc": "templates/components/entity/section/compact/section-1/preview.jpg",
+      "jigLibraryRef": "jc-entity-section"
+    },
+    {
+      "name": "Field row",
+      "filePath": "templates/components/entity/field-row/basic/field-row-1/template.json",
+      "previewImgSrc": "templates/components/entity/field-row/basic/field-row-1/preview.jpg",
+      "jigLibraryRef": "jc-field-row"
+    },
+    {
+      "name": "Field row",
+      "filePath": "templates/components/entity/field-row/basic/field-row-2/template.json",
+      "previewImgSrc": "templates/components/entity/field-row/basic/field-row-2/preview.jpg",
+      "jigLibraryRef": "jc-field-row"
+    },
+    {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-1/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-1/preview.jpg",

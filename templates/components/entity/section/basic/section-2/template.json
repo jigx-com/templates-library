@@ -1,36 +1,35 @@
 {
-  "instanceId": "entity",
   "options": {
+    "title": "Section name",
     "children": [
       {
+        "type": "component.field-row",
         "options": {
           "children": [
             {
+              "type": "component.entity-field",
               "options": {
                 "label": "Label",
                 "value": "Value"
-              },
-              "type": "component.entity-field"
+              }
             },
             {
+              "type": "component.entity-field",
               "options": {
                 "label": "Label",
                 "value": "Value"
-              },
-              "type": "component.entity-field"
+              }
             },
             {
+              "type": "component.entity-field",
               "options": {
                 "label": "Label",
                 "value": "Value"
-              },
-              "type": "component.entity-field"
+              }
             }
           ]
-        },
-        "type": "component.field-row"
+        }
       }
     ]
-  },
-  "type": "component.entity"
+  }
 }

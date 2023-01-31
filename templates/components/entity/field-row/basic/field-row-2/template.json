@@ -1,0 +1,27 @@
+{
+  "options": {
+    "children": [
+      {
+        "type": "component.entity-field",
+        "options": {
+          "label": "Label",
+          "value": "Value"
+        }
+      },
+      {
+        "type": "component.entity-field",
+        "options": {
+          "label": "Label",
+          "value": "Value"
+        }
+      },
+      {
+        "type": "component.entity-field",
+        "options": {
+          "label": "Label",
+          "value": "Value"
+        }
+      }
+    ]
+  }
+}
