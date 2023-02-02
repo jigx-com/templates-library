@@ -1582,7 +1582,7 @@
     {
       "name": "Opportunities",
       "filePath": "templates/components/list/list-2/template.json",
-      "previewImgSrc": "templates/components/list/list-2/preview.png",
+      "previewImgSrc": "templates/components/list/list-2/preview.jpg",
       "datasource": "templates/components/list/list-2/datasource.json",
       "jigLibraryRef": "jc-list"
     },

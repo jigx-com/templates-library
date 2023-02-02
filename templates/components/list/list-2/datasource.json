@@ -1,4 +1,5 @@
 {
+  "datasources": {
     "components": {
       "type": "datasource.static",
       "options": {
@@ -31,6 +32,19 @@
             "badge": "off"
           },
           {
+            "name": "Ellesti",
+            "subtitle": "LATAM",
+            "label-color": "color3",
+            "avatar-text": "E",
+            "avatar-uri": "https://robohash.org/jigx",
+            "progress": 1,
+            "value": 120000,
+            "status": "Finished",
+            "result": "Success",
+            "reason": null,
+            "badge": "on"
+          },
+          {
             "name": "Giga Stride",
             "subtitle": "North America",
             "label-color": "color8",
@@ -41,6 +55,19 @@
             "status": "Progress",
             "result": null,
             "reason": null,
+            "badge": "off"
+          },
+          {
+            "name": "Foot Locker",
+            "subtitle": "North America",
+            "label-color": "color11",
+            "avatar-text": "FL",
+            "avatar-uri": null,
+            "progress": 0.47,
+            "value": 42000,
+            "status": "Finished",
+            "result": "Unsuccess",
+            "reason": "Stopped Because Of High Price",
             "badge": "off"
           },
           {
@@ -83,19 +110,6 @@
             "badge": "off"
           },
           {
-            "name": "Foot Locker",
-            "subtitle": "North America",
-            "label-color": "color11",
-            "avatar-text": "FL",
-            "avatar-uri": null,
-            "progress": 0.47,
-            "value": 42000,
-            "status": "Finished",
-            "result": "Unsuccess",
-            "reason": "Stopped Because Of High Price",
-            "badge": "off"
-          },
-          {
             "name": "Mega Mile",
             "subtitle": "EMEA",
             "label-color": "color5",
@@ -106,19 +120,6 @@
             "status": "Finished",
             "result": "Unsuccess",
             "reason": "Stopped Because Of High Price",
-            "badge": "on"
-          },
-          {
-            "name": "Ellesti",
-            "subtitle": "LATAM",
-            "label-color": "color3",
-            "avatar-text": "E",
-            "avatar-uri": "https://robohash.org/jigx",
-            "progress": 1,
-            "value": 120000,
-            "status": "Finished",
-            "result": "Success",
-            "reason": null,
             "badge": "on"
           },
           {
@@ -138,3 +139,4 @@
       }
     }
   }
+}
