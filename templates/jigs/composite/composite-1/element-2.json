@@ -1,199 +1,145 @@
 {
   "title": "Opportunities",
   "type": "jig.list",
-  "actions": [
-    {
-      "children": [
-        {
-          "options": {
-            "title": "Add new opportunity",
-            "linkTo": "create the file for this action"
-          },
-          "type": "action.go-to"
-        }
-      ]
-    }
-  ],
   "datasources": {
     "components": {
       "type": "datasource.static",
       "options": {
         "data": [
           {
+            "name": "Belantti",
+            "subtitle": "APAC",
+            "label-color": "color4",
             "avatar-text": "B",
             "avatar-uri": "https://robohash.org/aloha",
-            "badge": "off",
-            "label-color": "color4",
-            "name": "Belantti",
             "progress": 0.54,
-            "reason": null,
-            "result": null,
+            "value": 115000,
             "status": "Progress",
-            "subtitle": "APAC",
-            "value": 115000
+            "result": null,
+            "reason": null,
+            "badge": "off"
           },
           {
-            "avatar-text": "TT",
-            "avatar-uri": null,
-            "badge": "off",
+            "name": "Ten Tulip",
+            "subtitle": "APAC",
             "highlight": false,
             "label-color": "color7",
-            "name": "Ten Tulip",
+            "avatar-text": "TT",
+            "avatar-uri": null,
             "progress": 0.6,
-            "reason": null,
-            "result": null,
+            "value": 107000,
             "status": "Progress",
-            "subtitle": "APAC",
-            "value": 107000
-          },
-          {
-            "avatar-text": "GS",
-            "avatar-uri": null,
-            "badge": "off",
-            "label-color": "color8",
-            "name": "Giga Stride",
-            "progress": 0.21,
-            "reason": null,
             "result": null,
-            "status": "Progress",
-            "subtitle": "North America",
-            "value": 102500
-          },
-          {
-            "avatar-text": "O",
-            "avatar-uri": null,
-            "badge": "off",
-            "label-color": "color9",
-            "name": "Ovuga",
-            "progress": 0.45,
             "reason": null,
-            "result": null,
-            "status": "Progress",
-            "subtitle": "EMEA",
-            "value": 98000
+            "badge": "off"
           },
           {
-            "avatar-text": "B",
-            "avatar-uri": null,
-            "badge": "off",
-            "label-color": "color10",
-            "name": "Boostgo",
-            "progress": 0.8,
-            "reason": null,
-            "result": null,
-            "status": "Progress",
-            "subtitle": "North America",
-            "value": 56000
-          },
-          {
-            "avatar-text": "SA",
-            "avatar-uri": null,
-            "badge": "off",
-            "label-color": "color13",
-            "name": "Sonic Automotive",
-            "progress": 0.22,
-            "reason": null,
-            "result": null,
-            "status": "Progress",
-            "subtitle": "EMEA",
-            "value": 37000
-          },
-          {
-            "avatar-text": "FL",
-            "avatar-uri": null,
-            "badge": "off",
-            "label-color": "color11",
-            "name": "Foot Locker",
-            "progress": 0.47,
-            "reason": "Stopped Because Of High Price",
-            "result": "Unsuccess",
-            "status": "Finished",
-            "subtitle": "North America",
-            "value": 42000
-          },
-          {
-            "avatar-text": "MM",
-            "avatar-uri": "https://robohash.org/Mega",
-            "badge": "on",
-            "label-color": "color5",
-            "name": "Mega Mile",
-            "progress": 0.78,
-            "reason": "Stopped Because Of High Price",
-            "result": "Unsuccess",
-            "status": "Finished",
-            "subtitle": "EMEA",
-            "value": 154000
-          },
-          {
+            "name": "Ellesti",
+            "subtitle": "LATAM",
+            "label-color": "color3",
             "avatar-text": "E",
             "avatar-uri": "https://robohash.org/jigx",
-            "badge": "on",
-            "label-color": "color3",
-            "name": "Ellesti",
             "progress": 1,
-            "reason": null,
-            "result": "Success",
+            "value": 120000,
             "status": "Finished",
-            "subtitle": "LATAM",
-            "value": 120000
+            "result": "Success",
+            "reason": null,
+            "badge": "on"
           },
           {
+            "name": "Giga Stride",
+            "subtitle": "North America",
+            "label-color": "color8",
+            "avatar-text": "GS",
+            "avatar-uri": null,
+            "progress": 0.21,
+            "value": 102500,
+            "status": "Progress",
+            "result": null,
+            "reason": null,
+            "badge": "off"
+          },
+          {
+            "name": "Foot Locker",
+            "subtitle": "North America",
+            "label-color": "color11",
+            "avatar-text": "FL",
+            "avatar-uri": null,
+            "progress": 0.47,
+            "value": 42000,
+            "status": "Finished",
+            "result": "Unsuccess",
+            "reason": "Stopped Because Of High Price",
+            "badge": "off"
+          },
+          {
+            "name": "Ovuga",
+            "subtitle": "EMEA",
+            "label-color": "color9",
+            "avatar-text": "O",
+            "avatar-uri": null,
+            "progress": 0.45,
+            "value": 98000,
+            "status": "Progress",
+            "result": null,
+            "reason": null,
+            "badge": "off"
+          },
+          {
+            "name": "Boostgo",
+            "subtitle": "North America",
+            "label-color": "color10",
+            "avatar-text": "B",
+            "avatar-uri": null,
+            "progress": 0.8,
+            "value": 56000,
+            "status": "Progress",
+            "result": null,
+            "reason": null,
+            "badge": "off"
+          },
+          {
+            "name": "Sonic Automotive",
+            "subtitle": "EMEA",
+            "label-color": "color13",
+            "avatar-text": "SA",
+            "avatar-uri": null,
+            "progress": 0.22,
+            "value": 37000,
+            "status": "Progress",
+            "result": null,
+            "reason": null,
+            "badge": "off"
+          },
+          {
+            "name": "Mega Mile",
+            "subtitle": "EMEA",
+            "label-color": "color5",
+            "avatar-text": "MM",
+            "avatar-uri": "https://robohash.org/Mega",
+            "progress": 0.78,
+            "value": 154000,
+            "status": "Finished",
+            "result": "Unsuccess",
+            "reason": "Stopped Because Of High Price",
+            "badge": "on"
+          },
+          {
+            "name": "Jacobs Engineering Group",
+            "subtitle": "EMEA",
+            "label-color": "color12",
             "avatar-text": "JE",
             "avatar-uri": null,
-            "badge": "off",
-            "label-color": "color12",
-            "name": "Jacobs Engineering Group",
             "progress": 1,
-            "reason": null,
-            "result": "Success",
+            "value": 38500,
             "status": "Finished",
-            "subtitle": "EMEA",
-            "value": 38500
+            "result": "Success",
+            "reason": null,
+            "badge": "off"
           }
         ]
       }
-    },
-    "chart-data": {
-      "options": {
-        "data": [
-          {
-            "y": "=ctx.datasources.components"
-          },
-          {
-            "color": "transparent",
-            "y": 23
-          }
-        ]
-      },
-      "type": "datasource.static"
     }
-  },
-  "data": "=\\$filter(@ctx.datasources.components, function(\\$v, \\$i, \\$a) {\n  @ctx.jig.state.filter = 'ALL' or \\$v.result = @ctx.jig.state.filter\n}) \n",
-  "item": {
-    "options": {
-      "title": "=@ctx.current.item.name",
-      "subtitle": "=@ctx.current.item.reason",
-      "color": [
-        {
-          "color": "color2",
-          "when": "=(@ctx.current.item.result= 'Success' ? true :false)"
-        }
-      ],
-      "leftElement": {
-        "element": "checkbox",
-        "value": "=(@ctx.current.item.status= 'Finished' ? true :false)"
-      },
-      "progress": "=@ctx.current.item.progress",
-      "rightElement": {
-        "element": "value",
-        "text": "=\"\\$ \" & @ctx.current.item.value"
-      },
-      "style": {
-        "isError": "=(@ctx.current.item.result= 'Unsuccess' ? true :false)",
-        "isStrikeThrough": "=(@ctx.current.item.status= 'Finished' ? true :false)"
-      }
-    },
-    "type": "component.list-item"
   },
   "filter": [
     {
@@ -209,29 +155,55 @@
       "value": "Unsuccess"
     }
   ],
-  "header": {
-    "type": "component.jig-header",
-    "options": {
-      "height": "medium",
-      "children": {
-        "type": "component.image",
-        "options": {
-          "source": {
-            "uri": "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2338&q=80"
-          }
-        }
+  "summary": {
+    "children": {
+      "type": "component.summary",
+      "options": {
+        "layout": "counter",
+        "value": "=$count(@ctx.datasources.components)",
+        "title": "Opportunities",
+        "subtitle": "=\"Worth than\" & \" $ \" & $sum(@ctx.datasources.components.value)"
       }
     }
   },
-  "summary": {
-    "children": {
-      "options": {
-        "title": "Opportunities",
-        "subtitle": "=\"Worth than\" & \" \\$ \" & \\$sum(@ctx.datasources.components.value)",
-        "layout": "counter",
-        "value": "=\\$count(@ctx.datasources.components)"
+  "actions": [
+    {
+      "children": [
+        {
+          "type": "action.go-to",
+          "options": {
+            "title": "Add new opportunity",
+            "linkTo": "type-list-2"
+          }
+        }
+      ]
+    }
+  ],
+  "data": "=$filter(@ctx.datasources.components, function($v, $i, $a) {\n  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter\n}) \n",
+  "item": {
+    "type": "component.list-item",
+    "options": {
+      "title": "=@ctx.current.item.name",
+      "subtitle": "=@ctx.current.item.reason",
+      "color": [
+        {
+          "when": "=(@ctx.current.item.result= 'Success' ? true :false)",
+          "color": "color2"
+        }
+      ],
+      "progress": "=@ctx.current.item.progress",
+      "leftElement": {
+        "element": "checkbox",
+        "value": "=(@ctx.current.item.status= 'Finished' ? true :false)"
       },
-      "type": "component.summary"
+      "style": {
+        "isError": "=(@ctx.current.item.result= 'Unsuccess' ? true :false)",
+        "isStrikeThrough": "=(@ctx.current.item.status= 'Finished' ? true :false)"
+      },
+      "rightElement": {
+        "element": "value",
+        "text": "=\"$ \" & @ctx.current.item.value"
+      }
     }
   }
 }
