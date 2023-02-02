@@ -1,53 +1,53 @@
 {
+  "type": "component.expander",
   "options": {
-    "children": [
-      {
-        "options": {
-          "children": [
-            {
-              "options": {
-                "children": [
-                  {
-                    "options": {
-                      "label": "Title 1",
-                      "value": "Value"
-                    },
-                    "type": "component.entity-field"
-                  },
-                  {
-                    "options": {
-                      "label": "Title 2",
-                      "value": "Value"
-                    },
-                    "type": "component.entity-field"
-                  }
-                ]
-              },
-              "type": "component.field-row"
-            },
-            {
-              "options": {
-                "label": "Title 3",
-                "value": "Value"
-              },
-              "type": "component.entity-field"
-            }
-          ]
-        },
-        "type": "component.entity"
-      }
-    ],
     "header": {
       "centerElement": {
+        "type": "component.titles",
         "options": {
           "title": "Title",
           "subtitle": "Subtitle",
-          "align": "left",
-          "icon": "person"
-        },
-        "type": "component.titles"
+          "icon": "person",
+          "align": "left"
+        }
       }
-    }
-  },
-  "type": "component.expander"
+    },
+    "children": [
+      {
+        "type": "component.entity",
+        "options": {
+          "children": [
+            {
+              "type": "component.field-row",
+              "options": {
+                "children": [
+                  {
+                    "type": "component.entity-field",
+                    "options": {
+                      "label": "Title 1",
+                      "value": "Value"
+                    }
+                  },
+                  {
+                    "type": "component.entity-field",
+                    "options": {
+                      "label": "Title 2",
+                      "value": "Value"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "component.entity-field",
+              "options": {
+                "label": "Title 3",
+                "value": "Value"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
 }

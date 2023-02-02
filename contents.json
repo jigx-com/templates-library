@@ -1541,21 +1541,18 @@
       "name": "Expander header - Stage",
       "filePath": "templates/components/expander/expander-27/template.json",
       "previewImgSrc": "templates/components/expander/expander-27/preview.png",
-      "datasource": "templates/components/expander/shared/datasource.json",
       "jigLibraryRef": "jc-expander"
     },
     {
       "name": "Expander header - Titles - Left aligned",
       "filePath": "templates/components/expander/expander-28/template.json",
       "previewImgSrc": "templates/components/expander/expander-28/preview.png",
-      "datasource": "templates/components/expander/shared/datasource.json",
       "jigLibraryRef": "jc-expander"
     },
     {
       "name": "Expander header - Titles - Center aligned",
       "filePath": "templates/components/expander/expander-29/template.json",
       "previewImgSrc": "templates/components/expander/expander-29/preview.png",
-      "datasource": "templates/components/expander/shared/datasource.json",
       "jigLibraryRef": "jc-expander"
     },
     {

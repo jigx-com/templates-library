@@ -1,59 +1,58 @@
 {
+  "type": "component.expander",
   "options": {
+    "header": {
+      "centerElement": {
+        "type": "component.stage",
+        "options": {
+          "icon": "plane-2",
+          "right": {
+            "title": "Start title",
+            "subtitle": "Start subtitle"
+          },
+          "left": {
+            "title": "End title",
+            "subtitle": "End subtitle"
+          }
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.entity",
         "options": {
           "children": [
             {
+              "type": "component.field-row",
               "options": {
                 "children": [
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "label": "Title 1",
                       "value": "Value"
-                    },
-                    "type": "component.entity-field"
+                    }
                   },
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "label": "Title 2",
                       "value": "Value"
-                    },
-                    "type": "component.entity-field"
+                    }
                   }
                 ]
-              },
-              "type": "component.field-row"
+              }
             },
             {
+              "type": "component.entity-field",
               "options": {
                 "label": "Title 3",
                 "value": "Value"
-              },
-              "type": "component.entity-field"
+              }
             }
-          ],
-          "isCompact": true
-        },
-        "type": "component.entity"
+          ]
+        }
       }
-    ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "icon": "plane-2",
-          "left": {
-            "subtitle": "End subtile",
-            "title": "End title"
-          },
-          "right": {
-            "subtitle": "Start subtitle",
-            "title": "Start title"
-          }
-        },
-        "type": "component.stage"
-      }
-    }
-  },
-  "type": "component.expander"
+    ]
+  }
 }
