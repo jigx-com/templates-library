@@ -1,6 +1,6 @@
 {
   "type": "component.web-view",
   "options": {
-    "uri": "https://www.jigx.com/process-automation/"
+    "uri": "https://www.google.com/"
   }
 }

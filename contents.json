@@ -647,7 +647,7 @@
     {
       "name": "Expander with titles header and Web view component",
       "filePath": "templates/components/expander/expander-13/template.json",
-      "previewImgSrc": "templates/components/expander/expander-13/preview.png",
+      "previewImgSrc": "templates/components/expander/expander-13/preview.jpg",
       "jigLibraryRef": "jc-expander"
     },
 
@@ -733,7 +733,7 @@
     {
       "name": "Expander with stage header and Web view component",
       "filePath": "templates/components/expander/expander-26/template.json",
-      "previewImgSrc": "templates/components/expander/expander-26/preview.png",
+      "previewImgSrc": "templates/components/expander/expander-26/preview.jpg",
       "jigLibraryRef": "jc-expander"
     },
 
@@ -1759,13 +1759,13 @@
     {
       "name": "Web view with the default height",
       "filePath": "templates/components/web-view/web-view-1/template.json",
-      "previewImgSrc": "templates/components/web-view/web-view-1/preview.png",
+      "previewImgSrc": "templates/components/web-view/web-view-1/preview.jpg",
       "jigLibraryRef": "jc-web-view"
     },
     {
       "name": "Web view with the height 400",
       "filePath": "templates/components/web-view/web-view-2/template.json",
-      "previewImgSrc": "templates/components/web-view/web-view-2/preview.png",
+      "previewImgSrc": "templates/components/web-view/web-view-2/preview.jpg",
       "jigLibraryRef": "jc-web-view"
     }
   ]
