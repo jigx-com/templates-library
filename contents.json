@@ -565,6 +565,18 @@
       "jigLibraryRef": "jc-entity-field"
     },
     {
+      "name": "Expander header - Titles - Left aligned",
+      "filePath": "templates/components/expander/expander-0/template.json",
+      "previewImgSrc": "templates/components/expander/expander-0/preview.png",
+      "jigLibraryRef": "jc-expander"
+    },
+    {
+      "name": "Expander header - Titles - Center aligned",
+      "filePath": "templates/components/expander/expander-00/template.json",
+      "previewImgSrc": "templates/components/expander/expander-00/preview.png",
+      "jigLibraryRef": "jc-expander"
+    },
+    {
       "name": "Expander with titles header and Arch chart component",
       "filePath": "templates/components/expander/expander-1/template.json",
       "previewImgSrc": "templates/components/expander/expander-1/preview.png",
@@ -1536,24 +1548,6 @@
       "previewImgSrc": "templates/components/list/product-item/product-item-2/preview.png",
       "datasource": "templates/components/list/product-item/shared/datasource.json",
       "jigLibraryRef": "jc-product-item"
-    },
-    {
-      "name": "Expander header - Stage",
-      "filePath": "templates/components/expander/expander-27/template.json",
-      "previewImgSrc": "templates/components/expander/expander-27/preview.png",
-      "jigLibraryRef": "jc-expander"
-    },
-    {
-      "name": "Expander header - Titles - Left aligned",
-      "filePath": "templates/components/expander/expander-28/template.json",
-      "previewImgSrc": "templates/components/expander/expander-28/preview.png",
-      "jigLibraryRef": "jc-expander"
-    },
-    {
-      "name": "Expander header - Titles - Center aligned",
-      "filePath": "templates/components/expander/expander-29/template.json",
-      "previewImgSrc": "templates/components/expander/expander-29/preview.png",
-      "jigLibraryRef": "jc-expander"
     },
     {
       "name": "Left title & subtitle - Icon - Right title & subtitle",
