@@ -1761,12 +1761,6 @@
       "filePath": "templates/components/web-view/web-view-2/template.json",
       "previewImgSrc": "templates/components/web-view/web-view-2/preview.jpg",
       "jigLibraryRef": "jc-web-view"
-    },
-    {
-      "name": "Web view with longpress",
-      "filePath": "templates/components/web-view/web-view-3/template.json",
-      "previewImgSrc": "templates/components/web-view/web-view-3/preview.png",
-      "jigLibraryRef": "jc-web-view"
     }
   ]
 }
