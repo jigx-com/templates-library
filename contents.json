@@ -1765,7 +1765,7 @@
     {
       "name": "Web view with the long-press",
       "filePath": "templates/components/web-view/web-view-3/template.json",
-      "previewImgSrc": "templates/components/web-view/web-view-3/preview.jpg",
+      "previewImgSrc": "templates/components/web-view/web-view-3/preview.png",
       "datasource": "templates/components/web-view/web-view-3/datasource.json",
       "jigLibraryRef": "jc-web-view"
     }
