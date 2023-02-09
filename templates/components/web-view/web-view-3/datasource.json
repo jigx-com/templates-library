@@ -1,0 +1,13 @@
+{
+  "isCompact": true,
+  "children": [
+    {
+      "type": "component.web-view",
+      "options": {
+        "uri": "https://www.google.com",
+        "isTrackingTransparencyRequired": true,
+        "height": 500
+      }
+    }
+  ]
+}
