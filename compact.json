@@ -4,229 +4,229 @@
       "name": "Calendar jig",
       "filePath": "templates/jigs/calendar/template-calendar-1.json",
       "previewImgSrc": "templates/jigs/calendar/template-calendar-1.jpeg",
-      "jigLibraryRef": "jig-calendar"
+      "templateRef": "jig-calendar"
     },
     {
       "name": "Default jig 1",
       "filePath": "templates/jigs/default/template-default-1.json",
       "previewImgSrc": "templates/jigs/default/template-default-1.png",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 2",
       "filePath": "templates/jigs/default/template-default-2.json",
       "previewImgSrc": "templates/jigs/default/template-default-2.png",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 3",
       "filePath": "templates/jigs/default/template-default-3.json",
       "previewImgSrc": "templates/jigs/default/template-default-3.png",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 4",
       "filePath": "templates/jigs/default/template-default-4.json",
       "previewImgSrc": "templates/jigs/default/template-default-4.jpeg",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 5",
       "filePath": "templates/jigs/default/template-default-5.json",
       "previewImgSrc": "templates/jigs/default/template-default-5.jpeg",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 6",
       "filePath": "templates/jigs/default/template-default-6.json",
       "previewImgSrc": "templates/jigs/default/template-default-6.png",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 7",
       "filePath": "templates/jigs/default/template-default-7.json",
       "previewImgSrc": "templates/jigs/default/template-default-7.jpeg",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 8",
       "filePath": "templates/jigs/default/template-default-8.json",
       "previewImgSrc": "templates/jigs/default/template-default-8.png",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 9",
       "filePath": "templates/jigs/default/template-default-9.json",
       "previewImgSrc": "templates/jigs/default/template-default-9.png",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 10",
       "filePath": "templates/jigs/default/template-default-10.json",
       "previewImgSrc": "templates/jigs/default/template-default-10.png",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 11",
       "filePath": "templates/jigs/default/template-default-11.json",
       "previewImgSrc": "templates/jigs/default/template-default-11.jpeg",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 12",
       "filePath": "templates/jigs/default/template-default-12.json",
       "previewImgSrc": "templates/jigs/default/template-default-12.jpeg",
-      "jigLibraryRef": "jig-default"
+      "templateRef": "jig-default"
     },
     {
       "name": "List jig 1",
       "filePath": "templates/jigs/list/template-list-1.json",
       "previewImgSrc": "templates/jigs/list/template-list-1.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 2",
       "filePath": "templates/jigs/list/template-list-2.json",
       "previewImgSrc": "templates/jigs/list/template-list-2.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 3",
       "filePath": "templates/jigs/list/template-list-3.json",
       "previewImgSrc": "templates/jigs/list/template-list-3.png",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 4",
       "filePath": "templates/jigs/list/template-list-4.json",
       "previewImgSrc": "templates/jigs/list/template-list-4.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 5",
       "filePath": "templates/jigs/list/template-list-5.json",
       "previewImgSrc": "templates/jigs/list/template-list-5.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 6",
       "filePath": "templates/jigs/list/template-list-6.json",
       "previewImgSrc": "templates/jigs/list/template-list-6.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 7",
       "filePath": "templates/jigs/list/template-list-7.json",
       "previewImgSrc": "templates/jigs/list/template-list-7.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 8",
       "filePath": "templates/jigs/list/template-list-8.json",
       "previewImgSrc": "templates/jigs/list/template-list-8.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 9",
       "filePath": "templates/jigs/list/template-list-9.json",
       "previewImgSrc": "templates/jigs/list/template-list-9.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 10",
       "filePath": "templates/jigs/list/template-list-10.json",
       "previewImgSrc": "templates/jigs/list/template-list-10.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 11",
       "filePath": "templates/jigs/list/template-list-11.json",
       "previewImgSrc": "templates/jigs/list/template-list-11.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 12",
       "filePath": "templates/jigs/list/template-list-12.json",
       "previewImgSrc": "templates/jigs/list/template-list-12.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 13",
       "filePath": "templates/jigs/list/template-list-13.json",
       "previewImgSrc": "templates/jigs/list/template-list-13.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 14",
       "filePath": "templates/jigs/list/template-list-14.json",
       "previewImgSrc": "templates/jigs/list/template-list-14.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 15",
       "filePath": "templates/jigs/list/template-list-15.json",
       "previewImgSrc": "templates/jigs/list/template-list-15.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 16",
       "filePath": "templates/jigs/list/template-list-16.json",
       "previewImgSrc": "templates/jigs/list/template-list-16.png",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 17",
       "filePath": "templates/jigs/list/template-list-17.json",
       "previewImgSrc": "templates/jigs/list/template-list-17.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 18",
       "filePath": "templates/jigs/list/template-list-18.json",
       "previewImgSrc": "templates/jigs/list/template-list-18.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 19",
       "filePath": "templates/jigs/list/template-list-19.json",
       "previewImgSrc": "templates/jigs/list/template-list-19.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 20",
       "filePath": "templates/jigs/list/template-list-20.json",
       "previewImgSrc": "templates/jigs/list/template-list-20.jpeg",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 21",
       "filePath": "templates/jigs/list/template-list-21.json",
       "previewImgSrc": "templates/jigs/list/template-list-21.png",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 22",
       "filePath": "templates/jigs/list/template-list-22.json",
       "previewImgSrc": "templates/jigs/list/template-list-22.png",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 23",
       "filePath": "templates/jigs/list/template-list-23.json",
       "previewImgSrc": "templates/jigs/list/template-list-23.png",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "List jig 24",
       "filePath": "templates/jigs/list/template-list-24.json",
       "previewImgSrc": "templates/jigs/list/template-list-24.png",
-      "jigLibraryRef": "jig-list"
+      "templateRef": "jig-list"
     },
     {
       "name": "Composite jig Lead overview",
       "filePath": "templates/jigs/composite/composite-1/template.json",
       "previewImgSrc": "templates/jigs/composite/composite-1/preview.jpeg",
-      "jigLibraryRef": "jig-composite",
+      "templateRef": "jig-composite",
       "jigFiles": [
         {
           "name": "type-default",
@@ -242,70 +242,70 @@
       "name": "Document jig 1",
       "filePath": "templates/jigs/document/template-document-1.json",
       "previewImgSrc": "templates/jigs/document/template-document-1.jpeg",
-      "jigLibraryRef": "jig-document"
+      "templateRef": "jig-document"
     },
     {
       "name": "Composite jig 2",
       "filePath": "templates/jigs/document/template-document-2.json",
       "previewImgSrc": "templates/jigs/document/template-document-2.jpeg",
-      "jigLibraryRef": "jig-document"
+      "templateRef": "jig-document"
     },
     {
       "name": "Avatar Large Letter",
       "filePath": "templates/components/avatar/jig-component-avatar-1.json",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-1.jpg",
-      "jigLibraryRef": "jc-avatar"
+      "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Large Image",
       "filePath": "templates/components/avatar/jig-component-avatar-2.json",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-2.jpg",
-      "jigLibraryRef": "jc-avatar"
+      "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Medium Letter",
       "filePath": "templates/components/avatar/jig-component-avatar-3.json",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-3.jpg",
-      "jigLibraryRef": "jc-avatar"
+      "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Medium Image",
       "filePath": "templates/components/avatar/jig-component-avatar-4.json",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-4.jpg",
-      "jigLibraryRef": "jc-avatar"
+      "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Small Letter",
       "filePath": "templates/components/avatar/jig-component-avatar-5.json",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-5.jpg",
-      "jigLibraryRef": "jc-avatar"
+      "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Small Image",
       "filePath": "templates/components/avatar/jig-component-avatar-6.json",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-6.jpg",
-      "jigLibraryRef": "jc-avatar"
+      "templateRef": "jc-avatar"
     },
 
     {
       "name": "Revenues and Expenses",
       "filePath": "templates/components/bar-chart/bar-chart-1/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-1/preview.jpeg",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-1/datasource.json"
     },
     {
       "name": "Quarterly earnings",
       "filePath": "templates/components/bar-chart/bar-chart-2/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-2/preview.jpeg",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-2/datasource.json"
     },
     {
       "name": "Population of USA",
       "filePath": "templates/components/bar-chart/bar-chart-3/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-3/preview.jpeg",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-3/datasource.json"
     },
 
@@ -313,21 +313,21 @@
       "name": "Default height bar-chart",
       "filePath": "templates/components/bar-chart/bar-chart-4/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-4/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource.json"
     },
     {
       "name": "Height 300 bar-chart",
       "filePath": "templates/components/bar-chart/bar-chart-5/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-5/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource.json"
     },
     {
       "name": "Custom settings width bar-chart",
       "filePath": "templates/components/bar-chart/bar-chart-6/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-6/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource.json"
     },
 
@@ -335,28 +335,28 @@
       "name": "Bar-chart with legend",
       "filePath": "templates/components/bar-chart/bar-chart-7/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-7/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource.json"
     },
     {
       "name": "Bar-chart with custom name of series",
       "filePath": "templates/components/bar-chart/bar-chart-8/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-8/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource.json"
     },
     {
       "name": "Bar-chart without legend",
       "filePath": "templates/components/bar-chart/bar-chart-9/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-9/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource.json"
     },
     {
       "name": "Bar-chart without legend by default",
       "filePath": "templates/components/bar-chart/bar-chart-10/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-10/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource.json"
     },
 
@@ -364,35 +364,35 @@
       "name": "Bar-chart Max and min",
       "filePath": "templates/components/bar-chart/bar-chart-11/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-11/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.json"
     },
     {
       "name": "Bar-chart hidden axis",
       "filePath": "templates/components/bar-chart/bar-chart-12/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-12/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.json"
     },
     {
       "name": "Bar-chart currency number style",
       "filePath": "templates/components/bar-chart/bar-chart-13/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-13/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.json"
     },
     {
       "name": "Bar-chart currency number style compact notation",
       "filePath": "templates/components/bar-chart/bar-chart-14/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-14/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.json"
     },
     {
       "name": "Bar-chart Tick amount",
       "filePath": "templates/components/bar-chart/bar-chart-15/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-15/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.json"
     },
 
@@ -400,35 +400,35 @@
       "name": "Single series bar chart",
       "filePath": "templates/components/bar-chart/bar-chart-16/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-16/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-16/datasource.json"
     },
     {
       "name": "Multiple series bar chart",
       "filePath": "templates/components/bar-chart/bar-chart-17/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-17/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-17/datasource.json"
     },
     {
       "name": "Bar-chart with custom color of series",
       "filePath": "templates/components/bar-chart/bar-chart-18/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-18/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-18/datasource.json"
     },
     {
       "name": "Bar-chart with custom name of series",
       "filePath": "templates/components/bar-chart/bar-chart-19/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-19/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-19/datasource.json"
     },
     {
       "name": "Bar-chart with enabled data labels",
       "filePath": "templates/components/bar-chart/bar-chart-20/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-20/preview.png",
-      "jigLibraryRef": "jc-bar-chart",
+      "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-20/datasource.json"
     },
 
@@ -436,232 +436,232 @@
       "name": "With Entity Field, Sections and Field Row",
       "filePath": "templates/components/entity/entity-1/template.json",
       "previewImgSrc": "templates/components/entity/entity-1/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "templateRef": "jc-entity"
     },
     {
       "name": "With all possible components of the entity",
       "filePath": "templates/components/entity/entity-2/template.json",
       "previewImgSrc": "templates/components/entity/entity-2/preview.png",
-      "jigLibraryRef": "jc-entity"
+      "templateRef": "jc-entity"
     },
     {
       "name": "With Entity Field, Sections and Field Row (compact)",
       "filePath": "templates/components/entity/entity-3/template.json",
       "previewImgSrc": "templates/components/entity/entity-3/preview.png",
-      "jigLibraryRef": "jc-entity",
+      "templateRef": "jc-entity",
       "isCompact": true
     },
     {
       "name": "With all possible components of the entity (compact)",
       "filePath": "templates/components/entity/entity-4/template.json",
       "previewImgSrc": "templates/components/entity/entity-4/preview.png",
-      "jigLibraryRef": "jc-entity",
+      "templateRef": "jc-entity",
       "isCompact": true
     },
     {
       "name": "Section",
       "filePath": "templates/components/entity/section/basic/section-1/template.json",
       "previewImgSrc": "templates/components/entity/section/basic/section-1/preview.jpg",
-      "jigLibraryRef": "jc-entity-section"
+      "templateRef": "jc-entity-section"
     },
     {
       "name": "Section",
       "filePath": "templates/components/entity/section/basic/section-2/template.json",
       "previewImgSrc": "templates/components/entity/section/basic/section-2/preview.jpg",
-      "jigLibraryRef": "jc-entity-section"
+      "templateRef": "jc-entity-section"
     },
     {
       "name": "Section",
       "filePath": "templates/components/entity/section/basic/section-3/template.json",
       "previewImgSrc": "templates/components/entity/section/basic/section-3/preview.jpg",
-      "jigLibraryRef": "jc-entity-section"
+      "templateRef": "jc-entity-section"
     },
     {
       "name": "Section compact",
       "filePath": "templates/components/entity/section/compact/section-1/template.json",
       "previewImgSrc": "templates/components/entity/section/compact/section-1/preview.jpg",
-      "jigLibraryRef": "jc-entity-section",
+      "templateRef": "jc-entity-section",
       "isCompact": true
     },
     {
       "name": "Field row",
       "filePath": "templates/components/entity/field-row/basic/field-row-1/template.json",
       "previewImgSrc": "templates/components/entity/field-row/basic/field-row-1/preview.jpg",
-      "jigLibraryRef": "jc-entity-field-row"
+      "templateRef": "jc-entity-field-row"
     },
     {
       "name": "Field row",
       "filePath": "templates/components/entity/field-row/basic/field-row-2/template.json",
       "previewImgSrc": "templates/components/entity/field-row/basic/field-row-2/preview.jpg",
-      "jigLibraryRef": "jc-entity-field-row"
+      "templateRef": "jc-entity-field-row"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-1/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-1/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-2/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-2/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-3/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-3/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-4/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-4/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-5/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-5/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-6/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-6/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-7/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-7/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-8/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-8/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-9/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-9/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-10/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-10/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-11/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-11/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-12/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-12/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-13/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-13/preview.jpg",
-      "jigLibraryRef": "jc-entity-field"
+      "templateRef": "jc-entity-field"
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-1/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-1/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-2/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-2/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-3/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-3/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-4/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-4/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-5/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-5/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-6/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-6/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-7/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-7/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-8/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-8/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-9/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-9/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-10/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-10/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-11/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-11/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-12/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-12/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
       "name": "Entity field (compact)",
       "filePath": "templates/components/entity/entity-field/compact/entity-field-13/template.json",
       "previewImgSrc": "templates/components/entity/entity-field/compact/entity-field-13/preview.jpg",
-      "jigLibraryRef": "jc-entity-field",
+      "templateRef": "jc-entity-field",
       "isCompact": true
     },
     {
@@ -669,46 +669,46 @@
       "filePath": "templates/components/expander/expander-1/template.json",
       "previewImgSrc": "templates/components/expander/expander-1/preview.png",
       "datasource": "templates/components/expander/expander-1/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Avatar component",
       "filePath": "templates/components/expander/expander-2/template.json",
       "previewImgSrc": "templates/components/expander/expander-2/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Bar chart component",
       "filePath": "templates/components/expander/expander-3/template.json",
       "previewImgSrc": "templates/components/expander/expander-3/preview.png",
       "datasource": "templates/components/expander/expander-3/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Entity field component",
       "filePath": "templates/components/expander/expander-4/template.json",
       "previewImgSrc": "templates/components/expander/expander-4/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Image component",
       "filePath": "templates/components/expander/expander-5/template.json",
       "previewImgSrc": "templates/components/expander/expander-5/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Interactive image component",
       "filePath": "templates/components/expander/expander-6/template.json",
       "previewImgSrc": "templates/components/expander/expander-6/preview.png",
       "datasource": "templates/components/expander/expander-6/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Line chart component",
       "filePath": "templates/components/expander/expander-7/template.json",
       "previewImgSrc": "templates/components/expander/expander-7/preview.png",
       "datasource": "templates/components/expander/expander-7/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
 
     {
@@ -716,39 +716,39 @@
       "filePath": "templates/components/expander/expander-8/template.json",
       "previewImgSrc": "templates/components/expander/expander-8/preview.png",
       "datasource": "templates/components/expander/expander-8/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Location component",
       "filePath": "templates/components/expander/expander-9/template.json",
       "previewImgSrc": "templates/components/expander/expander-9/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Pie chart component",
       "filePath": "templates/components/expander/expander-10/template.json",
       "previewImgSrc": "templates/components/expander/expander-10/preview.png",
       "datasource": "templates/components/expander/expander-10/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Stepper component",
       "filePath": "templates/components/expander/expander-11/template.json",
       "previewImgSrc": "templates/components/expander/expander-11/preview.png",
       "datasource": "templates/components/expander/expander-11/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Video player component",
       "filePath": "templates/components/expander/expander-12/template.json",
       "previewImgSrc": "templates/components/expander/expander-12/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with titles header and Web view component",
       "filePath": "templates/components/expander/expander-13/template.json",
       "previewImgSrc": "templates/components/expander/expander-13/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
 
     {
@@ -756,85 +756,85 @@
       "filePath": "templates/components/expander/expander-14/template.json",
       "previewImgSrc": "templates/components/expander/expander-14/preview.png",
       "datasource": "templates/components/expander/expander-14/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Avatar component",
       "filePath": "templates/components/expander/expander-15/template.json",
       "previewImgSrc": "templates/components/expander/expander-15/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Bar chart component",
       "filePath": "templates/components/expander/expander-16/template.json",
       "previewImgSrc": "templates/components/expander/expander-16/preview.png",
       "datasource": "templates/components/expander/expander-16/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Entity field component",
       "filePath": "templates/components/expander/expander-17/template.json",
       "previewImgSrc": "templates/components/expander/expander-17/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Image component",
       "filePath": "templates/components/expander/expander-18/template.json",
       "previewImgSrc": "templates/components/expander/expander-18/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Interactive image component",
       "filePath": "templates/components/expander/expander-19/template.json",
       "previewImgSrc": "templates/components/expander/expander-19/preview.png",
       "datasource": "templates/components/expander/expander-19/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Line chart component",
       "filePath": "templates/components/expander/expander-20/template.json",
       "previewImgSrc": "templates/components/expander/expander-20/preview.png",
       "datasource": "templates/components/expander/expander-20/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and List item component",
       "filePath": "templates/components/expander/expander-21/template.json",
       "previewImgSrc": "templates/components/expander/expander-21/preview.png",
       "datasource": "templates/components/expander/expander-21/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Location component",
       "filePath": "templates/components/expander/expander-22/template.json",
       "previewImgSrc": "templates/components/expander/expander-22/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Pie chart component",
       "filePath": "templates/components/expander/expander-23/template.json",
       "previewImgSrc": "templates/components/expander/expander-23/preview.png",
       "datasource": "templates/components/expander/expander-23/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Stepper component",
       "filePath": "templates/components/expander/expander-24/template.json",
       "previewImgSrc": "templates/components/expander/expander-24/preview.png",
       "datasource": "templates/components/expander/expander-24/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Video player component",
       "filePath": "templates/components/expander/expander-25/template.json",
       "previewImgSrc": "templates/components/expander/expander-25/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Web view component",
       "filePath": "templates/components/expander/expander-26/template.json",
       "previewImgSrc": "templates/components/expander/expander-26/preview.png",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
 
     {
@@ -842,93 +842,93 @@
       "filePath": "templates/components/form/form-1/template.json",
       "previewImgSrc": "templates/components/form/form-1/preview.png",
       "datasource": "templates/components/form/form-1/datasource.json",
-      "jigLibraryRef": "jc-form"
+      "templateRef": "jc-form"
     },
     {
       "name": "Profile form",
       "filePath": "templates/components/form/form-2/template.json",
       "previewImgSrc": "templates/components/form/form-2/preview.png",
-      "jigLibraryRef": "jc-form"
+      "templateRef": "jc-form"
     },
 
     {
       "name": "Form avatar field",
       "filePath": "templates/components/form/avatar-field/template.json",
       "previewImgSrc": "templates/components/form/avatar-field/preview.png",
-      "jigLibraryRef": "jc-avatar-field"
+      "templateRef": "jc-avatar-field"
     },
 
     {
       "name": "Form date picker empty",
       "filePath": "templates/components/form/datepicker/datepicker-1/template.json",
       "previewImgSrc": "templates/components/form/datepicker/datepicker-1/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form date picker with error",
       "filePath": "templates/components/form/datepicker/datepicker-2/template.json",
       "previewImgSrc": "templates/components/form/datepicker/datepicker-2/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form date picker with helper",
       "filePath": "templates/components/form/datepicker/datepicker-3/template.json",
       "previewImgSrc": "templates/components/form/datepicker/datepicker-3/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form date picker with initial value now",
       "filePath": "templates/components/form/datepicker/datepicker-4/template.json",
       "previewImgSrc": "templates/components/form/datepicker/datepicker-4/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form date picker with min and max value",
       "filePath": "templates/components/form/datepicker/datepicker-5/template.json",
       "previewImgSrc": "templates/components/form/datepicker/datepicker-5/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form time picker with format HH:mm",
       "filePath": "templates/components/form/timepicker/timepicker-1/template.json",
       "previewImgSrc": "templates/components/form/timepicker/timepicker-1/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form time picker with custom color",
       "filePath": "templates/components/form/timepicker/timepicker-2/template.json",
       "previewImgSrc": "templates/components/form/timepicker/timepicker-2/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Time picker with initial value now",
       "filePath": "templates/components/form/timepicker/timepicker-3/template.json",
       "previewImgSrc": "templates/components/form/timepicker/timepicker-3/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form time picker with min and max",
       "filePath": "templates/components/form/timepicker/timepicker-4/template.json",
       "previewImgSrc": "templates/components/form/timepicker/timepicker-4/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form Date picker mode - datetime",
       "filePath": "templates/components/form/datetime-picker/datetime-picker-1/template.json",
       "previewImgSrc": "templates/components/form/datetime-picker/datetime-picker-1/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form Date Time picker with the custom color",
       "filePath": "templates/components/form/datetime-picker/datetime-picker-1/template.json",
       "previewImgSrc": "templates/components/form/datetime-picker/datetime-picker-1/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
     {
       "name": "Form Date Time picker with initial value now",
       "filePath": "templates/components/form/datetime-picker/datetime-picker-1/template.json",
       "previewImgSrc": "templates/components/form/datetime-picker/datetime-picker-1/preview.png",
-      "jigLibraryRef": "jc-date-picker"
+      "templateRef": "jc-date-picker"
     },
 
     {
@@ -936,940 +936,940 @@
       "filePath": "templates/components/form/dropdown/dropdown-1/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-1/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form dropdown with avatars",
       "filePath": "templates/components/form/dropdown/dropdown-2/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-2/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form dropdown with icons",
       "filePath": "templates/components/form/dropdown/dropdown-3/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-3/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form dropdown with images",
       "filePath": "templates/components/form/dropdown/dropdown-4/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-4/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form dropdown with color",
       "filePath": "templates/components/form/dropdown/dropdown-5/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-5/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form dropdown with error",
       "filePath": "templates/components/form/dropdown/dropdown-6/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-6/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form dropdown with custom right icon [not working]",
       "filePath": "templates/components/form/dropdown/dropdown-7/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-7/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form dropdown with initial value",
       "filePath": "templates/components/form/dropdown/dropdown-8/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-8/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form dropdown auto focused [not working]",
       "filePath": "templates/components/form/dropdown/dropdown-9/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-9/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form dropdown multiselect",
       "filePath": "templates/components/form/dropdown/dropdown-10/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-10/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form searchable dropdown",
       "filePath": "templates/components/form/dropdown/dropdown-11/template.json",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-11/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-2.json",
-      "jigLibraryRef": "jc-dropdown"
+      "templateRef": "jc-dropdown"
     },
     {
       "name": "Form empty email field",
       "filePath": "templates/components/form/email-field/email-field-1/template.json",
       "previewImgSrc": "templates/components/form/email-field/email-field-1/preview.png",
-      "jigLibraryRef": "jc-email-field"
+      "templateRef": "jc-email-field"
     },
     {
       "name": "Form email field with helper",
       "filePath": "templates/components/form/email-field/email-field-2/template.json",
       "previewImgSrc": "templates/components/form/email-field/email-field-2/preview.png",
-      "jigLibraryRef": "jc-email-field"
+      "templateRef": "jc-email-field"
     },
     {
       "name": "Form email field with error",
       "filePath": "templates/components/form/email-field/email-field-3/template.json",
       "previewImgSrc": "templates/components/form/email-field/email-field-3/preview.png",
-      "jigLibraryRef": "jc-email-field"
+      "templateRef": "jc-email-field"
     },
     {
       "name": "Form email field loading",
       "filePath": "templates/components/form/email-field/email-field-4/template.json",
       "previewImgSrc": "templates/components/form/email-field/email-field-4/preview.png",
-      "jigLibraryRef": "jc-email-field"
+      "templateRef": "jc-email-field"
     },
     {
       "name": "Form email field disabled",
       "filePath": "templates/components/form/email-field/email-field-5/template.json",
       "previewImgSrc": "templates/components/form/email-field/email-field-5/preview.png",
-      "jigLibraryRef": "jc-email-field"
+      "templateRef": "jc-email-field"
     },
     {
       "name": "Form email field positive",
       "filePath": "templates/components/form/email-field/email-field-6/template.json",
       "previewImgSrc": "templates/components/form/email-field/email-field-6/preview.png",
-      "jigLibraryRef": "jc-email-field"
+      "templateRef": "jc-email-field"
     },
 
     {
       "name": "Form field row one item",
       "filePath": "templates/components/form/field-row/field-row-1/template.json",
       "previewImgSrc": "templates/components/form/field-row/field-row-1/preview.png",
-      "jigLibraryRef": "jc-field-row"
+      "templateRef": "jc-field-row"
     },
     {
       "name": "Form field row two items",
       "filePath": "templates/components/form/field-row/field-row-2/template.json",
       "previewImgSrc": "templates/components/form/field-row/field-row-2/preview.png",
-      "jigLibraryRef": "jc-field-row"
+      "templateRef": "jc-field-row"
     },
     {
       "name": "Form field row three items",
       "filePath": "templates/components/form/field-row/field-row-3/template.json",
       "previewImgSrc": "templates/components/form/field-row/field-row-3/preview.png",
-      "jigLibraryRef": "jc-field-row"
+      "templateRef": "jc-field-row"
     },
     {
       "name": "Form checkbox default state",
       "filePath": "templates/components/form/checkbox/checkbox-1/template.json",
       "previewImgSrc": "templates/components/form/checkbox/checkbox-1/preview.png",
-      "jigLibraryRef": "jc-checkbox"
+      "templateRef": "jc-checkbox"
     },
     {
       "name": "Form checkbox checked state",
       "filePath": "templates/components/form/checkbox/checkbox-2/template.json",
       "previewImgSrc": "templates/components/form/checkbox/checkbox-2/preview.png",
-      "jigLibraryRef": "jc-checkbox"
+      "templateRef": "jc-checkbox"
     },
     {
       "name": "Form checkbox positive state",
       "filePath": "templates/components/form/checkbox/checkbox-3/template.json",
       "previewImgSrc": "templates/components/form/checkbox/checkbox-3/preview.png",
-      "jigLibraryRef": "jc-checkbox"
+      "templateRef": "jc-checkbox"
     },
     {
       "name": "Form checkbox warning state",
       "filePath": "templates/components/form/checkbox/checkbox-4/template.json",
       "previewImgSrc": "templates/components/form/checkbox/checkbox-4/preview.png",
-      "jigLibraryRef": "jc-checkbox"
+      "templateRef": "jc-checkbox"
     },
     {
       "name": "Form checkbox danger state",
       "filePath": "templates/components/form/checkbox/checkbox-5/template.json",
       "previewImgSrc": "templates/components/form/checkbox/checkbox-5/preview.png",
-      "jigLibraryRef": "jc-checkbox"
+      "templateRef": "jc-checkbox"
     },
     {
       "name": "Form checkbox disabled default state",
       "filePath": "templates/components/form/checkbox/checkbox-6/template.json",
       "previewImgSrc": "templates/components/form/checkbox/checkbox-6/preview.png",
-      "jigLibraryRef": "jc-checkbox"
+      "templateRef": "jc-checkbox"
     },
     {
       "name": "Form checkbox disabled checked state",
       "filePath": "templates/components/form/checkbox/checkbox-7/template.json",
       "previewImgSrc": "templates/components/form/checkbox/checkbox-7/preview.png",
-      "jigLibraryRef": "jc-checkbox"
+      "templateRef": "jc-checkbox"
     },
     {
       "name": "Form media Field - Single select (optional)",
       "filePath": "templates/components/form/media-field/media-field-1/template.json",
       "previewImgSrc": "templates/components/form/media-field/media-field-1/preview.png",
-      "jigLibraryRef": "jc-media-field"
+      "templateRef": "jc-media-field"
     },
     {
       "name": "Form media Field - Single select (required)",
       "filePath": "templates/components/form/media-field/media-field-1/template.json",
       "previewImgSrc": "templates/components/form/media-field/media-field-1/preview.png",
-      "jigLibraryRef": "jc-media-field"
+      "templateRef": "jc-media-field"
     },
     {
       "name": "Form media Field - Multi select (optional)",
       "filePath": "templates/components/form/media-field/media-field-1/template.json",
       "previewImgSrc": "templates/components/form/media-field/media-field-1/preview.png",
-      "jigLibraryRef": "jc-media-field"
+      "templateRef": "jc-media-field"
     },
 
     {
       "name": "Form number Field default",
       "filePath": "templates/components/form/number-field/number-field-1/template.json",
       "previewImgSrc": "templates/components/form/number-field/number-field-1/preview.png",
-      "jigLibraryRef": "jc-number-field"
+      "templateRef": "jc-number-field"
     },
     {
       "name": "Form number Field with stepper",
       "filePath": "templates/components/form/number-field/number-field-2/template.json",
       "previewImgSrc": "templates/components/form/number-field/number-field-2/preview.png",
-      "jigLibraryRef": "jc-number-field"
+      "templateRef": "jc-number-field"
     },
     {
       "name": "Form number Field formatted",
       "filePath": "templates/components/form/number-field/number-field-3/template.json",
       "previewImgSrc": "templates/components/form/number-field/number-field-3/preview.png",
-      "jigLibraryRef": "jc-number-field"
+      "templateRef": "jc-number-field"
     },
     {
       "name": "Form number Field positive",
       "filePath": "templates/components/form/number-field/number-field-4/template.json",
       "previewImgSrc": "templates/components/form/number-field/number-field-4/preview.png",
-      "jigLibraryRef": "jc-number-field"
+      "templateRef": "jc-number-field"
     },
     {
       "name": "Form number Field busy",
       "filePath": "templates/components/form/number-field/number-field-5/template.json",
       "previewImgSrc": "templates/components/form/number-field/number-field-5/preview.png",
-      "jigLibraryRef": "jc-number-field"
+      "templateRef": "jc-number-field"
     },
 
     {
       "name": "Form sections",
       "filePath": "templates/components/form/sections/template.json",
       "previewImgSrc": "templates/components/form/sections/preview.png",
-      "jigLibraryRef": "jc-form"
+      "templateRef": "jc-form"
     },
 
     {
       "name": "Form signature field",
       "filePath": "templates/components/form/signature-field/template.json",
       "previewImgSrc": "templates/components/form/signature-field/preview.png",
-      "jigLibraryRef": "jc-signature-field"
+      "templateRef": "jc-signature-field"
     },
 
     {
       "name": "Form text field with auto capitalize characters",
       "filePath": "templates/components/form/text-field/text-field-1/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-1/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field with color",
       "filePath": "templates/components/form/text-field/text-field-2/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-2/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field with error description",
       "filePath": "templates/components/form/text-field/text-field-3/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-3/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field with format currency",
       "filePath": "templates/components/form/text-field/text-field-4/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-4/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field with icon",
       "filePath": "templates/components/form/text-field/text-field-5/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-5/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field with initial value",
       "filePath": "templates/components/form/text-field/text-field-6/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-6/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field with auto correct",
       "filePath": "templates/components/form/text-field/text-field-7/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-7/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field with auto focus",
       "filePath": "templates/components/form/text-field/text-field-8/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-8/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field ignored",
       "filePath": "templates/components/form/text-field/text-field-9/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-9/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form multiline and textarea field",
       "filePath": "templates/components/form/text-field/text-field-10/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-10/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field with hidden optional label",
       "filePath": "templates/components/form/text-field/text-field-11/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-11/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
     {
       "name": "Form text field required",
       "filePath": "templates/components/form/text-field/text-field-12/template.json",
       "previewImgSrc": "templates/components/form/text-field/text-field-12/preview.png",
-      "jigLibraryRef": "jc-text-field"
+      "templateRef": "jc-text-field"
     },
 
     {
       "name": "Image ResizeMode: Cover / Height: 200",
       "filePath": "templates/components/image/image-1/template.json",
       "previewImgSrc": "templates/components/image/image-1/preview.png",
-      "jigLibraryRef": "jc-image"
+      "templateRef": "jc-image"
     },
     {
       "name": "Image ResizeMode: Contain / Height: 200",
       "filePath": "templates/components/image/image-2/template.json",
       "previewImgSrc": "templates/components/image/image-2/preview.png",
-      "jigLibraryRef": "jc-image"
+      "templateRef": "jc-image"
     },
     {
       "name": "Image ResizeMode: Center / Height: 200",
       "filePath": "templates/components/image/image-3/template.json",
       "previewImgSrc": "templates/components/image/image-3/preview.png",
-      "jigLibraryRef": "jc-image"
+      "templateRef": "jc-image"
     },
     {
       "name": "Image ResizeMode: Stretch / Height: 200",
       "filePath": "templates/components/image/image-4/template.json",
       "previewImgSrc": "templates/components/image/image-4/preview.png",
-      "jigLibraryRef": "jc-image"
+      "templateRef": "jc-image"
     },
     {
       "name": "Interactive image",
       "filePath": "templates/components/interactive-image/interactive-image-1/template.json",
       "previewImgSrc": "templates/components/interactive-image/interactive-image-1/preview.png",
       "datasource": "templates/components/interactive-image/interactive-image-1/datasource.json",
-      "jigLibraryRef": "jc-interactive-image"
+      "templateRef": "jc-interactive-image"
     },
     {
       "name": "Interactive image using groupId",
       "filePath": "templates/components/interactive-image/interactive-image-2/template.json",
       "previewImgSrc": "templates/components/interactive-image/interactive-image-2/preview.png",
       "datasource": "templates/components/interactive-image/interactive-image-2/datasource.json",
-      "jigLibraryRef": "jc-interactive-image"
+      "templateRef": "jc-interactive-image"
     },
     {
       "name": "Interactive image using requiredPoints",
       "filePath": "templates/components/interactive-image/interactive-image-3/template.json",
       "previewImgSrc": "templates/components/interactive-image/interactive-image-3/preview.png",
       "datasource": "templates/components/interactive-image/interactive-image-3/datasource.json",
-      "jigLibraryRef": "jc-interactive-image"
+      "templateRef": "jc-interactive-image"
     },
     {
       "name": "Line chart - Revenues and Expenses",
       "filePath": "templates/components/line-chart/line-chart-1/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-1/preview.png",
       "datasource": "templates/components/line-chart/line-chart-1/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Quarterly earnings",
       "filePath": "templates/components/line-chart/line-chart-2/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-2/preview.png",
       "datasource": "templates/components/line-chart/line-chart-2/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Population of USA",
       "filePath": "templates/components/line-chart/line-chart-3/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-3/preview.png",
       "datasource": "templates/components/line-chart/line-chart-3/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart with animation",
       "filePath": "templates/components/line-chart/line-chart-4/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-4/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Height: 320",
       "filePath": "templates/components/line-chart/line-chart-5/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-5/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Width: 250",
       "filePath": "templates/components/line-chart/line-chart-6/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-6/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart with hidden legend",
       "filePath": "templates/components/line-chart/line-chart-7/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-7/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart with legend",
       "filePath": "templates/components/line-chart/line-chart-8/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-8/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart with custom name of series",
       "filePath": "templates/components/line-chart/line-chart-9/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-9/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Single series",
       "filePath": "templates/components/line-chart/line-chart-10/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-10/preview.png",
       "datasource": "templates/components/line-chart/line-chart-10/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Multiple series",
       "filePath": "templates/components/line-chart/line-chart-11/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-11/preview.png",
       "datasource": "templates/components/line-chart/line-chart-11/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Custom color of series",
       "filePath": "templates/components/line-chart/line-chart-12/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-12/preview.png",
       "datasource": "templates/components/line-chart/line-chart-12/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Custom name of series",
       "filePath": "templates/components/line-chart/line-chart-13/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-13/preview.png",
       "datasource": "templates/components/line-chart/line-chart-13/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Enable data labels",
       "filePath": "templates/components/line-chart/line-chart-14/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-14/preview.png",
       "datasource": "templates/components/line-chart/line-chart-14/datasource.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart with min and max",
       "filePath": "templates/components/line-chart/line-chart-15/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-15/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource-2.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart with hidden Y axis",
       "filePath": "templates/components/line-chart/line-chart-16/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-16/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource-2.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Currency number style",
       "filePath": "templates/components/line-chart/line-chart-17/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-17/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource-2.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Currency with compact notation",
       "filePath": "templates/components/line-chart/line-chart-18/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-18/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource-2.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Tick amount",
       "filePath": "templates/components/line-chart/line-chart-19/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-19/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource-2.json",
-      "jigLibraryRef": "jc-line-chart"
+      "templateRef": "jc-line-chart"
     },
     {
       "name": "Location with address",
       "filePath": "templates/components/location/location-1/template.json",
       "previewImgSrc": "templates/components/location/location-1/preview.png",
       "datasource": "templates/components/location/location-1/datasource.json",
-      "jigLibraryRef": "jc-location"
+      "templateRef": "jc-location"
     },
     {
       "name": "Location with multiple markers",
       "filePath": "templates/components/location/location-2/template.json",
       "previewImgSrc": "templates/components/location/location-2/preview.png",
       "datasource": "templates/components/location/location-2/datasource.json",
-      "jigLibraryRef": "jc-location"
+      "templateRef": "jc-location"
     },
     {
       "name": "Location displaying path",
       "filePath": "templates/components/location/location-3/template.json",
       "previewImgSrc": "templates/components/location/location-3/preview.png",
       "datasource": "templates/components/location/location-3/datasource.json",
-      "jigLibraryRef": "jc-location"
+      "templateRef": "jc-location"
     },
     {
       "name": "Pie chart",
       "filePath": "templates/components/pie-chart/pie-chart-1/template.json",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-1/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-1/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Pie chart - mMltiple data",
       "filePath": "templates/components/pie-chart/pie-chart-2/template.json",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-2/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-2/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Progress pie chart",
       "filePath": "templates/components/pie-chart/pie-chart-3/template.json",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-3/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-3/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Pie chart - Height: 120",
       "filePath": "templates/components/pie-chart/pie-chart-4/template.json",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-4/preview.png",
       "datasource": "templates/components/pie-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Pie chart - Height: 180",
       "filePath": "templates/components/pie-chart/pie-chart-5/template.json",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-5/preview.png",
       "datasource": "templates/components/pie-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Pie chart - Height: 250",
       "filePath": "templates/components/pie-chart/pie-chart-6/template.json",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-6/preview.png",
       "datasource": "templates/components/pie-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Pie chart - Width: 300",
       "filePath": "templates/components/pie-chart/pie-chart-7/template.json",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-7/preview.png",
       "datasource": "templates/components/pie-chart/shared/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Pie chart - Custom labels",
       "filePath": "templates/components/pie-chart/pie-chart-8/template.json",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-8/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-8/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Arch chart",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-1/template.json",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-1/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-1/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Arch chart - Multiple data",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-2/template.json",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-2/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-2/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Progress arch chart",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-3/template.json",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-3/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-3/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Arch chart - Height: 120",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-4/template.json",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-4/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/shared/datasource-2.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Arch chart - Height: 180",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-5/template.json",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-5/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/shared/datasource-2.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Arch chart - Height: 250",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-6/template.json",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-6/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/shared/datasource-2.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Arch chart - Width: 300",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-7/template.json",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-7/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/shared/datasource-2.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Arch chart - Custom labels",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-8/template.json",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-8/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-8/datasource.json",
-      "jigLibraryRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart"
     },
     {
       "name": "Percentage - Left avatar - Right label",
       "filePath": "templates/components/list/list-item/list-item-1/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-1/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Percentage - Left checkbox - Right value",
       "filePath": "templates/components/list/list-item/list-item-2/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-2/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Left checkbox - Label - Avatars",
       "filePath": "templates/components/list/list-item/list-item-3/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-3/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Left avatar - Right icon",
       "filePath": "templates/components/list/list-item/list-item-4/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-4/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Left icon - Right value",
       "filePath": "templates/components/list/list-item/list-item-5/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-5/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Left progress - Right icon - Label",
       "filePath": "templates/components/list/list-item/list-item-6/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-6/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Left image - Right icon",
       "filePath": "templates/components/list/list-item/list-item-7/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-7/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Left image - Right checkbox",
       "filePath": "templates/components/list/list-item/list-item-8/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-8/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Left icon - Right switch",
       "filePath": "templates/components/list/list-item/list-item-9/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-9/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Left image - Right amount control",
       "filePath": "templates/components/list/list-item/list-item-10/template.json",
       "previewImgSrc": "templates/components/list/list-item/list-item-10/preview.png",
       "datasource": "templates/components/list/list-item/shared/datasource.json",
-      "jigLibraryRef": "jc-list-item"
+      "templateRef": "jc-list-item"
     },
     {
       "name": "Image - Amount control - Price - Discount",
       "filePath": "templates/components/list/product-item/product-item-1/template.json",
       "previewImgSrc": "templates/components/list/product-item/product-item-1/preview.png",
       "datasource": "templates/components/list/product-item/shared/datasource.json",
-      "jigLibraryRef": "jc-product-item"
+      "templateRef": "jc-product-item"
     },
     {
       "name": "Image - Tag - Price",
       "filePath": "templates/components/list/product-item/product-item-2/template.json",
       "previewImgSrc": "templates/components/list/product-item/product-item-2/preview.png",
       "datasource": "templates/components/list/product-item/shared/datasource.json",
-      "jigLibraryRef": "jc-product-item"
+      "templateRef": "jc-product-item"
     },
     {
       "name": "Expander header - Stage",
       "filePath": "templates/components/expander/expander-27/template.json",
       "previewImgSrc": "templates/components/expander/expander-27/preview.png",
       "datasource": "templates/components/expander/shared/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander header - Titles - Left aligned",
       "filePath": "templates/components/expander/expander-28/template.json",
       "previewImgSrc": "templates/components/expander/expander-28/preview.png",
       "datasource": "templates/components/expander/shared/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Expander header - Titles - Center aligned",
       "filePath": "templates/components/expander/expander-29/template.json",
       "previewImgSrc": "templates/components/expander/expander-29/preview.png",
       "datasource": "templates/components/expander/shared/datasource.json",
-      "jigLibraryRef": "jc-expander"
+      "templateRef": "jc-expander"
     },
     {
       "name": "Left title & subtitle - Icon - Right title & subtitle",
       "filePath": "templates/components/list/stage/stage-1/template.json",
       "previewImgSrc": "templates/components/list/stage/stage-1/preview.png",
       "datasource": "templates/components/list/stage/shared/datasource.json",
-      "jigLibraryRef": "jc-stage"
+      "templateRef": "jc-stage"
     },
     {
       "name": "Left title - Icon - Right title",
       "filePath": "templates/components/list/stage/stage-2/template.json",
       "previewImgSrc": "templates/components/list/stage/stage-2/preview.png",
       "datasource": "templates/components/list/stage/shared/datasource.json",
-      "jigLibraryRef": "jc-stage"
+      "templateRef": "jc-stage"
     },
     {
       "name": "Stock Inventory",
       "filePath": "templates/components/list/list-1/template.json",
       "previewImgSrc": "templates/components/list/list-1/preview.png",
       "datasource": "templates/components/list/list-1/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Opportunities",
       "filePath": "templates/components/list/list-2/template.json",
       "previewImgSrc": "templates/components/list/list-2/preview.png",
       "datasource": "templates/components/list/list-2/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Task list",
       "filePath": "templates/components/list/list-3/template.json",
       "previewImgSrc": "templates/components/list/list-3/preview.png",
       "datasource": "templates/components/list/list-3/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Avatar and Icon",
       "filePath": "templates/components/list/list-4/template.json",
       "previewImgSrc": "templates/components/list/list-4/preview.png",
       "datasource": "templates/components/list/list-4/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Icon and Value",
       "filePath": "templates/components/list/list-5/template.json",
       "previewImgSrc": "templates/components/list/list-5/preview.png",
       "datasource": "templates/components/list/list-5/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Progress and label",
       "filePath": "templates/components/list/list-6/template.json",
       "previewImgSrc": "templates/components/list/list-6/preview.png",
       "datasource": "templates/components/list/list-6/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Stage",
       "filePath": "templates/components/list/list-7/template.json",
       "previewImgSrc": "templates/components/list/list-7/preview.png",
       "datasource": "templates/components/list/list-7/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Expander (stage)",
       "filePath": "templates/components/list/list-8/template.json",
       "previewImgSrc": "templates/components/list/list-8/preview.png",
       "datasource": "templates/components/list/list-8/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Expander (titles)",
       "filePath": "templates/components/list/list-9/template.json",
       "previewImgSrc": "templates/components/list/list-9/preview.png",
       "datasource": "templates/components/list/list-9/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Search and left image",
       "filePath": "templates/components/list/list-10/template.json",
       "previewImgSrc": "templates/components/list/list-10/preview.png",
       "datasource": "templates/components/list/list-10/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Filter, progress and label",
       "filePath": "templates/components/list/list-11/template.json",
       "previewImgSrc": "templates/components/list/list-11/preview.png",
       "datasource": "templates/components/list/list-11/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Sections and button",
       "filePath": "templates/components/list/list-12/template.json",
       "previewImgSrc": "templates/components/list/list-12/preview.png",
       "datasource": "templates/components/list/list-12/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Product item",
       "filePath": "templates/components/list/list-13/template.json",
       "previewImgSrc": "templates/components/list/list-13/preview.png",
       "datasource": "templates/components/list/list-13/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Product item and summary",
       "filePath": "templates/components/list/list-14/template.json",
       "previewImgSrc": "templates/components/list/list-14/preview.png",
       "datasource": "templates/components/list/list-14/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Image and value (horizontal)",
       "filePath": "templates/components/list/list-15/template.json",
       "previewImgSrc": "templates/components/list/list-15/preview.png",
       "datasource": "templates/components/list/list-15/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Icon and switch (horizontal)",
       "filePath": "templates/components/list/list-16/template.json",
       "previewImgSrc": "templates/components/list/list-16/preview.png",
       "datasource": "templates/components/list/list-16/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Swipe & icon",
       "filePath": "templates/components/list/list-17/template.json",
       "previewImgSrc": "templates/components/list/list-17/preview.png",
       "datasource": "templates/components/list/list-17/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Checkbox and avatar",
       "filePath": "templates/components/list/list-18/template.json",
       "previewImgSrc": "templates/components/list/list-18/preview.png",
       "datasource": "templates/components/list/list-18/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Switch & image",
       "filePath": "templates/components/list/list-19/template.json",
       "previewImgSrc": "templates/components/list/list-19/preview.png",
       "datasource": "templates/components/list/list-19/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Avatar & Progress",
       "filePath": "templates/components/list/list-21/template.json",
       "previewImgSrc": "templates/components/list/list-21/preview.png",
       "datasource": "templates/components/list/list-21/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Bar charts list",
       "filePath": "templates/components/list/list-22/template.json",
       "previewImgSrc": "templates/components/list/list-22/preview.png",
       "datasource": "templates/components/list/list-22/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Pie charts list",
       "filePath": "templates/components/list/list-23/template.json",
       "previewImgSrc": "templates/components/list/list-23/preview.png",
       "datasource": "templates/components/list/list-23/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Arch charts list",
       "filePath": "templates/components/list/list-24/template.json",
       "previewImgSrc": "templates/components/list/list-24/preview.png",
       "datasource": "templates/components/list/list-24/datasource.json",
-      "jigLibraryRef": "jc-list"
+      "templateRef": "jc-list"
     },
     {
       "name": "Stepper in progress",
       "filePath": "templates/components/stepper/stepper-1/template.json",
       "previewImgSrc": "templates/components/stepper/stepper-1/preview.png",
       "datasource": "templates/components/stepper/stepper-1/datasource.json",
-      "jigLibraryRef": "jc-stepper"
+      "templateRef": "jc-stepper"
     },
     {
       "name": "Completed stepper",
       "filePath": "templates/components/stepper/stepper-2/template.json",
       "previewImgSrc": "templates/components/stepper/stepper-2/preview.png",
       "datasource": "templates/components/stepper/stepper-2/datasource.json",
-      "jigLibraryRef": "jc-stepper"
+      "templateRef": "jc-stepper"
     },
     {
       "name": "Video player - Autoplay: True / Ratio 16:9",
       "filePath": "templates/components/video-player/video-player-1/template.json",
       "previewImgSrc": "templates/components/video-player/video-player-1/preview.png",
-      "jigLibraryRef": "jc-video-player-on-jig"
+      "templateRef": "jc-video-player-on-jig"
     },
     {
       "name": "Video player - Autoplay: False / Ratio 4:3",
       "filePath": "templates/components/video-player/video-player-2/template.json",
       "previewImgSrc": "templates/components/video-player/video-player-2/preview.png",
-      "jigLibraryRef": "jc-video-player-on-jig"
+      "templateRef": "jc-video-player-on-jig"
     },
     {
       "name": "Web view with the default height",
       "filePath": "templates/components/web-view/web-view-1/template.json",
       "previewImgSrc": "templates/components/web-view/web-view-1/preview.png",
-      "jigLibraryRef": "jc-web-view"
+      "templateRef": "jc-web-view"
     },
     {
       "name": "Web view with the height 400",
       "filePath": "templates/components/web-view/web-view-2/template.json",
       "previewImgSrc": "templates/components/web-view/web-view-2/preview.png",
-      "jigLibraryRef": "jc-web-view"
+      "templateRef": "jc-web-view"
     }
   ]
 }

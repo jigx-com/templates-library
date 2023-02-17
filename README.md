@@ -21,7 +21,7 @@ This file is the table of contents for the repository. The structure is:
             "filePath": "templates/jigs/composite/template-composite-1.json",
             "previewImgSrc": "templates/jigs/composite/template-composite-1.jpeg",
             "datasource": "templates/jigs/composite/datasource.json"
-            "jigLibraryRef": "jig-composite"
+            "templateRef": "jig-composite"
             "jigFiles": [
                 {
                     "jigId": "type-default-7",
@@ -39,17 +39,17 @@ This file is the table of contents for the repository. The structure is:
 - **filePath** is a path to the snippet file.
 - **previewImgSrc** is a path to the preview file of the snippet.
 - **datasource** is a path to the file with datasource. This field is optional. If you include it, then datasource from the file will be inserted into the jig together with the main snippet.
-- **jigLibraryRef** is required internal reference for each element in templates library. This field is used to filter out templates.
+- **templateRef** is required internal reference for each element in templates library. This field is used to filter out templates.
 - **jigFiles** is a field that used only for composite jigx. These files will be inserted together with a composite jig.
 
-This is the essential file used by the **Templates Library**. It is parsed and used to display and load each template. If you created a new template and didn't included it to the **contents.json** file, then it won't be shown in the library. Also if you forgot to include **_jigLibraryRef_** then
+This is the essential file used by the **Templates Library**. It is parsed and used to display and load each template. If you created a new template and didn't included it to the **contents.json** file, then it won't be shown in the library. Also if you forgot to include **_templateRef_** then
 this template also won't be shown in the templates library (it will be filtered out).
 
-## jigLibraryRef
+## templateRef
 
 Here is the list of currently available ref names:
 
-| jigLibraryRef        |       Description |
+| templateRef          |       Description |
 | -------------------- | ----------------: |
 | jig-default          |       Default Jig |
 | jig-list             |          List Jig |
