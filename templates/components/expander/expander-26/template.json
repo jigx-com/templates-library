@@ -1,16 +1,9 @@
 {
+  "type": "component.expander",
   "options": {
-    "children": [
-      {
-        "type": "component.web-view",
-        "options": {
-          "height": 400,
-          "uri": "https://www.google.com/"
-        }
-      }
-    ],
     "header": {
       "centerElement": {
+        "type": "component.stage",
         "options": {
           "left": {
             "subtitle": "Start subtitle",
@@ -20,11 +13,18 @@
             "subtitle": "End subtitle",
             "title": "End title"
           }
-        },
-        "type": "component.stage"
+        }
       }
     },
+    "children": [
+      {
+        "type": "component.web-view",
+        "options": {
+          "height": 400,
+          "uri": "https://www.google.com/"
+        }
+      }
+    ],
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }
