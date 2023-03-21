@@ -1,6 +1,7 @@
 {
   "title": "Task list",
   "type": "jig.list",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -15,6 +16,7 @@
       }
     }
   },
+
   "datasources": {
     "list": {
       "type": "datasource.static",
@@ -54,19 +56,7 @@
       }
     }
   },
-  "actions": [
-    {
-      "children": [
-        {
-          "type": "action.go-to",
-          "options": {
-            "title": "Add task",
-            "linkTo": "create the file for this action"
-          }
-        }
-      ]
-    }
-  ],
+ 
   "data": "=@ctx.datasources.list",
   "item": {
     "type": "component.list-item",

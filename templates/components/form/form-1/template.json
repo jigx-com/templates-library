@@ -1,129 +1,131 @@
 {
+  "type": "component.form",
   "instanceId": "form",
   "options": {
     "children": [
       {
+        "type": "component.avatar-field",
         "instanceId": "Avatar",
         "options": {
           "label": "Avatar"
-        },
-        "type": "component.avatar-field"
+        }
       },
       {
+        "type": "component.date-picker",
         "instanceId": "date-picker",
         "options": {
           "label": "Date picker",
           "value": ""
-        },
-        "type": "component.date-picker"
+        }
       },
       {
+        "type": "component.dropdown",
         "instanceId": "Dropdown",
         "options": {
           "data": "=@ctx.datasources.dropdown",
           "item": {
+            "type": "component.dropdown-item",
             "options": {
               "title": "=@ctx.current.item.label",
               "value": "=@ctx.current.item.value"
-            },
-            "type": "component.dropdown-item"
+            }
           },
           "label": "Dropdown"
-        },
-        "type": "component.dropdown"
+        }
       },
       {
+        "type": "component.email-field",
         "instanceId": "email-field",
         "options": {
           "icon": "email",
           "label": "Email",
           "value": "email@jigx.com"
-        },
-        "type": "component.email-field"
+        }
       },
       {
+        "type": "component.field-row",
         "options": {
           "children": [
             {
+              "type": "component.text-field",
               "instanceId": "text-field",
               "options": {
                 "initialValue": "Test",
                 "label": "First name",
                 "value": "John"
-              },
-              "type": "component.text-field"
+              }
             },
             {
-              "instanceId": "text-field",
+              "type": "component.text-field",
+              "instanceId": "text-field-1",
               "options": {
                 "label": "Last name",
                 "value": "Doe"
-              },
-              "type": "component.text-field"
+              }
             }
           ]
-        },
-        "type": "component.field-row"
+        }
       },
       {
+        "type": "component.checkbox",
         "instanceId": "checkbox",
         "options": {
           "label": "Checkbox",
           "value": true
-        },
-        "type": "component.checkbox"
+        }
       },
       {
+        "type": "component.media-field",
         "instanceId": "media-field",
         "options": {
           "label": "Media Field",
           "mediaType": "image"
-        },
-        "type": "component.media-field"
+        }
       },
       {
-        "instanceId": "section",
+        "type": "component.section",
+        "instanceId": "section-1",
         "options": {
           "title": "Section 1",
           "children": [
             {
-              "instanceId": "text-field",
+              "type": "component.text-field",
+              "instanceId": "text-field-2",
               "options": {
                 "label": "Label",
                 "value": "Value"
-              },
-              "type": "component.text-field"
+              }
             }
           ]
-        },
-        "type": "component.section"
+        }
       },
       {
-        "instanceId": "section",
+        "type": "component.section",
+        "instanceId": "section-2",
         "options": {
           "title": "Section 2",
           "children": [
             {
-              "instanceId": "text-field",
+              "type": "component.text-field",
+              "instanceId": "text-field-3",
               "options": {
                 "label": "Label",
                 "value": "Value"
-              },
-              "type": "component.text-field"
+              }
             }
           ]
-        },
-        "type": "component.section"
+        }
       },
       {
+        "type": "component.signature-field",
         "instanceId": "signature-field",
         "options": {
           "label": "Signature"
-        },
-        "type": "component.signature-field"
+        }
       },
       {
-        "instanceId": "text-field",
+        "type": "component.text-field",
+        "instanceId": "text-field-4",
         "options": {
           "format": {
             "currencyDisplay": "symbol",
@@ -132,11 +134,11 @@
           "helperText": "Text field with the icon",
           "label": "Label",
           "value": "Value"
-        },
-        "type": "component.text-field"
+        }
       },
       {
-        "instanceId": "text-field",
+        "type": "component.text-field",
+        "instanceId": "text-field-5",
         "options": {
           "autoCapitalize": "words",
           "color": [
@@ -150,10 +152,8 @@
             "unit": "\\$"
           },
           "label": "Label"
-        },
-        "type": "component.text-field"
+        }
       }
     ]
-  },
-  "type": "component.form"
+  }
 }

@@ -1,15 +1,9 @@
 {
+  "type": "component.expander",
   "options": {
-    "children": [
-      {
-        "options": {
-          "address": "Goat Island, Niagara Falls, NY 14303"
-        },
-        "type": "component.location"
-      }
-    ],
     "header": {
       "centerElement": {
+        "type": "component.stage",
         "options": {
           "left": {
             "subtitle": "Start subtitle",
@@ -19,11 +13,17 @@
             "subtitle": "End subtitle",
             "title": "End title"
           }
-        },
-        "type": "component.stage"
+        }
       }
     },
+    "children": [
+      {
+        "type": "component.location",
+        "options": {
+          "address": "Goat Island, Niagara Falls, NY 14303"
+        }
+      }
+    ],
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

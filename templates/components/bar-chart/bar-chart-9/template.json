@@ -1,4 +1,5 @@
 {
+  "type": "component.bar-chart",
   "options": {
     "chart": {
       "subtitle": "legend: isHidden: true",
@@ -25,6 +26,5 @@
       "min": 10000,
       "tickAmount": 5
     }
-  },
-  "type": "component.bar-chart"
+  }
 }

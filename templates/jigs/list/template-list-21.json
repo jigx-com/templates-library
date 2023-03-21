@@ -1,6 +1,7 @@
 {
   "title": "Swipe & icon",
   "type": "jig.list",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -17,6 +18,7 @@
       }
     }
   },
+
   "datasources": {
     "swipeable-list": {
       "type": "datasource.static",
@@ -62,6 +64,7 @@
       }
     }
   },
+  
   "data": "=@ctx.datasources.swipeable-list",
   "item": {
     "type": "component.list-item",

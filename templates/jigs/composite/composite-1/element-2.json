@@ -1,6 +1,7 @@
 {
   "title": "Opportunities",
   "type": "jig.list",
+
   "datasources": {
     "components": {
       "type": "datasource.static",
@@ -141,6 +142,7 @@
       }
     }
   },
+
   "filter": [
     {
       "title": "All",
@@ -155,6 +157,7 @@
       "value": "Unsuccess"
     }
   ],
+
   "summary": {
     "children": {
       "type": "component.summary",
@@ -166,19 +169,7 @@
       }
     }
   },
-  "actions": [
-    {
-      "children": [
-        {
-          "type": "action.go-to",
-          "options": {
-            "title": "Add new opportunity",
-            "linkTo": "type-list-2"
-          }
-        }
-      ]
-    }
-  ],
+  
   "data": "=$filter(@ctx.datasources.components, function($v, $i, $a) {\n  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter\n}) \n",
   "item": {
     "type": "component.list-item",

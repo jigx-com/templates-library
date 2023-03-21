@@ -1,7 +1,9 @@
 {
+  "type": "component.expander",
   "options": {
     "children": [
       {
+        "type": "component.line-chart",
         "options": {
           "series": [
             {
@@ -10,12 +12,12 @@
               "layout": "area-gradient"
             }
           ]
-        },
-        "type": "component.line-chart"
+        }
       }
     ],
     "header": {
       "centerElement": {
+        "type": "component.stage",
         "options": {
           "left": {
             "subtitle": "Start subtitle",
@@ -25,11 +27,9 @@
             "subtitle": "End subtitle",
             "title": "End title"
           }
-        },
-        "type": "component.stage"
+        }
       }
     },
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

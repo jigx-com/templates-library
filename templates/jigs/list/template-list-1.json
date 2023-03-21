@@ -1,6 +1,7 @@
 {
   "title": "Stock Inventory",
   "type": "jig.list",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -17,6 +18,7 @@
       }
     }
   },
+
   "summary": {
     "children": {
       "type": "component.summary",
@@ -33,19 +35,7 @@
       }
     }
   },
-  "actions": [
-    {
-      "children": [
-        {
-          "type": "action.go-to",
-          "options": {
-            "title": "Buy products with low inventory",
-            "linkTo": "create the file for this action"
-          }
-        }
-      ]
-    }
-  ],
+ 
   "datasources": {
     "static-data": {
       "type": "datasource.static",
@@ -157,6 +147,7 @@
       }
     }
   },
+  
   "data": "=@ctx.datasources.inventory",
   "item": {
     "type": "component.list-item",

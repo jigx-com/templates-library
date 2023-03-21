@@ -1,6 +1,7 @@
 {
   "title": "Expander (stage)",
   "type": "jig.list",
+
   "datasources": {
     "expander-stage": {
       "type": "datasource.static",
@@ -40,6 +41,7 @@
       }
     }
   },
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -56,6 +58,7 @@
       }
     }
   },
+  
   "data": "=@ctx.datasources.expander-stage",
   "item": {
     "type": "component.expander",

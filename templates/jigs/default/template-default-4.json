@@ -1,6 +1,7 @@
 {
   "title": "Create new invoice",
   "type": "jig.default",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -15,22 +16,7 @@
       }
     }
   },
-  "actions": [
-    {
-      "children": [
-        {
-          "type": "action.submit-form",
-          "options": {
-            "formId": "new-invoice",
-            "provider": "DATA_PROVIDER_DYNAMIC",
-            "entity": "default/invoices",
-            "method": "save",
-            "title": "Create invoice"
-          }
-        }
-      ]
-    }
-  ],
+
   "summary": {
     "children": {
       "type": "component.summary",
@@ -53,6 +39,7 @@
       }
     }
   },
+
   "datasources": {
     "methodOfPayment": {
       "type": "datasource.static",
@@ -126,6 +113,7 @@
       }
     }
   },
+  
   "children": [
     {
       "type": "component.form",

@@ -1,6 +1,7 @@
 {
   "title": "Product item and summary",
   "type": "jig.list",
+
   "datasources": {
     "product-item": {
       "type": "datasource.static",
@@ -34,6 +35,7 @@
       }
     }
   },
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -50,6 +52,7 @@
       }
     }
   },
+
   "summary": {
     "children": {
       "type": "component.summary",
@@ -60,6 +63,7 @@
       }
     }
   },
+  
   "data": "=@ctx.datasources.product-item",
   "item": {
     "type": "component.product-item",

@@ -1,84 +1,88 @@
 {
+  "type": "component.entity",
   "options": {
     "children": [
       {
+        "type": "component.section",
         "options": {
           "title": "General info",
           "children": [
             {
+              "type": "component.field-row",
               "options": {
                 "children": [
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "contentType": "default",
                       "label": "First Name",
                       "value": "First Name"
-                    },
-                    "type": "component.entity-field"
+                    }
                   },
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "contentType": "default",
                       "label": "Middle Name",
                       "value": "Middle Name"
-                    },
-                    "type": "component.entity-field"
+                    }
                   },
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "contentType": "default",
                       "label": "Last Name",
                       "value": "Last Name"
-                    },
-                    "type": "component.entity-field"
+                    }
                   }
                 ]
-              },
-              "type": "component.field-row"
+              }
             },
             {
+              "type": "component.entity-field",
               "options": {
                 "label": "Date of birth",
                 "rightIcon": "calendar",
                 "value": "1988-01-19T00:00:00.000Z"
-              },
-              "type": "component.entity-field"
+              }
             },
             {
+              "type": "component.entity-field",
               "options": {
                 "contentType": "phone",
                 "label": "Phone",
                 "value": "+987 654 321"
-              },
-              "type": "component.entity-field"
+              }
             },
             {
+              "type": "component.entity-field",
               "options": {
                 "contentType": "email",
                 "label": "Email",
                 "value": "example@jigx.com"
-              },
-              "type": "component.entity-field"
+              }
             }
           ]
-        },
-        "type": "component.section"
+        }
       },
       {
+        "type": "component.section",
         "options": {
           "title": "Address",
           "children": [
             {
+              "type": "component.field-row",
               "options": {
                 "children": [
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "label": "Street",
                       "value": "Example street"
-                    },
-                    "type": "component.entity-field"
+                    }
                   },
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "label": "Street number",
                       "rightIcon": "alert-triangle",
@@ -86,14 +90,13 @@
                         "isNegative": true
                       },
                       "value": "12"
-                    },
-                    "type": "component.entity-field"
+                    }
                   }
                 ]
-              },
-              "type": "component.field-row"
+              }
             },
             {
+              "type": "component.entity-field",
               "options": {
                 "label": "City",
                 "rightIcon": "house",
@@ -101,10 +104,10 @@
                   "isPositive": true
                 },
                 "value": "Barcelona"
-              },
-              "type": "component.entity-field"
+              }
             },
             {
+              "type": "component.entity-field",
               "options": {
                 "label": "ZIP code",
                 "rightIcon": "alert-circle",
@@ -112,30 +115,27 @@
                   "isWarning": true
                 },
                 "value": "987 65"
-              },
-              "type": "component.entity-field"
+              }
             }
           ]
-        },
-        "type": "component.section"
+        }
       },
       {
+        "type": "component.section",
         "options": {
           "title": "Signature",
           "children": [
             {
+              "type": "component.entity-field",
               "options": {
                 "contentType": "signature",
                 "label": "",
                 "value": "https://t14345253.p.clickup-attachments.com/t14345253/c4fc68bc-8231-47b4-8fb7-60eb671fca0e/signature.png?view=open"
-              },
-              "type": "component.entity-field"
+              }
             }
           ]
-        },
-        "type": "component.section"
+        }
       }
     ]
-  },
-  "type": "component.entity"
+  }
 }

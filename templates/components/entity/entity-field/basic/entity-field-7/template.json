@@ -1,4 +1,5 @@
 {
+  "type": "component.entity-field",
   "options": {
     "label": "Style",
     "rightIcon": "alert-triangle",
@@ -6,6 +7,5 @@
       "isNegative": true
     },
     "value": "isNegative"
-  },
-  "type": "component.entity-field"
+  }
 }

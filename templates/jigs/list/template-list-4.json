@@ -1,6 +1,7 @@
 {
   "title": "Avatar and Icon",
   "type": "jig.list",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -17,19 +18,7 @@
       }
     }
   },
-  "actions": [
-    {
-      "children": [
-        {
-          "type": "action.go-to",
-          "options": {
-            "title": "Add",
-            "linkTo": "create the file for this action"
-          }
-        }
-      ]
-    }
-  ],
+  
   "datasources": {
     "users": {
       "type": "datasource.static",
@@ -60,6 +49,7 @@
       }
     }
   },
+  
   "data": "=@ctx.datasources.users",
   "item": {
     "type": "component.list-item",

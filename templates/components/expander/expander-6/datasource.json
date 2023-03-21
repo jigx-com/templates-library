@@ -1,5 +1,6 @@
 {
   "interactiveimg": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -115,7 +116,6 @@
           "yCoordinate": 83
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

@@ -1,4 +1,5 @@
 {
+  "type": "component.section",
   "options": {
     "title": "Date",
     "children": [
@@ -13,6 +14,5 @@
         "type": "component.date-picker"
       }
     ]
-  },
-  "type": "component.section"
+  }
 }

@@ -1,7 +1,9 @@
 {
+  "type": "component.expander",
   "options": {
     "children": [
       {
+        "type": "component.pie-chart",
         "options": {
           "chart": {
             "subtitle": {
@@ -19,12 +21,12 @@
               "layout": "arch"
             }
           ]
-        },
-        "type": "component.pie-chart"
+        }
       }
     ],
     "header": {
       "centerElement": {
+        "type": "component.stage",
         "options": {
           "left": {
             "subtitle": "Start subtitle",
@@ -34,11 +36,9 @@
             "subtitle": "End subtitle",
             "title": "End title"
           }
-        },
-        "type": "component.stage"
+        }
       }
     },
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

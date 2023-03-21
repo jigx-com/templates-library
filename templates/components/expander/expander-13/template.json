@@ -1,24 +1,24 @@
 {
+  "type": "component.expander",
   "options": {
-    "children": [
-      {
-        "options": {
-          "height": 400,
-          "uri": "https://www.google.com/"
-        },
-        "type": "component.web-view"
-      }
-    ],
     "header": {
       "centerElement": {
+        "type": "component.titles",
         "options": {
           "title": "Title",
           "subtitle": "Subtitle"
-        },
-        "type": "component.titles"
+        }
       }
     },
+    "children": [
+      {
+        "type": "component.web-view",
+        "options": {
+          "height": 400,
+          "uri": "https://www.google.com/"
+        }
+      }
+    ],
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

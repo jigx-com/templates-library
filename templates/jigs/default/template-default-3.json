@@ -1,6 +1,7 @@
 {
   "title": "Add new employee",
   "type": "jig.default",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -15,22 +16,7 @@
       }
     }
   },
-  "actions": [
-    {
-      "children": [
-        {
-          "type": "action.submit-form",
-          "options": {
-            "formId": "new-employee",
-            "provider": "DATA_PROVIDER_DYNAMIC",
-            "entity": "default/employees",
-            "method": "save",
-            "title": "Add employee"
-          }
-        }
-      ]
-    }
-  ],
+  
   "datasources": {
     "employees": {
       "type": "datasource.sqlite",
@@ -45,6 +31,7 @@
       }
     }
   },
+  
   "children": [
     {
       "type": "component.form",

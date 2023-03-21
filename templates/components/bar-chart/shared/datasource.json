@@ -1,5 +1,6 @@
 {
   "mydata": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -19,7 +20,6 @@
           "y": 49000
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

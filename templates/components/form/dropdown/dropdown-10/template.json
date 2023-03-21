@@ -1,19 +1,19 @@
 {
+  "type": "component.dropdown",
   "instanceId": "dropdown-10",
   "options": {
     "data": "=@ctx.datasources.dropdown",
     "helperText": "Multiple select",
     "isMultiple": true,
     "item": {
+      "type": "component.dropdown-item",
       "options": {
         "title": "=@ctx.current.item.value",
         "subtitle": "=@ctx.current.item.subtitle",
         "description": "=@ctx.current.item.description",
         "value": "=@ctx.current.item.value"
-      },
-      "type": "component.dropdown-item"
+      }
     },
     "label": "Dropdown 10"
-  },
-  "type": "component.dropdown"
+  }
 }

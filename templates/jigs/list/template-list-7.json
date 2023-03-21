@@ -1,6 +1,7 @@
 {
   "title": "Progress and label",
   "type": "jig.list",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -17,19 +18,7 @@
       }
     }
   },
-  "actions": [
-    {
-      "children": [
-        {
-          "type": "action.go-to",
-          "options": {
-            "title": "Add",
-            "linkTo": "create the file for this action"
-          }
-        }
-      ]
-    }
-  ],
+
   "datasources": {
     "list": {
       "type": "datasource.static",
@@ -57,6 +46,7 @@
       }
     }
   },
+  
   "data": "=@ctx.datasources.list",
   "item": {
     "type": "component.list-item",

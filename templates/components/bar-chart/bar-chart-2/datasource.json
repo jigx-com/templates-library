@@ -1,5 +1,6 @@
 {
   "y2019": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -19,10 +20,10 @@
           "y": 51000
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   },
   "y2020": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -42,10 +43,10 @@
           "y": 39000
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   },
   "y2021": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -65,10 +66,10 @@
           "y": 35000
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   },
   "y2022": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -88,7 +89,6 @@
           "y": 47000
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

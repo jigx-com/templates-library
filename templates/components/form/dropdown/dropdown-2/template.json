@@ -1,9 +1,11 @@
 {
+  "type": "component.dropdown",
   "instanceId": "dropdown-2",
   "options": {
     "data": "=@ctx.datasources.dropdown",
     "helperText": "With avatars",
     "item": {
+      "type": "component.dropdown-item",
       "options": {
         "title": "=@ctx.current.item.value",
         "subtitle": "=@ctx.current.item.subtitle",
@@ -14,10 +16,8 @@
           "uri": "=@ctx.current.item.image"
         },
         "value": "=@ctx.current.item.value"
-      },
-      "type": "component.dropdown-item"
+      }
     },
     "label": "Dropdown 2"
-  },
-  "type": "component.dropdown"
+  }
 }

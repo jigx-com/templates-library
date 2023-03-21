@@ -1,6 +1,7 @@
 {
   "title": "General form",
   "type": "jig.default",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -15,22 +16,7 @@
       }
     }
   },
-  "actions": [
-    {
-      "children": [
-        {
-          "type": "action.submit-form",
-          "options": {
-            "formId": "general-form",
-            "provider": "DATA_PROVIDER_DYNAMIC",
-            "entity": "default/generalForm",
-            "method": "save",
-            "title": "Submit"
-          }
-        }
-      ]
-    }
-  ],
+
   "datasources": {
     "dropdownOptions": {
       "type": "datasource.static",
@@ -56,6 +42,7 @@
       }
     }
   },
+  
   "children": [
     {
       "type": "component.form",

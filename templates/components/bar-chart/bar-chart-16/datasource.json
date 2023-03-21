@@ -1,5 +1,6 @@
 {
   "serie1": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -19,7 +20,6 @@
           "y": 8100
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

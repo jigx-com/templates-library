@@ -1,4 +1,5 @@
 {
+  "type": "component.bar-chart",
   "options": {
     "chart": {
       "subtitle": "tickAmount: 2",
@@ -24,6 +25,5 @@
       "min": 0,
       "tickAmount": 2
     }
-  },
-  "type": "component.bar-chart"
+  }
 }

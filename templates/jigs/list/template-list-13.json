@@ -1,6 +1,7 @@
 {
   "title": "Expander (titles)",
   "type": "jig.list",
+
   "datasources": {
     "expander-titles": {
       "type": "datasource.static",
@@ -34,6 +35,7 @@
       }
     }
   },
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -50,6 +52,7 @@
       }
     }
   },
+  
   "data": "=@ctx.datasources.expander-titles",
   "item": {
     "type": "component.expander",

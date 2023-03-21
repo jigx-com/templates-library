@@ -2,11 +2,11 @@
   "options": {
     "children": [
       {
+        "type": "component.web-view",
         "options": {
           "height": 400,
           "uri": "https://www.google.com/"
-        },
-        "type": "component.web-view"
+        }
       }
     ],
     "header": {

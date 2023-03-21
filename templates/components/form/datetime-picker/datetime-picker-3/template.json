@@ -1,12 +1,15 @@
 {
+  "type": "component.form",
   "instanceId": "form",
   "options": {
     "children": [
       {
+        "type": "component.section",
         "options": {
           "title": "Date Time",
           "children": [
             {
+              "type": "component.date-picker",
               "instanceId": "date-time-picker3",
               "options": {
                 "helperText": "Date Time picker with initial value now",
@@ -14,14 +17,11 @@
                 "isRequired": true,
                 "label": "Date picker mode - datetime",
                 "mode": "datetime"
-              },
-              "type": "component.date-picker"
+              }
             }
           ]
-        },
-        "type": "component.section"
+        }
       }
     ]
-  },
-  "type": "component.form"
+  }
 }

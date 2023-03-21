@@ -1,4 +1,5 @@
 {
+  "type": "component.number-field",
   "instanceId": "number-field4",
   "options": {
     "helperText": "Is Positive",
@@ -12,6 +13,5 @@
       "isPositive": true
     },
     "value": 1
-  },
-  "type": "component.number-field"
+  }
 }

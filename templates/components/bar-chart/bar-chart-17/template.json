@@ -1,4 +1,5 @@
 {
+  "type": "component.bar-chart",
   "options": {
     "chart": {
       "title": "Multiple series"
@@ -28,6 +29,5 @@
       "max": 10000,
       "min": 0
     }
-  },
-  "type": "component.bar-chart"
+  }
 }

@@ -1,5 +1,6 @@
 {
   "piechart": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -11,7 +12,6 @@
           "y": 50
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

@@ -1,4 +1,5 @@
 {
+  "type": "component.checkbox",
   "instanceId": "checkbox7",
   "options": {
     "helperText": "Checked state",
@@ -7,6 +8,5 @@
       "isDisabled": true
     },
     "value": true
-  },
-  "type": "component.checkbox"
+  }
 }

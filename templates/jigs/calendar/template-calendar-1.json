@@ -1,19 +1,6 @@
 {
   "title": "Calendar",
   "type": "jig.calendar",
-  "actions": [
-    {
-      "children": [
-        {
-          "options": {
-            "title": "Add appointment",
-            "linkTo": "create the file for this action"
-          },
-          "type": "action.go-to"
-        }
-      ]
-    }
-  ],
   "datasources": {
     "calendar-data": {
       "options": {
@@ -78,6 +65,7 @@
       "type": "datasource.static"
     }
   },
+  
   "data": "=@ctx.datasources.calendar-data",
   "item": {
     "options": {

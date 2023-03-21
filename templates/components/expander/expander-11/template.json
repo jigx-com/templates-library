@@ -1,13 +1,25 @@
 {
+  "type": "component.expander",
   "options": {
+    "header": {
+      "centerElement": {
+        "type": "component.titles",
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.stepper",
         "options": {
           "title": "Title",
           "completedPercentage": 0.25,
           "data": "=@ctx.datasources.steps",
           "isExpandable": true,
           "item": {
+            "type": "component.step",
             "options": {
               "title": "=@ctx.current.item.title",
               "leftElement": {
@@ -21,23 +33,11 @@
                 "isStrikeThrough": "=@ctx.current.item.isCompleted"
               },
               "value": "=@ctx.current.item.value"
-            },
-            "type": "component.step"
+            }
           }
-        },
-        "type": "component.stepper"
+        }
       }
     ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "title": "Title",
-          "subtitle": "Subtitle"
-        },
-        "type": "component.titles"
-      }
-    },
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

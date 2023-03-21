@@ -1,9 +1,9 @@
 {
+  "type": "component.date-picker",
   "instanceId": "date-picker4",
   "options": {
     "format": "LL",
     "initialValue": "=\\$now()",
     "label": "Date with initial value now"
-  },
-  "type": "component.date-picker"
+  }
 }

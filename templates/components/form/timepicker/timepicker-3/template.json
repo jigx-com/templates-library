@@ -1,4 +1,5 @@
 {
+  "type": "component.date-picker",
   "instanceId": "time-picker3",
   "options": {
     "format": "HH:mm",
@@ -6,6 +7,5 @@
     "initialValue": "=\\$now()",
     "label": "Date picker mode - time",
     "mode": "time"
-  },
-  "type": "component.date-picker"
+  }
 }

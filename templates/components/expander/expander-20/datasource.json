@@ -1,5 +1,6 @@
 {
   "linechart": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -27,7 +28,6 @@
           "y": "523.5"
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }
