@@ -19,11 +19,6 @@
     "series": [
       {
         "data": "=@ctx.datasources.issues",
-        "dataLabels": [
-          {
-            "isEnabled": true
-          }
-        ],
         "layout": "pie"
       }
     ]

@@ -19,11 +19,6 @@
     "series": [
       {
         "data": "=@ctx.datasources.simple",
-        "dataLabels": [
-          {
-            "isEnabled": true
-          }
-        ],
         "layout": "arch"
       }
     ]

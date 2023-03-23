@@ -84,50 +84,6 @@
     {
       "type": "component.section",
       "options": {
-        "title": "Section on the Default",
-        "children": [
-          {
-            "type": "component.entity",
-            "options": {
-              "children": [
-                {
-                  "type": "component.entity-field",
-                  "options": {
-                    "label": "Description",
-                    "value": "The Phi Phi Islands are an island group in Thailand between the large island of Phuket and the Straits of Malacca coast of Thailand. The islands are reachable by speedboats or long-tail boats most often from Krabi town or from piers in Phuket Province.",
-                    "isMultiline": true
-                  }
-                },
-                {
-                  "type": "component.entity-field",
-                  "options": {
-                    "label": "Total area",
-                    "value": "12.25 km2 (4.73 sq mi)"
-                  }
-                },
-                {
-                  "type": "component.entity-field",
-                  "options": {
-                    "label": "Total population",
-                    "value": "2,500"
-                  }
-                },
-                {
-                  "type": "component.entity-field",
-                  "options": {
-                    "label": "Time zone",
-                    "value": "UTC+7 (ICT)"
-                  }
-                }
-              ]
-            }
-          }
-        ]
-      }
-    },
-    {
-      "type": "component.section",
-      "options": {
         "title": "Location",
         "children": [
           {

@@ -79,11 +79,6 @@
         "series": [
           {
             "data": "=@ctx.datasources.issues",
-            "dataLabels": [
-              {
-                "isEnabled": true
-              }
-            ],
             "layout": "pie"
           }
         ]
@@ -110,12 +105,7 @@
         "series": [
           {
             "data": "=@ctx.datasources.arch",
-            "layout": "arch",
-            "dataLabels": [
-              {
-                "isEnabled": false
-              }
-            ]
+            "layout": "arch"
           }
         ]
       }
