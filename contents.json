@@ -1361,7 +1361,7 @@
       "templateRef": "jc-pie-chart"
     },
     {
-      "name": "Pie chart - mMltiple data",
+      "name": "Pie chart - multiple data",
       "filePath": "templates/components/pie-chart/pie-chart-2/template.json",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-2/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-2/datasource.json",

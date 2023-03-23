@@ -1,7 +1,18 @@
 {
+  "type": "component.expander",
   "options": {
+    "header": {
+      "centerElement": {
+        "type": "component.titles",
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.interactive-image",
         "options": {
           "data": "=(@ctx.datasources.interactiveimg)\n",
           "groups": [
@@ -17,6 +28,7 @@
             }
           ],
           "item": {
+            "type": "component.interactive-image-item",
             "options": {
               "title": "=@ctx.current.item.name",
               "color": "=@ctx.current.item.isReserved = true ? 'color4' :null",
@@ -30,26 +42,14 @@
               "style": {
                 "isDisabled": "=@ctx.current.item.isReserved = true ? true :false"
               }
-            },
-            "type": "component.interactive-image-item"
+            }
           },
           "source": {
             "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxnSPwgDIBx10pBXM2omf9twq7LnqQFtKXQZdVvOCORlcVd6h-woQc1fbvoILSKe4pqo&usqp=CAU"
           }
-        },
-        "type": "component.interactive-image"
+        }
       }
     ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "title": "Title",
-          "subtitle": "Subtitle"
-        },
-        "type": "component.titles"
-      }
-    },
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

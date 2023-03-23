@@ -1,6 +1,7 @@
 {
   "title": "Filter, progress and label",
   "type": "jig.list",
+
   "filter": [
     {
       "title": "All",
@@ -15,6 +16,7 @@
       "value": "inactive"
     }
   ],
+
   "datasources": {
     "filter-list": {
       "type": "datasource.static",
@@ -60,6 +62,7 @@
       }
     }
   },
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -76,6 +79,7 @@
       }
     }
   },
+  
   "data": "=\\$filter(@ctx.datasources.filter-list, function(\\$v, \\$i, \\$a) {\n  @ctx.jig.state.filter = 'ALL' or \\$v.status = @ctx.jig.state.filter\n}) \n",
   "item": {
     "type": "component.list-item",

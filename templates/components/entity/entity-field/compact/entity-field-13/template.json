@@ -1,9 +1,9 @@
 {
+  "type": "component.entity-field",
   "options": {
     "contentType": "default",
     "isMultiline": true,
     "label": "Multiline",
     "value": "Lorem ipsum dolor sit amet, putent viderer pericula per ex, cu ius sonet referrentur. Cu pri ubique mediocrem maluisset, eum ea assum vivendum constituto. Fierent accusata nec ut, ullum impetus omittam cu per. Perpetua consectetuer no ius."
-  },
-  "type": "component.entity-field"
+  }
 }

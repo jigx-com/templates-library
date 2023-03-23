@@ -1,4 +1,5 @@
 {
+  "type": "component.dropdown",
   "instanceId": "dropdown-5",
   "options": {
     "color": [
@@ -10,15 +11,14 @@
     "data": "=@ctx.datasources.dropdown",
     "helperText": "With color",
     "item": {
+      "type": "component.dropdown-item",
       "options": {
         "title": "=@ctx.current.item.value",
         "subtitle": "=@ctx.current.item.subtitle",
         "description": "=@ctx.current.item.description",
         "value": "=@ctx.current.item.value"
-      },
-      "type": "component.dropdown-item"
+      }
     },
     "label": "Dropdown 5"
-  },
-  "type": "component.dropdown"
+  }
 }

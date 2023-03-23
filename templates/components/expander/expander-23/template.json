@@ -1,7 +1,24 @@
 {
+  "type": "component.expander",
   "options": {
+    "header": {
+      "centerElement": {
+        "type": "component.stage",
+        "options": {
+          "left": {
+            "subtitle": "Start subtitle",
+            "title": "Start title"
+          },
+          "right": {
+            "subtitle": "End subtitle",
+            "title": "End title"
+          }
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.pie-chart",
         "options": {
           "chart": {
             "subtitle": {
@@ -18,26 +35,9 @@
               "data": "=@ctx.datasources.piechart"
             }
           ]
-        },
-        "type": "component.pie-chart"
+        }
       }
     ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "left": {
-            "subtitle": "Start subtitle",
-            "title": "Start title"
-          },
-          "right": {
-            "subtitle": "End subtitle",
-            "title": "End title"
-          }
-        },
-        "type": "component.stage"
-      }
-    },
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

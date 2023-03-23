@@ -1,5 +1,6 @@
 {
   "list": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -28,7 +29,6 @@
           "uri": "https://randomuser.me/api/portraits/men/62.jpg"
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

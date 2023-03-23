@@ -2,6 +2,7 @@
   "title": "Horizontal list",
   "type": "jig.list",
   "isHorizontal": true,
+
   "datasources": {
     "horizontal": {
       "type": "datasource.static",
@@ -51,6 +52,7 @@
       }
     }
   },
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -67,6 +69,7 @@
       }
     }
   },
+  
   "data": "=@ctx.datasources.horizontal",
   "item": {
     "type": "component.list-item",

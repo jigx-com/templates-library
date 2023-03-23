@@ -1,10 +1,10 @@
 {
+  "type": "component.video-player",
   "options": {
     "title": "Autoplay: False / Ratio 4:3",
     "subtitle": "Options",
     "autoplay": false,
-    "ratio": 243,
+    "ratio": "4:3",
     "url": "https://www.jigx.com/wp-content/uploads/2022/01/hyperlapse_web.mp4"
-  },
-  "type": "component.video-player"
+  }
 }

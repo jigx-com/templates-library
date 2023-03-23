@@ -1,4 +1,5 @@
 {
+  "type": "component.bar-chart",
   "options": {
     "chart": {
       "title": "Default height"
@@ -22,6 +23,5 @@
       "min": 10000,
       "tickAmount": 5
     }
-  },
-  "type": "component.bar-chart"
+  }
 }

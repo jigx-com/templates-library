@@ -1,9 +1,9 @@
 {
+  "type": "component.media-field",
   "instanceId": "media-field",
   "options": {
     "isRequired": false,
     "label": "Media field - Single select",
     "mediaType": "image"
-  },
-  "type": "component.media-field"
+  }
 }

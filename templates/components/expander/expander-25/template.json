@@ -4,7 +4,7 @@
       {
         "options": {
           "autoplay": false,
-          "ratio": 969,
+          "ratio": "16:9",
           "url": "https://www.youtube.com/watch?v=mUlty9YwT4c"
         },
         "type": "component.video-player"

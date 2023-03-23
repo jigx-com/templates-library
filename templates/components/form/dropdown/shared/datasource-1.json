@@ -1,5 +1,6 @@
 {
   "dropdown": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -19,7 +20,6 @@
           "value": "Value2"
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

@@ -1,8 +1,8 @@
 {
+  "type": "component.entity-field",
   "options": {
     "contentType": "checkbox",
     "label": "Checkbox",
     "value": true
-  },
-  "type": "component.entity-field"
+  }
 }

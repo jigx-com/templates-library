@@ -1,9 +1,9 @@
 {
+  "type": "component.entity-field",
   "options": {
     "contentType": "link",
     "label": "Link",
     "rightIcon": "google",
     "value": "https://docs.jigx.com"
-  },
-  "type": "component.entity-field"
+  }
 }

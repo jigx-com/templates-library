@@ -1,13 +1,31 @@
 {
+  "type": "component.expander",
   "options": {
+    "header": {
+      "centerElement": {
+        "type": "component.stage",
+        "options": {
+          "left": {
+            "subtitle": "Start subtitle",
+            "title": "Start title"
+          },
+          "right": {
+            "subtitle": "End subtitle",
+            "title": "End title"
+          }
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.stepper",
         "options": {
           "title": "Title",
           "completedPercentage": 0.25,
           "data": "=@ctx.datasources.steps",
           "isExpandable": true,
           "item": {
+            "type": "component.step",
             "options": {
               "title": "=@ctx.current.item.title",
               "leftElement": {
@@ -21,29 +39,11 @@
                 "isStrikeThrough": "=@ctx.current.item.isCompleted"
               },
               "value": "=@ctx.current.item.value"
-            },
-            "type": "component.step"
+            }
           }
-        },
-        "type": "component.stepper"
+        }
       }
     ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "left": {
-            "subtitle": "Start subtitle",
-            "title": "Start title"
-          },
-          "right": {
-            "subtitle": "End subtitle",
-            "title": "End title"
-          }
-        },
-        "type": "component.stage"
-      }
-    },
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

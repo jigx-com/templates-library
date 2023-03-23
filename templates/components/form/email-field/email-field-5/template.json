@@ -1,4 +1,5 @@
 {
+  "type": "component.email-field",
   "instanceId": "email-field5",
   "options": {
     "label": "Disabled",
@@ -6,6 +7,5 @@
       "isDisabled": true
     },
     "value": "email@jigx.com"
-  },
-  "type": "component.email-field"
+  }
 }

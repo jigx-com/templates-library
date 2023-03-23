@@ -1,8 +1,8 @@
 {
+  "type": "component.date-picker",
   "instanceId": "date-picker3",
   "options": {
     "helperText": "Help for the date-picker",
     "label": "Date with Helper"
-  },
-  "type": "component.date-picker"
+  }
 }

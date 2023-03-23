@@ -1,4 +1,5 @@
 {
+  "type": "component.text-field",
   "instanceId": "text-field-4",
   "options": {
     "format": {
@@ -8,6 +9,5 @@
     "helperText": "With format currency",
     "isRequired": false,
     "label": "Label 4"
-  },
-  "type": "component.text-field"
+  }
 }

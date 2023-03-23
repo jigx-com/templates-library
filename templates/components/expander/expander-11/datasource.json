@@ -1,5 +1,6 @@
 {
   "steps": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -34,7 +35,6 @@
           "value": "step4"
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

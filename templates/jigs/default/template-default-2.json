@@ -1,6 +1,7 @@
 {
   "title": "=@ctx.datasources.employeeDetail.employee-first-name & ' ' & @ctx.datasources.employeeDetail.employee-surname",
   "type": "jig.default",
+  
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -15,19 +16,7 @@
       }
     }
   },
-  "actions": [
-    {
-      "children": [
-        {
-          "type": "action.go-to",
-          "options": {
-            "title": "Edit employee",
-            "linkTo": "create the file for this action"
-          }
-        }
-      ]
-    }
-  ],
+  
   "datasources": {
     "employeeDetail": {
       "type": "datasource.static",

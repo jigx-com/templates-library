@@ -2,6 +2,7 @@
   "title": "Search and left image",
   "type": "jig.list",
   "isSearchable": true,
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -18,6 +19,7 @@
       }
     }
   },
+
   "datasources": {
     "search": {
       "type": "datasource.static",
@@ -45,6 +47,7 @@
       }
     }
   },
+  
   "data": "=\\$filter(@ctx.datasources.search, function(\\$v){@ctx.datasources.search ? \\$contains(\\$string(\\$v.title),\\$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) :true})[]\n",
   "item": {
     "type": "component.list-item",

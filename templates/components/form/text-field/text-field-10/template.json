@@ -1,4 +1,5 @@
 {
+  "type": "component.text-field",
   "instanceId": "text-field-10",
   "options": {
     "helperText": "Multiline & Textarea",
@@ -7,6 +8,5 @@
     "isRequired": false,
     "label": "Label 10",
     "textArea": "medium"
-  },
-  "type": "component.text-field"
+  }
 }

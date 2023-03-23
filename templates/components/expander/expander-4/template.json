@@ -1,68 +1,68 @@
 {
+  "type": "component.expander",
   "options": {
+    "header": {
+      "centerElement": {
+        "type": "component.titles",
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.entity",
         "options": {
           "children": [
             {
+              "type": "component.entity-field",
               "options": {
                 "label": "Title",
                 "value": "Value"
-              },
-              "type": "component.entity-field"
+              }
             },
             {
+              "type": "component.field-row",
               "options": {
                 "children": [
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "label": "Title",
                       "value": "Value"
-                    },
-                    "type": "component.entity-field"
+                    }
                   },
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "label": "Title",
                       "value": "Value"
-                    },
-                    "type": "component.entity-field"
+                    }
                   }
                 ]
-              },
-              "type": "component.field-row"
+              }
             },
             {
+              "type": "component.section",
               "options": {
                 "title": "Section title",
                 "children": [
                   {
+                    "type": "component.entity-field",
                     "options": {
                       "isMultiline": true,
                       "label": "Title",
                       "value": "Value"
-                    },
-                    "type": "component.entity-field"
+                    }
                   }
                 ]
-              },
-              "type": "component.section"
+              }
             }
           ]
-        },
-        "type": "component.entity"
+        }
       }
     ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "title": "Title",
-          "subtitle": "Subtitle"
-        },
-        "type": "component.titles"
-      }
-    },
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

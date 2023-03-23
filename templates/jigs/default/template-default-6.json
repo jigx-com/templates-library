@@ -1,6 +1,7 @@
 {
   "title": "Pyramid Construction Inc.",
   "type": "jig.default",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -15,6 +16,7 @@
       }
     }
   },
+  
   "children": [
     {
       "type": "component.avatar",

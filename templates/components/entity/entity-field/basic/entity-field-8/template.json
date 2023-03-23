@@ -1,8 +1,8 @@
 {
+  "type": "component.entity-field",
   "options": {
     "contentType": "copy",
     "label": "Copy",
     "value": "Copy me!"
-  },
-  "type": "component.entity-field"
+  }
 }

@@ -1,25 +1,25 @@
 {
+  "type": "component.expander",
   "options": {
-    "children": [
-      {
-        "options": {
-          "autoplay": false,
-          "ratio": 969,
-          "url": "https://www.youtube.com/watch?v=mUlty9YwT4c"
-        },
-        "type": "component.video-player"
-      }
-    ],
     "header": {
       "centerElement": {
+        "type": "component.titles",
         "options": {
           "title": "Title",
           "subtitle": "Subtitle"
-        },
-        "type": "component.titles"
+        }
       }
     },
+    "children": [
+      {
+        "type": "component.video-player",
+        "options": {
+          "autoplay": false,
+          "ratio": "16:9",
+          "url": "https://www.youtube.com/watch?v=mUlty9YwT4c"
+        }
+      }
+    ],
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

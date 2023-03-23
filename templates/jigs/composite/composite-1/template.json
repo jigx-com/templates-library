@@ -1,15 +1,7 @@
 {
   "title": "Opportunities Overview",
   "type": "jig.composite",
-  "children": [
-    {
-      "isTitleHidden": true,
-      "jigId": "type-default"
-    },
-    {
-      "jigId": "type-list"
-    }
-  ],
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -23,5 +15,15 @@
         }
       }
     }
-  }
+  },
+
+  "children": [
+    {
+      "isTitleHidden": true,
+      "jigId": "type-default"
+    },
+    {
+      "jigId": "type-list"
+    }
+  ]
 }

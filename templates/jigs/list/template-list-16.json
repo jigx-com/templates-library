@@ -1,6 +1,7 @@
 {
   "title": "Sections and button",
   "type": "jig.list",
+
   "datasources": {
     "sections-list": {
       "type": "datasource.static",
@@ -46,6 +47,7 @@
       }
     }
   },
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -62,6 +64,7 @@
       }
     }
   },
+
   "sections": [
     {
       "title": "Active tasks",
@@ -72,6 +75,7 @@
       "data": "=@ctx.datasources.sections-list[active=false]"
     }
   ],
+  
   "item": {
     "type": "component.list-item",
     "options": {

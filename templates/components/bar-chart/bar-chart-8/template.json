@@ -1,4 +1,5 @@
 {
+  "type": "component.bar-chart",
   "options": {
     "chart": {
       "subtitle": "series: name: Revenues",
@@ -26,6 +27,5 @@
       "min": 10000,
       "tickAmount": 3
     }
-  },
-  "type": "component.bar-chart"
+  }
 }

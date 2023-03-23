@@ -1,7 +1,18 @@
 {
+  "type": "component.expander",
   "options": {
+    "header": {
+      "centerElement": {
+        "type": "component.titles",
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.pie-chart",
         "options": {
           "chart": {
             "subtitle": {
@@ -19,20 +30,9 @@
               "layout": "arch"
             }
           ]
-        },
-        "type": "component.pie-chart"
+        }
       }
     ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "title": "Title",
-          "subtitle": "Subtitle"
-        },
-        "type": "component.titles"
-      }
-    },
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

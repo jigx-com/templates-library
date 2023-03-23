@@ -4,16 +4,10 @@
     "isInitiallyCollapsed": false,
     "header": {
       "centerElement": {
-        "type": "component.stage",
+        "type": "component.titles",
         "options": {
-          "right": {
-            "title": "End title",
-            "subtitle": "End subtitle"
-          },
-          "left": {
-            "title": "Start title",
-            "subtitle": "Start subtitle"
-          }
+          "title": "Title",
+          "subtitle": "Subtitle"
         }
       }
     },

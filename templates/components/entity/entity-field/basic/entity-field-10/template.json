@@ -1,9 +1,9 @@
 {
+  "type": "component.entity-field",
   "options": {
     "contentType": "email",
     "label": "Email",
     "rightIcon": "email",
     "value": "example@jigx.com"
-  },
-  "type": "component.entity-field"
+  }
 }

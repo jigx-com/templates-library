@@ -1,5 +1,6 @@
 {
   "expenses": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -19,10 +20,10 @@
           "y": 39000
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   },
   "revenues": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -42,7 +43,6 @@
           "y": 51000
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

@@ -1,6 +1,7 @@
 {
   "title": "Horizontal list",
   "type": "jig.default",
+
   "header": {
     "type": "component.jig-header",
     "options": {
@@ -15,6 +16,7 @@
       }
     }
   },
+
   "datasources": {
     "list1": {
       "type": "datasource.static",
@@ -237,6 +239,7 @@
       }
     }
   },
+  
   "children": [
     {
       "type": "component.section",

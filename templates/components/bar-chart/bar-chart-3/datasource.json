@@ -1,5 +1,6 @@
 {
   "population": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -23,7 +24,6 @@
           "y": 338289857
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }

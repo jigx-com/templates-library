@@ -1,15 +1,15 @@
 {
+  "type": "component.dropdown",
   "instanceId": "dropdown-1",
   "options": {
     "data": "=@ctx.datasources.dropdown",
     "item": {
+      "type": "component.dropdown-item",
       "options": {
         "title": "=@ctx.current.item.value",
         "value": "=@ctx.current.item.value"
-      },
-      "type": "component.dropdown-item"
+      }
     },
     "label": "Dropdown 1"
-  },
-  "type": "component.dropdown"
+  }
 }

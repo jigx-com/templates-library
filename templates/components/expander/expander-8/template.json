@@ -1,10 +1,22 @@
 {
+  "type": "component.expander",
   "options": {
+    "header": {
+      "centerElement": {
+        "type": "component.titles",
+        "options": {
+          "title": "Title",
+          "subtitle": "Subtitle"
+        }
+      }
+    },
     "children": [
       {
+        "type": "component.list",
         "options": {
           "data": "=@ctx.datasources.list",
           "item": {
+            "type": "component.list-item",
             "options": {
               "title": "=@ctx.current.item.title",
               "subtitle": "=@ctx.current.item.subtitle",
@@ -17,24 +29,12 @@
                 "element": "icon",
                 "name": "arrow-right"
               }
-            },
-            "type": "component.list-item"
+            }
           },
           "maximumItemsToRender": 8
-        },
-        "type": "component.list"
+        }
       }
     ],
-    "header": {
-      "centerElement": {
-        "options": {
-          "title": "Title",
-          "subtitle": "Subtitle"
-        },
-        "type": "component.titles"
-      }
-    },
     "isInitiallyCollapsed": false
-  },
-  "type": "component.expander"
+  }
 }

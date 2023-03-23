@@ -1,4 +1,5 @@
 {
+  "type": "component.date-picker",
   "instanceId": "time-picker1",
   "options": {
     "format": "HH:mm",
@@ -8,6 +9,5 @@
     "maximum": 1020,
     "minimum": "08:00",
     "mode": "time"
-  },
-  "type": "component.date-picker"
+  }
 }

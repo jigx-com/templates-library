@@ -1,5 +1,6 @@
 {
   "barchart": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {
@@ -12,7 +13,6 @@
           "y": 123
         }
       ]
-    },
-    "type": "datasource.static"
+    }
   }
 }
