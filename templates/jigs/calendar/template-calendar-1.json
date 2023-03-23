@@ -1,8 +1,10 @@
 {
   "title": "Calendar",
   "type": "jig.calendar",
+
   "datasources": {
     "calendar-data": {
+      "type": "datasource.static",
       "options": {
         "data": [
           {
@@ -61,17 +63,16 @@
             "title": "Sign contract"
           }
         ]
-      },
-      "type": "datasource.static"
+      }
     }
   },
   
   "data": "=@ctx.datasources.calendar-data",
   "item": {
+    "type": "component.event",
     "options": {
       "title": "=@ctx.current.item.title",
       "buttonTitle": "teestt",
-      "description": "=@ctx.current.item.description",
       "from": {
         "format": {
           "dateFormat": "l"
@@ -80,17 +81,9 @@
       },
       "isAllDay": "=@ctx.current.item.allday",
       "location": "=@ctx.current.item.location",
-      "onButtonPress": {
-        "options": {
-          "title": "Bežněkam",
-          "linkTo": "create the file for this action"
-        },
-        "type": "action.go-to"
-      },
       "people": "=@ctx.current.item.people",
       "tags": "=@ctx.current.item.tags",
       "to": "=\\$fromMillis(\\$toMillis(\\$now()) + \\$number(@ctx.current.item.id) * 3600000)"
-    },
-    "type": "component.event"
+    }
   }
 }

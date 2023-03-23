@@ -1761,12 +1761,6 @@
       "filePath": "templates/components/web-view/web-view-2/template.json",
       "previewImgSrc": "templates/components/web-view/web-view-2/preview.jpg",
       "templateRef": "jc-web-view"
-    },
-    {
-      "name": "Web view with the long-press",
-      "filePath": "templates/components/web-view/web-view-3/template.json",
-      "previewImgSrc": "templates/components/web-view/web-view-3/preview.png",
-      "templateRef": "jc-web-view"
     }
   ]
 }
