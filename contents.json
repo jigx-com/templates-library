@@ -1655,7 +1655,7 @@
       "templateRef": "jc-list"
     },
     {
-      "name": "Product item and summary",
+      "name": "Product item with amount control",
       "filePath": "templates/components/list/list-14/template.json",
       "previewImgSrc": "templates/components/list/list-14/preview.png",
       "datasource": "templates/components/list/list-14/datasource.json",
