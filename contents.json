@@ -302,14 +302,6 @@
       "datasource": "templates/components/bar-chart/bar-chart-2/datasource.json"
     },
     {
-      "name": "Population of USA",
-      "filePath": "templates/components/bar-chart/bar-chart-3/template.json",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-3/preview.jpeg",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-3/datasource.json"
-    },
-
-    {
       "name": "Default height bar-chart",
       "filePath": "templates/components/bar-chart/bar-chart-4/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-4/preview.png",
@@ -1231,13 +1223,6 @@
       "name": "Line chart - Height: 320",
       "filePath": "templates/components/line-chart/line-chart-5/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-5/preview.png",
-      "datasource": "templates/components/line-chart/shared/datasource.json",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart - Width: 250",
-      "filePath": "templates/components/line-chart/line-chart-6/template.json",
-      "previewImgSrc": "templates/components/line-chart/line-chart-6/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource.json",
       "templateRef": "jc-line-chart"
     },
