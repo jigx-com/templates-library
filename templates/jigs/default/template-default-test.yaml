@@ -1,0 +1,131 @@
+title: Team budget
+type: jig.default
+
+datasources:
+  series2:
+    type: datasource.static
+    options:
+      data:
+        - x: 0-7
+        - x: 8-14
+        - x: 15-21
+        - 22-28
+        - 29-31
+  series1:
+    type: datasource.static
+    options:
+      data:
+        - y: "1000"
+          x: 0
+        - y: "1120"
+          x: 5
+        - y: "901.3"
+          x: 13
+        - y: "879.8"
+          x: 20
+        - y: "645.5"
+          x: 22
+        - y: "523.5"
+          x: 25
+  list:
+    type: datasource.static
+    options:
+      data:
+        - category: list
+          title: Teambuilding
+          subtitle: Payment by card
+          description: 25 / 10 / 2022
+          value: "-\\$144"
+          color: negative
+          isPositive: false
+        - category: truck-cargo
+          title: Transport Brno to Prague
+          subtitle: Payment by card
+          description: 22 / 10 / 2022
+          value: "-\\$87.30"
+          color: negative
+          isPositive: false
+        - category: shopping-cart-empty-1
+          title: Team t-shirts
+          subtitle: Payment by card
+          description: 20 / 10 / 2022
+          value: "-\\$21.50"
+          color: negative
+          isPositive: false
+        - category: shopping-cart-empty-1
+          title: Cinema tickets
+          subtitle: Payment by card
+          description: 13 / 10 / 2022
+          value: "-\\$218.70"
+          color: negative
+          isPositive: false
+        - category: chevron-up
+          title: Team bonus
+          subtitle: Income payment
+          description: 5 / 10 / 2022
+          value: "\\$120"
+          color: positive
+          isPositive: true
+
+children:
+  - type: component.line-chart
+    options:
+      plotOptions:
+        series:
+          pointWidth: 10
+      yAxis:
+        isHidden: false
+        max: 1200
+        min: 0
+        labels:
+          format:
+            numberStyle: currency
+            currency: USD
+            compactDisplay: short
+      xAxis:
+        min: 0
+        max: 31
+      legend:
+        isHidden: true
+      chart:
+        height: 300
+        title:
+          text: "\\$523.5"
+          horizontalAlign: center
+          verticalAlign: bottom
+        subtitle:
+          text: ="Team budget \$1.000"
+          horizontalAlign: center
+          verticalAlign: bottom
+      series:
+        - data: "=@ctx.datasources.series1"
+          layout: area-gradient
+  - type: component.section
+    options:
+      title: Transactions
+      children:
+        - type: component.list
+          options:
+            data: "=@ctx.datasources.list"
+            item:
+              type: component.list-item
+              options:
+                divider: solid
+                title: "=@ctx.current.item.title"
+                subtitle: "=@ctx.current.item.subtitle"
+                description: "=@ctx.current.item.description"
+                label:
+                  title: "=@ctx.current.item.value"
+                  color:
+                    - when: true
+                      color: "=@ctx.current.item.color"
+                leftElement:
+                  element: icon
+                  name: "=@ctx.current.item.category"
+                  isContained: true
+                  isDuotone: true
+                rightElement:
+                  element: icon
+                  name: information-circle
+                style:
+                  isPositive: "=@ctx.current.item.isPositive"

@@ -7,6 +7,12 @@
       "templateRef": "jig-calendar"
     },
     {
+      "name": "Test Default jig",
+      "filePath": "templates/jigs/default/template-default-test.yaml",
+      "previewImgSrc": "templates/jigs/default/template-default-test.png",
+      "templateRef": "jig-default"
+    },
+    {
       "name": "Default jig 1",
       "filePath": "templates/jigs/default/template-default-1.json",
       "previewImgSrc": "templates/jigs/default/template-default-1.png",
@@ -1547,6 +1553,13 @@
       "previewImgSrc": "templates/components/list/stage/stage-2/preview.png",
       "datasource": "templates/components/list/stage/shared/datasource.json",
       "templateRef": "jc-stage"
+    },
+    {
+      "name": "Test list",
+      "filePath": "templates/components/list/list-test/template.yaml",
+      "previewImgSrc": "templates/components/list/list-test/preview.png",
+      "datasource": "templates/components/list/list-test/datasource.yaml",
+      "templateRef": "jc-list"
     },
     {
       "name": "Stock Inventory",
