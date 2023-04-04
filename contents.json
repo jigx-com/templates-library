@@ -302,14 +302,6 @@
       "datasource": "templates/components/bar-chart/bar-chart-2/datasource.json"
     },
     {
-      "name": "Population of USA",
-      "filePath": "templates/components/bar-chart/bar-chart-3/template.json",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-3/preview.jpeg",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-3/datasource.json"
-    },
-
-    {
       "name": "Default height bar-chart",
       "filePath": "templates/components/bar-chart/bar-chart-4/template.json",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-4/preview.png",
@@ -1235,13 +1227,6 @@
       "templateRef": "jc-line-chart"
     },
     {
-      "name": "Line chart - Width: 250",
-      "filePath": "templates/components/line-chart/line-chart-6/template.json",
-      "previewImgSrc": "templates/components/line-chart/line-chart-6/preview.png",
-      "datasource": "templates/components/line-chart/shared/datasource.json",
-      "templateRef": "jc-line-chart"
-    },
-    {
       "name": "Line chart with hidden legend",
       "filePath": "templates/components/line-chart/line-chart-7/template.json",
       "previewImgSrc": "templates/components/line-chart/line-chart-7/preview.png",
@@ -1655,7 +1640,7 @@
       "templateRef": "jc-list"
     },
     {
-      "name": "Product item and summary",
+      "name": "Product item with amount control",
       "filePath": "templates/components/list/list-14/template.json",
       "previewImgSrc": "templates/components/list/list-14/preview.png",
       "datasource": "templates/components/list/list-14/datasource.json",
@@ -1760,12 +1745,6 @@
       "name": "Web view with the height 400",
       "filePath": "templates/components/web-view/web-view-2/template.json",
       "previewImgSrc": "templates/components/web-view/web-view-2/preview.jpg",
-      "templateRef": "jc-web-view"
-    },
-    {
-      "name": "Web view with the long-press",
-      "filePath": "templates/components/web-view/web-view-3/template.json",
-      "previewImgSrc": "templates/components/web-view/web-view-3/preview.png",
       "templateRef": "jc-web-view"
     }
   ]

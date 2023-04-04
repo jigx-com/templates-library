@@ -37,18 +37,6 @@
   },
  
   "datasources": {
-    "static-data": {
-      "type": "datasource.static",
-      "options": {
-        "data": [30, 45, 55, 62]
-      }
-    },
-    "static-data2": {
-      "type": "datasource.static",
-      "options": {
-        "data": [57, 50, 40, 89]
-      }
-    },
     "inventory": {
       "type": "datasource.static",
       "options": {

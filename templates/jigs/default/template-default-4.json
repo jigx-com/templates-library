@@ -86,30 +86,38 @@
       }
     },
     "subscribers": {
-      "type": "datasource.sqlite",
+      "type": "datasource.static",
       "options": {
-        "provider": "DATA_PROVIDER_DYNAMIC",
-        "entities": [
+        "data": [
           {
-            "entity": "default/subscribers"
-          }
-        ],
-        "query": "SELECT\n  id,\n  '\\$.subscriber',\n  '\\$.subscriber-id'\nFROM [default/subscribers]\n"
-      }
-    },
-    "subscriberId": {
-      "type": "datasource.sqlite",
-      "options": {
-        "provider": "DATA_PROVIDER_LOCAL",
-        "entities": [
+            "subscriber": "Techniserv",
+            "subscriber-id": "84297453"
+          },
           {
-            "entity": "default/subscribers"
+            "subscriber": "Tatum",
+            "subscriber-id": "37047829"
+          },
+          {
+            "subscriber": "Strandhill",
+            "subscriber-id": "90356287"
+          },
+          {
+            "subscriber": "DLT",
+            "subscriber-id": "64397314"
+          },
+          {
+            "subscriber": "Railston",
+            "subscriber-id": "47290536"
+          },
+          {
+            "subscriber": "ATV Impex",
+            "subscriber-id": "73872495"
+          },
+          {
+            "subscriber": "BrandCrown",
+            "subscriber-id": "43960276"
           }
-        ],
-        "query": "SELECT\n  id,\n  '\\$.subscriber',\n  '\\$.subscriber-id'\nFROM [default/subscribers]\nWHERE '\\$.subscriber' = @selected\n",
-        "queryParameters": {
-          "selected": "=@ctx.components.subscriber.state.value"
-        }
+        ]
       }
     }
   },
@@ -154,7 +162,7 @@
                 "type": "component.dropdown-item",
                 "options": {
                   "title": "=@ctx.current.item.subscriber",
-                  "value": "=@ctx.current.item.subscriber"
+                  "value": "=@ctx.current.item.subscriber-id"
                 }
               }
             }
@@ -164,7 +172,7 @@
             "instanceId": "subscriber-id",
             "options": {
               "label": "Subscriber ID",
-              "initialValue": "=@ctx.datasources.subscriberId.subscriber-id"
+              "initialValue": "=@ctx.components.subscriber.state.value"
             }
           },
           {

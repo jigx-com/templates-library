@@ -1,6 +1,6 @@
 {
-  "type": "datasource.static",
   "dropdown": {
+    "type": "datasource.static",
     "options": {
       "data": [
         {

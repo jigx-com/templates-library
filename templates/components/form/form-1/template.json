@@ -127,11 +127,7 @@
         "type": "component.text-field",
         "instanceId": "text-field-4",
         "options": {
-          "format": {
-            "currencyDisplay": "symbol",
-            "unit": "\\$"
-          },
-          "helperText": "Text field with the icon",
+          "helperText": "Text field with the helper text",
           "label": "Label",
           "value": "Value"
         }
