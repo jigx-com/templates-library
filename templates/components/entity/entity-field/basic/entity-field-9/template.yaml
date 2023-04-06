@@ -1,0 +1,7 @@
+---
+type: component.entity-field
+options:
+  contentType: phone
+  label: Phone
+  rightIcon: phone
+  value: "+987 654 321"

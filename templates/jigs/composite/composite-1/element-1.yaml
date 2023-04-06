@@ -1,0 +1,52 @@
+title: Opportunities overview
+type: jig.default
+
+datasources:
+  won:
+    type: datasource.static
+    options:
+      data:
+        - x: Won
+          y: 3
+          color: color3
+  lost:
+    type: datasource.static
+    options:
+      data:
+        - x: Lost
+          y: 4
+          color: color4
+  all:
+    type: datasource.static
+    options:
+      data:
+        - x: All
+          y: 12
+          color: color6
+
+children:
+  - type: component.bar-chart
+    options:
+      legend:
+        isHidden: false
+      chart:
+        height: 200
+        isAnimated: true
+      xAxis:
+        tickAmount: 3
+        isHidden: true
+      plotOptions:
+        series:
+          pointWidth: 16
+          marker:
+            isHidden: false
+      series:
+        - data: "=@ctx.datasources.won"
+          color: positive
+          name: "=@ctx.datasources.won.x"
+        - data: "=@ctx.datasources.lost"
+          color: positive
+          name: "=@ctx.datasources.lost.x"
+        - data: "=@ctx.datasources.all"
+          color: positive
+          name: "=@ctx.datasources.all.x"

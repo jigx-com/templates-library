@@ -1,0 +1,8 @@
+---
+type: component.email-field
+instanceId: email-field2
+options:
+  helperText: "User format: email@email.com"
+  icon: email
+  label: Email with Helper
+  value: email@jigx.com

@@ -1,0 +1,6 @@
+---
+type: component.entity-field
+options:
+  contentType: checkbox
+  label: Checkbox
+  value: true

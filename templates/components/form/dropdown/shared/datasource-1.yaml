@@ -1,0 +1,17 @@
+---
+dropdown:
+  type: datasource.static
+  options:
+    data:
+      - description: description1
+        icon: beer-mug
+        image: https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+        label: Label1
+        subtitle: subtitle1
+        value: Value1
+      - description: description2
+        icon: champagne-cheers
+        image: https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80
+        label: Label2
+        subtitle: subtitle2
+        value: Value2

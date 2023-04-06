@@ -1,0 +1,37 @@
+---
+serie1:
+  type: datasource.static
+  options:
+    data:
+      - x: "1"
+        y: 2300
+      - x: "2"
+        y: 4500
+      - x: "3"
+        y: 6800
+      - x: "4"
+        y: 8100
+serie2:
+  type: datasource.static
+  options:
+    data:
+      - x: "1"
+        y: 2700
+      - x: "2"
+        y: 3800
+      - x: "3"
+        y: 5200
+      - x: "4"
+        y: 7800
+serie3:
+  type: datasource.static
+  options:
+    data:
+      - x: "1"
+        y: 2500
+      - x: "2"
+        y: 4700
+      - x: "3"
+        y: 6000
+      - x: "4"
+        y: 8400

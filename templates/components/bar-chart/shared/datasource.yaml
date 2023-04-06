@@ -1,0 +1,13 @@
+---
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - x: "1"
+        y: 23000
+      - x: "2"
+        y: 34000
+      - x: "3"
+        y: 45000
+      - x: "4"
+        y: 49000

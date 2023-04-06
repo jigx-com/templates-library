@@ -1,0 +1,8 @@
+---
+type: component.checkbox
+instanceId: checkbox4
+options:
+  label: Checkbox - Warning
+  style:
+    isWarning: true
+  value: true

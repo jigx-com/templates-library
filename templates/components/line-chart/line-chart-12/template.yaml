@@ -1,0 +1,24 @@
+---
+type: component.line-chart
+options:
+  chart:
+    title: Custom color of series
+    height: 300
+  yAxis:
+    max: 10000
+    min: 0
+  xAxis:
+    categories:
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+  legend:
+    isHidden: false
+  series:
+    - data: "=@ctx.datasources.line2"
+      color: color4
+      layout: line
+    - data: "=@ctx.datasources.line3"
+      color: color5
+      layout: area

@@ -1,0 +1,22 @@
+---
+type: component.line-chart
+options:
+  chart:
+    title: Chart
+    isAnimated: true
+    height: 400
+  plotOptions:
+    series:
+      pointWidth: 16
+  yAxis:
+    max: 50000
+    min: 20000
+  xAxis:
+    categories:
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+  series:
+    - data: "=@ctx.datasources.line"
+      color: color5

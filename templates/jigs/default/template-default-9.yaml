@@ -1,0 +1,60 @@
+title: Image, entity, location
+type: jig.default
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1613064934056-08a061014f37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+
+children:
+  - type: component.section
+    options:
+      title: Image
+      children:
+        - type: component.image
+          options:
+            title: Thailand
+            subtitle: Phi Phi Islands
+            height: 250
+            source:
+              uri: https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+  - type: component.entity
+    options:
+      children:
+        - type: component.section
+          options:
+            title: Entity section
+            children:
+              - type: component.entity-field
+                options:
+                  label: Description
+                  value:
+                    The Phi Phi Islands are an island group in Thailand between the
+                    large island of Phuket and the Straits of Malacca coast of Thailand.
+                    The islands are reachable by speedboats or long-tail boats most often
+                    from Krabi town or from piers in Phuket Province.
+                  isMultiline: true
+              - type: component.entity-field
+                options:
+                  label: Total area
+                  value: 12.25 km2 (4.73 sq mi)
+              - type: component.entity-field
+                options:
+                  label: Total population
+                  value: "2,500"
+              - type: component.entity-field
+                options:
+                  label: Time zone
+                  value: UTC+7 (ICT)
+  - type: component.section
+    options:
+      title: Location
+      children:
+        - type: component.location
+          options:
+            address: 190 Moo 7 Aonang Muang, Phi Phi island Krabi 81000, Thailand

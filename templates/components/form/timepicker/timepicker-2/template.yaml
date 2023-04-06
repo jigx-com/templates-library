@@ -1,0 +1,11 @@
+---
+type: component.date-picker
+instanceId: time-picker2
+options:
+  color:
+    - color: color2
+      when: true
+  helperText: Time picker with custom color
+  isRequired: true
+  label: Date picker mode - time
+  mode: time

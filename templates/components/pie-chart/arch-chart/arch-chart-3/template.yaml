@@ -1,0 +1,13 @@
+---
+type: component.pie-chart
+options:
+  chart:
+    title:
+      text: Chart title
+      verticalAlign: center
+    subtitle:
+      text: Chart subtitle
+      verticalAlign: center
+  series:
+    - data: "=@ctx.datasources.progress"
+      layout: arch

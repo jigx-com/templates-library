@@ -1,0 +1,16 @@
+---
+type: component.list-item
+options:
+  divider: solid
+  title: Title
+  subtitle: Subtitle
+  description: Description
+  style:
+    isHighlighted: true
+  leftElement:
+    element: image
+    text: N/A
+    uri: https://images.unsplash.com/photo-1586024486164-ce9b3d87e09f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRlbGV2aXNpb258ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60
+  rightElement:
+    element: checkbox
+    value: true

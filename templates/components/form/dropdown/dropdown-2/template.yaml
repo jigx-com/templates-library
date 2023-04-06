@@ -1,0 +1,18 @@
+---
+type: component.dropdown
+instanceId: dropdown-2
+options:
+  data: "=@ctx.datasources.dropdown"
+  helperText: With avatars
+  item:
+    type: component.dropdown-item
+    options:
+      title: "=@ctx.current.item.value"
+      subtitle: "=@ctx.current.item.subtitle"
+      description: "=@ctx.current.item.description"
+      leftElement:
+        element: avatar
+        text: N/A
+        uri: "=@ctx.current.item.image"
+      value: "=@ctx.current.item.value"
+  label: Dropdown 2

@@ -1,0 +1,23 @@
+---
+type: component.list
+options:
+  maximumItemsToRender: 8
+  data: "=@ctx.datasources.list"
+  item:
+    type: component.list-item
+    options:
+      color:
+        - when: =@ctx.current.item.name = "All files" ? true :false
+          color: color1
+        - when: =@ctx.current.item.name = "Archive" ? true :false
+          color: color2
+        - when: =@ctx.current.item.name = "Deleted" ? true :false
+          color: color4
+      divider: solid
+      title: "=@ctx.current.item.name"
+      leftElement:
+        element: icon
+        name: "=@ctx.current.item.icon"
+      rightElement:
+        element: value
+        text: "=@ctx.current.item.value"

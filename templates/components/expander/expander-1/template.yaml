@@ -1,0 +1,23 @@
+---
+type: component.expander
+options:
+  header:
+    centerElement:
+      type: component.titles
+      options:
+        title: Title
+        subtitle: Subtitle
+  children:
+    - type: component.pie-chart
+      options:
+        chart:
+          subtitle:
+            text: Subtitle
+            verticalAlign: center
+          title:
+            text: Title
+            verticalAlign: center
+        series:
+          - data: "=@ctx.datasources.piechart"
+            layout: arch
+  isInitiallyCollapsed: false

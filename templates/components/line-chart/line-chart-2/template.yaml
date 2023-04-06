@@ -1,0 +1,40 @@
+---
+type: component.line-chart
+options:
+  legend:
+    isHidden: false
+  chart:
+    height: 400
+    isAnimated: false
+  yAxis:
+    max: 60000
+    min: 10000
+    labels:
+      format:
+        numberStyle: currency
+        currency: USD
+  xAxis:
+    tickAmount: 4
+    categories:
+      - Q1
+      - Q2
+      - Q3
+      - Q4
+  plotOptions:
+    series:
+      pointWidth: 10
+      marker:
+        isHidden: true
+  series:
+    - data: "=@ctx.datasources.y2019"
+      color: color1
+      name: "2019"
+    - data: "=@ctx.datasources.y2020"
+      color: color2
+      name: "2020"
+    - data: "=@ctx.datasources.y2021"
+      color: color3
+      name: "2021"
+    - data: "=@ctx.datasources.y2022"
+      color: color4
+      name: "2022"

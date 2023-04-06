@@ -1,0 +1,8 @@
+---
+type: component.text-field
+instanceId: text-field-6
+options:
+  helperText: With initial value
+  initialValue: John Doe
+  isRequired: false
+  label: Label 6

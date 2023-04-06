@@ -1,0 +1,15 @@
+---
+type: component.expander
+options:
+  header:
+    centerElement:
+      type: component.titles
+      options:
+        title: Title
+        subtitle: Subtitle
+  children:
+    - type: component.web-view
+      options:
+        height: 400
+        uri: https://www.google.com/
+  isInitiallyCollapsed: false

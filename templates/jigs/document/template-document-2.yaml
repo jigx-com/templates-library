@@ -1,0 +1,6 @@
+title: PDF Document
+type: jig.document
+
+source:
+  documentType: PDF
+  uri: https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf

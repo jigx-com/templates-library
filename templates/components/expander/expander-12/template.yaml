@@ -1,0 +1,16 @@
+---
+type: component.expander
+options:
+  header:
+    centerElement:
+      type: component.titles
+      options:
+        title: Title
+        subtitle: Subtitle
+  children:
+    - type: component.video-player
+      options:
+        autoplay: false
+        ratio: "16:9"
+        url: https://www.youtube.com/watch?v=mUlty9YwT4c
+  isInitiallyCollapsed: false

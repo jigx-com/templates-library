@@ -1,0 +1,14 @@
+---
+type: component.list-item
+options:
+  color:
+    - when: true
+      color: color2
+  divider: solid
+  title: Archive
+  leftElement:
+    element: icon
+    name: archive-folder
+  rightElement:
+    element: value
+    text: "54"

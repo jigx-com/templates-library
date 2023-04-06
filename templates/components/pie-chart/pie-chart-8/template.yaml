@@ -1,0 +1,17 @@
+---
+type: component.pie-chart
+options:
+  chart:
+    height: 200
+    width: 200
+    title:
+      text: Title
+      verticalAlign: center
+    subtitle:
+      text: Subtitle
+      verticalAlign: center
+  legend:
+    isHidden: false
+  series:
+    - data: "=@ctx.datasources.issues"
+      layout: pie

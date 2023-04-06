@@ -1,0 +1,32 @@
+---
+type: component.interactive-image
+options:
+  imageHeight: 1500
+  source:
+    uri: https://i.pinimg.com/564x/b0/eb/52/b0eb52122452257e955f210e7fdb8f55.jpg
+  data: "=@ctx.datasources.interactive-image-office"
+  pointColor: color10
+  groups:
+    - title: Selected desks
+      id: Selected desks
+      color: color2
+    - title: Hot desk - reserved
+      id: Hot desk - reserved
+      color: color14
+    - title: Meeting room - reserved
+      id: Meeting room
+      color: color14
+      requiredPoints: 1
+  item:
+    type: component.interactive-image-item
+    options:
+      id: "=@ctx.current.item.id"
+      title: "=@ctx.current.item.name"
+      icon: "=@ctx.current.item.isReserved = true ? 'close' :null"
+      color: "=@ctx.current.item.isReserved = true ? 'color3' :null"
+      groupId: "=@ctx.current.item.group"
+      style:
+        isDisabled: "=@ctx.current.item.isReserved = true ? true :false"
+      percentageCoordinates:
+        x: "=@ctx.current.item.xCoordinate"
+        y: "=@ctx.current.item.yCoordinate"

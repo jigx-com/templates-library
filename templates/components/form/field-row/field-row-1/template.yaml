@@ -1,0 +1,8 @@
+---
+type: component.field-row
+options:
+  children:
+    - type: component.text-field
+      instanceId: first-name1
+      options:
+        label: First name

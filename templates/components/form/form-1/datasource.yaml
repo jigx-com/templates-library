@@ -1,0 +1,9 @@
+---
+dropdown:
+  type: datasource.static
+  options:
+    data:
+      - label: Label1
+        value: Value1
+      - label: Label2
+        value: Value2

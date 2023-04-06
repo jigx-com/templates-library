@@ -1,0 +1,23 @@
+---
+type: component.line-chart
+options:
+  chart:
+    title: Tick amount
+    subtitle: "Amount of values on Y Axis: 5"
+  plotOptions:
+    series:
+      pointWidth: 24
+  yAxis:
+    isFirstTickHidden: true
+    tickAmount: 5
+    max: 10000
+    min: 0
+  xAxis:
+    categories:
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+  series:
+    - data: "=@ctx.datasources.line"
+      color: color5

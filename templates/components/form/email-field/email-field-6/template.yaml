@@ -1,0 +1,8 @@
+---
+type: component.email-field
+instanceId: email-field6
+options:
+  label: Positive
+  style:
+    isPositive: true
+  value: email@jigx.com

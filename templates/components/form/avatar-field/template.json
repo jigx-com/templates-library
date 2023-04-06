@@ -1,7 +1,0 @@
-{
-  "type": "component.avatar-field",
-  "instanceId": "Avatar",
-  "options": {
-    "label": "Avatar"
-  }
-}

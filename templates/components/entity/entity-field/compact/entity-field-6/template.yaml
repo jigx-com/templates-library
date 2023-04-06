@@ -1,0 +1,8 @@
+---
+type: component.entity-field
+options:
+  label: Style
+  rightIcon: alert-circle
+  style:
+    isWarning: true
+  value: isWarning

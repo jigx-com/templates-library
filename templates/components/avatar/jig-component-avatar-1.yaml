@@ -1,0 +1,6 @@
+---
+type: component.avatar
+options:
+  align: center
+  size: large
+  text: L

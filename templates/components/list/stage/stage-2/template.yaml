@@ -1,0 +1,8 @@
+---
+type: component.stage
+options:
+  icon: truck-cargo
+  left:
+    title: Start time
+  right:
+    title: End time

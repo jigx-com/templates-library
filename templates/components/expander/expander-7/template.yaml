@@ -1,0 +1,17 @@
+---
+type: component.expander
+options:
+  header:
+    centerElement:
+      type: component.titles
+      options:
+        title: Title
+        subtitle: Subtitle
+  children:
+    - type: component.line-chart
+      options:
+        series:
+          - color: color2
+            data: "=@ctx.datasources.linechart"
+            layout: area-gradient
+  isInitiallyCollapsed: false

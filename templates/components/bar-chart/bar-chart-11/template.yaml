@@ -1,0 +1,22 @@
+---
+type: component.bar-chart
+options:
+  chart:
+    subtitle: "max: 10000, min: 0"
+    title: Max and min
+  plotOptions:
+    series:
+      pointWidth: 24
+  series:
+    - color: color6
+      data: "=@ctx.datasources.mydata"
+  xAxis:
+    categories:
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+  yAxis:
+    max: 10000
+    min: 0
+    tickAmount: 3

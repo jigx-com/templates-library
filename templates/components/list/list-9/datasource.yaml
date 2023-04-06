@@ -1,0 +1,23 @@
+---
+expander-titles:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        title: Title
+        subtitle: Subtitle
+        value-entity-field-1: Value 1
+        value-entity-field-2: Value 2
+        value-entity-field-3: Value 3
+      - id: 2
+        title: Title
+        subtitle: Subtitle
+        value-entity-field-1: Value 1
+        value-entity-field-2: Value 2
+        value-entity-field-3: Value 3
+      - id: 3
+        title: Title
+        subtitle: Subtitle
+        value-entity-field-1: Value 1
+        value-entity-field-2: Value 2
+        value-entity-field-3: Value 3

@@ -1,0 +1,7 @@
+---
+type: component.entity-field
+options:
+  contentType: time
+  label: Time
+  rightIcon: time-clock-circle
+  value: "=$fromMillis($toMillis($now()), '[h#1]:[m01][P]')"

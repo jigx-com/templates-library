@@ -1,0 +1,8 @@
+---
+type: component.text-field
+instanceId: text-field-8
+options:
+  helperText: With auto focus
+  isAutoFocused: true
+  isRequired: false
+  label: Label 8

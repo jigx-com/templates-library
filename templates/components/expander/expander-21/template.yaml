@@ -1,0 +1,31 @@
+---
+type: component.expander
+options:
+  header:
+    centerElement:
+      type: component.stage
+      options:
+        left:
+          subtitle: Start subtitle
+          title: Start title
+        right:
+          subtitle: End subtitle
+          title: End title
+  children:
+    - type: component.list
+      options:
+        data: "=@ctx.datasources.list"
+        item:
+          type: component.list-item
+          options:
+            title: "=@ctx.current.item.title"
+            subtitle: "=@ctx.current.item.subtitle"
+            leftElement:
+              element: avatar
+              text: ""
+              uri: "=@ctx.current.item.uri"
+            rightElement:
+              element: icon
+              name: arrow-right
+        maximumItemsToRender: 8
+  isInitiallyCollapsed: false

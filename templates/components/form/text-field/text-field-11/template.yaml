@@ -1,0 +1,8 @@
+---
+type: component.text-field
+instanceId: text-field-11
+options:
+  helperText: With hidden optional label
+  isOptionalLabelHidden: true
+  isRequired: false
+  label: Label 11

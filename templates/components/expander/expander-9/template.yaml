@@ -1,0 +1,14 @@
+---
+type: component.expander
+options:
+  header:
+    centerElement:
+      type: component.titles
+      options:
+        title: Title
+        subtitle: Subtitle
+  children:
+    - type: component.location
+      options:
+        address: Goat Island, Niagara Falls, NY 14303
+  isInitiallyCollapsed: false

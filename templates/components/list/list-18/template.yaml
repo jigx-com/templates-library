@@ -1,0 +1,17 @@
+---
+type: component.list
+options:
+  maximumItemsToRender: 8
+  data: "=@ctx.datasources.checkbox-list"
+  item:
+    type: component.list-item
+    options:
+      title: "=@ctx.current.item.title"
+      subtitle: "=@ctx.current.item.subtitle"
+      rightElement:
+        element: checkbox
+        value: "=@ctx.current.item.active = true ? true :false"
+      leftElement:
+        element: avatar
+        text: ""
+        uri: "=@ctx.current.item.image"

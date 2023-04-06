@@ -1,0 +1,16 @@
+---
+type: component.expander
+options:
+  isInitiallyCollapsed: false
+  header:
+    centerElement:
+      type: component.titles
+      options:
+        title: Title
+        subtitle: Subtitle
+  children:
+    - type: component.bar-chart
+      options:
+        series:
+          - data: "=@ctx.datasources.barchart"
+            color: color2

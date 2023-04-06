@@ -1,0 +1,105 @@
+title: General form
+type: jig.default
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://media.istockphoto.com/id/157580156/photo/checklist.jpg?b=1&s=170667a&w=0&k=20&c=_rgoIwuX0j5G7kfbSp0Ogv12RZveJu46Y_juHxyOvTI=
+
+datasources:
+  dropdownOptions:
+    type: datasource.static
+    options:
+      data:
+        - color: Blue
+          url: https://images.unsplash.com/photo-1582138956924-e0b579cce05f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Qmx1ZSUyMGNvbG9yfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+        - color: Green
+          url: https://images.unsplash.com/photo-1561016444-14f747499547?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80
+        - color: Red
+          url: https://images.unsplash.com/photo-1568535904307-f48b760a39f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80
+        - color: Yellow
+          url: https://images.unsplash.com/flagged/photo-1593005510329-8a4035a7238f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+
+children:
+  - type: component.form
+    instanceId: general-form
+    options:
+      children:
+        - type: component.section
+          options:
+            title: Fields for insert
+            children:
+              - type: component.avatar-field
+                instanceId: gf-avatar
+                options:
+                  label: Avatar
+              - type: component.media-field
+                instanceId: df-media-field
+                options:
+                  label: Add image
+                  mediaType: image
+              - type: component.signature-field
+                instanceId: gf-signature-field
+                options:
+                  label: Signature
+        - type: component.section
+          options:
+            title: Fields for select
+            children:
+              - type: component.checkbox
+                instanceId: gf-checkbox
+                options:
+                  label: Checkbox
+              - type: component.field-row
+                options:
+                  children:
+                    - type: component.date-picker
+                      instanceId: gf-datepicker-from
+                      options:
+                        label: From
+                        mode: datetime
+                    - type: component.date-picker
+                      instanceId: gf-datepicker-to
+                      options:
+                        label: To
+                        mode: datetime
+              - type: component.dropdown
+                instanceId: gf-dropdown
+                options:
+                  label: Dropdown
+                  data: "=@ctx.datasources.dropdownOptions"
+                  item:
+                    type: component.dropdown-item
+                    options:
+                      title: "=@ctx.current.item.color"
+                      value: "=@ctx.current.item.color"
+                      leftElement:
+                        element: avatar
+                        text: ""
+                        uri: "=@ctx.current.item.url"
+        - type: component.section
+          options:
+            title: Fields for write
+            children:
+              - type: component.email-field
+                instanceId: email
+                options:
+                  label: Email
+              - type: component.number-field
+                instanceId: gf-numberfield
+                options:
+                  value: 0
+                  label: Number field
+                  stepper:
+                    isEnabled: true
+                    value: 1
+                  helperText: Number field with the stepper
+              - type: component.text-field
+                instanceId: gf-text-field
+                options:
+                  label: Text field

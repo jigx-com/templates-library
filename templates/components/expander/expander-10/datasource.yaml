@@ -1,0 +1,11 @@
+---
+piechart:
+  type: datasource.static
+  options:
+    data:
+      - color: color6
+        y: 25
+      - color: color4
+        y: 15
+      - color: color3
+        y: 5

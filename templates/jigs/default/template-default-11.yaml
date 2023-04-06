@@ -1,0 +1,35 @@
+title: Location
+type: jig.default
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80
+
+datasources:
+  address:
+    type: datasource.static
+    options:
+      data:
+        - street: 768 5th Ave
+          city: New York
+          country: US
+  coordinates:
+    type: datasource.static
+    options:
+      data:
+        - lat: 38.916383
+          lng: -77.0473912
+
+children:
+  - type: component.location
+    options:
+      address: "=@ctx.datasources.address.street & ',' & @ctx.datasources.address.city & ',' & @ctx.datasources.address.country"
+  - type: component.location
+    options:
+      markersData: "=@ctx.datasources.coordinates"

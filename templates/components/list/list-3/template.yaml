@@ -1,0 +1,24 @@
+---
+type: component.list
+options:
+  maximumItemsToRender: 8
+  data: "=@ctx.datasources.list"
+  item:
+    type: component.list-item
+    options:
+      divider: solid
+      color:
+        - when: "=@ctx.component.state.checked = true ? true :false"
+          color: color14
+      title: "=@ctx.current.item.task-number"
+      subtitle: "=@ctx.current.item.name"
+      leftElement:
+        element: checkbox
+        value: "=(@ctx.current.item.status = 'done' ? true :false)"
+      style:
+        isStrikeThrough: "=@ctx.component.state.checked = true ? true :false"
+        isDisabled: "=@ctx.component.state.checked = true ? true :false"
+      avatars:
+        - text: VM
+      label:
+        title: category

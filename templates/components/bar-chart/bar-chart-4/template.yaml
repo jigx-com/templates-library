@@ -1,0 +1,21 @@
+---
+type: component.bar-chart
+options:
+  chart:
+    title: Default height
+  plotOptions:
+    series:
+      pointWidth: 16
+  series:
+    - color: color2
+      data: "=@ctx.datasources.mydata"
+  xAxis:
+    categories:
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+  yAxis:
+    max: 50000
+    min: 10000
+    tickAmount: 5

@@ -1,0 +1,7 @@
+title: HTML Document
+type: jig.document
+
+source:
+  documentType: HTML
+  isTrackingTransparencyRequired: true
+  uri: https://www.jigx.com/

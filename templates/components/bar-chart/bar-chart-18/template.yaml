@@ -1,0 +1,26 @@
+---
+type: component.bar-chart
+options:
+  chart:
+    title: Custom color of series
+  legend:
+    isHidden: false
+  plotOptions:
+    series:
+      pointWidth: 16
+  series:
+    - color: color3
+      data: "=@ctx.datasources.serie1"
+    - color: color4
+      data: "=@ctx.datasources.serie2"
+    - color: color5
+      data: "=@ctx.datasources.serie3"
+  xAxis:
+    categories:
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+  yAxis:
+    max: 10000
+    min: 0

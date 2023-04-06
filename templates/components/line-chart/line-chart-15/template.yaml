@@ -1,0 +1,22 @@
+---
+type: component.line-chart
+options:
+  chart:
+    title: Max and min
+    subtitle: "Max: 25000, Min: 0"
+  plotOptions:
+    series:
+      pointWidth: 24
+  yAxis:
+    tickAmount: 3
+    max: 25000
+    min: 0
+  xAxis:
+    categories:
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+  series:
+    - data: "=@ctx.datasources.line"
+      color: color1

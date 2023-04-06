@@ -1,0 +1,7 @@
+---
+type: component.entity-field
+options:
+  contentType: default
+  label: Name
+  rightIcon: person
+  value: Name

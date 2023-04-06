@@ -1,0 +1,19 @@
+---
+type: component.dropdown
+instanceId: dropdown-3
+options:
+  data: "=@ctx.datasources.dropdown"
+  helperText: With icons
+  item:
+    type: component.dropdown-item
+    options:
+      title: "=@ctx.current.item.value"
+      subtitle: "=@ctx.current.item.subtitle"
+      description: "=@ctx.current.item.description"
+      leftElement:
+        element: icon
+        isContained: true
+        isDuotone: true
+        name: "=@ctx.current.item.icon"
+      value: "=@ctx.current.item.value"
+  label: Dropdown 3

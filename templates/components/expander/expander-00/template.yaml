@@ -1,0 +1,31 @@
+---
+type: component.expander
+options:
+  header:
+    centerElement:
+      type: component.titles
+      options:
+        title: Title
+        subtitle: Subtitle
+        icon: truck-cargo
+        align: center
+        iconColor: color6
+  children:
+    - type: component.entity
+      options:
+        children:
+          - type: component.field-row
+            options:
+              children:
+                - type: component.entity-field
+                  options:
+                    label: Title 1
+                    value: Value
+                - type: component.entity-field
+                  options:
+                    label: Title 2
+                    value: Value
+          - type: component.entity-field
+            options:
+              label: Title 3
+              value: Value

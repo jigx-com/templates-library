@@ -1,0 +1,10 @@
+---
+type: component.stage
+options:
+  icon: flight
+  left:
+    title: Start title
+    subtitle: Start subtitle
+  right:
+    title: End title
+    subtitle: End subtitle

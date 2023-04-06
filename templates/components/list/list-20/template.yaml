@@ -1,0 +1,13 @@
+---
+type: component.list
+options:
+  maximumItemsToRender: 8
+  data: "=@ctx.datasources.select"
+  item:
+    type: component.list-item
+    options:
+      title: "=@ctx.current.item.title"
+      subtitle: "=@ctx.current.item.subtitle"
+      leftElement:
+        element: icon
+        name: "=@ctx.current.item.icon"

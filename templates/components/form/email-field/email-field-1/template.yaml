@@ -1,0 +1,6 @@
+---
+type: component.email-field
+instanceId: email-field
+options:
+  icon: email
+  label: Empty Email

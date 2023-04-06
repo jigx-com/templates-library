@@ -1,7 +1,0 @@
-{
-  "type": "component.signature-field",
-  "instanceId": "signature-field",
-  "options": {
-    "label": "Signature"
-  }
-}

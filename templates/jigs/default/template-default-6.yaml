@@ -1,0 +1,70 @@
+title: Pyramid Construction Inc.
+type: jig.default
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://www.pyramidca.com/media/module/content_masthead/masthead_1.jpg
+
+children:
+  - type: component.avatar
+    options:
+      text: PC
+      size: large
+      align: center
+  - type: component.entity
+    options:
+      children:
+        - type: component.section
+          options:
+            title: Lead details
+            children:
+              - type: component.entity-field
+                options:
+                  label: Lead Name
+                  value: Pad Stumuller
+              - type: component.entity-field
+                options:
+                  label: Company
+                  value: Pyramid Construction Inc.
+              - type: component.entity-field
+                options:
+                  label: Email
+                  value: pat@pyramid.net
+                  contentType: email
+              - type: component.entity-field
+                options:
+                  label: Lead Status
+                  value: Closed - Converted
+                  rightIcon: checkbox-checked
+                  style:
+                    isPositive: true
+              - type: component.entity-field
+                options:
+                  label: Created Date
+                  value: 28/09/2022
+                  contentType: date
+        - type: component.section
+          options:
+            title: Address
+            children:
+              - type: component.entity-field
+                options:
+                  label: City
+                  value: Redmond
+              - type: component.entity-field
+                options:
+                  label: State
+                  value: WA
+              - type: component.entity-field
+                options:
+                  label: Street
+                  value: 1 Microsoft Way
+  - type: component.location
+    options:
+      address: Redmond, 1 Microsoft Way

@@ -1,0 +1,20 @@
+---
+type: component.list-item
+options:
+  label:
+    title: 23 / 100
+    color:
+      - when: true
+        color: color4
+  color:
+    - when: true
+      color: color4
+  title: Product 1
+  description: Description
+  subtitle: Low inventory
+  style:
+    isError: true
+  progress: 0.23
+  leftElement:
+    element: avatar
+    text: A

@@ -1,0 +1,20 @@
+---
+type: component.expander
+options:
+  header:
+    centerElement:
+      type: component.stage
+      options:
+        left:
+          subtitle: Start subtitle
+          title: Start title
+        right:
+          subtitle: End subtitle
+          title: End title
+  children:
+    - type: component.bar-chart
+      options:
+        series:
+          - color: color2
+            data: "=@ctx.datasources.barchart"
+  isInitiallyCollapsed: false

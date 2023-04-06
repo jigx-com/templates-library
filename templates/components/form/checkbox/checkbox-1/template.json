@@ -1,9 +1,0 @@
-{
-  "type": "component.checkbox",
-  "instanceId": "checkbox1",
-  "options": {
-    "helperText": "Default state",
-    "label": "Checkbox",
-    "value": false
-  }
-}

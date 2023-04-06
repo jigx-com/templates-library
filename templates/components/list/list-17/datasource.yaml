@@ -1,0 +1,29 @@
+---
+swipeable-list:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        title: Title
+        subtitle: Subtitle
+        icon: home
+      - id: 2
+        title: Title
+        subtitle: Subtitle
+        icon: cog-double
+      - id: 3
+        title: Title
+        subtitle: Subtitle
+        icon: car-garage
+      - id: 4
+        title: Title
+        subtitle: Subtitle
+        icon: home
+      - id: 5
+        title: Title
+        subtitle: Subtitle
+        icon: car-garage
+      - id: 6
+        title: Title
+        subtitle: Subtitle
+        icon: cog-double
