@@ -1,4 +1,3 @@
----
 coordinates:
   type: datasource.static
   options:

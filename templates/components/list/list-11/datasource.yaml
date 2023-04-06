@@ -1,4 +1,3 @@
----
 filter-list:
   type: datasource.static
   options:

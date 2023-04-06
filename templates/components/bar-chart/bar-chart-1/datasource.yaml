@@ -1,4 +1,3 @@
----
 expenses:
   type: datasource.static
   options:

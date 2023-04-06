@@ -1,4 +1,3 @@
----
 interactive-image-floorplan:
   type: datasource.static
   options:

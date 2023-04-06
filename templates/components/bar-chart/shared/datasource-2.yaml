@@ -1,4 +1,3 @@
----
 mydata:
   type: datasource.static
   options:

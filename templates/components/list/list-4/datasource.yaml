@@ -1,4 +1,3 @@
----
 users:
   type: datasource.static
   options:

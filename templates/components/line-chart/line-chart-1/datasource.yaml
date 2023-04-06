@@ -1,4 +1,3 @@
----
 revenues:
   type: datasource.static
   options:

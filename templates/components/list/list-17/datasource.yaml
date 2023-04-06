@@ -1,4 +1,3 @@
----
 swipeable-list:
   type: datasource.static
   options:

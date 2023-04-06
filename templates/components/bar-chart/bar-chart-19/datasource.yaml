@@ -1,4 +1,3 @@
----
 serie1:
   type: datasource.static
   options:

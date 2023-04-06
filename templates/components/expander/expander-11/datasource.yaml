@@ -1,4 +1,3 @@
----
 steps:
   type: datasource.static
   options:

@@ -1,4 +1,3 @@
----
 pie:
   type: datasource.static
   options:

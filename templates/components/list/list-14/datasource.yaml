@@ -1,4 +1,3 @@
----
 product-item:
   type: datasource.static
   options:

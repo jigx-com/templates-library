@@ -1,9 +1,8 @@
----
 type: component.section
 options:
   title: Date
   children:
-  - instanceId: date-picker1
-    options:
-      label: Empty Date
-    type: component.date-picker
+    - instanceId: date-picker1
+      options:
+        label: Empty Date
+      type: component.date-picker

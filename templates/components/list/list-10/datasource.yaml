@@ -1,4 +1,3 @@
----
 search:
   type: datasource.static
   options:

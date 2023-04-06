@@ -1,4 +1,3 @@
----
 employees:
   type: datasource.static
   options:

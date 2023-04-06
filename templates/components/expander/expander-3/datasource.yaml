@@ -1,4 +1,3 @@
----
 barchart:
   type: datasource.static
   options:

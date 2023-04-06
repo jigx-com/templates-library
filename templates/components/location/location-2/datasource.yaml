@@ -1,4 +1,3 @@
----
 address:
   type: datasource.static
   options:

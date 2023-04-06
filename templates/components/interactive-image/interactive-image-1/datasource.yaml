@@ -1,4 +1,3 @@
----
 interactiveimg:
   type: datasource.static
   options:

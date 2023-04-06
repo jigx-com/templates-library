@@ -1,4 +1,3 @@
----
 piechart:
   type: datasource.static
   options:

@@ -1,4 +1,3 @@
----
 type: component.location
 options:
   pathsData: "=@ctx.datasources.coordinates"
