@@ -163,14 +163,14 @@
       "type": "component.summary",
       "options": {
         "layout": "counter",
-        "value": "=\\$count(@ctx.datasources.components)",
+        "value": "=$count(@ctx.datasources.components)",
         "title": "Opportunities",
         "subtitle": "=\"Worth than\" & \" $ \" & $sum(@ctx.datasources.components.value)"
       }
     }
   },
-  
-  "data": "=\\$filter(@ctx.datasources.components, function(\\$v, \\$i, \\$a) {\n  @ctx.jig.state.filter = 'ALL' or \\$v.result = @ctx.jig.state.filter\n}) \n",
+
+  "data": "=$filter(@ctx.datasources.components, function($v, $i, $a) {\n  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter\n}) \n",
   "item": {
     "type": "component.list-item",
     "options": {

@@ -65,7 +65,7 @@
                       "contentType": "date",
                       "label": "Date",
                       "rightIcon": "calendar",
-                      "value": "=\\$fromMillis(\\$toMillis(\\$now()), '[M01]/[D01]/[Y0001]')"
+                      "value": "=$fromMillis($toMillis($now()), '[M01]/[D01]/[Y0001]')"
                     }
                   },
                   {
@@ -74,7 +74,7 @@
                       "contentType": "time",
                       "label": "Time",
                       "rightIcon": "time-clock-circle",
-                      "value": "=\\$fromMillis(\\$toMillis(\\$now()), '[h#1]:[m01][P]')"
+                      "value": "=$fromMillis($toMillis($now()), '[h#1]:[m01][P]')"
                     }
                   }
                 ]

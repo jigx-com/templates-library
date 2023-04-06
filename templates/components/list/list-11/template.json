@@ -17,7 +17,7 @@
       }
     ],
     "maximumItemsToRender": 8,
-    "data": "=\\$filter(@ctx.datasources.filter-list, function(\\$v, \\$a, \\$i) { @ctx.components.listFilter.state.filter = 'all' or \\$v.status = @ctx.components.listFilter.state.filter })",
+    "data": "=$filter(@ctx.datasources.filter-list, function($v, $a, $i) { @ctx.components.listFilter.state.filter = 'all' or $v.status = @ctx.components.listFilter.state.filter })",
     "item": {
       "type": "component.list-item",
       "options": {

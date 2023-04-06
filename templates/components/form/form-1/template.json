@@ -145,7 +145,7 @@
           ],
           "format": {
             "currencyDisplay": "symbol",
-            "unit": "\\$"
+            "unit": "$"
           },
           "label": "Label"
         }

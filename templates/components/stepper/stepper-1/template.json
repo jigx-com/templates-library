@@ -23,6 +23,6 @@
         }
       }
     },
-    "completedPercentage": "=(\\$count(@ctx.datasources.steps[isCompleted = true]) / \\$count(@ctx.datasources.steps.title))"
+    "completedPercentage": "=($count(@ctx.datasources.steps[isCompleted = true]) / $count(@ctx.datasources.steps.title))"
   }
 }

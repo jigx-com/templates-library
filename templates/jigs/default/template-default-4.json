@@ -82,7 +82,7 @@
             "entity": "default/invoices"
           }
         ],
-        "query": "SELECT \n  id, \n  '\\$.invoice-number'\nFROM [default/invoices]\n"
+        "query": "SELECT \n  id, \n  '$.invoice-number'\nFROM [default/invoices]\n"
       }
     },
     "subscribers": {
@@ -121,7 +121,7 @@
       }
     }
   },
-  
+
   "children": [
     {
       "type": "component.form",
@@ -133,7 +133,7 @@
             "instanceId": "invoice-number",
             "options": {
               "label": "Invoice number",
-              "initialValue": "=\\$fromMillis(\\$toMillis(\\$now()), '[Y0001]') & \"000\" & (\\$count(@ctx.datasources.invoices.id) = 0 ? 1 :\\$count(@ctx.datasources.invoices.id) + 1)"
+              "initialValue": "=$fromMillis($toMillis($now()), '[Y0001]') & \"000\" & ($count(@ctx.datasources.invoices.id) = 0 ? 1 :$count(@ctx.datasources.invoices.id) + 1)"
             }
           },
           {
@@ -141,7 +141,7 @@
             "instanceId": "date-of-issue",
             "options": {
               "label": "Date of issue",
-              "initialValue": "=\\$fromMillis(\\$toMillis(now()))"
+              "initialValue": "=$fromMillis($toMillis(now()))"
             }
           },
           {
@@ -149,7 +149,7 @@
             "instanceId": "due-date",
             "options": {
               "label": "Due date",
-              "initialValue": "=\\$fromMillis(\\$toMillis(@ctx.components.date-of-issue.state.value) + (86400000 * 14))"
+              "initialValue": "=$fromMillis($toMillis(@ctx.components.date-of-issue.state.value) + (86400000 * 14))"
             }
           },
           {

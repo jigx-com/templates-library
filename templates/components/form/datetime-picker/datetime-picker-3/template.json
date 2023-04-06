@@ -13,7 +13,7 @@
               "instanceId": "date-time-picker3",
               "options": {
                 "helperText": "Date Time picker with initial value now",
-                "initialValue": "=\\$now()",
+                "initialValue": "=$now()",
                 "isRequired": true,
                 "label": "Date picker mode - datetime",
                 "mode": "datetime"

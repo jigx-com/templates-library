@@ -144,7 +144,7 @@
       }
     }
   },
-  
+
   "children": [
     {
       "type": "component.bar-chart",
@@ -170,11 +170,7 @@
         },
         "xAxis": {
           "tickAmount": 3,
-          "categories": [
-            "2020",
-            "2021",
-            "2022"
-          ]
+          "categories": ["2020", "2021", "2022"]
         },
         "plotOptions": {
           "series": {
@@ -227,7 +223,7 @@
             "value": "2022"
           }
         ],
-        "data": "=\\$filter(@ctx.datasources.transactions, function(\\$v, \\$a, \\$i) { @ctx.components.transactions-list.state.filter = 'all' or \\$v.year = @ctx.components.transactions-list.state.filter })",
+        "data": "=$filter(@ctx.datasources.transactions, function($v, $a, $i) { @ctx.components.transactions-list.state.filter = 'all' or $v.year = @ctx.components.transactions-list.state.filter })",
         "maximumItemsToRender": 10,
         "item": {
           "type": "component.list-item",
@@ -235,9 +231,9 @@
             "divider": "solid",
             "title": "=@ctx.current.item.company",
             "subtitle": "=@ctx.current.item.description",
-            "description": "=\\$fromMillis(\\$toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')",
+            "description": "=$fromMillis($toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')",
             "label": {
-              "title": "=@ctx.current.item.amount & '\\$'",
+              "title": "=@ctx.current.item.amount & '$'",
               "isHidden": false,
               "color": [
                 {

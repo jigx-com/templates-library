@@ -17,7 +17,7 @@
         "value": "Unsuccess"
       }
     ],
-    "data": "=\\$filter(@ctx.datasources.components, function(\\$v, \\$a, \\$i) { @ctx.components.listFilter.state.filter = 'all' or \\$v.result = @ctx.components.listFilter.state.filter })",
+    "data": "=$filter(@ctx.datasources.components, function($v, $a, $i) { @ctx.components.listFilter.state.filter = 'all' or $v.result = @ctx.components.listFilter.state.filter })",
     "item": {
       "type": "component.list-item",
       "options": {
@@ -40,7 +40,7 @@
         },
         "rightElement": {
           "element": "value",
-          "text": "=\"\\$ \" & @ctx.current.item.value"
+          "text": "=\"$ \" & @ctx.current.item.value"
         }
       }
     }

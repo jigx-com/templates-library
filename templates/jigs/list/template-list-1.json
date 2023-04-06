@@ -24,7 +24,7 @@
       "type": "component.summary",
       "options": {
         "layout": "default",
-        "title": "=\\$count(@ctx.datasources.inventory) & \" Products\"",
+        "title": "=$count(@ctx.datasources.inventory) & \" Products\"",
         "subtitle": "In total",
         "leftIcon": {
           "element": "icon",
@@ -35,7 +35,7 @@
       }
     }
   },
- 
+
   "datasources": {
     "inventory": {
       "type": "datasource.static",
@@ -47,7 +47,7 @@
             "subtitle": "Low inventory",
             "avatar-text": "A",
             "progress": 0.78,
-            "value": "\\$154.000",
+            "value": "$154.000",
             "total": 100,
             "current": 23
           },
@@ -56,7 +56,7 @@
             "description": "Description",
             "avatar-text": "B",
             "progress": 0.3,
-            "value": "\\$120.000",
+            "value": "$120.000",
             "total": 800,
             "current": 213
           },
@@ -64,7 +64,7 @@
             "name": "Product 3",
             "description": "Description",
             "avatar-text": "C",
-            "value": "\\$115.000",
+            "value": "$115.000",
             "total": 800,
             "current": 335
           },
@@ -73,7 +73,7 @@
             "description": "Description",
             "avatar-text": "D",
             "avatar-uri": null,
-            "value": "\\$107.000",
+            "value": "$107.000",
             "total": 100,
             "current": 78
           },
@@ -82,7 +82,7 @@
             "description": "Description",
             "avatar-text": "E",
             "avatar-uri": null,
-            "value": "\\$102.500",
+            "value": "$102.500",
             "total": 1000,
             "current": 985
           },
@@ -91,7 +91,7 @@
             "description": "Description",
             "avatar-text": "F",
             "avatar-uri": null,
-            "value": "\\$98.000",
+            "value": "$98.000",
             "total": 400,
             "current": 280
           },
@@ -100,7 +100,7 @@
             "description": "Description",
             "avatar-text": "G",
             "avatar-uri": null,
-            "value": "\\$56.000",
+            "value": "$56.000",
             "total": 800,
             "current": 335
           },
@@ -109,7 +109,7 @@
             "description": "Description",
             "avatar-text": "H",
             "avatar-uri": null,
-            "value": "\\$42.000",
+            "value": "$42.000",
             "total": 1000,
             "current": 366
           },
@@ -118,7 +118,7 @@
             "description": "Description",
             "avatar-text": "I",
             "avatar-uri": null,
-            "value": "\\$38.500",
+            "value": "$38.500",
             "total": 200,
             "current": 15
           },
@@ -127,7 +127,7 @@
             "description": "Description",
             "avatar-text": "J",
             "avatar-uri": null,
-            "value": "\\$37.000",
+            "value": "$37.000",
             "total": 2000,
             "current": 1876
           }
@@ -135,7 +135,7 @@
       }
     }
   },
-  
+
   "data": "=@ctx.datasources.inventory",
   "item": {
     "type": "component.list-item",

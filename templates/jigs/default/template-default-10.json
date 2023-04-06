@@ -239,7 +239,7 @@
       }
     }
   },
-  
+
   "children": [
     {
       "type": "component.section",
@@ -263,7 +263,7 @@
                   },
                   "leftElement": {
                     "element": "avatar",
-                    "text": "=\\$substring(@ctx.current.item.firstName, 0, 1) & \\$substring(@ctx.current.item.surname, 0, 1)",
+                    "text": "=$substring(@ctx.current.item.firstName, 0, 1) & $substring(@ctx.current.item.surname, 0, 1)",
                     "uri": "=@ctx.current.item.img"
                   }
                 }

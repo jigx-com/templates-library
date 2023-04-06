@@ -4,7 +4,7 @@
   "options": {
     "format": "HH:mm",
     "helperText": "Time picker with initial value now",
-    "initialValue": "=\\$now()",
+    "initialValue": "=$now()",
     "label": "Date picker mode - time",
     "mode": "time"
   }
