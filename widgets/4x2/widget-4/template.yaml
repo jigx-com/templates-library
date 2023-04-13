@@ -1,0 +1,69 @@
+options:
+  children:
+    - options:
+        chart:
+          options:
+            legend:
+              isHidden: false
+            plotOptions:
+              series:
+                marker:
+                  isHidden: true
+            series:
+              - color: color4
+                data: =@ctx.datasources.bitcoin
+                layout: area-gradient
+                name: Bitocin EUR (last 14 days)
+            xAxis:
+              isHidden: true
+            yAxis:
+              labels:
+                format:
+                  compactDisplay: long
+                  currency: EUR
+                  maximumFractionDigits: 5
+                  maximumSignificantDigits: 5
+                  notation: standard
+                  numberStyle: currency
+              tickAmount: 3
+          type: component.line-chart
+        top:
+          options:
+            title: Bitcoin
+            subtitle: BTC to EUR
+          type: component.titles
+      type: widget.chart
+    - options:
+        chart:
+          options:
+            legend:
+              isHidden: false
+            plotOptions:
+              series:
+                marker:
+                  isHidden: true
+            series:
+              - color: color4
+                data: =@ctx.datasources.etherum
+                layout: area-gradient
+                name: Etherum EUR (last 14 days)
+            xAxis:
+              isHidden: true
+            yAxis:
+              labels:
+                format:
+                  compactDisplay: short
+                  currency: EUR
+                  maximumFractionDigits: 5
+                  maximumSignificantDigits: 5
+                  notation: compact
+                  numberStyle: currency
+              tickAmount: 3
+          type: component.line-chart
+        top:
+          options:
+            title: Etherum
+            subtitle: BTC to EUR
+          type: component.titles
+      type: widget.chart
+type: widget.group

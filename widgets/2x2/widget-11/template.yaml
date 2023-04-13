@@ -1,0 +1,40 @@
+options:
+  chart:
+    options:
+      plotOptions:
+        series:
+          pointWidth: 12
+      series:
+        - color: color3
+          data: =@ctx.datasources.static-data-1
+        - color: positive
+          data: =@ctx.datasources.static-data-2
+      xAxis:
+        categories:
+          - Aug
+          - Sep
+          - Oct
+          - Nov
+      yAxis:
+        labels:
+          format:
+            compactDisplay: short
+            notation: compact
+            numberStyle: currency
+        max: 80
+        min: 0
+        tickAmount: 3
+    type: component.bar-chart
+  top:
+    options:
+      title: This Month
+      format:
+        numberStyle: unit
+        unit: percent
+      style:
+        isAlignRight: true
+        isValueBottom: true
+        isValueHidden: false
+      value: 11.81818181818
+    type: component.trend
+type: widget.chart

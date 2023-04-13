@@ -1,0 +1,10 @@
+options:
+  bottom:
+    options:
+      title: Leo Siphron
+      subtitle: React Web Developer
+      align: center
+    type: component.titles
+  text: LS
+  uri: https://i.pravatar.cc/150?img=68
+type: widget.avatar

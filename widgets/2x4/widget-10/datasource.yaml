@@ -1,0 +1,7 @@
+device:
+  options:
+    data:
+      - batery: 80
+        device-name: iPhone 14 Pro
+        device-owner: Vojtěch Moudrý
+  type: datasource.static

@@ -1,0 +1,20 @@
+instanceId: ddd
+options:
+  data: =@ctx.datasources.components
+  item:
+    options:
+      title: =@ctx.current.item.name
+      subtitle: =@ctx.current.item.reason
+      divider: solid
+      leftElement:
+        element: checkbox
+        value: =(@ctx.current.item.status= 'Finished' ? true :false)
+      progress: =@ctx.current.item.progress
+      rightElement:
+        element: value
+        text: =@ctx.current.item.value
+      style:
+        isError: =(@ctx.current.item.result= 'Unsuccess' ? true :false)
+        isPositive: =(@ctx.current.item.result= 'Success' ? true :false)
+    type: component.list-item
+type: widget.list

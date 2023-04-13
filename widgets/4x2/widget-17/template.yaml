@@ -1,0 +1,22 @@
+options:
+  chart:
+    options:
+      chart:
+        isAnimated: false
+      plotOptions:
+        series:
+          pointWidth: 12
+      series:
+        - data: =@ctx.datasources.static-data
+      xAxis:
+        categories: =@ctx.datasources.static-data.x
+      yAxis:
+        min: 0
+        tickAmount: 3
+    type: component.bar-chart
+  top:
+    options:
+      title: Inbound Leads
+      subtitle: October 2022
+    type: component.titles
+type: widget.chart

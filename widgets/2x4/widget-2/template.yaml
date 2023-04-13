@@ -1,0 +1,38 @@
+options:
+  chart:
+    options:
+      plotOptions:
+        series:
+          marker:
+            isHidden: true
+      series:
+        - animation:
+            direction: left-to-right
+          color: color6
+          data: =@ctx.datasources.static-data
+          layout: area-gradient
+          name: Quarterly Revenue 2020
+      xAxis:
+        categories:
+          - Q1
+          - Q2
+          - Q3
+          - Q4
+      yAxis:
+        isFirstLabelHidden: true
+        isFirstTickHidden: true
+        labels:
+          format:
+            compactDisplay: short
+            notation: compact
+            numberStyle: currency
+        max: 75000
+        min: 0
+        tickAmount: 6
+    type: component.line-chart
+  top:
+    options:
+      title: Company Perf.
+      subtitle: "2022"
+    type: component.titles
+type: widget.chart

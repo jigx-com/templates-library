@@ -1,0 +1,12 @@
+options:
+  statuses:
+    - bottom:
+        options:
+          title: All done
+          subtitle: 11 Issues Finished
+          align: center
+        type: component.titles
+      color: positive
+      icon: check-circle-1
+      when: true
+type: widget.status

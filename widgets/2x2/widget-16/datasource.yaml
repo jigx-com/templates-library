@@ -1,0 +1,22 @@
+employees:
+  options:
+    data:
+      - avatar-text: MM
+        avatar-uri: https://robohash.org/Mega
+        label-color: color5
+        name: Boris Miranda
+        position: UX Designer
+        progress: 0.78
+      - avatar-text: E
+        avatar-uri: https://robohash.org/jigx
+        label-color: color3
+        name: Santiago Hampton
+        position: Senior Frontend Developer
+        progress: 0.3
+      - avatar-text: B
+        avatar-uri: https://robohash.org/aloha
+        label-color: color4
+        name: Tom Sellers
+        position: QA Engineer
+        progress: 0.54
+  type: datasource.static

@@ -1,0 +1,39 @@
+options:
+  bottom:
+    options:
+      title: Quarterly Company Progress
+      subtitle: "2022"
+      align: center
+    type: component.titles
+  chart:
+    options:
+      legend:
+        isHidden: false
+      series:
+        - animation:
+            direction: left-to-right
+          color: color3
+          data: =@ctx.datasources.static-data
+          dataLabels:
+            - isEnabled: true
+          layout: area-gradient
+          name: Quarterly Revenue 2022
+      xAxis:
+        categories: =@ctx.datasources.static-data.x
+      yAxis:
+        isFirstLabelHidden: true
+        isFirstTickHidden: true
+        labels:
+          format:
+            compactDisplay: short
+            notation: compact
+            numberStyle: currency
+        min: 0
+        tickAmount: 5
+    type: component.line-chart
+  top:
+    options:
+      title: $91.750
+      icon: chart
+    type: component.titles
+type: widget.chart

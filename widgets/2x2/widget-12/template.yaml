@@ -1,0 +1,39 @@
+options:
+  chart:
+    options:
+      legend:
+        isHidden: false
+      plotOptions:
+        series:
+          marker:
+            isHidden: true
+      series:
+        - data: =@ctx.datasources.series1
+          dataLabels:
+            - isEnabled: true
+          layout: area-gradient
+      xAxis:
+        categories: =@ctx.datasources.series1.x
+        min: 0
+      yAxis:
+        isFirstLabelHidden: true
+        isFirstTickHidden: true
+        isHidden: false
+        labels:
+          format:
+            compactDisplay: short
+            notation: compact
+            numberStyle: currency
+        max: 1200
+        min: 0
+        tickAmount: 3
+    type: component.line-chart
+  top:
+    options:
+      title: $848.5
+      subtitle: Budget $1.000
+      style:
+        isValueBottom: false
+        isValueHidden: true
+    type: component.trend
+type: widget.chart

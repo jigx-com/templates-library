@@ -1,0 +1,35 @@
+options:
+  children:
+    - options:
+        bottom:
+          options:
+            title: Leo Siphron
+            subtitle: IBM
+            align: center
+          type: component.titles
+        text: LS
+        top:
+          options:
+            title: 17:30 - 19:00
+            subtitle: Today
+            align: left
+            icon: time-clock-circle
+            iconColor: negative
+            style:
+              isNegative: true
+          type: component.titles
+        uri: https://i.pravatar.cc/400?img=59
+      type: widget.avatar
+    - options:
+        data: =@ctx.datasources.components
+        item:
+          options:
+            title: =@ctx.current.item.name
+            subtitle: =@ctx.current.item.subtitle
+            leftElement:
+              element: avatar
+              text: =@ctx.current.item.avatar-text
+              uri: =@ctx.current.item.avatar-uri
+          type: component.list-item
+      type: widget.list
+type: widget.group

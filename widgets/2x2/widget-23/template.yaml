@@ -1,0 +1,39 @@
+options:
+  statuses:
+    - bottom:
+        options:
+          title: =@ctx.datasources.devices.status
+          subtitle: =@ctx.datasources.devices.device-name
+          align: center
+          icon: check-1
+          style:
+            isPositive: true
+        type: component.titles
+      color: color14
+      icon: robot
+      when: =@ctx.datasources.devices.status = "Connected" ? true:false
+    - bottom:
+        options:
+          title: =@ctx.datasources.devices.status
+          subtitle: =@ctx.datasources.devices.device-name
+          align: center
+          icon: no-cloud
+          style:
+            isNegative: true
+        type: component.titles
+      color: color14
+      icon: robot
+      when: =@ctx.datasources.devices.status = "Disconnected" ? true:false
+    - bottom:
+        options:
+          title: =@ctx.datasources.devices.status
+          subtitle: =@ctx.datasources.devices.device-name
+          align: center
+          icon: question-circle
+          iconColor: warning
+        type: component.titles
+      color: color14
+      icon: robot
+      when: =@ctx.datasources.devices.status != 'Connected' and
+        @ctx.datasources.devices.status != 'Disconnected' ? true:false
+type: widget.status

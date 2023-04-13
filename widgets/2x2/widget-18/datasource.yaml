@@ -1,0 +1,66 @@
+components:
+  options:
+    data:
+      - avatar-text: Test
+        avatar-uri: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgYs2O3ePnGD7dXwqrmnHIr-wovVAqk0QXBQ&usqp=CAU
+        description: Description description description
+        highlight: false
+        label-color: color7
+        label-title: ""
+        name: IMG_665.jpg
+        subtitle: 2,5 MB
+      - avatar-text: Test
+        avatar-uri: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9sPSzxojkPCXqx8hZ61ErugBhO4F7zymIQ&usqp=CAU
+        description: created 02.05.2022 12:11
+        highlight: false
+        label-color: color7
+        label-title: ""
+        name: 2022-04-01 10.32.21.xlsx
+        subtitle: 876 KB
+      - avatar-text: Test
+        avatar-uri: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeEJz_OjIywXTPYpJOpdpESui95IRaaIUqdQ&usqp=CAU
+        description: Description description description
+        highlight: false
+        label-color: color7
+        label-title: ""
+        name: IMG_665.jpg
+        subtitle: 2,5 MB
+      - description: modified 02.05.2022 12:11
+        highlight: false
+        name: IMG_665.jpg
+        subtitle: 3,5 MB
+      - description: modified 02.05.2022 12:11
+        highlight: false
+        label-color: color7
+        label-title: ""
+        name: 2022-05-02 12.09.45.pdf
+        subtitle: 870 KB
+      - avatar-text: Test
+        avatar-uri: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxMBCxL3zg6Wya4wtfDC2CgG3zhS_-IcBfw&usqp=CAU
+        description: Description description description
+        highlight: false
+        label-color: color7
+        label-title: ""
+        name: IMG_665.jpg
+        subtitle: 2,5 MB
+      - description: modified 02.05.2022 12:11
+        highlight: false
+        label-color: color7
+        label-title: ""
+        name: 2022-05-02 12.09.45.pdf
+        subtitle: 870 KB
+      - description: created 02.05.2022 12:11
+        highlight: false
+        label-color: color7
+        label-title: ""
+        name: 2022-04-01 10.32.21.xlsx
+        subtitle: 876 KB
+      - avatar-text: Test
+        avatar-uri: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9sPSzxojkPCXqx8hZ61ErugBhO4F7zymIQ&usqp=CAU
+        description: created 02.05.2022 12:11
+        highlight: false
+        label-color: color7
+        label-title: ""
+        name: 2022-04-01 10.32.21.xlsx
+        subtitle: 876 KB
+  type: datasource.static

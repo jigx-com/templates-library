@@ -1,0 +1,18 @@
+options:
+  data: =@ctx.datasources.tasklist
+  item:
+    options:
+      title: =@ctx.current.item.name
+      subtitle: =@ctx.current.item.description
+      divider: solid
+      leftElement:
+        element: checkbox
+        value: =(@ctx.current.item.status= 'Finished' ? true :false)
+      rightElement:
+        element: value
+        text: =@ctx.current.item.value
+      style:
+        isPositive: =(@ctx.current.item.status= 'Finished' ? true :false)
+        isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
+    type: component.list-item
+type: widget.list

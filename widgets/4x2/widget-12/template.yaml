@@ -1,0 +1,10 @@
+options:
+  address: Brno
+  bottom:
+    options:
+      title: Brno
+      subtitle: Pod Strediskem 768
+      align: left
+      icon: pin
+    type: component.titles
+type: widget.location

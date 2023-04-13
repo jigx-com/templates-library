@@ -1,0 +1,19 @@
+options:
+  bottom:
+    options:
+      title: $1,423.21
+      subtitle: Remaining Team Budget
+      align: center
+    type: component.titles
+  chart:
+    options:
+      chart:
+        title:
+          text: 67%
+          verticalAlign: center
+      series:
+        - color: color8
+          data: =@ctx.datasources.static-data
+          layout: arch
+    type: component.pie-chart
+type: widget.chart

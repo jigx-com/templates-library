@@ -1,0 +1,14 @@
+options:
+  address: Brno
+  bottom:
+    options:
+      title: Brno
+      subtitle: Purkynova 125
+      align: left
+      icon: pin
+      iconColor: color4
+      style:
+        isPositive: true
+    type: component.titles
+  zoomLevel: 3
+type: widget.location

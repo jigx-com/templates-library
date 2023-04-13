@@ -1,0 +1,44 @@
+options:
+  bottom:
+    options:
+      subtitle: Last Update 10:30:45
+      align: center
+    type: component.titles
+  chart:
+    options:
+      chart:
+        isAnimated: false
+      legend:
+        isHidden: false
+      series:
+        - color: color5
+          data: =@ctx.datasources.static-data
+          dataLabels:
+            - isEnabled: true
+          layout: area-gradient
+          name: Quarterly Revenue 2020
+      xAxis:
+        categories: =@ctx.datasources.static-data.x
+      yAxis:
+        isFirstLabelHidden: true
+        isFirstTickHidden: true
+        labels:
+          format:
+            compactDisplay: short
+            notation: compact
+            numberStyle: currency
+        min: 0
+        tickAmount: 4
+    type: component.line-chart
+  top:
+    options:
+      title: This Quarter
+      format:
+        numberStyle: unit
+        unit: percent
+      style:
+        isAlignRight: false
+        isValueBottom: true
+      value: 125.1655629139
+    type: component.trend
+type: widget.chart

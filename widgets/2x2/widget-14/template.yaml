@@ -1,0 +1,25 @@
+options:
+  align: right
+  bottom:
+    options:
+      title: 92,40 USDT / SOL
+      format:
+        numberStyle: unit
+        unit: percent
+      style:
+        isAlignRight: false
+        isValueBottom: true
+      value: 21.2
+    type: component.trend
+  format:
+    unit: SOL
+  top:
+    options:
+      title: Solana
+      subtitle: USDT
+      align: left
+      icon: currency-dollar
+      iconColor: color2
+    type: component.titles
+  value: 212
+type: widget.value

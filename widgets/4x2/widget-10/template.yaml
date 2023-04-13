@@ -1,0 +1,21 @@
+options:
+  bottom:
+    options:
+      title: Q1 KPIs
+      align: center
+    type: component.titles
+  chart:
+    options:
+      chart:
+        subtitle:
+          text: Done
+          verticalAlign: center
+        title:
+          text: "2"
+          verticalAlign: center
+      series:
+        - color: color7
+          data: =@ctx.datasources.static-data
+          layout: pie
+    type: component.pie-chart
+type: widget.chart

@@ -1,0 +1,12 @@
+static-data:
+  options:
+    data:
+      - x: Q1/20
+        y: 12490
+      - x: Q2/20
+        y: 23000
+      - x: Q3/20
+        y: 45300
+      - x: Q4/20
+        y: 102000
+  type: datasource.static

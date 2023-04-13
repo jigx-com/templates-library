@@ -1,0 +1,17 @@
+options:
+  data: =@ctx.datasources.components
+  item:
+    options:
+      title: =@ctx.current.item.name
+      subtitle: =@ctx.current.item.subtitle
+      color:
+        - color: =@ctx.current.item.label-color
+          when: true
+      leftElement:
+        element: avatar
+        text: =@ctx.current.item.avatar-text
+      rightElement:
+        element: value
+        text: =@ctx.current.item.value
+    type: component.list-item
+type: widget.list

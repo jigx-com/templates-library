@@ -1,0 +1,9 @@
+static-data:
+  options:
+    data:
+      - x: kukuk
+        y: 57
+      - color: transparent
+        x: tralala
+        y: 43
+  type: datasource.static

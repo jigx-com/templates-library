@@ -1,0 +1,24 @@
+options:
+  chart:
+    options:
+      plotOptions:
+        series:
+          pointWidth: 8
+      series:
+        - color: color4
+          data: =@ctx.datasources.static-data-1
+        - color: color6
+          data: =@ctx.datasources.static-data-2
+      xAxis:
+        categories: =@ctx.datasources.static-data-1.x
+      yAxis:
+        max: 100
+    type: component.bar-chart
+  top:
+    options:
+      title: New Employees
+      subtitle: 2021 vs. 2022
+      icon: multiple-neutral-2
+      iconColor: color4
+    type: component.titles
+type: widget.chart

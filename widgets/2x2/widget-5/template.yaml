@@ -1,0 +1,44 @@
+options:
+  bottom:
+    options:
+      subtitle: Updated 1 min ago
+      align: center
+    type: component.titles
+  chart:
+    options:
+      legend:
+        isHidden: false
+      series:
+        - data: =@ctx.datasources.static-data
+          dataLabels:
+            - isEnabled: true
+          layout: area-gradient
+          name: Quarterly Revenue 2020
+      xAxis:
+        categories:
+          - Q1
+          - Q2
+          - Q3
+          - Q4
+      yAxis:
+        isFirstLabelHidden: true
+        isFirstTickHidden: true
+        labels:
+          format:
+            compactDisplay: long
+            notation: compact
+            numberStyle: currency
+        min: 0
+        tickAmount: 3
+    type: component.line-chart
+  top:
+    options:
+      title: Quarterly Revenue
+      format:
+        numberStyle: percent
+      style:
+        isAlignRight: false
+        isValueBottom: true
+      value: 0.911111111111
+    type: component.trend
+type: widget.chart

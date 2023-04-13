@@ -1,0 +1,14 @@
+options:
+  align: center
+  bottom:
+    options:
+      title: +420 665 778 998
+      align: center
+      icon: phone
+      iconColor: color4
+    type: component.titles
+  format:
+    dateFormat: HH:mm
+    unit: hour
+  value: =$toMillis($now())
+type: widget.value

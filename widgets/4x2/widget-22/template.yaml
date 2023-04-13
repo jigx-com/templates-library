@@ -1,0 +1,14 @@
+options:
+  footer:
+    text: test
+  statuses:
+    - bottom:
+        options:
+          title: 4 Tests
+          subtitle: Failed
+          align: center
+        type: component.titles
+      color: negative
+      icon: remove-circle
+      when: true
+type: widget.status

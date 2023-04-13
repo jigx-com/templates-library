@@ -1,0 +1,31 @@
+options:
+  bottom:
+    options:
+      title: 10,75 GB (of 256 GB)
+      subtitle: Available
+      align: center
+      icon: database-2
+    type: component.titles
+  chart:
+    options:
+      chart:
+        subtitle:
+          text: Battery
+          verticalAlign: center
+        title:
+          text: 67%
+          verticalAlign: center
+      series:
+        - color: positive
+          data: =@ctx.datasources.static-data
+          layout: arch
+    type: component.pie-chart
+  top:
+    options:
+      title: Vojta iPhone
+      subtitle: iPhone 14 Pro
+      align: center
+      icon: mobile-phone-1
+      iconColor: color14
+    type: component.titles
+type: widget.chart

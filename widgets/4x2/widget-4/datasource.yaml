@@ -1,0 +1,48 @@
+bitcoin:
+  options:
+    provider: DATA_PROVIDER_REST
+    entities:
+      - entity: coin-history
+        function: coin-history
+        functionParameters:
+          symbol: BTC-EUR
+    query: |
+      WITH cte AS (
+        SELECT
+          '$.ms' AS ms,
+          '$.close' AS close
+        FROM [coin-history]
+        ORDER BY 1 DESC
+      )
+      SELECT
+        1 - ROW_NUMBER() OVER (ORDER BY ms DESC) AS x,
+        close AS y
+      FROM cte
+      ORDER BY
+        ms DESC
+      LIMIT 1 + 1 * 7
+  type: datasource.sqlite
+etherum:
+  options:
+    provider: DATA_PROVIDER_REST
+    entities:
+      - entity: coin-history-etherum
+        function: coin-history-etherum
+        functionParameters:
+          symbol: ETH-EUR
+    query: |
+      WITH cte AS (
+        SELECT
+          '$.ms' AS ms,
+          '$.close' AS close
+        FROM [coin-history-etherum]
+        ORDER BY 1 DESC
+      )
+      SELECT
+        1 - ROW_NUMBER() OVER (ORDER BY ms DESC) AS x,
+        close AS y
+      FROM cte
+      ORDER BY
+        ms DESC
+      LIMIT 1 + 1 * 7
+  type: datasource.sqlite

@@ -1,0 +1,16 @@
+components:
+  options:
+    data:
+      - avatar-text: LA
+        avatar-uri: https://i.pravatar.cc/400?img=45
+        from: 01/10/2022 20:00
+        name: Laurenz Amram
+        subtitle: 19:30 - 20:00
+        to: 20:00
+      - avatar-text: LB
+        avatar-uri: null
+        from: 01/10/2022 20:00
+        name: Ladislao Børge
+        subtitle: 21:00 - 23:00
+        to: 01/10/2022 23:00
+  type: datasource.static

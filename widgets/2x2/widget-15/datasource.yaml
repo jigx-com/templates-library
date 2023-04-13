@@ -1,0 +1,13 @@
+tasklist:
+  options:
+    data:
+      - description: Stopped Because Of High Price
+        name: Task 1
+        status: Finished
+      - description: ""
+        name: Task 2
+        status: Finished
+      - description: ""
+        name: Task 3
+        status: progress
+  type: datasource.static

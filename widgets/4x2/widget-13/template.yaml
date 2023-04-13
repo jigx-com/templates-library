@@ -1,0 +1,50 @@
+options:
+  chart:
+    options:
+      plotOptions:
+        series:
+          marker:
+            isHidden: true
+      series:
+        - animation:
+            direction: bottom-to-top
+          color: color7
+          data: =@ctx.datasources.static-data
+          layout: area-gradient
+        - animation:
+            direction: bottom-to-top
+          color: color9
+          data: =@ctx.datasources.static-data2
+          layout: area-gradient
+        - animation:
+            direction: bottom-to-top
+          color: color2
+          data: =@ctx.datasources.static-data3
+          layout: area-gradient
+      xAxis:
+        categories:
+          - 07/22
+          - 08/22
+          - 09/22
+          - 10/22
+        labels:
+          format:
+            compactDisplay: short
+            notation: compact
+            numberStyle: currency
+      yAxis:
+        labels:
+          format:
+            compactDisplay: short
+            notation: compact
+            numberStyle: currency
+        min: 0
+    type: component.line-chart
+  top:
+    options:
+      title: Sales Performance
+      subtitle: By Districts
+      icon: gauge-dashboard
+      iconColor: color2
+    type: component.titles
+type: widget.chart

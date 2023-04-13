@@ -1,0 +1,13 @@
+options:
+  align: right
+  format:
+    unit: Opportunities
+  top:
+    options:
+      title: This week
+      align: left
+      icon: space-rocket-flying
+      iconColor: color4
+    type: component.titles
+  value: "2"
+type: widget.value

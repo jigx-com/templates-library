@@ -1,0 +1,44 @@
+type: widget.group
+options:
+  children:
+    - options:
+        chart:
+          options:
+            chart:
+              subtitle:
+                text: Done
+                verticalAlign: center
+              title:
+                text: 3 of 5
+                verticalAlign: center
+            series:
+              - color: color3
+                data: =@ctx.datasources.chart
+                layout: pie
+          type: component.pie-chart
+        top:
+          options:
+            title: Onboarding
+            subtitle: Jigx, Inc.
+            align: center
+          type: component.titles
+      type: widget.chart
+    - options:
+        data: =@ctx.datasources.list
+        item:
+          options:
+            title: =@ctx.current.item.name
+            subtitle: =@ctx.current.item.task-number
+            color:
+              - color: color14
+                when: =(@ctx.current.item.status = 'done' ? true :false)
+              - color: color1
+                when: =(@ctx.current.item.status = 'waiting' ? true :false)
+            leftElement:
+              element: checkbox
+              value: =(@ctx.current.item.status = 'done' ? true :false)
+            style:
+              isDisabled: =(@ctx.current.item.status = 'done' ? true :false)
+              isStrikeThrough: =(@ctx.current.item.status = 'done' ? true :false)
+          type: component.list-item
+      type: widget.list

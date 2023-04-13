@@ -1,0 +1,20 @@
+static-data-1:
+  options:
+    data:
+      - x: Jun
+        y: 10
+      - x: Jul
+        y: 52
+      - x: Aug
+        y: 49
+      - x: Sep
+        y: 48
+  type: datasource.static
+static-data-2:
+  options:
+    data:
+      - 20
+      - 52
+      - 52
+      - 60
+  type: datasource.static

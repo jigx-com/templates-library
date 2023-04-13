@@ -1,0 +1,45 @@
+options:
+  chart:
+    options:
+      chart:
+        isAnimated: true
+      legend:
+        isHidden: false
+      plotOptions:
+        series:
+          pointWidth: 5
+      series:
+        - animation:
+            direction: left-to-right
+          color: color5
+          data: =@ctx.datasources.static-data-2
+        - animation:
+            direction: left-to-right
+          color: positive
+          data: =@ctx.datasources.static-data-1
+      xAxis:
+        categories:
+          - Q1/21
+          - Q2/21
+          - Q3/22
+          - Q4/21
+          - Q1/22
+          - Q2/22
+          - Q3/22
+          - Q4/22
+        isHidden: false
+      yAxis:
+        labels:
+          format:
+            compactDisplay: short
+            notation: compact
+            numberStyle: currency
+        max: 5000000
+        min: 0
+        tickAmount: 3
+    type: component.line-chart
+  top:
+    options:
+      title: Trend 2021-2022
+    type: component.titles
+type: widget.chart

@@ -1,0 +1,24 @@
+static-data-1:
+  options:
+    data:
+      - 1218000
+      - 1835000
+      - 2001000
+      - 2871000
+      - 1456000
+      - 3267000
+      - 4634000
+      - 4967000
+  type: datasource.static
+static-data-2:
+  options:
+    data:
+      - 1200000
+      - 1400000
+      - 1800000
+      - 2500000
+      - 2800000
+      - 3000000
+      - 3200000
+      - 3500000
+  type: datasource.static

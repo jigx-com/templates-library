@@ -1,0 +1,31 @@
+chart:
+  type: datasource.static
+  options:
+    data:
+      - y: 3
+      - color: transparent
+        y: 2
+list:
+  type: datasource.static
+  options:
+    data:
+      - icon: person
+        name: Visit HR department
+        status: waiting
+        task-number: null
+      - icon: synchronize-arrows-1
+        name: Meet Your Managerf
+        status: waiting
+        task-number: Today
+      - icon: checklist
+        name: Use Jigx App
+        status: done
+        task-number: null
+      - icon: synchronize-arrows-1
+        name: Set Email & Calendar
+        status: done
+        task-number: null
+      - icon: play
+        name: Watch Jigx Intro Video
+        status: done
+        task-number: null

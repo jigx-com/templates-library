@@ -1,0 +1,19 @@
+options:
+  address: Brno
+  bottom:
+    options:
+      title: Brno
+      subtitle: Purkynova 125
+      align: center
+      icon: pin
+    type: component.titles
+  top:
+    options:
+      title: Slowdown
+      subtitle: 7-min Delay
+      icon: alert
+      style:
+        isWarning: true
+    type: component.titles
+  zoomLevel: 8
+type: widget.location

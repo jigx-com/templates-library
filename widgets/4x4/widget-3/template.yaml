@@ -1,0 +1,42 @@
+options:
+  bottom:
+    options:
+      title: $89,400
+      subtitle: From New Paying Customers
+      align: center
+      icon: multiple-neutral-2
+      iconColor: color9
+    type: component.titles
+  chart:
+    options:
+      series:
+        - animation:
+            direction: bottom-to-top
+          color: color7
+          data: =@ctx.datasources.static-data
+          layout: area-gradient
+        - animation:
+            direction: bottom-to-top
+          color: color9
+          data: =@ctx.datasources.static-data2
+          layout: area-gradient
+      xAxis:
+        categories:
+          - 07/23
+          - 08/23
+          - 09/23
+          - 10/23
+      yAxis:
+        labels:
+          format:
+            notation: compact
+            numberStyle: currency
+        min: 0
+        tickAmount: 7
+    type: component.line-chart
+  top:
+    options:
+      title: Sales Performance
+      subtitle: "2023"
+    type: component.titles
+type: widget.chart

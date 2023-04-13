@@ -1,0 +1,34 @@
+options:
+  children:
+    - options:
+        statuses:
+          - bottom:
+              options:
+                title: 3 Devices
+                subtitle: Works Properly
+                align: center
+              type: component.titles
+            color: positive
+            icon: check-circle-1
+            when: true
+      type: widget.status
+    - options:
+        data: =@ctx.datasources.devices
+        item:
+          options:
+            title: =@ctx.current.item.device
+            subtitle: =@ctx.current.item.room
+            color:
+              - color: =@ctx.current.item.color
+                when: true
+            leftElement:
+              element: icon
+              isContained: true
+              isDuotone: true
+              name: =@ctx.current.item.icon
+            rightElement:
+              element: switch
+              value: =(@ctx.current.item.status = 'on' ? true :false)
+          type: component.list-item
+      type: widget.list
+type: widget.group

@@ -1,0 +1,16 @@
+devices:
+  options:
+    data:
+      - color: color3
+        device: Bell
+        icon: alarm-bell-1
+        room: House
+      - color: color2
+        device: Security
+        icon: login-keys
+        room: Home
+      - color: color2
+        device: Security
+        icon: login-keys
+        room: Garage
+  type: datasource.static

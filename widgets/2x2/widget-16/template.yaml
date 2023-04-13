@@ -1,0 +1,16 @@
+options:
+  data: =@ctx.datasources.employees
+  item:
+    options:
+      title: =@ctx.current.item.name
+      subtitle: =@ctx.current.item.position
+      color:
+        - color: =@ctx.current.item.label-color
+          when: true
+      leftElement:
+        element: avatar
+        text: =@ctx.current.item.avatar-text
+        uri: =@ctx.current.item.avatar-uri
+      progress: =@ctx.current.item.progress
+    type: component.list-item
+type: widget.list

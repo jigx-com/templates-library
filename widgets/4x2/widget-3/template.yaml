@@ -1,0 +1,27 @@
+options:
+  children:
+    - options:
+        bottom:
+          options:
+            title: "3"
+            subtitle: Oakland Invaders
+            align: center
+          type: component.titles
+        isContentOverlaid: false
+        resizeMode: contain
+        source:
+          uri: https://cdn.freebiesupply.com/logos/thumbs/2x/oakland-invaders-logo.png
+      type: widget.image
+    - options:
+        bottom:
+          options:
+            title: "2"
+            subtitle: Kane County Cougars
+            align: center
+          type: component.titles
+        isContentOverlaid: false
+        resizeMode: contain
+        source:
+          uri: https://seeklogo.com/images/K/kane-county-cougars-logo-47AAB515C1-seeklogo.com.png
+      type: widget.image
+type: widget.group

@@ -1,0 +1,16 @@
+missions:
+  options:
+    data:
+      - mission-name: RT45678
+        mission-priority: Priority 1
+        mission-progress: 0.72
+        mission-status: Active
+      - mission-name: RT56990
+        mission-priority: Priority 1
+        mission-progress: 0
+        mission-status: Waiting
+      - mission-name: RT45887
+        mission-priority: Priority 2
+        mission-progress: 0
+        mission-status: Waiting
+  type: datasource.static

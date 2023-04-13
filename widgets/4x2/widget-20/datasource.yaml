@@ -1,0 +1,115 @@
+components:
+  options:
+    data:
+      - avatar-text: B
+        avatar-uri: https://robohash.org/aloha
+        badge: off
+        label-color: color4
+        name: Belantti
+        progress: 0.54
+        reason: null
+        result: null
+        status: Progress
+        subtitle: APAC
+        value: 115000
+      - avatar-text: TT
+        avatar-uri: null
+        badge: off
+        highlight: false
+        label-color: color7
+        name: Ten Tulip
+        progress: 0.6
+        reason: null
+        result: null
+        status: Progress
+        subtitle: APAC
+        value: 107000
+      - avatar-text: GS
+        avatar-uri: null
+        badge: off
+        label-color: color8
+        name: Giga Stride
+        progress: 0.21
+        reason: null
+        result: null
+        status: Progress
+        subtitle: North America
+        value: 102500
+      - avatar-text: O
+        avatar-uri: null
+        badge: off
+        label-color: color9
+        name: Ovuga
+        progress: 0.45
+        reason: null
+        result: null
+        status: Progress
+        subtitle: EMEA
+        value: 98000
+      - avatar-text: B
+        avatar-uri: null
+        badge: off
+        label-color: color10
+        name: Boostgo
+        progress: 0.8
+        reason: null
+        result: null
+        status: Progress
+        subtitle: North America
+        value: 56000
+      - avatar-text: SA
+        avatar-uri: null
+        badge: off
+        label-color: color13
+        name: Sonic Automotive
+        progress: 0.22
+        reason: null
+        result: null
+        status: Progress
+        subtitle: EMEA
+        value: 37000
+      - avatar-text: FL
+        avatar-uri: null
+        badge: off
+        label-color: color11
+        name: Foot Locker
+        progress: 0.47
+        reason: Stopped Because Of High Price
+        result: Unsuccess
+        status: Finished
+        subtitle: North America
+        value: 42000
+      - avatar-text: MM
+        avatar-uri: https://robohash.org/Mega
+        badge: on
+        label-color: color5
+        name: Mega Mile
+        progress: 0.78
+        reason: Stopped Because Of High Price
+        result: Unsuccess
+        status: Finished
+        subtitle: EMEA
+        value: 154000
+      - avatar-text: E
+        avatar-uri: https://robohash.org/jigx
+        badge: on
+        label-color: color3
+        name: Ellesti
+        progress: 1
+        reason: null
+        result: Success
+        status: Finished
+        subtitle: LATAM
+        value: 120000
+      - avatar-text: JE
+        avatar-uri: null
+        badge: off
+        label-color: color12
+        name: Jacobs Engineering Group
+        progress: 1
+        reason: null
+        result: Success
+        status: Finished
+        subtitle: EMEA
+        value: 38500
+  type: datasource.static

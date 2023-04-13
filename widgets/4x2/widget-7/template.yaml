@@ -1,0 +1,26 @@
+options:
+  children:
+    - options:
+        bottom:
+          options:
+            title: Marty Randolph
+            subtitle: Product Design Lead
+            align: center
+            icon: calendar
+          type: component.titles
+        text: MR
+        uri: https://randomuser.me/api/portraits/men/20.jpg
+      type: widget.avatar
+    - options:
+        data: =@ctx.datasources.users
+        item:
+          options:
+            title: =@ctx.current.item.name
+            subtitle: =@ctx.current.item.position
+            leftElement:
+              element: avatar
+              text: =@ctx.current.item.uri-text
+              uri: =@ctx.current.item.uri
+          type: component.list-item
+      type: widget.list
+type: widget.group

@@ -1,0 +1,7 @@
+devices:
+  options:
+    data:
+      - device-id: 1
+        device-name: Device 366
+        status: Connected
+  type: datasource.static
