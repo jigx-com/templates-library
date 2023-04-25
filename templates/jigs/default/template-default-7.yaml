@@ -58,15 +58,15 @@ children:
           marker:
             isHidden: false
       series:
-        - data: "=@ctx.datasources.closed-converted"
+        - data: =@ctx.datasources.closed-converted
           color: positive
-          name: "=@ctx.datasources.closed-converted.x"
-        - data: "=@ctx.datasources.closed-not-converted"
+          name: =@ctx.datasources.closed-converted.x
+        - data: =@ctx.datasources.closed-not-converted
           color: positive
-          name: "=@ctx.datasources.closed-not-converted.x"
-        - data: "=@ctx.datasources.open-not-contacted"
+          name: =@ctx.datasources.closed-not-converted.x
+        - data: =@ctx.datasources.open-not-contacted
           color: positive
-          name: "=@ctx.datasources.open-not-contacted.x"
-        - data: "=@ctx.datasources.working-contacted"
+          name: =@ctx.datasources.open-not-contacted.x
+        - data: =@ctx.datasources.working-contacted
           color: positive
-          name: "=@ctx.datasources.working-contacted.x"
+          name: =@ctx.datasources.working-contacted.x

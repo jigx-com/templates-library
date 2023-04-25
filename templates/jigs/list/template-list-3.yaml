@@ -62,22 +62,22 @@ datasources:
             - text: DR
               uri: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60
 
-data: "=@ctx.datasources.list"
+data: =@ctx.datasources.list
 item:
   type: component.list-item
   options:
     divider: solid
     color:
-      - when: "=@ctx.component.state.checked = true ? true :false"
+      - when: =@ctx.component.state.checked = true ? true :false
         color: color14
-    title: "=@ctx.current.item.task-number"
-    subtitle: "=@ctx.current.item.name"
+    title: =@ctx.current.item.task-number
+    subtitle: =@ctx.current.item.name
     leftElement:
       element: checkbox
-      value: "=@ctx.current.item.status = 'done' ? true :false"
+      value: =@ctx.current.item.status = 'done' ? true :false
     style:
-      isStrikeThrough: "=@ctx.component.state.checked = true ? true :false"
-      isDisabled: "=@ctx.component.state.checked = true ? true :false"
-    avatars: "=@ctx.current.item.avatars"
+      isStrikeThrough: =@ctx.component.state.checked = true ? true :false
+      isDisabled: =@ctx.component.state.checked = true ? true :false
+    avatars: =@ctx.current.item.avatars
     label:
       title: category

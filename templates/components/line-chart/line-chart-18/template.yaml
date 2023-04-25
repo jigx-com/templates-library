@@ -22,5 +22,5 @@ options:
       - "3"
       - "4"
   series:
-    - data: "=@ctx.datasources.line"
+    - data: =@ctx.datasources.line
       color: color4

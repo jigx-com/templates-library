@@ -14,6 +14,6 @@ options:
       - "3"
       - "4"
   series:
-    - data: "=@ctx.datasources.line"
+    - data: =@ctx.datasources.line
       color: color8
       layout: area-gradient

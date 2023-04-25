@@ -124,12 +124,12 @@ children:
         series:
           pointWidth: 12
       series:
-        - data: "=@ctx.datasources.revenues"
+        - data: =@ctx.datasources.revenues
           name: Revenues
           color: positive
           dataLabels:
             - isEnabled: false
-        - data: "=@ctx.datasources.expenses"
+        - data: =@ctx.datasources.expenses
           name: Expenses
           color: negative
           dataLabels:
@@ -146,26 +146,26 @@ children:
           value: "2021"
         - title: "2022"
           value: "2022"
-      data: "=$filter(@ctx.datasources.transactions, function($v, $a, $i) { @ctx.components.transactions-list.state.filter = 'all' or $v.year = @ctx.components.transactions-list.state.filter })"
+      data: =$filter(@ctx.datasources.transactions, function($v, $a, $i) { @ctx.components.transactions-list.state.filter = 'all' or $v.year = @ctx.components.transactions-list.state.filter })
       maximumItemsToRender: 10
       item:
         type: component.list-item
         options:
           divider: solid
-          title: "=@ctx.current.item.company"
-          subtitle: "=@ctx.current.item.description"
-          description: "=$fromMillis($toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')"
+          title: =@ctx.current.item.company
+          subtitle: =@ctx.current.item.description
+          description: =$fromMillis($toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')
           label:
-            title: "=@ctx.current.item.amount & '$'"
+            title: =@ctx.current.item.amount & '$'
             isHidden: false
             color:
-              - when: "=(@ctx.current.item.positive = true)"
+              - when: =(@ctx.current.item.positive = true)
                 color: color2
-              - when: "=(@ctx.current.item.positive = false)"
+              - when: =(@ctx.current.item.positive = false)
                 color: color4
           leftElement:
             element: icon
-            name: "=@ctx.current.item.positive = true ? 'up' :'down'"
+            name: =@ctx.current.item.positive = true ? 'up' :'down'
           style:
-            isPositive: "=@ctx.current.item.positive"
-            isError: "=@ctx.current.item.positive = false ? true :false"
+            isPositive: =@ctx.current.item.positive
+            isError: =@ctx.current.item.positive = false ? true :false

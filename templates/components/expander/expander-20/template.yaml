@@ -5,7 +5,7 @@ options:
       options:
         series:
           - color: color2
-            data: "=@ctx.datasources.linechart"
+            data: =@ctx.datasources.linechart
             layout: area-gradient
   header:
     centerElement:

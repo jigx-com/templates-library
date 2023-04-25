@@ -43,15 +43,15 @@ datasources:
           subtitle: Subtitle
           icon: cog-double
 
-data: "=@ctx.datasources.swipeable-list"
+data: =@ctx.datasources.swipeable-list
 item:
   type: component.list-item
   options:
-    title: "=@ctx.current.item.title"
-    subtitle: "=@ctx.current.item.subtitle"
+    title: =@ctx.current.item.title
+    subtitle: =@ctx.current.item.subtitle
     rightElement:
       element: icon
-      name: "=@ctx.current.item.icon"
+      name: =@ctx.current.item.icon
     swipeable:
       right:
         - onPress:

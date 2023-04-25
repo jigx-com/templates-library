@@ -6,7 +6,7 @@ options:
     isHidden: false
   series:
     - color: color2
-      data: "=@ctx.datasources.serie4"
+      data: =@ctx.datasources.serie4
       dataLabels:
         - isEnabled: true
       name: My data 4

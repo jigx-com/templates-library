@@ -1,7 +1,7 @@
 type: component.list
 options:
   maximumItemsToRender: 8
-  data: "=@ctx.datasources.list"
+  data: =@ctx.datasources.list
   item:
     type: component.list-item
     options:
@@ -15,17 +15,17 @@ options:
               = 'priority-2' ? true :false"
             color: color4
       color:
-        - when: "=@ctx.current.item.progress < 0.25"
+        - when: =@ctx.current.item.progress < 0.25
           color: color4
-        - when: "=@ctx.current.item.progress = 1"
+        - when: =@ctx.current.item.progress = 1
           color: color2
-      title: "=@ctx.current.item.name"
-      description: "=@ctx.current.item.description"
+      title: =@ctx.current.item.name
+      description: =@ctx.current.item.description
       subtitle: =@ctx.current.item.progress < 0.25 ? "Low inventory" :""
       leftElement:
         element: progress
         title: 10 m
-        value: "=@ctx.current.item.progress"
+        value: =@ctx.current.item.progress
       rightElement:
         element: icon
         name: information-circle

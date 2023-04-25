@@ -45,17 +45,17 @@ header:
 
 sections:
   - title: Active tasks
-    data: "=@ctx.datasources.sections-list[active=true]"
+    data: =@ctx.datasources.sections-list[active=true]
   - title: Inactive tasks
-    data: "=@ctx.datasources.sections-list[active=false]"
+    data: =@ctx.datasources.sections-list[active=false]
 
 item:
   type: component.list-item
   options:
-    title: "=@ctx.current.item.title"
-    subtitle: "=@ctx.current.item.subtitle"
+    title: =@ctx.current.item.title
+    subtitle: =@ctx.current.item.subtitle
     rightElement:
       element: button
-      title: "=@ctx.current.item.active ? 'Deactivate' :'Activate'"
+      title: =@ctx.current.item.active ? 'Deactivate' :'Activate'
       onPress:
         type: action.go-back

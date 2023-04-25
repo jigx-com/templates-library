@@ -4,13 +4,13 @@ options:
     height: 200
     width: 200
     title:
-      text: "=@ctx.datasources.simple.title"
+      text: =@ctx.datasources.simple.title
       verticalAlign: center
     subtitle:
-      text: "=@ctx.datasources.simple.subtitle"
+      text: =@ctx.datasources.simple.subtitle
       verticalAlign: center
   legend:
     isHidden: false
   series:
-    - data: "=@ctx.datasources.simple"
+    - data: =@ctx.datasources.simple
       layout: pie

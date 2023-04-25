@@ -11,7 +11,7 @@ options:
             text: Title
             verticalAlign: center
         series:
-          - data: "=@ctx.datasources.piechart"
+          - data: =@ctx.datasources.piechart
             layout: arch
   header:
     centerElement:

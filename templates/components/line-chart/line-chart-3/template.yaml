@@ -22,7 +22,7 @@ options:
     series:
       pointWidth: 13
   series:
-    - data: "=@ctx.datasources.population"
+    - data: =@ctx.datasources.population
       color: color1
       layout: area-gradient
       name: Usa Population

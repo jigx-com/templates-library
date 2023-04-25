@@ -1,19 +1,19 @@
 type: component.list
 options:
   maximumItemsToRender: 8
-  data: "=@ctx.datasources.arch"
+  data: =@ctx.datasources.arch
   item:
     type: component.pie-chart
     options:
       chart:
         height: 160
         title:
-          text: "=@ctx.current.item.title"
+          text: =@ctx.current.item.title
           verticalAlign: center
         subtitle:
-          text: "=@ctx.current.item.subtitle"
+          text: =@ctx.current.item.subtitle
           verticalAlign: center
       series:
-        - data: "=@ctx.current.item.data"
-          color: "=@ctx.current.item.color"
+        - data: =@ctx.current.item.data
+          color: =@ctx.current.item.color
           layout: arch

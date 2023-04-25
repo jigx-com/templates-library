@@ -10,16 +10,16 @@ options:
       pointWidth: 10
   series:
     - color: color1
-      data: "=@ctx.datasources.y2019"
+      data: =@ctx.datasources.y2019
       name: "2019"
     - color: color2
-      data: "=@ctx.datasources.y2020"
+      data: =@ctx.datasources.y2020
       name: "2020"
     - color: color3
-      data: "=@ctx.datasources.y2021"
+      data: =@ctx.datasources.y2021
       name: "2021"
     - color: color4
-      data: "=@ctx.datasources.y2022"
+      data: =@ctx.datasources.y2022
       name: "2022"
   xAxis:
     categories:

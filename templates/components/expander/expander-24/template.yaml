@@ -15,19 +15,19 @@ options:
       options:
         title: Title
         completedPercentage: 0.25
-        data: "=@ctx.datasources.steps"
+        data: =@ctx.datasources.steps
         isExpandable: true
         item:
           type: component.step
           options:
-            title: "=@ctx.current.item.title"
+            title: =@ctx.current.item.title
             leftElement:
               element: icon
-              name: "=@ctx.current.item.icon"
+              name: =@ctx.current.item.icon
             style:
-              isActive: "=@ctx.current.item.isActive"
-              isDisabled: "=@ctx.current.item.isWaiting"
-              isPositive: "=@ctx.current.item.isCompleted"
-              isStrikeThrough: "=@ctx.current.item.isCompleted"
-            value: "=@ctx.current.item.value"
+              isActive: =@ctx.current.item.isActive
+              isDisabled: =@ctx.current.item.isWaiting
+              isPositive: =@ctx.current.item.isCompleted
+              isStrikeThrough: =@ctx.current.item.isCompleted
+            value: =@ctx.current.item.value
   isInitiallyCollapsed: false

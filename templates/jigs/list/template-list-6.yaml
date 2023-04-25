@@ -28,7 +28,7 @@ datasources:
           icon: bin
           value: 18
 
-data: "=@ctx.datasources.list"
+data: =@ctx.datasources.list
 item:
   type: component.list-item
   options:
@@ -40,10 +40,10 @@ item:
       - when: =@ctx.current.item.name = "Deleted" ? true :false
         color: color4
     divider: solid
-    title: "=@ctx.current.item.name"
+    title: =@ctx.current.item.name
     leftElement:
       element: icon
-      name: "=@ctx.current.item.icon"
+      name: =@ctx.current.item.icon
     rightElement:
       element: value
-      text: "=@ctx.current.item.value"
+      text: =@ctx.current.item.value

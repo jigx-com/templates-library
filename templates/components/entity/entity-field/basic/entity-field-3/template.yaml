@@ -3,4 +3,4 @@ options:
   contentType: date
   label: Date
   rightIcon: calendar
-  value: "=$fromMillis($toMillis($now()), '[M01]/[D01]/[Y0001]')"
+  value: =$fromMillis($toMillis($now()), '[M01]/[D01]/[Y0001]')

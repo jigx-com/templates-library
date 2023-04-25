@@ -22,10 +22,10 @@ summary:
         isContained: true
         isDuotone: true
       title:
-        text: "=@ctx.components.unit-price.state.value * @ctx.components.quantity.state.value"
+        text: =@ctx.components.unit-price.state.value * @ctx.components.quantity.state.value
         format:
           numberStyle: currency
-          currency: "=@ctx.components.currency.state.value"
+          currency: =@ctx.components.currency.state.value
       subtitle: Total invoice amount
 
 datasources:
@@ -49,7 +49,11 @@ datasources:
       provider: DATA_PROVIDER_DYNAMIC
       entities:
         - entity: default/invoices
-      query: "SELECT \n  id, \n  '$.invoice-number'\nFROM [default/invoices]\n"
+      query: |
+        SELECT   
+          id,   
+          '$.invoice-number'
+        FROM [default/invoices]
   subscribers:
     type: datasource.static
     options:
@@ -83,39 +87,37 @@ children:
           instanceId: date-of-issue
           options:
             label: Date of issue
-            initialValue: "=$fromMillis($toMillis(now()))"
+            initialValue: =$fromMillis($toMillis(now()))
         - type: component.date-picker
           instanceId: due-date
           options:
             label: Due date
-            initialValue:
-              "=$fromMillis($toMillis(@ctx.components.date-of-issue.state.value)
-              + (86400000 * 14))"
+            initialValue: =$fromMillis($toMillis(@ctx.components.date-of-issue.state.value) + (86400000 * 14))
         - type: component.dropdown
           instanceId: subscriber
           options:
             label: Subscriber
-            data: "=@ctx.datasources.subscribers"
+            data: =@ctx.datasources.subscribers
             item:
               type: component.dropdown-item
               options:
-                title: "=@ctx.current.item.subscriber"
-                value: "=@ctx.current.item.subscriber-id"
+                title: =@ctx.current.item.subscriber
+                value: =@ctx.current.item.subscriber-id
         - type: component.text-field
           instanceId: subscriber-id
           options:
             label: Subscriber ID
-            initialValue: "=@ctx.components.subscriber.state.value"
+            initialValue: =@ctx.components.subscriber.state.value
         - type: component.dropdown
           instanceId: method-of-payment
           options:
             label: Method of payment
-            data: "=@ctx.datasources.methodOfPayment"
+            data: =@ctx.datasources.methodOfPayment
             item:
               type: component.dropdown-item
               options:
-                title: "=@ctx.current.item.method"
-                value: "=@ctx.current.item.method"
+                title: =@ctx.current.item.method
+                value: =@ctx.current.item.method
         - type: component.text-field
           instanceId: item
           options:
@@ -125,12 +127,12 @@ children:
           instanceId: currency
           options:
             label: Currency
-            data: "=@ctx.datasources.currency"
+            data: =@ctx.datasources.currency
             item:
               type: component.dropdown-item
               options:
-                title: "=@ctx.current.item.currency"
-                value: "=@ctx.current.item.currency"
+                title: =@ctx.current.item.currency
+                value: =@ctx.current.item.currency
         - type: component.number-field
           instanceId: unit-price
           options:

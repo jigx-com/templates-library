@@ -7,7 +7,7 @@ options:
       pointWidth: 16
   series:
     - color: color2
-      data: "=@ctx.datasources.mydata"
+      data: =@ctx.datasources.mydata
   xAxis:
     categories:
       - "1"

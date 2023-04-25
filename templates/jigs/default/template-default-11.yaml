@@ -29,7 +29,7 @@ datasources:
 children:
   - type: component.location
     options:
-      address: "=@ctx.datasources.address.street & ',' & @ctx.datasources.address.city & ',' & @ctx.datasources.address.country"
+      address: =@ctx.datasources.address.street & ',' & @ctx.datasources.address.city & ',' & @ctx.datasources.address.country
   - type: component.location
     options:
-      markersData: "=@ctx.datasources.coordinates"
+      markersData: =@ctx.datasources.coordinates

@@ -45,18 +45,18 @@ summary:
       title: Items in your cart
       value: 3
 
-data: "=@ctx.datasources.product-item"
+data: =@ctx.datasources.product-item
 item:
   type: component.product-item
   options:
-    title: "=@ctx.current.item.title"
+    title: =@ctx.current.item.title
     image:
-      uri: "=@ctx.current.item.uri"
-    discount: "=@ctx.current.item.discount"
+      uri: =@ctx.current.item.uri
+    discount: =@ctx.current.item.discount
     price:
-      value: "=@ctx.current.item.price"
+      value: =@ctx.current.item.price
       format:
         numberStyle: currency
     amountControl:
       maximum: 10
-      initialValue: "=@ctx.current.item.amount"
+      initialValue: =@ctx.current.item.amount

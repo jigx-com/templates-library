@@ -1,19 +1,19 @@
 type: component.interactive-image
 options:
-  data: "=(@ctx.datasources.interactiveimg)\n"
+  data: =@ctx.datasources.interactiveimg
   item:
     type: component.interactive-image-item
     options:
-      id: "=@ctx.current.item.id"
-      title: "=@ctx.current.item.name"
-      groupId: "=@ctx.current.item.groupId"
-      icon: "=@ctx.current.item.isReserved = true ? 'close' :null"
-      color: "=@ctx.current.item.isReserved = true ? 'color4' :null"
+      id: =@ctx.current.item.id
+      title: =@ctx.current.item.name
+      groupId: =@ctx.current.item.groupId
+      icon: =@ctx.current.item.isReserved = true ? 'close' :null
+      color: =@ctx.current.item.isReserved = true ? 'color4' :null
       style:
-        isDisabled: "=@ctx.current.item.isReserved = true ? true :false"
+        isDisabled: =@ctx.current.item.isReserved = true ? true :false
       percentageCoordinates:
-        x: "=@ctx.current.item.xCoordinate"
-        y: "=@ctx.current.item.yCoordinate"
+        x: =@ctx.current.item.xCoordinate
+        y: =@ctx.current.item.yCoordinate
   groups:
     - title: Your selected seats
       id: selected

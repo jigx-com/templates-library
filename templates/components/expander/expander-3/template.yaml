@@ -11,5 +11,5 @@ options:
     - type: component.bar-chart
       options:
         series:
-          - data: "=@ctx.datasources.barchart"
+          - data: =@ctx.datasources.barchart
             color: color2

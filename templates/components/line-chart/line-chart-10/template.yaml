@@ -13,6 +13,6 @@ options:
       - "3"
       - "4"
   series:
-    - data: "=@ctx.datasources.line1"
+    - data: =@ctx.datasources.line1
       color: color5
       layout: area

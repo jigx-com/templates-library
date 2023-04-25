@@ -1,13 +1,13 @@
 type: component.dropdown
 instanceId: dropdown-6
 options:
-  data: "=@ctx.datasources.dropdown"
+  data: =@ctx.datasources.dropdown
   errorText: With error text
   item:
     type: component.dropdown-item
     options:
-      title: "=@ctx.current.item.value"
-      subtitle: "=@ctx.current.item.subtitle"
-      description: "=@ctx.current.item.description"
-      value: "=@ctx.current.item.value"
+      title: =@ctx.current.item.value
+      subtitle: =@ctx.current.item.subtitle
+      description: =@ctx.current.item.description
+      value: =@ctx.current.item.value
   label: Dropdown 6

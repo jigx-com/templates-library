@@ -186,62 +186,62 @@ children:
       children:
         - type: component.list
           options:
-            data: "=@ctx.datasources.list1"
+            data: =@ctx.datasources.list1
             maximumItemsToRender: 8
             isHorizontal: true
             item:
               type: component.list-item
               options:
-                title: "=@ctx.current.item.firstName & ' ' & @ctx.current.item.surname"
-                subtitle: "=@ctx.current.item.position"
+                title: =@ctx.current.item.firstName & ' ' & @ctx.current.item.surname
+                subtitle: =@ctx.current.item.position
                 horizontalItemSize: large
                 style:
                   isHighlighted: true
                 leftElement:
                   element: avatar
-                  text: "=$substring(@ctx.current.item.firstName, 0, 1) & $substring(@ctx.current.item.surname, 0, 1)"
-                  uri: "=@ctx.current.item.img"
+                  text: =$substring(@ctx.current.item.firstName, 0, 1) & $substring(@ctx.current.item.surname, 0, 1)
+                  uri: =@ctx.current.item.img
   - type: component.section
     options:
       title: List-item with image
       children:
         - type: component.list
           options:
-            data: "=@ctx.datasources.list2"
+            data: =@ctx.datasources.list2
             maximumItemsToRender: 8
             isHorizontal: true
             item:
               type: component.list-item
               options:
-                title: "=@ctx.current.item.section"
+                title: =@ctx.current.item.section
                 leftElement:
                   element: image
                   text: ""
-                  uri: "=@ctx.current.item.img"
+                  uri: =@ctx.current.item.img
   - type: component.section
     options:
       title: List with pie-chart
       children:
         - type: component.list
           options:
-            data: "=@ctx.datasources.pie-chart"
+            data: =@ctx.datasources.pie-chart
             isHorizontal: true
             item:
               type: component.pie-chart
               options:
                 chart:
                   title:
-                    text: "=@ctx.current.item.title"
+                    text: =@ctx.current.item.title
                     verticalAlign: center
                   subtitle:
-                    text: "=@ctx.current.item.subtitle"
+                    text: =@ctx.current.item.subtitle
                     verticalAlign: center
                   width: 100
                   height: 100
                 legend:
                   isHidden: true
                 series:
-                  - data: "=@ctx.current.item.data"
+                  - data: =@ctx.current.item.data
                     layout: pie
   - type: component.section
     options:
@@ -249,7 +249,7 @@ children:
       children:
         - type: component.list
           options:
-            data: "=@ctx.datasources.stage"
+            data: =@ctx.datasources.stage
             maximumItemsToRender: 8
             isHorizontal: true
             item:
@@ -260,11 +260,11 @@ children:
                     type: component.stage
                     options:
                       right:
-                        title: "=@ctx.current.item.from"
-                        subtitle: "=@ctx.current.item.time-from"
+                        title: =@ctx.current.item.from
+                        subtitle: =@ctx.current.item.time-from
                       left:
-                        title: "=@ctx.current.item.to"
-                        subtitle: "=@ctx.current.item.time-to"
+                        title: =@ctx.current.item.to
+                        subtitle: =@ctx.current.item.time-to
                 children:
                   - type: component.entity
                     options:
@@ -272,43 +272,43 @@ children:
                         - type: component.entity-field
                           options:
                             label: Airline
-                            value: "=@ctx.current.item.airline"
+                            value: =@ctx.current.item.airline
                         - type: component.entity-field
                           options:
                             label: Flight No.
-                            value: "=@ctx.current.item.flight"
+                            value: =@ctx.current.item.flight
                         - type: component.entity-field
                           options:
                             label: Seat width
-                            value: "=@ctx.current.item.seatWidth"
+                            value: =@ctx.current.item.seatWidth
                         - type: component.entity-field
                           options:
                             label: Seat fold
-                            value: "=@ctx.current.item.seatFold"
+                            value: =@ctx.current.item.seatFold
   - type: component.section
     options:
       title: List-item products
       children:
         - type: component.list
           options:
-            data: "=@ctx.datasources.products"
+            data: =@ctx.datasources.products
             isHorizontal: true
             item:
               type: component.list-item
               options:
-                title: "=@ctx.current.item.name"
-                subtitle: "=@ctx.current.item.subtitle"
-                description: "=@ctx.current.item.description"
+                title: =@ctx.current.item.name
+                subtitle: =@ctx.current.item.subtitle
+                description: =@ctx.current.item.description
                 label:
-                  title: "=@ctx.current.item.label-title"
+                  title: =@ctx.current.item.label-title
                   color:
-                    - when: "=@ctx.current.item.label"
-                      color: "=@ctx.current.item.color"
+                    - when: =@ctx.current.item.label
+                      color: =@ctx.current.item.color
                 divider: solid
                 horizontalItemSize: large
                 style:
                   isPositive: false
-                  isHighlighted: "=@ctx.current.item.highlight"
+                  isHighlighted: =@ctx.current.item.highlight
                   isStrikeThrough: false
                   isError: false
                   isWarning: false
@@ -316,7 +316,7 @@ children:
                 leftElement:
                   element: image
                   resizeMode: contain
-                  uri: "=@ctx.current.item.uri"
+                  uri: =@ctx.current.item.uri
                   text: N/A
                 rightElement:
                   element: amount-control
@@ -329,30 +329,30 @@ children:
       children:
         - type: component.list
           options:
-            data: "=@ctx.datasources.house"
+            data: =@ctx.datasources.house
             isHorizontal: true
             item:
               type: component.list-item
               options:
-                title: "=@ctx.current.item.name"
-                subtitle: "=@ctx.current.item.subtitle"
+                title: =@ctx.current.item.name
+                subtitle: =@ctx.current.item.subtitle
                 color:
                   - when: true
-                    color: "=@ctx.current.item.color"
+                    color: =@ctx.current.item.color
                 divider: solid
                 horizontalItemSize: regular
                 style:
                   isPositive: false
-                  isHighlighted: "=@ctx.current.item.highlight"
+                  isHighlighted: =@ctx.current.item.highlight
                   isStrikeThrough: false
                   isError: false
                   isWarning: false
                   isDisabled: false
                 leftElement:
                   element: icon
-                  name: "=@ctx.current.item.icon"
+                  name: =@ctx.current.item.icon
                   isContained: true
                   isDuotone: true
                 rightElement:
                   element: switch
-                  value: "=@ctx.current.item.switch-value"
+                  value: =@ctx.current.item.switch-value

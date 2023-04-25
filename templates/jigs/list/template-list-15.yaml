@@ -51,21 +51,21 @@ header:
         title: Filter, progress and label
         subtitle: List with filter, progress and label
 
-data: "=$filter(@ctx.datasources.filter-list, function($v, $i, $a) {\n  @ctx.jig.state.filter = 'ALL' or $v.status = @ctx.jig.state.filter\n}) \n"
+data: =$filter(@ctx.datasources.filter-list, function($v, $i, $a) {  @ctx.jig.state.filter = 'ALL' or $v.status = @ctx.jig.state.filter})
 item:
   type: component.list-item
   options:
-    title: "=@ctx.current.item.title"
-    subtitle: "=@ctx.current.item.subtitle"
-    progress: "=@ctx.current.item.progress"
+    title: =@ctx.current.item.title
+    subtitle: =@ctx.current.item.subtitle
+    progress: =@ctx.current.item.progress
     color:
-      - when: "=@ctx.current.item.status = 'active'"
+      - when: =@ctx.current.item.status = 'active'
         color: color2
-      - when: "=@ctx.current.item.status  = 'inactive'"
+      - when: =@ctx.current.item.status  = 'inactive'
         color: color4
     label:
       title: Label active
-      isHidden: "=@ctx.current.item.status  = 'inactive'"
+      isHidden: =@ctx.current.item.status  = 'inactive'
       color:
-        - when: "=@ctx.current.item.status = 'active'"
+        - when: =@ctx.current.item.status = 'active'
           color: color2

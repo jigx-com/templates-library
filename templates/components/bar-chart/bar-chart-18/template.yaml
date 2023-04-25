@@ -9,11 +9,11 @@ options:
       pointWidth: 16
   series:
     - color: color3
-      data: "=@ctx.datasources.serie1"
+      data: =@ctx.datasources.serie1
     - color: color4
-      data: "=@ctx.datasources.serie2"
+      data: =@ctx.datasources.serie2
     - color: color5
-      data: "=@ctx.datasources.serie3"
+      data: =@ctx.datasources.serie3
   xAxis:
     categories:
       - "1"

@@ -15,9 +15,9 @@ options:
   legend:
     isHidden: false
   series:
-    - data: "=@ctx.datasources.line1"
+    - data: =@ctx.datasources.line1
       color: color1
       layout: area-gradient
-    - data: "=@ctx.datasources.line2"
+    - data: =@ctx.datasources.line2
       color: color2
       layout: line

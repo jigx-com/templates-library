@@ -38,18 +38,18 @@ datasources:
               title: Verbal
           title: Sign contract
 
-data: "=@ctx.datasources.calendar-data"
+data: =@ctx.datasources.calendar-data
 item:
   type: component.event
   options:
-    title: "=@ctx.current.item.title"
+    title: =@ctx.current.item.title
     buttonTitle: teestt
     from:
       format:
         dateFormat: l
-      text: "=$fromMillis($toMillis($now()) + ($number(@ctx.current.item.id)- 1) * @ctx.current.item.seconds)"
-    isAllDay: "=@ctx.current.item.allday"
-    location: "=@ctx.current.item.location"
-    people: "=@ctx.current.item.people"
-    tags: "=@ctx.current.item.tags"
-    to: "=$fromMillis($toMillis($now()) + $number(@ctx.current.item.id) * 3600000)"
+      text: =$fromMillis($toMillis($now()) + ($number(@ctx.current.item.id)- 1) * @ctx.current.item.seconds)
+    isAllDay: =@ctx.current.item.allday
+    location: =@ctx.current.item.location
+    people: =@ctx.current.item.people
+    tags: =@ctx.current.item.tags
+    to: =$fromMillis($toMillis($now()) + $number(@ctx.current.item.id) * 3600000)

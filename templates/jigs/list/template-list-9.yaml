@@ -55,14 +55,14 @@ datasources:
             - x: x-value
               y: 9412
 
-data: "=@ctx.datasources.bar"
+data: =@ctx.datasources.bar
 item:
   type: component.bar-chart
   options:
     chart:
-      title: "=@ctx.current.item.title"
-      subtitle: "=@ctx.current.item.subtitle"
+      title: =@ctx.current.item.title
+      subtitle: =@ctx.current.item.subtitle
       height: 260
     series:
-      - data: "=@ctx.current.item.data"
-        color: "=@ctx.current.item.color"
+      - data: =@ctx.current.item.data
+        color: =@ctx.current.item.color

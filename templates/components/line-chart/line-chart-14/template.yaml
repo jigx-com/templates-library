@@ -14,7 +14,7 @@ options:
   legend:
     isHidden: false
   series:
-    - data: "=@ctx.datasources.line4"
+    - data: =@ctx.datasources.line4
       color: color2
       name: My data 4
       dataLabels:

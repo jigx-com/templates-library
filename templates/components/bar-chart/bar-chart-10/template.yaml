@@ -6,7 +6,7 @@ options:
     series:
       pointWidth: 24
   series:
-    - data: "=@ctx.datasources.mydata"
+    - data: =@ctx.datasources.mydata
   xAxis:
     categories:
       - "1"

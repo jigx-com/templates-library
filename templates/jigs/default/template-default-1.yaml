@@ -98,7 +98,7 @@ children:
           horizontalAlign: center
           verticalAlign: bottom
       series:
-        - data: "=@ctx.datasources.series1"
+        - data: =@ctx.datasources.series1
           layout: area-gradient
   - type: component.section
     options:
@@ -106,26 +106,26 @@ children:
       children:
         - type: component.list
           options:
-            data: "=@ctx.datasources.list"
+            data: =@ctx.datasources.list
             item:
               type: component.list-item
               options:
                 divider: solid
-                title: "=@ctx.current.item.title"
-                subtitle: "=@ctx.current.item.subtitle"
-                description: "=@ctx.current.item.description"
+                title: =@ctx.current.item.title
+                subtitle: =@ctx.current.item.subtitle
+                description: =@ctx.current.item.description
                 label:
-                  title: "=@ctx.current.item.value"
+                  title: =@ctx.current.item.value
                   color:
                     - when: true
-                      color: "=@ctx.current.item.color"
+                      color: =@ctx.current.item.color
                 leftElement:
                   element: icon
-                  name: "=@ctx.current.item.category"
+                  name: =@ctx.current.item.category
                   isContained: true
                   isDuotone: true
                 rightElement:
                   element: icon
                   name: information-circle
                 style:
-                  isPositive: "=@ctx.current.item.isPositive"
+                  isPositive: =@ctx.current.item.isPositive

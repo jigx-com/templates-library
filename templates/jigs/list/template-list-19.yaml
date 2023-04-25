@@ -50,19 +50,19 @@ header:
         title: Image & value
         subtitle: List with horizontal scrolling using image and value
 
-data: "=@ctx.datasources.horizontal"
+data: =@ctx.datasources.horizontal
 item:
   type: component.list-item
   options:
-    title: "=@ctx.current.item.title"
-    subtitle: "=@ctx.current.item.subtitle"
+    title: =@ctx.current.item.title
+    subtitle: =@ctx.current.item.subtitle
     leftElement:
       element: image
       text: ""
-      uri: "=@ctx.current.item.image"
+      uri: =@ctx.current.item.image
     rightElement:
       element: value
-      text: "=@ctx.current.item.rightElement"
+      text: =@ctx.current.item.rightElement
     divider: solid
     style:
-      isHighlighted: "=@ctx.current.item.highlight"
+      isHighlighted: =@ctx.current.item.highlight

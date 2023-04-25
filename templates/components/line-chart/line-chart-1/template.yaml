@@ -25,12 +25,12 @@ options:
     series:
       pointWidth: 12
   series:
-    - data: "=@ctx.datasources.revenues"
+    - data: =@ctx.datasources.revenues
       name: Revenues
       color: positive
       dataLabels:
         - isEnabled: false
-    - data: "=@ctx.datasources.expenses"
+    - data: =@ctx.datasources.expenses
       name: Expenses
       color: negative
       dataLabels:

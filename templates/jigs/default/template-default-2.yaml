@@ -1,4 +1,4 @@
-title: "=@ctx.datasources.employeeDetail.employee-first-name & ' ' & @ctx.datasources.employeeDetail.employee-surname"
+title: =@ctx.datasources.employeeDetail.employee-first-name & ' ' & @ctx.datasources.employeeDetail.employee-surname
 type: jig.default
 
 header:
@@ -29,8 +29,8 @@ datasources:
 children:
   - type: component.avatar
     options:
-      text: "=$substring(@ctx.datasources.employeeDetail.employee-first-name, 0, 1) & $substring(@ctx.datasources.employeeDetail.employee-surname, 0, 1)"
-      uri: "=@ctx.datasources.employeeDetail.employee-photo"
+      text: =$substring(@ctx.datasources.employeeDetail.employee-first-name, 0, 1) & $substring(@ctx.datasources.employeeDetail.employee-surname, 0, 1)
+      uri: =@ctx.datasources.employeeDetail.employee-photo
       size: large
       align: center
   - type: component.entity
@@ -43,18 +43,16 @@ children:
               - type: component.entity-field
                 options:
                   label: Date of birth
-                  value:
-                    "=$fromMillis($toMillis(@ctx.datasources.employeeDetail.employee-date-of-birth),
-                    '[D1o] [MNn] [Y]')"
+                  value: =$fromMillis($toMillis(@ctx.datasources.employeeDetail.employee-date-of-birth), '[D1o] [MNn] [Y]')
               - type: component.entity-field
                 options:
                   label: Phone number
-                  value: "=@ctx.datasources.employeeDetail.employee-phone-number"
+                  value: =@ctx.datasources.employeeDetail.employee-phone-number
                   contentType: phone
               - type: component.entity-field
                 options:
                   label: E-mail
-                  value: "=@ctx.datasources.employeeDetail.employee-email"
+                  value: =@ctx.datasources.employeeDetail.employee-email
                   contentType: email
         - type: component.section
           options:
@@ -63,15 +61,15 @@ children:
               - type: component.entity-field
                 options:
                   label: Date of starting work
-                  value: "=$fromMillis($toMillis(@ctx.datasources.employeeDetail.employee-startWork), '[D1o] [MNn] [Y]')"
+                  value: =$fromMillis($toMillis(@ctx.datasources.employeeDetail.employee-startWork), '[D1o] [MNn] [Y]')
               - type: component.entity-field
                 options:
                   label: Position
-                  value: "=@ctx.datasources.employeeDetail.employee-position"
+                  value: =@ctx.datasources.employeeDetail.employee-position
   - type: component.list
     options:
       isHorizontal: true
-      data: "=@ctx.datasources.employeeDetail"
+      data: =@ctx.datasources.employeeDetail
       maximumItemsToRender: 4
       item:
         type: component.list-item
@@ -81,7 +79,7 @@ children:
           leftElement:
             element: image
             text: ""
-            uri: "=@ctx.current.item.employee-contract"
+            uri: =@ctx.current.item.employee-contract
           style:
             isHighlighted: true
           onPress:
@@ -89,6 +87,6 @@ children:
             options:
               linkTo: create the file for this action
               parameters:
-                first-name: "=@ctx.datasources.employeeDetail.employee-first-name"
-                surname: "=@ctx.datasources.employeeDetail.employee-surname"
-                contract-image: "=@ctx.datasources.employeeDetail.employee-contract"
+                first-name: =@ctx.datasources.employeeDetail.employee-first-name
+                surname: =@ctx.datasources.employeeDetail.employee-surname
+                contract-image: =@ctx.datasources.employeeDetail.employee-contract

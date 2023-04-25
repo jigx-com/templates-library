@@ -1,18 +1,18 @@
 type: component.list
 options:
   maximumItemsToRender: 8
-  data: "=@ctx.datasources.users"
+  data: =@ctx.datasources.users
   item:
     type: component.list-item
     options:
       divider: solid
-      title: "=@ctx.current.item.title"
-      subtitle: "=@ctx.current.item.subtitle"
-      description: "=@ctx.current.item.description"
+      title: =@ctx.current.item.title
+      subtitle: =@ctx.current.item.subtitle
+      description: =@ctx.current.item.description
       leftElement:
         element: avatar
-        text: "=@ctx.current.item.avatar-text"
-        uri: "=@ctx.current.item.avatar"
+        text: =@ctx.current.item.avatar-text
+        uri: =@ctx.current.item.avatar
       rightElement:
         element: icon
         name: arrow-right

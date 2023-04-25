@@ -1,14 +1,14 @@
 type: component.list
 options:
   maximumItemsToRender: 8
-  data: "=@ctx.datasources.stage"
+  data: =@ctx.datasources.stage
   item:
     type: component.stage
     options:
       icon: arrow-right
       right:
-        title: "=@ctx.current.item.endTitle"
-        subtitle: "=@ctx.current.item.endSubtitle"
+        title: =@ctx.current.item.endTitle
+        subtitle: =@ctx.current.item.endSubtitle
       left:
-        title: "=@ctx.current.item.startTitle"
-        subtitle: "=@ctx.current.item.startSubtitle"
+        title: =@ctx.current.item.startTitle
+        subtitle: =@ctx.current.item.startSubtitle

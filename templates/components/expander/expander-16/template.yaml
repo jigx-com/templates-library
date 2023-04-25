@@ -15,5 +15,5 @@ options:
       options:
         series:
           - color: color2
-            data: "=@ctx.datasources.barchart"
+            data: =@ctx.datasources.barchart
   isInitiallyCollapsed: false

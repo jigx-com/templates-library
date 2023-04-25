@@ -72,16 +72,16 @@ children:
                 instanceId: gf-dropdown
                 options:
                   label: Dropdown
-                  data: "=@ctx.datasources.dropdownOptions"
+                  data: =@ctx.datasources.dropdownOptions
                   item:
                     type: component.dropdown-item
                     options:
-                      title: "=@ctx.current.item.color"
-                      value: "=@ctx.current.item.color"
+                      title: =@ctx.current.item.color
+                      value: =@ctx.current.item.color
                       leftElement:
                         element: avatar
                         text: ""
-                        uri: "=@ctx.current.item.url"
+                        uri: =@ctx.current.item.url
         - type: component.section
           options:
             title: Fields for write

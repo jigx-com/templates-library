@@ -1,10 +1,10 @@
 type: component.dropdown
 instanceId: dropdown-1
 options:
-  data: "=@ctx.datasources.dropdown"
+  data: =@ctx.datasources.dropdown
   item:
     type: component.dropdown-item
     options:
-      title: "=@ctx.current.item.value"
-      value: "=@ctx.current.item.value"
+      title: =@ctx.current.item.value
+      value: =@ctx.current.item.value
   label: Dropdown 1

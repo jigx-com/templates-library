@@ -2,25 +2,25 @@ type: component.list
 options:
   maximumItemsToRender: 8
   isHorizontal: true
-  data: "=@ctx.datasources.components"
+  data: =@ctx.datasources.components
   item:
     type: component.list-item
     options:
-      title: "=@ctx.current.item.name"
-      subtitle: "=@ctx.current.item.subtitle"
-      description: "=@ctx.current.item.description"
+      title: =@ctx.current.item.name
+      subtitle: =@ctx.current.item.subtitle
+      description: =@ctx.current.item.description
       color:
         - when: true
-          color: "=@ctx.current.item.color"
+          color: =@ctx.current.item.color
       divider: solid
       horizontalItemSize: regular
       style:
-        isHighlighted: "=@ctx.current.item.highlight"
+        isHighlighted: =@ctx.current.item.highlight
       leftElement:
         element: icon
-        name: "=@ctx.current.item.icon"
+        name: =@ctx.current.item.icon
         isContained: true
         isDuotone: true
       rightElement:
         element: switch
-        value: "=@ctx.current.item.switch-value"
+        value: =@ctx.current.item.switch-value

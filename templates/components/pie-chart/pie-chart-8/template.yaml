@@ -12,5 +12,5 @@ options:
   legend:
     isHidden: false
   series:
-    - data: "=@ctx.datasources.issues"
+    - data: =@ctx.datasources.issues
       layout: pie

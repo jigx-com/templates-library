@@ -18,7 +18,7 @@ options:
       - "3"
       - "4"
   series:
-    - data: "=@ctx.datasources.line"
+    - data: =@ctx.datasources.line
       name: Custom name
       color: color3
       layout: area-gradient

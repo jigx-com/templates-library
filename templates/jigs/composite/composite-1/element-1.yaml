@@ -41,12 +41,12 @@ children:
           marker:
             isHidden: false
       series:
-        - data: "=@ctx.datasources.won"
+        - data: =@ctx.datasources.won
           color: positive
-          name: "=@ctx.datasources.won.x"
-        - data: "=@ctx.datasources.lost"
+          name: =@ctx.datasources.won.x
+        - data: =@ctx.datasources.lost
           color: positive
-          name: "=@ctx.datasources.lost.x"
-        - data: "=@ctx.datasources.all"
+          name: =@ctx.datasources.lost.x
+        - data: =@ctx.datasources.all
           color: positive
-          name: "=@ctx.datasources.all.x"
+          name: =@ctx.datasources.all.x

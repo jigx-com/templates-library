@@ -1,7 +1,7 @@
 type: component.list
 options:
   maximumItemsToRender: 8
-  data: "=@ctx.datasources.expander-stage"
+  data: =@ctx.datasources.expander-stage
   item:
     type: component.expander
     options:
@@ -11,11 +11,11 @@ options:
           options:
             icon: plane-2
             right:
-              title: "=@ctx.current.item.endTitle"
-              subtitle: "=@ctx.current.item.endSubtitle"
+              title: =@ctx.current.item.endTitle
+              subtitle: =@ctx.current.item.endSubtitle
             left:
-              title: "=@ctx.current.item.startTitle"
-              subtitle: "=@ctx.current.item.startSubtitle"
+              title: =@ctx.current.item.startTitle
+              subtitle: =@ctx.current.item.startSubtitle
       children:
         - type: component.entity
           options:
@@ -27,12 +27,12 @@ options:
                     - type: component.entity-field
                       options:
                         label: Title 1
-                        value: "=@ctx.current.item.value-entity-field-1"
+                        value: =@ctx.current.item.value-entity-field-1
                     - type: component.entity-field
                       options:
                         label: Title 2
-                        value: "=@ctx.current.item.value-entity-field-2"
+                        value: =@ctx.current.item.value-entity-field-2
               - type: component.entity-field
                 options:
                   label: Title 3
-                  value: "=@ctx.current.item.value-entity-field-3"
+                  value: =@ctx.current.item.value-entity-field-3

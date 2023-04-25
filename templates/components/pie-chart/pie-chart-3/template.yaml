@@ -8,4 +8,4 @@ options:
       text: Chart subtitle
       verticalAlign: center
   series:
-    - data: "=@ctx.datasources.progress"
+    - data: =@ctx.datasources.progress

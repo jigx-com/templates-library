@@ -10,7 +10,7 @@ options:
       pointWidth: 16
   series:
     - color: color1
-      data: "=@ctx.datasources.population"
+      data: =@ctx.datasources.population
       name: USA Population
   xAxis:
     categories:

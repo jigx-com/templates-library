@@ -18,7 +18,10 @@ datasources:
       provider: DATA_PROVIDER_DYNAMIC
       entities:
         - entity: default/employees
-      query: "SELECT \n  id\nFROM [default/employees] \n"
+      query: |
+        SELECT   
+          id
+        FROM [default/employees]
 
 children:
   - type: component.form
@@ -30,7 +33,7 @@ children:
           options:
             label: employeeId
             isHidden: true
-            initialValue: "=($count(@ctx.datasources.employees.id) = 0 ? 1 :$count(@ctx.datasources.employees.id) + 1)"
+            initialValue: =($count(@ctx.datasources.employees.id) = 0 ? 1 :$count(@ctx.datasources.employees.id) + 1)
         - type: component.avatar-field
           instanceId: employee-photo
           options:

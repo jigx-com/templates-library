@@ -1,7 +1,7 @@
 type: component.list
 options:
   maximumItemsToRender: 8
-  data: "=@ctx.datasources.expander-titles"
+  data: =@ctx.datasources.expander-titles
   item:
     type: component.expander
     options:
@@ -9,8 +9,8 @@ options:
         centerElement:
           type: component.titles
           options:
-            title: "=@ctx.current.item.title"
-            subtitle: "=@ctx.current.item.subtitle"
+            title: =@ctx.current.item.title
+            subtitle: =@ctx.current.item.subtitle
             icon: person
             align: left
       children:
@@ -23,12 +23,12 @@ options:
                     - type: component.entity-field
                       options:
                         label: Title 1
-                        value: "=@ctx.current.item.value-entity-field-1"
+                        value: =@ctx.current.item.value-entity-field-1
                     - type: component.entity-field
                       options:
                         label: Title 2
-                        value: "=@ctx.current.item.value-entity-field-2"
+                        value: =@ctx.current.item.value-entity-field-2
               - type: component.entity-field
                 options:
                   label: Title 3
-                  value: "=@ctx.current.item.value-entity-field-3"
+                  value: =@ctx.current.item.value-entity-field-3

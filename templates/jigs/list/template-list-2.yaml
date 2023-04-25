@@ -143,26 +143,26 @@ summary:
     type: component.summary
     options:
       layout: counter
-      value: "=$count(@ctx.datasources.components)"
+      value: =$count(@ctx.datasources.components)
       title: Opportunities
       subtitle: ="Worth than" & " $ " & $sum(@ctx.datasources.components.value)
 
-data: "=$filter(@ctx.datasources.components, function($v, $i, $a) {\n  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter\n}) \n"
+data: =$filter(@ctx.datasources.components, function($v, $i, $a) {  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter})
 item:
   type: component.list-item
   options:
-    title: "=@ctx.current.item.name"
-    subtitle: "=@ctx.current.item.reason"
+    title: =@ctx.current.item.name
+    subtitle: =@ctx.current.item.reason
     color:
-      - when: "=(@ctx.current.item.result= 'Success' ? true :false)"
+      - when: =(@ctx.current.item.result= 'Success' ? true :false)
         color: color2
-    progress: "=@ctx.current.item.progress"
+    progress: =@ctx.current.item.progress
     leftElement:
       element: checkbox
-      value: "=(@ctx.current.item.status= 'Finished' ? true :false)"
+      value: =(@ctx.current.item.status= 'Finished' ? true :false)
     style:
-      isError: "=(@ctx.current.item.result= 'Unsuccess' ? true :false)"
-      isStrikeThrough: "=(@ctx.current.item.status= 'Finished' ? true :false)"
+      isError: =(@ctx.current.item.result= 'Unsuccess' ? true :false)
+      isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
     rightElement:
       element: value
       text: ="$ " & @ctx.current.item.value
