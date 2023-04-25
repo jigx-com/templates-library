@@ -37,14 +37,6 @@ header:
         title: Product item and summary
         subtitle: List with product item and summary
 
-summary:
-  children:
-    type: component.summary
-    options:
-      layout: cart
-      title: Items in your cart
-      value: 3
-
 data: =@ctx.datasources.product-item
 item:
   type: component.product-item
@@ -60,3 +52,11 @@ item:
     amountControl:
       maximum: 10
       initialValue: =@ctx.current.item.amount
+
+summary:
+  children:
+    type: component.summary
+    options:
+      layout: cart
+      title: Items in your cart
+      value: 3

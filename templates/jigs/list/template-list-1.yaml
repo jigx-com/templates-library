@@ -13,19 +13,6 @@ header:
         title: Product inventory
         subtitle: Updated 3 mins ago
 
-summary:
-  children:
-    type: component.summary
-    options:
-      layout: default
-      title: =$count(@ctx.datasources.inventory) & " Products"
-      subtitle: In total
-      leftIcon:
-        element: icon
-        name: shopping-cart-empty-1
-        isContained: true
-        isDuotone: true
-
 datasources:
   inventory:
     type: datasource.static
@@ -144,3 +131,16 @@ item:
             type: action.go-to
             options:
               linkTo: create the file for this action
+
+summary:
+  children:
+    type: component.summary
+    options:
+      layout: default
+      title: =$count(@ctx.datasources.inventory) & " Products"
+      subtitle: In total
+      leftIcon:
+        element: icon
+        name: shopping-cart-empty-1
+        isContained: true
+        isDuotone: true

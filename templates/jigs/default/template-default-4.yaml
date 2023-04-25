@@ -11,23 +11,6 @@ header:
         source:
           uri: https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
 
-summary:
-  children:
-    type: component.summary
-    options:
-      layout: default
-      leftIcon:
-        element: icon
-        name: form
-        isContained: true
-        isDuotone: true
-      title:
-        text: =@ctx.components.unit-price.state.value * @ctx.components.quantity.state.value
-        format:
-          numberStyle: currency
-          currency: =@ctx.components.currency.state.value
-      subtitle: Total invoice amount
-
 datasources:
   methodOfPayment:
     type: datasource.static
@@ -147,3 +130,20 @@ children:
           instanceId: signature
           options:
             label: Signature
+
+summary:
+  children:
+    type: component.summary
+    options:
+      layout: default
+      leftIcon:
+        element: icon
+        name: form
+        isContained: true
+        isDuotone: true
+      title:
+        text: =@ctx.components.unit-price.state.value * @ctx.components.quantity.state.value
+        format:
+          numberStyle: currency
+          currency: =@ctx.components.currency.state.value
+      subtitle: Total invoice amount

@@ -126,15 +126,6 @@ filter:
   - title: Lost
     value: Unsuccess
 
-summary:
-  children:
-    type: component.summary
-    options:
-      layout: counter
-      value: =$count(@ctx.datasources.components)
-      title: Opportunities
-      subtitle: ="Worth than" & " $ " & $sum(@ctx.datasources.components.value)
-
 data: =$filter(@ctx.datasources.components, function($v, $i, $a) {  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter})
 item:
   type: component.list-item
@@ -154,3 +145,12 @@ item:
     rightElement:
       element: value
       text: ="$ " & @ctx.current.item.value
+
+summary:
+  children:
+    type: component.summary
+    options:
+      layout: counter
+      value: =$count(@ctx.datasources.components)
+      title: Opportunities
+      subtitle: ="Worth than" & " $ " & $sum(@ctx.datasources.components.value)
