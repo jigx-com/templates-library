@@ -5,34 +5,36 @@ datasources:
   calendar-data:
     type: datasource.static
     options:
-      data:
-        - allday: true
-          id: "1"
+      data:            
+        - id: 1
           location: Redmond, WA
+          eventStart: 1
+          eventEnd: 2
           people:
             - avatarUrl: https://randomuser.me/api/portraits/men/1.jpg
               fullName: Tim Cook
-          seconds: 3600000
           tags:
             - color: color2
               title: Negotiation
           title: Negotiation with Microsoft
-        - id: "2"
+        - id: 2
           location: Palo Alto, CA
+          eventStart: 2
+          eventEnd: 4
           people:
             - avatarUrl: https://jollycontrarian.com/images/6/6c/Rickroll.jpg
               fullName: Michael Tong
-          seconds: 3600000
           tags:
             - color: color5
               title: Qualification
           title: Demo for Facebook
-        - id: "3"
+        - id: 3
           location: Menlo Park, CA
+          eventStart: 24
+          eventEnd: 25
           people:
             - avatarUrl: https://profile-images.xing.com/images/96508f00bdc74c9f2ffd7f63010ea5bd-5/markus-dopp.1024x1024.jpg
               fullName: Michael Tong
-          seconds: 48000000
           tags:
             - color: color6
               title: Verbal
@@ -43,13 +45,14 @@ item:
   type: component.event
   options:
     title: =@ctx.current.item.title
-    buttonTitle: teestt
-    from:
+    from: 
+      text: =$fromMillis($toMillis($now()) + @ctx.current.item.eventStart * 3600000)
       format:
-        dateFormat: l
-      text: =$fromMillis($toMillis($now()) + ($number(@ctx.current.item.id)- 1) * @ctx.current.item.seconds)
-    isAllDay: =@ctx.current.item.allday
+        dateFormat: lll
+    to: 
+      text: =$fromMillis($toMillis($now()) + @ctx.current.item.eventEnd * 3600000)
+      format:
+        dateFormat: lll
     location: =@ctx.current.item.location
     people: =@ctx.current.item.people
     tags: =@ctx.current.item.tags
-    to: =$fromMillis($toMillis($now()) + $number(@ctx.current.item.id) * 3600000)
