@@ -59,7 +59,7 @@ datasources:
           progress: 0.47
           value: 42000
           status: Finished
-          result: Unsuccess
+          result: Unsuccessful
           reason: Stopped Because Of High Price
           badge: "off"
         - name: Ovuga
@@ -103,7 +103,7 @@ datasources:
           progress: 0.78
           value: 154000
           status: Finished
-          result: Unsuccess
+          result: Unsuccessful
           reason: Stopped Because Of High Price
           badge: "on"
         - name: Jacobs Engineering Group
@@ -136,16 +136,8 @@ filter:
   - title: Won
     value: Success
   - title: Lost
-    value: Unsuccess
+    value: Unsuccessful
 
-summary:
-  children:
-    type: component.summary
-    options:
-      layout: counter
-      value: =$count(@ctx.datasources.components)
-      title: Opportunities
-      subtitle: ="Worth than" & " $ " & $sum(@ctx.datasources.components.value)
 
 data: =$filter(@ctx.datasources.components, function($v, $i, $a) {  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter})
 item:
@@ -161,8 +153,17 @@ item:
       element: checkbox
       value: =(@ctx.current.item.status= 'Finished' ? true :false)
     style:
-      isError: =(@ctx.current.item.result= 'Unsuccess' ? true :false)
+      isError: =(@ctx.current.item.result= 'Unsuccessful' ? true :false)
       isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
     rightElement:
       element: value
       text: ="$ " & @ctx.current.item.value
+
+summary:
+  children:
+    type: component.summary
+    options:
+      layout: counter
+      value: =$count(@ctx.datasources.components)
+      title: Opportunities
+      subtitle: ="Worth" & " $ " & $sum(@ctx.datasources.components.value)
