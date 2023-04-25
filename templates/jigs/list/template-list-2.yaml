@@ -157,7 +157,11 @@ item:
       isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
     rightElement:
       element: value
-      text: ="$ " & @ctx.current.item.value
+      text: 
+        text: =@ctx.current.item.value
+        format:
+          numberStyle: currency
+          currency: USD
 
 summary:
   children:
@@ -166,4 +170,4 @@ summary:
       layout: counter
       value: =$count(@ctx.datasources.components)
       title: Opportunities
-      subtitle: ="Worth" & " $ " & $sum(@ctx.datasources.components.value)
+      subtitle: ="Worth $ " & $sum(@ctx.datasources.components.value)
