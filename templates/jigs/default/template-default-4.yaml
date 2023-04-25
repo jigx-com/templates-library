@@ -128,7 +128,7 @@ children:
             initialValue: 1
             stepper:
               isEnabled: true
-              value: 10
+              value: 1
         - type: component.signature-field
           instanceId: signature
           options:
