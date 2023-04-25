@@ -70,7 +70,7 @@ children:
           instanceId: date-of-issue
           options:
             label: Date of issue
-            initialValue: =$fromMillis($toMillis(now()))
+            initialValue: =$now()
         - type: component.date-picker
           instanceId: due-date
           options:
@@ -126,6 +126,9 @@ children:
           options:
             label: Quantity
             initialValue: 1
+            stepper:
+              isEnabled: true
+              value: 10
         - type: component.signature-field
           instanceId: signature
           options:
