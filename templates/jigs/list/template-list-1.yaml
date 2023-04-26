@@ -1,5 +1,6 @@
 title: Stock Inventory
 type: jig.list
+description: =@ctx.solution.state.selectedProduct
 
 header:
   type: component.jig-header
@@ -120,17 +121,19 @@ item:
           icon: pencil-2
           color: warning
           onPress:
-            type: action.go-to
+            type: action.set-state
             options:
-              linkTo: create the file for this action
+              state: =@ctx.solution.state.selectedProduct
+              value: =@ctx.current.item.name
       right:
         - label: label
           icon: pencil-2
           color: primary
           onPress:
-            type: action.go-to
+            type: action.set-state
             options:
-              linkTo: create the file for this action
+              state: =@ctx.solution.state.selectedProduct
+              value: =@ctx.current.item.name
 
 summary:
   children:
