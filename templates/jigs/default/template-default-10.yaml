@@ -57,19 +57,22 @@ datasources:
         - title: 25%
           subtitle: As
           data:
-            - 25
+            - y: 25
+              color: color1
             - y: 75
               color: transparent
         - title: 45%
           subtitle: Brno
           data:
-            - 45
+            - y: 45
+              color: color2
             - y: 55
               color: transparent
         - title: 33%
           subtitle: Prague
           data:
-            - 33
+            - y: 33
+              color: color3
             - y: 67
               color: transparent
   stage:

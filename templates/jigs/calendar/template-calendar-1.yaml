@@ -1,6 +1,13 @@
 title: Calendar
 type: jig.calendar
 
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Add appointment
+          url: https://docs.jigx.com/examples/submit-form
+
 datasources:
   calendar-data:
     type: datasource.static

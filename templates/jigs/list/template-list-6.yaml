@@ -13,6 +13,13 @@ header:
         title: Icon and Value
         subtitle: List with left icon and right value
 
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Add
+          url: https://docs.jigx.com/examples/submit-form
+
 datasources:
   list:
     type: datasource.static

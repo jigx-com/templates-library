@@ -13,6 +13,13 @@ header:
         title: Progress and label
         subtitle: List with left progress and right label
 
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Add
+          url: https://docs.jigx.com/examples/submit-form
+
 datasources:
   list:
     type: datasource.static

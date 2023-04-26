@@ -1,6 +1,13 @@
 title: Team budget
 type: jig.default
 
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: New Expense
+          url: https://docs.jigx.com/examples/submit-form
+
 datasources:
   series2:
     type: datasource.static

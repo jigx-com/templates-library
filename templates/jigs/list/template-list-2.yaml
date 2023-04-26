@@ -1,6 +1,13 @@
 title: Opportunities
 type: jig.list
 
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Add new opportunity
+          url: https://docs.jigx.com/examples/submit-form
+
 datasources:
   components:
     type: datasource.static
