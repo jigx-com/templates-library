@@ -12,7 +12,7 @@ header:
           uri: https://images.unsplash.com/photo-1523875194681-bedd468c58bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80
 
 children:
-# the children jigs listed below have been created automatically in your current folder
-  - isTitleHidden: true
-    jigId: type-default
+# the children jigs listed below have been automatically created in your current folder
+  - jigId: type-default
+    isTitleHidden: true
   - jigId: type-list
