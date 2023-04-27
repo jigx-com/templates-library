@@ -2,15 +2,6 @@ title: Team budget
 type: jig.default
 
 datasources:
-  series2:
-    type: datasource.static
-    options:
-      data:
-        - x: 0-7
-        - x: 8-14
-        - x: 15-21
-        - 22-28
-        - 29-31
   series1:
     type: datasource.static
     options:
