@@ -1,6 +1,18 @@
 title: Stage
 type: jig.list
 
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1511312817910-ffa2ca5d954e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHJpdmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60
+        title: Stage
+        subtitle: List with Stage
+
 datasources:
   stage:
     type: datasource.static
@@ -21,18 +33,6 @@ datasources:
           startSubtitle: Start subtitle
           endTitle: End title
           endSubtitle: End subtitle
-
-header:
-  type: component.jig-header
-  options:
-    height: medium
-    children:
-      type: component.image
-      options:
-        source:
-          uri: https://images.unsplash.com/photo-1511312817910-ffa2ca5d954e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHJpdmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60
-        title: Stage
-        subtitle: List with Stage
 
 data: =@ctx.datasources.stage
 item:

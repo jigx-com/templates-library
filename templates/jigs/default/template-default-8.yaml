@@ -11,13 +11,6 @@ header:
         source:
           uri: https://media.istockphoto.com/id/157580156/photo/checklist.jpg?b=1&s=170667a&w=0&k=20&c=_rgoIwuX0j5G7kfbSp0Ogv12RZveJu46Y_juHxyOvTI=
 
-actions:
-  - children:
-      - type: action.open-url
-        options:
-          title: Submit
-          url: https://docs.jigx.com/examples/submit-form
-
 datasources:
   dropdownOptions:
     type: datasource.static
@@ -110,3 +103,10 @@ children:
                 instanceId: gf-text-field
                 options:
                   label: Text field
+
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Submit
+          url: https://docs.jigx.com/examples/submit-form

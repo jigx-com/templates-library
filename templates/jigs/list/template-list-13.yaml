@@ -1,6 +1,18 @@
 title: Expander (titles)
 type: jig.list
 
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80
+        title: Expander (titles)
+        subtitle: List with Expanders (using Titles)
+
 datasources:
   expander-titles:
     type: datasource.static
@@ -24,18 +36,6 @@ datasources:
           value-entity-field-1: Value 1
           value-entity-field-2: Value 2
           value-entity-field-3: Value 3
-
-header:
-  type: component.jig-header
-  options:
-    height: medium
-    children:
-      type: component.image
-      options:
-        source:
-          uri: https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80
-        title: Expander (titles)
-        subtitle: List with Expanders (using Titles)
 
 data: =@ctx.datasources.expander-titles
 item:

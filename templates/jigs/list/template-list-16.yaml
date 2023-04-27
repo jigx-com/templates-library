@@ -1,6 +1,18 @@
 title: Sections and button
 type: jig.list
 
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1518976024611-28bf4b48222e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hlY2tsaXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+        title: Sections and button
+        subtitle: List with sections and button
+
 datasources:
   sections-list:
     type: datasource.static
@@ -30,18 +42,6 @@ datasources:
           title: Title inactive
           subtitle: Subtitle
           active: false
-
-header:
-  type: component.jig-header
-  options:
-    height: medium
-    children:
-      type: component.image
-      options:
-        source:
-          uri: https://images.unsplash.com/photo-1518976024611-28bf4b48222e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hlY2tsaXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
-        title: Sections and button
-        subtitle: List with sections and button
 
 sections:
   - title: Active tasks

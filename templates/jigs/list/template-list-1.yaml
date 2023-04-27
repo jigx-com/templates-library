@@ -14,13 +14,6 @@ header:
         title: Product inventory
         subtitle: Updated 3 mins ago
 
-actions:
-  - children:
-      - type: action.open-url
-        options:
-          title: Buy products with low inventory
-          url: https://docs.jigx.com/examples/action-list
-
 datasources:
   inventory:
     type: datasource.static
@@ -141,6 +134,13 @@ item:
             options:
               state: =@ctx.solution.state.selectedProduct
               value: =@ctx.current.item.name
+
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Buy products with low inventory
+          url: https://docs.jigx.com/examples/action-list
 
 summary:
   children:

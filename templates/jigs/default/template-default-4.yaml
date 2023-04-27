@@ -11,13 +11,6 @@ header:
         source:
           uri: https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
 
-actions:
-  - children:
-      - type: action.open-url
-        options:
-          title: Create invoice
-          url: https://docs.jigx.com/examples/submit-form
-
 datasources:
   methodOfPayment:
     type: datasource.static
@@ -38,7 +31,7 @@ datasources:
     options:
       provider: DATA_PROVIDER_DYNAMIC
       entities:
-        - entity: default/invoices
+        - entity: default/invoices #Create new table "invoices" in databases/default.jigx
       query: |
         SELECT   
           id,   
@@ -140,6 +133,16 @@ children:
           instanceId: signature
           options:
             label: Signature
+
+actions:
+  - children:
+      - type: action.submit-form
+        options:
+          formId: new-invoice
+          provider: DATA_PROVIDER_DYNAMIC
+          method: save
+          entity: default/invoices #Create new table "invoices" in databases/default.jigx
+          title: Create new invoice
 
 summary:
   children:

@@ -1,12 +1,17 @@
 title: Opportunities
 type: jig.list
 
-actions:
-  - children:
-      - type: action.open-url
-        options:
-          title: Add new opportunity
-          url: https://docs.jigx.com/examples/submit-form
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2338&q=80
+        title: Opportunities
+        subtitle: Period Q3 2022
 
 datasources:
   components:
@@ -125,18 +130,6 @@ datasources:
           reason:
           badge: "off"
 
-header:
-  type: component.jig-header
-  options:
-    height: medium
-    children:
-      type: component.image
-      options:
-        source:
-          uri: https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2338&q=80
-        title: Opportunities
-        subtitle: Period Q3 2022
-
 filter:
   - title: All
     value: ALL
@@ -169,6 +162,13 @@ item:
         format:
           numberStyle: currency
           currency: USD
+
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Add new opportunity
+          url: https://docs.jigx.com/examples/submit-form
 
 summary:
   children:

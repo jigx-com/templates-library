@@ -1,6 +1,18 @@
 title: Expander (stage)
 type: jig.list
 
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGxhbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60
+        title: Expander (stage)
+        subtitle: List with Expanders (using Stage)
+
 datasources:
   expander-stage:
     type: datasource.static
@@ -30,18 +42,6 @@ datasources:
           value-entity-field-1: Value 1
           value-entity-field-2: Value 2
           value-entity-field-3: Value 3
-
-header:
-  type: component.jig-header
-  options:
-    height: medium
-    children:
-      type: component.image
-      options:
-        source:
-          uri: https://images.unsplash.com/photo-1606768666853-403c90a981ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cGxhbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60
-        title: Expander (stage)
-        subtitle: List with Expanders (using Stage)
 
 data: =@ctx.datasources.expander-stage
 item:

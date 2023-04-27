@@ -1,6 +1,18 @@
 title: Filter, progress and label
 type: jig.list
 
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGFzayUyMGxpc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60
+        title: Filter, progress and label
+        subtitle: List with filter, progress and label
+
 filter:
   - title: All
     value: ALL
@@ -38,18 +50,6 @@ datasources:
           subtitle: Subtitle - inactive
           status: inactive
           progress: 0.9
-
-header:
-  type: component.jig-header
-  options:
-    height: medium
-    children:
-      type: component.image
-      options:
-        source:
-          uri: https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dGFzayUyMGxpc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60
-        title: Filter, progress and label
-        subtitle: List with filter, progress and label
 
 data: =$filter(@ctx.datasources.filter-list, function($v, $i, $a) {  @ctx.jig.state.filter = 'ALL' or $v.status = @ctx.jig.state.filter})
 item:
