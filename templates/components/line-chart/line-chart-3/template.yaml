@@ -8,7 +8,7 @@ options:
       format:
         notation: compact
     max: 340000000
-    min: 300000000
+    min: 330000000
   xAxis:
     categories:
       - "2018"

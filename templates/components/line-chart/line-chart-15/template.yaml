@@ -2,14 +2,14 @@ type: component.line-chart
 options:
   chart:
     title: Max and min
-    subtitle: "Max: 25000, Min: 0"
+    subtitle: "Max: 10000, Min: 1000"
   plotOptions:
     series:
       pointWidth: 24
   yAxis:
-    tickAmount: 3
-    max: 25000
-    min: 0
+    tickAmount: 8
+    max: 10000
+    min: 1000
   xAxis:
     categories:
       - "1"
