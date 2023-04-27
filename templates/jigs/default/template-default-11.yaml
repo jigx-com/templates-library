@@ -27,9 +27,17 @@ datasources:
           lng: -77.0473912
 
 children:
-  - type: component.location
+  - type: component.section
     options:
-      address: =@ctx.datasources.address.street & ',' & @ctx.datasources.address.city & ',' & @ctx.datasources.address.country
-  - type: component.location
+      title: By address
+      children:
+        - type: component.location
+          options:
+            address: =@ctx.datasources.address.street & ',' & @ctx.datasources.address.city & ',' & @ctx.datasources.address.country
+  - type: component.section
     options:
-      markersData: =@ctx.datasources.coordinates
+      title: By coordinates
+      children:
+        - type: component.location
+          options:
+            markersData: =@ctx.datasources.coordinates
