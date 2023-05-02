@@ -81,7 +81,10 @@ children:
       chart:
         height: 300
         title:
-          text: "$523.5"
+          text: =@ctx.datasources.series1[$count(@ctx.datasources.series1) - 1].y
+          format:
+            numberStyle: currency
+            currency: USD
           horizontalAlign: center
           verticalAlign: bottom
         subtitle:
