@@ -58,4 +58,6 @@ item:
       element: button
       title: =@ctx.current.item.active ? 'Deactivate' :'Activate'
       onPress:
-        type: action.go-back
+        type: action.open-url
+        options:
+          url: https://docs.jigx.com/examples/set-state

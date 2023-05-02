@@ -17,7 +17,7 @@ datasources:
     options:
       provider: DATA_PROVIDER_DYNAMIC
       entities:
-        - entity: default/employees
+        - entity: default/employees #Create new table "employees" in databases/default.jigx
       query: |
         SELECT   
           id

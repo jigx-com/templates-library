@@ -55,12 +55,16 @@ item:
     swipeable:
       right:
         - onPress:
-            type: action.go-back
+            type: action.open-url
+            options:
+              url: https://docs.jigx.com/examples/go-to
           label: Primary Action
           color: primary
           icon: alarm-bell
         - onPress:
-            type: action.go-back
+            type: action.open-url
+            options:
+              url: https://docs.jigx.com/examples/go-to
           label: Secondary Action
           color: warning
           icon: alert-triangle

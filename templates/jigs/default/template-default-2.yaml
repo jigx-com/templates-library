@@ -83,13 +83,9 @@ children:
           style:
             isHighlighted: true
           onPress:
-            type: action.go-to
+            type: action.open-url
             options:
-              linkTo: create the file for this action
-              parameters:
-                first-name: =@ctx.datasources.employeeDetail.employee-first-name
-                surname: =@ctx.datasources.employeeDetail.employee-surname
-                contract-image: =@ctx.datasources.employeeDetail.employee-contract
+              url: https://docs.jigx.com/examples/pUyK-web-view
 
 actions:
   - children:
