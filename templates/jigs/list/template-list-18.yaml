@@ -46,7 +46,7 @@ item:
       uri: =@ctx.current.item.uri
     discount: =@ctx.current.item.discount
     price:
-      value: =@ctx.current.item.price
+      value: =@ctx.component.state.amount = 0 ? @ctx.current.item.price :$sum(@ctx.component.state.amount * @ctx.current.item.price)
       format:
         numberStyle: currency
     amountControl:
@@ -59,4 +59,4 @@ summary:
     options:
       layout: cart
       title: Items in your cart
-      value: 3
+      value: =$sum(@ctx.jig.state.amounts.amount)
