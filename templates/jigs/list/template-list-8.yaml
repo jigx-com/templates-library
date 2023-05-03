@@ -1,4 +1,4 @@
-title: Arch charts list
+title: Bar charts list
 type: jig.list
 
 header:
@@ -10,43 +10,59 @@ header:
       options:
         source:
           uri: https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
-        title: Arch charts list
-        subtitle: List with arch charts
+        title: Bar charts list
+        subtitle: List with Bar charts
 
 datasources:
-  arch:
+  bar:
     type: datasource.static
     options:
       data:
         - title: title
           subtitle: subtitle
-          color: color6
+          color: color1
           data:
-            - 25
+            - x: x-value
+              y: 1851
+            - x: x-value
+              y: 1232
+            - x: x-value
+              y: 2139
+            - x: x-value
+              y: 2941
         - title: title
           subtitle: subtitle
-          color: color7
+          color: color2
           data:
-            - 45
+            - x: x-value
+              y: 1731
+            - x: x-value
+              y: 1942
+            - x: x-value
+              y: 2419
+            - x: x-value
+              y: 2918
         - title: title
           subtitle: subtitle
-          color: color8
+          color: color3
           data:
-            - 33
+            - x: x-value
+              y: 8932
+            - x: x-value
+              y: 7231
+            - x: x-value
+              y: 6327
+            - x: x-value
+              y: 9412
 
-data: =@ctx.datasources.arch
+data: =@ctx.datasources.bar
 item:
-  type: component.pie-chart
+  type: component.bar-chart
   options:
     chart:
-      height: 160
-      title:
-        text: =@ctx.current.item.title
-        verticalAlign: center
-      subtitle:
-        text: =@ctx.current.item.subtitle
-        verticalAlign: center
+      title: =@ctx.current.item.title
+      subtitle: =@ctx.current.item.subtitle
+      height: 260
     series:
       - data: =@ctx.current.item.data
         color: =@ctx.current.item.color
-        layout: arch

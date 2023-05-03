@@ -1,5 +1,6 @@
-title: Sections and button
+title: Horizontal list
 type: jig.list
+isHorizontal: true
 
 header:
   type: component.jig-header
@@ -9,55 +10,56 @@ header:
       type: component.image
       options:
         source:
-          uri: https://images.unsplash.com/photo-1518976024611-28bf4b48222e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y2hlY2tsaXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
-        title: Sections and button
-        subtitle: List with sections and button
+          uri: https://images.unsplash.com/photo-1631427962232-803d4f30c64f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60
+        title: Icon and switch
+        subtitle: List with horizontal scrolling using icon and switch
 
 datasources:
-  sections-list:
+  components:
     type: datasource.static
     options:
       data:
-        - id: 1
-          title: Title inactive
+        - name: Title
           subtitle: Subtitle
-          active: false
-        - id: 2
-          title: Title active
+          description: Description
+          highlight: false
+          switch-value: false
+          icon: conversation-chat-2
+          color: color8
+        - name: Title
           subtitle: Subtitle
-          active: true
-        - id: 3
-          title: Title inactive
+          description: Description
+          highlight: true
+          switch-value: true
+          icon: gallery
+          color: color1
+        - name: Title
           subtitle: Subtitle
-          active: false
-        - id: 4
-          title: Title active
-          subtitle: Subtitle
-          active: true
-        - id: 5
-          title: Title active
-          subtitle: Subtitle
-          active: true
-        - id: 6
-          title: Title inactive
-          subtitle: Subtitle
-          active: false
+          description: Description
+          highlight: false
+          switch-value: false
+          icon: graph-stats-square
+          color: color5
 
-sections:
-  - title: Active tasks
-    data: =@ctx.datasources.sections-list[active=true]
-  - title: Inactive tasks
-    data: =@ctx.datasources.sections-list[active=false]
-
+data: =@ctx.datasources.components
 item:
   type: component.list-item
   options:
-    title: =@ctx.current.item.title
+    title: =@ctx.current.item.name
     subtitle: =@ctx.current.item.subtitle
+    description: =@ctx.current.item.description
+    color:
+      - when: true
+        color: =@ctx.current.item.color
+    divider: solid
+    horizontalItemSize: regular
+    style:
+      isHighlighted: =@ctx.current.item.highlight
+    leftElement:
+      element: icon
+      name: =@ctx.current.item.icon
+      isContained: true
+      isDuotone: true
     rightElement:
-      element: button
-      title: =@ctx.current.item.active ? 'Deactivate' :'Activate'
-      onPress:
-        type: action.open-url
-        options:
-          url: https://docs.jigx.com/examples/set-state
+      element: switch
+      value: =@ctx.current.item.switch-value

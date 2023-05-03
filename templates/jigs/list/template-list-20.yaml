@@ -1,6 +1,5 @@
-title: Horizontal list
+title: Select & icon
 type: jig.list
-isHorizontal: true
 
 header:
   type: component.jig-header
@@ -10,56 +9,48 @@ header:
       type: component.image
       options:
         source:
-          uri: https://images.unsplash.com/photo-1631427962232-803d4f30c64f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60
-        title: Icon and switch
-        subtitle: List with horizontal scrolling using icon and switch
+          uri: https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvY3VtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+        title: Select & icon
+        subtitle: List with select and icon
 
 datasources:
-  components:
+  select:
     type: datasource.static
     options:
       data:
-        - name: Title
+        - id: 1
+          title: Title
           subtitle: Subtitle
-          description: Description
-          highlight: false
-          switch-value: false
-          icon: conversation-chat-2
-          color: color8
-        - name: Title
+          icon: attachment
+        - id: 2
+          title: Title
           subtitle: Subtitle
-          description: Description
-          highlight: true
-          switch-value: true
-          icon: gallery
-          color: color1
-        - name: Title
+          icon: alarm-bell
+        - id: 3
+          title: Title
           subtitle: Subtitle
-          description: Description
-          highlight: false
-          switch-value: false
-          icon: graph-stats-square
-          color: color5
+          icon: checklist
+        - id: 4
+          title: Title
+          subtitle: Subtitle
+          icon: filter-1
+        - id: 5
+          title: Title
+          subtitle: Subtitle
+          icon: document
+        - id: 6
+          title: Title
+          subtitle: Subtitle
+          icon: bin-1
 
-data: =@ctx.datasources.components
+isSelectable: true
+
+data: =@ctx.datasources.select
 item:
   type: component.list-item
   options:
-    title: =@ctx.current.item.name
+    title: =@ctx.current.item.title
     subtitle: =@ctx.current.item.subtitle
-    description: =@ctx.current.item.description
-    color:
-      - when: true
-        color: =@ctx.current.item.color
-    divider: solid
-    horizontalItemSize: regular
-    style:
-      isHighlighted: =@ctx.current.item.highlight
     leftElement:
       element: icon
       name: =@ctx.current.item.icon
-      isContained: true
-      isDuotone: true
-    rightElement:
-      element: switch
-      value: =@ctx.current.item.switch-value
