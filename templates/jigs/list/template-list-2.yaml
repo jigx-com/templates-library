@@ -139,7 +139,7 @@ filter:
     value: Unsuccessful
 
 
-data: =$filter(@ctx.datasources.components, function($v, $i, $a) {  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter})
+data: =$filter($filter(@ctx.datasources.components, function($v){$contains($string($v.name),$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) }), function($v, $a, $i) { @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter })[]
 item:
   type: component.list-item
   options:
