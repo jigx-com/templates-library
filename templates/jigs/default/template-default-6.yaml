@@ -61,7 +61,7 @@ children:
               - type: component.entity-field
                 options:
                   label: Created Date
-                  value: =$fromMillis($toMillis(@ctx.datasources.company.created), '[D]/[M]/[Y]')
+                  value: =$fromMillis($toMillis(@ctx.datasources.company.created), '[D01]/[M01]/[Y0001]')
                   contentType: date
         - type: component.section
           options:
