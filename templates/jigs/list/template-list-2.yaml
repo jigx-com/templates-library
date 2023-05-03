@@ -1,5 +1,6 @@
 title: Opportunities
 type: jig.list
+isSearchable: true
 
 header:
   type: component.jig-header
