@@ -11,6 +11,20 @@ header:
         source:
           uri: https://www.pyramidca.com/media/module/content_masthead/masthead_1.jpg
 
+datasources:
+  company:
+    type: datasource.static
+    options:
+      data:
+        - leadName: Pad Stumuller
+          company: Pyramid Construction Inc.
+          e-mail: pat@pyramid.net
+          status: Closed - Converted
+          created: 2022-09-28
+          city: Redmond
+          state: WA
+          street: 1 Microsoft Way
+
 children:
   - type: component.avatar
     options:
@@ -27,27 +41,27 @@ children:
               - type: component.entity-field
                 options:
                   label: Lead Name
-                  value: Pad Stumuller
+                  value: =@ctx.datasources.company.leadName
               - type: component.entity-field
                 options:
                   label: Company
-                  value: Pyramid Construction Inc.
+                  value: =@ctx.datasources.company.company
               - type: component.entity-field
                 options:
                   label: Email
-                  value: pat@pyramid.net
+                  value: =@ctx.datasources.company.e-mail
                   contentType: email
               - type: component.entity-field
                 options:
                   label: Lead Status
-                  value: Closed - Converted
+                  value: =@ctx.datasources.company.status
                   rightIcon: checkbox-checked
                   style:
                     isPositive: true
               - type: component.entity-field
                 options:
                   label: Created Date
-                  value: 28/09/2022
+                  value: =$fromMillis($toMillis(@ctx.datasources.company.created), '[D]/[M]/[Y]')
                   contentType: date
         - type: component.section
           options:
@@ -56,15 +70,15 @@ children:
               - type: component.entity-field
                 options:
                   label: City
-                  value: Redmond
+                  value: =@ctx.datasources.company.city
               - type: component.entity-field
                 options:
                   label: State
-                  value: WA
+                  value: =@ctx.datasources.company.state
               - type: component.entity-field
                 options:
                   label: Street
-                  value: 1 Microsoft Way
+                  value: =@ctx.datasources.company.street
   - type: component.location
     options:
-      address: Redmond, 1 Microsoft Way
+      address: =@ctx.datasources.company.city & ', ' & @ctx.datasources.company.street
