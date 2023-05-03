@@ -230,36 +230,42 @@
       "name": "Avatar Large Letter",
       "filePath": "templates/components/avatar/jig-component-avatar-1.yaml",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-1.jpg",
+      "datasource": "templates/components/avatar/shared/datasource.yaml",
       "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Large Image",
       "filePath": "templates/components/avatar/jig-component-avatar-2.yaml",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-2.jpg",
+      "datasource": "templates/components/avatar/shared/datasource.yaml",
       "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Medium Letter",
       "filePath": "templates/components/avatar/jig-component-avatar-3.yaml",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-3.jpg",
+      "datasource": "templates/components/avatar/shared/datasource.yaml",
       "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Medium Image",
       "filePath": "templates/components/avatar/jig-component-avatar-4.yaml",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-4.jpg",
+      "datasource": "templates/components/avatar/shared/datasource.yaml",
       "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Small Letter",
       "filePath": "templates/components/avatar/jig-component-avatar-5.yaml",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-5.jpg",
+      "datasource": "templates/components/avatar/shared/datasource.yaml",
       "templateRef": "jc-avatar"
     },
     {
       "name": "Avatar Small Image",
       "filePath": "templates/components/avatar/jig-component-avatar-6.yaml",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-6.jpg",
+      "datasource": "templates/components/avatar/shared/datasource.yaml",
       "templateRef": "jc-avatar"
     },
 
