@@ -1,16 +1,16 @@
 type: component.line-chart
 options:
   chart:
-    title: "Legend isHidden: true"
+    title: Tick amount
+    subtitle: "Amount of values on Y Axis: 5"
   plotOptions:
     series:
       pointWidth: 24
-  legend:
-    isHidden: true
   yAxis:
+    isFirstTickHidden: true
     tickAmount: 5
-    max: 50000
-    min: 20000
+    max: 10000
+    min: 0
   xAxis:
     categories:
       - "1"
@@ -19,3 +19,4 @@ options:
       - "4"
   series:
     - data: =@ctx.datasources.line
+      color: color5

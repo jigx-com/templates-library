@@ -1089,100 +1089,23 @@
       "templateRef": "jc-line-chart"
     },
     {
-      "name": "Line chart - Height: 320",
+      "name": "Line chart - Multiple series",
       "filePath": "templates/components/line-chart/line-chart-5/template.yaml",
       "previewImgSrc": "templates/components/line-chart/line-chart-5/preview.png",
-      "datasource": "templates/components/line-chart/shared/datasource.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart with hidden legend",
-      "filePath": "templates/components/line-chart/line-chart-7/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-7/preview.png",
-      "datasource": "templates/components/line-chart/shared/datasource.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart with legend",
-      "filePath": "templates/components/line-chart/line-chart-8/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-8/preview.png",
-      "datasource": "templates/components/line-chart/shared/datasource.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart with custom name of series",
-      "filePath": "templates/components/line-chart/line-chart-9/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-9/preview.png",
-      "datasource": "templates/components/line-chart/shared/datasource.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart - Single series",
-      "filePath": "templates/components/line-chart/line-chart-10/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-10/preview.png",
-      "datasource": "templates/components/line-chart/line-chart-10/datasource.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart - Multiple series",
-      "filePath": "templates/components/line-chart/line-chart-11/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-11/preview.png",
-      "datasource": "templates/components/line-chart/line-chart-11/datasource.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart - Custom color of series",
-      "filePath": "templates/components/line-chart/line-chart-12/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-12/preview.png",
-      "datasource": "templates/components/line-chart/line-chart-12/datasource.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart - Custom name of series",
-      "filePath": "templates/components/line-chart/line-chart-13/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-13/preview.png",
-      "datasource": "templates/components/line-chart/line-chart-13/datasource.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart - Enable data labels",
-      "filePath": "templates/components/line-chart/line-chart-14/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-14/preview.png",
-      "datasource": "templates/components/line-chart/line-chart-14/datasource.yaml",
+      "datasource": "templates/components/line-chart/line-chart-5/datasource.yaml",
       "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart with min and max",
-      "filePath": "templates/components/line-chart/line-chart-15/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-15/preview.png",
-      "datasource": "templates/components/line-chart/shared/datasource-2.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart with hidden Y axis",
-      "filePath": "templates/components/line-chart/line-chart-16/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-16/preview.png",
-      "datasource": "templates/components/line-chart/shared/datasource-2.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart - Currency number style",
-      "filePath": "templates/components/line-chart/line-chart-17/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-17/preview.png",
-      "datasource": "templates/components/line-chart/shared/datasource-2.yaml",
-      "templateRef": "jc-line-chart"
-    },
-    {
-      "name": "Line chart - Currency with compact notation",
-      "filePath": "templates/components/line-chart/line-chart-18/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-18/preview.png",
+      "filePath": "templates/components/line-chart/line-chart-6/template.yaml",
+      "previewImgSrc": "templates/components/line-chart/line-chart-6/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource-2.yaml",
       "templateRef": "jc-line-chart"
     },
     {
       "name": "Line chart - Tick amount",
-      "filePath": "templates/components/line-chart/line-chart-19/template.yaml",
-      "previewImgSrc": "templates/components/line-chart/line-chart-19/preview.png",
+      "filePath": "templates/components/line-chart/line-chart-7/template.yaml",
+      "previewImgSrc": "templates/components/line-chart/line-chart-7/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource-2.yaml",
       "templateRef": "jc-line-chart"
     },

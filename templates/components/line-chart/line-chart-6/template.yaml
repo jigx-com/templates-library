@@ -1,13 +1,15 @@
 type: component.line-chart
 options:
   chart:
-    title: Width change
-    subtitle: Width = "250"
-    width: 250
+    title: Max and min
+    subtitle: "Max: 10000, Min: 1000"
+  plotOptions:
+    series:
+      pointWidth: 24
   yAxis:
-    max: 50000
-    min: 20000
-    tickAmount: 3
+    tickAmount: 8
+    max: 10000
+    min: 1000
   xAxis:
     categories:
       - "1"
@@ -16,5 +18,4 @@ options:
       - "4"
   series:
     - data: =@ctx.datasources.line
-      color: color9
-      layout: area-gradient
+      color: color1

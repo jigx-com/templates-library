@@ -1,19 +1,23 @@
 type: component.line-chart
 options:
   chart:
-    height: 320
-    title: Height change
-    subtitle: Height = "320"
+    title: Multiple series
+    height: 300
   yAxis:
-    max: 50000
-    min: 20000
+    max: 10000
+    min: 0
   xAxis:
     categories:
       - "1"
       - "2"
       - "3"
       - "4"
+  legend:
+    isHidden: false
   series:
-    - data: =@ctx.datasources.line
-      color: color8
+    - data: =@ctx.datasources.line1
+      color: color1
       layout: area-gradient
+    - data: =@ctx.datasources.line2
+      color: color2
+      layout: line
