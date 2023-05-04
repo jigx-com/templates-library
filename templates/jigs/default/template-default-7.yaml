@@ -1,4 +1,4 @@
-title: Leads by Status
+title: Image, entity, location
 type: jig.default
 
 header:
@@ -9,64 +9,52 @@ header:
       type: component.image
       options:
         source:
-          uri: https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
-
-datasources:
-  closed-converted:
-    type: datasource.static
-    options:
-      data:
-        - x: Closed - Converted
-          y: 3
-          color: color3
-  closed-not-converted:
-    type: datasource.static
-    options:
-      data:
-        - x: Closed - Not converted
-          y: 4
-          color: color4
-  open-not-contacted:
-    type: datasource.static
-    options:
-      data:
-        - x: Open
-          y: 3
-          color: color5
-  working-contacted:
-    type: datasource.static
-    options:
-      data:
-        - x: Working
-          y: 12
-          color: color6
+          uri: https://images.unsplash.com/photo-1613064934056-08a061014f37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
 
 children:
-  - type: component.bar-chart
+  - type: component.section
     options:
-      legend:
-        isHidden: false
-      chart:
-        height: 200
-        isAnimated: true
-      xAxis:
-        tickAmount: 3
-        isHidden: true
-      plotOptions:
-        series:
-          pointWidth: 16
-          marker:
-            isHidden: false
-      series:
-        - data: =@ctx.datasources.closed-converted
-          color: positive
-          name: =@ctx.datasources.closed-converted.x
-        - data: =@ctx.datasources.closed-not-converted
-          color: positive
-          name: =@ctx.datasources.closed-not-converted.x
-        - data: =@ctx.datasources.open-not-contacted
-          color: positive
-          name: =@ctx.datasources.open-not-contacted.x
-        - data: =@ctx.datasources.working-contacted
-          color: positive
-          name: =@ctx.datasources.working-contacted.x
+      title: Image
+      children:
+        - type: component.image
+          options:
+            title: Thailand
+            subtitle: Phi Phi Islands
+            height: 250
+            source:
+              uri: https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+  - type: component.entity
+    options:
+      children:
+        - type: component.section
+          options:
+            title: Entity section
+            children:
+              - type: component.entity-field
+                options:
+                  label: Description
+                  value:
+                    The Phi Phi Islands are an island group in Thailand between the
+                    large island of Phuket and the Straits of Malacca coast of Thailand.
+                    The islands are reachable by speedboats or long-tail boats most often
+                    from Krabi town or from piers in Phuket Province.
+                  isMultiline: true
+              - type: component.entity-field
+                options:
+                  label: Total area
+                  value: 12.25 km2 (4.73 sq mi)
+              - type: component.entity-field
+                options:
+                  label: Total population
+                  value: "2,500"
+              - type: component.entity-field
+                options:
+                  label: Time zone
+                  value: UTC+7 (ICT)
+  - type: component.section
+    options:
+      title: Location
+      children:
+        - type: component.location
+          options:
+            address: 190 Moo 7 Aonang Muang, Phi Phi island Krabi 81000, Thailand

@@ -45,37 +45,13 @@
     {
       "name": "Default jig 7",
       "filePath": "templates/jigs/default/template-default-7.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-7.jpeg",
+      "previewImgSrc": "templates/jigs/default/template-default-7.png",
       "templateRef": "jig-default"
     },
     {
       "name": "Default jig 8",
       "filePath": "templates/jigs/default/template-default-8.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-8.png",
-      "templateRef": "jig-default"
-    },
-    {
-      "name": "Default jig 9",
-      "filePath": "templates/jigs/default/template-default-9.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-9.png",
-      "templateRef": "jig-default"
-    },
-    {
-      "name": "Default jig 10",
-      "filePath": "templates/jigs/default/template-default-10.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-10.png",
-      "templateRef": "jig-default"
-    },
-    {
-      "name": "Default jig 11",
-      "filePath": "templates/jigs/default/template-default-11.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-11.jpeg",
-      "templateRef": "jig-default"
-    },
-    {
-      "name": "Default jig 12",
-      "filePath": "templates/jigs/default/template-default-12.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-12.jpeg",
       "templateRef": "jig-default"
     },
     {
