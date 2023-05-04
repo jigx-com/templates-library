@@ -106,11 +106,6 @@ options:
         children:
           - type: component.entity-field
             options:
-              contentType: signature
-              label: Signature
-              value: https://t14345253.p.clickup-attachments.com/t14345253/c4fc68bc-8231-47b4-8fb7-60eb671fca0e/signature.png?view=open
-          - type: component.entity-field
-            options:
               contentType: default
               isMultiline: true
               label: Multiline
