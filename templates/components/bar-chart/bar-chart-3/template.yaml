@@ -1,27 +1,20 @@
 type: component.bar-chart
 options:
   chart:
-    height: 300
-    isAnimated: false
-  legend:
-    isHidden: false
+    title: Custom settings width
+    width: 250
   plotOptions:
     series:
-      pointWidth: 16
+      pointWidth: 12
   series:
-    - color: color1
-      data: =@ctx.datasources.population
-      name: USA Population
+    - color: color2
+      data: =@ctx.datasources.mydata
   xAxis:
     categories:
-      - "2018"
-      - "2019"
-      - "2020"
-      - "2021"
-      - "2022"
+      - "1"
+      - "2"
+      - "3"
+      - "4"
   yAxis:
-    labels:
-      format:
-        notation: compact
-    max: 400000000
-    min: 300000000
+    max: 50000
+    min: 10000

@@ -1,12 +1,13 @@
 type: component.bar-chart
 options:
   chart:
-    title: Default height
+    subtitle: "max: 10000, min: 0"
+    title: Max and min
   plotOptions:
     series:
-      pointWidth: 16
+      pointWidth: 24
   series:
-    - color: color2
+    - color: color6
       data: =@ctx.datasources.mydata
   xAxis:
     categories:
@@ -15,6 +16,6 @@ options:
       - "3"
       - "4"
   yAxis:
-    max: 50000
-    min: 10000
-    tickAmount: 5
+    max: 10000
+    min: 0
+    tickAmount: 3

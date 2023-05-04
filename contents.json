@@ -244,7 +244,6 @@
       "datasource": "templates/components/avatar/shared/datasource.yaml",
       "templateRef": "jc-avatar"
     },
-
     {
       "name": "Revenues and Expenses",
       "filePath": "templates/components/bar-chart/bar-chart-1/template.yaml",
@@ -260,128 +259,40 @@
       "datasource": "templates/components/bar-chart/bar-chart-2/datasource.yaml"
     },
     {
-      "name": "Default height bar-chart",
-      "filePath": "templates/components/bar-chart/bar-chart-4/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-4/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource.yaml"
-    },
-    {
-      "name": "Height 300 bar-chart",
-      "filePath": "templates/components/bar-chart/bar-chart-5/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-5/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource.yaml"
-    },
-    {
       "name": "Custom settings width bar-chart",
-      "filePath": "templates/components/bar-chart/bar-chart-6/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-6/preview.png",
+      "filePath": "templates/components/bar-chart/bar-chart-3/template.yaml",
+      "previewImgSrc": "templates/components/bar-chart/bar-chart-3/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource.yaml"
     },
-
-    {
-      "name": "Bar-chart with legend",
-      "filePath": "templates/components/bar-chart/bar-chart-7/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-7/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource.yaml"
-    },
-    {
-      "name": "Bar-chart with custom name of series",
-      "filePath": "templates/components/bar-chart/bar-chart-8/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-8/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource.yaml"
-    },
-    {
-      "name": "Bar-chart without legend",
-      "filePath": "templates/components/bar-chart/bar-chart-9/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-9/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource.yaml"
-    },
-    {
-      "name": "Bar-chart without legend by default",
-      "filePath": "templates/components/bar-chart/bar-chart-10/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-10/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource.yaml"
-    },
-
     {
       "name": "Bar-chart Max and min",
-      "filePath": "templates/components/bar-chart/bar-chart-11/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-11/preview.png",
+      "filePath": "templates/components/bar-chart/bar-chart-4/template.yaml",
+      "previewImgSrc": "templates/components/bar-chart/bar-chart-4/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
     },
     {
       "name": "Bar-chart hidden axis",
-      "filePath": "templates/components/bar-chart/bar-chart-12/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-12/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
-    },
-    {
-      "name": "Bar-chart currency number style",
-      "filePath": "templates/components/bar-chart/bar-chart-13/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-13/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
-    },
-    {
-      "name": "Bar-chart currency number style compact notation",
-      "filePath": "templates/components/bar-chart/bar-chart-14/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-14/preview.png",
+      "filePath": "templates/components/bar-chart/bar-chart-5/template.yaml",
+      "previewImgSrc": "templates/components/bar-chart/bar-chart-5/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
     },
     {
       "name": "Bar-chart Tick amount",
-      "filePath": "templates/components/bar-chart/bar-chart-15/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-15/preview.png",
+      "filePath": "templates/components/bar-chart/bar-chart-6/template.yaml",
+      "previewImgSrc": "templates/components/bar-chart/bar-chart-6/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
     },
-
-    {
-      "name": "Single series bar chart",
-      "filePath": "templates/components/bar-chart/bar-chart-16/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-16/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-16/datasource.yaml"
-    },
-    {
-      "name": "Multiple series bar chart",
-      "filePath": "templates/components/bar-chart/bar-chart-17/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-17/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-17/datasource.yaml"
-    },
-    {
-      "name": "Bar-chart with custom color of series",
-      "filePath": "templates/components/bar-chart/bar-chart-18/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-18/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-18/datasource.yaml"
-    },
-    {
-      "name": "Bar-chart with custom name of series",
-      "filePath": "templates/components/bar-chart/bar-chart-19/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-19/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-19/datasource.yaml"
-    },
     {
       "name": "Bar-chart with enabled data labels",
-      "filePath": "templates/components/bar-chart/bar-chart-20/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-20/preview.png",
+      "filePath": "templates/components/bar-chart/bar-chart-7/template.yaml",
+      "previewImgSrc": "templates/components/bar-chart/bar-chart-7/preview.png",
       "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-20/datasource.yaml"
+      "datasource": "templates/components/bar-chart/bar-chart-7/datasource.yaml"
     },
-
     {
       "name": "With Entity Field, Sections and Field Row",
       "filePath": "templates/components/entity/entity-1/template.yaml",

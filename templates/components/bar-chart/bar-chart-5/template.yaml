@@ -1,14 +1,13 @@
 type: component.bar-chart
 options:
   chart:
-    height: 300
-    subtitle: Height "300"
-    title: Custom settings
+    subtitle: "isHidden: true"
+    title: Hidden
   plotOptions:
     series:
-      pointWidth: 16
+      pointWidth: 24
   series:
-    - color: color2
+    - color: color6
       data: =@ctx.datasources.mydata
   xAxis:
     categories:
@@ -17,5 +16,6 @@ options:
       - "3"
       - "4"
   yAxis:
-    max: 50000
-    min: 10000
+    isHidden: true
+    max: 10000
+    min: 0

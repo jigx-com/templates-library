@@ -1,15 +1,15 @@
 type: component.bar-chart
 options:
   chart:
-    subtitle: "legend: isHidden: false"
-    title: With legend
+    title: Enabled data labels
   legend:
     isHidden: false
-  plotOptions:
-    series:
-      pointWidth: 24
   series:
-    - data: =@ctx.datasources.mydata
+    - color: color2
+      data: =@ctx.datasources.serie4
+      dataLabels:
+        - isEnabled: true
+      name: My data 4
   xAxis:
     categories:
       - "1"
@@ -17,6 +17,5 @@ options:
       - "3"
       - "4"
   yAxis:
-    max: 50000
-    min: 10000
-    tickAmount: 3
+    max: 100
+    min: 0
