@@ -11,6 +11,13 @@ header:
         source:
           uri: https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
 
+onFocus: 
+  type: action.sync-entities
+  options:
+    provider: DATA_PROVIDER_DYNAMIC
+    entities:
+      - entity: default/invoices #Create new table "invoices" in databases/default.jigx
+
 datasources:
   methodOfPayment:
     type: datasource.static
@@ -29,7 +36,7 @@ datasources:
   invoices:
     type: datasource.sqlite
     options:
-      provider: DATA_PROVIDER_DYNAMIC
+      provider: DATA_PROVIDER_LOCAL
       entities:
         - entity: default/invoices #Create new table "invoices" in databases/default.jigx
       query: |
@@ -136,13 +143,23 @@ children:
 
 actions:
   - children:
-      - type: action.submit-form
+      - type: action.action-list
         options:
-          formId: new-invoice
-          provider: DATA_PROVIDER_DYNAMIC
-          method: save
-          entity: default/invoices #Create new table "invoices" in databases/default.jigx
           title: Create new invoice
+          actions:
+            - type: action.submit-form
+              options:
+                formId: new-invoice
+                provider: DATA_PROVIDER_LOCAL
+                method: save
+                entity: default/invoices #Create new table "invoices" in databases/default.jigx
+                onSuccess: 
+                  title: New invoice was saved
+            - type: action.sync-entities
+              options:
+                provider: DATA_PROVIDER_DYNAMIC
+                entities:
+                  - entity: default/invoices
 
 summary:
   children:
