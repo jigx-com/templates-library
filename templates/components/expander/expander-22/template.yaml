@@ -11,7 +11,15 @@ options:
           subtitle: End subtitle
           title: End title
   children:
-    - type: component.location
+    - type: component.pie-chart
       options:
-        address: Goat Island, Niagara Falls, NY 14303
+        chart:
+          subtitle:
+            text: Subtitle
+            verticalAlign: center
+          title:
+            text: Title
+            verticalAlign: center
+        series:
+          - data: =@ctx.datasources.piechart
   isInitiallyCollapsed: false

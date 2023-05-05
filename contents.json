@@ -505,101 +505,89 @@
       "templateRef": "jc-expander"
     },
     {
-      "name": "Expander with titles header and Video player component",
-      "filePath": "templates/components/expander/expander-12/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-12/preview.png",
-      "templateRef": "jc-expander"
-    },
-    {
       "name": "Expander with titles header and Web view component",
-      "filePath": "templates/components/expander/expander-13/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-13/preview.jpg",
+      "filePath": "templates/components/expander/expander-12/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-12/preview.jpg",
       "templateRef": "jc-expander"
     },
 
     {
       "name": "Expander with stage header and Arch chart component",
-      "filePath": "templates/components/expander/expander-14/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-14/preview.png",
-      "datasource": "templates/components/expander/expander-14/datasource.yaml",
+      "filePath": "templates/components/expander/expander-13/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-13/preview.png",
+      "datasource": "templates/components/expander/expander-13/datasource.yaml",
       "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Avatar component",
-      "filePath": "templates/components/expander/expander-15/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-15/preview.png",
+      "filePath": "templates/components/expander/expander-14/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-14/preview.png",
       "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Bar chart component",
-      "filePath": "templates/components/expander/expander-16/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-16/preview.png",
-      "datasource": "templates/components/expander/expander-16/datasource.yaml",
+      "filePath": "templates/components/expander/expander-15/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-15/preview.png",
+      "datasource": "templates/components/expander/expander-15/datasource.yaml",
       "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Entity field component",
+      "filePath": "templates/components/expander/expander-16/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-16/preview.png",
+      "templateRef": "jc-expander"
+    },
+    {
+      "name": "Expander with stage header and Image component",
       "filePath": "templates/components/expander/expander-17/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-17/preview.png",
       "templateRef": "jc-expander"
     },
     {
-      "name": "Expander with stage header and Image component",
+      "name": "Expander with stage header and Interactive image component",
       "filePath": "templates/components/expander/expander-18/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-18/preview.png",
+      "datasource": "templates/components/expander/expander-18/datasource.yaml",
       "templateRef": "jc-expander"
     },
     {
-      "name": "Expander with stage header and Interactive image component",
+      "name": "Expander with stage header and Line chart component",
       "filePath": "templates/components/expander/expander-19/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-19/preview.png",
       "datasource": "templates/components/expander/expander-19/datasource.yaml",
       "templateRef": "jc-expander"
     },
     {
-      "name": "Expander with stage header and Line chart component",
+      "name": "Expander with stage header and List item component",
       "filePath": "templates/components/expander/expander-20/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-20/preview.png",
       "datasource": "templates/components/expander/expander-20/datasource.yaml",
       "templateRef": "jc-expander"
     },
     {
-      "name": "Expander with stage header and List item component",
+      "name": "Expander with stage header and Location component",
       "filePath": "templates/components/expander/expander-21/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-21/preview.png",
-      "datasource": "templates/components/expander/expander-21/datasource.yaml",
-      "templateRef": "jc-expander"
-    },
-    {
-      "name": "Expander with stage header and Location component",
-      "filePath": "templates/components/expander/expander-22/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-22/preview.png",
       "templateRef": "jc-expander"
     },
     {
       "name": "Expander with stage header and Pie chart component",
+      "filePath": "templates/components/expander/expander-22/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-22/preview.png",
+      "datasource": "templates/components/expander/expander-22/datasource.yaml",
+      "templateRef": "jc-expander"
+    },
+    {
+      "name": "Expander with stage header and Stepper component",
       "filePath": "templates/components/expander/expander-23/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-23/preview.png",
       "datasource": "templates/components/expander/expander-23/datasource.yaml",
       "templateRef": "jc-expander"
     },
     {
-      "name": "Expander with stage header and Stepper component",
-      "filePath": "templates/components/expander/expander-24/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-24/preview.png",
-      "datasource": "templates/components/expander/expander-24/datasource.yaml",
-      "templateRef": "jc-expander"
-    },
-    {
-      "name": "Expander with stage header and Video player component",
-      "filePath": "templates/components/expander/expander-25/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-25/preview.png",
-      "templateRef": "jc-expander"
-    },
-    {
       "name": "Expander with stage header and Web view component",
-      "filePath": "templates/components/expander/expander-26/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-26/preview.jpg",
+      "filePath": "templates/components/expander/expander-24/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-24/preview.jpg",
       "templateRef": "jc-expander"
     },
 

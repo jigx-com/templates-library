@@ -11,9 +11,31 @@ options:
           subtitle: End subtitle
           title: End title
   children:
-    - type: component.bar-chart
+    - type: component.entity
       options:
-        series:
-          - color: color2
-            data: =@ctx.datasources.barchart
+        children:
+          - type: component.entity-field
+            options:
+              label: Title
+              value: value
+          - type: component.field-row
+            options:
+              children:
+                - type: component.entity-field
+                  options:
+                    label: Title
+                    value: value
+                - type: component.entity-field
+                  options:
+                    label: Title
+                    value: value
+          - type: component.section
+            options:
+              title: Section title
+              children:
+                - type: component.entity-field
+                  options:
+                    isMultiline: true
+                    label: Title
+                    value: value
   isInitiallyCollapsed: false

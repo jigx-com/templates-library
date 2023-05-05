@@ -1,14 +1,26 @@
 type: component.expander
 options:
+  children:
+    - type: component.pie-chart
+      options:
+        chart:
+          subtitle:
+            text: Subtitle
+            verticalAlign: center
+          title:
+            text: Title
+            verticalAlign: center
+        series:
+          - data: =@ctx.datasources.piechart
+            layout: arch
   header:
     centerElement:
-      type: component.titles
+      type: component.stage
       options:
-        title: Title
-        subtitle: Subtitle
-  children:
-    - type: component.web-view
-      options:
-        height: 400
-        uri: https://www.google.com/
+        left:
+          subtitle: Start subtitle
+          title: Start title
+        right:
+          subtitle: End subtitle
+          title: End title
   isInitiallyCollapsed: false

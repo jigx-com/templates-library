@@ -1,12 +1,5 @@
 type: component.expander
 options:
-  children:
-    - type: component.line-chart
-      options:
-        series:
-          - color: color2
-            data: =@ctx.datasources.linechart
-            layout: area-gradient
   header:
     centerElement:
       type: component.stage
@@ -17,4 +10,21 @@ options:
         right:
           subtitle: End subtitle
           title: End title
+  children:
+    - type: component.list
+      options:
+        data: =@ctx.datasources.list
+        item:
+          type: component.list-item
+          options:
+            title: =@ctx.current.item.title
+            subtitle: =@ctx.current.item.subtitle
+            leftElement:
+              element: avatar
+              text: ""
+              uri: =@ctx.current.item.uri
+            rightElement:
+              element: icon
+              name: arrow-right
+        maximumItemsToRender: 8
   isInitiallyCollapsed: false

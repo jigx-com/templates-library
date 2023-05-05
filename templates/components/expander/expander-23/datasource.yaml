@@ -1,10 +1,27 @@
-piechart:
+steps:
   type: datasource.static
   options:
     data:
-      - color: color6
-        y: 25
-      - color: color4
-        y: 15
-      - color: color3
-        y: 5
+      - icon: checkbox-checked
+        isActive: false
+        isCompleted: true
+        isWaiting: false
+        title: Order
+        value: step1
+      - description: The shipment is in transit.
+        icon: time-clock-circle
+        isActive: true
+        isCompleted: false
+        isWaiting: false
+        title: Shipment in transit
+        value: step2
+      - isActive: false
+        isCompleted: false
+        isWaiting: true
+        title: On the way to you
+        value: step3
+      - isActive: false
+        isCompleted: false
+        isWaiting: true
+        title: Delivered to the recipient
+        value: step4
