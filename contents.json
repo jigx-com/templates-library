@@ -259,39 +259,32 @@
       "datasource": "templates/components/bar-chart/bar-chart-2/datasource.yaml"
     },
     {
-      "name": "Custom settings width bar-chart",
+      "name": "Bar-chart Max and min",
       "filePath": "templates/components/bar-chart/bar-chart-3/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-3/preview.png",
       "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource.yaml"
+      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
     },
     {
-      "name": "Bar-chart Max and min",
+      "name": "Bar-chart hidden axis",
       "filePath": "templates/components/bar-chart/bar-chart-4/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-4/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
     },
     {
-      "name": "Bar-chart hidden axis",
+      "name": "Bar-chart Tick amount",
       "filePath": "templates/components/bar-chart/bar-chart-5/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-5/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
     },
     {
-      "name": "Bar-chart Tick amount",
+      "name": "Bar-chart with enabled data labels",
       "filePath": "templates/components/bar-chart/bar-chart-6/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-6/preview.png",
       "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
-    },
-    {
-      "name": "Bar-chart with enabled data labels",
-      "filePath": "templates/components/bar-chart/bar-chart-7/template.yaml",
-      "previewImgSrc": "templates/components/bar-chart/bar-chart-7/preview.png",
-      "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-7/datasource.yaml"
+      "datasource": "templates/components/bar-chart/bar-chart-6/datasource.yaml"
     },
     {
       "name": "With Entity Field, Sections and Field Row",

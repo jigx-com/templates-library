@@ -1,14 +1,15 @@
 type: component.bar-chart
 options:
   chart:
-    subtitle: "tickAmount: 2"
-    title: Tick amount
-  plotOptions:
-    series:
-      pointWidth: 24
+    title: Enabled data labels
+  legend:
+    isHidden: false
   series:
-    - color: color6
-      data: =@ctx.datasources.mydata
+    - color: color2
+      data: =@ctx.datasources.serie4
+      dataLabels:
+        - isEnabled: true
+      name: My data 4
   xAxis:
     categories:
       - "1"
@@ -16,7 +17,5 @@ options:
       - "3"
       - "4"
   yAxis:
-    isFirstTickHidden: true
-    max: 10000
+    max: 100
     min: 0
-    tickAmount: 2

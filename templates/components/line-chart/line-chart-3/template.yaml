@@ -25,4 +25,4 @@ options:
     - data: =@ctx.datasources.population
       color: color1
       layout: area-gradient
-      name: Usa Population
+      name: USA Population

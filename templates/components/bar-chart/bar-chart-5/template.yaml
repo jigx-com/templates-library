@@ -1,8 +1,8 @@
 type: component.bar-chart
 options:
   chart:
-    subtitle: "isHidden: true"
-    title: Hidden
+    subtitle: "tickAmount: 2"
+    title: Tick amount
   plotOptions:
     series:
       pointWidth: 24
@@ -16,6 +16,7 @@ options:
       - "3"
       - "4"
   yAxis:
-    isHidden: true
+    isFirstTickHidden: true
     max: 10000
     min: 0
+    tickAmount: 2

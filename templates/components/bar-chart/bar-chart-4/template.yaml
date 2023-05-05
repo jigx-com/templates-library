@@ -1,8 +1,8 @@
 type: component.bar-chart
 options:
   chart:
-    subtitle: "max: 10000, min: 0"
-    title: Max and min
+    subtitle: "isHidden: true"
+    title: Hidden
   plotOptions:
     series:
       pointWidth: 24
@@ -16,6 +16,6 @@ options:
       - "3"
       - "4"
   yAxis:
+    isHidden: true
     max: 10000
     min: 0
-    tickAmount: 3
