@@ -1127,41 +1127,6 @@
       "templateRef": "jc-pie-chart"
     },
     {
-      "name": "Pie chart - Height: 120",
-      "filePath": "templates/components/pie-chart/pie-chart-4/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/pie-chart-4/preview.png",
-      "datasource": "templates/components/pie-chart/shared/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
-      "name": "Pie chart - Height: 180",
-      "filePath": "templates/components/pie-chart/pie-chart-5/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/pie-chart-5/preview.png",
-      "datasource": "templates/components/pie-chart/shared/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
-      "name": "Pie chart - Height: 250",
-      "filePath": "templates/components/pie-chart/pie-chart-6/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/pie-chart-6/preview.png",
-      "datasource": "templates/components/pie-chart/shared/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
-      "name": "Pie chart - Width: 300",
-      "filePath": "templates/components/pie-chart/pie-chart-7/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/pie-chart-7/preview.png",
-      "datasource": "templates/components/pie-chart/shared/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
-      "name": "Pie chart - Custom labels",
-      "filePath": "templates/components/pie-chart/pie-chart-8/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/pie-chart-8/preview.png",
-      "datasource": "templates/components/pie-chart/pie-chart-8/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
       "name": "Arch chart",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-1/template.yaml",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-1/preview.png",
@@ -1180,41 +1145,6 @@
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-3/template.yaml",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-3/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-3/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
-      "name": "Arch chart - Height: 120",
-      "filePath": "templates/components/pie-chart/arch-chart/arch-chart-4/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-4/preview.png",
-      "datasource": "templates/components/pie-chart/shared/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
-      "name": "Arch chart - Height: 180",
-      "filePath": "templates/components/pie-chart/arch-chart/arch-chart-5/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-5/preview.png",
-      "datasource": "templates/components/pie-chart/shared/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
-      "name": "Arch chart - Height: 250",
-      "filePath": "templates/components/pie-chart/arch-chart/arch-chart-6/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-6/preview.png",
-      "datasource": "templates/components/pie-chart/shared/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
-      "name": "Arch chart - Width: 300",
-      "filePath": "templates/components/pie-chart/arch-chart/arch-chart-7/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-7/preview.png",
-      "datasource": "templates/components/pie-chart/shared/datasource.yaml",
-      "templateRef": "jc-pie-chart"
-    },
-    {
-      "name": "Arch chart - Custom labels",
-      "filePath": "templates/components/pie-chart/arch-chart/arch-chart-8/template.yaml",
-      "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-8/preview.png",
-      "datasource": "templates/components/pie-chart/arch-chart/arch-chart-8/datasource.yaml",
       "templateRef": "jc-pie-chart"
     },
     {
