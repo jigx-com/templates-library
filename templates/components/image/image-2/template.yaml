@@ -1,6 +1,5 @@
 type: component.image
 options:
-  title: "ResizeMode: Contain / Height: 200"
   height: 200
   resizeMode: contain
   source:

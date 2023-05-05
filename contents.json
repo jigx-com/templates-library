@@ -1009,15 +1009,9 @@
       "templateRef": "jc-image"
     },
     {
-      "name": "Image ResizeMode: Center / Height: 200",
+      "name": "Image ResizeMode: Stretch / Height: 200",
       "filePath": "templates/components/image/image-3/template.yaml",
       "previewImgSrc": "templates/components/image/image-3/preview.png",
-      "templateRef": "jc-image"
-    },
-    {
-      "name": "Image ResizeMode: Stretch / Height: 200",
-      "filePath": "templates/components/image/image-4/template.yaml",
-      "previewImgSrc": "templates/components/image/image-4/preview.png",
       "templateRef": "jc-image"
     },
     {
