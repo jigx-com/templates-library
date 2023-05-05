@@ -22,11 +22,14 @@ options:
             options:
               icon: phone
               label: Phone
-          - type: component.text-field
+              keyboardType: phone-pad
+              textContentType: telephoneNumber
+          - type: component.email-field
             instanceId: email
             options:
               icon: email
               label: Email
+              keyboardType: email-address
     - type: component.section
       options:
         title: Address
@@ -47,3 +50,5 @@ options:
             instanceId: postal-code
             options:
               label: Postal Code
+              keyboardType: numbers-and-punctuation
+              textContentType: postalCode

@@ -82,13 +82,9 @@ options:
         label: Label
         value: Value
     - type: component.text-field
-      instanceId: text-field-5
-      options:
-        autoCapitalize: words
-        color:
-          - color: color9
-            when: true
-        format:
-          currencyDisplay: symbol
-          unit: "$"
-        label: Label
+          instanceId: text-field-5
+          options:
+            color:
+              - color: color9
+                when: true
+            label: Text box with color
