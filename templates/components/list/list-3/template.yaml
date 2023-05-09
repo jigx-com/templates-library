@@ -17,7 +17,6 @@ options:
       style:
         isStrikeThrough: =@ctx.component.state.checked = true ? true :false
         isDisabled: =@ctx.component.state.checked = true ? true :false
-      avatars:
-        - text: VM
+      avatars: =@ctx.current.item.avatars
       label:
         title: category
