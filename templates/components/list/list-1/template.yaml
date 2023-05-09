@@ -32,14 +32,14 @@ options:
             icon: pencil-2
             color: warning
             onPress:
-              type: action.go-to
+              type: action.open-url
               options:
-                linkTo: create the file for this action
+                url: https://docs.jigx.com/examples/go-to
         right:
           - label: label
             icon: pencil-2
             color: primary
             onPress:
-              type: action.go-to
+              type: action.open-url
               options:
-                linkTo: create the file for this action
+                url: https://docs.jigx.com/examples/go-to

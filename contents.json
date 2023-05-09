@@ -1233,7 +1233,7 @@
       "templateRef": "jc-stage"
     },
     {
-      "name": "Stock Inventory",
+      "name": "Stock inventory with avatar, progress and label",
       "filePath": "templates/components/list/list-1/template.yaml",
       "previewImgSrc": "templates/components/list/list-1/preview.png",
       "datasource": "templates/components/list/list-1/datasource.yaml",

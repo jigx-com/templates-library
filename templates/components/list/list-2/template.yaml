@@ -8,7 +8,7 @@ options:
     - title: Won
       value: Success
     - title: Lost
-      value: Unsuccess
+      value: Failure
   data: =$filter(@ctx.datasources.components, function($v, $a, $i) { @ctx.components.listFilter.state.filter = 'all' or $v.result = @ctx.components.listFilter.state.filter })
   item:
     type: component.list-item
@@ -23,7 +23,7 @@ options:
         element: checkbox
         value: =(@ctx.current.item.status= 'Finished' ? true :false)
       style:
-        isError: =(@ctx.current.item.result= 'Unsuccess' ? true :false)
+        isError: =(@ctx.current.item.result= 'Failure' ? true :false)
         isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
       rightElement:
         element: value

@@ -55,7 +55,7 @@ components:
         progress: 0.47
         value: 42000
         status: Finished
-        result: Unsuccess
+        result: Failure
         reason: Stopped Because Of High Price
         badge: "off"
       - name: Ovuga
@@ -99,7 +99,7 @@ components:
         progress: 0.78
         value: 154000
         status: Finished
-        result: Unsuccess
+        result: Failure
         reason: Stopped Because Of High Price
         badge: "on"
       - name: Jacobs Engineering Group
