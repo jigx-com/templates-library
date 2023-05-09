@@ -1,12 +1,5 @@
 type: component.expander
 options:
-  children:
-    - type: component.line-chart
-      options:
-        series:
-          - color: color2
-            data: =@ctx.datasources.linechart
-            layout: area-gradient
   header:
     centerElement:
       type: component.stage
@@ -17,4 +10,8 @@ options:
         right:
           subtitle: End subtitle
           title: End title
+  children:
+    - type: component.location
+      options:
+        address: Goat Island, Niagara Falls, NY 14303
   isInitiallyCollapsed: false

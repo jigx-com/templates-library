@@ -1,29 +1,26 @@
 type: component.expander
 options:
+  children:
+    - type: component.pie-chart
+      options:
+        chart:
+          subtitle:
+            text: Subtitle
+            verticalAlign: center
+          title:
+            text: Title
+            verticalAlign: center
+        series:
+          - data: =@ctx.datasources.piechart
+            layout: arch
   header:
     centerElement:
-      type: component.titles
+      type: component.stage
       options:
-        title: Title
-        subtitle: Subtitle
-  children:
-    - type: component.stepper
-      options:
-        title: Title
-        completedPercentage: 0.25
-        data: =@ctx.datasources.steps
-        isExpandable: true
-        item:
-          type: component.step
-          options:
-            title: =@ctx.current.item.title
-            leftElement:
-              element: icon
-              name: =@ctx.current.item.icon
-            style:
-              isActive: =@ctx.current.item.isActive
-              isDisabled: =@ctx.current.item.isWaiting
-              isPositive: =@ctx.current.item.isCompleted
-              isStrikeThrough: =@ctx.current.item.isCompleted
-            value: =@ctx.current.item.value
+        left:
+          subtitle: Start subtitle
+          title: Start title
+        right:
+          subtitle: End subtitle
+          title: End title
   isInitiallyCollapsed: false

@@ -1,88 +1,19 @@
-interactiveimg:
+list:
+  type: datasource.static
   options:
     data:
-      - groupId:
-        id: 1
-        isReserved: false
-        name: Seat 1
-        xCoordinate: 53
-        yCoordinate: 12
-      - groupId:
-        id: 2
-        isReserved: false
-        name: Seat 2
-        xCoordinate: 53
-        yCoordinate: 29
-      - groupId:
-        id: 3
-        isReserved: false
-        name: Seat 3
-        xCoordinate: 53
-        yCoordinate: 66
-      - groupId: reserved
-        id: 4
-        isReserved: true
-        name: Seat 4
-        xCoordinate: 53
-        yCoordinate: 83
-      - groupId:
-        id: 5
-        isReserved: false
-        name: Seat 5
-        xCoordinate: 38.5
-        yCoordinate: 12
-      - groupId:
-        id: 6
-        isReserved: false
-        name: Seat 6
-        xCoordinate: 38.5
-        yCoordinate: 29
-      - groupId: reserved
-        id: 7
-        isReserved: true
-        name: Seat 7
-        xCoordinate: 38.5
-        yCoordinate: 66
-      - groupId:
-        id: 8
-        isReserved: false
-        name: Seat 8
-        xCoordinate: 38.5
-        yCoordinate: 83
-      - groupId:
-        id: 9
-        isReserved: false
-        name: Seat 9
-        xCoordinate: 24.4
-        yCoordinate: 12
-      - groupId:
-        id: 10
-        isReserved: false
-        name: Seat 10
-        xCoordinate: 24.4
-        yCoordinate: 29
-      - groupId: reserved
-        id: 11
-        isReserved: true
-        name: Seat 11
-        xCoordinate: 24.4
-        yCoordinate: 66
-      - groupId: reserved
-        id: 12
-        isReserved: true
-        name: Seat 12
-        xCoordinate: 24.4
-        yCoordinate: 83
-      - groupId:
-        id: 13
-        isReserved: false
-        name: Seat 13
-        xCoordinate: 10
-        yCoordinate: 66
-      - groupId:
-        id: 14
-        isReserved: false
-        name: Seat 14
-        xCoordinate: 10
-        yCoordinate: 83
-  type: datasource.static
+      - subtitle: HR Analyst
+        title: Peter Picklet
+        uri: https://upload.wikimedia.org/wikipedia/en/a/a1/NafSadh_Profile.jpg
+      - subtitle: HR Analyst
+        title: Natasha Jennkins
+        uri: https://randomuser.me/api/portraits/women/79.jpg
+      - subtitle: Senior Recruiter
+        title: Dudley Dudeson
+        uri: https://randomuser.me/api/portraits/men/74.jpg
+      - subtitle: Recruiter
+        title: Liam Hannant
+        uri: https://randomuser.me/api/portraits/men/78.jpg
+      - subtitle: Senior Recruiter
+        title: Nancy Drew
+        uri: https://randomuser.me/api/portraits/men/62.jpg

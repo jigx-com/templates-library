@@ -11,20 +11,15 @@ options:
           subtitle: End subtitle
           title: End title
   children:
-    - type: component.list
+    - type: component.pie-chart
       options:
-        data: =@ctx.datasources.list
-        item:
-          type: component.list-item
-          options:
-            title: =@ctx.current.item.title
-            subtitle: =@ctx.current.item.subtitle
-            leftElement:
-              element: avatar
-              text: ""
-              uri: =@ctx.current.item.uri
-            rightElement:
-              element: icon
-              name: arrow-right
-        maximumItemsToRender: 8
+        chart:
+          subtitle:
+            text: Subtitle
+            verticalAlign: center
+          title:
+            text: Title
+            verticalAlign: center
+        series:
+          - data: =@ctx.datasources.piechart
   isInitiallyCollapsed: false

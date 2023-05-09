@@ -1,19 +1,10 @@
-list:
+piechart:
   type: datasource.static
   options:
     data:
-      - subtitle: HR Analyst
-        title: Peter Picklet
-        uri: https://upload.wikimedia.org/wikipedia/en/a/a1/NafSadh_Profile.jpg
-      - subtitle: HR Analyst
-        title: Natasha Jennkins
-        uri: https://randomuser.me/api/portraits/women/79.jpg
-      - subtitle: Senior Recruiter
-        title: Dudley Dudeson
-        uri: https://randomuser.me/api/portraits/men/74.jpg
-      - subtitle: Recruiter
-        title: Liam Hannant
-        uri: https://randomuser.me/api/portraits/men/78.jpg
-      - subtitle: Senior Recruiter
-        title: Nancy Drew
-        uri: https://randomuser.me/api/portraits/men/62.jpg
+      - color: color6
+        y: 25
+      - color: color4
+        y: 15
+      - color: color3
+        y: 5

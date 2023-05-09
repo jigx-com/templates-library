@@ -7,9 +7,29 @@ options:
         title: Title
         subtitle: Subtitle
   children:
-    - type: component.image
+    - type: component.interactive-image
       options:
-        resizeMode: cover
+        data: =@ctx.datasources.interactiveimg
+        groups:
+          - color: color2
+            id: selected
+            title: Your selected seats
+          - color: color14
+            id: reserved
+            title: Reserved seats
+        item:
+          type: component.interactive-image-item
+          options:
+            title: =@ctx.current.item.name
+            color: =@ctx.current.item.isReserved = true ? 'color4' :null
+            groupId: =@ctx.current.item.groupId
+            icon: =@ctx.current.item.isReserved = true ? 'close' :null
+            id: =@ctx.current.item.id
+            percentageCoordinates:
+              x: =@ctx.current.item.xCoordinate
+              y: =@ctx.current.item.yCoordinate
+            style:
+              isDisabled: =@ctx.current.item.isReserved = true ? true :false
         source:
-          uri: https://images.unsplash.com/photo-1670189577367-2c6ef31a4b8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80
+          uri: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxnSPwgDIBx10pBXM2omf9twq7LnqQFtKXQZdVvOCORlcVd6h-woQc1fbvoILSKe4pqo&usqp=CAU
   isInitiallyCollapsed: false

@@ -7,10 +7,20 @@ options:
         title: Title
         subtitle: Subtitle
   children:
-    - type: component.line-chart
+    - type: component.list
       options:
-        series:
-          - color: color2
-            data: =@ctx.datasources.linechart
-            layout: area-gradient
+        data: =@ctx.datasources.list
+        item:
+          type: component.list-item
+          options:
+            title: =@ctx.current.item.title
+            subtitle: =@ctx.current.item.subtitle
+            leftElement:
+              element: avatar
+              text: ""
+              uri: =@ctx.current.item.uri
+            rightElement:
+              element: icon
+              name: arrow-right
+        maximumItemsToRender: 8
   isInitiallyCollapsed: false

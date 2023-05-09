@@ -11,15 +11,8 @@ options:
           subtitle: End subtitle
           title: End title
   children:
-    - type: component.pie-chart
+    - type: component.web-view
       options:
-        chart:
-          subtitle:
-            text: Subtitle
-            verticalAlign: center
-          title:
-            text: Title
-            verticalAlign: center
-        series:
-          - data: =@ctx.datasources.piechart
+        height: 400
+        uri: https://www.google.com/
   isInitiallyCollapsed: false

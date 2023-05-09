@@ -1,88 +1,16 @@
-interactiveimg:
+linechart:
   type: datasource.static
   options:
     data:
-      - groupId:
-        id: 1
-        isReserved: false
-        name: Seat 1
-        xCoordinate: 53
-        yCoordinate: 12
-      - groupId:
-        id: 2
-        isReserved: false
-        name: Seat 2
-        xCoordinate: 53
-        yCoordinate: 29
-      - groupId:
-        id: 3
-        isReserved: false
-        name: Seat 3
-        xCoordinate: 53
-        yCoordinate: 66
-      - groupId: reserved
-        id: 4
-        isReserved: true
-        name: Seat 4
-        xCoordinate: 53
-        yCoordinate: 83
-      - groupId:
-        id: 5
-        isReserved: false
-        name: Seat 5
-        xCoordinate: 38.5
-        yCoordinate: 12
-      - groupId:
-        id: 6
-        isReserved: false
-        name: Seat 6
-        xCoordinate: 38.5
-        yCoordinate: 29
-      - groupId: reserved
-        id: 7
-        isReserved: true
-        name: Seat 7
-        xCoordinate: 38.5
-        yCoordinate: 66
-      - groupId:
-        id: 8
-        isReserved: false
-        name: Seat 8
-        xCoordinate: 38.5
-        yCoordinate: 83
-      - groupId:
-        id: 9
-        isReserved: false
-        name: Seat 9
-        xCoordinate: 24.4
-        yCoordinate: 12
-      - groupId:
-        id: 10
-        isReserved: false
-        name: Seat 10
-        xCoordinate: 24.4
-        yCoordinate: 29
-      - groupId: reserved
-        id: 11
-        isReserved: true
-        name: Seat 11
-        xCoordinate: 24.4
-        yCoordinate: 66
-      - groupId: reserved
-        id: 12
-        isReserved: true
-        name: Seat 12
-        xCoordinate: 24.4
-        yCoordinate: 83
-      - groupId:
-        id: 13
-        isReserved: false
-        name: Seat 13
-        xCoordinate: 10
-        yCoordinate: 66
-      - groupId:
-        id: 14
-        isReserved: false
-        name: Seat 14
-        xCoordinate: 10
-        yCoordinate: 83
+      - x: 0
+        y: "1000"
+      - x: 5
+        y: "1120"
+      - x: 13
+        y: "901.3"
+      - x: 20
+        y: "879.8"
+      - x: 22
+        y: "645.5"
+      - x: 25
+        y: "523.5"
