@@ -1,16 +1,20 @@
 type: component.list
 options:
+  isHorizontal: true
   maximumItemsToRender: 8
-  data: =@ctx.datasources.product-item
+  data: =@ctx.datasources.horizontal
   item:
-    type: component.product-item
+    type: component.list-item
     options:
       title: =@ctx.current.item.title
-      image:
-        uri: =@ctx.current.item.uri
-      discount: =@ctx.current.item.discount
-      price:
-        value: =@ctx.current.item.price
-        format:
-          numberStyle: currency
-      tag: =@ctx.current.item.tag
+      subtitle: =@ctx.current.item.subtitle
+      leftElement:
+        element: image
+        text: ""
+        uri: =@ctx.current.item.image
+      rightElement:
+        element: value
+        text: =@ctx.current.item.rightElement
+      divider: solid
+      style:
+        isHighlighted: =@ctx.current.item.highlight

@@ -1,15 +1,20 @@
 type: component.list
-instanceId: listId
 options:
   maximumItemsToRender: 8
-  isSearchable: true
-  data: =$filter(@ctx.datasources.search, function($v){@ctx.datasources.search ? $contains($string($v.title),$string(@ctx.components.listId.state.searchText != null ? @ctx.components.listId.state.searchText :'')) :true})[]
+  sections:
+    - title: Active tasks
+      data: =@ctx.datasources.sections-list[active=true]
+    - title: Inactive tasks
+      data: =@ctx.datasources.sections-list[active=false]
   item:
     type: component.list-item
     options:
       title: =@ctx.current.item.title
       subtitle: =@ctx.current.item.subtitle
-      leftElement:
-        element: image
-        text: ""
-        uri: =@ctx.current.item.image
+      rightElement:
+        element: button
+        title: =@ctx.current.item.active ? 'Deactivate' :'Activate'
+        onPress:
+          type: action.open-url
+          options:
+            url: https://docs.jigx.com/examples/set-state

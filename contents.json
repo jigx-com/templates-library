@@ -1282,115 +1282,73 @@
       "templateRef": "jc-list"
     },
     {
-      "name": "Expander (stage)",
+      "name": "Expander (stage header)",
       "filePath": "templates/components/list/list-8/template.yaml",
       "previewImgSrc": "templates/components/list/list-8/preview.png",
       "datasource": "templates/components/list/list-8/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
-      "name": "Expander (titles)",
+      "name": "Expander (titles header)",
       "filePath": "templates/components/list/list-9/template.yaml",
       "previewImgSrc": "templates/components/list/list-9/preview.png",
       "datasource": "templates/components/list/list-9/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
-      "name": "Search and left image",
+      "name": "Sections and button",
       "filePath": "templates/components/list/list-10/template.yaml",
       "previewImgSrc": "templates/components/list/list-10/preview.png",
       "datasource": "templates/components/list/list-10/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
-      "name": "Filter, progress and label",
+      "name": "Product item",
       "filePath": "templates/components/list/list-11/template.yaml",
       "previewImgSrc": "templates/components/list/list-11/preview.png",
       "datasource": "templates/components/list/list-11/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
-      "name": "Sections and button",
+      "name": "Product item with amount control",
       "filePath": "templates/components/list/list-12/template.yaml",
       "previewImgSrc": "templates/components/list/list-12/preview.png",
       "datasource": "templates/components/list/list-12/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
-      "name": "Product item",
+      "name": "Image and value (horizontal)",
       "filePath": "templates/components/list/list-13/template.yaml",
       "previewImgSrc": "templates/components/list/list-13/preview.png",
       "datasource": "templates/components/list/list-13/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
-      "name": "Product item with amount control",
+      "name": "Icon and switch (horizontal)",
       "filePath": "templates/components/list/list-14/template.yaml",
       "previewImgSrc": "templates/components/list/list-14/preview.png",
       "datasource": "templates/components/list/list-14/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
-      "name": "Image and value (horizontal)",
+      "name": "Swipe & icon",
       "filePath": "templates/components/list/list-15/template.yaml",
       "previewImgSrc": "templates/components/list/list-15/preview.png",
       "datasource": "templates/components/list/list-15/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
-      "name": "Icon and switch (horizontal)",
+      "name": "Checkbox and avatar",
       "filePath": "templates/components/list/list-16/template.yaml",
       "previewImgSrc": "templates/components/list/list-16/preview.png",
       "datasource": "templates/components/list/list-16/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
-      "name": "Swipe & icon",
+      "name": "Search bar, switch & image",
       "filePath": "templates/components/list/list-17/template.yaml",
       "previewImgSrc": "templates/components/list/list-17/preview.png",
       "datasource": "templates/components/list/list-17/datasource.yaml",
-      "templateRef": "jc-list"
-    },
-    {
-      "name": "Checkbox and avatar",
-      "filePath": "templates/components/list/list-18/template.yaml",
-      "previewImgSrc": "templates/components/list/list-18/preview.png",
-      "datasource": "templates/components/list/list-18/datasource.yaml",
-      "templateRef": "jc-list"
-    },
-    {
-      "name": "Switch & image",
-      "filePath": "templates/components/list/list-19/template.yaml",
-      "previewImgSrc": "templates/components/list/list-19/preview.png",
-      "datasource": "templates/components/list/list-19/datasource.yaml",
-      "templateRef": "jc-list"
-    },
-    {
-      "name": "Avatar & Progress",
-      "filePath": "templates/components/list/list-21/template.yaml",
-      "previewImgSrc": "templates/components/list/list-21/preview.png",
-      "datasource": "templates/components/list/list-21/datasource.yaml",
-      "templateRef": "jc-list"
-    },
-    {
-      "name": "Bar charts list",
-      "filePath": "templates/components/list/list-22/template.yaml",
-      "previewImgSrc": "templates/components/list/list-22/preview.png",
-      "datasource": "templates/components/list/list-22/datasource.yaml",
-      "templateRef": "jc-list"
-    },
-    {
-      "name": "Pie charts list",
-      "filePath": "templates/components/list/list-23/template.yaml",
-      "previewImgSrc": "templates/components/list/list-23/preview.png",
-      "datasource": "templates/components/list/list-23/datasource.yaml",
-      "templateRef": "jc-list"
-    },
-    {
-      "name": "Arch charts list",
-      "filePath": "templates/components/list/list-24/template.yaml",
-      "previewImgSrc": "templates/components/list/list-24/preview.png",
-      "datasource": "templates/components/list/list-24/datasource.yaml",
       "templateRef": "jc-list"
     },
     {

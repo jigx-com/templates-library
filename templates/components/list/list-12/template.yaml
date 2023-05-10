@@ -1,18 +1,18 @@
 type: component.list
 options:
   maximumItemsToRender: 8
-  sections:
-    - title: Active tasks
-      data: =@ctx.datasources.sections-list[active=true]
-    - title: Inactive tasks
-      data: =@ctx.datasources.sections-list[active=false]
+  data: =@ctx.datasources.product-item
   item:
-    type: component.list-item
+    type: component.product-item
     options:
       title: =@ctx.current.item.title
-      subtitle: =@ctx.current.item.subtitle
-      rightElement:
-        element: button
-        title: =@ctx.current.item.active ? 'Deactivate' :'Activate'
-        onPress:
-          type: action.go-back
+      image:
+        uri: =@ctx.current.item.uri
+      discount: =@ctx.current.item.discount
+      price:
+        value: =@ctx.component.state.amount = 0 ? @ctx.current.item.price :$sum(@ctx.component.state.amount * @ctx.current.item.price)
+        format:
+          numberStyle: currency
+      amountControl:
+        maximum: 10
+        initialValue: =@ctx.current.item.amount
