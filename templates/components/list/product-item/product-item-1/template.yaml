@@ -1,11 +1,11 @@
 type: component.product-item
 options:
-  title: Title
+  title: =@ctx.current.item.title
   image:
-    uri: https://images.unsplash.com/photo-1611850698562-ae3d28934080?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
-  discount: 0.1
+    uri: =@ctx.current.item.img
+  discount: =@ctx.current.item.discount
   price:
-    value: =@ctx.component.state.amount = 0 ? 59.96 :$sum(@ctx.component.state.amount * 59.96)
+    value: =@ctx.component.state.amount = 0 ? @ctx.current.item.price :$sum(@ctx.component.state.amount * @ctx.current.item.price)
     format:
       numberStyle: currency
   amountControl:
