@@ -1215,14 +1215,14 @@
       "name": "Left title & subtitle - Icon - Right title & subtitle",
       "filePath": "templates/components/list/stage/stage-1/template.yaml",
       "previewImgSrc": "templates/components/list/stage/stage-1/preview.png",
-      "datasource": "templates/components/list/stage/shared/datasource.yaml",
+      "datasource": "templates/components/list/stage/stage-1/datasource.yaml",
       "templateRef": "jc-stage"
     },
     {
       "name": "Left title - Icon - Right title",
       "filePath": "templates/components/list/stage/stage-2/template.yaml",
       "previewImgSrc": "templates/components/list/stage/stage-2/preview.png",
-      "datasource": "templates/components/list/stage/shared/datasource.yaml",
+      "datasource": "templates/components/list/stage/stage-2/datasource.yaml",
       "templateRef": "jc-stage"
     },
     {
