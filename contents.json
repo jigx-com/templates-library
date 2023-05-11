@@ -572,13 +572,6 @@
       "templateRef": "jc-expander"
     },
     {
-      "name": "Expander with stage header and Web view component",
-      "filePath": "templates/components/expander/expander-22/template.yaml",
-      "previewImgSrc": "templates/components/expander/expander-22/preview.jpg",
-      "templateRef": "jc-expander"
-    },
-
-    {
       "name": "Form with all possible elements",
       "filePath": "templates/components/form/form-1/template.yaml",
       "previewImgSrc": "templates/components/form/form-1/preview.png",
