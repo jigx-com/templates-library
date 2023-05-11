@@ -1201,14 +1201,14 @@
       "name": "Image - Amount control - Price - Discount",
       "filePath": "templates/components/list/product-item/product-item-1/template.yaml",
       "previewImgSrc": "templates/components/list/product-item/product-item-1/preview.png",
-      "datasource": "templates/components/list/product-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/product-item/product-item-1/datasource.yaml",
       "templateRef": "jc-product-item"
     },
     {
       "name": "Image - Tag - Price",
       "filePath": "templates/components/list/product-item/product-item-2/template.yaml",
       "previewImgSrc": "templates/components/list/product-item/product-item-2/preview.png",
-      "datasource": "templates/components/list/product-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/product-item/product-item-2/datasource.yaml",
       "templateRef": "jc-product-item"
     },
     {
