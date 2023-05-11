@@ -5,10 +5,10 @@ options:
       type: component.stage
       options:
         left:
-          subtitle: Start subtitle
+          subtitle: Subtitle
           title: Start title
         right:
-          subtitle: End subtitle
+          subtitle: Subtitle
           title: End title
   children:
     - type: component.stepper

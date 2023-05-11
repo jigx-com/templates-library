@@ -1,4 +1,5 @@
 interactiveimg:
+  type: datasource.static
   options:
     data:
       - groupId:
@@ -85,4 +86,4 @@ interactiveimg:
         name: Seat 14
         xCoordinate: 10
         yCoordinate: 83
-  type: datasource.static
+  
