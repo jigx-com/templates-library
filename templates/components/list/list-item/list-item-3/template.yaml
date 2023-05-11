@@ -4,14 +4,13 @@ options:
   color:
     - when: true
       color: color14
-  title: Task name
-  subtitle: Description of the task
+  title: =@ctx.current.item.title
+  subtitle: =@ctx.current.item.subtitle
   leftElement:
     element: checkbox
-    value: true
+    value: =@ctx.current.item.checked
   style:
     isStrikeThrough: true
-  avatars:
-    - text: VM
+  avatars: =@ctx.current.item.avatars
   label:
-    title: category
+    title: =@ctx.current.item.label

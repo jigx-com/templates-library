@@ -1,0 +1,10 @@
+list:
+  type: datasource.static
+  options:
+    data:
+      - title: Task name
+        subtitle: Description of the task
+        checked: true
+        label: category
+        avatars:
+          - text: VM

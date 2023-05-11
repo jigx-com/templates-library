@@ -1,0 +1,6 @@
+web-view: 
+  type: datasource.static
+  options:
+    data:
+      - appName: Jigx
+        firstName: John

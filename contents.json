@@ -1152,7 +1152,7 @@
       "name": "Left checkbox - Label - Avatars",
       "filePath": "templates/components/list/list-item/list-item-3/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-3/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-3/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {
@@ -1378,9 +1378,10 @@
       "templateRef": "jc-video-player-on-jig"
     },
     {
-      "name": "Web view with the default height",
+      "name": "Web view with HTML content",
       "filePath": "templates/components/web-view/web-view-1/template.yaml",
       "previewImgSrc": "templates/components/web-view/web-view-1/preview.jpg",
+      "datasource": "templates/components/web-view/web-view-1/datasource.yaml",
       "templateRef": "jc-web-view"
     },
     {
