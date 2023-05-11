@@ -1,5 +1,0 @@
-list:
-  type: datasource.static
-  options:
-    data:
-      -

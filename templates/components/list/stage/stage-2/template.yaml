@@ -2,6 +2,6 @@ type: component.stage
 options:
   icon: truck-cargo
   left:
-    title: Start time
+    title: =@ctx.current.item.from
   right:
-    title: End time
+    title: =@ctx.current.item.to

@@ -1,0 +1,8 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - depAirport: JFK
+        depTime: 8:20am
+        arrAirport: LAX
+        arrTime: 11:38am

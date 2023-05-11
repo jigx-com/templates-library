@@ -2,8 +2,8 @@ type: component.stage
 options:
   icon: flight
   left:
-    title: Start title
-    subtitle: Start subtitle
+    title: =@ctx.current.item.depAirport
+    subtitle: =@ctx.current.item.depTime
   right:
-    title: End title
-    subtitle: End subtitle
+    title: =@ctx.current.item.arrAirport
+    subtitle: =@ctx.current.item.arrTime

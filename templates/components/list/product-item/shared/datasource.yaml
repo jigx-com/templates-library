@@ -1,4 +1,4 @@
-list:
+mydata:
   type: datasource.static
   options:
     data:
