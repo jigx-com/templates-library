@@ -1,0 +1,7 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - title: Function
+        subtitle: Description
+        description: Additional information

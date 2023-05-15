@@ -1131,14 +1131,14 @@
       "name": "Percentage - Left avatar - Right label",
       "filePath": "templates/components/list/list-item/list-item-1/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-1/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-1/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {
       "name": "Percentage - Left checkbox - Right value",
       "filePath": "templates/components/list/list-item/list-item-2/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-2/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-2/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {
@@ -1152,49 +1152,49 @@
       "name": "Left avatar - Right icon",
       "filePath": "templates/components/list/list-item/list-item-4/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-4/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-4/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {
       "name": "Left icon - Right value",
       "filePath": "templates/components/list/list-item/list-item-5/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-5/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-5/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {
       "name": "Left progress - Right icon - Label",
       "filePath": "templates/components/list/list-item/list-item-6/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-6/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-6/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {
       "name": "Left image - Right icon",
       "filePath": "templates/components/list/list-item/list-item-7/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-7/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-7/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {
       "name": "Left image - Right checkbox",
       "filePath": "templates/components/list/list-item/list-item-8/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-8/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-8/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {
       "name": "Left icon - Right switch",
       "filePath": "templates/components/list/list-item/list-item-9/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-9/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-9/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {
       "name": "Left image - Right amount control",
       "filePath": "templates/components/list/list-item/list-item-10/template.yaml",
       "previewImgSrc": "templates/components/list/list-item/list-item-10/preview.png",
-      "datasource": "templates/components/list/list-item/shared/datasource.yaml",
+      "datasource": "templates/components/list/list-item/list-item-10/datasource.yaml",
       "templateRef": "jc-list-item"
     },
     {

@@ -9,13 +9,13 @@ options:
   color:
     - when: true
       color: color4
-  title: Item 1
-  subtitle: Subtitle
-  description: Description
+  title: =@ctx.current.item.title
+  subtitle: =@ctx.current.item.subtitle
+  description: =@ctx.current.item.description
   leftElement:
     element: progress
-    title: 10 m
-    value: 0.3
+    title: =@ctx.current.item.distance & ' m' 
+    value: =@ctx.current.item.progress
   rightElement:
     element: icon
     name: information-circle

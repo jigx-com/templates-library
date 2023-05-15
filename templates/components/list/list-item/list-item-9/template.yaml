@@ -4,9 +4,9 @@ options:
     - when: true
       color: color2
   divider: solid
-  title: Function
-  subtitle: Description
-  description: Additional information
+  title: =@ctx.current.item.title
+  subtitle: =@ctx.current.item.subtitle
+  description: =@ctx.current.item.description
   leftElement:
     element: icon
     isContained: true

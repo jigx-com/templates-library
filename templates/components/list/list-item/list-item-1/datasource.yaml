@@ -1,0 +1,10 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - title: Product 1
+        description: Description
+        subtitle: Low inventory
+        label: 23 / 100
+        progress: 0.23
+        company: APV s.r.o.

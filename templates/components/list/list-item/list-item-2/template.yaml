@@ -1,11 +1,11 @@
 type: component.list-item
 options:
-  title: Customer name
-  subtitle: Stopped because of high price
+  title: =@ctx.current.item.title
+  subtitle: =@ctx.current.item.subtitle
   color:
     - when: true
       color: color2
-  progress: 0.75
+  progress: =@ctx.current.item.progress
   leftElement:
     element: checkbox
     value: true
@@ -14,4 +14,8 @@ options:
     isStrikeThrough: true
   rightElement:
     element: value
-    text: "$ 38.500"
+    text: 
+      text: =@ctx.current.item.amount
+      format:
+        numberStyle: currency
+        currency: USD

@@ -1,0 +1,9 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - title: Item 1
+        subtitle: Subtitle
+        description: Description
+        distance: 10
+        progress: 0.3

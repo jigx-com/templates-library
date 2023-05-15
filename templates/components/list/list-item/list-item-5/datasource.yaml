@@ -1,0 +1,6 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - title: Archive
+        items: 54

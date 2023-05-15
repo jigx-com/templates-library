@@ -1,13 +1,15 @@
 type: component.list-item
 options:
   color:
-    - when: true
+    - when: =@ctx.current.item.items > 25
       color: color2
+    - when: =@ctx.current.item.items < 10
+      color: color4
   divider: solid
-  title: Archive
+  title: =@ctx.current.item.title
   leftElement:
     element: icon
     name: archive-folder
   rightElement:
     element: value
-    text: "54"
+    text: =@ctx.current.item.items

@@ -1,0 +1,8 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - title: Customer name
+        subtitle: Stopped because of high price
+        progress: 0.75
+        amount: 38.500
