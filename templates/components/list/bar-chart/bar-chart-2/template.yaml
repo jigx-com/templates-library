@@ -1,0 +1,34 @@
+type: component.bar-chart
+options:
+  chart:
+    title: =@ctx.current.item.title
+    height: 280
+    isAnimated: true
+  legend:
+    isHidden: false
+  plotOptions:
+    series:
+      pointWidth: 12
+  series:
+    - color: =@ctx.current.item.data.color1
+      data: =@ctx.current.item.data.data1
+      name: =@ctx.current.item.data.series1
+    - color: =@ctx.current.item.data.color2
+      data: =@ctx.current.item.data.data2
+      name: =@ctx.current.item.data.series2
+  xAxis:
+    categories:
+      - "Q1"
+      - "Q2"
+      - "Q3"
+      - "Q4"
+    tickAmount: 3
+  yAxis:
+    labels:
+      format:
+        compactDisplay: short
+        currency: USD
+        notation: compact
+        numberStyle: currency
+    max: 65000
+    min: 10000

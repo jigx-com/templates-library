@@ -1,0 +1,37 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+        - title: bar-chart-1
+          color: color1
+          data:
+            - x: '2019'
+              y: 22000
+            - x: '2020'
+              y: 19000
+            - x: '2021'
+              y: 28000
+            - x: '2022'
+              y: 39000
+        - title: bar-chart-2
+          color: color2
+          data:
+            - x: '2019'
+              y: 45000
+            - x: '2020'
+              y: 38000
+            - x: '2021'
+              y: 46000
+            - x: '2022'
+              y: 51000
+        - title: bar-chart-3
+          color: color3
+          data:
+            - x: '2019'
+              y: 32000
+            - x: '2020'
+              y: 41000
+            - x: '2021'
+              y: 44000
+            - x: '2022'
+              y: 50000

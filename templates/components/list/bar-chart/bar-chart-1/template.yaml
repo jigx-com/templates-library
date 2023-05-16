@@ -1,0 +1,32 @@
+type: component.bar-chart
+options:
+  chart:
+    height: 280
+    isAnimated: true
+  legend:
+    isHidden: false
+  plotOptions:
+    series:
+      pointWidth: 12
+  series:
+    - color: =@ctx.current.item.color
+      data: =@ctx.current.item.data
+      dataLabels:
+        - isEnabled: false
+      name: =@ctx.current.item.title
+  xAxis:
+    categories:
+      - "2019"
+      - "2020"
+      - "2021"
+      - "2022"
+    tickAmount: 3
+  yAxis:
+    labels:
+      format:
+        compactDisplay: short
+        currency: USD
+        notation: compact
+        numberStyle: currency
+    max: 65000
+    min: 10000
