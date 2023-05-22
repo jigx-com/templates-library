@@ -3,8 +3,8 @@ instanceId: date-time-picker2
 options:
   color:
     - color: color6
-        when: true
-      helperText: Date Time picker with the custom color
-      isRequired: true
-      label: Date picker mode - datetime
-      mode: datetime
+      when: true
+  helperText: Date Time picker with the custom color
+  isRequired: true
+  label: Date picker mode - datetime
+  mode: datetime
