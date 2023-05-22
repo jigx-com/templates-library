@@ -31,19 +31,19 @@
       "templateRef": "jig-default"
     },
     {
-      "name": "Default jig 6",
+      "name": "Default jig 5",
       "filePath": "templates/jigs/default/template-default-6.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-6.png",
       "templateRef": "jig-default"
     },
     {
-      "name": "Default jig 7",
+      "name": "Default jig 6",
       "filePath": "templates/jigs/default/template-default-7.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-7.png",
       "templateRef": "jig-default"
     },
     {
-      "name": "Default jig 8",
+      "name": "Default jig 7",
       "filePath": "templates/jigs/default/template-default-8.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-8.png",
       "templateRef": "jig-default"
