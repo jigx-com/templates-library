@@ -1,11 +1,8 @@
-type: component.section
+type: component.date-picker
+instanceId: date-picker2
 options:
-  title: Date
-  children:
-    - instanceId: date-picker2
-      options:
-        errorText: Error message
-        format: LLLL
-        label: Date with Error
-        value: 10/10/2022
-      type: component.date-picker
+  errorText: Error message
+  format: LLLL
+  label: Date with Error
+  value: 10/10/2022
+      

@@ -4,3 +4,4 @@ options:
   helperText: Checked State
   label: Checkbox
   value: true
+  isRequired: false

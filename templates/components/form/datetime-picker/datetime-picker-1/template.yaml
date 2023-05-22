@@ -1,16 +1,8 @@
-type: component.form
-instanceId: form
+type: component.date-picker
+instanceId: date-time-picker1
 options:
-  children:
-    - type: component.section
-      options:
-        title: Date Time
-        children:
-          - type: component.date-picker
-            instanceId: date-time-picker1
-            options:
-              format: lll
-              helperText: Date Time picker with format lll
-              isRequired: true
-              label: Date picker mode - datetime
-              mode: datetime
+  format: lll
+  helperText: Date Time picker with format lll
+  isRequired: true
+  label: Date picker mode - datetime
+  mode: datetime
