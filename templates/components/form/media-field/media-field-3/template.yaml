@@ -5,3 +5,4 @@ options:
   isRequired: false
   label: Media field - Multi select
   mediaType: image
+  isMultiple: true
