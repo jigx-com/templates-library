@@ -82,9 +82,9 @@ options:
         label: Label
         value: Value
     - type: component.text-field
-          instanceId: text-field-5
-          options:
-            color:
-              - color: color9
-                when: true
-            label: Text box with color
+      instanceId: text-field-5
+      options:
+        color:
+          - color: color9
+            when: true
+        label: Text box with color
