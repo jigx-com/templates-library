@@ -1,15 +1,8 @@
 type: component.list
-instanceId: listFilter
+instanceId: list
 options:
   maximumItemsToRender: 20
-  filter:
-    - title: All
-      value: all
-    - title: Won
-      value: Success
-    - title: Lost
-      value: Failure
-  data: =$filter(@ctx.datasources.components, function($v, $a, $i) { @ctx.components.listFilter.state.filter = 'all' or $v.result = @ctx.components.listFilter.state.filter })
+  data: =@ctx.datasources.components
   item:
     type: component.list-item
     options:
