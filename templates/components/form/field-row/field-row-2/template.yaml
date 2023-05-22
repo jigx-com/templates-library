@@ -2,10 +2,14 @@ type: component.field-row
 options:
   children:
     - type: component.text-field
-      instanceId: first-name2
+      instanceId: first-name3
       options:
         label: First name
     - type: component.text-field
-      instanceId: last-name2
+      instanceId: middle-name3
+      options:
+        label: Middle name
+    - type: component.text-field
+      instanceId: last-name3
       options:
         label: Last name
