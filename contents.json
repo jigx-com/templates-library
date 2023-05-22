@@ -648,14 +648,14 @@
     },
     {
       "name": "Form Date Time picker with the custom color",
-      "filePath": "templates/components/form/datetime-picker/datetime-picker-1/template.yaml",
-      "previewImgSrc": "templates/components/form/datetime-picker/datetime-picker-1/preview.png",
+      "filePath": "templates/components/form/datetime-picker/datetime-picker-2/template.yaml",
+      "previewImgSrc": "templates/components/form/datetime-picker/datetime-picker-2/preview.png",
       "templateRef": "jc-date-picker"
     },
     {
       "name": "Form Date Time picker with initial value now",
-      "filePath": "templates/components/form/datetime-picker/datetime-picker-1/template.yaml",
-      "previewImgSrc": "templates/components/form/datetime-picker/datetime-picker-1/preview.png",
+      "filePath": "templates/components/form/datetime-picker/datetime-picker-3/template.yaml",
+      "previewImgSrc": "templates/components/form/datetime-picker/datetime-picker-3/preview.png",
       "templateRef": "jc-date-picker"
     },
 

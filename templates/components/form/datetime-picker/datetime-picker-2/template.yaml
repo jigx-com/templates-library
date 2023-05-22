@@ -1,18 +1,10 @@
-type: component.form
-instanceId: form
+type: component.date-picker
+instanceId: date-time-picker2
 options:
-  children:
-    - type: component.section
-      options:
-        title: Date Time
-        children:
-          - type: component.date-picker
-            instanceId: date-time-picker2
-            options:
-              color:
-                - color: color6
-                  when: true
-              helperText: Date Time picker with the custom color
-              isRequired: true
-              label: Date picker mode - datetime
-              mode: datetime
+  color:
+    - color: color6
+        when: true
+      helperText: Date Time picker with the custom color
+      isRequired: true
+      label: Date picker mode - datetime
+      mode: datetime
