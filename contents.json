@@ -31,12 +31,6 @@
       "templateRef": "jig-default"
     },
     {
-      "name": "Default jig 5",
-      "filePath": "templates/jigs/default/template-default-5.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-5.jpeg",
-      "templateRef": "jig-default"
-    },
-    {
       "name": "Default jig 6",
       "filePath": "templates/jigs/default/template-default-6.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-6.png",
