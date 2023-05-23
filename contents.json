@@ -820,18 +820,11 @@
       "templateRef": "jc-media-field"
     },
     {
-      "name": "Form media Field - Single select (required)",
+      "name": "Form media Field - Multi select (optional)",
       "filePath": "templates/components/form/media-field/media-field-2/template.yaml",
       "previewImgSrc": "templates/components/form/media-field/media-field-2/preview.png",
       "templateRef": "jc-media-field"
     },
-    {
-      "name": "Form media Field - Multi select (optional)",
-      "filePath": "templates/components/form/media-field/media-field-3/template.yaml",
-      "previewImgSrc": "templates/components/form/media-field/media-field-3/preview.png",
-      "templateRef": "jc-media-field"
-    },
-
     {
       "name": "Form number Field default",
       "filePath": "templates/components/form/number-field/number-field-1/template.yaml",

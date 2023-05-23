@@ -1,6 +1,7 @@
 type: component.media-field
-instanceId: media-field2
+instanceId: media-field3
 options:
-  isRequired: true
-  label: Media field - Single select
+  isMultiple: true
+  isRequired: false
+  label: Media field - Multi select
   mediaType: image
