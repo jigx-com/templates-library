@@ -1,7 +1,7 @@
 type: component.email-field
-instanceId: email-field4
+instanceId: email-field5
 options:
-  label: Busy
+  label: Disabled
   style:
-    isBusy: true
+    isDisabled: true
   value: email@jigx.com

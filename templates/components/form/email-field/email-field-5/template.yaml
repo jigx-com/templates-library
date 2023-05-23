@@ -1,7 +1,7 @@
 type: component.email-field
-instanceId: email-field5
+instanceId: email-field6
 options:
-  label: Disabled
+  label: Positive
   style:
-    isDisabled: true
+    isPositive: true
   value: email@jigx.com

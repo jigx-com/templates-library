@@ -736,27 +736,21 @@
       "templateRef": "jc-email-field"
     },
     {
-      "name": "Form email field with error",
+      "name": "Form email field loading",
       "filePath": "templates/components/form/email-field/email-field-3/template.yaml",
       "previewImgSrc": "templates/components/form/email-field/email-field-3/preview.png",
       "templateRef": "jc-email-field"
     },
     {
-      "name": "Form email field loading",
+      "name": "Form email field disabled",
       "filePath": "templates/components/form/email-field/email-field-4/template.yaml",
       "previewImgSrc": "templates/components/form/email-field/email-field-4/preview.png",
       "templateRef": "jc-email-field"
     },
     {
-      "name": "Form email field disabled",
+      "name": "Form email field positive",
       "filePath": "templates/components/form/email-field/email-field-5/template.yaml",
       "previewImgSrc": "templates/components/form/email-field/email-field-5/preview.png",
-      "templateRef": "jc-email-field"
-    },
-    {
-      "name": "Form email field positive",
-      "filePath": "templates/components/form/email-field/email-field-6/template.yaml",
-      "previewImgSrc": "templates/components/form/email-field/email-field-6/preview.png",
       "templateRef": "jc-email-field"
     },
     {
