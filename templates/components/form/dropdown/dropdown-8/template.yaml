@@ -1,9 +1,9 @@
 type: component.dropdown
-instanceId: dropdown-8
+instanceId: dropdown-10
 options:
   data: =@ctx.datasources.dropdown
-  helperText: With initial value
-  initialValue: =@ctx.datasources.dropdown[0].value
+  helperText: Multiple select
+  isMultiple: true
   item:
     type: component.dropdown-item
     options:
@@ -11,4 +11,4 @@ options:
       subtitle: =@ctx.current.item.subtitle
       description: =@ctx.current.item.description
       value: =@ctx.current.item.value
-  label: Dropdown 8
+  label: Dropdown 10

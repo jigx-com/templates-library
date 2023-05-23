@@ -702,37 +702,24 @@
       "templateRef": "jc-dropdown"
     },
     {
-      "name": "Form dropdown with custom right icon [not working]",
+      "name": "Form dropdown with initial value",
       "filePath": "templates/components/form/dropdown/dropdown-7/template.yaml",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-7/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.yaml",
       "templateRef": "jc-dropdown"
     },
+
     {
-      "name": "Form dropdown with initial value",
+      "name": "Form dropdown multiselect",
       "filePath": "templates/components/form/dropdown/dropdown-8/template.yaml",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-8/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-1.yaml",
       "templateRef": "jc-dropdown"
     },
     {
-      "name": "Form dropdown auto focused [not working]",
+      "name": "Form searchable dropdown",
       "filePath": "templates/components/form/dropdown/dropdown-9/template.yaml",
       "previewImgSrc": "templates/components/form/dropdown/dropdown-9/preview.png",
-      "datasource": "templates/components/form/dropdown/shared/datasource-1.yaml",
-      "templateRef": "jc-dropdown"
-    },
-    {
-      "name": "Form dropdown multiselect",
-      "filePath": "templates/components/form/dropdown/dropdown-10/template.yaml",
-      "previewImgSrc": "templates/components/form/dropdown/dropdown-10/preview.png",
-      "datasource": "templates/components/form/dropdown/shared/datasource-1.yaml",
-      "templateRef": "jc-dropdown"
-    },
-    {
-      "name": "Form searchable dropdown",
-      "filePath": "templates/components/form/dropdown/dropdown-11/template.yaml",
-      "previewImgSrc": "templates/components/form/dropdown/dropdown-11/preview.png",
       "datasource": "templates/components/form/dropdown/shared/datasource-2.yaml",
       "templateRef": "jc-dropdown"
     },
