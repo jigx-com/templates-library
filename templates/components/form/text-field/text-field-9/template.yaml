@@ -1,7 +1,7 @@
 type: component.text-field
-instanceId: text-field-9
+instanceId: text-field-11
 options:
-  helperText: Ignored
-  isIgnored: true
+  helperText: With hidden optional label
+  isOptionalLabelHidden: true
   isRequired: false
-  label: Label 9
+  label: Label 11

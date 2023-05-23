@@ -1,6 +1,0 @@
-type: component.text-field
-instanceId: text-field-12
-options:
-  helperText: Required
-  isRequired: true
-  label: Label 12

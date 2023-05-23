@@ -1,9 +1,7 @@
 type: component.text-field
-instanceId: text-field-4
+instanceId: text-field-5
 options:
-  format:
-    currency: USD
-    currencySign: standard
-  helperText: With format currency
+  helperText: With icon
+  icon: champagne-cheers
   isRequired: false
-  label: Label 4
+  label: Label 5

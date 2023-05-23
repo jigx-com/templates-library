@@ -1,7 +1,12 @@
 type: component.text-field
-instanceId: text-field-8
+instanceId: text-field-10
 options:
-  helperText: With auto focus
-  isAutoFocused: true
+  helperText: Multiline & Textarea
+  initialValue:
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam quis
+    quam. Integer malesuada. Cum sociis natoque penatibus et magnis dis parturient
+    montes, nascetur ridiculus mus.
+  isMultiline: true
   isRequired: false
-  label: Label 8
+  label: Label 10
+  textArea: medium

@@ -1,7 +1,7 @@
 type: component.text-field
-instanceId: text-field-7
+instanceId: text-field-8
 options:
-  helperText: With auto correct
-  isAutoCorrected: true
+  helperText: With auto focus
+  isAutoFocused: true
   isRequired: false
-  label: Label 7
+  label: Label 8

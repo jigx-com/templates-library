@@ -889,57 +889,45 @@
       "templateRef": "jc-text-field"
     },
     {
-      "name": "Form text field with format currency",
+      "name": "Form text field with icon",
       "filePath": "templates/components/form/text-field/text-field-4/template.yaml",
       "previewImgSrc": "templates/components/form/text-field/text-field-4/preview.png",
       "templateRef": "jc-text-field"
     },
     {
-      "name": "Form text field with icon",
+      "name": "Form text field with initial value",
       "filePath": "templates/components/form/text-field/text-field-5/template.yaml",
       "previewImgSrc": "templates/components/form/text-field/text-field-5/preview.png",
       "templateRef": "jc-text-field"
     },
     {
-      "name": "Form text field with initial value",
+      "name": "Form text field with auto correct",
       "filePath": "templates/components/form/text-field/text-field-6/template.yaml",
       "previewImgSrc": "templates/components/form/text-field/text-field-6/preview.png",
       "templateRef": "jc-text-field"
     },
     {
-      "name": "Form text field with auto correct",
+      "name": "Form text field with auto focus",
       "filePath": "templates/components/form/text-field/text-field-7/template.yaml",
       "previewImgSrc": "templates/components/form/text-field/text-field-7/preview.png",
       "templateRef": "jc-text-field"
     },
     {
-      "name": "Form text field with auto focus",
+      "name": "Form multiline and textarea field",
       "filePath": "templates/components/form/text-field/text-field-8/template.yaml",
       "previewImgSrc": "templates/components/form/text-field/text-field-8/preview.png",
       "templateRef": "jc-text-field"
     },
     {
-      "name": "Form text field ignored",
+      "name": "Form text field with hidden optional label",
       "filePath": "templates/components/form/text-field/text-field-9/template.yaml",
       "previewImgSrc": "templates/components/form/text-field/text-field-9/preview.png",
       "templateRef": "jc-text-field"
     },
     {
-      "name": "Form multiline and textarea field",
+      "name": "Form text field required",
       "filePath": "templates/components/form/text-field/text-field-10/template.yaml",
       "previewImgSrc": "templates/components/form/text-field/text-field-10/preview.png",
-      "templateRef": "jc-text-field"
-    },
-    {
-      "name": "Form text field with hidden optional label",
-      "filePath": "templates/components/form/text-field/text-field-11/template.yaml",
-      "previewImgSrc": "templates/components/form/text-field/text-field-11/preview.png",
-      "templateRef": "jc-text-field"
-    },
-    {
-      "name": "Form text field required",
-      "filePath": "templates/components/form/text-field/text-field-12/template.yaml",
-      "previewImgSrc": "templates/components/form/text-field/text-field-12/preview.png",
       "templateRef": "jc-text-field"
     },
 

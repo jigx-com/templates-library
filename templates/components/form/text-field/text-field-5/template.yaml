@@ -1,7 +1,7 @@
 type: component.text-field
-instanceId: text-field-5
+instanceId: text-field-6
 options:
-  helperText: With icon
-  icon: champagne-cheers
+  helperText: With initial value
+  initialValue: John Doe
   isRequired: false
-  label: Label 5
+  label: Label 6
