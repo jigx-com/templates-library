@@ -1,6 +1,7 @@
 type: component.list
 options:
   maximumItemsToRender: 8
+  isSearchable: true
   data: =$filter(@ctx.datasources.switch-list, function($v){@ctx.datasources.switch-list ? $contains($string($v.title),$string(@ctx.components.list.state.searchText != null ? @ctx.components.list.state.searchText :'')) :true})[]
   item:
     type: component.list-item
