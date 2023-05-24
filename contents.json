@@ -305,109 +305,109 @@
       "templateRef": "jc-entity"
     },
     {
-      "name": "Section",
+      "name": "Section with two labels",
       "filePath": "templates/components/entity/section/basic/section-1/template.yaml",
       "previewImgSrc": "templates/components/entity/section/basic/section-1/preview.jpg",
       "templateRef": "jc-entity-section"
     },
     {
-      "name": "Section",
+      "name": "Section with three labels",
       "filePath": "templates/components/entity/section/basic/section-2/template.yaml",
       "previewImgSrc": "templates/components/entity/section/basic/section-2/preview.jpg",
       "templateRef": "jc-entity-section"
     },
     {
-      "name": "Section",
+      "name": "Section with one label",
       "filePath": "templates/components/entity/section/basic/section-3/template.yaml",
       "previewImgSrc": "templates/components/entity/section/basic/section-3/preview.jpg",
       "templateRef": "jc-entity-section"
     },
     {
-      "name": "Field row",
+      "name": "Field row with two labels",
       "filePath": "templates/components/entity/field-row/basic/field-row-1/template.yaml",
       "previewImgSrc": "templates/components/entity/field-row/basic/field-row-1/preview.jpg",
       "templateRef": "jc-entity-field-row"
     },
     {
-      "name": "Field row",
+      "name": "Field row with three labels",
       "filePath": "templates/components/entity/field-row/basic/field-row-2/template.yaml",
       "previewImgSrc": "templates/components/entity/field-row/basic/field-row-2/preview.jpg",
       "templateRef": "jc-entity-field-row"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Name",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-1/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-1/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Checkbox",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-2/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-2/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Date",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-3/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-3/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Time",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-4/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-4/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Positive",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-5/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-5/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Warning",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-6/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-6/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Negative",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-7/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-7/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Copy",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-8/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-8/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Phone",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-9/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-9/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Email",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-10/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-10/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Link",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-11/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-11/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Signature",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-12/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-12/preview.jpg",
       "templateRef": "jc-entity-field"
     },
     {
-      "name": "Entity field",
+      "name": "Entity field - Multiline",
       "filePath": "templates/components/entity/entity-field/basic/entity-field-13/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-field/basic/entity-field-13/preview.jpg",
       "templateRef": "jc-entity-field"
