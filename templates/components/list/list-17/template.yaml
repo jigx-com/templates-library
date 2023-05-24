@@ -1,4 +1,5 @@
 type: component.list
+instanceId: list
 options:
   maximumItemsToRender: 8
   isSearchable: true
