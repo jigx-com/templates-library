@@ -1,0 +1,22 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - title: 25%
+        data:
+          - y: 25
+            color: color2
+          - y: 75
+            color: transparent
+      - title: 50%
+        data:
+          - y: 50
+            color: color1
+          - y: 50
+            color: transparent
+      - title: 75%
+        data:
+          - y: 75
+            color: color3
+          - y: 25
+            color: transparent

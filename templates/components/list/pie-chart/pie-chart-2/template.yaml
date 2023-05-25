@@ -1,0 +1,10 @@
+type: component.pie-chart
+options:
+  chart:
+    height: 150
+    title:
+      text: =@ctx.current.item.title
+      verticalAlign: center
+  series:
+    - data: =@ctx.current.item.data
+      layout: pie

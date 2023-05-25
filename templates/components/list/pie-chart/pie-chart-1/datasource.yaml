@@ -1,0 +1,40 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - title: title 1
+        subtitle: subtitle 1
+        data:
+          - y: 10
+            color: color1
+            name: 1
+          - y: 35
+            color: color2
+            name: 2
+          - y: 55
+            color: color3
+            name: 3
+      - title: title 2
+        subtitle: subtitle 2
+        data:
+          - y: 5
+            color: color4
+            name: 1
+          - y: 15
+            color: color5
+            name: 2
+          - y: 35
+            color: color6
+            name: 3
+          - y: 45
+            color: color7
+            name: 4
+      - title: title 3
+        subtitle: subtitle 3
+        data:
+          - y: 75
+            color: color8
+            name: 1
+          - y: 25
+            color: color9
+            name: 2
