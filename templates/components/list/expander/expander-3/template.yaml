@@ -1,0 +1,40 @@
+type: component.expander
+options:
+  header:
+    centerElement: 
+      type: component.stage
+      options:
+        right:
+          title: =@ctx.current.item.from
+          subtitle: =@ctx.current.item.time-from
+        left:
+          title: =@ctx.current.item.to
+          subtitle: =@ctx.current.item.time-to
+        icon: plane-2
+      
+  children:
+    - type: component.entity
+      options:
+        children:
+          - type: component.field-row
+            options:
+              children:
+                - type: component.entity-field
+                  options:
+                    label: Flight number
+                    value: =@ctx.current.item.flight
+                - type: component.entity-field
+                  options:
+                    label: Airline
+                    value: =@ctx.current.item.airline
+          - type: component.field-row
+            options:
+              children:
+                - type: component.entity-field
+                  options:
+                    label: Seat width
+                    value: =@ctx.current.item.seatWidth
+                - type: component.entity-field
+                  options:
+                    label: Seat fold
+                    value: =@ctx.current.item.seatFold

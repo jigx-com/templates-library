@@ -1,0 +1,23 @@
+type: component.expander
+options:
+  header:
+    centerElement: 
+      type: component.titles
+      options:
+        icon: person
+        title: =@ctx.current.item.name
+        subtitle: =@ctx.current.item.position
+  children:
+    - type: component.entity
+      options:
+        children:
+          - type: component.entity-field
+            options:
+              label: Phone
+              value: =@ctx.current.item.phone
+              contentType: phone
+          - type: component.entity-field
+            options:
+              label: Email
+              value: =@ctx.current.item.email
+              contentType: email

@@ -1,0 +1,16 @@
+mydata:
+    type: datasource.static
+    options:
+      data:
+        - name: John Doe
+          position: CEO
+          phone: 123456789
+          email: J.Doe@gmail.com
+        - name: Thomas Rogers
+          position: Developer
+          phone: 987654321
+          email: Rogers.T@gmail.com
+        - name: Tara Smith
+          position: PR manager
+          phone: 321654987
+          email: TaraSmith@gmail.com
