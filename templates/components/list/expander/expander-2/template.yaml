@@ -1,0 +1,29 @@
+type: component.expander
+options:
+  header:
+    centerElement: 
+      type: component.titles
+      options:
+        title: =@ctx.current.item.company
+        icon: chart
+        iconColor: =@ctx.current.item.color
+        
+  children:
+    - type: component.avatar
+      options:
+        text: =$substring(@ctx.current.item.company, 0,1)
+        uri: =@ctx.current.item.img
+        size: regular
+        align: left
+    - type: component.line-chart
+      options:
+        chart: 
+          height: 150
+          subtitle: =@ctx.current.item.subtitle
+        yAxis:
+          max: 500
+          min: 0
+        series:
+          - data: =@ctx.current.item.data
+            color: =@ctx.current.item.color
+            layout: area-gradient

@@ -1,0 +1,28 @@
+type: component.expander
+options:
+  header:
+    centerElement: 
+      type: component.stage
+      options:
+        right:
+          title: =@ctx.current.item.from
+        left:
+          title: =@ctx.current.item.to
+          icon: truck-cargo
+  children:
+    - type: component.form
+      instanceId: form
+      options:
+        children:
+          - type: component.checkbox
+            instanceId: completeCheckbox
+            options:
+              label: Shipment delivered
+              isRequired: false
+              isOptionalLabelHidden: true
+              style:
+                isPositive: =@ctx.components.completeCheckbox.state.value = true ? true :false
+          - type: component.location
+            options:
+              pathsData: =@ctx.current.item.coordinates
+              zoomLevel: 4

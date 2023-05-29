@@ -1,0 +1,43 @@
+mydata:
+    type: datasource.static
+    options:
+      data:
+        - company: APT s.r.o.
+          img: https://user-images.githubusercontent.com/56312596/241674206-2f886f80-c017-44ba-bbd1-82d6adb29cbe.png
+          color: color1
+          subtitle: Subtitle 1
+          data:
+            - x: 1
+              y: 152
+            - x: 2
+              y: 239
+            - x: 3
+              y: 197
+            - x: 4
+              y: 362
+        - company: Greatstock
+          img: https://user-images.githubusercontent.com/56312596/241674212-c56e036f-ab80-4585-94b4-c8e74f02b4ba.png
+          color: color2
+          subtitle: Subtitle 2
+          data:
+            - x: 1
+              y: 454
+            - x: 2
+              y: 373
+            - x: 3
+              y: 289
+            - x: 4
+              y: 239
+        - company: TopDepot
+          img: https://user-images.githubusercontent.com/56312596/241674219-36eb14b5-df3b-4b44-8d64-b367c839ee0f.png
+          color: color3
+          subtitle: Subtitle 3
+          data:
+            - x: 1
+              y: 362
+            - x: 2
+              y: 217
+            - x: 3
+              y: 186
+            - x: 4
+              y: 274

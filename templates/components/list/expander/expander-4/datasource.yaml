@@ -1,0 +1,25 @@
+mydata:
+    type: datasource.static
+    options:
+      data:
+        - from: Portland
+          to: Seattle
+          coordinates:
+            - lat: 45.5428359
+              lng: -122.81921
+            - lat: 47.6131419
+              lng: -122.5068729
+        - from: Denver
+          to: Richfield
+          coordinates:
+            - lat: 39.7644863
+              lng: -105.0199217
+            - lat: 43.7888128
+              lng: -106.8188399
+        - from: Omaha
+          to: Tulsa
+          coordinates:
+            - lat: 41.2919994
+              lng: -96.2460584
+            - lat: 36.1523015
+              lng: -95.8780105
