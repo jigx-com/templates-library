@@ -243,42 +243,48 @@
       "filePath": "templates/components/bar-chart/bar-chart-1/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-1/preview.jpeg",
       "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-1/datasource.yaml"
+      "datasource": "templates/components/bar-chart/bar-chart-1/datasource.yaml",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Quarterly earnings",
       "filePath": "templates/components/bar-chart/bar-chart-2/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-2/preview.jpeg",
       "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-2/datasource.yaml"
+      "datasource": "templates/components/bar-chart/bar-chart-2/datasource.yaml",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Bar-chart Max and min",
       "filePath": "templates/components/bar-chart/bar-chart-3/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-3/preview.png",
       "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
+      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Bar-chart hidden axis",
       "filePath": "templates/components/bar-chart/bar-chart-4/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-4/preview.png",
       "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
+      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Bar-chart Tick amount",
       "filePath": "templates/components/bar-chart/bar-chart-5/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-5/preview.png",
       "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml"
+      "datasource": "templates/components/bar-chart/shared/datasource-2.yaml",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Bar-chart with enabled data labels",
       "filePath": "templates/components/bar-chart/bar-chart-6/template.yaml",
       "previewImgSrc": "templates/components/bar-chart/bar-chart-6/preview.png",
       "templateRef": "jc-bar-chart",
-      "datasource": "templates/components/bar-chart/bar-chart-6/datasource.yaml"
+      "datasource": "templates/components/bar-chart/bar-chart-6/datasource.yaml",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "With Entity Field, Sections and Field Row",
@@ -416,53 +422,61 @@
       "name": "Expander header - Titles - Left aligned",
       "filePath": "templates/components/expander/expander-0/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-0/preview.png",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander header - Titles - Center aligned",
       "filePath": "templates/components/expander/expander-00/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-00/preview.png",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with titles header and Arch chart component",
       "filePath": "templates/components/expander/expander-1/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-1/preview.png",
       "datasource": "templates/components/expander/expander-1/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with titles header and Avatar component",
       "filePath": "templates/components/expander/expander-2/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-2/preview.png",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with titles header and Bar chart component",
       "filePath": "templates/components/expander/expander-3/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-3/preview.png",
       "datasource": "templates/components/expander/expander-3/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with titles header and Image component",
       "filePath": "templates/components/expander/expander-4/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-4/preview.png",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with titles header and Interactive image component",
       "filePath": "templates/components/expander/expander-5/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-5/preview.png",
       "datasource": "templates/components/expander/expander-5/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with titles header and Line chart component",
       "filePath": "templates/components/expander/expander-6/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-6/preview.png",
       "datasource": "templates/components/expander/expander-6/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
 
     {
@@ -470,100 +484,115 @@
       "filePath": "templates/components/expander/expander-7/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-7/preview.png",
       "datasource": "templates/components/expander/expander-7/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with titles header and Location component",
       "filePath": "templates/components/expander/expander-8/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-8/preview.png",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with titles header and Pie chart component",
       "filePath": "templates/components/expander/expander-9/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-9/preview.png",
       "datasource": "templates/components/expander/expander-9/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with titles header and Stepper component",
       "filePath": "templates/components/expander/expander-10/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-10/preview.png",
       "datasource": "templates/components/expander/expander-10/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Arch chart component",
       "filePath": "templates/components/expander/expander-11/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-11/preview.png",
       "datasource": "templates/components/expander/expander-11/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Avatar component",
       "filePath": "templates/components/expander/expander-12/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-12/preview.png",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Bar chart component",
       "filePath": "templates/components/expander/expander-13/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-13/preview.png",
       "datasource": "templates/components/expander/expander-13/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Entity field component",
       "filePath": "templates/components/expander/expander-14/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-14/preview.png",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Image component",
       "filePath": "templates/components/expander/expander-15/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-15/preview.png",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Interactive image component",
       "filePath": "templates/components/expander/expander-16/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-16/preview.png",
       "datasource": "templates/components/expander/expander-16/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Line chart component",
       "filePath": "templates/components/expander/expander-17/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-17/preview.png",
       "datasource": "templates/components/expander/expander-17/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and List item component",
       "filePath": "templates/components/expander/expander-18/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-18/preview.png",
       "datasource": "templates/components/expander/expander-18/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Location component",
       "filePath": "templates/components/expander/expander-19/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-19/preview.png",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Pie chart component",
       "filePath": "templates/components/expander/expander-20/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-20/preview.png",
       "datasource": "templates/components/expander/expander-20/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Expander with stage header and Stepper component",
       "filePath": "templates/components/expander/expander-21/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-21/preview.png",
       "datasource": "templates/components/expander/expander-21/datasource.yaml",
-      "templateRef": "jc-expander"
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.default"] }
     },
     {
       "name": "Form with all possible elements",
@@ -854,7 +883,7 @@
       "name": "Form sections",
       "filePath": "templates/components/form/sections/template.yaml",
       "previewImgSrc": "templates/components/form/sections/preview.png",
-      "templateRef": "jc-form"
+      "templateRef": "jc-form-section"
     },
 
     {
@@ -924,7 +953,6 @@
       "previewImgSrc": "templates/components/form/text-field/text-field-10/preview.png",
       "templateRef": "jc-text-field"
     },
-
     {
       "name": "Image ResizeMode: Cover / Height: 200",
       "filePath": "templates/components/image/image-1/template.yaml",
@@ -1039,42 +1067,48 @@
       "filePath": "templates/components/pie-chart/pie-chart-1/template.yaml",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-1/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-1/datasource.yaml",
-      "templateRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Pie chart - multiple data",
       "filePath": "templates/components/pie-chart/pie-chart-2/template.yaml",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-2/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-2/datasource.yaml",
-      "templateRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Progress pie chart",
       "filePath": "templates/components/pie-chart/pie-chart-3/template.yaml",
       "previewImgSrc": "templates/components/pie-chart/pie-chart-3/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-3/datasource.yaml",
-      "templateRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Arch chart",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-1/template.yaml",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-1/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-1/datasource.yaml",
-      "templateRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Arch chart - Multiple data",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-2/template.yaml",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-2/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-2/datasource.yaml",
-      "templateRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Progress arch chart",
       "filePath": "templates/components/pie-chart/arch-chart/arch-chart-3/template.yaml",
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-3/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-3/datasource.yaml",
-      "templateRef": "jc-pie-chart"
+      "templateRef": "jc-pie-chart",
+      "filter": { "enableFor": ["jig.default", "component.expander"] }
     },
     {
       "name": "Percentage - Left avatar - Right label",
@@ -1331,6 +1365,70 @@
       "filePath": "templates/components/web-view/web-view-2/template.yaml",
       "previewImgSrc": "templates/components/web-view/web-view-2/preview.jpg",
       "templateRef": "jc-web-view"
+    },
+    {
+      "name": "Bar-chart list - single series",
+      "filePath": "templates/components/list/bar-chart/bar-chart-1/template.yaml",
+      "previewImgSrc": "templates/components/list/bar-chart/bar-chart-1/preview.jpg",
+      "datasource": "templates/components/list/bar-chart/bar-chart-1/datasource.yaml",
+      "templateRef": "jc-bar-chart",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
+    },
+    {
+      "name": "Bar-chart list - multiple series",
+      "filePath": "templates/components/list/bar-chart/bar-chart-2/template.yaml",
+      "previewImgSrc": "templates/components/list/bar-chart/bar-chart-2/preview.jpg",
+      "datasource": "templates/components/list/bar-chart/bar-chart-2/datasource.yaml",
+      "templateRef": "jc-bar-chart",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
+    },
+    {
+      "name": "Pie-chart list - with legend",
+      "filePath": "templates/components/list/pie-chart/pie-chart-1/template.yaml",
+      "previewImgSrc": "templates/components/list/pie-chart/pie-chart-1/preview.jpg",
+      "datasource": "templates/components/list/pie-chart/pie-chart-1/datasource.yaml",
+      "templateRef": "jc-pie-chart",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
+    },
+    {
+      "name": "Pie-chart list - progress",
+      "filePath": "templates/components/list/pie-chart/pie-chart-2/template.yaml",
+      "previewImgSrc": "templates/components/list/pie-chart/pie-chart-2/preview.jpg",
+      "datasource": "templates/components/list/pie-chart/pie-chart-2/datasource.yaml",
+      "templateRef": "jc-pie-chart",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
+    },
+    {
+      "name": "Expander list - titles header, entity fields",
+      "filePath": "templates/components/list/expander/expander-1/template.yaml",
+      "previewImgSrc": "templates/components/list/expander/expander-1/preview.jpg",
+      "datasource": "templates/components/list/expander/expander-1/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
+    },
+    {
+      "name": "Expander list - titles header, avatar and line-chart",
+      "filePath": "templates/components/list/expander/expander-2/template.yaml",
+      "previewImgSrc": "templates/components/list/expander/expander-2/preview.jpg",
+      "datasource": "templates/components/list/expander/expander-2/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
+    },
+    {
+      "name": "Expander list - stage header, entity fields",
+      "filePath": "templates/components/list/expander/expander-3/template.yaml",
+      "previewImgSrc": "templates/components/list/expander/expander-3/preview.jpg",
+      "datasource": "templates/components/list/expander/expander-3/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
+    },
+    {
+      "name": "Expander list - stage header, checkbox and location",
+      "filePath": "templates/components/list/expander/expander-4/template.yaml",
+      "previewImgSrc": "templates/components/list/expander/expander-4/preview.jpg",
+      "datasource": "templates/components/list/expander/expander-4/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
     }
   ]
 }

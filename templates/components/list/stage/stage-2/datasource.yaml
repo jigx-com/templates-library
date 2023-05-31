@@ -4,3 +4,7 @@ mydata:
     data:
       - from: Portland
         to: Seattle
+      - from: Atlanta
+        to: Cincinnati
+      - from: Phoenix
+        to: Denver

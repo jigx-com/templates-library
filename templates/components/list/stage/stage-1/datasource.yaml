@@ -6,3 +6,11 @@ mydata:
         depTime: 8:20am
         arrAirport: LAX
         arrTime: 11:38am
+      - depAirport: CDG
+        depTime: 1:50pm
+        arrAirport: DXB
+        arrTime: 10:35pm
+      - depAirport: STN
+        depTime: 7:00am
+        arrAirport: ATH
+        arrTime: 12:35pm
