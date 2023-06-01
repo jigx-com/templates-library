@@ -1369,7 +1369,7 @@
     {
       "name": "Bar-chart list - single series",
       "filePath": "templates/components/list/bar-chart/bar-chart-1/template.yaml",
-      "previewImgSrc": "templates/components/list/bar-chart/bar-chart-1/preview.jpg",
+      "previewImgSrc": "templates/components/list/bar-chart/bar-chart-1/preview.png",
       "datasource": "templates/components/list/bar-chart/bar-chart-1/datasource.yaml",
       "templateRef": "jc-bar-chart",
       "filter": { "enableFor": ["jig.list", "component.list"] }
@@ -1377,7 +1377,7 @@
     {
       "name": "Bar-chart list - multiple series",
       "filePath": "templates/components/list/bar-chart/bar-chart-2/template.yaml",
-      "previewImgSrc": "templates/components/list/bar-chart/bar-chart-2/preview.jpg",
+      "previewImgSrc": "templates/components/list/bar-chart/bar-chart-2/preview.png",
       "datasource": "templates/components/list/bar-chart/bar-chart-2/datasource.yaml",
       "templateRef": "jc-bar-chart",
       "filter": { "enableFor": ["jig.list", "component.list"] }
@@ -1385,7 +1385,7 @@
     {
       "name": "Pie-chart list - with legend",
       "filePath": "templates/components/list/pie-chart/pie-chart-1/template.yaml",
-      "previewImgSrc": "templates/components/list/pie-chart/pie-chart-1/preview.jpg",
+      "previewImgSrc": "templates/components/list/pie-chart/pie-chart-1/preview.png",
       "datasource": "templates/components/list/pie-chart/pie-chart-1/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": { "enableFor": ["jig.list", "component.list"] }
@@ -1393,7 +1393,7 @@
     {
       "name": "Pie-chart list - progress",
       "filePath": "templates/components/list/pie-chart/pie-chart-2/template.yaml",
-      "previewImgSrc": "templates/components/list/pie-chart/pie-chart-2/preview.jpg",
+      "previewImgSrc": "templates/components/list/pie-chart/pie-chart-2/preview.png",
       "datasource": "templates/components/list/pie-chart/pie-chart-2/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": { "enableFor": ["jig.list", "component.list"] }
@@ -1401,7 +1401,7 @@
     {
       "name": "Expander list - titles header, entity fields",
       "filePath": "templates/components/list/expander/expander-1/template.yaml",
-      "previewImgSrc": "templates/components/list/expander/expander-1/preview.jpg",
+      "previewImgSrc": "templates/components/list/expander/expander-1/preview.png",
       "datasource": "templates/components/list/expander/expander-1/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": { "enableFor": ["jig.list", "component.list"] }
@@ -1409,7 +1409,7 @@
     {
       "name": "Expander list - titles header, avatar and line-chart",
       "filePath": "templates/components/list/expander/expander-2/template.yaml",
-      "previewImgSrc": "templates/components/list/expander/expander-2/preview.jpg",
+      "previewImgSrc": "templates/components/list/expander/expander-2/preview.png",
       "datasource": "templates/components/list/expander/expander-2/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": { "enableFor": ["jig.list", "component.list"] }
@@ -1417,7 +1417,7 @@
     {
       "name": "Expander list - stage header, entity fields",
       "filePath": "templates/components/list/expander/expander-3/template.yaml",
-      "previewImgSrc": "templates/components/list/expander/expander-3/preview.jpg",
+      "previewImgSrc": "templates/components/list/expander/expander-3/preview.png",
       "datasource": "templates/components/list/expander/expander-3/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": { "enableFor": ["jig.list", "component.list"] }
@@ -1425,7 +1425,7 @@
     {
       "name": "Expander list - stage header, checkbox and location",
       "filePath": "templates/components/list/expander/expander-4/template.yaml",
-      "previewImgSrc": "templates/components/list/expander/expander-4/preview.jpg",
+      "previewImgSrc": "templates/components/list/expander/expander-4/preview.png",
       "datasource": "templates/components/list/expander/expander-4/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": { "enableFor": ["jig.list", "component.list"] }
