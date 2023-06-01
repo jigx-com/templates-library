@@ -1,24 +1,20 @@
-type: component.form
-instanceId: form
+type: component.section
+instanceId: section
 options:
+  title: Section 1
   children:
-    - type: component.section
-      instanceId: section
+    - type: component.text-field
+      instanceId: text-field-1
       options:
-        title: Section 1
-        children:
-          - type: component.text-field
-            instanceId: text-field-1
-            options:
-              label: Label
-              value: Value
-    - type: component.section
-      instanceId: section2
+        label: Label
+        value: Value
+type: component.section
+instanceId: section2
+options:
+  title: Section 2
+  children:
+    - type: component.text-field
+      instanceId: text-field-2
       options:
-        title: Section 2
-        children:
-          - type: component.text-field
-            instanceId: text-field-2
-            options:
-              label: Label
-              value: Value
+        label: Label
+        value: Value
