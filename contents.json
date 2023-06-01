@@ -173,6 +173,18 @@
       "filePath": "templates/jigs/composite/composite-1/template.yaml",
       "previewImgSrc": "templates/jigs/composite/composite-1/preview.png",
       "templateRef": "jig-composite",
+      "files": [
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/composite/composite-1/element-1.yaml",
+          "directory": "jigs"
+        },
+        {
+          "name": "type-list",
+          "filePath": "templates/jigs/composite/composite-1/element-2.yaml",
+          "directory": "jigs"
+        }
+      ],
       "jigFiles": [
         {
           "name": "type-default",

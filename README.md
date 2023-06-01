@@ -22,14 +22,16 @@ This file is the table of contents for the repository. The structure is:
             "previewImgSrc": "templates/jigs/composite/template-composite-1.jpeg",
             "datasource": "templates/jigs/composite/datasource.json"
             "templateRef": "jig-composite"
-            "jigFiles": [
+            "files": [
                 {
-                    "jigId": "type-default-7",
-                    "filePath": "templates/jigs/composite/composite-1/element-1.json"
+                    "name": "type-default",
+                    "filePath": "templates/jigs/composite/composite-1/element-1.yaml",
+                    "directory": "jigs"
                 },
                 {
-                    "jigId": "type-list-2",
-                    "filePath": "templates/jigs/composite/composite-1/element-2.json"
+                    "name": "type-list",
+                    "filePath": "templates/jigs/composite/composite-1/element-2.yaml",
+                    "directory": "jigs"
                 }
             ],
             "filter": { "enableFor": ["jig.default"] }
@@ -41,8 +43,12 @@ This file is the table of contents for the repository. The structure is:
 - **previewImgSrc** is a path to the preview file of the snippet.
 - **datasource** is a path to the file with datasource. This field is optional. If you include it, then datasource from the file will be inserted into the jig together with the main snippet.
 - **templateRef** is required internal reference for each element in templates library. This field is used to filter out templates.
-- **jigFiles** is a field that used only for composite jigx. These files will be inserted together with a composite jig.
-- **filter** is used for filtering out templates. The enableFor takes array of allowed jigType (they will be listed below)
+- **files** is an array field that used for files that has to be created together with the template
+  - **name** is a file name for the new file
+  - **filePath** is a path to the file in teplate-library
+  - **directory** is a directory of the solution where the file has to be created
+- **filter** is used for filtering out templates.
+  - **enableFor** is an array of allowed jigType (they will be listed below)
 
 This is the essential file used by the **Templates Library**. It is parsed and used to display and load each template. If you created a new template and didn't included it to the **contents.json** file, then it won't be shown in the library. Also if you forgot to include **_templateRef_** then
 this template also won't be shown in the templates library (it will be filtered out).
