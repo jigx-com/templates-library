@@ -51,41 +51,43 @@ this template also won't be shown in the templates library (it will be filtered 
 
 Here is the list of currently available ref names:
 
-| templateRef          |       Description |
-| -------------------- | ----------------: |
-| jig-default          |       Default Jig |
-| jig-list             |          List Jig |
-| jig-composite        |     Composite Jig |
-| jig-calendar         |      Calendar Jig |
-| jig-document         |      Document Jig |
-| jc-avatar            |            Avatar |
-| jc-bar-chart         |         Bar Chart |
-| jc-entity            |            Entity |
-| jc-form              |              Form |
-| jc-image             |             Image |
-| jc-line-chart        |        Line Chart |
-| jc-expander          |          Expander |
-| jc-list              |              List |
-| jc-location          |          Location |
-| jc-pie-chart         |         Pie Chart |
-| jc-stepper           |           Stepper |
-| jc-web-view          |          Web View |
-| jc-interactive-image | Interactive Image |
-| jc-form-section      |      Form Section |
-| jc-section-default   |   Section Default |
-| jc-text-field        |        Text Field |
-| jc-signature-field   |   Signature Field |
-| jc-number-field      |      Number Field |
-| jc-media-field       |       Media Field |
-| jc-email-field       |       Email Field |
-| jc-dropdown          |          Dropdown |
-| jc-date-picker       |       Date Picker |
-| jc-checkbox          |          Checkbox |
-| jc-field-row         |         Field Row |
-| jc-avatar-field      |      Avatar Field |
-| jc-stage             |             Stage |
-| jc-list-item         |         List item |
-| jc-product-item      |      Product Item |
+| templateRef          |                                  Description |
+| -------------------- | -------------------------------------------: |
+| jig-default          |                                  Default Jig |
+| jig-list             |                                     List Jig |
+| jig-composite        |                                Composite Jig |
+| jig-calendar         |                                 Calendar Jig |
+| jig-document         |                                 Document Jig |
+| jc-avatar            |                                       Avatar |
+| jc-bar-chart         |                                    Bar Chart |
+| jc-entity            |                                       Entity |
+| jc-form              |                                         Form |
+| jc-image             |                                        Image |
+| jc-line-chart        |                                   Line Chart |
+| jc-expander          |                                     Expander |
+| jc-list              |                                         List |
+| jc-location          |                                     Location |
+| jc-pie-chart         |                                    Pie Chart |
+| jc-stepper           |                                      Stepper |
+| jc-web-view          |                                     Web View |
+| jc-interactive-image |                            Interactive Image |
+| jc-form-section      |                                 Form Section |
+| jc-section-default   |                              Section Default |
+| jc-text-field        |                                   Text Field |
+| jc-signature-field   |                              Signature Field |
+| jc-number-field      |                                 Number Field |
+| jc-media-field       |                                  Media Field |
+| jc-email-field       |                                  Email Field |
+| jc-dropdown          |                                     Dropdown |
+| jc-date-picker       |                                  Date Picker |
+| jc-checkbox          |                                     Checkbox |
+| jc-field-row         |                                    Field Row |
+| jc-avatar-field      |                                 Avatar Field |
+| jc-stage             |                                        Stage |
+| jc-list-item         |                                    List item |
+| jc-product-item      |                                 Product Item |
+| jc-custom-component  |                  Custom Component (children) |
+| ComponentDefinition  | Custom Component inside of components folder |
 
 The list will be updated with more references.
 
