@@ -1,3 +1,4 @@
+# Please configure your 'data' property to use the 'mydata' datasource, eg: =@ctx.datasource.mydata
 type: component.stage
 options:
   icon: truck-cargo
