@@ -1,0 +1,5 @@
+type: component.default
+children:
+  - type: component.button
+    options:
+      title: Hello

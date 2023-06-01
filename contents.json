@@ -182,7 +182,12 @@
         {
           "name": "type-list",
           "filePath": "templates/jigs/composite/composite-1/element-2.yaml",
-          "directory": "jigs"
+          "directory": "components"
+        },
+        {
+          "name": "my-custom-component",
+          "filePath": "templates/jigs/composite/composite-1/files/custom-component.yaml",
+          "directory": "components"
         }
       ],
       "jigFiles": [
