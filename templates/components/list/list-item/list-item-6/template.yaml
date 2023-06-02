@@ -1,4 +1,4 @@
-# Please configure your 'data' property to use the 'mydata' datasource, eg: =@ctx.datasource.mydata
+# Please configure your 'data' property to use the 'mydata' datasource, eg: =@ctx.datasources.mydata
 type: component.list-item
 options:
   divider: solid
