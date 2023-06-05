@@ -9,7 +9,7 @@ options:
           title: =@ctx.current.item.from
         left:
           title: =@ctx.current.item.to
-          icon: truck-cargo
+        icon: truck-cargo
   children:
     - type: component.form
       instanceId: form
@@ -23,7 +23,7 @@ options:
               isOptionalLabelHidden: true
               style:
                 isPositive: =@ctx.components.completeCheckbox.state.value = true ? true :false
-          - type: component.location
-            options:
-              pathsData: =@ctx.current.item.coordinates
-              zoomLevel: 4
+    - type: component.location
+      options:
+        pathsData: =@ctx.current.item.coordinates
+        zoomLevel: 4
