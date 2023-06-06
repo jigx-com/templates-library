@@ -1,6 +1,11 @@
+# The system name that uniquely identifies the jig
 title: Product item and summary
+# The jig type used to list data values and elements
 type: jig.list
+# icon that displays on the widget on the home hub
+icon: list
 
+# A container for specifying jig headers such as images, videos or location
 header:
   type: component.jig-header
   options:
@@ -13,8 +18,10 @@ header:
         title: Product item and summary
         subtitle: List with product item and summary
 
+# The type of datasource used to store the created data in the jig
 datasources:
   product-item:
+    # The data provider being used. In this case, the Jigx Static Data provider
     type: datasource.static
     options:
       data:

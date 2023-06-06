@@ -1,7 +1,12 @@
+# The system name that uniquely identifies the jig
 title: Switch, image, search and filter
+# The jig type used to list data values and elements
 type: jig.list
+# icon that displays on the widget on the home hub
+icon: list
 isSearchable: true
 
+# A container for specifying jig headers such as images, videos or location
 header:
   type: component.jig-header
   options:
@@ -14,8 +19,10 @@ header:
         title: Switch, image, search and filter
         subtitle: List with switch and image
 
+# The type of datasource used to store the created data in the jig
 datasources:
   switch-list:
+    # The data provider being used. In this case, the Jigx Static Data provider
     type: datasource.static
     options:
       data:
@@ -60,6 +67,7 @@ filter:
 
 data: =$filter($filter(@ctx.datasources.switch-list, function($v){$contains($string($v.title),$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) }), function($v, $a, $i) { @ctx.jig.state.filter = 'ALL' or $v.subtitle = @ctx.jig.state.filter })[]
 item:
+  # All list output controls are placed on the list-item component
   type: component.list-item
   options:
     title: =@ctx.current.item.title

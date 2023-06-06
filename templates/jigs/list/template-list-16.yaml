@@ -1,7 +1,12 @@
+# The system name that uniquely identifies the jig
 title: Horizontal list
+# The jig type used to list data values and elements
 type: jig.list
+# icon that displays on the widget on the home hub
+icon: list
 isHorizontal: true
 
+# A container for specifying jig headers such as images, videos or location
 header:
   type: component.jig-header
   options:
@@ -14,8 +19,10 @@ header:
         title: Icon and switch
         subtitle: List with horizontal scrolling using icon and switch
 
+# The type of datasource used to store the created data in the jig
 datasources:
   components:
+    # The data provider being used. In this case, the Jigx Static Data provider
     type: datasource.static
     options:
       data:
@@ -43,6 +50,7 @@ datasources:
 
 data: =@ctx.datasources.components
 item:
+  # All list output controls are placed on the list-item component
   type: component.list-item
   options:
     title: =@ctx.current.item.name
