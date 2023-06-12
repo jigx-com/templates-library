@@ -2,5 +2,5 @@ type: component.avatar
 options:
   align: center
   size: large
-  text: =$substring(@ctx.datasources.avatar.sizeL, 0, 1)
+  title: =$substring(@ctx.datasources.avatar.sizeL, 0, 1)
   uri: =@ctx.datasources.avatar.img

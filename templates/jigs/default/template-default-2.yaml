@@ -29,7 +29,7 @@ datasources:
 children:
   - type: component.avatar
     options:
-      text: =$substring(@ctx.datasources.employeeDetail.employee-first-name, 0, 1) & $substring(@ctx.datasources.employeeDetail.employee-surname, 0, 1)
+      title: =$substring(@ctx.datasources.employeeDetail.employee-first-name, 0, 1) & $substring(@ctx.datasources.employeeDetail.employee-surname, 0, 1)
       uri: =@ctx.datasources.employeeDetail.employee-photo
       size: large
       align: center

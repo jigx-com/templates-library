@@ -28,7 +28,7 @@ datasources:
 children:
   - type: component.avatar
     options:
-      text: PC
+      title: PC
       size: large
       align: center
   - type: component.entity

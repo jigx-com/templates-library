@@ -2,4 +2,4 @@ type: component.avatar
 options:
   align: center
   size: regular
-  text: =$substring(@ctx.datasources.avatar.sizeM, 0, 1)
+  title: =$substring(@ctx.datasources.avatar.sizeM, 0, 1)

@@ -12,7 +12,7 @@ options:
   children:
     - type: component.avatar
       options:
-        text: =$substring(@ctx.current.item.company, 0,1)
+        title: =$substring(@ctx.current.item.company, 0,1)
         uri: =@ctx.current.item.img
         size: regular
         align: left
