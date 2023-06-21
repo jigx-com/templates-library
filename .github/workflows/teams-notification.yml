@@ -12,9 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Send Notification
-        uses: toko-bifrost/ms-teams-deploy-card@v1
+      - name: Microsoft Teams Deploy Card
+        uses: toko-bifrost/ms-teams-deploy-card@3.1.2
+        if: always()
         with:
+          github-token: ${{ github.token }}
           webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
           summary: "New Pull Request Created"
           theme-color: "008080"
