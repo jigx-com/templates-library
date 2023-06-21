@@ -1,0 +1,12 @@
+{
+  "name": "templates-library",
+  "displayName": "Jigx Template Library",
+  "description": "Build beautiful mobile apps using prebuilt templates",
+  "version": "1.0.0",
+  "publisher": "Jigx",
+  "author": "Jigx, Inc.",
+  "license": "MIT",
+  "homepage": "https://www.jigx.com/",
+  "main": "index.js",
+  "repository": "git@github.com:jigx-com/templates-library.git"
+}
