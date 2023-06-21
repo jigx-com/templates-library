@@ -1,0 +1,22 @@
+name: Teams Notification
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Send Notification
+        uses: toko-bifrost/ms-teams-deploy-card@v1
+        with:
+          webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          summary: "New Pull Request Created"
+          theme-color: "008080"
+          title: "${{ github.event.pull_request.title }}"
+          text: "Created by @${{ github.event.pull_request.user.login }}. [Link to PR](${{ github.event.pull_request.html_url }})"
