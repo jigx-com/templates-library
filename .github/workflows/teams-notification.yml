@@ -9,16 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Microsoft Teams Deploy Card
-        uses: toko-bifrost/ms-teams-deploy-card@3.1.2
-        if: always()
+      - name: Send Teams Notification
+        uses: aliencube/microsoft-teams-actions@v0.8.0
         with:
-          github-token: ${{ github.token }}
-          webhook-url: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          webhook_uri: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          title: "${{ github.event.pull_request.title }}"
           summary: "New Pull Request Created"
           theme-color: "008080"
-          title: "${{ github.event.pull_request.title }}"
           text: "Created by @${{ github.event.pull_request.user.login }}. [Link to PR](${{ github.event.pull_request.html_url }})"
