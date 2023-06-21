@@ -5,17 +5,30 @@ on:
     types: [opened]
 
 jobs:
-  notify-teams:
+  notify:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send Teams Notification
-        uses: toko-bifrost/ms-teams-deploy-card@3.1.2
-        with:
-          github-token: ${{ github.token }}
-          webhook-uri: ${{ secrets.TEAMS_WEBHOOK_URL }}
-          custom-facts: |
-            - name: New Pull Request Created
-              value: "${{ github.event.pull_request.title }}"
-            - name: Created by
-              value: "@${{ github.event.pull_request.user.login }}. [Link to PR](${{ github.event.pull_request.html_url }})"
+      - name: Send Notification
+        run: |
+          PR_TITLE=${{ github.event.pull_request.title }}
+          PR_USER=${{ github.event.pull_request.user.login }}
+          PR_LINK=${{ github.event.pull_request.html_url }}
+          PAYLOAD=$(echo \
+          '{ 
+            "@context": "https://schema.org/extensions",
+            "@type": "MessageCard",
+            "themeColor": "0078D7",
+            "title": "New Pull Request Created",
+            "text": "PR Title: **'"$PR_TITLE"'** \nPR Author: **'"$PR_USER"'** \n[View PR]('"$PR_LINK"')",
+            "potentialAction": [
+              {
+                "@type": "OpenUri",
+                "name": "View Pull Request",
+                "targets": [
+                  { "os": "default", "uri": "'"$PR_LINK"'" }
+                ]
+              }
+            ]
+          }')
+          curl -H 'Content-Type: application/json' -d "$PAYLOAD" ${{ secrets.TEAMS_WEBHOOK_URL }}
