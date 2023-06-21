@@ -5,7 +5,7 @@ on:
     types: [opened]
 
 jobs:
-  notify:
+  notify-telegram:
     runs-on: ubuntu-latest
 
     steps:

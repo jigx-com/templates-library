@@ -1,0 +1,21 @@
+name: Teams Notification
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  notify-teams:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send Teams Notification
+        uses: toko-bifrost/ms-teams-deploy-card@3.1.2
+        with:
+          github-token: ${{ github.token }}
+          webhook-uri: ${{ secrets.TEAMS_WEBHOOK_URL }}
+          custom-facts: |
+            - name: New Pull Request Created
+              value: "${{ github.event.pull_request.title }}"
+            - name: Created by
+              value: "@${{ github.event.pull_request.user.login }}. [Link to PR](${{ github.event.pull_request.html_url }})"
