@@ -1211,14 +1211,16 @@
       "filePath": "templates/components/list/stage/stage-1/template.yaml",
       "previewImgSrc": "templates/components/list/stage/stage-1/preview.png",
       "datasource": "templates/components/list/stage/stage-1/datasource.yaml",
-      "templateRef": "jc-stage"
+      "templateRef": "jc-stage",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
     },
     {
       "name": "Left title - Icon - Right title",
       "filePath": "templates/components/list/stage/stage-2/template.yaml",
       "previewImgSrc": "templates/components/list/stage/stage-2/preview.png",
       "datasource": "templates/components/list/stage/stage-2/datasource.yaml",
-      "templateRef": "jc-stage"
+      "templateRef": "jc-stage",
+      "filter": { "enableFor": ["jig.list", "component.list"] }
     },
     {
       "name": "Stock inventory with avatar, progress and label",
