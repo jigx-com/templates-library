@@ -16,7 +16,7 @@ onFocus:
   options:
     provider: DATA_PROVIDER_DYNAMIC
     entities:
-      - entity: default/invoices #Create new table "invoices" in databases/default.jigx
+      - default/invoices #Create new table "invoices" in databases/default.jigx
 
 datasources:
   methodOfPayment:
@@ -38,7 +38,7 @@ datasources:
     options:
       provider: DATA_PROVIDER_LOCAL
       entities:
-        - entity: default/invoices #Create new table "invoices" in databases/default.jigx
+        - default/invoices #Create new table "invoices" in databases/default.jigx
       query: |
         SELECT   
           id,   
@@ -159,7 +159,7 @@ actions:
               options:
                 provider: DATA_PROVIDER_DYNAMIC
                 entities:
-                  - entity: default/invoices
+                  - default/invoices
 
 summary:
   children:
