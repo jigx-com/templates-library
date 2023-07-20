@@ -1443,6 +1443,19 @@
       "datasource": "templates/components/list/expander/expander-4/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": { "enableFor": ["jig.list", "component.list"] }
+    },
+    {
+      "name": "Custom component - video player",
+      "filePath": "templates/components/custom/video-player/template.yaml",
+      "previewImgSrc": "templates/components/custom/video-player/preview.png",
+      "templateRef": "jc-custom-component",
+      "files": [
+        {
+          "name": "video-player",
+          "filePath": "templates/components/custom/video-player/component-1.yaml",
+          "directory": "components"
+        }
+      ]
     }
   ]
 }
