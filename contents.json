@@ -1456,6 +1456,19 @@
           "directory": "components"
         }
       ]
+    },
+    {
+      "name": "Custom component - avatar",
+      "filePath": "templates/components/custom/custom-avatar/template.yaml",
+      "previewImgSrc": "templates/components/custom/custom-avatar/preview.png",
+      "templateRef": "jc-custom-component",
+      "files": [
+        {
+          "name": "custom-avatar",
+          "filePath": "templates/components/custom/custom-avatar/component-1.yaml",
+          "directory": "components"
+        }
+      ]
     }
   ]
 }

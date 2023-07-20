@@ -1,0 +1,8 @@
+type: component.default
+children:
+  - type: component.text
+    options:
+      value: Sheesh
+  - type: component.avatar
+    options:
+      title: Daniel
