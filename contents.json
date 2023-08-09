@@ -1445,7 +1445,7 @@
       "filter": { "enableFor": ["jig.list", "component.list"] }
     },
     {
-      "name": "Video player",
+      "name": "Video player - store example",
       "filePath": "templates/components/custom/video-player/template.yaml",
       "previewImgSrc": "templates/components/custom/video-player/preview.png",
       "templateRef": "jc-custom-component",
@@ -1458,7 +1458,7 @@
       ]
     },
     {
-      "name": "Avatar",
+      "name": "Avatar - store example",
       "filePath": "templates/components/custom/custom-avatar/template.yaml",
       "previewImgSrc": "templates/components/custom/custom-avatar/preview.jpg",
       "templateRef": "jc-custom-component",
