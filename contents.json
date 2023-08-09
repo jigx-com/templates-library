@@ -1460,7 +1460,7 @@
     {
       "name": "Avatar",
       "filePath": "templates/components/custom/custom-avatar/template.yaml",
-      "previewImgSrc": "templates/components/custom/custom-avatar/preview.png",
+      "previewImgSrc": "templates/components/custom/custom-avatar/preview.jpg",
       "templateRef": "jc-custom-component",
       "files": [
         {
