@@ -1,8 +1,25 @@
 type: component.default
+inputs:
+  testX:
+    defaultValue: 1
+    required: true
+    type: array
+  testY:
+    defaultValue: 1
+    required: true
+    type: string
 children:
-  - type: component.text
+  - type: component.form
+    instanceId: form
     options:
-      value: Sheesh
-  - type: component.avatar
-    options:
-      title: Daniel
+      children:
+        - type: component.checkbox
+          instanceId: check
+          options:
+            label: =@ctx.inputs.testY
+            onChange:
+              type: action.set-state
+              options:
+                state: =@ctx.solution.state.test
+                value: |
+                  =@ctx.user.avatarUrl & ''

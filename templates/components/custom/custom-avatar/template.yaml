@@ -1,2 +1,6 @@
 type: component.custom-component
 componentId: custom-avatar
+inputs:
+  testX:
+    - X
+  testY: Hello

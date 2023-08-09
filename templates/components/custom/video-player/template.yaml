@@ -1,2 +1,5 @@
 type: component.custom-component
 componentId: video-player
+inputs:
+  video1: 1
+  video2: 1
