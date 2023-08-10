@@ -1449,6 +1449,7 @@
       "filePath": "templates/components/custom/video-player/template.yaml",
       "previewImgSrc": "templates/components/custom/video-player/preview.png",
       "templateRef": "jc-custom-component",
+      "groups": ["jc-video-player-on-jig"],
       "files": [
         {
           "name": "video-player",
@@ -1462,6 +1463,7 @@
       "filePath": "templates/components/custom/custom-avatar/template.yaml",
       "previewImgSrc": "templates/components/custom/custom-avatar/preview.jpg",
       "templateRef": "jc-custom-component",
+      "groups": ["jc-avatar"],
       "files": [
         {
           "name": "custom-avatar",
