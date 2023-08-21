@@ -1,0 +1,8 @@
+type: component.custom-component
+componentId: navigation-item
+inputs:
+  icon: pencil-write
+  iconColor: color1
+  title: Title
+  description: Description 
+  goTo: go-to-jig

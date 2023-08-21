@@ -1443,6 +1443,20 @@
       "datasource": "templates/components/list/expander/expander-4/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": { "enableFor": ["jig.list", "component.list"] }
+    },
+    {
+      "name": "Navigation item",
+      "filePath": "templates/components/navigation-item/template.yaml",
+      "previewImgSrc": "templates/components/navigation-item/preview.png",
+      "templateRef": "jc-custom-component",
+      "groups": ["Navigation item"],
+      "files": [
+        {
+          "name": "navigation-item",
+          "filePath": "templates/components/navigation-item/component-1.yaml",
+          "directory": "components"
+        }
+      ]
     }
   ]
 }
