@@ -1447,7 +1447,7 @@
     {
       "name": "Navigation item",
       "filePath": "templates/components/navigation-item/template.yaml",
-      "previewImgSrc": "templates/components/navigation-item/preview.png",
+      "previewImgSrc": "templates/components/navigation-item/preview.jpg",
       "templateRef": "jc-custom-component",
       "groups": ["Navigation item"],
       "files": [
