@@ -5,7 +5,7 @@ children:
       onPress: 
         type: action.go-to
         options:
-          linkTo: =@ctx.inputs.goTo
+          linkTo: =@ctx.inputs.linkTo
       children:
         - type: component.view
           options:
@@ -16,10 +16,10 @@ children:
               gap: medium
             children:
               - type: component.icon
-                when: =@ctx.inputs.icon != null 
+                when: =@ctx.inputs.icon.name != null 
                 options:
-                  icon: =@ctx.inputs.icon
-                  color: =@ctx.inputs.iconColor
+                  icon: =@ctx.inputs.icon.name
+                  color: =@ctx.inputs.icon.color
                   type: duotone
                   shape: circle
               - type: component.view
