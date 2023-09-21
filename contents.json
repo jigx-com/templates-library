@@ -27,31 +27,43 @@
     {
       "name": "Default jig 4",
       "filePath": "templates/jigs/default/template-default-4.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-4.jpeg",
+      "previewImgSrc": "templates/jigs/default/template-default-4.png",
       "templateRef": "jig-default"
     },
     {
       "name": "Default jig 5",
-      "filePath": "templates/jigs/default/template-default-6.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-6.png",
+      "filePath": "templates/jigs/default/template-default-5.yaml",
+      "previewImgSrc": "templates/jigs/default/template-default-5.jpeg",
       "templateRef": "jig-default"
     },
     {
       "name": "Default jig 6",
+      "filePath": "templates/jigs/default/template-default-6.yaml",
+      "previewImgSrc": "templates/jigs/default/template-default-6.jpeg",
+      "templateRef": "jig-default"
+    },
+    {
+      "name": "Default jig 7",
       "filePath": "templates/jigs/default/template-default-7.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-7.png",
       "templateRef": "jig-default"
     },
     {
-      "name": "Default jig 7",
+      "name": "Default jig 8",
       "filePath": "templates/jigs/default/template-default-8.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-8.png",
       "templateRef": "jig-default"
     },
     {
+      "name": "Default jig 9",
+      "filePath": "templates/jigs/default/template-default-9.yaml",
+      "previewImgSrc": "templates/jigs/default/template-default-9.png",
+      "templateRef": "jig-default"
+    },
+    {
       "name": "List jig 1",
       "filePath": "templates/jigs/list/template-list-1.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-1.jpeg",
+      "previewImgSrc": "templates/jigs/list/template-list-1.png",
       "templateRef": "jig-list"
     },
     {
@@ -63,13 +75,13 @@
     {
       "name": "List jig 3",
       "filePath": "templates/jigs/list/template-list-3.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-3.png",
+      "previewImgSrc": "templates/jigs/list/template-list-3.jpeg",
       "templateRef": "jig-list"
     },
     {
       "name": "List jig 4",
       "filePath": "templates/jigs/list/template-list-4.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-4.jpeg",
+      "previewImgSrc": "templates/jigs/list/template-list-4.png",
       "templateRef": "jig-list"
     },
     {
@@ -117,13 +129,13 @@
     {
       "name": "List jig 12",
       "filePath": "templates/jigs/list/template-list-12.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-12.png",
+      "previewImgSrc": "templates/jigs/list/template-list-12.jpeg",
       "templateRef": "jig-list"
     },
     {
       "name": "List jig 13",
       "filePath": "templates/jigs/list/template-list-13.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-13.jpeg",
+      "previewImgSrc": "templates/jigs/list/template-list-13.png",
       "templateRef": "jig-list"
     },
     {
@@ -147,7 +159,7 @@
     {
       "name": "List jig 17",
       "filePath": "templates/jigs/list/template-list-17.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-17.png",
+      "previewImgSrc": "templates/jigs/list/template-list-17.jpeg",
       "templateRef": "jig-list"
     },
     {
@@ -166,6 +178,12 @@
       "name": "List jig 20",
       "filePath": "templates/jigs/list/template-list-20.yaml",
       "previewImgSrc": "templates/jigs/list/template-list-20.png",
+      "templateRef": "jig-list"
+    },
+    {
+      "name": "List jig 21",
+      "filePath": "templates/jigs/list/template-list-21.yaml",
+      "previewImgSrc": "templates/jigs/list/template-list-21.png",
       "templateRef": "jig-list"
     },
     {

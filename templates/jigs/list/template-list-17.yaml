@@ -1,5 +1,6 @@
-title: Swipe & icon
+title: Horizontal list
 type: jig.list
+isHorizontal: true
 
 header:
   type: component.jig-header
@@ -9,62 +10,56 @@ header:
       type: component.image
       options:
         source:
-          uri: https://builder.jigx.com/assets/images/header.jpg
-        title: Swipe & icon
-        subtitle: Swipeable list with the right icon
+          uri: https://images.unsplash.com/photo-1631427962232-803d4f30c64f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60
+        title: Icon and switch
+        subtitle: List with horizontal scrolling using icon and switch
 
 datasources:
-  swipeable-list:
+  components:
     type: datasource.static
     options:
       data:
-        - id: 1
-          title: Title
+        - name: Title
           subtitle: Subtitle
-          icon: home
-        - id: 2
-          title: Title
+          description: Description
+          highlight: false
+          switch-value: false
+          icon: conversation-chat-2
+          color: color8
+        - name: Title
           subtitle: Subtitle
-          icon: cog-double
-        - id: 3
-          title: Title
+          description: Description
+          highlight: true
+          switch-value: true
+          icon: gallery
+          color: color1
+        - name: Title
           subtitle: Subtitle
-          icon: car-garage
-        - id: 4
-          title: Title
-          subtitle: Subtitle
-          icon: home
-        - id: 5
-          title: Title
-          subtitle: Subtitle
-          icon: car-garage
-        - id: 6
-          title: Title
-          subtitle: Subtitle
-          icon: cog-double
+          description: Description
+          highlight: false
+          switch-value: false
+          icon: graph-stats-square
+          color: color5
 
-data: =@ctx.datasources.swipeable-list
+data: =@ctx.datasources.components
 item:
   type: component.list-item
   options:
-    title: =@ctx.current.item.title
+    title: =@ctx.current.item.name
     subtitle: =@ctx.current.item.subtitle
-    rightElement:
+    description: =@ctx.current.item.description
+    color:
+      - when: true
+        color: =@ctx.current.item.color
+    divider: solid
+    horizontalItemSize: regular
+    style:
+      isHighlighted: =@ctx.current.item.highlight
+    leftElement:
       element: icon
       name: =@ctx.current.item.icon
-    swipeable:
-      right:
-        - onPress:
-            type: action.open-url
-            options:
-              url: https://docs.jigx.com/examples/go-to
-          label: Primary Action
-          color: primary
-          icon: alarm-bell
-        - onPress:
-            type: action.open-url
-            options:
-              url: https://docs.jigx.com/examples/go-to
-          label: Secondary Action
-          color: warning
-          icon: alert-triangle
+      isContained: true
+      isDuotone: true
+    rightElement:
+      element: switch
+      value: =@ctx.current.item.switch-value

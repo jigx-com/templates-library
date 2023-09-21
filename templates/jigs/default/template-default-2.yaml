@@ -1,95 +1,132 @@
-title: =@ctx.datasources.employeeDetail.employee-first-name & ' ' & @ctx.datasources.employeeDetail.employee-surname
+title: Team budget
 type: jig.default
 
-header:
-  type: component.jig-header
-  options:
-    height: medium
-    children:
-      type: component.image
-      options:
-        source:
-          uri: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
-
 datasources:
-  employeeDetail:
+  series1:
     type: datasource.static
     options:
       data:
-        - employee-first-name: Jack
-          employee-surname: Smith
-          employee-date-of-birth: "1973-09-17T00:00:00.000Z"
-          employee-photo: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
-          employee-email: JackSmith@gmail.com
-          employee-phone-number: 583849264
-          employee-position: Product manager
-          employee-startWork: "2011-05-01T00:00:00.000Z"
-          employee-contract: https://i0.wp.com/eforms.com/download/2018/05/Employment-Contract-Agreement.png?ssl=1
+        - y: "1000"
+          x: 0
+        - y: "1120"
+          x: 5
+        - y: "901.3"
+          x: 13
+        - y: "879.8"
+          x: 20
+        - y: "645.5"
+          x: 22
+        - y: "523.5"
+          x: 25
+  list:
+    type: datasource.static
+    options:
+      data:
+        - category: list
+          title: Teambuilding
+          subtitle: Payment by card
+          description: 25 / 10 / 2022
+          value: "-$144"
+          color: negative
+          isPositive: false
+        - category: truck-cargo
+          title: Transport Brno to Prague
+          subtitle: Payment by card
+          description: 22 / 10 / 2022
+          value: "-$87.30"
+          color: negative
+          isPositive: false
+        - category: shopping-cart-empty-1
+          title: Team t-shirts
+          subtitle: Payment by card
+          description: 20 / 10 / 2022
+          value: "-$21.50"
+          color: negative
+          isPositive: false
+        - category: shopping-cart-empty-1
+          title: Cinema tickets
+          subtitle: Payment by card
+          description: 13 / 10 / 2022
+          value: "-$218.70"
+          color: negative
+          isPositive: false
+        - category: chevron-up
+          title: Team bonus
+          subtitle: Income payment
+          description: 5 / 10 / 2022
+          value: "$120"
+          color: positive
+          isPositive: true
 
 children:
-  - type: component.avatar
+  - type: component.line-chart
     options:
-      title: =$substring(@ctx.datasources.employeeDetail.employee-first-name, 0, 1) & $substring(@ctx.datasources.employeeDetail.employee-surname, 0, 1)
-      uri: =@ctx.datasources.employeeDetail.employee-photo
-      size: large
-      align: center
-  - type: component.entity
+      plotOptions:
+        series:
+          pointWidth: 10
+      yAxis:
+        isHidden: false
+        max: 1200
+        min: 0
+        labels:
+          format:
+            numberStyle: currency
+            currency: USD
+            compactDisplay: short
+      xAxis:
+        min: 0
+        max: 31
+      legend:
+        isHidden: true
+      chart:
+        height: 300
+        title:
+          text: =@ctx.datasources.series1[$count(@ctx.datasources.series1) - 1].y
+          format:
+            numberStyle: currency
+            currency: USD
+          horizontalAlign: center
+          verticalAlign: bottom
+        subtitle:
+          text: ="Team budget $1.000"
+          horizontalAlign: center
+          verticalAlign: bottom
+      series:
+        - data: =@ctx.datasources.series1
+          layout: area-gradient
+  - type: component.section
     options:
+      title: Transactions
       children:
-        - type: component.section
+        - type: component.list
           options:
-            title: Personal information
-            children:
-              - type: component.entity-field
-                options:
-                  label: Date of birth
-                  value: =$fromMillis($toMillis(@ctx.datasources.employeeDetail.employee-date-of-birth), '[D1o] [MNn] [Y]')
-              - type: component.entity-field
-                options:
-                  label: Phone number
-                  value: =@ctx.datasources.employeeDetail.employee-phone-number
-                  contentType: phone
-              - type: component.entity-field
-                options:
-                  label: E-mail
-                  value: =@ctx.datasources.employeeDetail.employee-email
-                  contentType: email
-        - type: component.section
-          options:
-            title: Internal information
-            children:
-              - type: component.entity-field
-                options:
-                  label: Date of starting work
-                  value: =$fromMillis($toMillis(@ctx.datasources.employeeDetail.employee-startWork), '[D1o] [MNn] [Y]')
-              - type: component.entity-field
-                options:
-                  label: Position
-                  value: =@ctx.datasources.employeeDetail.employee-position
-  - type: component.list
-    options:
-      isHorizontal: true
-      data: =@ctx.datasources.employeeDetail
-      maximumItemsToRender: 4
-      item:
-        type: component.list-item
-        options:
-          title: Contract
-          horizontalItemSize: large
-          leftElement:
-            element: image
-            text: ""
-            uri: =@ctx.current.item.employee-contract
-          style:
-            isHighlighted: true
-          onPress:
-            type: action.open-url
-            options:
-              url: https://docs.jigx.com/examples/pUyK-web-view
+            data: =@ctx.datasources.list
+            item:
+              type: component.list-item
+              options:
+                divider: solid
+                title: =@ctx.current.item.title
+                subtitle: =@ctx.current.item.subtitle
+                description: =@ctx.current.item.description
+                label:
+                  title: =@ctx.current.item.value
+                  color:
+                    - when: true
+                      color: =@ctx.current.item.color
+                leftElement:
+                  element: icon
+                  name: =@ctx.current.item.category
+                  isContained: true
+                  isDuotone: true
+                rightElement:
+                  element: icon
+                  name: information-circle
+                style:
+                  isPositive: =@ctx.current.item.isPositive
 
 actions:
   - children:
       - type: action.open-url
         options:
-          title: Edit employee
-          url: https://docs.jigx.com/examples/execute-entity
+          title: New Expense
+          url: https://docs.jigx.com/examples/submit-form

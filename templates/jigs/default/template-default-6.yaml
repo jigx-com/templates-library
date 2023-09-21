@@ -1,4 +1,4 @@
-title: Pyramid Construction Inc.
+title: Revenues and expenses
 type: jig.default
 
 header:
@@ -9,76 +9,163 @@ header:
       type: component.image
       options:
         source:
-          uri: https://www.pyramidca.com/media/module/content_masthead/masthead_1.jpg
+          uri: https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
 
 datasources:
-  company:
+  revenues:
     type: datasource.static
     options:
       data:
-        - leadName: Pad Stumuller
-          company: Pyramid Construction Inc.
-          e-mail: pat@pyramid.net
-          status: Closed - Converted
-          created: 2022-09-28
-          city: Redmond
-          state: WA
-          street: 1 Microsoft Way
+        - x: "2020"
+          y: 38000
+        - x: "2021"
+          y: 46000
+        - x: "2022"
+          y: 51000
+  expenses:
+    type: datasource.static
+    options:
+      data:
+        - x: "2020"
+          y: 19000
+        - x: "2021"
+          y: 28000
+        - x: "2022"
+          y: 39000
+  transactions:
+    type: datasource.static
+    options:
+      data:
+        - amount: 607
+          company: DLT
+          date: "2020-03-17"
+          description: Logistic application
+          positive: true
+          year: "2020"
+        - amount: -531
+          company: Rock Cafe
+          date: "2020-06-10"
+          description: Company party
+          positive: false
+          year: "2020"
+        - amount: 768
+          company: Techniserv
+          date: "2020-09-13"
+          description: DMS system
+          positive: true
+          year: "2020"
+        - amount: -384
+          company: McPen
+          date: "2021-04-15"
+          description: Office supplies
+          positive: false
+          year: "2021"
+        - amount: 853
+          company: Strandhill
+          date: "2021-06-08"
+          description: Internal application
+          positive: true
+          year: "2021"
+        - amount: -492
+          company: Electroworld
+          date: "2021-11-23"
+          description: New electronic equipment
+          positive: false
+          year: "2021"
+        - amount: 659
+          company: BrandCrown
+          date: "2022-01-17"
+          description: E-shop application
+          positive: true
+          year: "2022"
+        - amount: -547
+          company: Reliant energy
+          date: "2022-05-14"
+          description: Payment for energy
+          positive: false
+          year: "2022"
+        - amount: -638
+          company: Orea Resort
+          date: "2022-08-25"
+          description: Teambuilding
+          positive: false
+          year: "2022"
+        - amount: 947
+          company: ATV Impex
+          date: "2022-10-18"
+          description: DMS application
+          positive: true
+          year: "2022"
 
 children:
-  - type: component.avatar
+  - type: component.bar-chart
     options:
-      title: PC
-      size: large
-      align: center
-  - type: component.entity
+      legend:
+        isHidden: false
+      chart:
+        height: 280
+        isAnimated: true
+      yAxis:
+        max: 65000
+        min: 10000
+        labels:
+          format:
+            numberStyle: currency
+            currency: USD
+            compactDisplay: short
+            notation: compact
+      xAxis:
+        tickAmount: 3
+        categories:
+          - "2020"
+          - "2021"
+          - "2022"
+      plotOptions:
+        series:
+          pointWidth: 12
+      series:
+        - data: =@ctx.datasources.revenues
+          name: Revenues
+          color: positive
+          dataLabels:
+            - isEnabled: false
+        - data: =@ctx.datasources.expenses
+          name: Expenses
+          color: negative
+          dataLabels:
+            - isEnabled: false
+  - type: component.list
+    instanceId: transactions-list
     options:
-      children:
-        - type: component.section
-          options:
-            title: Lead details
-            children:
-              - type: component.entity-field
-                options:
-                  label: Lead Name
-                  value: =@ctx.datasources.company.leadName
-              - type: component.entity-field
-                options:
-                  label: Company
-                  value: =@ctx.datasources.company.company
-              - type: component.entity-field
-                options:
-                  label: Email
-                  value: =@ctx.datasources.company.e-mail
-                  contentType: email
-              - type: component.entity-field
-                options:
-                  label: Lead Status
-                  value: =@ctx.datasources.company.status
-                  rightIcon: checkbox-checked
-                  style:
-                    isPositive: true
-              - type: component.entity-field
-                options:
-                  label: Created Date
-                  value: =$fromMillis($toMillis(@ctx.datasources.company.created), '[D01]/[M01]/[Y0001]')
-                  contentType: date
-        - type: component.section
-          options:
-            title: Address
-            children:
-              - type: component.entity-field
-                options:
-                  label: City
-                  value: =@ctx.datasources.company.city
-              - type: component.entity-field
-                options:
-                  label: State
-                  value: =@ctx.datasources.company.state
-              - type: component.entity-field
-                options:
-                  label: Street
-                  value: =@ctx.datasources.company.street
-  - type: component.location
-    options:
-      address: =@ctx.datasources.company.city & ', ' & @ctx.datasources.company.street
+      filter:
+        - title: All
+          value: all
+        - title: "2020"
+          value: "2020"
+        - title: "2021"
+          value: "2021"
+        - title: "2022"
+          value: "2022"
+      data: =$filter(@ctx.datasources.transactions, function($v, $a, $i) { @ctx.components.transactions-list.state.filter = 'all' or $v.year = @ctx.components.transactions-list.state.filter })
+      maximumItemsToRender: 10
+      item:
+        type: component.list-item
+        options:
+          divider: solid
+          title: =@ctx.current.item.company
+          subtitle: =@ctx.current.item.description
+          description: =$fromMillis($toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')
+          label:
+            title: =@ctx.current.item.amount & '$'
+            isHidden: false
+            color:
+              - when: =(@ctx.current.item.positive = true)
+                color: color2
+              - when: =(@ctx.current.item.positive = false)
+                color: color4
+          leftElement:
+            element: icon
+            name: =@ctx.current.item.positive = true ? 'up' :'down'
+          style:
+            isPositive: =@ctx.current.item.positive
+            isError: =@ctx.current.item.positive = false ? true :false

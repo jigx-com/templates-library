@@ -1,4 +1,4 @@
-title: Avatar and Icon
+title: Task list
 type: jig.list
 
 header:
@@ -9,50 +9,82 @@ header:
       type: component.image
       options:
         source:
-          uri: https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80
-        title: Avatar and icon
-        subtitle: List with left avatar and right icon
+          uri: https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80
 
 datasources:
-  users:
+  list:
     type: datasource.static
     options:
       data:
-        - title: Name
-          subtitle: Position
-          description: Department
-          avatar-text: N/A
-          avatar: https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80
-        - title: Name
-          subtitle: Position
-          description: Department
-          avatar-text: N/A
-          avatar: https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
-        - title: Name
-          subtitle: Position
-          description: Department
-          avatar-text: N/A
-          avatar: https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80
+        - icon: person
+          task-number: Task 4
+          name: Meet With Colleagues
+          status: waiting
+          avatars:
+            - text: VM
+              uri: https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
+            - text: DR
+              uri: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60
+        - icon: checklist
+          task-number: Task 5
+          name: Use Jigx App
+          status: waiting
+          avatars:
+            - text: VM
+              uri: https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
+            - text: DR
+              uri: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60
+        - icon: synchronize-arrows-1
+          task-number: Task 3
+          name: Meet Your Manager
+          status: done
+          avatars:
+            - text: VM
+              uri: https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
+            - text: DR
+              uri: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60
+        - icon: synchronize-arrows-1
+          task-number: Task 2
+          name: Set Email & Calendar
+          status: done
+          avatars:
+            - text: VM
+              uri: https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
+            - text: DR
+              uri: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60
+        - icon: play
+          task-number: Task 1
+          name: Watch Jigx Intro Video
+          status: done
+          avatars:
+            - text: VM
+              uri: https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
+            - text: DR
+              uri: https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGF2YXRhcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60
 
-data: =@ctx.datasources.users
+data: =@ctx.datasources.list
 item:
   type: component.list-item
   options:
     divider: solid
-    title: =@ctx.current.item.title
-    subtitle: =@ctx.current.item.subtitle
-    description: =@ctx.current.item.description
+    color:
+      - when: =@ctx.component.state.checked = true ? true :false
+        color: color14
+    title: =@ctx.current.item.task-number
+    subtitle: =@ctx.current.item.name
     leftElement:
-      element: avatar
-      text: =@ctx.current.item.avatar-text
-      uri: =@ctx.current.item.avatar
-    rightElement:
-      element: icon
-      name: arrow-right
+      element: checkbox
+      value: =@ctx.current.item.status = 'done' ? true :false
+    style:
+      isStrikeThrough: =@ctx.component.state.checked = true ? true :false
+      isDisabled: =@ctx.component.state.checked = true ? true :false
+    avatars: =@ctx.current.item.avatars
+    label:
+      title: category
 
 actions:
   - children:
       - type: action.open-url
         options:
-          title: Add
+          title: Add task
           url: https://docs.jigx.com/examples/submit-form

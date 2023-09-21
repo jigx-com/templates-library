@@ -1,132 +1,51 @@
-title: Team budget
+title: Add new contact
 type: jig.default
 
-datasources:
-  series1:
-    type: datasource.static
-    options:
-      data:
-        - y: "1000"
-          x: 0
-        - y: "1120"
-          x: 5
-        - y: "901.3"
-          x: 13
-        - y: "879.8"
-          x: 20
-        - y: "645.5"
-          x: 22
-        - y: "523.5"
-          x: 25
-  list:
-    type: datasource.static
-    options:
-      data:
-        - category: list
-          title: Teambuilding
-          subtitle: Payment by card
-          description: 25 / 10 / 2022
-          value: "-$144"
-          color: negative
-          isPositive: false
-        - category: truck-cargo
-          title: Transport Brno to Prague
-          subtitle: Payment by card
-          description: 22 / 10 / 2022
-          value: "-$87.30"
-          color: negative
-          isPositive: false
-        - category: shopping-cart-empty-1
-          title: Team t-shirts
-          subtitle: Payment by card
-          description: 20 / 10 / 2022
-          value: "-$21.50"
-          color: negative
-          isPositive: false
-        - category: shopping-cart-empty-1
-          title: Cinema tickets
-          subtitle: Payment by card
-          description: 13 / 10 / 2022
-          value: "-$218.70"
-          color: negative
-          isPositive: false
-        - category: chevron-up
-          title: Team bonus
-          subtitle: Income payment
-          description: 5 / 10 / 2022
-          value: "$120"
-          color: positive
-          isPositive: true
+header:
+  type: component.jig-header
+  options:
+    height: small
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://builder.jigx.com/assets/images/captureinfo.jpg
 
 children:
-  - type: component.line-chart
+  - type: component.form
+    instanceId: new-contact-form
     options:
-      plotOptions:
-        series:
-          pointWidth: 10
-      yAxis:
-        isHidden: false
-        max: 1200
-        min: 0
-        labels:
-          format:
-            numberStyle: currency
-            currency: USD
-            compactDisplay: short
-      xAxis:
-        min: 0
-        max: 31
-      legend:
-        isHidden: true
-      chart:
-        height: 300
-        title:
-          text: =@ctx.datasources.series1[$count(@ctx.datasources.series1) - 1].y
-          format:
-            numberStyle: currency
-            currency: USD
-          horizontalAlign: center
-          verticalAlign: bottom
-        subtitle:
-          text: ="Team budget $1.000"
-          horizontalAlign: center
-          verticalAlign: bottom
-      series:
-        - data: =@ctx.datasources.series1
-          layout: area-gradient
-  - type: component.section
-    options:
-      title: Transactions
       children:
-        - type: component.list
+        - type: component.text-field
+          instanceId: first-name
           options:
-            data: =@ctx.datasources.list
-            item:
-              type: component.list-item
-              options:
-                divider: solid
-                title: =@ctx.current.item.title
-                subtitle: =@ctx.current.item.subtitle
-                description: =@ctx.current.item.description
-                label:
-                  title: =@ctx.current.item.value
-                  color:
-                    - when: true
-                      color: =@ctx.current.item.color
-                leftElement:
-                  element: icon
-                  name: =@ctx.current.item.category
-                  isContained: true
-                  isDuotone: true
-                rightElement:
-                  element: icon
-                  name: information-circle
-                style:
-                  isPositive: =@ctx.current.item.isPositive
+            label: First Name
+        - type: component.text-field
+          instanceId: last-name
+          options:
+            label: Last Name
+        - type: component.date-picker
+          instanceId: date-of-birth
+          options:
+            label: Date of birth
+        - type: component.text-field
+          instanceId: phone
+          options:
+            label: Phone
+            icon: phone
+        - type: component.email-field
+          instanceId: email
+          options:
+            label: Email
+            icon: email
 
 actions:
   - children:
-      - type: action.open-url
+      - type: action.submit-form
         options:
-          title: New Expense
-          url: https://docs.jigx.com/examples/submit-form
+          formId: new-contact-form
+          provider: DATA_PROVIDER_DYNAMIC
+          title: Add new contact
+          entity: default/contacts #Add "contacts" as a table in databases/default.jigx
+          method: create
+          goBack: previous

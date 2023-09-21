@@ -1,4 +1,4 @@
-title: Image, entity, location
+title: Pyramid Construction Inc.
 type: jig.default
 
 header:
@@ -9,52 +9,76 @@ header:
       type: component.image
       options:
         source:
-          uri: https://images.unsplash.com/photo-1613064934056-08a061014f37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+          uri: https://www.pyramidca.com/media/module/content_masthead/masthead_1.jpg
+
+datasources:
+  company:
+    type: datasource.static
+    options:
+      data:
+        - leadName: Pad Stumuller
+          company: Pyramid Construction Inc.
+          e-mail: pat@pyramid.net
+          status: Closed - Converted
+          created: 2022-09-28
+          city: Redmond
+          state: WA
+          street: 1 Microsoft Way
 
 children:
-  - type: component.section
+  - type: component.avatar
     options:
-      title: Image
-      children:
-        - type: component.image
-          options:
-            title: Thailand
-            subtitle: Phi Phi Islands
-            height: 250
-            source:
-              uri: https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+      title: PC
+      size: large
+      align: center
   - type: component.entity
     options:
       children:
         - type: component.section
           options:
-            title: Entity section
+            title: Lead details
             children:
               - type: component.entity-field
                 options:
-                  label: Description
-                  value:
-                    The Phi Phi Islands are an island group in Thailand between the
-                    large island of Phuket and the Straits of Malacca coast of Thailand.
-                    The islands are reachable by speedboats or long-tail boats most often
-                    from Krabi town or from piers in Phuket Province.
-                  isMultiline: true
+                  label: Lead Name
+                  value: =@ctx.datasources.company.leadName
               - type: component.entity-field
                 options:
-                  label: Total area
-                  value: 12.25 km2 (4.73 sq mi)
+                  label: Company
+                  value: =@ctx.datasources.company.company
               - type: component.entity-field
                 options:
-                  label: Total population
-                  value: "2,500"
+                  label: Email
+                  value: =@ctx.datasources.company.e-mail
+                  contentType: email
               - type: component.entity-field
                 options:
-                  label: Time zone
-                  value: UTC+7 (ICT)
-  - type: component.section
-    options:
-      title: Location
-      children:
-        - type: component.location
+                  label: Lead Status
+                  value: =@ctx.datasources.company.status
+                  rightIcon: checkbox-checked
+                  style:
+                    isPositive: true
+              - type: component.entity-field
+                options:
+                  label: Created Date
+                  value: =$fromMillis($toMillis(@ctx.datasources.company.created), '[D01]/[M01]/[Y0001]')
+                  contentType: date
+        - type: component.section
           options:
-            address: 190 Moo 7 Aonang Muang, Phi Phi island Krabi 81000, Thailand
+            title: Address
+            children:
+              - type: component.entity-field
+                options:
+                  label: City
+                  value: =@ctx.datasources.company.city
+              - type: component.entity-field
+                options:
+                  label: State
+                  value: =@ctx.datasources.company.state
+              - type: component.entity-field
+                options:
+                  label: Street
+                  value: =@ctx.datasources.company.street
+  - type: component.location
+    options:
+      address: =@ctx.datasources.company.city & ', ' & @ctx.datasources.company.street
