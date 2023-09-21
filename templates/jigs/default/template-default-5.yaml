@@ -1,4 +1,4 @@
-title: Revenues and expenses
+title: Create new invoice
 type: jig.default
 
 header:
@@ -9,163 +9,171 @@ header:
       type: component.image
       options:
         source:
-          uri: https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+          uri: https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+
+onFocus: 
+  type: action.sync-entities
+  options:
+    provider: DATA_PROVIDER_DYNAMIC
+    entities:
+      - default/invoices #Create new table "invoices" in databases/default.jigx
 
 datasources:
-  revenues:
+  methodOfPayment:
     type: datasource.static
     options:
       data:
-        - x: "2020"
-          y: 38000
-        - x: "2021"
-          y: 46000
-        - x: "2022"
-          y: 51000
-  expenses:
+        - method: By conversion
+        - method: By card
+        - method: Cash
+        - method: PayPal
+  currency:
     type: datasource.static
     options:
       data:
-        - x: "2020"
-          y: 19000
-        - x: "2021"
-          y: 28000
-        - x: "2022"
-          y: 39000
-  transactions:
+        - currency: USD
+        - currency: EUR
+  invoices:
+    type: datasource.sqlite
+    options:
+      provider: DATA_PROVIDER_LOCAL
+      entities:
+        - default/invoices #Create new table "invoices" in databases/default.jigx
+      query: |
+        SELECT   
+          id,   
+          '$.invoice-number'
+        FROM [default/invoices]
+  subscribers:
     type: datasource.static
     options:
       data:
-        - amount: 607
-          company: DLT
-          date: "2020-03-17"
-          description: Logistic application
-          positive: true
-          year: "2020"
-        - amount: -531
-          company: Rock Cafe
-          date: "2020-06-10"
-          description: Company party
-          positive: false
-          year: "2020"
-        - amount: 768
-          company: Techniserv
-          date: "2020-09-13"
-          description: DMS system
-          positive: true
-          year: "2020"
-        - amount: -384
-          company: McPen
-          date: "2021-04-15"
-          description: Office supplies
-          positive: false
-          year: "2021"
-        - amount: 853
-          company: Strandhill
-          date: "2021-06-08"
-          description: Internal application
-          positive: true
-          year: "2021"
-        - amount: -492
-          company: Electroworld
-          date: "2021-11-23"
-          description: New electronic equipment
-          positive: false
-          year: "2021"
-        - amount: 659
-          company: BrandCrown
-          date: "2022-01-17"
-          description: E-shop application
-          positive: true
-          year: "2022"
-        - amount: -547
-          company: Reliant energy
-          date: "2022-05-14"
-          description: Payment for energy
-          positive: false
-          year: "2022"
-        - amount: -638
-          company: Orea Resort
-          date: "2022-08-25"
-          description: Teambuilding
-          positive: false
-          year: "2022"
-        - amount: 947
-          company: ATV Impex
-          date: "2022-10-18"
-          description: DMS application
-          positive: true
-          year: "2022"
+        - subscriber: Techniserv
+          subscriber-id: "84297453"
+        - subscriber: Tatum
+          subscriber-id: "37047829"
+        - subscriber: Strandhill
+          subscriber-id: "90356287"
+        - subscriber: DLT
+          subscriber-id: "64397314"
+        - subscriber: Railston
+          subscriber-id: "47290536"
+        - subscriber: ATV Impex
+          subscriber-id: "73872495"
+        - subscriber: BrandCrown
+          subscriber-id: "43960276"
 
 children:
-  - type: component.bar-chart
+  - type: component.form
+    instanceId: new-invoice
     options:
-      legend:
-        isHidden: false
-      chart:
-        height: 280
-        isAnimated: true
-      yAxis:
-        max: 65000
-        min: 10000
-        labels:
-          format:
-            numberStyle: currency
-            currency: USD
-            compactDisplay: short
-            notation: compact
-      xAxis:
-        tickAmount: 3
-        categories:
-          - "2020"
-          - "2021"
-          - "2022"
-      plotOptions:
-        series:
-          pointWidth: 12
-      series:
-        - data: =@ctx.datasources.revenues
-          name: Revenues
-          color: positive
-          dataLabels:
-            - isEnabled: false
-        - data: =@ctx.datasources.expenses
-          name: Expenses
-          color: negative
-          dataLabels:
-            - isEnabled: false
-  - type: component.list
-    instanceId: transactions-list
-    options:
-      filter:
-        - title: All
-          value: all
-        - title: "2020"
-          value: "2020"
-        - title: "2021"
-          value: "2021"
-        - title: "2022"
-          value: "2022"
-      data: =$filter(@ctx.datasources.transactions, function($v, $a, $i) { @ctx.components.transactions-list.state.filter = 'all' or $v.year = @ctx.components.transactions-list.state.filter })
-      maximumItemsToRender: 10
-      item:
-        type: component.list-item
+      children:
+        - type: component.text-field
+          instanceId: invoice-number
+          options:
+            label: Invoice number
+            initialValue: =$fromMillis($toMillis($now()), '[Y0001]') & "000" & ($count(@ctx.datasources.invoices.id) = 0 ? 1 :$count(@ctx.datasources.invoices.id) + 1)
+        - type: component.date-picker
+          instanceId: date-of-issue
+          options:
+            label: Date of issue
+            initialValue: =$now()
+        - type: component.date-picker
+          instanceId: due-date
+          options:
+            label: Due date
+            initialValue: =$fromMillis($toMillis(@ctx.components.date-of-issue.state.value) + (86400000 * 14))
+        - type: component.dropdown
+          instanceId: subscriber
+          options:
+            label: Subscriber
+            data: =@ctx.datasources.subscribers
+            item:
+              type: component.dropdown-item
+              options:
+                title: =@ctx.current.item.subscriber
+                value: =@ctx.current.item.subscriber-id
+        - type: component.text-field
+          instanceId: subscriber-id
+          options:
+            label: Subscriber ID
+            initialValue: =@ctx.components.subscriber.state.value
+        - type: component.dropdown
+          instanceId: method-of-payment
+          options:
+            label: Method of payment
+            data: =@ctx.datasources.methodOfPayment
+            item:
+              type: component.dropdown-item
+              options:
+                title: =@ctx.current.item.method
+                value: =@ctx.current.item.method
+        - type: component.text-field
+          instanceId: item
+          options:
+            label: Description
+            isMultiline: true
+        - type: component.dropdown
+          instanceId: currency
+          options:
+            label: Currency
+            data: =@ctx.datasources.currency
+            item:
+              type: component.dropdown-item
+              options:
+                title: =@ctx.current.item.currency
+                value: =@ctx.current.item.currency
+        - type: component.number-field
+          instanceId: unit-price
+          options:
+            label: Unit price per hour
+            initialValue: 0
+        - type: component.number-field
+          instanceId: quantity
+          options:
+            label: Quantity
+            initialValue: 1
+            stepper:
+              isEnabled: true
+              value: 1
+        - type: component.signature-field
+          instanceId: signature
+          options:
+            label: Signature
+
+actions:
+  - children:
+      - type: action.action-list
         options:
-          divider: solid
-          title: =@ctx.current.item.company
-          subtitle: =@ctx.current.item.description
-          description: =$fromMillis($toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')
-          label:
-            title: =@ctx.current.item.amount & '$'
-            isHidden: false
-            color:
-              - when: =(@ctx.current.item.positive = true)
-                color: color2
-              - when: =(@ctx.current.item.positive = false)
-                color: color4
-          leftElement:
-            element: icon
-            name: =@ctx.current.item.positive = true ? 'up' :'down'
-          style:
-            isPositive: =@ctx.current.item.positive
-            isError: =@ctx.current.item.positive = false ? true :false
+          title: Create new invoice
+          actions:
+            - type: action.submit-form
+              options:
+                formId: new-invoice
+                provider: DATA_PROVIDER_LOCAL
+                method: save
+                entity: default/invoices #Create new table "invoices" in databases/default.jigx
+                onSuccess: 
+                  title: New invoice was saved
+            - type: action.sync-entities
+              options:
+                provider: DATA_PROVIDER_DYNAMIC
+                entities:
+                  - default/invoices
+
+summary:
+  children:
+    type: component.summary
+    options:
+      layout: default
+      leftIcon:
+        element: icon
+        name: form
+        isContained: true
+        isDuotone: true
+      title:
+        text: =@ctx.components.unit-price.state.value * @ctx.components.quantity.state.value
+        format:
+          numberStyle: currency
+          currency: =@ctx.components.currency.state.value
+      subtitle: Total invoice amount

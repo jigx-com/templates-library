@@ -1,4 +1,4 @@
-title: Icon and Value
+title: Avatar & Progress
 type: jig.list
 
 header:
@@ -9,48 +9,44 @@ header:
       type: component.image
       options:
         source:
-          uri: https://images.unsplash.com/photo-1569235186275-626cb53b83ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80
-        title: Icon and Value
-        subtitle: List with left icon and right value
+          uri: https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+        title: Avatar & Progress
+        subtitle: List with left avatar and progress
 
 datasources:
-  list:
+  progress:
     type: datasource.static
     options:
       data:
-        - name: All files
-          icon: paginate-filter-picture
-          value: 108
-        - name: Archive
-          icon: archive-folder
-          value: 54
-        - name: Deleted
-          icon: bin
-          value: 18
+        - title: Name
+          subtitle: Position
+          progress: 0.78
+          color: color1
+          avatar-text: 1
+          avatar: https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80
+        - title: Name
+          subtitle: Position
+          progress: 0.65
+          color: color2
+          avatar-text: 2
+          avatar: https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80
+        - title: Name
+          subtitle: Position
+          progress: 1
+          color: color3
+          avatar-text: 3
+          avatar: https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80
 
-data: =@ctx.datasources.list
+data: =@ctx.datasources.progress
 item:
   type: component.list-item
   options:
+    title: =@ctx.current.item.title
+    subtitle: =@ctx.current.item.subtitle
+    progress: =@ctx.current.item.progress
     color:
-      - when: =@ctx.current.item.name = "All files" ? true :false
-        color: color1
-      - when: =@ctx.current.item.name = "Archive" ? true :false
-        color: color2
-      - when: =@ctx.current.item.name = "Deleted" ? true :false
-        color: color4
-    divider: solid
-    title: =@ctx.current.item.name
+      - when: true
+        color: =@ctx.current.item.color
     leftElement:
-      element: icon
-      name: =@ctx.current.item.icon
-    rightElement:
-      element: value
-      text: =@ctx.current.item.value
-
-actions:
-  - children:
-      - type: action.open-url
-        options:
-          title: Add
-          url: https://docs.jigx.com/examples/submit-form
+      element: avatar
+      text: =@ctx.current.item.avatar-text

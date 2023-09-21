@@ -1,156 +1,93 @@
-title: Stock Inventory
+title: Contractors
 type: jig.list
-description: =@ctx.solution.state.selectedProduct
+icon: contact
 
 header:
   type: component.jig-header
   options:
-    height: medium
+    height: small
     children:
       type: component.image
       options:
         source:
-          uri: https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80
-        title: Product inventory
-        subtitle: Updated 3 mins ago
+          uri: https://builder.jigx.com/assets/images/header-tools.jpg
 
 datasources:
-  inventory:
+  contractorData: 
     type: datasource.static
     options:
       data:
-        - name: Product 1
-          description: Description
-          subtitle: Low inventory
-          avatar-text: A
-          progress: 0.78
-          value: "$154.000"
-          total: 100
-          current: 23
-        - name: Product 2
-          description: Description
-          avatar-text: B
-          progress: 0.3
-          value: "$120.000"
-          total: 800
-          current: 213
-        - name: Product 3
-          description: Description
-          avatar-text: C
-          value: "$115.000"
-          total: 800
-          current: 335
-        - name: Product 4
-          description: Description
-          avatar-text: D
-          avatar-uri:
-          value: "$107.000"
-          total: 100
-          current: 78
-        - name: Product 5
-          description: Description
-          avatar-text: E
-          avatar-uri:
-          value: "$102.500"
-          total: 1000
-          current: 985
-        - name: Product 6
-          description: Description
-          avatar-text: F
-          avatar-uri:
-          value: "$98.000"
-          total: 400
-          current: 280
-        - name: Product 7
-          description: Description
-          avatar-text: G
-          avatar-uri:
-          value: "$56.000"
-          total: 800
-          current: 335
-        - name: Product 8
-          description: Description
-          avatar-text: H
-          avatar-uri:
-          value: "$42.000"
-          total: 1000
-          current: 366
-        - name: Product 9
-          description: Description
-          avatar-text: I
-          avatar-uri:
-          value: "$38.500"
-          total: 200
-          current: 15
-        - name: Product 10
-          description: Description
-          avatar-text: J
-          avatar-uri:
-          value: "$37.000"
-          total: 2000
-          current: 1876
+        - id: 1
+          first_name: John
+          last_name: Smith
+          company: Smith Construction
+          email: john.smith@example.com
+          phone: 555-123-4567
+          services: General Contracting, Roofing, Remodeling
+          hourly_rate: 50.00
+        - id: 2
+          first_name: Jane
+          last_name: Doe
+          company: Doe Builders
+          email: jane.doe@example.com
+          phone: 555-987-6543
+          services: Home Renovation, Kitchen Remodeling
+          hourly_rate: 55.00
+        - id: 3
+          first_name: Bob
+          last_name: Johnson
+          company: Johnson Contractors
+          email: bob.johnson@example.com
+          phone: 555-555-5555
+          services: Electrical, Plumbing, HVAC
+          hourly_rate: 60.00
+        - id: 4
+          first_name: Sarah
+          last_name: Williams
+          company: Williams Builders
+          email: sarah.williams@example.com
+          phone: 555-555-1234
+          services: Carpentry, Flooring, Painting
+          hourly_rate: 45.00
+        - id: 5
+          first_name: Michael
+          last_name: Davis
+          company: Davis Renovations
+          email: michael.davis@example.com
+          phone: 555-789-1234
+          services: Bathroom Remodeling, Tiling
+          hourly_rate: 65.00
+        - id: 6
+          first_name: Emily
+          last_name: Brown
+          company: Brown Builders
+          email: emily.brown@example.com
+          phone: 555-876-5432
+          services: Roof Repair, Siding Installation
+          hourly_rate: 58.00
+        - id: 7
+          first_name: David
+          last_name: Lee
+          company: Lee Contracting
+          email: david.lee@example.com
+          phone: 555-321-7890
+          services: Foundation Repair, Concrete Work
+          hourly_rate: 62.00
 
-data: =@ctx.datasources.inventory
+data: =@ctx.datasources.contractorData
 item:
   type: component.list-item
   options:
-    label:
-      title: =@ctx.current.item.current & ' / ' & @ctx.current.item.total
-      color:
-        - when: =((@ctx.current.item.current / @ctx.current.item.total) < 0.25)
-          color: color4
-        - when: =((@ctx.current.item.current / @ctx.current.item.total) > 0.25)
-          color: color2
-    color:
-      - when: =((@ctx.current.item.current / @ctx.current.item.total) < 0.25)
-        color: color4
-      - when: =((@ctx.current.item.current / @ctx.current.item.total) < 0.50)
-        color: color3
-    title: =@ctx.current.item.name
-    description: =@ctx.current.item.description
-    subtitle: =((@ctx.current.item.current / @ctx.current.item.total) < 0.25) ? "Low inventory" :""
-    style:
-      isError: =((@ctx.current.item.current / @ctx.current.item.total) < 0.25) ? true :false
-    progress: =(@ctx.current.item.current / @ctx.current.item.total)
-    leftElement:
+    title: =@ctx.current.item.company 
+    subtitle: =@ctx.current.item.services
+    description: =@ctx.current.item.first_name & ' ' & @ctx.current.item.last_name
+    leftElement: 
       element: avatar
-      text: =@ctx.current.item.avatar-text
-    swipeable:
-      left:
-        - label: label
-          icon: pencil-2
-          color: warning
-          onPress:
-            type: action.set-state
-            options:
-              state: =@ctx.solution.state.selectedProduct
-              value: =@ctx.current.item.name
-      right:
-        - label: label
-          icon: pencil-2
-          color: primary
-          onPress:
-            type: action.set-state
-            options:
-              state: =@ctx.solution.state.selectedProduct
-              value: =@ctx.current.item.name
-
-actions:
-  - children:
-      - type: action.open-url
-        options:
-          title: Buy products with low inventory
-          url: https://docs.jigx.com/examples/action-list
-
-summary:
-  children:
-    type: component.summary
-    options:
-      layout: default
-      title: =$count(@ctx.datasources.inventory) & " Products"
-      subtitle: In total
-      leftIcon:
-        element: icon
-        name: shopping-cart-empty-1
-        isContained: true
-        isDuotone: true
+      text: =$substring(@ctx.current.item.first_name, 0, 1) & $substring(@ctx.current.item.last_name, 0, 1)
+    rightElement:
+      element: value
+      text: 
+        text: =@ctx.current.item.hourly_rate
+        format:
+          numberStyle: currency
+          currency: USD

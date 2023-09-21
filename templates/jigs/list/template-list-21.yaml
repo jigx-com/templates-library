@@ -1,0 +1,56 @@
+title: Select & icon
+type: jig.list
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvY3VtZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+        title: Select & icon
+        subtitle: List with select and icon
+
+datasources:
+  select:
+    type: datasource.static
+    options:
+      data:
+        - id: 1
+          title: Title
+          subtitle: Subtitle
+          icon: attachment
+        - id: 2
+          title: Title
+          subtitle: Subtitle
+          icon: alarm-bell
+        - id: 3
+          title: Title
+          subtitle: Subtitle
+          icon: checklist
+        - id: 4
+          title: Title
+          subtitle: Subtitle
+          icon: filter-1
+        - id: 5
+          title: Title
+          subtitle: Subtitle
+          icon: document
+        - id: 6
+          title: Title
+          subtitle: Subtitle
+          icon: bin-1
+
+isSelectable: true
+
+data: =@ctx.datasources.select
+item:
+  type: component.list-item
+  options:
+    title: =@ctx.current.item.title
+    subtitle: =@ctx.current.item.subtitle
+    leftElement:
+      element: icon
+      name: =@ctx.current.item.icon
