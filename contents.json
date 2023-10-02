@@ -1669,6 +1669,18 @@
           "directory": "components"
         }
       ]
+    },
+    {
+      "name": "Progress bar",
+      "filePath": "templates/components/progress-bar/progress-bar-1/template.yaml",
+      "previewImgSrc": "templates/components/progress-bar/progress-bar-1/preview.png",
+      "templateRef": "jc-progress-bar"
+    },
+    {
+      "name": "Progress bar with steps",
+      "filePath": "templates/components/progress-bar/progress-bar-2/template.yaml",
+      "previewImgSrc": "templates/components/progress-bar/progress-bar-2/preview.png",
+      "templateRef": "jc-progress-bar"
     }
   ],
   "widgets": {

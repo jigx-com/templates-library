@@ -10,7 +10,7 @@ options:
   title: =@ctx.current.item.title
   leftElement:
     element: icon
-    name: archive-folder
+    icon: archive-folder
   rightElement:
     element: value
     text: =@ctx.current.item.items

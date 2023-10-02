@@ -21,6 +21,6 @@ options:
               uri: =@ctx.current.item.uri
             rightElement:
               element: icon
-              name: arrow-right
+              icon: arrow-right
         maximumItemsToRender: 8
   isInitiallyCollapsed: false

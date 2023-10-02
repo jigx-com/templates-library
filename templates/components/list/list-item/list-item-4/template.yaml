@@ -11,4 +11,4 @@ options:
     uri: =@ctx.current.item.img
   rightElement:
     element: icon
-    name: arrow-right
+    icon: arrow-right

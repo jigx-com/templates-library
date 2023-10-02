@@ -16,7 +16,7 @@ options:
       title: =@ctx.current.item.name
       leftElement:
         element: icon
-        name: =@ctx.current.item.icon
+        icon: =@ctx.current.item.icon
       rightElement:
         element: value
         text: =@ctx.current.item.value

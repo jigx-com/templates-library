@@ -23,7 +23,7 @@ options:
             title: =@ctx.current.item.title
             leftElement:
               element: icon
-              name: =@ctx.current.item.icon
+              icon: =@ctx.current.item.icon
             style:
               isActive: =@ctx.current.item.isActive
               isDisabled: =@ctx.current.item.isWaiting
