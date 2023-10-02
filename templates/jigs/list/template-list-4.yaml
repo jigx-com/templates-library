@@ -48,7 +48,7 @@ item:
       uri: =@ctx.current.item.avatar
     rightElement:
       element: icon
-      name: arrow-right
+      icon: arrow-right
 
 actions:
   - children:

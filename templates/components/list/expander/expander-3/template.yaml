@@ -11,7 +11,7 @@ options:
         left:
           title: =@ctx.current.item.to
           subtitle: =@ctx.current.item.time-to
-        icon: plane-2
+        icon: plane-1
       
   children:
     - type: component.entity

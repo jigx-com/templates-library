@@ -18,7 +18,7 @@ options:
         isHighlighted: =@ctx.current.item.highlight
       leftElement:
         element: icon
-        name: =@ctx.current.item.icon
+        icon: =@ctx.current.item.icon
         isContained: true
         isDuotone: true
       rightElement:

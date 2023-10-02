@@ -12,7 +12,7 @@ options:
     element: icon
     isContained: true
     isDuotone: true
-    name: headphones-customer-support
+    icon: headphones-customer-support
   rightElement:
     element: switch
     initialValue: true

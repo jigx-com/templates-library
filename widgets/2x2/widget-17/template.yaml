@@ -11,7 +11,7 @@ options:
         element: icon
         isContained: true
         isDuotone: true
-        name: =@ctx.current.item.icon
+        icon: =@ctx.current.item.icon
       rightElement:
         element: switch
     type: component.list-item
