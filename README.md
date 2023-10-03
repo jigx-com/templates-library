@@ -94,6 +94,7 @@ Here is the list of currently available ref names:
 | jc-product-item      |                                 Product Item |
 | jc-custom-component  |                  Custom Component (children) |
 | ComponentDefinition  | Custom Component inside of components folder |
+| jc-progress-bar      |                                 Progress Bar |
 
 The list will be updated with more references.
 

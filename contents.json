@@ -257,10 +257,7 @@
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-1/datasource.yaml",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -270,10 +267,7 @@
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-2/datasource.yaml",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -283,10 +277,7 @@
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -296,10 +287,7 @@
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -309,10 +297,7 @@
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -322,10 +307,7 @@
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-6/datasource.yaml",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -466,9 +448,7 @@
       "previewImgSrc": "templates/components/expander/expander-0/preview.png",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -477,9 +457,7 @@
       "previewImgSrc": "templates/components/expander/expander-00/preview.png",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -489,9 +467,7 @@
       "datasource": "templates/components/expander/expander-1/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -500,9 +476,7 @@
       "previewImgSrc": "templates/components/expander/expander-2/preview.png",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -512,9 +486,7 @@
       "datasource": "templates/components/expander/expander-3/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -523,9 +495,7 @@
       "previewImgSrc": "templates/components/expander/expander-4/preview.png",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -535,9 +505,7 @@
       "datasource": "templates/components/expander/expander-5/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -547,9 +515,7 @@
       "datasource": "templates/components/expander/expander-6/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -559,9 +525,7 @@
       "datasource": "templates/components/expander/expander-7/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -570,9 +534,7 @@
       "previewImgSrc": "templates/components/expander/expander-8/preview.png",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -582,9 +544,7 @@
       "datasource": "templates/components/expander/expander-9/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -594,9 +554,7 @@
       "datasource": "templates/components/expander/expander-10/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -606,9 +564,7 @@
       "datasource": "templates/components/expander/expander-11/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -617,9 +573,7 @@
       "previewImgSrc": "templates/components/expander/expander-12/preview.png",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -629,9 +583,7 @@
       "datasource": "templates/components/expander/expander-13/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -640,9 +592,7 @@
       "previewImgSrc": "templates/components/expander/expander-14/preview.png",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -651,9 +601,7 @@
       "previewImgSrc": "templates/components/expander/expander-15/preview.png",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -663,9 +611,7 @@
       "datasource": "templates/components/expander/expander-16/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -675,9 +621,7 @@
       "datasource": "templates/components/expander/expander-17/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -687,9 +631,7 @@
       "datasource": "templates/components/expander/expander-18/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -698,9 +640,7 @@
       "previewImgSrc": "templates/components/expander/expander-19/preview.png",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -710,9 +650,7 @@
       "datasource": "templates/components/expander/expander-20/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -722,9 +660,7 @@
       "datasource": "templates/components/expander/expander-21/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.default"
-        ]
+        "enableFor": ["jig.default"]
       }
     },
     {
@@ -1195,10 +1131,7 @@
       "datasource": "templates/components/pie-chart/pie-chart-1/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -1208,10 +1141,7 @@
       "datasource": "templates/components/pie-chart/pie-chart-2/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -1221,10 +1151,7 @@
       "datasource": "templates/components/pie-chart/pie-chart-3/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -1234,10 +1161,7 @@
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-1/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -1247,10 +1171,7 @@
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-2/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -1260,10 +1181,7 @@
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-3/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": {
-        "enableFor": [
-          "jig.default",
-          "component.expander"
-        ]
+        "enableFor": ["jig.default", "component.expander"]
       }
     },
     {
@@ -1357,10 +1275,7 @@
       "datasource": "templates/components/list/stage/stage-1/datasource.yaml",
       "templateRef": "jc-stage",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
     },
     {
@@ -1370,10 +1285,7 @@
       "datasource": "templates/components/list/stage/stage-2/datasource.yaml",
       "templateRef": "jc-stage",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
     },
     {
@@ -1541,10 +1453,7 @@
       "datasource": "templates/components/list/bar-chart/bar-chart-1/datasource.yaml",
       "templateRef": "jc-bar-chart",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
     },
     {
@@ -1554,10 +1463,7 @@
       "datasource": "templates/components/list/bar-chart/bar-chart-2/datasource.yaml",
       "templateRef": "jc-bar-chart",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
     },
     {
@@ -1567,10 +1473,7 @@
       "datasource": "templates/components/list/pie-chart/pie-chart-1/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
     },
     {
@@ -1580,10 +1483,7 @@
       "datasource": "templates/components/list/pie-chart/pie-chart-2/datasource.yaml",
       "templateRef": "jc-pie-chart",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
     },
     {
@@ -1593,10 +1493,7 @@
       "datasource": "templates/components/list/expander/expander-1/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
     },
     {
@@ -1606,10 +1503,7 @@
       "datasource": "templates/components/list/expander/expander-2/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
     },
     {
@@ -1619,10 +1513,7 @@
       "datasource": "templates/components/list/expander/expander-3/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
     },
     {
@@ -1632,43 +1523,8 @@
       "datasource": "templates/components/list/expander/expander-4/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
-        "enableFor": [
-          "jig.list",
-          "component.list"
-        ]
+        "enableFor": ["jig.list", "component.list"]
       }
-    },
-    {
-      "name": "Video player - store example",
-      "filePath": "templates/components/custom/video-player/template.yaml",
-      "previewImgSrc": "templates/components/custom/video-player/preview.png",
-      "templateRef": "jc-custom-component",
-      "groups": [
-        "jc-video-player-on-jig"
-      ],
-      "files": [
-        {
-          "name": "video-player",
-          "filePath": "templates/components/custom/video-player/component-1.yaml",
-          "directory": "components"
-        }
-      ]
-    },
-    {
-      "name": "Avatar - store example",
-      "filePath": "templates/components/custom/custom-avatar/template.yaml",
-      "previewImgSrc": "templates/components/custom/custom-avatar/preview.jpg",
-      "templateRef": "jc-custom-component",
-      "groups": [
-        "jc-avatar"
-      ],
-      "files": [
-        {
-          "name": "custom-avatar",
-          "filePath": "templates/components/custom/custom-avatar/component-1.yaml",
-          "directory": "components"
-        }
-      ]
     },
     {
       "name": "Progress bar",
