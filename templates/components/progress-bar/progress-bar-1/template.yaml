@@ -1,18 +1,18 @@
 type: component.progress-bar
-  options:
-    value:
-      current: 4
-      max: 10
-    color: color3
-    size: medium
-    steps: 1
-    title:
-      value: Title
-      align: left
-      position: top
-    subtitle:
-      value: Subtitle
-      align: right
-      position: top
-    style:
-      isDisabled: false
+options:
+  value:
+    current: 4
+    max: 10
+  color: color3
+  size: medium
+  steps: 1
+  title:
+    value: Title
+    align: left
+    position: top
+  subtitle:
+    value: Subtitle
+    align: right
+    position: top
+  style:
+    isDisabled: false
