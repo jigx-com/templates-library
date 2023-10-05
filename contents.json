@@ -1548,7 +1548,7 @@
       "name": "Countdown 5 days",
       "filePath": "templates/components/countdown/countdown-2/template.yaml",
       "previewImgSrc": "templates/components/countdown/countdown-2/preview.png",
-      "templateRef": "jc-progress-bar"
+      "templateRef": "jc-countdown"
     }
   ],
   "widgets": {
