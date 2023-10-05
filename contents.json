@@ -1537,6 +1537,18 @@
       "filePath": "templates/components/progress-bar/progress-bar-2/template.yaml",
       "previewImgSrc": "templates/components/progress-bar/progress-bar-2/preview.png",
       "templateRef": "jc-progress-bar"
+    },
+    {
+      "name": "Countdown 20 minutes",
+      "filePath": "templates/components/countdown/countdown-1/template.yaml",
+      "previewImgSrc": "templates/components/countdown/countdown-1/preview.png",
+      "templateRef": "jc-countdown"
+    },
+    {
+      "name": "Countdown 5 days",
+      "filePath": "templates/components/countdown/countdown-2/template.yaml",
+      "previewImgSrc": "templates/components/countdown/countdown-2/preview.png",
+      "templateRef": "jc-progress-bar"
     }
   ],
   "widgets": {
