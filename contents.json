@@ -8,7 +8,6 @@
     },
     {
       "name": "Contacts management",
-      "filePath": "templates/scenario/contact/list-contact.yaml",
       "previewImgSrc": [
         "templates/scenario/contact/resources/list-contact.jpg",
         "templates/scenario/contact/resources/edit-contact.jpg",
@@ -16,6 +15,11 @@
       ],
       "templateRef": "jig-list",
       "files": [
+        {
+          "name": "list-contact",
+          "filePath": "templates/scenario/contact/list-contact.yaml",
+          "directory": "jigs/contacts"
+        },
         {
           "name": "create-contact",
           "filePath": "templates/scenario/contact/create-contact.yaml",
