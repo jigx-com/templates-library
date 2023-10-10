@@ -18,7 +18,8 @@
         {
           "name": "list-contact",
           "filePath": "templates/scenario/contact/list-contact.yaml",
-          "directory": "jigs/contacts"
+          "directory": "jigs/contacts",
+          "open": true
         },
         {
           "name": "create-contact",
