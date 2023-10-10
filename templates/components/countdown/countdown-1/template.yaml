@@ -3,7 +3,6 @@ options:
   expiresAt: =$fromMillis($toMillis($now()) + 1200000, '[Y]-[M]-[D01] [H01]:[m01]')
   align: left
   labels:
-    emphasis: medium
     isVisible: true
     position: top
   size: large
