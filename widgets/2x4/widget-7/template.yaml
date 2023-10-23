@@ -1,17 +1,19 @@
+type: widget.value
 options:
   align: center
   bottom:
+    type: component.titles
     options:
       title: Jane Stevens
       subtitle: +420 665 778 998
       align: center
       icon: phone
       iconColor: color4
-    type: component.titles
   format:
     dateFormat: HH:mm
     unit: Meeting time
   top:
+    type: component.titles
     options:
       title:
         format:
@@ -22,6 +24,4 @@ options:
       align: center
       icon: calendar
       iconColor: color9
-    type: component.titles
   value: 2022-10-27T14:00:14+0100
-type: widget.value

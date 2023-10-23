@@ -1,5 +1,7 @@
+type: widget.chart
 options:
   chart:
+    type: component.line-chart
     options:
       legend:
         isHidden: false
@@ -27,13 +29,11 @@ options:
         max: 1200
         min: 0
         tickAmount: 3
-    type: component.line-chart
   top:
+    type: component.trend
     options:
       title: $848.5
       subtitle: Budget $1.000
       style:
         isValueBottom: false
         isValueHidden: true
-    type: component.trend
-type: widget.chart

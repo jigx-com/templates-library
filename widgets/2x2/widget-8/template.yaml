@@ -1,3 +1,4 @@
+type: widget.location
 options:
   address: Prague
-type: widget.location
+

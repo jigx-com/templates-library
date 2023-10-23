@@ -1,8 +1,10 @@
 type: widget.group
 options:
   children:
-    - options:
+    - type: widget.chart
+      options:
         chart:
+          type: component.pie-chart
           options:
             chart:
               subtitle:
@@ -15,17 +17,17 @@ options:
               - color: color3
                 data: =@ctx.datasources.chart
                 layout: pie
-          type: component.pie-chart
         top:
+          type: component.titles
           options:
             title: Onboarding
             subtitle: Jigx, Inc.
             align: center
-          type: component.titles
-      type: widget.chart
-    - options:
+    - type: widget.list
+      options:
         data: =@ctx.datasources.list
         item:
+          type: component.list-item
           options:
             title: =@ctx.current.item.name
             subtitle: =@ctx.current.item.task-number
@@ -40,5 +42,3 @@ options:
             style:
               isDisabled: =(@ctx.current.item.status = 'done' ? true :false)
               isStrikeThrough: =(@ctx.current.item.status = 'done' ? true :false)
-          type: component.list-item
-      type: widget.list

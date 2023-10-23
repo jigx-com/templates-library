@@ -1,6 +1,8 @@
+type: widget.list
 options:
   data: =@ctx.datasources.users
   item:
+    type: component.list-item
     options:
       title: =@ctx.current.item.name
       subtitle: =@ctx.current.item.position
@@ -21,5 +23,3 @@ options:
       style:
         isError: =(@ctx.current.item.status = 'Declined' ? true :false)
         isStrikeThrough: =(@ctx.current.item.status = 'Declined' ? true :false)
-    type: component.list-item
-type: widget.list

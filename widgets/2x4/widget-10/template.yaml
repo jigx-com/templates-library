@@ -1,54 +1,54 @@
+type: widget.status
 options:
   statuses:
     - bottom:
+        type: component.titles
         options:
           title: =@ctx.datasources.device.batery & ' ' & '%'
           subtitle: Battery
           align: center
-        type: component.titles
       color: negative
       icon: battery-charge
       top:
+        type: component.titles
         options:
           title: =@ctx.datasources.device.device-owner
           subtitle: =@ctx.datasources.device.device-name
           align: center
           icon: mobile-phone-1
           iconColor: color14
-        type: component.titles
       when: =@ctx.datasources.device.batery <= 25 ? true:false
     - bottom:
+        type: component.titles
         options:
           title: =@ctx.datasources.device.batery & ' ' & '%'
           subtitle: Battery
           align: center
-        type: component.titles
       color: warning
       icon: battery-charge
       top:
+        type: component.titles
         options:
           title: =@ctx.datasources.device.device-owner
           subtitle: =@ctx.datasources.device.device-name
           align: center
           icon: mobile-phone-1
           iconColor: color14
-        type: component.titles
       when: =@ctx.datasources.device.batery <= 50 ? true:false
     - bottom:
+        type: component.titles
         options:
           title: =@ctx.datasources.device.batery & ' ' & '%'
           subtitle: Battery
           align: center
-        type: component.titles
       color: positive
       icon: battery-charge
       top:
+        type: component.titles
         options:
           title: =@ctx.datasources.device.device-owner
           subtitle: =@ctx.datasources.device.device-name
           align: center
           icon: mobile-phone-1
           iconColor: color14
-        type: component.titles
       when: =@ctx.datasources.device.batery > 50 ? true:false
-type: widget.status

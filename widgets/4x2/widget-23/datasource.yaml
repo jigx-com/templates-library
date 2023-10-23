@@ -1,4 +1,5 @@
 orders:
+  type: datasource.static
   options:
     data:
       - done: false
@@ -16,4 +17,3 @@ orders:
         subtitle: Delivered
         title: "0rder #57383"
         value: $ 799
-  type: datasource.static

@@ -1,12 +1,12 @@
+type: widget.value
 options:
   align: center
   bottom:
+    type: component.titles
     options:
       title: Company Billing
       subtitle: Q3 / 2022
       align: center
-    type: component.titles
   format:
     numberStyle: currency
   value: "2329999"
-type: widget.value

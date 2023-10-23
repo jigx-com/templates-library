@@ -1,4 +1,5 @@
 devices:
+  type: datasource.static
   options:
     data:
       - color: color3
@@ -13,4 +14,3 @@ devices:
         device: Security
         icon: login-keys
         room: Garage
-  type: datasource.static

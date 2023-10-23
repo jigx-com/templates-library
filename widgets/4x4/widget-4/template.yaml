@@ -1,6 +1,8 @@
+type: widget.list
 options:
   data: =@ctx.datasources.components
   item:
+    type: component.list-item
     options:
       title: =@ctx.current.item.name
       subtitle: =@ctx.current.item.reason
@@ -17,5 +19,3 @@ options:
       style:
         isError: =(@ctx.current.item.result= 'Unsuccess' ? true :false)
         isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
-    type: component.list-item
-type: widget.list

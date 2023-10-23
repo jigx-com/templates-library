@@ -1,5 +1,7 @@
+type: widget.chart
 options:
   chart:
+    type: component.bar-chart
     options:
       plotOptions:
         series:
@@ -24,8 +26,8 @@ options:
         max: 80
         min: 0
         tickAmount: 3
-    type: component.bar-chart
   top:
+    type: component.trend
     options:
       title: This Month
       format:
@@ -36,5 +38,3 @@ options:
         isValueBottom: true
         isValueHidden: false
       value: 11.81818181818
-    type: component.trend
-type: widget.chart

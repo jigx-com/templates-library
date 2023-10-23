@@ -1,4 +1,5 @@
 employees:
+  type: datasource.static
   options:
     data:
       - avatar-text: MM
@@ -19,4 +20,3 @@ employees:
         name: Tom Sellers
         position: QA Engineer
         progress: 0.54
-  type: datasource.static

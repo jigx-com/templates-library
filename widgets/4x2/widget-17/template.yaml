@@ -1,5 +1,7 @@
+type: widget.chart
 options:
   chart:
+    type: component.bar-chart
     options:
       chart:
         isAnimated: false
@@ -13,10 +15,8 @@ options:
       yAxis:
         min: 0
         tickAmount: 3
-    type: component.bar-chart
   top:
+    type: component.titles
     options:
       title: Inbound Leads
       subtitle: October 2022
-    type: component.titles
-type: widget.chart

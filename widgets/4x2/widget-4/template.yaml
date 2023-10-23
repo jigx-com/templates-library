@@ -1,7 +1,10 @@
+type: widget.group
 options:
   children:
-    - options:
+    - type: widget.chart
+      options:
         chart:
+          type: component.line-chart
           options:
             legend:
               isHidden: false
@@ -26,15 +29,15 @@ options:
                   notation: standard
                   numberStyle: currency
               tickAmount: 3
-          type: component.line-chart
         top:
+          type: component.titles
           options:
             title: Bitcoin
             subtitle: BTC to EUR
-          type: component.titles
-      type: widget.chart
-    - options:
+    - type: widget.chart
+      options:
         chart:
+          type: component.line-chart
           options:
             legend:
               isHidden: false
@@ -59,11 +62,8 @@ options:
                   notation: compact
                   numberStyle: currency
               tickAmount: 3
-          type: component.line-chart
         top:
+          type: component.titles
           options:
             title: Etherum
             subtitle: BTC to EUR
-          type: component.titles
-      type: widget.chart
-type: widget.group

@@ -1,11 +1,13 @@
+type: widget.chart
 options:
   bottom:
+    type: component.titles
     options:
       title: Quarterly Company Progress
       subtitle: "2022"
       align: center
-    type: component.titles
   chart:
+    type: component.line-chart
     options:
       legend:
         isHidden: false
@@ -30,10 +32,8 @@ options:
             numberStyle: currency
         min: 0
         tickAmount: 5
-    type: component.line-chart
   top:
+    type: component.titles
     options:
       title: $91.750
       icon: chart
-    type: component.titles
-type: widget.chart

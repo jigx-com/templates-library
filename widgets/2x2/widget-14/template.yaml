@@ -1,6 +1,8 @@
+type: widget.value
 options:
   align: right
   bottom:
+    type: component.trend
     options:
       title: 92,40 USDT / SOL
       format:
@@ -10,16 +12,14 @@ options:
         isAlignRight: false
         isValueBottom: true
       value: 21.2
-    type: component.trend
   format:
     unit: SOL
   top:
+    type: component.titles
     options:
       title: Solana
       subtitle: USDT
       align: left
       icon: currency-dollar
       iconColor: color2
-    type: component.titles
   value: 212
-type: widget.value
