@@ -1,4 +1,5 @@
 components:
+  type: datasource.static
   options:
     data:
       - avatar-text: B
@@ -112,4 +113,4 @@ components:
         status: Finished
         subtitle: EMEA
         value: 38500
-  type: datasource.static
+  

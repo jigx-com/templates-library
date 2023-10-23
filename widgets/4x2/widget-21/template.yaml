@@ -1,6 +1,8 @@
+type: widget.list
 options:
   data: =@ctx.datasources.components
   item:
+    type: component.list-item
     options:
       title: =@ctx.current.item.name
       subtitle: =@ctx.current.item.subtitle
@@ -18,5 +20,3 @@ options:
         minimum: 0
         step: 1
         value: 5
-    type: component.list-item
-type: widget.list

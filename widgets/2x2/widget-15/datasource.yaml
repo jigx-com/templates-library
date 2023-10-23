@@ -1,4 +1,5 @@
 tasklist:
+  type: datasource.static
   options:
     data:
       - description: Stopped Because Of High Price
@@ -10,4 +11,4 @@ tasklist:
       - description: ""
         name: Task 3
         status: progress
-  type: datasource.static
+  

@@ -1,6 +1,8 @@
+type: widget.list
 options:
   data: =@ctx.datasources.tasklist
   item:
+    type: component.list-item
     options:
       title: =@ctx.current.item.name
       subtitle: =@ctx.current.item.description
@@ -14,5 +16,3 @@ options:
       style:
         isPositive: =(@ctx.current.item.status= 'Finished' ? true :false)
         isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
-    type: component.list-item
-type: widget.list

@@ -1,4 +1,5 @@
 bitcoin:
+  type: datasource.sqlite
   options:
     provider: DATA_PROVIDER_REST
     entities:
@@ -21,8 +22,8 @@ bitcoin:
       ORDER BY
         ms DESC
       LIMIT 1 + 1 * 7
-  type: datasource.sqlite
 etherum:
+  type: datasource.sqlite
   options:
     provider: DATA_PROVIDER_REST
     entities:
@@ -45,4 +46,4 @@ etherum:
       ORDER BY
         ms DESC
       LIMIT 1 + 1 * 7
-  type: datasource.sqlite
+  

@@ -1,5 +1,7 @@
+type: widget.chart
 options:
   chart:
+    type: component.line-chart
     options:
       chart:
         isAnimated: true
@@ -37,9 +39,7 @@ options:
         max: 5000000
         min: 0
         tickAmount: 3
-    type: component.line-chart
   top:
+    type: component.titles
     options:
       title: Trend 2021-2022
-    type: component.titles
-type: widget.chart

@@ -1,11 +1,11 @@
 type: widget.image
 options:
   bottom:
+    type: component.titles
     options:
       title: Le Morne
       subtitle: Mauricius
       icon: pin
-    type: component.titles
   isContentOverlaid: true
   source:
     uri: https://q-xx.bstatic.com/xdata/images/hotel/840x460/157992495.jpg?k=5339c966b9d72868f14e8ca4d569eca83002a3a3abf4d2a1e570d2be13c9ce35&o=
