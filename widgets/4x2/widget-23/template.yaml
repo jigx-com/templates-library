@@ -1,7 +1,9 @@
+type: widget.list
 instanceId: orders
 options:
   data: =@ctx.datasources.orders
   item:
+    type: component.list-item
     options:
       title: =@ctx.current.item.title
       subtitle: =@ctx.current.item.subtitle
@@ -13,5 +15,3 @@ options:
         text: =@ctx.current.item.value
       style:
         isPositive: =@ctx.current.item.done
-    type: component.list-item
-type: widget.list

@@ -256,7 +256,9 @@
       "previewImgSrc": "templates/components/bar-chart/bar-chart-1/preview.jpeg",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-1/datasource.yaml",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Quarterly earnings",
@@ -264,7 +266,9 @@
       "previewImgSrc": "templates/components/bar-chart/bar-chart-2/preview.jpeg",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-2/datasource.yaml",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Bar-chart Max and min",
@@ -272,7 +276,9 @@
       "previewImgSrc": "templates/components/bar-chart/bar-chart-3/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Bar-chart hidden axis",
@@ -280,7 +286,9 @@
       "previewImgSrc": "templates/components/bar-chart/bar-chart-4/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Bar-chart Tick amount",
@@ -288,7 +296,9 @@
       "previewImgSrc": "templates/components/bar-chart/bar-chart-5/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/shared/datasource-2.yaml",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Bar-chart with enabled data labels",
@@ -296,7 +306,9 @@
       "previewImgSrc": "templates/components/bar-chart/bar-chart-6/preview.png",
       "templateRef": "jc-bar-chart",
       "datasource": "templates/components/bar-chart/bar-chart-6/datasource.yaml",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "With Entity Field, Sections and Field Row",
@@ -435,14 +447,18 @@
       "filePath": "templates/components/expander/expander-0/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-0/preview.png",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander header - Titles - Center aligned",
       "filePath": "templates/components/expander/expander-00/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-00/preview.png",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with titles header and Arch chart component",
@@ -450,14 +466,18 @@
       "previewImgSrc": "templates/components/expander/expander-1/preview.png",
       "datasource": "templates/components/expander/expander-1/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with titles header and Avatar component",
       "filePath": "templates/components/expander/expander-2/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-2/preview.png",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with titles header and Bar chart component",
@@ -465,14 +485,18 @@
       "previewImgSrc": "templates/components/expander/expander-3/preview.png",
       "datasource": "templates/components/expander/expander-3/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with titles header and Image component",
       "filePath": "templates/components/expander/expander-4/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-4/preview.png",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with titles header and Interactive image component",
@@ -480,7 +504,9 @@
       "previewImgSrc": "templates/components/expander/expander-5/preview.png",
       "datasource": "templates/components/expander/expander-5/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with titles header and Line chart component",
@@ -488,23 +514,28 @@
       "previewImgSrc": "templates/components/expander/expander-6/preview.png",
       "datasource": "templates/components/expander/expander-6/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
-
     {
       "name": "Expander with titles header and List item component",
       "filePath": "templates/components/expander/expander-7/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-7/preview.png",
       "datasource": "templates/components/expander/expander-7/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with titles header and Location component",
       "filePath": "templates/components/expander/expander-8/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-8/preview.png",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with titles header and Pie chart component",
@@ -512,7 +543,9 @@
       "previewImgSrc": "templates/components/expander/expander-9/preview.png",
       "datasource": "templates/components/expander/expander-9/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with titles header and Stepper component",
@@ -520,7 +553,9 @@
       "previewImgSrc": "templates/components/expander/expander-10/preview.png",
       "datasource": "templates/components/expander/expander-10/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Arch chart component",
@@ -528,14 +563,18 @@
       "previewImgSrc": "templates/components/expander/expander-11/preview.png",
       "datasource": "templates/components/expander/expander-11/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Avatar component",
       "filePath": "templates/components/expander/expander-12/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-12/preview.png",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Bar chart component",
@@ -543,21 +582,27 @@
       "previewImgSrc": "templates/components/expander/expander-13/preview.png",
       "datasource": "templates/components/expander/expander-13/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Entity field component",
       "filePath": "templates/components/expander/expander-14/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-14/preview.png",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Image component",
       "filePath": "templates/components/expander/expander-15/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-15/preview.png",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Interactive image component",
@@ -565,7 +610,9 @@
       "previewImgSrc": "templates/components/expander/expander-16/preview.png",
       "datasource": "templates/components/expander/expander-16/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Line chart component",
@@ -573,7 +620,9 @@
       "previewImgSrc": "templates/components/expander/expander-17/preview.png",
       "datasource": "templates/components/expander/expander-17/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and List item component",
@@ -581,14 +630,18 @@
       "previewImgSrc": "templates/components/expander/expander-18/preview.png",
       "datasource": "templates/components/expander/expander-18/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Location component",
       "filePath": "templates/components/expander/expander-19/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-19/preview.png",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Pie chart component",
@@ -596,7 +649,9 @@
       "previewImgSrc": "templates/components/expander/expander-20/preview.png",
       "datasource": "templates/components/expander/expander-20/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Expander with stage header and Stepper component",
@@ -604,7 +659,9 @@
       "previewImgSrc": "templates/components/expander/expander-21/preview.png",
       "datasource": "templates/components/expander/expander-21/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.default"] }
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
     },
     {
       "name": "Form with all possible elements",
@@ -619,14 +676,12 @@
       "previewImgSrc": "templates/components/form/form-2/preview.png",
       "templateRef": "jc-form"
     },
-
     {
       "name": "Form avatar field",
       "filePath": "templates/components/form/avatar-field/template.yaml",
       "previewImgSrc": "templates/components/form/avatar-field/preview.png",
       "templateRef": "jc-avatar-field"
     },
-
     {
       "name": "Form date picker empty",
       "filePath": "templates/components/form/datepicker/datepicker-1/template.yaml",
@@ -699,7 +754,6 @@
       "previewImgSrc": "templates/components/form/datetime-picker/datetime-picker-3/preview.png",
       "templateRef": "jc-date-picker"
     },
-
     {
       "name": "Form dropdown regular",
       "filePath": "templates/components/form/dropdown/dropdown-1/template.yaml",
@@ -749,7 +803,6 @@
       "datasource": "templates/components/form/dropdown/shared/datasource-1.yaml",
       "templateRef": "jc-dropdown"
     },
-
     {
       "name": "Form dropdown multiselect",
       "filePath": "templates/components/form/dropdown/dropdown-8/template.yaml",
@@ -890,21 +943,18 @@
       "previewImgSrc": "templates/components/form/number-field/number-field-5/preview.png",
       "templateRef": "jc-number-field"
     },
-
     {
       "name": "Form sections",
       "filePath": "templates/components/form/sections/template.yaml",
       "previewImgSrc": "templates/components/form/sections/preview.png",
       "templateRef": "jc-form-section"
     },
-
     {
       "name": "Form signature field",
       "filePath": "templates/components/form/signature-field/template.yaml",
       "previewImgSrc": "templates/components/form/signature-field/preview.png",
       "templateRef": "jc-signature-field"
     },
-
     {
       "name": "Form text field with auto capitalize characters",
       "filePath": "templates/components/form/text-field/text-field-1/template.yaml",
@@ -1080,7 +1130,9 @@
       "previewImgSrc": "templates/components/pie-chart/pie-chart-1/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-1/datasource.yaml",
       "templateRef": "jc-pie-chart",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Pie chart - multiple data",
@@ -1088,7 +1140,9 @@
       "previewImgSrc": "templates/components/pie-chart/pie-chart-2/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-2/datasource.yaml",
       "templateRef": "jc-pie-chart",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Progress pie chart",
@@ -1096,7 +1150,9 @@
       "previewImgSrc": "templates/components/pie-chart/pie-chart-3/preview.png",
       "datasource": "templates/components/pie-chart/pie-chart-3/datasource.yaml",
       "templateRef": "jc-pie-chart",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Arch chart",
@@ -1104,7 +1160,9 @@
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-1/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-1/datasource.yaml",
       "templateRef": "jc-pie-chart",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Arch chart - Multiple data",
@@ -1112,7 +1170,9 @@
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-2/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-2/datasource.yaml",
       "templateRef": "jc-pie-chart",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Progress arch chart",
@@ -1120,7 +1180,9 @@
       "previewImgSrc": "templates/components/pie-chart/arch-chart/arch-chart-3/preview.png",
       "datasource": "templates/components/pie-chart/arch-chart/arch-chart-3/datasource.yaml",
       "templateRef": "jc-pie-chart",
-      "filter": { "enableFor": ["jig.default", "component.expander"] }
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
     },
     {
       "name": "Percentage - Left avatar - Right label",
@@ -1212,7 +1274,9 @@
       "previewImgSrc": "templates/components/list/stage/stage-1/preview.png",
       "datasource": "templates/components/list/stage/stage-1/datasource.yaml",
       "templateRef": "jc-stage",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
       "name": "Left title - Icon - Right title",
@@ -1220,7 +1284,9 @@
       "previewImgSrc": "templates/components/list/stage/stage-2/preview.png",
       "datasource": "templates/components/list/stage/stage-2/datasource.yaml",
       "templateRef": "jc-stage",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
       "name": "Stock inventory with avatar, progress and label",
@@ -1386,7 +1452,9 @@
       "previewImgSrc": "templates/components/list/bar-chart/bar-chart-1/preview.png",
       "datasource": "templates/components/list/bar-chart/bar-chart-1/datasource.yaml",
       "templateRef": "jc-bar-chart",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
       "name": "Bar-chart list - multiple series",
@@ -1394,7 +1462,9 @@
       "previewImgSrc": "templates/components/list/bar-chart/bar-chart-2/preview.png",
       "datasource": "templates/components/list/bar-chart/bar-chart-2/datasource.yaml",
       "templateRef": "jc-bar-chart",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
       "name": "Pie-chart list - with legend",
@@ -1402,7 +1472,9 @@
       "previewImgSrc": "templates/components/list/pie-chart/pie-chart-1/preview.png",
       "datasource": "templates/components/list/pie-chart/pie-chart-1/datasource.yaml",
       "templateRef": "jc-pie-chart",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
       "name": "Pie-chart list - progress",
@@ -1410,7 +1482,9 @@
       "previewImgSrc": "templates/components/list/pie-chart/pie-chart-2/preview.png",
       "datasource": "templates/components/list/pie-chart/pie-chart-2/datasource.yaml",
       "templateRef": "jc-pie-chart",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
       "name": "Expander list - titles header, entity fields",
@@ -1418,7 +1492,9 @@
       "previewImgSrc": "templates/components/list/expander/expander-1/preview.png",
       "datasource": "templates/components/list/expander/expander-1/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
       "name": "Expander list - titles header, avatar and line-chart",
@@ -1426,7 +1502,9 @@
       "previewImgSrc": "templates/components/list/expander/expander-2/preview.png",
       "datasource": "templates/components/list/expander/expander-2/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
       "name": "Expander list - stage header, entity fields",
@@ -1434,7 +1512,9 @@
       "previewImgSrc": "templates/components/list/expander/expander-3/preview.png",
       "datasource": "templates/components/list/expander/expander-3/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
       "name": "Expander list - stage header, checkbox and location",
@@ -1442,35 +1522,308 @@
       "previewImgSrc": "templates/components/list/expander/expander-4/preview.png",
       "datasource": "templates/components/list/expander/expander-4/datasource.yaml",
       "templateRef": "jc-expander",
-      "filter": { "enableFor": ["jig.list", "component.list"] }
+      "filter": {
+        "enableFor": ["jig.list", "component.list"]
+      }
     },
     {
-      "name": "Video player - store example",
-      "filePath": "templates/components/custom/video-player/template.yaml",
-      "previewImgSrc": "templates/components/custom/video-player/preview.png",
-      "templateRef": "jc-custom-component",
-      "groups": ["jc-video-player-on-jig"],
-      "files": [
-        {
-          "name": "video-player",
-          "filePath": "templates/components/custom/video-player/component-1.yaml",
-          "directory": "components"
-        }
-      ]
+      "name": "Progress bar",
+      "filePath": "templates/components/progress-bar/progress-bar-1/template.yaml",
+      "previewImgSrc": "templates/components/progress-bar/progress-bar-1/preview.png",
+      "templateRef": "jc-progress-bar"
     },
     {
-      "name": "Avatar - store example",
-      "filePath": "templates/components/custom/custom-avatar/template.yaml",
-      "previewImgSrc": "templates/components/custom/custom-avatar/preview.jpg",
-      "templateRef": "jc-custom-component",
-      "groups": ["jc-avatar"],
-      "files": [
-        {
-          "name": "custom-avatar",
-          "filePath": "templates/components/custom/custom-avatar/component-1.yaml",
-          "directory": "components"
-        }
-      ]
+      "name": "Progress bar with steps",
+      "filePath": "templates/components/progress-bar/progress-bar-2/template.yaml",
+      "previewImgSrc": "templates/components/progress-bar/progress-bar-2/preview.png",
+      "templateRef": "jc-progress-bar"
+    },
+    {
+      "name": "Countdown 20 minutes",
+      "filePath": "templates/components/countdown/countdown-1/template.yaml",
+      "previewImgSrc": "templates/components/countdown/countdown-1/preview.png",
+      "templateRef": "jc-countdown"
+    },
+    {
+      "name": "Countdown 5 days",
+      "filePath": "templates/components/countdown/countdown-2/template.yaml",
+      "previewImgSrc": "templates/components/countdown/countdown-2/preview.png",
+      "templateRef": "jc-countdown"
     }
-  ]
+  ],
+  "widgets": {
+    "2x2": [
+      {
+        "filePath": "widgets/2x2/widget-1/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-1/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-10/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-10/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-11/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-11/preview.jpg",
+        "datasource": "widgets/2x2/widget-11/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x2/widget-12/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-12/preview.jpg",
+        "datasource": "widgets/2x2/widget-12/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x2/widget-13/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-13/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-14/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-14/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-15/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-15/preview.jpg",
+        "datasource": "widgets/2x2/widget-15/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x2/widget-16/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-16/preview.jpg",
+        "datasource": "widgets/2x2/widget-16/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x2/widget-17/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-17/preview.jpg",
+        "datasource": "widgets/2x2/widget-17/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x2/widget-2/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-2/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-18/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-18/preview.jpg",
+        "datasource": "widgets/2x2/widget-18/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x2/widget-19/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-19/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-20/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-20/preview.jpg",
+        "datasource": "widgets/2x2/widget-20/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x2/widget-3/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-3/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-4/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-4/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-5/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-5/preview.jpg",
+        "datasource": "widgets/2x2/widget-5/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x2/widget-6/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-6/preview.jpg",
+        "datasource": "widgets/2x2/widget-6/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x2/widget-7/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-7/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-8/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-8/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x2/widget-9/template.yaml",
+        "previewImgSrc": "widgets/2x2/widget-9/preview.jpg"
+      }
+    ],
+    "2x4": [
+      {
+        "filePath": "widgets/2x4/widget-1/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-1/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x4/widget-10/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-10/preview.jpg",
+        "datasource": "widgets/2x4/widget-10/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x4/widget-11/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-11/preview.jpg",
+        "datasource": "widgets/2x4/widget-11/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x4/widget-2/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-2/preview.jpg",
+        "datasource": "widgets/2x4/widget-2/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x4/widget-3/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-3/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x4/widget-4/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-4/preview.jpg",
+        "datasource": "widgets/2x4/widget-4/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x4/widget-5/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-5/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x4/widget-6/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-6/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x4/widget-7/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-7/preview.jpg"
+      },
+      {
+        "filePath": "widgets/2x4/widget-8/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-8/preview.jpg",
+        "datasource": "widgets/2x4/widget-8/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/2x4/widget-9/template.yaml",
+        "previewImgSrc": "widgets/2x4/widget-9/preview.jpg",
+        "datasource": "widgets/2x4/widget-9/datasource.yaml"
+      }
+    ],
+    "4x2": [
+      {
+        "filePath": "widgets/4x2/widget-1/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-1/preview.jpg",
+        "datasource": "widgets/4x2/widget-1/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-10/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-10/preview.jpg",
+        "datasource": "widgets/4x2/widget-10/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-11/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-11/preview.jpg",
+        "datasource": "widgets/4x2/widget-11/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-12/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-12/preview.jpg"
+      },
+      {
+        "filePath": "widgets/4x2/widget-13/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-13/preview.jpg",
+        "datasource": "widgets/4x2/widget-13/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-14/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-14/preview.jpg",
+        "datasource": "widgets/4x2/widget-14/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-15/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-15/preview.jpg"
+      },
+      {
+        "filePath": "widgets/4x2/widget-16/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-16/preview.jpg",
+        "datasource": "widgets/4x2/widget-16/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-17/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-17/preview.jpg",
+        "datasource": "widgets/4x2/widget-17/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-18/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-18/preview.jpg"
+      },
+      {
+        "filePath": "widgets/4x2/widget-19/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-19/preview.jpg"
+      },
+      {
+        "filePath": "widgets/4x2/widget-2/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-2/preview.jpg"
+      },
+      {
+        "filePath": "widgets/4x2/widget-20/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-20/preview.jpg",
+        "datasource": "widgets/4x2/widget-20/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-21/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-21/preview.jpg",
+        "datasource": "widgets/4x2/widget-21/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-22/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-22/preview.jpg"
+      },
+      {
+        "filePath": "widgets/4x2/widget-23/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-23/preview.jpg",
+        "datasource": "widgets/4x2/widget-23/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-3/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-3/preview.jpg"
+      },
+      {
+        "filePath": "widgets/4x2/widget-4/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-4/preview.jpg",
+        "datasource": "widgets/4x2/widget-4/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-5/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-5/preview.jpg",
+        "datasource": "widgets/4x2/widget-5/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-6/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-6/preview.jpg"
+      },
+      {
+        "filePath": "widgets/4x2/widget-7/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-7/preview.jpg"
+      },
+      {
+        "filePath": "widgets/4x2/widget-8/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-8/preview.jpg",
+        "datasource": "widgets/4x2/widget-8/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x2/widget-9/template.yaml",
+        "previewImgSrc": "widgets/4x2/widget-9/preview.jpg",
+        "datasource": "widgets/4x2/widget-9/datasource.yaml"
+      }
+    ],
+    "4x4": [
+      {
+        "filePath": "widgets/4x4/widget-1/template.yaml",
+        "previewImgSrc": "widgets/4x4/widget-1/preview.jpg",
+        "datasource": "widgets/4x4/widget-1/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x4/widget-2/template.yaml",
+        "previewImgSrc": "widgets/4x4/widget-2/preview.jpg",
+        "datasource": "widgets/4x4/widget-2/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x4/widget-3/template.yaml",
+        "previewImgSrc": "widgets/4x4/widget-3/preview.jpg",
+        "datasource": "widgets/4x4/widget-3/datasource.yaml"
+      },
+      {
+        "filePath": "widgets/4x4/widget-4/template.yaml",
+        "previewImgSrc": "widgets/4x4/widget-4/preview.jpg",
+        "datasource": "widgets/4x4/widget-4/datasource.yaml"
+      }
+    ]
+  }
 }

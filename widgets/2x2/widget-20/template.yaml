@@ -1,6 +1,8 @@
+type: widget.status
 options:
   statuses:
     - bottom:
+        type: component.titles
         options:
           title: =@ctx.datasources.devices.status
           subtitle: =@ctx.datasources.devices.device-name
@@ -8,11 +10,11 @@ options:
           icon: check-1
           style:
             isPositive: true
-        type: component.titles
       color: color14
       icon: robot
       when: =@ctx.datasources.devices.status = "Connected" ? true:false
     - bottom:
+        type: component.titles
         options:
           title: =@ctx.datasources.devices.status
           subtitle: =@ctx.datasources.devices.device-name
@@ -20,20 +22,18 @@ options:
           icon: no-cloud
           style:
             isNegative: true
-        type: component.titles
       color: color14
       icon: robot
       when: =@ctx.datasources.devices.status = "Disconnected" ? true:false
     - bottom:
+        type: component.titles
         options:
           title: =@ctx.datasources.devices.status
           subtitle: =@ctx.datasources.devices.device-name
           align: center
           icon: question-circle
           iconColor: warning
-        type: component.titles
       color: color14
       icon: robot
       when: =@ctx.datasources.devices.status != 'Connected' and
         @ctx.datasources.devices.status != 'Disconnected' ? true:false
-type: widget.status

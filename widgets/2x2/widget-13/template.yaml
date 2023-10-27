@@ -1,6 +1,8 @@
+type: widget.value
 options:
   align: center
   bottom:
+    type: component.titles
     options:
       title: Last Change
       subtitle:
@@ -9,8 +11,6 @@ options:
         text: 2022-10-27T14:41:13+0100
       icon: synchronize-arrows-1
       iconColor: color3
-    type: component.titles
   format:
     unit: Components
   value: =$count(@ctx.datasources.components)
-type: widget.value

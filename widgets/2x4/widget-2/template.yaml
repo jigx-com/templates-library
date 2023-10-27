@@ -1,5 +1,7 @@
+type: widget.chart
 options:
   chart:
+    type: component.line-chart
     options:
       plotOptions:
         series:
@@ -29,10 +31,8 @@ options:
         max: 75000
         min: 0
         tickAmount: 6
-    type: component.line-chart
   top:
+    type: component.titles
     options:
       title: Company Perf.
       subtitle: "2022"
-    type: component.titles
-type: widget.chart

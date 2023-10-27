@@ -1,6 +1,8 @@
+type: widget.list
 options:
   data: =@ctx.datasources.devices
   item:
+    type: component.list-item
     options:
       title: =@ctx.current.item.device
       subtitle: =@ctx.current.item.room
@@ -11,8 +13,6 @@ options:
         element: icon
         isContained: true
         isDuotone: true
-        name: =@ctx.current.item.icon
+        icon: =@ctx.current.item.icon
       rightElement:
         element: switch
-    type: component.list-item
-type: widget.list

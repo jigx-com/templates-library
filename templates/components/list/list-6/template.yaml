@@ -28,4 +28,4 @@ options:
         value: =@ctx.current.item.progress
       rightElement:
         element: icon
-        name: information-circle
+        icon: information-circle

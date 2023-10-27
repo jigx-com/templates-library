@@ -1,6 +1,8 @@
+type: widget.list
 options:
   data: =@ctx.datasources.users
   item:
+    type: component.list-item
     options:
       title: =@ctx.current.item.name
       subtitle: =@ctx.current.item.position
@@ -13,5 +15,3 @@ options:
         text: =@ctx.current.item.status
       style:
         isDisabled: =(@ctx.current.item.status = 'Declined' ? true :false)
-    type: component.list-item
-type: widget.list

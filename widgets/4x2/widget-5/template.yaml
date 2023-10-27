@@ -1,27 +1,30 @@
+type: widget.group
 options:
   children:
-    - options:
+    - type: widget.value
+      options:
         align: right
         bottom:
+          type: component.titles
           options:
             title: RT45678
             subtitle: Active Mission
             align: left
-          type: component.titles
         format:
           unit: Missions
         top:
+          type: component.titles
           options:
             title: Monday's Shift
             subtitle: "Your Missions:"
             align: left
             icon: ambulance-helicopter
-          type: component.titles
         value: 5
-      type: widget.value
-    - options:
+    - type: widget.list
+      options:
         data: =@ctx.datasources.missions
         item:
+          type: component.list-item
           options:
             title: =@ctx.current.item.mission-name
             subtitle: =@ctx.current.item.mission-priority
@@ -32,6 +35,3 @@ options:
               isHidden: =(@ctx.current.item.mission-status = 'Active' ? false :true)
               title: =@ctx.current.item.mission-status
             progress: =@ctx.current.item.mission-progress
-          type: component.list-item
-      type: widget.list
-type: widget.group

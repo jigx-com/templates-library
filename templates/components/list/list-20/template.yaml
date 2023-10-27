@@ -9,4 +9,4 @@ options:
       subtitle: =@ctx.current.item.subtitle
       leftElement:
         element: icon
-        name: =@ctx.current.item.icon
+        icon: =@ctx.current.item.icon

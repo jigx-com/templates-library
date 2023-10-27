@@ -1,5 +1,7 @@
+type: widget.chart
 options:
   chart:
+    type: component.bar-chart
     options:
       plotOptions:
         series:
@@ -13,12 +15,10 @@ options:
         categories: =@ctx.datasources.static-data-1.x
       yAxis:
         max: 100
-    type: component.bar-chart
   top:
+    type: component.titles
     options:
       title: New Employees
       subtitle: 2021 vs. 2022
       icon: multiple-neutral-2
       iconColor: color4
-    type: component.titles
-type: widget.chart

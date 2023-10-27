@@ -1,4 +1,5 @@
 series1:
+  type: datasource.static
   options:
     data:
       - x: 1-7
@@ -11,4 +12,3 @@ series1:
         y: 1079.8
       - x: 29-31
         y: 652.5
-  type: datasource.static

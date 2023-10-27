@@ -115,12 +115,12 @@ children:
                       color: =@ctx.current.item.color
                 leftElement:
                   element: icon
-                  name: =@ctx.current.item.category
+                  icon: =@ctx.current.item.category
                   isContained: true
                   isDuotone: true
                 rightElement:
                   element: icon
-                  name: information-circle
+                  icon: information-circle
                 style:
                   isPositive: =@ctx.current.item.isPositive
 

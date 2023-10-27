@@ -51,7 +51,7 @@ item:
       centerElement:
         type: component.stage
         options:
-          icon: plane-2
+          icon: plane-1
           right:
             title: =@ctx.current.item.endTitle
             subtitle: =@ctx.current.item.endSubtitle

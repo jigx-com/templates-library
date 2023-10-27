@@ -1,0 +1,17 @@
+type: component.progress-bar
+options:
+  value:
+    current: 70
+    max: 100
+  steps: 5
+  color: color10
+  size: tiny
+  title:
+    value: Title
+    align: left
+    position: top
+  subtitle:
+    value: Subtitle
+    align: left
+    position: bottom
+    
