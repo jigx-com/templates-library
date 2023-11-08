@@ -35,6 +35,11 @@
           "name": "view-contact",
           "filePath": "templates/scenario/contact/view-contact.yaml",
           "directory": "jigs/contacts"
+        },
+        {
+          "name": "acceptjob",
+          "filePath": "templates/scenario/contact/acceptjob.yaml",
+          "directory": "functions"
         }
       ],
       "groups": ["Scenarios"]

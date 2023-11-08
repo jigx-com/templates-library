@@ -1,0 +1,36 @@
+provider: DATA_PROVIDER_REST
+method: POST
+url: https://picklewebapiprod.azurewebsites.net/api/Job/MarkJobAsAccepted
+
+parameters:
+  Authorization: 
+    type: string
+    location: header
+    required: false
+    value: = 'Bearer ' & @ctx.datasources.authorization.authoToken
+
+  Content-Type:
+    type: string
+    location: header
+    required: true
+    value: application/json
+  jobId:
+    type: int
+    location: body
+    required: false
+  date:
+    type: datetime
+    location: body
+    required: false
+  jobStatus:
+    type: int
+    location: body
+    required: true
+    value: 4
+inputTransform: |
+  $.{
+  "jobId": jobId,
+  "dateAccepted": date,
+  "JobStatusId": jobStatus
+  }
+  

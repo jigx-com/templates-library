@@ -7,6 +7,20 @@ type: jig.default
 # icon that displays on the widget on the home hub
 icon: person
 
+onFocus:
+  type: action.action-list
+  options:
+    actions:
+      - type: action.sync-entities
+        options:
+          provider: DATA_PROVIDER_REST
+          entities:
+            - entity: jobDetails
+              function: acceptjob
+              functionParameters:
+                Authorization: = 'Bearer ' & @ctx.datasources.authorization.authoToken
+                jobId: =@ctx.jig.inputs.jobId
+
 header:
   type: component.jig-header
   options:
@@ -17,7 +31,7 @@ header:
         source:
           uri: https://builder.jigx.com/assets/images/captureinfo.jpg
 
-# The controls that will be displayed on the jig are defined under the children node on a default jig   
+# The controls that will be displayed on the jig are defined under the children node on a default jig
 children:
   # All input controls are placed on a form component
   - type: component.form
@@ -61,21 +75,22 @@ children:
 # The top level action on a default jig places a button at the bottom of the screen
 actions:
   - children:
-      # A submit-form action saves the data from the text boxes to the SQLite database. 
-      # The submit form action will automatically match the instanceIds of the controls on the jig 
-      # and create a record in the local SQLite table with each instanceIds as a property for the 
+      # A submit-form action saves the data from the text boxes to the SQLite database.
+      # The submit form action will automatically match the instanceIds of the controls on the jig
+      # and create a record in the local SQLite table with each instanceIds as a property for the
       # JSON object in the Data column
       - type: action.submit-form
         options:
           # The name of the form being submitted
-          formId: contactInfo
-           # The data provider being used. In this case, the Jigx Dynamic Data provider, which is a 
-           # built-in database using methods to work with the data. 
+          formId:
+            contactInfo
+            # The data provider being used. In this case, the Jigx Dynamic Data provider, which is a
+            # built-in database using methods to work with the data.
           provider: DATA_PROVIDER_DYNAMIC
           # The title of the button
           title: Create Contact
           # The name of the table that the information is being save to. All Dynamic Data-based tables
-          # are saved in the "default" database 
+          # are saved in the "default" database
           entity: default/contacts
           # The Jigx Dynamic Data provider method to create the data
           method: create
