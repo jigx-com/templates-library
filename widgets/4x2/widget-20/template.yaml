@@ -1,7 +1,9 @@
+type: widget.list
 instanceId: ddd
 options:
   data: =@ctx.datasources.components
   item:
+    type: component.list-item
     options:
       title: =@ctx.current.item.name
       subtitle: =@ctx.current.item.reason
@@ -16,5 +18,3 @@ options:
       style:
         isError: =(@ctx.current.item.result= 'Unsuccess' ? true :false)
         isPositive: =(@ctx.current.item.result= 'Success' ? true :false)
-    type: component.list-item
-type: widget.list

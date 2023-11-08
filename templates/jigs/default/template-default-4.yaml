@@ -168,7 +168,7 @@ summary:
       layout: default
       leftIcon:
         element: icon
-        name: form
+        icon: form
         isContained: true
         isDuotone: true
       title:

@@ -1,5 +1,7 @@
+type: widget.chart
 options:
   chart:
+    type: component.line-chart
     options:
       plotOptions:
         series:
@@ -39,12 +41,10 @@ options:
             notation: compact
             numberStyle: currency
         min: 0
-    type: component.line-chart
   top:
+    type: component.titles
     options:
       title: Sales Performance
       subtitle: By Districts
       icon: gauge-dashboard
       iconColor: color2
-    type: component.titles
-type: widget.chart

@@ -1,10 +1,12 @@
+type: widget.chart
 options:
   bottom:
+    type: component.titles
     options:
       subtitle: Updated 1 min ago
       align: center
-    type: component.titles
   chart:
+    type: component.line-chart
     options:
       legend:
         isHidden: false
@@ -30,8 +32,8 @@ options:
             numberStyle: currency
         min: 0
         tickAmount: 3
-    type: component.line-chart
   top:
+    type: component.trend
     options:
       title: Quarterly Revenue
       format:
@@ -40,5 +42,3 @@ options:
         isAlignRight: false
         isValueBottom: true
       value: 0.911111111111
-    type: component.trend
-type: widget.chart

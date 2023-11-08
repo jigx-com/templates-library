@@ -1,12 +1,14 @@
+type: widget.chart
 options:
   bottom:
+    type: component.titles
     options:
       title: 10,75 GB (of 256 GB)
       subtitle: Available
       align: center
       icon: database-2
-    type: component.titles
   chart:
+    type: component.pie-chart
     options:
       chart:
         subtitle:
@@ -19,13 +21,11 @@ options:
         - color: positive
           data: =@ctx.datasources.static-data
           layout: arch
-    type: component.pie-chart
   top:
+    type: component.titles
     options:
       title: Vojta iPhone
       subtitle: iPhone 14 Pro
       align: center
       icon: mobile-phone-1
       iconColor: color14
-    type: component.titles
-type: widget.chart

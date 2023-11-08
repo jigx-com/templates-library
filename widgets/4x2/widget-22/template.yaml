@@ -1,14 +1,14 @@
+type: widget.status
 options:
   footer:
     text: test
   statuses:
     - bottom:
+        type: component.titles
         options:
           title: 4 Tests
           subtitle: Failed
           align: center
-        type: component.titles
       color: negative
       icon: remove-circle
       when: true
-type: widget.status

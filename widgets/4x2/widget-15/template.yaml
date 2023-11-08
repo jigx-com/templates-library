@@ -1,13 +1,13 @@
+type: widget.image
 options:
   bottom:
+    type: component.titles
     options:
       title: Orlicke Hory
       subtitle: Czech Republic
       align: right
       icon: pin
       iconColor: color4
-    type: component.titles
   isContentOverlaid: false
   source:
     uri: http://freemondo.com/style/desktop/images/picpage/test3.png
-type: widget.image

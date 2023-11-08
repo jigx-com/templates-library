@@ -1,7 +1,7 @@
 static-data:
+  type: datasource.static
   options:
     data:
       - y: 2
       - color: transparent
         y: 5
-  type: datasource.static

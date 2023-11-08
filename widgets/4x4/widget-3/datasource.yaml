@@ -1,16 +1,16 @@
 static-data:
+  type: datasource.static
   options:
     data:
       - 41456
       - 40667
       - 50445
       - 57223
-  type: datasource.static
 static-data2:
+  type: datasource.static
   options:
     data:
       - 43445
       - 48230
       - 37230
       - 89400
-  type: datasource.static

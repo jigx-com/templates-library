@@ -1,0 +1,8 @@
+type: component.countdown
+options:
+  expiresAt: =$fromMillis($toMillis($now()) + 432000000, '[Y]-[M]-[D01] [H01]:[m01]')
+  align: right
+  labels:
+    isVisible: true
+    position: bottom
+  size: small

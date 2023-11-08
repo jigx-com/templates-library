@@ -1,13 +1,15 @@
+type: widget.chart
 options:
   bottom:
+    type: component.titles
     options:
       title: $89,400
       subtitle: From New Paying Customers
       align: center
       icon: multiple-neutral-2
       iconColor: color9
-    type: component.titles
   chart:
+    type: component.line-chart
     options:
       series:
         - animation:
@@ -33,10 +35,8 @@ options:
             numberStyle: currency
         min: 0
         tickAmount: 7
-    type: component.line-chart
   top:
+    type: component.titles
     options:
       title: Sales Performance
       subtitle: "2023"
-    type: component.titles
-type: widget.chart

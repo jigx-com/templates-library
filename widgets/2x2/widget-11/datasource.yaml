@@ -1,16 +1,16 @@
 static-data-1:
+  type: datasource.static
   options:
     data:
       - 10
       - 25
       - 17
       - 10
-  type: datasource.static
 static-data-2:
+  type: datasource.static
   options:
     data:
       - 15
       - 45
       - 55
       - 65
-  type: datasource.static
