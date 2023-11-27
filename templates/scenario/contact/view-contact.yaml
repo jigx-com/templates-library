@@ -14,6 +14,17 @@ header:
         source:
           uri: https://builder.jigx.com/assets/images/captureinfo.jpg
 
+# The top level action on a default jig places a button at the bottom of the screen 
+actions:
+  - children:
+      # The navigation action that is performed when the go-to action completes
+      - type: action.go-to
+        options:
+          title: Edit Contact
+          linkTo: edit-contact
+          parameters:
+            contact: =@ctx.jig.inputs.contact
+
 # The type of datasource used to return data in the jig
 datasources:
   contactData: 
@@ -81,13 +92,3 @@ children:
             value: =@ctx.datasources.contactData.email
             contentType: email
 
-# The top level action on a default jig places a button at the bottom of the screen 
-actions:
-  - children:
-      # The navigation action that is performed when the go-to action completes
-      - type: action.go-to
-        options:
-          title: Edit Contact
-          linkTo: edit-contact
-          parameters:
-            contact: =@ctx.jig.inputs.contact

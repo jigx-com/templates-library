@@ -15,6 +15,27 @@ header:
         source:
           uri: https://builder.jigx.com/assets/images/captureinfo.jpg
 
+# The top level action on a default jig places a button at the bottom of the screen    
+actions:
+  - children:
+       # A submit-form action saves the data from the text boxes to the SQLite database.
+       # The submit form action will automatically match the instanceIds of the controls on the jig
+       # and update the record in the local SQLite table with each instanceIds as a property for
+       # the JSON object in the Data column
+      - type: action.submit-form
+        options:
+          # The name of the form being submitted
+          formId: contactInfo
+          provider: DATA_PROVIDER_DYNAMIC
+          title: Update Record
+          entity: default/contacts
+          # The Dynamic Data provider method to update the data 
+          method: update
+          recordId: =@ctx.datasources.contactData.id
+          goBack: previous
+          onSuccess:
+            title: Your record was successfully updated.
+
 # The type of datasource used to store the edited data in the jig
 datasources:
   contactData: 
@@ -92,21 +113,3 @@ children:
             initialValue: =@ctx.datasources.contactData.email
             icon: email
 
-# The top level action on a default jig places a button at the bottom of the screen    
-actions:
-  - children:
-       # A submit-form action saves the data from the text boxes to the SQLite database.
-       # The submit form action will automatically match the instanceIds of the controls on the jig
-       # and update the record in the local SQLite table with each instanceIds as a property for
-       # the JSON object in the Data column
-      - type: action.submit-form
-        options:
-          # The name of the form being submitted
-          formId: contactInfo
-          provider: DATA_PROVIDER_DYNAMIC
-          title: Update Record
-          entity: default/contacts
-          # The Dynamic Data provider method to update the data 
-          method: update
-          recordId: =@ctx.datasources.contactData.id
-          goBack: previous

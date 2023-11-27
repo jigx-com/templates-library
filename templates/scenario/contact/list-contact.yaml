@@ -7,6 +7,11 @@ type: jig.list
 # icon that displays on the widget on the home hub
 icon: contact
 
+placeholders:
+  - when: =$count(@ctx.datasources.contactData) = 0
+    title: Oops! You don't have any contacts.
+    icon: loading-data
+
 header:
   type: component.jig-header
   options:
@@ -17,10 +22,14 @@ header:
         source:
           uri: https://builder.jigx.com/assets/images/captureinfo.jpg
 
-placeholders:
-  - when: =$count(@ctx.datasources.contactData) = 0
-    title: Oops! You don't have any contacts.
-    icon: loading-data
+# The top-level action on a default jig places a button at the bottom of the screen   
+actions:
+  - children:
+      # The navigation action that is performed when the go-to action completes
+      - type: action.go-to
+        options:
+          title: Add Contact
+          linkTo: create-contact
 
 # The type of datasource used to store the created data in the jig
 datasources:
@@ -91,11 +100,3 @@ item:
               parameters:
                 contact: =@ctx.current.item
 
-# The top-level action on a default jig places a button at the bottom of the screen   
-actions:
-  - children:
-      # The navigation action that is performed when the go-to action completes
-      - type: action.go-to
-        options:
-          title: Add Contact
-          linkTo: create-contact
