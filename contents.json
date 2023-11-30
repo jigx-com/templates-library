@@ -55,7 +55,7 @@
         {
           "name": "list-employee",
           "filePath": "templates/scenario/sql/sql-get-employee.yaml",
-          "directory": "jigs/functions"
+          "directory": "functions"
         }
       ],
       "groups": ["Scenarios"]
