@@ -53,7 +53,7 @@
           "open": true
         },
         {
-          "name": "list-employee",
+          "name": "sql-get-employee",
           "filePath": "templates/scenario/sql/sql-get-employee.yaml",
           "directory": "functions"
         }
