@@ -40,6 +40,27 @@
       "groups": ["Scenarios"]
     },
     {
+      "name": "SQL Example",
+      "previewImgSrc": [
+        "templates/scenario/sql/resources/employee-list.jpg"
+      ],
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "employee-list",
+          "filePath": "templates/scenario/sql/employee-list.yaml",
+          "directory": "jigs",
+          "open": true
+        },
+        {
+          "name": "list-employee",
+          "filePath": "templates/scenario/sql/sql-get-employee.yaml",
+          "directory": "jigs/functions"
+        }
+      ],
+      "groups": ["Scenarios"]
+    },
+    {
       "name": "Default jig 1",
       "filePath": "templates/jigs/default/template-default-1.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-1.png",

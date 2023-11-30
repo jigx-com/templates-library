@@ -1,0 +1,16 @@
+provider: DATA_PROVIDER_SQL
+connection: azure.sql
+method: query
+query: |
+    SELECT
+      [email] AS id,
+      [firstName],
+      [lastName],
+      [phone],
+      [email],
+      [companyName],
+      [jobTitle],
+      [department],
+      [manager],
+      [avatar]
+    FROM [dbo].[Employee]

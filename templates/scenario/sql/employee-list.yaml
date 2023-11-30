@@ -1,0 +1,61 @@
+title: Employee List
+type: jig.list
+icon: contact
+
+header:
+  type: component.jig-header
+  options:
+    height: small
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://builder.jigx.com/assets/images/header.jpg
+
+onFocus:
+  type: action.action-list
+  options:
+    isSequential: true
+    actions:
+      - type: action.sync-entities
+        options:
+          provider: DATA_PROVIDER_SQL
+          entities:
+            - entity: employee
+              function: sql-get-employee
+
+datasources:
+  employeeData: 
+    type: datasource.sqlite
+    options:
+      provider: DATA_PROVIDER_LOCAL
+  
+      entities:
+        - entity: employee
+  
+      query: |
+        SELECT 
+          id,
+          json_extract(data, '$.firstName') AS firstName,
+          json_extract(data, '$.lastName') AS lastName,
+          json_extract(data, '$.phone') AS phone,
+          json_extract(data, '$.email') AS email,
+          json_extract(data, '$.avatar') AS avatar,
+          json_extract(data, '$.companyName') AS companyName,
+          json_extract(data, '$.jobTitle') AS jobTitle,
+          json_extract(data, '$.department') AS department,
+          json_extract(data, '$.manager') AS manager
+        FROM 
+          [employee]
+
+data: =@ctx.datasources.employeeData
+item:
+  type: component.list-item
+  options:
+    title: =@ctx.current.item.firstName & ' ' & @ctx.current.item.lastName
+    subtitle: =@ctx.current.item.jobTitle & ' | ' & @ctx.current.item.companyName
+    description: =@ctx.current.item.email
+    leftElement: 
+      element: avatar
+      text: =$substring(@ctx.current.item.firstName, 0, 1) & $substring(@ctx.current.item.lastName, 0, 1)
+      uri: =@ctx.current.item.avatar
