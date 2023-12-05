@@ -43,6 +43,7 @@
       "name": "SQL Example",
       "previewImgSrc": [
         "templates/scenario/sql/resources/employee-list.png",
+        "templates/scenario/sql/resources/employee-list.png",
         "templates/scenario/sql/resources/employee-list.png"
       ],
       "templateRef": "jig-list",
