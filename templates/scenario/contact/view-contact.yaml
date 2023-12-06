@@ -14,7 +14,7 @@ header:
         source:
           uri: https://builder.jigx.com/assets/images/captureinfo.jpg
 
-# The top level action on a default jig places a button at the bottom of the screen 
+# The top level action on a default jig places a button at the bottom of the screen
 actions:
   - children:
       # The navigation action that is performed when the go-to action completes
@@ -27,7 +27,7 @@ actions:
 
 # The type of datasource used to return data in the jig
 datasources:
-  contactData: 
+  contactData:
     type: datasource.sqlite
     options:
       isDocument: true
@@ -54,8 +54,45 @@ datasources:
       queryParameters:
         contactId: =@ctx.jig.inputs.contact.id
 
-# The controls that will be displayed on the jig are defined under the children node on a default jig      
+# The controls that will be displayed on the jig are defined under the children node on a default jig
 children:
+  - type: component.bar-chart
+    options:
+      chart:
+        height: 280
+        isAnimated: true
+      legend:
+        isHidden: false
+      plotOptions:
+        series:
+          pointWidth: 12
+      series:
+        - color: positive
+          data: =@ctx.datasources.revenues
+          dataLabels:
+            - isEnabled: false
+          name: Revenues
+        - color: negative
+          data: =@ctx.datasources.expenses
+          dataLabels:
+            - isEnabled: false
+          name: Expenses
+      xAxis:
+        categories:
+          - "2019"
+          - "2020"
+          - "2021"
+          - "2022"
+        tickAmount: 3
+      yAxis:
+        labels:
+          format:
+            compactDisplay: short
+            currency: USD
+            notation: compact
+            numberStyle: currency
+        max: 65000
+        min: 10000
   # All input controls are placed on a form component
   - type: component.entity
     options:
@@ -64,7 +101,7 @@ children:
         - type: component.field-row
           options:
             children:
-            # A text-field component is used to display text information on a form
+              # A text-field component is used to display text information on a form
               - type: component.entity-field
                 options:
                   label: First Name
@@ -91,4 +128,3 @@ children:
             label: Email
             value: =@ctx.datasources.contactData.email
             contentType: email
-

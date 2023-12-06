@@ -35,6 +35,16 @@
           "name": "view-contact",
           "filePath": "templates/scenario/contact/view-contact.yaml",
           "directory": "jigs/contacts"
+        },
+        {
+          "name": "revenues",
+          "filePath": "templates/scenario/contact/resources/revenues.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "expenses",
+          "filePath": "templates/scenario/contact/resources/expenses.yaml",
+          "directory": "datasources"
         }
       ],
       "groups": ["Scenarios"]
