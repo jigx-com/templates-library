@@ -1823,8 +1823,6 @@
     "jig-list",
     "jig-calendar",
     "jig-composite",
-    "jig-document",
-    "jc-bar-chart",
-    "jc-countdown"
+    "jig-document"
   ]
 }
