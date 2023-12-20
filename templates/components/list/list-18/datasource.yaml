@@ -1,0 +1,24 @@
+mydata: 
+  type: datasource.static
+  options:
+    data:
+      - title: value-0
+        subtitle: subtitle-0
+        description: description-0
+        label: label-0
+        img: https://images.unsplash.com/photo-1547389432-95b8f3c47f3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbGFwYXBlcnxlbnwwfHwwfHx8Mg%3D%3D
+      - title: value-1
+        subtitle: subtitle-1
+        description: description-1
+        label: label-1
+        img: https://images.unsplash.com/photo-1613843873231-1447db182f97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2FsbGFwYXBlcnxlbnwwfHwwfHx8Mg%3D%3D
+      - title: value-2
+        subtitle: subtitle-2
+        description: description-2
+        label: label-2
+        img: https://images.unsplash.com/photo-1588932515213-4e3f796cecf0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHdhbGxhcGFwZXJ8ZW58MHx8MHx8fDI%3D
+      - title: value-3
+        subtitle: subtitle-3
+        description: description-3
+        label: label-3
+        img: https://images.unsplash.com/photo-1582898882063-79bafef6e399?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHdhbGxhcGFwZXJ8ZW58MHx8MHx8fDI%3D
