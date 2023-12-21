@@ -1399,6 +1399,13 @@
       "templateRef": "jc-list"
     },
     {
+      "name": "Contained list",
+      "filePath": "templates/components/list/list-18/template.yaml",
+      "previewImgSrc": "templates/components/list/list-18/preview.png",
+      "datasource": "templates/components/list/list-18/datasource.yaml",
+      "templateRef": "jc-list"
+    },
+    {
       "name": "Stepper in progress",
       "filePath": "templates/components/stepper/stepper-1/template.yaml",
       "previewImgSrc": "templates/components/stepper/stepper-1/preview.png",
