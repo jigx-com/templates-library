@@ -73,7 +73,8 @@
       "name": "Default jig 6",
       "filePath": "templates/jigs/default/template-default-7.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-7.png",
-      "templateRef": "jig-default"
+      "templateRef": "jig-default",
+      "groups": ["Scenarios"]
     },
     {
       "name": "Default jig 7",
@@ -216,16 +217,6 @@
           "name": "type-list",
           "filePath": "templates/jigs/composite/composite-1/element-2.yaml",
           "directory": "jigs"
-        }
-      ],
-      "jigFiles": [
-        {
-          "name": "type-default",
-          "path": "templates/jigs/composite/composite-1/element-1.yaml"
-        },
-        {
-          "name": "type-list",
-          "path": "templates/jigs/composite/composite-1/element-2.yaml"
         }
       ]
     },
@@ -1441,6 +1432,13 @@
       "templateRef": "jc-list"
     },
     {
+      "name": "Contained list",
+      "filePath": "templates/components/list/list-18/template.yaml",
+      "previewImgSrc": "templates/components/list/list-18/preview.png",
+      "datasource": "templates/components/list/list-18/datasource.yaml",
+      "templateRef": "jc-list"
+    },
+    {
       "name": "Stepper in progress",
       "filePath": "templates/components/stepper/stepper-1/template.yaml",
       "previewImgSrc": "templates/components/stepper/stepper-1/preview.png",
@@ -1858,5 +1856,13 @@
         "datasource": "widgets/4x4/widget-4/datasource.yaml"
       }
     ]
-  }
+  },
+  "categoriesOrder": [
+    "Scenarios",
+    "jig-default",
+    "jig-list",
+    "jig-calendar",
+    "jig-composite",
+    "jig-document"
+  ]
 }

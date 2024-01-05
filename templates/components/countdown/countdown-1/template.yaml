@@ -1,7 +1,7 @@
 type: component.countdown
 options:
   expiresAt: =$fromMillis($toMillis($now()) + 1200000, '[Y]-[M]-[D01] [H01]:[m01]')
-  align: left
+  align: center
   labels:
     isVisible: true
     position: top

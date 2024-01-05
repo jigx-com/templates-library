@@ -1,0 +1,21 @@
+type: component.list
+options:
+  data: =@ctx.datasources.mydata
+  maximumItemsToRender: 8
+  item: 
+    type: component.list-item
+    options:
+      isContained: true
+      title: =@ctx.current.item.title
+      subtitle: =@ctx.current.item.subtitle
+      description: =@ctx.current.item.description
+      leftElement: 
+        element: image
+        text: ''
+        uri: =@ctx.current.item.img
+      label: 
+        title: =@ctx.current.item.label
+        isHidden: false
+        color:
+          - when: true
+            color: color2
