@@ -1,0 +1,94 @@
+# The system name that uniquely identifies the jig
+title: View Contact
+# Description of the jig. This is not a required field and can be omitted.
+description: Use this jig to view contact information stored in Dynamic Data.
+type: jig.default
+
+header:
+  type: component.jig-header
+  options:
+    height: small
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://builder.jigx.com/assets/images/captureinfo.jpg
+
+# The top level action on a default jig places a button at the bottom of the screen 
+actions:
+  - children:
+      # The navigation action that is performed when the go-to action completes
+      - type: action.go-to
+        options:
+          title: Edit Contact
+          linkTo: edit-contact
+          parameters:
+            contact: =@ctx.jig.inputs.contact
+
+# The type of datasource used to return data in the jig
+datasources:
+  contactData: 
+    type: datasource.sqlite
+    options:
+      isDocument: true
+      # The data provider being used. In this case, the Jigx Dynamic Data provider, which is a built-in database that can be queried to get data from
+      provider: DATA_PROVIDER_DYNAMIC
+      # The name of the table that the information is being returned from. All Dynamic Data-based tables
+      # are defined in "default.jigx" under databases.
+      entities:
+        - default/contacts
+      # The SQLite query used to specifiy the data to return
+      query: |
+        SELECT 
+          id,
+          '$.firstName',
+          '$.lastName',
+          '$.jobTitle',
+          '$.companyName',
+          '$.phone',
+          '$.email' 
+        FROM 
+          [default/contacts]
+        WHERE
+          id = @contactId
+      queryParameters:
+        contactId: =@ctx.jig.inputs.contact.id
+
+# The controls that will be displayed on the jig are defined under the children node on a default jig      
+children:
+  # All input controls are placed on a form component
+  - type: component.entity
+    options:
+      children:
+        # To display two controls next to each other, they are added as children of a field-row component
+        - type: component.field-row
+          options:
+            children:
+            # A text-field component is used to display text information on a form
+              - type: component.entity-field
+                options:
+                  label: First Name
+                  value: =@ctx.datasources.contactData.firstName
+              - type: component.entity-field
+                options:
+                  label: Last Name
+                  value: =@ctx.datasources.contactData.lastName
+        - type: component.entity-field
+          options:
+            label: Title
+            value: =@ctx.datasources.contactData.jobTitle
+        - type: component.entity-field
+          options:
+            label: Company
+            value: =@ctx.datasources.contactData.companyName
+        - type: component.entity-field
+          options:
+            label: Phone
+            value: =@ctx.datasources.contactData.phone
+            contentType: phone
+        - type: component.entity-field
+          options:
+            label: Email
+            value: =@ctx.datasources.contactData.email
+            contentType: email
+

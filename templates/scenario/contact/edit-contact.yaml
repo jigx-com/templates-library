@@ -1,0 +1,115 @@
+# The system name that uniquely identifies the jig
+title: Edit Contact
+# Description of the jig. This is not a required field and can be omitted.
+description: Use this jig to quickly and securely edit and save a contact to Dynamic Data.
+# The jig type used to display data
+type: jig.default
+
+header:
+  type: component.jig-header
+  options:
+    height: small
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://builder.jigx.com/assets/images/captureinfo.jpg
+
+# The top level action on a default jig places a button at the bottom of the screen    
+actions:
+  - children:
+       # A submit-form action saves the data from the text boxes to the SQLite database.
+       # The submit form action will automatically match the instanceIds of the controls on the jig
+       # and update the record in the local SQLite table with each instanceIds as a property for
+       # the JSON object in the Data column
+      - type: action.submit-form
+        options:
+          # The name of the form being submitted
+          formId: contactInfo
+          provider: DATA_PROVIDER_DYNAMIC
+          title: Update Record
+          entity: default/contacts
+          # The Dynamic Data provider method to update the data 
+          method: update
+          recordId: =@ctx.datasources.contactData.id
+          goBack: previous
+          onSuccess:
+            title: Your record was successfully updated.
+
+# The type of datasource used to store the edited data in the jig
+datasources:
+  contactData: 
+    type: datasource.sqlite
+    options:
+      isDocument: true
+      # The data provider being used. In this case, the Jigx Dynamic Data provider, which is a built-in
+      # database using methods to work with the data. 
+      provider: DATA_PROVIDER_DYNAMIC
+      # The name of the table that the information is being returned from. All Dynamic Data-based tables
+      # are defined in "default.jigx" under databases.
+      entities:
+        - default/contacts
+      query: |
+        SELECT 
+          id,
+          '$.firstName',
+          '$.lastName',
+          '$.jobTitle',
+          '$.companyName',
+          '$.phone',
+          '$.email' 
+        FROM 
+          [default/contacts]
+        WHERE
+          id = @contactId
+      queryParameters:
+        contactId: =@ctx.jig.inputs.contact.id
+
+# The controls that will be displayed on the jig are defined under the children node on a default jig  
+children:
+    # All input controls are placed on a form component
+  - type: component.form
+    # A form is uniquely identified by its instance id
+    instanceId: contactInfo
+    options:
+      children:
+        # To display two controls next to each other, they are added as children of a field-row component
+        - type: component.field-row
+          options:
+            children:
+              # A text-field component captures or updates text information on a form. In this 
+              # case the value is returned from the database
+              - type: component.text-field
+                # A control is uniquely identified by its instance id
+                instanceId: firstName
+                options:
+                  label: First Name
+                  initialValue: =@ctx.datasources.contactData.firstName
+              - type: component.text-field
+                instanceId: lastName
+                options:
+                  label: Last Name
+                  initialValue: =@ctx.datasources.contactData.lastName
+        - type: component.text-field
+          instanceId: jobTitle
+          options:
+            label: Title
+            initialValue: =@ctx.datasources.contactData.jobTitle
+        - type: component.text-field
+          instanceId: companyName
+          options:
+            label: Company
+            initialValue: =@ctx.datasources.contactData.companyName
+        - type: component.text-field
+          instanceId: phone
+          options:
+            label: Phone
+            initialValue: =@ctx.datasources.contactData.phone
+            icon: phone
+        - type: component.email-field
+          instanceId: email
+          options:
+            label: Email
+            initialValue: =@ctx.datasources.contactData.email
+            icon: email
+

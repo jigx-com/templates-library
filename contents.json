@@ -7,6 +7,39 @@
       "templateRef": "jig-calendar"
     },
     {
+      "name": "Contacts management",
+      "previewImgSrc": [
+        "templates/scenario/contact/resources/list-contact.jpg",
+        "templates/scenario/contact/resources/edit-contact.jpg",
+        "templates/scenario/contact/resources/create-contact.jpg"
+      ],
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "list-contact",
+          "filePath": "templates/scenario/contact/list-contact.yaml",
+          "directory": "jigs/contacts",
+          "open": true
+        },
+        {
+          "name": "create-contact",
+          "filePath": "templates/scenario/contact/create-contact.yaml",
+          "directory": "jigs/contacts"
+        },
+        {
+          "name": "edit-contact",
+          "filePath": "templates/scenario/contact/edit-contact.yaml",
+          "directory": "jigs/contacts"
+        },
+        {
+          "name": "view-contact",
+          "filePath": "templates/scenario/contact/view-contact.yaml",
+          "directory": "jigs/contacts"
+        }
+      ],
+      "groups": ["Scenarios"]
+    },
+    {
       "name": "Default jig 1",
       "filePath": "templates/jigs/default/template-default-1.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-1.png",
@@ -40,8 +73,7 @@
       "name": "Default jig 6",
       "filePath": "templates/jigs/default/template-default-7.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-7.png",
-      "templateRef": "jig-default",
-      "groups": ["Scenarios"]
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 7",
