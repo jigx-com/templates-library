@@ -73,8 +73,7 @@
       "name": "Default jig 6",
       "filePath": "templates/jigs/default/template-default-7.yaml",
       "previewImgSrc": "templates/jigs/default/template-default-7.png",
-      "templateRef": "jig-default",
-      "groups": ["Scenarios"]
+      "templateRef": "jig-default"
     },
     {
       "name": "Default jig 7",
