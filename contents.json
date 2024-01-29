@@ -85,13 +85,19 @@
       "name": "Full screen jig 1",
       "filePath": "templates/jigs/full-screen/template-full-screen-1.yaml",
       "previewImgSrc": "templates/jigs/full-screen/template-full-screen-1.png",
-      "templateRef": "jig-full-screen"
+      "templateRef": "jig-full-screen",
+      "filter": {
+        "enableFor": []
+      }
     },
     {
       "name": "Full screen jig 2",
       "filePath": "templates/jigs/full-screen/template-full-screen-2.yaml",
       "previewImgSrc": "templates/jigs/full-screen/template-full-screen-2.png",
-      "templateRef": "jig-full-screen"
+      "templateRef": "jig-full-screen",
+      "filter": {
+        "enableFor": []
+      }
     },
     {
       "name": "List jig 1",
