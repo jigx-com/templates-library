@@ -1,0 +1,11 @@
+title: Full screen location
+type: jig.full-screen
+
+component: 
+  type: component.location
+  options:
+    markersData:
+      - lat: 48.8583701
+        lng: 2.2919064
+    isAnimationDisabled: false
+    zoomLevel: 10
