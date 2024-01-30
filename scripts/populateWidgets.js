@@ -1,3 +1,4 @@
+//! DO NOT USE THIS SCRIPT, BECAUSE IT WILL OVERWRITE THE CONTENTS.JSON FILE
 const fs = require("fs");
 const path = require("path");
 
