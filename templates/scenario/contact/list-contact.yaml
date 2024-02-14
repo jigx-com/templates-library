@@ -1,13 +1,15 @@
-# The system name that uniquely identifies the jig
+# The system name that uniquely identifies the jig.
 title: List Contacts
 # Description of the jig. This is not a required field and can be omitted.
 description: Contact information you need at your fingertips
-# The jig type used to list data values and elements
+# The jig type used to list data values and elements.
 type: jig.list
-# icon that displays on the widget on the home hub
+# Icon that displays on the 1x1 widget on the home hub.
 icon: contact
 
+# Placeholders that can be conditionally set to hold a place until data becomes available.
 placeholders:
+  # The when condition determines when the placeholder or the children should display.
   - when: =$count(@ctx.datasources.contactData) = 0
     title: Oops! You don't have any contacts.
     icon: loading-data
@@ -22,27 +24,27 @@ header:
         source:
           uri: https://builder.jigx.com/assets/images/captureinfo.jpg
 
-# The top-level action on a default jig places a button at the bottom of the screen   
+# The top-level action on a list jig places a button at the bottom of the screen.
 actions:
   - children:
-      # The navigation action that is performed when the go-to action completes
+      # A navigation action to add contacts.
       - type: action.go-to
         options:
           title: Add Contact
           linkTo: create-contact
 
-# The type of datasource used to store the created data in the jig
+# The type of datasource used to store the created data and display it in the jig.
 datasources:
   contactData: 
     type: datasource.sqlite
     options:
-      # The data provider being used. In this case, the Jigx Dynamic Data provider
+      # The data provider being used. In this case, the Jigx Dynamic Data provider.
       provider: DATA_PROVIDER_DYNAMIC
-      # The name of the table that the information is being returned from. All Dynamic Data-based tables
-      # are defined in "default.jigx" under databases.
+      # The name of the table that the information is being returned from. 
+      # All Dynamic Data-based tables are defined in "default.jigx" under databases.
       entities:
         - default/contacts
-      # The SQLite query used to specify the data to return 
+      # The SQLite query used to specify the data to return.
       query: |
         SELECT 
           id,
@@ -57,7 +59,7 @@ datasources:
         ORDER BY '$.companyName'
 
 data: =@ctx.datasources.contactData
-# All list output controls are placed on the list-item component
+# All list output controls are placed on the list-item component.
 item:
   type: component.list-item
   options:
@@ -67,15 +69,18 @@ item:
     leftElement: 
       element: avatar
       text: =$substring(@ctx.current.item.firstName, 0, 1) & $substring(@ctx.current.item.lastName, 0, 1)
-    # The navigation action that is performed when an individual item is tapped in the list, in this instance
-    # to view the contact details
+    # The navigation action that is performed when an individual item is pressed/tapped in the list, 
+    # in this instance to view the contact details.
     onPress: 
       type: action.go-to
       options:
         linkTo: view-contact
         parameters:
+          # Inputs passed to the view-contact jig.
+          # Inputs can be different formats including strings, arrays or objects.
+          # Passing arrays or objects allows you to access a wider variety of data in the inputs.  
           contact: =@ctx.current.item
-    # The list-item action that defines what to do when swiping left or right on the item
+    # The list-item action that defines what to do when swiping left or right on the item.
     swipeable:
       left:
         - label: DELETE

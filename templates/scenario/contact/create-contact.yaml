@@ -1,10 +1,10 @@
-# The system name that uniquely identifies the jig
+# The system name that uniquely identifies the jig.
 title: Create Contact
 # Description of the jig. This is not a required field and can be omitted.
 description: Use this jig to quickly and securely add a new contact to Dynamic Data.
-# The jig type used to display or capture data
+# The jig type used to display or capture data.
 type: jig.default
-# icon that displays on the widget on the home hub
+# Icon that displays on the 1x1 widget on the home hub.
 icon: person
 
 header:
@@ -17,49 +17,55 @@ header:
         source:
           uri: https://builder.jigx.com/assets/images/captureinfo.jpg
 
-# The top level action on a default jig places a button at the bottom of the screen
+# The top level action on a default jig places a button at the bottom of the screen.
 actions:
   - children:
-      # A submit-form action saves the data from the text boxes to the SQLite database. 
-      # The submit form action will automatically match the instanceIds of the controls on the jig 
-      # and create a record in the local SQLite table with each instanceIds as a property for the 
-      # JSON object in the Data column
-      - type: action.submit-form
+      # This action saves the data from the input fields to the SQLite database. 
+      # The execute entity action will use data from the controls on the jig and create
+      # a record in the local SQLite table as a property for the JSON object in the Data column.
+      - type: action.execute-entity
         options:
-          # The name of the form being submitted
-          formId: contactInfo
-           # The data provider being used. In this case, the Jigx Dynamic Data provider, which is a 
-           # built-in database using methods to work with the data. 
+          # The data provider being used. In this case, the Jigx Dynamic Data provider, which is a 
+          # built-in database using methods to work with the data. 
           provider: DATA_PROVIDER_DYNAMIC
-          # The title of the button
+          # The title of the button.
           title: Create Contact
-          # The name of the table that the information is being save to. All Dynamic Data-based tables
-          # are saved in the "default" database 
+          # The name of the table that the information is being saved to. 
+          # All Dynamic Data-based tables are saved in the "default" database.
           entity: default/contacts
-          # The Jigx Dynamic Data provider method to create the data
+          # The Jigx Dynamic Data provider method to create the data.
           method: create
-          # The navigation action that is performed after the form-submit action completes
+          # The navigation action that is performed after the execute entity action completes.
           goBack: previous
+          # Data properties for the JSON object.
+          data: 
+            # The unique instanceids can be used to access the state of the control.
+            firstName: =@ctx.components.firstName.state.value
+            lastName: =@ctx.components.lastName.state.value
+            jobTitle: =@ctx.components.jobTitle.state.value
+            companyName: =@ctx.components.companyName.state.value
+            phone: =@ctx.components.phone.state.value
+            email: =@ctx.components.email.state.value
           # An action that only occurs upon successful completion.
           onSuccess:
             # You can use the title for the modal window after the action completes successfully. Or you can try some action.
             title: Your contact was successfully created.
 
-# The controls that will be displayed on the jig are defined under the children node on a default jig   
+# The controls that will be displayed on the jig are defined under the children node on a default jig.
 children:
-  # All input controls are placed on a form component
+  # All input controls are placed on a form component.
   - type: component.form
-    # A form is uniquely identified by its instance id
+    # A form is uniquely identified by its instance id.
     instanceId: contactInfo
     options:
       children:
-        # To display two controls next to each other, they are added as children of a field-row component
+        # To display two controls next to each other, they are added as children of a field-row component.
         - type: component.field-row
           options:
             children:
-              # A text-field component is used to capture text information on a form
+              # A text-field component captures or updates text information on a form.
               - type: component.text-field
-                # A control is uniquely identified by its instance id
+                # A control is uniquely identified by its instance id.
                 instanceId: firstName
                 options:
                   label: First Name
@@ -80,6 +86,8 @@ children:
           options:
             label: Phone
             icon: phone
+        # An email-field component captures or updates email information on a form.
+        # Validation is performed to ensure that runtime input adheres to email formatting.
         - type: component.email-field
           instanceId: email
           options:

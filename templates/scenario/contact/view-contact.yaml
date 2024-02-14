@@ -1,7 +1,8 @@
-# The system name that uniquely identifies the jig
+# The system name that uniquely identifies the jig.
 title: View Contact
 # Description of the jig. This is not a required field and can be omitted.
 description: Use this jig to view contact information stored in Dynamic Data.
+# The jig type used to display data.
 type: jig.default
 
 header:
@@ -14,15 +15,16 @@ header:
         source:
           uri: https://builder.jigx.com/assets/images/captureinfo.jpg
 
-# The top level action on a default jig places a button at the bottom of the screen 
+# The top level action on a default jig places a button at the bottom of the screen.
 actions:
   - children:
-      # The navigation action that is performed when the go-to action completes
+      # A navigation action to navigate to the jig that allows you to edit a contact.
       - type: action.go-to
         options:
           title: Edit Contact
           linkTo: edit-contact
           parameters:
+            # Inputs passed that will be used to filter and return the relevant record from the list of contacts.
             contact: =@ctx.jig.inputs.contact
 
 # The type of datasource used to return data in the jig
@@ -33,11 +35,11 @@ datasources:
       isDocument: true
       # The data provider being used. In this case, the Jigx Dynamic Data provider, which is a built-in database that can be queried to get data from
       provider: DATA_PROVIDER_DYNAMIC
-      # The name of the table that the information is being returned from. All Dynamic Data-based tables
-      # are defined in "default.jigx" under databases.
+      # The name of the table that the information is being returned from. 
+      # All Dynamic Data-based tables are defined in "default.jigx" under databases.
       entities:
         - default/contacts
-      # The SQLite query used to specifiy the data to return
+      # The SQLite query used to filter the data to return for viewing purposes.
       query: |
         SELECT 
           id,
@@ -54,9 +56,10 @@ datasources:
       queryParameters:
         contactId: =@ctx.jig.inputs.contact.id
 
-# The controls that will be displayed on the jig are defined under the children node on a default jig      
+# The controls that will be displayed on the jig are defined under the children node on a default jig.
 children:
-  # All input controls are placed on a form component
+  # Entity components are used to display various data.
+  # It also allows you to group data into sections, rows or entity-fields.
   - type: component.entity
     options:
       children:
@@ -64,7 +67,7 @@ children:
         - type: component.field-row
           options:
             children:
-            # A text-field component is used to display text information on a form
+            # An entity-field component is used to display information on a form
               - type: component.entity-field
                 options:
                   label: First Name
