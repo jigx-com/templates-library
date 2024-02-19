@@ -1664,6 +1664,7 @@
       {
         "filePath": "widgets/2x2/widget-13/template.yaml",
         "previewImgSrc": "widgets/2x2/widget-13/preview.jpg",
+        "datasource": "widgets/2x2/widget-13/datasource.yaml",
         "templateRef": "jw-value"
       },
       {
