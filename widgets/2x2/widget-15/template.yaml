@@ -10,9 +10,6 @@ options:
       leftElement:
         element: checkbox
         value: =(@ctx.current.item.status= 'Finished' ? true :false)
-      rightElement:
-        element: value
-        text: =@ctx.current.item.value
       style:
         isPositive: =(@ctx.current.item.status= 'Finished' ? true :false)
         isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
