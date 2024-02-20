@@ -1598,31 +1598,31 @@
   "widgets": {
     "2x2": [
       {
-        "name": "Image widget with bottom titles 1",
+        "name": "Image widget with bottom titles",
         "filePath": "widgets/2x2/widget-1/template.yaml",
         "previewImgSrc": "widgets/2x2/widget-1/preview.jpg",
         "templateRef": "jw-image"
       },
       {
-        "name": "Image widget with bottom titles 2",
+        "name": "Image widget with bottom titles",
         "filePath": "widgets/2x2/widget-2/template.yaml",
         "previewImgSrc": "widgets/2x2/widget-2/preview.jpg",
         "templateRef": "jw-image"
       },
       {
-        "name": "Avatar widget with bottom titles 1",
+        "name": "Avatar widget with bottom titles",
         "filePath": "widgets/2x2/widget-3/template.yaml",
         "previewImgSrc": "widgets/2x2/widget-3/preview.jpg",
         "templateRef": "jw-avatar"
       },
       {
-        "name": "Avatar widget with bottom titles 2",
+        "name": "Avatar widget with bottom titles",
         "filePath": "widgets/2x2/widget-4/template.yaml",
         "previewImgSrc": "widgets/2x2/widget-4/preview.jpg",
         "templateRef": "jw-avatar"
       },
       {
-        "name": "Line chart widget 1",
+        "name": "Line chart widget",
         "filePath": "widgets/2x2/widget-5/template.yaml",
         "previewImgSrc": "widgets/2x2/widget-5/preview.jpg",
         "datasource": "widgets/2x2/widget-5/datasource.yaml",
@@ -1667,7 +1667,7 @@
         "templateRef": "jw-chart"
       },
       {
-        "name": "Line chart widget 2",
+        "name": "Line chart widget",
         "filePath": "widgets/2x2/widget-12/template.yaml",
         "previewImgSrc": "widgets/2x2/widget-12/preview.jpg",
         "datasource": "widgets/2x2/widget-12/datasource.yaml",
@@ -1773,14 +1773,14 @@
         "templateRef": "jw-value"
       },
       {
-        "name": "List widget with avatar 1",
+        "name": "List widget with avatar",
         "filePath": "widgets/2x4/widget-8/template.yaml",
         "previewImgSrc": "widgets/2x4/widget-8/preview.jpg",
         "datasource": "widgets/2x4/widget-8/datasource.yaml",
         "templateRef": "jw-list"
       },
       {
-        "name": "List widget with avatar 2",
+        "name": "List widget with avatar",
         "filePath": "widgets/2x4/widget-9/template.yaml",
         "previewImgSrc": "widgets/2x4/widget-9/preview.jpg",
         "datasource": "widgets/2x4/widget-9/datasource.yaml",
@@ -1842,21 +1842,21 @@
         "templateRef": "jw-location"
       },
       {
-        "name": "Group widget (avatar, list) 1",
+        "name": "Group widget (avatar, list)",
         "filePath": "widgets/4x2/widget-7/template.yaml",
         "previewImgSrc": "widgets/4x2/widget-7/preview.jpg",
         "datasource": "widgets/4x2/widget-7/datasources.yaml",
         "templateRef": "jw-group"
       },
       {
-        "name": "Line chart widget 1",
+        "name": "Line chart widget",
         "filePath": "widgets/4x2/widget-8/template.yaml",
         "previewImgSrc": "widgets/4x2/widget-8/preview.jpg",
         "datasource": "widgets/4x2/widget-8/datasource.yaml",
         "templateRef": "jw-chart"
       },
       {
-        "name": "Group widget (avatar, list) 2",
+        "name": "Group widget (avatar, list)",
         "filePath": "widgets/4x2/widget-9/template.yaml",
         "previewImgSrc": "widgets/4x2/widget-9/preview.jpg",
         "datasource": "widgets/4x2/widget-9/datasource.yaml",
@@ -1870,7 +1870,7 @@
         "templateRef": "jw-chart"
       },
       {
-        "name": "Line chart widget 2",
+        "name": "Line chart widget",
         "filePath": "widgets/4x2/widget-11/template.yaml",
         "previewImgSrc": "widgets/4x2/widget-11/preview.jpg",
         "datasource": "widgets/4x2/widget-11/datasource.yaml",
@@ -1883,14 +1883,14 @@
         "templateRef": "jw-location"
       },
       {
-        "name": "Line chart widget 3",
+        "name": "Line chart widget",
         "filePath": "widgets/4x2/widget-13/template.yaml",
         "previewImgSrc": "widgets/4x2/widget-13/preview.jpg",
         "datasource": "widgets/4x2/widget-13/datasource.yaml",
         "templateRef": "jw-chart"
       },
       {
-        "name": "Bar chart widget 1",
+        "name": "Bar chart widget",
         "filePath": "widgets/4x2/widget-14/template.yaml",
         "previewImgSrc": "widgets/4x2/widget-14/preview.jpg",
         "datasource": "widgets/4x2/widget-14/datasource.yaml",
@@ -1910,20 +1910,20 @@
         "templateRef": "jw-list"
       },
       {
-        "name": "Bar chart widget 2",
+        "name": "Bar chart widget",
         "filePath": "widgets/4x2/widget-17/template.yaml",
         "previewImgSrc": "widgets/4x2/widget-17/preview.jpg",
         "datasource": "widgets/4x2/widget-17/datasource.yaml",
         "templateRef": "jw-chart"
       },
       {
-        "name": "Value widget with bottom titles 1",
+        "name": "Value widget with bottom titles",
         "filePath": "widgets/4x2/widget-18/template.yaml",
         "previewImgSrc": "widgets/4x2/widget-18/preview.jpg",
         "templateRef": "jw-value"
       },
       {
-        "name": "Value widget with bottom titles 2",
+        "name": "Value widget with bottom titles",
         "filePath": "widgets/4x2/widget-19/template.yaml",
         "previewImgSrc": "widgets/4x2/widget-19/preview.jpg",
         "templateRef": "jw-value"
@@ -1965,14 +1965,14 @@
         "templateRef": "jw-4x4-group"
       },
       {
-        "name": "Line chart widget 1",
+        "name": "Line chart widget",
         "filePath": "widgets/4x4/widget-2/template.yaml",
         "previewImgSrc": "widgets/4x4/widget-2/preview.jpg",
         "datasource": "widgets/4x4/widget-2/datasource.yaml",
         "templateRef": "jw-chart"
       },
       {
-        "name": "Line chart widget 2",
+        "name": "Line chart widget",
         "filePath": "widgets/4x4/widget-3/template.yaml",
         "previewImgSrc": "widgets/4x4/widget-3/preview.jpg",
         "datasource": "widgets/4x4/widget-3/datasource.yaml",
