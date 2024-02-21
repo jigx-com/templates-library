@@ -49,6 +49,7 @@ This file is the table of contents for the repository. The structure is:
   - **directory** is a directory of the solution where the file has to be created
 - **filter** is used for filtering out templates.
   - **enableFor** is an array of allowed jigType (they will be listed below)
+  - **isDisabled** specifies if template is disabled
 
 This is the essential file used by the **Templates Library**. It is parsed and used to display and load each template. If you created a new template and didn't included it to the **contents.json** file, then it won't be shown in the library. Also if you forgot to include **_templateRef_** then
 this template also won't be shown in the templates library (it will be filtered out).

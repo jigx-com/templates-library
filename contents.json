@@ -1839,7 +1839,8 @@
             "filePath": "widgets/4x2/widget-4/functions/coin-history-etherum.yaml",
             "directory": "functions"
           }
-        ]
+        ],
+        "isDisabled": true
       },
       {
         "name": "Group (value, list)",
