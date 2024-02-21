@@ -1,0 +1,15 @@
+type: datasource.static
+options:
+  data:
+    - name: Item 1
+      description: Description
+      progress: 0.78
+      label: priority-3
+    - name: Item 2
+      description: Description
+      progress: 0.3
+      label: priority-1
+    - name: Item 3
+      description: Description
+      progress: 1
+      label: priority-2

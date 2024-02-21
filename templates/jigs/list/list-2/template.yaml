@@ -1,0 +1,64 @@
+title: Opportunities
+type: jig.list
+isSearchable: true
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2338&q=80
+        title: Opportunities
+        subtitle: Period Q3 2022
+
+filter:
+  - title: All
+    value: ALL
+  - title: Won
+    value: Success
+  - title: Lost
+    value: Unsuccessful
+
+
+data: =$filter($filter(@ctx.datasources.components, function($v){$contains($string($v.name),$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) }), function($v, $a, $i) { @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter })[]
+item:
+  type: component.list-item
+  options:
+    title: =@ctx.current.item.name
+    subtitle: =@ctx.current.item.reason
+    color:
+      - when: =(@ctx.current.item.result= 'Success' ? true :false)
+        color: color2
+    progress: =@ctx.current.item.progress
+    leftElement:
+      element: checkbox
+      value: =(@ctx.current.item.status= 'Finished' ? true :false)
+    style:
+      isError: =(@ctx.current.item.result= 'Unsuccessful' ? true :false)
+      isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
+    rightElement:
+      element: value
+      text: 
+        text: =@ctx.current.item.value
+        format:
+          numberStyle: currency
+          currency: USD
+
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Add new opportunity
+          url: https://docs.jigx.com/examples/submit-form
+
+summary:
+  children:
+    type: component.summary
+    options:
+      layout: counter
+      value: =$count(@ctx.datasources.components)
+      title: Opportunities
+      subtitle: ="Worth $ " & $sum(@ctx.datasources.components.value)

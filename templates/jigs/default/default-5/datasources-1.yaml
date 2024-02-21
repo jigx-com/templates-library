@@ -1,0 +1,9 @@
+type: datasource.static
+options:
+  data:
+    - x: "2020"
+      y: 38000
+    - x: "2021"
+      y: 46000
+    - x: "2022"
+      y: 51000

@@ -1,0 +1,52 @@
+type: datasource.static
+options:
+  data:
+    - name: Kenwood KVC85.124SI
+      subtitle: 584 USD
+      description:
+        Food processor planetary mixing method, power input 1200 W, internal
+        gear material metal, bowl volume 5 l, bowl material stainless steel, shell
+        material stainless steel, continuous speed control, whipping, mixing and
+        kneading, weight 9.5 kg, kneading hook, for whisk, balloon whisk and whisk,
+        silver color
+      highlight: false
+      label: true
+      label-title: New
+      color: color2
+      uri: https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=KENKR323
+    - name: Huawei Watch GT Runner
+      subtitle: 304 USD
+      description:
+        Smart watch - men's, GPS, calling from the watch via a paired
+        phone (within Bluetooth range), heart rate measurement, sleep monitoring,
+        pedometer,
+      highlight: true
+      label: true
+      label-title: "-10 %"
+      color: color4
+      uri: https://g.denik.cz/1/8f/mkt-runner-product-image-black-front-30-right-en-hq-png-20210908-v1_denik-galerie-800.png
+    - name: ASUS ROG Fusion II 500
+      subtitle: 169 USD
+      description:
+        Wired gaming headset, with microphone, over the head, around
+        the ears, closed design, 3.5 mm Jack, USB-A, USB-C, for PC, PlayStation
+        4, PlayStation 5, Xbox ONE, Xbox Series and Nintendo Switch, Hi- Res audio,
+        with volume control, frequency range 20 Hz-40000 Hz
+      highlight: false
+      label: true
+      label-title: "-13 %"
+      color: color4
+      uri: https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=NM362a8b
+    - name: Eternico Wireless set KS4001
+      subtitle: 16 USD
+      description:
+        Wireless keyboard and mouse set, for office and home, range up
+        to 10m, low-profile keys, power saving mode technology, 6 multimedia keys,
+        scissor key mechanism, Plug & Play, 2*AAA batteries (included), USB nano
+        receiver 2.4Ghz + mouse, wireless, optical, 800 - 1200 DPI, power saving
+        technology
+      highlight: false
+      label: true
+      label-title: "-28 %"
+      color: color4
+      uri: https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=AET4001a

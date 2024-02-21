@@ -1,0 +1,49 @@
+title: Progress and label
+type: jig.list
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
+        title: Progress and label
+        subtitle: List with left progress and right label
+
+data: =@ctx.datasources.items
+item:
+  type: component.list-item
+  options:
+    divider: solid
+    label:
+      isHidden: =@ctx.current.item.label = "priority-3" ? true :false
+      title: =(@ctx.current.item.label = "priority-1" ? "!!" :"!")
+      color:
+        - when: =@ctx.current.item.label = 'priority-1' or @ctx.current.item.label = 'priority-2' ? true :false
+          color: color4
+    color:
+      - when: =@ctx.current.item.progress < 0.25
+        color: color4
+      - when: =@ctx.current.item.progress = 1
+        color: color2
+    title: =@ctx.current.item.name
+    description: =@ctx.current.item.description
+    subtitle: =@ctx.current.item.progress < 0.25 ? "Low inventory" :""
+    leftElement:
+      element: progress
+      title: 10 m
+      value: =@ctx.current.item.progress
+    rightElement:
+      element: icon
+      icon: information-circle
+
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Add
+          url: https://docs.jigx.com/examples/submit-form
+

@@ -1,0 +1,26 @@
+title: Calendar
+type: jig.calendar
+
+data: =@ctx.datasources.calendar-data
+item:
+  type: component.event
+  options:
+    title: =@ctx.current.item.title
+    from: 
+      text: =@ctx.current.item.eventStart
+      format:
+        dateFormat: lll
+    to: 
+      text: =@ctx.current.item.eventEnd
+      format:
+        dateFormat: lll
+    location: =@ctx.current.item.location
+    people: =@ctx.current.item.people
+    tags: =@ctx.current.item.tags
+
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Add appointment
+          url: https://docs.jigx.com/examples/submit-form

@@ -1,29 +1,6 @@
 title: Opportunities overview
 type: jig.default
 
-datasources:
-  won:
-    type: datasource.static
-    options:
-      data:
-        - x: Won
-          y: 3
-          color: color3
-  lost:
-    type: datasource.static
-    options:
-      data:
-        - x: Lost
-          y: 4
-          color: color4
-  all:
-    type: datasource.static
-    options:
-      data:
-        - x: All
-          y: 12
-          color: color6
-
 children:
   - type: component.bar-chart
     options:

@@ -1,0 +1,21 @@
+type: datasource.static
+options:
+  data:
+    - name: Hue Table 1
+      subtitle: Living room
+      highlight: false
+      switch-value: false
+      icon: house-signal
+      color: color8
+    - name: Hue Table 2
+      subtitle: Bedroom
+      highlight: true
+      switch-value: true
+      icon: house-signal
+      color: color1
+    - name: House lock
+      subtitle: Unlocked
+      highlight: false
+      switch-value: false
+      icon: lock-unlock-4
+      color: color5

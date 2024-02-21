@@ -1,0 +1,8 @@
+title: Full screen location
+type: jig.full-screen
+
+component: 
+  type: component.location
+  options:
+    address: =@ctx.datasources.location.address
+    zoomLevel: 10

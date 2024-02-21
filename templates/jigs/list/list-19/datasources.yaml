@@ -1,0 +1,33 @@
+type: datasource.static
+options:
+  data:
+    - id: 1
+      title: Bookstore
+      subtitle: Inactive
+      active: false
+      image: https://images.unsplash.com/photo-1497633762265-9d179a990aa6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60
+    - id: 2
+      title: Furniture
+      subtitle: Active
+      active: true
+      image: https://images.unsplash.com/photo-1586024486164-ce9b3d87e09f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRlbGV2aXNpb258ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60
+    - id: 3
+      title: Gardening
+      subtitle: Inactive
+      active: false
+      image: https://images.unsplash.com/photo-1601985705806-5b9a71f6004f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbnRzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+    - id: 4
+      title: Stationery
+      subtitle: Active
+      active: true
+      image: https://images.unsplash.com/photo-1609895720459-394a6a8c99ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZWJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60
+    - id: 5
+      title: Electronics
+      subtitle: Active
+      active: true
+      image: https://images.unsplash.com/photo-1661961112835-ca6f5811d2af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxzZWFyY2h8Mjh8fHBjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+    - id: 6
+      title: Toys
+      subtitle: Inactive
+      active: false
+      image: https://images.unsplash.com/photo-1530325553241-4f6e7690cf36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dG95c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60

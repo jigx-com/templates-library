@@ -2,9 +2,16 @@
   "snippets": [
     {
       "name": "Calendar jig",
-      "filePath": "templates/jigs/calendar/template-calendar-1.yaml",
-      "previewImgSrc": "templates/jigs/calendar/template-calendar-1.jpeg",
-      "templateRef": "jig-calendar"
+      "filePath": "templates/jigs/calendar/calendar-1/template.yaml",
+      "previewImgSrc": "templates/jigs/calendar/calendar-1/preview.jpeg",
+      "templateRef": "jig-calendar",
+      "files": [
+        {
+          "name": "calendar-data",
+          "filePath": "templates/jigs/calendar/calendar-1/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "Contacts management",
@@ -41,177 +48,411 @@
     },
     {
       "name": "Default jig 1",
-      "filePath": "templates/jigs/default/template-default-1.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-1.png",
-      "templateRef": "jig-default"
+      "filePath": "templates/jigs/default/default-1/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-1/preview.png",
+      "templateRef": "jig-default",
+      "files": [
+        {
+          "name": "series1",
+          "filePath": "templates/jigs/default/default-1/datasources-1.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "list",
+          "filePath": "templates/jigs/default/default-1/datasources-2.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "Default jig 2",
-      "filePath": "templates/jigs/default/template-default-2.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-2.png",
-      "templateRef": "jig-default"
+      "filePath": "templates/jigs/default/default-2/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-2/preview.png",
+      "templateRef": "jig-default",
+      "files": [
+        {
+          "name": "employeeDetail",
+          "filePath": "templates/jigs/default/default-2/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "Default jig 3",
-      "filePath": "templates/jigs/default/template-default-3.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-3.png",
-      "templateRef": "jig-default"
+      "filePath": "templates/jigs/default/default-3/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-3/preview.png",
+      "templateRef": "jig-default",
+      "files": [
+        {
+          "name": "employees",
+          "filePath": "templates/jigs/default/default-3/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "Default jig 4",
-      "filePath": "templates/jigs/default/template-default-4.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-4.jpeg",
-      "templateRef": "jig-default"
+      "filePath": "templates/jigs/default/default-4/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-4/preview.jpeg",
+      "templateRef": "jig-default",
+      "files": [
+        {
+          "name": "methodOfPayment",
+          "filePath": "templates/jigs/default/default-4/datasources-1.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "currency",
+          "filePath": "templates/jigs/default/default-4/datasources-2.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "invoices",
+          "filePath": "templates/jigs/default/default-4/datasources-3.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "subscribers",
+          "filePath": "templates/jigs/default/default-4/datasources-4.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "Default jig 5",
-      "filePath": "templates/jigs/default/template-default-6.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-6.png",
-      "templateRef": "jig-default"
+      "filePath": "templates/jigs/default/default-6/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-6/preview.png",
+      "templateRef": "jig-default",
+      "files": [
+        {
+          "name": "company",
+          "filePath": "templates/jigs/default/default-6/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "Default jig 6",
-      "filePath": "templates/jigs/default/template-default-7.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-7.png",
+      "filePath": "templates/jigs/default/default-7/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-7/preview.png",
       "templateRef": "jig-default"
     },
     {
       "name": "Default jig 7",
-      "filePath": "templates/jigs/default/template-default-8.yaml",
-      "previewImgSrc": "templates/jigs/default/template-default-8.png",
-      "templateRef": "jig-default"
+      "filePath": "templates/jigs/default/default-8/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-8/preview.png",
+      "templateRef": "jig-default",
+      "files": [
+        {
+          "name": "list1",
+          "filePath": "templates/jigs/default/default-8/datasources-1.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "list2",
+          "filePath": "templates/jigs/default/default-8/datasources-2.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "pie-chart",
+          "filePath": "templates/jigs/default/default-8/datasources-3.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "stage",
+          "filePath": "templates/jigs/default/default-8/datasources-4.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "products",
+          "filePath": "templates/jigs/default/default-8/datasources-5.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "house",
+          "filePath": "templates/jigs/default/default-8/datasources-6.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "Full screen jig 1",
-      "filePath": "templates/jigs/full-screen/template-full-screen-1.yaml",
-      "previewImgSrc": "templates/jigs/full-screen/template-full-screen-1.png",
-      "templateRef": "jig-full-screen"
+      "filePath": "templates/jigs/full-screen/full-screen-1/template.yaml",
+      "previewImgSrc": "templates/jigs/full-screen/full-screen-1/preview.png",
+      "templateRef": "jig-full-screen",
+      "files": [
+        {
+          "name": "location",
+          "filePath": "templates/jigs/full-screen/full-screen-1/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "Full screen jig 2",
-      "filePath": "templates/jigs/full-screen/template-full-screen-2.yaml",
-      "previewImgSrc": "templates/jigs/full-screen/template-full-screen-2.png",
+      "filePath": "templates/jigs/full-screen/full-screen-2/template.yaml",
+      "previewImgSrc": "templates/jigs/full-screen/full-screen-2/preview.png",
       "templateRef": "jig-full-screen"
     },
     {
       "name": "List jig 1",
-      "filePath": "templates/jigs/list/template-list-1.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-1.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-1/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-1/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "inventory",
+          "filePath": "templates/jigs/list/list-1/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 2",
-      "filePath": "templates/jigs/list/template-list-2.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-2.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-2/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-2/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "components",
+          "filePath": "templates/jigs/list/list-2/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 3",
-      "filePath": "templates/jigs/list/template-list-3.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-3.png",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-3/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-3/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "task-list",
+          "filePath": "templates/jigs/list/list-3/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 4",
-      "filePath": "templates/jigs/list/template-list-4.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-4.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-4/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-4/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "users",
+          "filePath": "templates/jigs/list/list-4/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 5",
-      "filePath": "templates/jigs/list/template-list-5.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-5.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-5/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-5/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "progress",
+          "filePath": "templates/jigs/list/list-5/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 6",
-      "filePath": "templates/jigs/list/template-list-6.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-6.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-6/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-6/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "folders",
+          "filePath": "templates/jigs/list/list-6/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 7",
-      "filePath": "templates/jigs/list/template-list-7.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-7.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-7/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-7/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "items",
+          "filePath": "templates/jigs/list/list-7/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 8",
-      "filePath": "templates/jigs/list/template-list-8.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-8.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-8/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-8/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "bar",
+          "filePath": "templates/jigs/list/list-8/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 9",
-      "filePath": "templates/jigs/list/template-list-9.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-9.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-9/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-9/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "stage-list",
+          "filePath": "templates/jigs/list/list-9/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 10",
-      "filePath": "templates/jigs/list/template-list-10.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-10.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-10/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-10/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "expander-stage",
+          "filePath": "templates/jigs/list/list-10/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 11",
-      "filePath": "templates/jigs/list/template-list-11.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-11.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-11/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-11/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "expander-titles",
+          "filePath": "templates/jigs/list/list-11/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 12",
-      "filePath": "templates/jigs/list/template-list-12.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-12.png",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-12/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-12/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "sections-list",
+          "filePath": "templates/jigs/list/list-12/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 13",
-      "filePath": "templates/jigs/list/template-list-13.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-13.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-13/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-13/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "product-item",
+          "filePath": "templates/jigs/list/list-13/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 14",
-      "filePath": "templates/jigs/list/template-list-14.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-14.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-14/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-14/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "product-item",
+          "filePath": "templates/jigs/list/list-14/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 15",
-      "filePath": "templates/jigs/list/template-list-15.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-15.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-15/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-15/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "horizontal",
+          "filePath": "templates/jigs/list/list-15/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 16",
-      "filePath": "templates/jigs/list/template-list-16.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-16.jpeg",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-16/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-16/preview.jpeg",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "components-list",
+          "filePath": "templates/jigs/list/list-16/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 17",
-      "filePath": "templates/jigs/list/template-list-17.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-17.png",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-17/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-17/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "swipeable-list",
+          "filePath": "templates/jigs/list/list-17/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 18",
-      "filePath": "templates/jigs/list/template-list-18.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-18.png",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-18/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-18/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "checkbox-list",
+          "filePath": "templates/jigs/list/list-18/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 19",
-      "filePath": "templates/jigs/list/template-list-19.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-19.png",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-19/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-19/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "switch-list",
+          "filePath": "templates/jigs/list/list-19/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 20",
-      "filePath": "templates/jigs/list/template-list-20.yaml",
-      "previewImgSrc": "templates/jigs/list/template-list-20.png",
-      "templateRef": "jig-list"
+      "filePath": "templates/jigs/list/list-20/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-20/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "select",
+          "filePath": "templates/jigs/list/list-20/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "Composite jig Lead overview",
@@ -230,19 +471,39 @@
           "filePath": "templates/jigs/composite/composite-1/element-2.yaml",
           "directory": "jigs",
           "templateRef": "jig-list"
+        },
+        {
+          "name": "won",
+          "filePath": "templates/jigs/composite/composite-1/datasources-1-1.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "lost",
+          "filePath": "templates/jigs/composite/composite-1/datasources-1-2.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "all",
+          "filePath": "templates/jigs/composite/composite-1/datasources-1-3.yaml",
+          "directory": "datasources"
+        },
+        {
+          "name": "components",
+          "filePath": "templates/jigs/composite/composite-1/datasources-2.yaml",
+          "directory": "datasources"
         }
       ]
     },
     {
       "name": "Document jig 1",
-      "filePath": "templates/jigs/document/template-document-1.yaml",
-      "previewImgSrc": "templates/jigs/document/template-document-1.jpeg",
+      "filePath": "templates/jigs/document/document-1/template.yaml",
+      "previewImgSrc": "templates/jigs/document/document-1/preview.jpeg",
       "templateRef": "jig-document"
     },
     {
       "name": "Document jig 2",
-      "filePath": "templates/jigs/document/template-document-2.yaml",
-      "previewImgSrc": "templates/jigs/document/template-document-2.jpeg",
+      "filePath": "templates/jigs/document/document-2/template.yaml",
+      "previewImgSrc": "templates/jigs/document/document-2/preview.jpeg",
       "templateRef": "jig-document"
     },
     {

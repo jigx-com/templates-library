@@ -1,0 +1,6 @@
+type: datasource.static
+options:
+  data:
+    - x: All
+      y: 12
+      color: color6

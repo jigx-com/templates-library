@@ -1,0 +1,26 @@
+title: Bar charts list
+type: jig.list
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+        title: Bar charts list
+        subtitle: List with Bar charts
+
+data: =@ctx.datasources.bar
+item:
+  type: component.bar-chart
+  options:
+    chart:
+      title: =@ctx.current.item.title
+      subtitle: =@ctx.current.item.subtitle
+      height: 260
+    series:
+      - data: =@ctx.current.item.data
+        color: =@ctx.current.item.color

@@ -1,0 +1,7 @@
+type: datasource.static
+options:
+  data:
+    - method: By conversion
+    - method: By card
+    - method: Cash
+    - method: PayPal

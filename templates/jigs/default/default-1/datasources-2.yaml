@@ -1,0 +1,38 @@
+type: datasource.static
+options:
+  data:
+    - category: list
+      title: Teambuilding
+      subtitle: Payment by card
+      description: 25 / 10 / 2022
+      value: "-$144"
+      color: negative
+      isPositive: false
+    - category: truck-cargo
+      title: Transport Brno to Prague
+      subtitle: Payment by card
+      description: 22 / 10 / 2022
+      value: "-$87.30"
+      color: negative
+      isPositive: false
+    - category: shopping-cart-empty-1
+      title: Team t-shirts
+      subtitle: Payment by card
+      description: 20 / 10 / 2022
+      value: "-$21.50"
+      color: negative
+      isPositive: false
+    - category: shopping-cart-empty-1
+      title: Cinema tickets
+      subtitle: Payment by card
+      description: 13 / 10 / 2022
+      value: "-$218.70"
+      color: negative
+      isPositive: false
+    - category: chevron-up
+      title: Team bonus
+      subtitle: Income payment
+      description: 5 / 10 / 2022
+      value: "$120"
+      color: positive
+      isPositive: true

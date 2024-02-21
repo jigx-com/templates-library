@@ -1,0 +1,85 @@
+title: Revenues and expenses
+type: jig.default
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1628348068343-c6a848d2b6dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Z3JhcGhzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60
+
+children:
+  - type: component.bar-chart
+    options:
+      legend:
+        isHidden: false
+      chart:
+        height: 280
+        isAnimated: true
+      yAxis:
+        max: 65000
+        min: 10000
+        labels:
+          format:
+            numberStyle: currency
+            currency: USD
+            compactDisplay: short
+            notation: compact
+      xAxis:
+        tickAmount: 3
+        categories:
+          - "2020"
+          - "2021"
+          - "2022"
+      plotOptions:
+        series:
+          pointWidth: 12
+      series:
+        - data: =@ctx.datasources.revenues
+          name: Revenues
+          color: positive
+          dataLabels:
+            - isEnabled: false
+        - data: =@ctx.datasources.expenses
+          name: Expenses
+          color: negative
+          dataLabels:
+            - isEnabled: false
+  - type: component.list
+    instanceId: transactions-list
+    options:
+      filter:
+        - title: All
+          value: all
+        - title: "2020"
+          value: "2020"
+        - title: "2021"
+          value: "2021"
+        - title: "2022"
+          value: "2022"
+      data: =$filter(@ctx.datasources.transactions, function($v, $a, $i) { @ctx.components.transactions-list.state.filter = 'all' or $v.year = @ctx.components.transactions-list.state.filter })
+      maximumItemsToRender: 10
+      item:
+        type: component.list-item
+        options:
+          divider: solid
+          title: =@ctx.current.item.company
+          subtitle: =@ctx.current.item.description
+          description: =$fromMillis($toMillis(@ctx.current.item.date), '[M01]/[D01]/[Y01]')
+          label:
+            title: =@ctx.current.item.amount & '$'
+            isHidden: false
+            color:
+              - when: =(@ctx.current.item.positive = true)
+                color: color2
+              - when: =(@ctx.current.item.positive = false)
+                color: color4
+          leftElement:
+            element: icon
+            icon: =@ctx.current.item.positive = true ? 'up' :'down'
+          style:
+            isPositive: =@ctx.current.item.positive
+            isError: =@ctx.current.item.positive = false ? true :false
