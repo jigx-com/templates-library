@@ -120,57 +120,57 @@
     },
     {
       "name": "Default jig 5",
-      "filePath": "templates/jigs/default/default-6/template.yaml",
-      "previewImgSrc": "templates/jigs/default/default-6/preview.png",
+      "filePath": "templates/jigs/default/default-5/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-5/preview.png",
       "templateRef": "jig-default",
       "files": [
         {
           "name": "company",
-          "filePath": "templates/jigs/default/default-6/datasources.yaml",
+          "filePath": "templates/jigs/default/default-5/datasources.yaml",
           "directory": "datasources"
         }
       ]
     },
     {
       "name": "Default jig 6",
-      "filePath": "templates/jigs/default/default-7/template.yaml",
-      "previewImgSrc": "templates/jigs/default/default-7/preview.png",
+      "filePath": "templates/jigs/default/default-6/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-6/preview.png",
       "templateRef": "jig-default"
     },
     {
       "name": "Default jig 7",
-      "filePath": "templates/jigs/default/default-8/template.yaml",
-      "previewImgSrc": "templates/jigs/default/default-8/preview.png",
+      "filePath": "templates/jigs/default/default-7/template.yaml",
+      "previewImgSrc": "templates/jigs/default/default-7/preview.png",
       "templateRef": "jig-default",
       "files": [
         {
           "name": "list1",
-          "filePath": "templates/jigs/default/default-8/datasources-1.yaml",
+          "filePath": "templates/jigs/default/default-7/datasources-1.yaml",
           "directory": "datasources"
         },
         {
           "name": "list2",
-          "filePath": "templates/jigs/default/default-8/datasources-2.yaml",
+          "filePath": "templates/jigs/default/default-7/datasources-2.yaml",
           "directory": "datasources"
         },
         {
           "name": "pie-chart",
-          "filePath": "templates/jigs/default/default-8/datasources-3.yaml",
+          "filePath": "templates/jigs/default/default-7/datasources-3.yaml",
           "directory": "datasources"
         },
         {
           "name": "stage",
-          "filePath": "templates/jigs/default/default-8/datasources-4.yaml",
+          "filePath": "templates/jigs/default/default-7/datasources-4.yaml",
           "directory": "datasources"
         },
         {
           "name": "products",
-          "filePath": "templates/jigs/default/default-8/datasources-5.yaml",
+          "filePath": "templates/jigs/default/default-7/datasources-5.yaml",
           "directory": "datasources"
         },
         {
           "name": "house",
-          "filePath": "templates/jigs/default/default-8/datasources-6.yaml",
+          "filePath": "templates/jigs/default/default-7/datasources-6.yaml",
           "directory": "datasources"
         }
       ]

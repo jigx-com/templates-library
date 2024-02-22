@@ -1,4 +1,4 @@
-title: Pyramid Construction Inc.
+title: Image, entity, location
 type: jig.default
 
 header:
@@ -9,62 +9,52 @@ header:
       type: component.image
       options:
         source:
-          uri: https://www.pyramidca.com/media/module/content_masthead/masthead_1.jpg
+          uri: https://images.unsplash.com/photo-1613064934056-08a061014f37?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
 
 children:
-  - type: component.avatar
+  - type: component.section
     options:
-      title: PC
-      size: large
-      align: center
+      title: Image
+      children:
+        - type: component.image
+          options:
+            title: Thailand
+            subtitle: Phi Phi Islands
+            height: 250
+            source:
+              uri: https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
   - type: component.entity
     options:
       children:
         - type: component.section
           options:
-            title: Lead details
+            title: Entity section
             children:
               - type: component.entity-field
                 options:
-                  label: Lead Name
-                  value: =@ctx.datasources.company.leadName
+                  label: Description
+                  value:
+                    The Phi Phi Islands are an island group in Thailand between the
+                    large island of Phuket and the Straits of Malacca coast of Thailand.
+                    The islands are reachable by speedboats or long-tail boats most often
+                    from Krabi town or from piers in Phuket Province.
+                  isMultiline: true
               - type: component.entity-field
                 options:
-                  label: Company
-                  value: =@ctx.datasources.company.company
+                  label: Total area
+                  value: 12.25 km2 (4.73 sq mi)
               - type: component.entity-field
                 options:
-                  label: Email
-                  value: =@ctx.datasources.company.e-mail
-                  contentType: email
+                  label: Total population
+                  value: "2,500"
               - type: component.entity-field
                 options:
-                  label: Lead Status
-                  value: =@ctx.datasources.company.status
-                  rightIcon: checkbox-checked
-                  style:
-                    isPositive: true
-              - type: component.entity-field
-                options:
-                  label: Created Date
-                  value: =$fromMillis($toMillis(@ctx.datasources.company.created), '[D01]/[M01]/[Y0001]')
-                  contentType: date
-        - type: component.section
-          options:
-            title: Address
-            children:
-              - type: component.entity-field
-                options:
-                  label: City
-                  value: =@ctx.datasources.company.city
-              - type: component.entity-field
-                options:
-                  label: State
-                  value: =@ctx.datasources.company.state
-              - type: component.entity-field
-                options:
-                  label: Street
-                  value: =@ctx.datasources.company.street
-  - type: component.location
+                  label: Time zone
+                  value: UTC+7 (ICT)
+  - type: component.section
     options:
-      address: =@ctx.datasources.company.city & ', ' & @ctx.datasources.company.street
+      title: Location
+      children:
+        - type: component.location
+          options:
+            address: 190 Moo 7 Aonang Muang, Phi Phi island Krabi 81000, Thailand
