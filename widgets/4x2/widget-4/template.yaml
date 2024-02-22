@@ -16,7 +16,7 @@ options:
               - color: color4
                 data: =@ctx.datasources.bitcoin
                 layout: area-gradient
-                name: Bitocin EUR (last 14 days)
+                name: Bitocin EUR
             xAxis:
               isHidden: true
             yAxis:
@@ -47,9 +47,9 @@ options:
                   isHidden: true
             series:
               - color: color4
-                data: =@ctx.datasources.etherum
+                data: =@ctx.datasources.ethereum
                 layout: area-gradient
-                name: Etherum EUR (last 14 days)
+                name: Ethereum EUR (last 14 days)
             xAxis:
               isHidden: true
             yAxis:
@@ -65,5 +65,5 @@ options:
         top:
           type: component.titles
           options:
-            title: Etherum
+            title: Ethereum
             subtitle: BTC to EUR
