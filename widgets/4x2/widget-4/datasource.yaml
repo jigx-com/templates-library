@@ -1,49 +1,37 @@
 bitcoin:
-  type: datasource.sqlite
+  type: datasource.static
   options:
-    provider: DATA_PROVIDER_REST
-    entities:
-      - entity: coin-history
-        function: coin-history
-        functionParameters:
-          symbol: BTC-EUR
-    query: |
-      WITH cte AS (
-        SELECT
-          '$.ms' AS ms,
-          '$.close' AS close
-        FROM [coin-history]
-        ORDER BY 1 DESC
-      )
-      SELECT
-        1 - ROW_NUMBER() OVER (ORDER BY ms DESC) AS x,
-        close AS y
-      FROM cte
-      ORDER BY
-        ms DESC
-      LIMIT 1 + 1 * 7
-etherum:
-  type: datasource.sqlite
+    data:
+      - x: 2024-02-16
+        y: 52134.2
+      - x: 2024-02-17
+        y: 51646
+      - x: 2024-02-18
+        y: 52117.5
+      - X: 2024-02-19
+        y: 51783.6
+      - x: 2024-02-20
+        y: 52263.5
+      - x: 2024-02-21
+        y: 51858.2
+      - x: 2024-02-22
+        y: 51894
+ethereum:
+  type: datasource.static
   options:
-    provider: DATA_PROVIDER_REST
-    entities:
-      - entity: coin-history-etherum
-        function: coin-history-etherum
-        functionParameters:
-          symbol: ETH-EUR
-    query: |
-      WITH cte AS (
-        SELECT
-          '$.ms' AS ms,
-          '$.close' AS close
-        FROM [coin-history-etherum]
-        ORDER BY 1 DESC
-      )
-      SELECT
-        1 - ROW_NUMBER() OVER (ORDER BY ms DESC) AS x,
-        close AS y
-      FROM cte
-      ORDER BY
-        ms DESC
-      LIMIT 1 + 1 * 7
+    data:
+      - x: 2024-02-16
+        y: 2801.80
+      - x: 2024-02-17
+        y: 2785.90
+      - x: 2024-02-18
+        y: 2880.10
+      - X: 2024-02-19
+        y: 2944.80
+      - x: 2024-02-20
+        y: 3015.38
+      - x: 2024-02-21
+        y: 2971.18
+      - x: 2024-02-22
+        y: 3013.64
   
