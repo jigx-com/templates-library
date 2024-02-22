@@ -1,0 +1,12 @@
+type: datasource.static
+options:
+  data:
+    - employee-first-name: Jack
+      employee-surname: Smith
+      employee-date-of-birth: "1973-09-17T00:00:00.000Z"
+      employee-photo: https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80
+      employee-email: JackSmith@gmail.com
+      employee-phone-number: 583849264
+      employee-position: Product manager
+      employee-startWork: "2011-05-01T00:00:00.000Z"
+      employee-contract: https://i0.wp.com/eforms.com/download/2018/05/Employment-Contract-Agreement.png?ssl=1

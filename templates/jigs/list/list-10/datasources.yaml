@@ -1,0 +1,27 @@
+type: datasource.static
+options:
+  data:
+    - id: 1
+      startTitle: Start title
+      startSubtitle: Subtitle
+      endTitle: End title
+      endSubtitle: Subtitle
+      value-entity-field-1: Value 1
+      value-entity-field-2: Value 2
+      value-entity-field-3: Value 3
+    - id: 2
+      startTitle: Start title
+      startSubtitle: Subtitle
+      endTitle: End title
+      endSubtitle: Subtitle
+      value-entity-field-1: Value 1
+      value-entity-field-2: Value 2
+      value-entity-field-3: Value 3
+    - id: 3
+      startTitle: Start title
+      startSubtitle: Subtitle
+      endTitle: End title
+      endSubtitle: Subtitle
+      value-entity-field-1: Value 1
+      value-entity-field-2: Value 2
+      value-entity-field-3: Value 3

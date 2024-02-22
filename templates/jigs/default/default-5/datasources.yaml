@@ -1,0 +1,11 @@
+type: datasource.static
+options:
+  data:
+    - leadName: Pad Stumuller
+      company: Pyramid Construction Inc.
+      e-mail: pat@pyramid.net
+      status: Closed - Converted
+      created: 2022-09-28
+      city: Redmond
+      state: WA
+      street: 1 Microsoft Way

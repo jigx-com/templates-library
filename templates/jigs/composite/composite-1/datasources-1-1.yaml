@@ -1,0 +1,6 @@
+type: datasource.static
+options:
+  data:
+    - x: Won
+      y: 3
+      color: color3

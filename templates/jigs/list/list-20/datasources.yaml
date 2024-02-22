@@ -1,0 +1,27 @@
+type: datasource.static
+options:
+  data:
+    - id: 1
+      title: Title
+      subtitle: Subtitle
+      icon: attachment
+    - id: 2
+      title: Title
+      subtitle: Subtitle
+      icon: alarm-bell
+    - id: 3
+      title: Title
+      subtitle: Subtitle
+      icon: checklist
+    - id: 4
+      title: Title
+      subtitle: Subtitle
+      icon: filter-1
+    - id: 5
+      title: Title
+      subtitle: Subtitle
+      icon: document
+    - id: 6
+      title: Title
+      subtitle: Subtitle
+      icon: bin-1

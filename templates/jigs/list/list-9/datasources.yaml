@@ -1,0 +1,18 @@
+type: datasource.static
+options:
+  data:
+    - id: 1
+      startTitle: Start title
+      startSubtitle: Start subtitle
+      endTitle: End title
+      endSubtitle: End subtitle
+    - id: 2
+      startTitle: Start title
+      startSubtitle: Start subtitle
+      endTitle: End title
+      endSubtitle: End subtitle
+    - id: 3
+      startTitle: Start title
+      startSubtitle: Start subtitle
+      endTitle: End title
+      endSubtitle: End subtitle

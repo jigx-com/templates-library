@@ -1,0 +1,12 @@
+type: datasource.static
+options:
+  data:
+    - name: All files
+      icon: paginate-filter-picture
+      value: 108
+    - name: Archive
+      icon: archive-folder
+      value: 54
+    - name: Deleted
+      icon: bin
+      value: 18

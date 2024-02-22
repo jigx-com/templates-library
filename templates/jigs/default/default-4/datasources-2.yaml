@@ -1,0 +1,5 @@
+type: datasource.static
+options:
+  data:
+    - currency: USD
+    - currency: EUR

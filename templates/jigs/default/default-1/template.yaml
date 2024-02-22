@@ -1,0 +1,75 @@
+title: Team budget
+type: jig.default
+
+children:
+  - type: component.line-chart
+    options:
+      plotOptions:
+        series:
+          pointWidth: 10
+      yAxis:
+        isHidden: false
+        max: 1200
+        min: 0
+        labels:
+          format:
+            numberStyle: currency
+            currency: USD
+            compactDisplay: short
+      xAxis:
+        min: 0
+        max: 31
+      legend:
+        isHidden: true
+      chart:
+        height: 300
+        title:
+          text: =@ctx.datasources.series1[$count(@ctx.datasources.series1) - 1].y
+          format:
+            numberStyle: currency
+            currency: USD
+          horizontalAlign: center
+          verticalAlign: bottom
+        subtitle:
+          text: ="Team budget $1.000"
+          horizontalAlign: center
+          verticalAlign: bottom
+      series:
+        - data: =@ctx.datasources.series1
+          layout: area-gradient
+  - type: component.section
+    options:
+      title: Transactions
+      children:
+        - type: component.list
+          options:
+            data: =@ctx.datasources.list
+            item:
+              type: component.list-item
+              options:
+                divider: solid
+                title: =@ctx.current.item.title
+                subtitle: =@ctx.current.item.subtitle
+                description: =@ctx.current.item.description
+                label:
+                  title: =@ctx.current.item.value
+                  color:
+                    - when: true
+                      color: =@ctx.current.item.color
+                leftElement:
+                  element: icon
+                  icon: =@ctx.current.item.category
+                  isContained: true
+                  isDuotone: true
+                rightElement:
+                  element: icon
+                  icon: information-circle
+                style:
+                  isPositive: =@ctx.current.item.isPositive
+
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: New Expense
+          url: https://docs.jigx.com/examples/submit-form

@@ -1,0 +1,190 @@
+title: Horizontal list
+type: jig.default
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1586281380901-171d7fd8b6db?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+
+children:
+  - type: component.section
+    options:
+      title: List-item with avatar
+      children:
+        - type: component.list
+          options:
+            data: =@ctx.datasources.list1
+            maximumItemsToRender: 8
+            isHorizontal: true
+            item:
+              type: component.list-item
+              options:
+                title: =@ctx.current.item.firstName & ' ' & @ctx.current.item.surname
+                subtitle: =@ctx.current.item.position
+                horizontalItemSize: large
+                style:
+                  isHighlighted: true
+                leftElement:
+                  element: avatar
+                  text: =$substring(@ctx.current.item.firstName, 0, 1) & $substring(@ctx.current.item.surname, 0, 1)
+                  uri: =@ctx.current.item.img
+  - type: component.section
+    options:
+      title: List-item with image
+      children:
+        - type: component.list
+          options:
+            data: =@ctx.datasources.list2
+            maximumItemsToRender: 8
+            isHorizontal: true
+            item:
+              type: component.list-item
+              options:
+                title: =@ctx.current.item.section
+                leftElement:
+                  element: image
+                  text: ""
+                  uri: =@ctx.current.item.img
+  - type: component.section
+    options:
+      title: List with pie-chart
+      children:
+        - type: component.list
+          options:
+            data: =@ctx.datasources.pie-chart
+            isHorizontal: true
+            item:
+              type: component.pie-chart
+              options:
+                chart:
+                  title:
+                    text: =@ctx.current.item.title
+                    verticalAlign: center
+                  subtitle:
+                    text: =@ctx.current.item.subtitle
+                    verticalAlign: center
+                  width: 100
+                  height: 100
+                legend:
+                  isHidden: true
+                series:
+                  - data: =@ctx.current.item.data
+                    layout: pie
+  - type: component.section
+    options:
+      title: List with expander
+      children:
+        - type: component.list
+          options:
+            data: =@ctx.datasources.stage
+            maximumItemsToRender: 8
+            isHorizontal: true
+            item:
+              type: component.expander
+              options:
+                header:
+                  centerElement:
+                    type: component.stage
+                    options:
+                      right:
+                        title: =@ctx.current.item.from
+                        subtitle: =@ctx.current.item.time-from
+                      left:
+                        title: =@ctx.current.item.to
+                        subtitle: =@ctx.current.item.time-to
+                children:
+                  - type: component.entity
+                    options:
+                      children:
+                        - type: component.entity-field
+                          options:
+                            label: Airline
+                            value: =@ctx.current.item.airline
+                        - type: component.entity-field
+                          options:
+                            label: Flight No.
+                            value: =@ctx.current.item.flight
+                        - type: component.entity-field
+                          options:
+                            label: Seat width
+                            value: =@ctx.current.item.seatWidth
+                        - type: component.entity-field
+                          options:
+                            label: Seat fold
+                            value: =@ctx.current.item.seatFold
+  - type: component.section
+    options:
+      title: List-item products
+      children:
+        - type: component.list
+          options:
+            data: =@ctx.datasources.products
+            isHorizontal: true
+            item:
+              type: component.list-item
+              options:
+                title: =@ctx.current.item.name
+                subtitle: =@ctx.current.item.subtitle
+                description: =@ctx.current.item.description
+                label:
+                  title: =@ctx.current.item.label-title
+                  color:
+                    - when: =@ctx.current.item.label
+                      color: =@ctx.current.item.color
+                divider: solid
+                horizontalItemSize: large
+                style:
+                  isPositive: false
+                  isHighlighted: =@ctx.current.item.highlight
+                  isStrikeThrough: false
+                  isError: false
+                  isWarning: false
+                  isDisabled: false
+                leftElement:
+                  element: image
+                  resizeMode: contain
+                  uri: =@ctx.current.item.uri
+                  text: N/A
+                rightElement:
+                  element: amount-control
+                  value: 2
+                  onChange:
+                    type: action.go-back
+  - type: component.section
+    options:
+      title: List-item with icon and switch
+      children:
+        - type: component.list
+          options:
+            data: =@ctx.datasources.house
+            isHorizontal: true
+            item:
+              type: component.list-item
+              options:
+                title: =@ctx.current.item.name
+                subtitle: =@ctx.current.item.subtitle
+                color:
+                  - when: true
+                    color: =@ctx.current.item.color
+                divider: solid
+                horizontalItemSize: regular
+                style:
+                  isPositive: false
+                  isHighlighted: =@ctx.current.item.highlight
+                  isStrikeThrough: false
+                  isError: false
+                  isWarning: false
+                  isDisabled: false
+                leftElement:
+                  element: icon
+                  icon: =@ctx.current.item.icon
+                  isContained: true
+                  isDuotone: true
+                rightElement:
+                  element: switch
+                  value: =@ctx.current.item.switch-value

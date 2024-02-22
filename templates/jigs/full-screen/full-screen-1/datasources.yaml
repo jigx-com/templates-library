@@ -1,0 +1,4 @@
+type: datasource.static
+options:
+  data:
+    - address: 20 W 34th St., New York, NY 10001, US

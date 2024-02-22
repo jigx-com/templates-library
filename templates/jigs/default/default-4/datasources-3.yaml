@@ -1,0 +1,10 @@
+type: datasource.sqlite
+options:
+  provider: DATA_PROVIDER_DYNAMIC
+  entities:
+    - default/invoices #Create new table "invoices" in databases/default.jigx
+  query: |
+    SELECT   
+      id,   
+      '$.invoice-number'
+    FROM [default/invoices]

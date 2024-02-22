@@ -1,0 +1,17 @@
+type: datasource.static
+options:
+  data:
+    - subscriber: Techniserv
+      subscriber-id: "84297453"
+    - subscriber: Tatum
+      subscriber-id: "37047829"
+    - subscriber: Strandhill
+      subscriber-id: "90356287"
+    - subscriber: DLT
+      subscriber-id: "64397314"
+    - subscriber: Railston
+      subscriber-id: "47290536"
+    - subscriber: ATV Impex
+      subscriber-id: "73872495"
+    - subscriber: BrandCrown
+      subscriber-id: "43960276"

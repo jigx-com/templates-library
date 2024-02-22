@@ -1,0 +1,40 @@
+title: Swipe & icon
+type: jig.list
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://builder.jigx.com/assets/images/header.jpg
+        title: Swipe & icon
+        subtitle: Swipeable list with the right icon
+
+data: =@ctx.datasources.swipeable-list
+item:
+  type: component.list-item
+  options:
+    title: =@ctx.current.item.title
+    subtitle: =@ctx.current.item.subtitle
+    rightElement:
+      element: icon
+      icon: =@ctx.current.item.icon
+    swipeable:
+      right:
+        - onPress:
+            type: action.open-url
+            options:
+              url: https://docs.jigx.com/examples/go-to
+          label: Primary Action
+          color: primary
+          icon: alarm-bell
+        - onPress:
+            type: action.open-url
+            options:
+              url: https://docs.jigx.com/examples/go-to
+          label: Secondary Action
+          color: warning
+          icon: alert-triangle

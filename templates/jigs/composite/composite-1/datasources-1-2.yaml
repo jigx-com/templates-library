@@ -1,0 +1,6 @@
+type: datasource.static
+options:
+  data:
+    - x: Lost
+      y: 4
+      color: color4

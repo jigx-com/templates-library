@@ -1,0 +1,26 @@
+title: Stage
+type: jig.list
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1511312817910-ffa2ca5d954e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8ZHJpdmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60
+        title: Stage
+        subtitle: List with Stage
+
+data: =@ctx.datasources.stage-list
+item:
+  type: component.stage
+  options:
+    icon: arrow-right
+    right:
+      title: =@ctx.current.item.endTitle
+      subtitle: =@ctx.current.item.endSubtitle
+    left:
+      title: =@ctx.current.item.startTitle
+      subtitle: =@ctx.current.item.startSubtitle

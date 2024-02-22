@@ -1,0 +1,78 @@
+title: Add new employee
+type: jig.default
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80
+
+children:
+  - type: component.form
+    instanceId: new-employee
+    options:
+      children:
+        - type: component.number-field
+          instanceId: employee-id
+          options:
+            label: employeeId
+            isHidden: true
+            initialValue: =($count(@ctx.datasources.employees.id) = 0 ? 1 :$count(@ctx.datasources.employees.id) + 1)
+        - type: component.avatar-field
+          instanceId: employee-photo
+          options:
+            label: Photo
+        - type: component.section
+          options:
+            title: Personal informations
+            children:
+              - type: component.text-field
+                instanceId: employee-first-name
+                options:
+                  label: First name
+              - type: component.text-field
+                instanceId: employee-surname
+                options:
+                  label: Surname
+              - type: component.date-picker
+                instanceId: employee-date-of-birth
+                options:
+                  label: Date of birth
+              - type: component.email-field
+                instanceId: employee-email
+                options:
+                  label: Email
+                  icon: email
+              - type: component.number-field
+                instanceId: employee-phone-number
+                options:
+                  label: Phone number
+                  icon: phone
+        - type: component.section
+          options:
+            title: Business informations
+            children:
+              - type: component.text-field
+                instanceId: employee-position
+                options:
+                  label: Position
+              - type: component.date-picker
+                instanceId: employee-startWork
+                options:
+                  label: Date of starting work
+              - type: component.media-field
+                instanceId: employee-contract
+                options:
+                  label: Contract
+                  mediaType: image
+
+actions:
+  - children:
+      - type: action.open-url
+        options:
+          title: Add employee
+          url: https://docs.jigx.com/examples/submit-form
