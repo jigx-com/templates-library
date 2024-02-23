@@ -609,6 +609,16 @@
       }
     },
     {
+      "name": "Bar-chart with plot bands",
+      "filePath": "templates/components/bar-chart/bar-chart-7/template.yaml",
+      "previewImgSrc": "templates/components/bar-chart/bar-chart-7/preview.png",
+      "templateRef": "jc-bar-chart",
+      "datasource": "templates/components/bar-chart/bar-chart-7/datasource.yaml",
+      "filter": {
+        "enableFor": ["jig.default", "component.expander"]
+      }
+    },
+    {
       "name": "With Entity Field, Sections and Field Row",
       "filePath": "templates/components/entity/entity-1/template.yaml",
       "previewImgSrc": "templates/components/entity/entity-1/preview.png",
@@ -1399,6 +1409,13 @@
       "filePath": "templates/components/line-chart/line-chart-7/template.yaml",
       "previewImgSrc": "templates/components/line-chart/line-chart-7/preview.png",
       "datasource": "templates/components/line-chart/shared/datasource-2.yaml",
+      "templateRef": "jc-line-chart"
+    },
+    {
+      "name": "Line chart - Plot bands",
+      "filePath": "templates/components/line-chart/line-chart-8/template.yaml",
+      "previewImgSrc": "templates/components/line-chart/line-chart-8/preview.png",
+      "datasource": "templates/components/line-chart/line-chart-8/datasource.yaml",
       "templateRef": "jc-line-chart"
     },
     {

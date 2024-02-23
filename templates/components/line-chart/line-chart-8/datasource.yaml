@@ -1,0 +1,24 @@
+revenues:
+  type: datasource.static
+  options:
+    data:
+      - x: "Q1"
+        y: 45000
+      - x: "Q2"
+        y: 38000
+      - x: "Q3"
+        y: 46000
+      - x: "Q4"
+        y: 51000
+expenses:
+  type: datasource.static
+  options:
+    data:
+      - x: "Q1"
+        y: 22000
+      - x: "Q2"
+        y: 19000
+      - x: "Q3"
+        y: 28000
+      - x: "Q4"
+        y: 39000

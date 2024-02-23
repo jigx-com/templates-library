@@ -1,0 +1,45 @@
+type: component.line-chart
+options:
+  legend:
+    isHidden: false
+  chart:
+    height: 400
+    isAnimated: true
+  yAxis:
+    plotBands:
+      - from: 10000
+        to: 25000
+        color: color4
+      - from: 25000
+        to: 40000
+        color: color3
+      - from: 40000
+        to: 60000
+        color: color2
+    labels:
+      format:
+        numberStyle: currency
+        currency: USD
+        compactDisplay: short
+        notation: compact
+  xAxis:
+    tickAmount: 3
+    categories:
+      - "Q1"
+      - "Q2"
+      - "Q3"
+      - "Q4"
+  plotOptions:
+    series:
+      pointWidth: 12
+  series:
+    - data: =@ctx.datasources.revenues
+      name: Revenues
+      color: positive
+      dataLabels:
+        - isEnabled: false
+    - data: =@ctx.datasources.expenses
+      name: Expenses
+      color: negative
+      dataLabels:
+        - isEnabled: false
