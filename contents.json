@@ -48,7 +48,7 @@
     },
     {
       "name": "Default jig 1",
-      "filePath": "templates/jigs/default/default-1/template.yaml",
+      "filePath": "templates/jigs/default/default-1/templated.yaml",
       "previewImgSrc": "templates/jigs/default/default-1/preview.png",
       "templateRef": "jig-default",
       "files": [
@@ -772,7 +772,7 @@
       "name": "Expander with titles header and Arch chart component",
       "filePath": "templates/components/expander/expander-1/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-1/preview.png",
-      "datasource": "templates/components/expander/expander-1/datasource.yaml",
+      "datasource": "templates/components/expander/expander-1/datasour.yaml",
       "templateRef": "jc-expander",
       "filter": {
         "enableFor": ["jig.default"]
@@ -2106,7 +2106,19 @@
         "previewImgSrc": "widgets/4x2/widget-4/preview.png",
         "datasource": "widgets/4x2/widget-4/datasource.yaml",
         "templateRef": "jw-group",
-        "isDisabled": true
+        "isDisabled": true,
+        "files": [
+          {
+            "name": "coin-history",
+            "filePath": "widgets/4x2/widget-4/functions/coin-history.yaml",
+            "directory": "functions"
+          },
+          {
+            "name": "coin-history-etherum",
+            "filePath": "widgets/4x2/widget-4/functions/coin-history-etherum.yaml",
+            "directory": "functions"
+          }
+        ]
       },
       {
         "name": "Group (value, list)",
@@ -2260,7 +2272,7 @@
       },
       {
         "name": "List",
-        "filePath": "widgets/4x4/widget-4/template.yaml",
+        "filePath": "widgets/4x4/widget-4/templated.yaml",
         "previewImgSrc": "widgets/4x4/widget-4/preview.jpg",
         "datasource": "widgets/4x4/widget-4/datasource.yaml",
         "templateRef": "jw-list"
