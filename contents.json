@@ -2106,18 +2106,6 @@
         "previewImgSrc": "widgets/4x2/widget-4/preview.png",
         "datasource": "widgets/4x2/widget-4/datasource.yaml",
         "templateRef": "jw-group",
-        "files": [
-          {
-            "name": "coin-history",
-            "filePath": "widgets/4x2/widget-4/functions/coin-history.yaml",
-            "directory": "functions"
-          },
-          {
-            "name": "coin-history-etherum",
-            "filePath": "widgets/4x2/widget-4/functions/coin-history-etherum.yaml",
-            "directory": "functions"
-          }
-        ],
         "isDisabled": true
       },
       {
