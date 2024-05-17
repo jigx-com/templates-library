@@ -10,7 +10,7 @@ children:
       yAxis:
         isHidden: false
         max: 1200
-        min: 0
+        min: 500
         labels:
           format:
             numberStyle: currency

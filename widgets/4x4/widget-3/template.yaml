@@ -33,7 +33,7 @@ options:
           format:
             notation: compact
             numberStyle: currency
-        min: 0
+        min: 37000
         tickAmount: 7
   top:
     type: component.titles

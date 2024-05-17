@@ -27,7 +27,7 @@ options:
             notation: compact
             numberStyle: currency
         max: 1200
-        min: 0
+        min: 600
         tickAmount: 3
   top:
     type: component.trend
