@@ -22,6 +22,8 @@ options:
         currency: USD
         compactDisplay: short
         notation: compact
+    min: 20000
+    max: 60000
   xAxis:
     tickAmount: 3
     categories:

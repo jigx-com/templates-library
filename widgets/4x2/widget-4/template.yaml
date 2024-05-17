@@ -29,6 +29,7 @@ options:
                   notation: standard
                   numberStyle: currency
               tickAmount: 3
+              min: 51000
         top:
           type: component.titles
           options:
@@ -62,6 +63,7 @@ options:
                   notation: compact
                   numberStyle: currency
               tickAmount: 3
+              min: 27000
         top:
           type: component.titles
           options:
