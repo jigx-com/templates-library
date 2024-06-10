@@ -1356,7 +1356,7 @@
       "templateRef": "jc-interactive-image"
     },
     {
-      "name": "Interactive image using requiredPoints",
+      "name": "Interactive image using maximumPoints",
       "filePath": "templates/components/interactive-image/interactive-image-3/template.yaml",
       "previewImgSrc": "templates/components/interactive-image/interactive-image-3/preview.png",
       "datasource": "templates/components/interactive-image/interactive-image-3/datasource.yaml",
