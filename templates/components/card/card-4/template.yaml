@@ -1,0 +1,25 @@
+type: component.card
+options:
+  children:
+    - type: component.avatar
+      options:
+        title: =$substring(@ctx.datasources.mydata.firstName, 0,1) & $substring(@ctx.datasources.mydata.lastName, 0,1)
+        uri: =@ctx.datasources.mydata.img
+        align: center
+        size: large
+    - type: component.entity
+      options:
+        isCompact: true
+        children:
+          - type: component.entity-field
+            options:
+              label: Name
+              value: =@ctx.datasources.mydata.firstName & " " & @ctx.datasources.mydata.lastName
+          - type: component.entity-field
+            options:
+              label: Email
+              value: =@ctx.datasources.mydata.email
+          - type: component.entity-field
+            options:
+              label: Phone
+              value: =@ctx.datasources.mydata.phone

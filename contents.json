@@ -619,6 +619,32 @@
       }
     },
     {
+      "name": "Card with location and entity field",
+      "filePath": "templates/components/card/card-1/template.yaml",
+      "previewImgSrc": "templates/components/card/card-1/preview.png",
+      "templateRef": "jc-card"
+    },
+    {
+      "name": "Card with line chart",
+      "filePath": "templates/components/card/card-2/template.yaml",
+      "previewImgSrc": "templates/components/card/card-2/preview.png",
+      "datasource": "templates/components/card/card-2/datasource.yaml",
+      "templateRef": "jc-card"
+    },
+    {
+      "name": "Card with image",
+      "filePath": "templates/components/card/card-3/template.yaml",
+      "previewImgSrc": "templates/components/card/card-3/preview.png",
+      "templateRef": "jc-card"
+    },
+    {
+      "name": "Card with avatar and entity field",
+      "filePath": "templates/components/card/card-4/template.yaml",
+      "previewImgSrc": "templates/components/card/card-4/preview.png",
+      "datasource": "templates/components/card/card-4/datasource.yaml",
+      "templateRef": "jc-card"
+    },
+    {
       "name": "Image carousel",
       "filePath": "templates/components/carousel/carousel-1/template.yaml",
       "previewImgSrc": "templates/components/carousel/carousel-1/preview.png",

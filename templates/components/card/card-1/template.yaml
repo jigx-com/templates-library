@@ -1,0 +1,15 @@
+type: component.card
+options:
+  children:
+    - type: component.location
+      options:
+        address: Manhattan, NY 10036, US
+        zoomLevel: 10
+        isAnimationDisabled: false
+    - type: component.entity
+      options:
+        children:
+          - type: component.entity-field
+            options:
+              label: Address
+              value: Manhattan, NY 10036, US
