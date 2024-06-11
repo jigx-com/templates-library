@@ -1,0 +1,12 @@
+type: component.card
+options:
+  children:
+    - type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1504233529578-6d46baba6d34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8RmpvcmRzfGVufDB8fDB8fHww
+        title: Fjords, Norway
+        subtitle: 
+          text: 2024-06-02
+          format:
+            dateFormat: LL
