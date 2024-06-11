@@ -15,7 +15,7 @@ options:
     - title: Meeting room - reserved
       id: Meeting room
       color: color14
-      requiredPoints: 1
+      maximumPoints: 3
   item:
     type: component.interactive-image-item
     options:
