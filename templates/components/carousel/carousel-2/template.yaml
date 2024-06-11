@@ -1,0 +1,35 @@
+type: component.carousel
+options:
+  data: =@ctx.datasources.mydata
+  item: 
+    type: component.card
+    options:
+      children:
+        - type: component.avatar
+          options:
+            title: =$substring(@ctx.current.item.name, 0,1)
+            uri: =@ctx.current.item.image
+            size: large
+            align: center
+        - type: component.entity
+          options:
+            children:
+              - type: component.field-row
+                options:
+                  children:
+                    - type: component.entity-field
+                      options:
+                        label: Name
+                        value: =@ctx.current.item.name
+                    - type: component.entity-field
+                      options:
+                        label: Phone
+                        value: =@ctx.current.item.phone
+                        contentType: phone
+  isContained: true
+  pagination:
+    isContained: false
+    isHidden: false
+    position: inside
+  counter:
+    isHidden: false

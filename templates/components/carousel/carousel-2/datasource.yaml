@@ -1,0 +1,16 @@
+mydata: 
+  type: datasource.static
+  options:
+    data:
+      - image: https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+        name: Jane Doe
+        phone: +1 234 567 890
+      - image: https://images.unsplash.com/photo-1585807515950-bc46d934c28b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fG1hbnxlbnwwfHwwfHx8MA%3D%3D
+        name: John Smith
+        phone: +1 098 765 432
+      - image: https://images.unsplash.com/photo-1579983926774-399a9cb765c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ4fHxtYW58ZW58MHx8MHx8fDA%3D
+        name: Rick Davis
+        phone: +1 321 654 987
+      - image: https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTcwfHxtYW58ZW58MHx8MHx8fDA%3D
+        name: Mary Garcia
+        phone: +1 789 456 123
