@@ -1,0 +1,17 @@
+type: component.carousel
+options:
+  data: =@ctx.datasources.mydata
+  item: 
+    type: component.image
+    options:
+      source:
+        uri: =@ctx.current.item.image
+      title: =@ctx.current.item.title
+      subtitle: =@ctx.current.item.subtitle
+  isContained: false
+  pagination:
+    isContained: false
+    isHidden: false
+    position: outside
+  counter:
+    isHidden: true
