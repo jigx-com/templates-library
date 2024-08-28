@@ -1,0 +1,12 @@
+type: component.choice-field
+instanceId: choice
+options:
+  label: Select multiple choices
+  data: =@ctx.datasources.mydata
+  isRequired: true
+  isMultiple: true
+  item:
+    type: component.choice-field-item
+    options:
+      title: =@ctx.current.item.choice
+      value: =@ctx.current.item.choice
