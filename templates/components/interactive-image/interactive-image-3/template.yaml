@@ -9,13 +9,13 @@ options:
     - title: Selected desks
       id: Selected desks
       color: color2
+      maximumPoints: 1
     - title: Hot desk - reserved
       id: Hot desk - reserved
       color: color14
     - title: Meeting room - reserved
       id: Meeting room
       color: color14
-      maximumPoints: 3
   item:
     type: component.interactive-image-item
     options:
