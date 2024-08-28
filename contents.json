@@ -1035,21 +1035,21 @@
       "filePath": "templates/components/form/choice/choice-1/template.yaml",
       "previewImgSrc": "templates/components/form/choice/choice-1/preview.png",
       "datasource": "templates/components/form/choice/choice-1/datasource.yaml",
-      "templateRef": "jc-choice"
+      "templateRef": "jc-choice-field"
     },
     {
       "name": "Form choice multiple select",
       "filePath": "templates/components/form/choice/choice-2/template.yaml",
       "previewImgSrc": "templates/components/form/choice/choice-2/preview.png",
       "datasource": "templates/components/form/choice/choice-2/datasource.yaml",
-      "templateRef": "jc-choice"
+      "templateRef": "jc-choice-field"
     },
     {
       "name": "Form choice in row",
       "filePath": "templates/components/form/choice/choice-3/template.yaml",
       "previewImgSrc": "templates/components/form/choice/choice-3/preview.png",
       "datasource": "templates/components/form/choice/choice-3/datasource.yaml",
-      "templateRef": "jc-choice"
+      "templateRef": "jc-choice-field"
     },
     {
       "name": "Form date picker empty",
