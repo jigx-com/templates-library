@@ -1,0 +1,8 @@
+mydata: 
+  type: datasource.static
+  options:
+    data:
+      - choice: Choice 1
+      - choice: Choice 2
+      - choice: Choice 3
+      - choice: Choice 4

@@ -1,0 +1,12 @@
+type: component.choice-field
+instanceId: choice
+options:
+  label: Select from choice in row
+  data: =@ctx.datasources.mydata
+  itemsPerRow: 2
+  isRequired: true
+  item:
+    type: component.choice-field-item
+    options:
+      title: =@ctx.current.item.choice
+      value: =@ctx.current.item.choice
