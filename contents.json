@@ -1187,6 +1187,24 @@
       "templateRef": "jc-dropdown"
     },
     {
+      "name": "Form basic duration picker",
+      "filePath": "templates/components/form/duration-picker/duration-picker-1/template.yaml",
+      "previewImgSrc": "templates/components/form/duration-picker/duration-picker-1/preview.png",
+      "templateRef": "jc-duration-picker"
+    },
+    {
+      "name": "Form duration picker with hours and steps",
+      "filePath": "templates/components/form/duration-picker/duration-picker-2/template.yaml",
+      "previewImgSrc": "templates/components/form/duration-picker/duration-picker-2/preview.png",
+      "templateRef": "jc-duration-picker"
+    },
+    {
+      "name": "Form duration picker with minutes and steps",
+      "filePath": "templates/components/form/duration-picker/duration-picker-3/template.yaml",
+      "previewImgSrc": "templates/components/form/duration-picker/duration-picker-3/preview.png",
+      "templateRef": "jc-duration-picker"
+    },
+    {
       "name": "Form empty email field",
       "filePath": "templates/components/form/email-field/email-field-1/template.yaml",
       "previewImgSrc": "templates/components/form/email-field/email-field-1/preview.png",

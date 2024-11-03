@@ -1,0 +1,11 @@
+type: component.duration-picker
+instanceId: appointment-time
+options:
+  label: Select the appointment hours
+  hours:
+    isEnabled: true
+    step: 2
+  minutes:
+    isEnabled: false
+  initialValue: 7200
+  helperText: Duration-picker with hours and steps
