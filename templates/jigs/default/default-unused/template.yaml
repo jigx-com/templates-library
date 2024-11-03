@@ -52,14 +52,16 @@ children:
     instanceId: transactions-list
     options:
       filter:
-        - title: All
-          value: all
-        - title: "2020"
-          value: "2020"
-        - title: "2021"
-          value: "2021"
-        - title: "2022"
-          value: "2022"
+        initialValue: all
+        data:
+          - title: All
+            value: all
+          - title: "2020"
+            value: "2020"
+          - title: "2021"
+            value: "2021"
+          - title: "2022"
+            value: "2022"
       data: =$filter(@ctx.datasources.transactions, function($v, $a, $i) { @ctx.components.transactions-list.state.filter = 'all' or $v.year = @ctx.components.transactions-list.state.filter })
       maximumItemsToRender: 10
       item:
