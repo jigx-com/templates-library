@@ -15,12 +15,14 @@ header:
         subtitle: Period Q3 2022
 
 filter:
-  - title: All
-    value: ALL
-  - title: Won
-    value: Success
-  - title: Lost
-    value: Unsuccessful
+  initialValue: ALL
+  data:
+    - title: All
+      value: ALL
+    - title: Won
+      value: Success
+    - title: Lost
+      value: Unsuccessful
 
 
 data: =$filter($filter(@ctx.datasources.components, function($v){$contains($string($v.name),$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) }), function($v, $a, $i) { @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter })[]

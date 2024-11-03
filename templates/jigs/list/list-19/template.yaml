@@ -15,12 +15,14 @@ header:
         subtitle: List with switch and image
 
 filter:
-  - title: All
-    value: ALL
-  - title: Active
-    value: Active
-  - title: Inactive
-    value: Inactive
+  initialValue: Active
+  data:
+    - title: All
+      value: ALL
+    - title: Active
+      value: Active
+    - title: Inactive
+      value: Inactive
 
 data: =$filter($filter(@ctx.datasources.switch-list, function($v){$contains($string($v.title),$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) }), function($v, $a, $i) { @ctx.jig.state.filter = 'ALL' or $v.subtitle = @ctx.jig.state.filter })[]
 item:

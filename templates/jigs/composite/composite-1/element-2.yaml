@@ -2,12 +2,14 @@ title: Opportunities
 type: jig.list
 
 filter:
-  - title: All
-    value: ALL
-  - title: Won
-    value: Success
-  - title: Lost
-    value: Unsuccessful
+  initialValue: Success
+  data:
+    - title: All
+      value: ALL
+    - title: Won
+      value: Success
+    - title: Lost
+      value: Unsuccessful
 
 data: =$filter(@ctx.datasources.components, function($v, $i, $a) {  @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter})
 item:
