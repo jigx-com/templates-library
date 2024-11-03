@@ -1,0 +1,12 @@
+type: component.duration-picker
+instanceId: patrol-duration
+options:
+  label: Patrol time
+  hours:
+    isEnabled: false
+  minutes:
+    isEnabled: true
+    step: 10
+  helperText: Duration-picker with minutes and steps
+  isRequired: false
+  isOptionalLabelHidden: true
