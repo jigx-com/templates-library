@@ -1,0 +1,9 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - title: title
+        subtitle: subtitle
+        description: description
+        label: label
+        img: https://images.unsplash.com/photo-1547389432-95b8f3c47f3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbGFwYXBlcnxlbnwwfHwwfHx8Mg%3D%3D

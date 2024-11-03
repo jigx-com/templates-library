@@ -1,0 +1,17 @@
+# Please configure your 'data' property to use the 'mydata' datasource, eg: =@ctx.datasources.mydata
+type: component.list-item
+options:
+  isContained: true
+  title: =@ctx.current.item.taskAssignee
+  subtitle: =@ctx.current.item.taskName
+  tags:
+    - text: =@ctx.current.item.team
+      color: primary
+    - text: =@ctx.current.item.priority
+      color: warning
+    - text: =@ctx.current.item.taskStatus
+      color: color2
+  leftElement: 
+    element: avatar
+    text: =$substring(@ctx.current.item.taskAssignee, 0,1)
+    uri: =@ctx.current.item.avatar

@@ -1,0 +1,17 @@
+# Please configure your 'data' property to use the 'mydata' datasource, eg: =@ctx.datasources.mydata
+type: component.list-item
+options:
+  isContained: true
+  title: =@ctx.current.item.title
+  subtitle: =@ctx.current.item.subtitle
+  description: =@ctx.current.item.description
+  leftElement: 
+    element: image
+    text: ''
+    uri: =@ctx.current.item.img
+  label: 
+    title: =@ctx.current.item.label
+    isHidden: false
+    color:
+      - when: true
+        color: color2
