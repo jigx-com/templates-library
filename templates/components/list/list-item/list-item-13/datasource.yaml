@@ -1,0 +1,11 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - id: 2
+        productImage: https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D
+        rating: 0.75
+        ratingValue: 4
+        ratingText: (1999+)
+        subtitle: First-class display and watch processing
+        title: Smart watch

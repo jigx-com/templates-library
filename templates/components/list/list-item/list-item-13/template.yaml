@@ -1,0 +1,18 @@
+# Please configure your 'data' property to use the 'mydata' datasource, eg: =@ctx.datasources.mydata
+type: component.list-item
+options:
+  isContained: true
+  title: =@ctx.current.item.title
+  description: =@ctx.current.item.subtitle
+  leftElement:
+    element: image
+    text: ''
+    uri: =@ctx.current.item.productImage
+  rating:
+    value: =@ctx.current.item.rating
+    ratingIcon:
+      color: color3
+      current: =@ctx.current.item.ratingValue
+      icon: rating-star-1
+      maximum: 5
+    text: =@ctx.current.item.ratingText

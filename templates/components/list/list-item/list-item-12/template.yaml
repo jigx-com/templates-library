@@ -1,0 +1,12 @@
+# Please configure your 'data' property to use the 'mydata' datasource, eg: =@ctx.datasources.mydata
+type: component.list-item
+options:
+  title: =@ctx.current.item.service
+  subtitle: =@ctx.current.item.area
+  leftElement: 
+    element: image
+    text: =$substring($substringBefore(@ctx.current.item.service, " "), 1, 1) & $substring($substringAfter(@ctx.current.item.service, " ") , 1, 1)
+    uri: =@ctx.current.item.image
+  rating: 
+    value: =@ctx.current.item.rating
+    text: =@ctx.current.item.ratingText

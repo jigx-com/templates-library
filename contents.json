@@ -1631,6 +1631,41 @@
       "templateRef": "jc-list-item"
     },
     {
+      "name": "Contained in a card",
+      "filePath": "templates/components/list/list-item/list-item-11/template.yaml",
+      "previewImgSrc": "templates/components/list/list-item/list-item-11/preview.png",
+      "datasource": "templates/components/list/list-item/list-item-11/datasource.yaml",
+      "templateRef": "jc-list-item"
+    },
+    {
+      "name": "Ratings as a value",
+      "filePath": "templates/components/list/list-item/list-item-12/template.yaml",
+      "previewImgSrc": "templates/components/list/list-item/list-item-12/preview.png",
+      "datasource": "templates/components/list/list-item/list-item-12/datasource.yaml",
+      "templateRef": "jc-list-item"
+    },
+    {
+      "name": "Ratings with customized icon, color, maximum",
+      "filePath": "templates/components/list/list-item/list-item-13/template.yaml",
+      "previewImgSrc": "templates/components/list/list-item/list-item-13/preview.png",
+      "datasource": "templates/components/list/list-item/list-item-13/datasource.yaml",
+      "templateRef": "jc-list-item"
+    },
+    {
+      "name": "Multiple tags",
+      "filePath": "templates/components/list/list-item/list-item-14/template.yaml",
+      "previewImgSrc": "templates/components/list/list-item/list-item-14/preview.png",
+      "datasource": "templates/components/list/list-item/list-item-14/datasource.yaml",
+      "templateRef": "jc-list-item"
+    },
+    {
+      "name": "Rating, tags, badge",
+      "filePath": "templates/components/list/list-item/list-item-15/template.yaml",
+      "previewImgSrc": "templates/components/list/list-item/list-item-15/preview.png",
+      "datasource": "templates/components/list/list-item/list-item-15/datasource.yaml",
+      "templateRef": "jc-list-item"
+    },
+    {
       "name": "Image - Amount control - Price - Discount",
       "filePath": "templates/components/list/product-item/product-item-1/template.yaml",
       "previewImgSrc": "templates/components/list/product-item/product-item-1/preview.png",
