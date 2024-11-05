@@ -90,6 +90,8 @@ children:
     # A form is uniquely identified by its instance id.
     instanceId: contactInfo
     options:
+      # Choose whether you want to clear the state of input controls and display the discard changes modal when navigating away from the screen
+      isDiscardChangesAlertEnabled: false
       children:
         # To display two controls next to each other, they are added as children of a field-row component.
         - type: component.field-row
