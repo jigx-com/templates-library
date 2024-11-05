@@ -15,6 +15,7 @@ children:
   - type: component.form
     instanceId: new-invoice
     options:
+      isDiscardChangesAlertEnabled: false
       children:
         - type: component.text-field
           instanceId: invoice-number

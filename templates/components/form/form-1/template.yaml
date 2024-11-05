@@ -1,6 +1,7 @@
 type: component.form
 instanceId: form
 options:
+  isDiscardChangesAlertEnabled: false
   children:
     - type: component.avatar-field
       instanceId: Avatar
