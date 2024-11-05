@@ -1,0 +1,5 @@
+type: component.location
+options:
+  markersData: =@ctx.datasources.points.{"lat":lat, "lng":lng}[]
+  zoomLevel: 3
+  isAnimationDisabled: false
