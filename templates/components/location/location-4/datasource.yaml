@@ -1,0 +1,12 @@
+points:
+  type: datasource.static
+  options:
+    data:
+      - title: Power pole transformer blown
+        priority: Medium
+        lat: 42.4195094
+        lng: -93.3861992
+      - title: Power pole hit by truck
+        priority: High
+        lat: 45.5234121
+        lng: -94.2316969
