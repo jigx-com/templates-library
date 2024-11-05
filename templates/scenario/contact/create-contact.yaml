@@ -35,8 +35,6 @@ actions:
           entity: default/contacts
           # The Jigx Dynamic Data provider method to create the data.
           method: create
-          # The navigation action that is performed after the execute entity action completes.
-          goBack: previous
           # Data properties for the JSON object.
           data: 
             # The unique instanceids can be used to access the state of the control.
@@ -48,8 +46,11 @@ actions:
             email: =@ctx.components.email.state.value
           # An action that only occurs upon successful completion.
           onSuccess:
-            # You can use the title for the modal window after the action completes successfully. Or you can try some action.
-            title: Your contact was successfully created.
+            # You can use the actions for the modal window after the action completes successfully. Or you can try some title.
+            actions:
+              - type: action.go-back
+                options:
+                  title: Go Back
 
 # The controls that will be displayed on the jig are defined under the children node on a default jig.
 children:

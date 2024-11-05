@@ -92,7 +92,6 @@ item:
               provider: DATA_PROVIDER_DYNAMIC
               entity: default/contacts
               method: delete
-              goBack: stay
               data:
                 id: =@ctx.current.item.id
         - label: EDIT
