@@ -1,0 +1,28 @@
+title: List with ratings
+type: jig.list
+
+header:
+  type: component.jig-header
+  options:
+    height: medium
+    children:
+      type: component.image
+      options:
+        source:
+          uri: https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y2xlYW5pbmd8ZW58MHx8MHx8fDI%3D
+        title: List with ratings
+        subtitle: Rating as a value
+
+data: =@ctx.datasources.mydata
+item:
+  type: component.list-item
+  options:
+    title: =@ctx.current.item.service
+    subtitle: =@ctx.current.item.area
+    leftElement: 
+      element: image
+      text: =$substring($substringBefore(@ctx.current.item.service, " "), 1, 1) & $substring($substringAfter(@ctx.current.item.service, " ") , 1, 1)
+      uri: =@ctx.current.item.image
+    rating: 
+      value: =@ctx.current.item.rating
+      text: =@ctx.current.item.ratingText
