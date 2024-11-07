@@ -1,0 +1,16 @@
+type: component.list
+options:
+  data: =@ctx.datasources.mydata
+  maximumItemsToRender: 8
+  item: 
+    type: component.list-item
+    options:
+      title: =@ctx.current.item.service
+      subtitle: =@ctx.current.item.area
+      leftElement: 
+        element: image
+        text: =$substring($substringBefore(@ctx.current.item.service, " "), 1, 1) & $substring($substringAfter(@ctx.current.item.service, " ") , 1, 1)
+        uri: =@ctx.current.item.image
+      rating: 
+        value: =@ctx.current.item.rating
+        text: =@ctx.current.item.ratingText

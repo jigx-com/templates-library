@@ -1,0 +1,27 @@
+type: datasource.static
+options:
+  data:
+    - taskAssignee: Jane Doe
+      taskName: "TASK: Client Data Onboarding"
+      avatar: https://images.unsplash.com/photo-1656075067365-bf13fe1cc0e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fHdvbWFuJTIwZmFjZXxlbnwwfHwwfHx8Mg%3D%3D
+      team: TeamA
+      priority: Urgent
+      taskStatus: Not Started
+    - taskAssignee: Paul Scott
+      taskName: "TASK: Financial Statement Data Extraction"
+      avatar: https://images.unsplash.com/photo-1579038773867-044c48829161?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1hbnxlbnwwfHwwfHx8Mg%3D%3D
+      team: TeamA
+      priority: Medium
+      taskStatus: In Progress
+    - taskAssignee: Jully Smith
+      taskName: "TASK: Customer Demographics Capture"
+      avatar: https://images.unsplash.com/photo-1517677129300-07b130802f46?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTYzfHx3b21hbnxlbnwwfHwwfHx8Mg%3D%3D
+      team: TeamB
+      priority: Low
+      taskStatus: Not Started
+    - taskAssignee: Thomas Parker
+      taskName: "TASK: Tax Document Upload"
+      avatar: https://images.unsplash.com/photo-1590086782792-42dd2350140d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fG1hbnxlbnwwfHwwfHx8Mg%3D%3D
+      team: TeamC
+      priority: Medium
+      taskStatus: In Progress

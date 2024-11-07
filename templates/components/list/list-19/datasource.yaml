@@ -1,0 +1,24 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - area: Bathroom
+        image: https://images.unsplash.com/photo-1646592472335-fa6be8e9bc7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80
+        service: Bathroom Deep Clean
+        ratingText: Good
+        rating: 7
+      - area: Garden
+        image: https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
+        service: Gardening
+        ratingText: poor
+        rating: 3
+      - area: General
+        image: https://images.unsplash.com/photo-1650538250295-6ef68d7ae1f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80
+        service: Window Cleaning - External
+        ratingText: excellent
+        rating: 9
+      - area: Driveway
+        image: https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80
+        service: Car Washing
+        ratingText: Recommended
+        rating: 8

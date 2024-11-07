@@ -1,0 +1,32 @@
+mydata:
+  type: datasource.static
+  options:
+    data:
+      - service: Floor Polishing / Waxing
+        time: 90
+        rating: 5
+        hourlyrate: 40
+        area: General
+        image: https://images.unsplash.com/photo-1493953659556-556b14bdaca8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvb3IlMjBjbGVhbmluZ3xlbnwwfHwwfHx8Mg%3D%3D
+        quantity: 5
+      - service: Window Cleaning - Internal
+        time: 60
+        rating: 2
+        hourlyrate: 35
+        area: General
+        image: https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fHdpbmRvdyUyMGNsZWFuaW5nfGVufDB8fDB8fHwy
+        quantity: 1
+      - service: Cabinet Clean-up
+        time: 90
+        rating: 3
+        hourlyrate: 40
+        area: General
+        image: https://images.unsplash.com/flagged/photo-1560532886-43f59bee690d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsZWFuaW5nfGVufDB8fDB8fHwy
+        quantity: 4
+      - service: Carpet Cleaning
+        time: 120
+        rating: 4
+        hourlyrate: 50
+        area: General
+        image: https://images.unsplash.com/photo-1527515673510-8aa78ce21f9b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FycGV0JTIwY2xlYW5pbmd8ZW58MHx8MHx8fDI%3D
+        quantity: 2
