@@ -455,6 +455,71 @@
       ]
     },
     {
+      "name": "List jig 21",
+      "filePath": "templates/jigs/list/list-21/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-21/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "mydata",
+          "filePath": "templates/jigs/list/list-21/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "List jig 22",
+      "filePath": "templates/jigs/list/list-22/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-22/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "mydata",
+          "filePath": "templates/jigs/list/list-22/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "List jig 23",
+      "filePath": "templates/jigs/list/list-23/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-23/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "mydata",
+          "filePath": "templates/jigs/list/list-23/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "List jig 24",
+      "filePath": "templates/jigs/list/list-24/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-24/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "mydata",
+          "filePath": "templates/jigs/list/list-24/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "List jig 25",
+      "filePath": "templates/jigs/list/list-25/template.yaml",
+      "previewImgSrc": "templates/jigs/list/list-25/preview.png",
+      "templateRef": "jig-list",
+      "files": [
+        {
+          "name": "mydata",
+          "filePath": "templates/jigs/list/list-25/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
       "name": "Composite jig Lead overview",
       "filePath": "templates/jigs/composite/composite-1/template.yaml",
       "previewImgSrc": "templates/jigs/composite/composite-1/preview.png",
@@ -1848,6 +1913,34 @@
       "filePath": "templates/components/list/list-18/template.yaml",
       "previewImgSrc": "templates/components/list/list-18/preview.png",
       "datasource": "templates/components/list/list-18/datasource.yaml",
+      "templateRef": "jc-list"
+    },
+    {
+      "name": "Rating as a value",
+      "filePath": "templates/components/list/list-19/template.yaml",
+      "previewImgSrc": "templates/components/list/list-19/preview.png",
+      "datasource": "templates/components/list/list-19/datasource.yaml",
+      "templateRef": "jc-list"
+    },
+    {
+      "name": "Rating with custom icon, color and maximum",
+      "filePath": "templates/components/list/list-20/template.yaml",
+      "previewImgSrc": "templates/components/list/list-20/preview.png",
+      "datasource": "templates/components/list/list-20/datasource.yaml",
+      "templateRef": "jc-list"
+    },
+    {
+      "name": "Multiple tags",
+      "filePath": "templates/components/list/list-21/template.yaml",
+      "previewImgSrc": "templates/components/list/list-21/preview.png",
+      "datasource": "templates/components/list/list-21/datasource.yaml",
+      "templateRef": "jc-list"
+    },
+    {
+      "name": "Rating, multiple tags, badge",
+      "filePath": "templates/components/list/list-22/template.yaml",
+      "previewImgSrc": "templates/components/list/list-22/preview.png",
+      "datasource": "templates/components/list/list-22/datasource.yaml",
       "templateRef": "jc-list"
     },
     {
