@@ -572,6 +572,19 @@
       "templateRef": "jig-document"
     },
     {
+      "name": "Grid jig 1",
+      "filePath": "templates/jigs/grid/grid-1/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-1/preview.png",
+      "templateRef": "jig-document",
+      "files": [
+        {
+          "name": "images",
+          "filePath": "templates/jigs/grid/grid-1/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
       "name": "Avatar Large Letter",
       "filePath": "templates/components/avatar/jig-component-avatar-1.yaml",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-1.jpg",
