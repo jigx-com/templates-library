@@ -1,9 +1,10 @@
 type: component.location
 options:
   viewPoint:
+    centerPosition: middle
     latitude: 40.759412
     longitude: -73.912306
-    zoomLevel: 9
+    address: =@ctx.datasources.points
   markers:
     data: =@ctx.datasources.points
     item:
@@ -11,8 +12,12 @@ options:
       options:
         latitude: =@ctx.current.item.latitude
         longitude: =@ctx.current.item.longitude
+        radius:
+          isEnabled: true
+          value: 4
+          unit: kilometers
+          color: color4
         children:
           type: component.icon
           options:
-            icon: pin-map
-            color: negative
+            icon: end-marker

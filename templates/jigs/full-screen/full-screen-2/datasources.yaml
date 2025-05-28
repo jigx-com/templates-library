@@ -1,0 +1,12 @@
+type: datasource.static
+options:
+  data:
+    - id: 1
+      latitude: 40.769702
+      longitude: -74.038241
+    - id: 2
+      latitude: 40.759412
+      longitude: -73.912306
+    - id: 3
+      latitude: 40.803495
+      longitude: -73.950694

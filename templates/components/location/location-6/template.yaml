@@ -1,0 +1,19 @@
+type: component.location
+options:
+  viewPoint:
+    centerPosition: middle
+    address: =@ctx.datasources.sites.address
+    zoomLevel: 14
+  markers:
+    data: =@ctx.datasources.sites.address
+    item:
+      type: component.marker-item
+      options:
+        address: =@ctx.datasources.sites.address
+        children:
+          type: component.icon
+          options:
+            color: primary
+            type: contained
+            size: medium
+            icon: landmark-statue-of-liberty

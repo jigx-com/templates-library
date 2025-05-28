@@ -2,9 +2,9 @@ coordinates:
   type: datasource.static
   options:
     data:
-      - lat: 40.769702
-        lng: -74.038241
-      - lat: 40.759412
-        lng: -73.912306
-      - lat: 40.803495
-        lng: -73.950694
+      - latitude: 40.769702
+        longitude: -74.038241
+      - latitude: 40.759412
+        longitude: -73.912306
+      - latitude: 40.803495
+        longitude: -73.950694

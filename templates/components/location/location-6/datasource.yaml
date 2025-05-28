@@ -1,0 +1,10 @@
+sites:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        name: Statue of Liberty
+        latitude: 40.68942834568898
+        longitude: -74.04447894560202
+        address: New York, NY 10004, United States
+        icon: landmark-statue-of-liberty

@@ -1,5 +1,17 @@
 type: component.location
 options:
-  address:
-    "=@ctx.datasources.address.street & ',' & @ctx.datasources.address.city
-    & ',' & @ctx.datasources.address.country"
+  viewPoint:
+    address:
+      "=@ctx.datasources.address.street & ',' & @ctx.datasources.address.city
+      & ',' & @ctx.datasources.address.country"
+  markers:
+    data: =@ctx.datasources.location.address
+    item:
+      type: component.marker-item
+      options:
+        address: =@ctx.datasources.location.address
+        children:
+          type: component.icon
+          options:
+            color: negative
+            icon: pin-1-map

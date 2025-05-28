@@ -192,7 +192,27 @@
       "name": "Full screen jig 2",
       "filePath": "templates/jigs/full-screen/full-screen-2/template.yaml",
       "previewImgSrc": "templates/jigs/full-screen/full-screen-2/preview.png",
-      "templateRef": "jig-full-screen"
+      "templateRef": "jig-full-screen",
+      "files": [
+        {
+          "name": "points",
+          "filePath": "templates/jigs/full-screen/full-screen-2/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "Full screen jig 3",
+      "filePath": "templates/jigs/full-screen/full-screen-3/template.yaml",
+      "previewImgSrc": "templates/jigs/full-screen/full-screen-3/preview.png",
+      "templateRef": "jig-full-screen",
+      "files": [
+        {
+          "name": "points",
+          "filePath": "templates/jigs/full-screen/full-screen-3/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 1",
@@ -1588,6 +1608,20 @@
       "filePath": "templates/components/location/location-4/template.yaml",
       "previewImgSrc": "templates/components/location/location-4/preview.png",
       "datasource": "templates/components/location/location-4/datasource.yaml",
+      "templateRef": "jc-location"
+    },
+    {
+      "name": "Location with radius",
+      "filePath": "templates/components/location/location-5/template.yaml",
+      "previewImgSrc": "templates/components/location/location-5/preview.png",
+      "datasource": "templates/components/location/location-5/datasource.yaml",
+      "templateRef": "jc-location"
+    },
+    {
+      "name": "Location with custom marker",
+      "filePath": "templates/components/location/location-6/template.yaml",
+      "previewImgSrc": "templates/components/location/location-6/preview.png",
+      "datasource": "templates/components/location/location-6/datasource.yaml",
       "templateRef": "jc-location"
     },
     {
