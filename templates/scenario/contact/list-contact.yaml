@@ -35,12 +35,12 @@ actions:
 
 # The type of datasource used to store the created data and display it in the jig.
 datasources:
-  contactData: 
+  contactData:
     type: datasource.sqlite
     options:
       # The data provider being used. In this case, the Jigx Dynamic Data provider.
       provider: DATA_PROVIDER_DYNAMIC
-      # The name of the table that the information is being returned from. 
+      # The name of the table that the information is being returned from.
       # All Dynamic Data-based tables are defined in "default.jigx" under databases.
       entities:
         - default/contacts
@@ -66,19 +66,19 @@ item:
     title: =@ctx.current.item.companyName
     subtitle: =@ctx.current.item.firstName & ' ' & @ctx.current.item.lastName
     description: =@ctx.current.item.jobTitle
-    leftElement: 
+    leftElement:
       element: avatar
       text: =$substring(@ctx.current.item.firstName, 0, 1) & $substring(@ctx.current.item.lastName, 0, 1)
-    # The navigation action that is performed when an individual item is pressed/tapped in the list, 
+    # The navigation action that is performed when an individual item is pressed/tapped in the list,
     # in this instance to view the contact details.
-    onPress: 
+    onPress:
       type: action.go-to
       options:
         linkTo: view-contact
-        parameters:
+        inputs:
           # Inputs passed to the view-contact jig.
           # Inputs can be different formats including strings, arrays or objects.
-          # Passing arrays or objects allows you to access a wider variety of data in the inputs.  
+          # Passing arrays or objects allows you to access a wider variety of data in the inputs.
           contact: =@ctx.current.item
     # The list-item action that defines what to do when swiping left or right on the item.
     swipeable:
@@ -86,7 +86,7 @@ item:
         - label: DELETE
           icon: delete-2
           color: negative
-          onPress: 
+          onPress:
             type: action.execute-entity
             options:
               provider: DATA_PROVIDER_DYNAMIC
@@ -97,10 +97,9 @@ item:
         - label: EDIT
           icon: edit-pdf
           color: primary
-          onPress: 
+          onPress:
             type: action.go-to
             options:
               linkTo: edit-contact
-              parameters:
+              inputs:
                 contact: =@ctx.current.item
-

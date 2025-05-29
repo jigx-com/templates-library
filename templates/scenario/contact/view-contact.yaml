@@ -5,6 +5,10 @@ description: Use this jig to view contact information stored in Dynamic Data.
 # The jig type used to display data.
 type: jig.default
 
+inputs:
+  contact:
+    type: string
+
 header:
   type: component.jig-header
   options:
@@ -23,19 +27,19 @@ actions:
         options:
           title: Edit Contact
           linkTo: edit-contact
-          parameters:
+          inputs:
             # Inputs passed that will be used to filter and return the relevant record from the list of contacts.
             contact: =@ctx.jig.inputs.contact
 
 # The type of datasource used to return data in the jig
 datasources:
-  contactData: 
+  contactData:
     type: datasource.sqlite
     options:
       isDocument: true
       # The data provider being used. In this case, the Jigx Dynamic Data provider, which is a built-in database that can be queried to get data from
       provider: DATA_PROVIDER_DYNAMIC
-      # The name of the table that the information is being returned from. 
+      # The name of the table that the information is being returned from.
       # All Dynamic Data-based tables are defined in "default.jigx" under databases.
       entities:
         - default/contacts
@@ -67,7 +71,7 @@ children:
         - type: component.field-row
           options:
             children:
-            # An entity-field component is used to display information on a form
+              # An entity-field component is used to display information on a form
               - type: component.entity-field
                 options:
                   label: First Name
@@ -94,4 +98,3 @@ children:
             label: Email
             value: =@ctx.datasources.contactData.email
             contentType: email
-
