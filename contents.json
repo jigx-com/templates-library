@@ -1944,6 +1944,27 @@
       "templateRef": "jc-list"
     },
     {
+      "name": "Segmented-control with entity-field",
+      "filePath": "templates/components/segmented-control/segmented-control-1/template.yaml",
+      "previewImgSrc": "templates/components/segmented-control/segmented-control-1/preview.png",
+      "datasource": "templates/components/segmented-control/segmented-control-1/datasource.yaml",
+      "templateRef": "jc-segmented-control"
+    },
+    {
+      "name": "Segmented-control with when conditions",
+      "filePath": "templates/components/segmented-control/segmented-control-2/template.yaml",
+      "previewImgSrc": "templates/components/segmented-control/segmented-control-2/preview.png",
+      "datasource": "templates/components/segmented-control/segmented-control-2/datasource.yaml",
+      "templateRef": "jc-segmented-control"
+    },
+    {
+      "name": "Segmented-control with intitialValue",
+      "filePath": "templates/components/segmented-control/segmented-control-3/template.yaml",
+      "previewImgSrc": "templates/components/segmented-control/segmented-control-3/preview.png",
+      "datasource": "templates/components/segmented-control/segmented-control-3/datasource.yaml",
+      "templateRef": "jc-segmented-control"
+    },
+    {
       "name": "Stepper in progress",
       "filePath": "templates/components/stepper/stepper-1/template.yaml",
       "previewImgSrc": "templates/components/stepper/stepper-1/preview.png",

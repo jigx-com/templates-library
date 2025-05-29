@@ -1,0 +1,11 @@
+type: component.segmented-control
+instanceId: work
+options:
+  data: =@ctx.datasources.content
+type: component.entity
+options:
+  children:
+    - type: component.entity-field
+      options:
+        label: Task
+        value: =@ctx.components.work.state.value
