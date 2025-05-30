@@ -3,13 +3,19 @@ options:
   children:
     - type: component.location
       options:
-        address: Manhattan, NY 10036, US
-        zoomLevel: 10
-        isAnimationDisabled: false
-    - type: component.entity
-      options:
-        children:
-          - type: component.entity-field
+        viewPoint:
+          centerPosition: middle
+          address: Manhattan, NY 10036, US
+          zoomLevel: 10
+          isAnimationEnabled: false
+        markers:
+          data: ="Manhattan, NY 10036, US"
+          item:
+            type: component.marker-item
             options:
-              label: Address
-              value: Manhattan, NY 10036, US
+              address: Manhattan, NY 10036, US
+              children:
+                type: component.icon
+                options:
+                  color: negative
+                  icon: end-marker

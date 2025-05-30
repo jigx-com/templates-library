@@ -13,6 +13,7 @@ options:
       options:
         latitude: =@ctx.current.item.latitude
         longitude: =@ctx.current.item.longitude
+        zoomLevel: 9
         children:
           type: component.icon
           options:
