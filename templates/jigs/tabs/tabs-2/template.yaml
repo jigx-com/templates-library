@@ -1,0 +1,27 @@
+type: jig.tabs
+title: Initial tab set in jig
+areTabsScrollable: true
+initialTabId: timelogs
+
+children:
+  # Specify the jigs that will open in each tab.
+  - jigId: appointments
+    tab:
+      type: component.tab-button
+      options:
+        title: Today
+  - jigId: inventory
+    tab:
+      type: component.tab-button
+      options:
+        title: Stock
+  - jigId: timelogs
+    tab:
+      type: component.tab-button
+      options:
+        title: Logs
+  - jigId: manuals
+    tab:
+      type: component.tab-button
+      options:
+        title: Help

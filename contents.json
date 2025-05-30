@@ -572,6 +572,84 @@
       "templateRef": "jig-document"
     },
     {
+      "name": "Swipeable tabs",
+      "filePath": "templates/jigs/tabs/tabs-1/template.yaml",
+      "previewImgSrc": "templates/jigs/tabs/tabs-1/preview.png",
+      "templateRef": "jig-tabs",
+      "files": [
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/tabs/tabs-1/element-1.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        }
+      ]
+    },
+    {
+      "name": "Initial tab set in jig",
+      "filePath": "templates/jigs/tabs/tabs-2/template.yaml",
+      "previewImgSrc": "templates/jigs/tabs/tabs-2/preview.png",
+      "templateRef": "jig-tabs",
+      "files": [
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/tabs/tabs-2/element-1.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        },
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/tabs/tabs-2/element-2.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-list"
+        },
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/tabs/tabs-2/element-3.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-document"
+        },
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/tabs/tabs-2/element-4.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        }
+      ]
+    },
+    {
+      "name": "Tabs with icons",
+      "filePath": "templates/jigs/tabs/tabs-3/template.yaml",
+      "previewImgSrc": "templates/jigs/tabs/tabs-3/preview.png",
+      "templateRef": "jig-tabs",
+      "files": [
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/tabs/tabs-3/element-1.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        },
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/tabs/tabs-3/element-2.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-list"
+        },
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/tabs/tabs-3/element-3.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-document"
+        },
+        {
+          "name": "type-default",
+          "filePath": "templates/jigs/tabs/tabs-3/element-4.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        }
+      ]
+    },
+    {
       "name": "Avatar Large Letter",
       "filePath": "templates/components/avatar/jig-component-avatar-1.yaml",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-1.jpg",

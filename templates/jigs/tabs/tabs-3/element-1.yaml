@@ -1,0 +1,38 @@
+# Supporting jig - First tab corresponding jig
+title: Today
+description: My appointments for today
+type: jig.default
+
+datasources:
+  appointments:
+    type: datasource.static
+    options:
+      data:
+        - id: 1
+          time: 8:00am
+          customer: Jay Motors
+          address: 13 Sunnydale Road
+        - id: 2
+          time: 11:30am
+          customer: Elementary School
+          address: 1 Harold Street
+        - id: 3
+          time: 8:00am
+          customer: Becker Consulting
+          address: Suite A, Tower building, Main street
+children:
+  - type: component.form
+    instanceId: schedule-appt
+    options:
+      isDiscardChangesAlertEnabled: false
+      children:
+        - type: component.choice-field
+          instanceId: appointment
+          options:
+            label: Today
+            data: =@ctx.datasources.appointments
+            item:
+              type: component.choice-field-item
+              options:
+                title: =@ctx.current.item.customer
+                value: =@ctx.current.item.address
