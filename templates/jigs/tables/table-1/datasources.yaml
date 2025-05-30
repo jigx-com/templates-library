@@ -1,0 +1,24 @@
+roster:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        Technician: Aiden
+        Shift: day
+        Area: General
+      - id: 2
+        Technician: Jeremy
+        Shift: day
+        Area: grounds
+      - id: 3
+        Technician: Paul
+        Shift: night
+        Area: Building
+      - id: 4
+        Technician: Jonas
+        Shift: night
+        Area: Perimeter
+      - id: 5
+        Technician: Phillip
+        Shift: Weekends
+        Area: General
