@@ -1,0 +1,10 @@
+product-delivery:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        deliveryId: D001
+        Item: Concrete Blocks (1000x)
+        destination: Midtown Commercial Site
+        status: In transit
+        expectedDelivery: April 30

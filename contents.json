@@ -1077,6 +1077,36 @@
       }
     },
     {
+      "name": "Expander with plain variant and transparent divider",
+      "filePath": "templates/components/expander/expander-22/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-22/preview.png",
+      "datasource": "templates/components/expander/expander-22/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
+    },
+    {
+      "name": "Expander with emphasized variant",
+      "filePath": "templates/components/expander/expander-23/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-23/preview.png",
+      "datasource": "templates/components/expander/expander-23/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
+    },
+    {
+      "name": "Expander with plain variant and icon alignment",
+      "filePath": "templates/components/expander/expander-24/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-24/preview.png",
+      "datasource": "templates/components/expander/expander-24/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
+    },
+    {
       "name": "Form with all possible elements",
       "filePath": "templates/components/form/form-1/template.yaml",
       "previewImgSrc": "templates/components/form/form-1/preview.png",
