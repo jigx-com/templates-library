@@ -2500,6 +2500,7 @@
     "jig-list",
     "jig-calendar",
     "jig-composite",
-    "jig-document"
+    "jig-document",
+    "jig-grid"
   ]
 }
