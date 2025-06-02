@@ -575,7 +575,7 @@
       "name": "Grid jig 1",
       "filePath": "templates/jigs/grid/grid-1/template.yaml",
       "previewImgSrc": "templates/jigs/grid/grid-1/preview.png",
-      "templateRef": "jig-document",
+      "templateRef": "jig-grid",
       "files": [
         {
           "name": "images",
