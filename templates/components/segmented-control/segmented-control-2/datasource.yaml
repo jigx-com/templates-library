@@ -1,0 +1,57 @@
+team-a:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        name: Joe Grant
+        role: Stock Clerk
+        team: A
+      - id: 2
+        name: Lily Pringle
+        role: Cashier
+        team: A
+      - id: 3
+        name: Ellen Frank
+        role: Manager
+        team: A
+
+team-b:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        name: Hank Frost
+        role: Stock Clerk
+        team: B
+      - id: 2
+        name: Peter Smith
+        role: Cashier
+        team: B
+      - id: 3
+        name: Tom Henderson
+        role: Security
+        team: B
+      - id: 4
+        name: Rob Wentworth
+        role: Manager
+        team: B
+team-c:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        name: Anthony Russell
+        role: Sales Assistant
+        team: C
+      - id: 2
+        name: Bridgette Donald
+        role: Manager
+        team: C
+      - id: 3
+        name: Michael Trent
+        role: Security
+        team: C
+      - id: 4
+        name: Gillian Harpe
+        role: Cashier
+        team: C
