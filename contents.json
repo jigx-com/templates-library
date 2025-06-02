@@ -578,7 +578,7 @@
       "templateRef": "jig-tabs",
       "files": [
         {
-          "name": "type-default",
+          "name": "timecard",
           "filePath": "templates/jigs/tabs/tabs-1/element-1.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
@@ -592,25 +592,25 @@
       "templateRef": "jig-tabs",
       "files": [
         {
-          "name": "type-default",
+          "name": "appointments",
           "filePath": "templates/jigs/tabs/tabs-2/element-1.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
         },
         {
-          "name": "type-default",
+          "name": "inventory",
           "filePath": "templates/jigs/tabs/tabs-2/element-2.yaml",
           "directory": "jigs",
           "templateRef": "jig-list"
         },
         {
-          "name": "type-default",
+          "name": "manuals",
           "filePath": "templates/jigs/tabs/tabs-2/element-3.yaml",
           "directory": "jigs",
           "templateRef": "jig-document"
         },
         {
-          "name": "type-default",
+          "name": "timelogs",
           "filePath": "templates/jigs/tabs/tabs-2/element-4.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
@@ -624,25 +624,25 @@
       "templateRef": "jig-tabs",
       "files": [
         {
-          "name": "type-default",
+          "name": "appointments",
           "filePath": "templates/jigs/tabs/tabs-3/element-1.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
         },
         {
-          "name": "type-default",
+          "name": "inventory",
           "filePath": "templates/jigs/tabs/tabs-3/element-2.yaml",
           "directory": "jigs",
           "templateRef": "jig-list"
         },
         {
-          "name": "type-default",
+          "name": "manuals",
           "filePath": "templates/jigs/tabs/tabs-3/element-3.yaml",
           "directory": "jigs",
           "templateRef": "jig-document"
         },
         {
-          "name": "type-default",
+          "name": "timelogs",
           "filePath": "templates/jigs/tabs/tabs-3/element-4.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
