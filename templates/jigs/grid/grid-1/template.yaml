@@ -1,0 +1,84 @@
+type: jig.grid
+title: Gallery
+
+children:
+  - type: component.grid-item
+    options:
+      size: "1x1"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img1
+  - type: component.grid-item
+    options:
+      size: "1x1"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img2
+  - type: component.grid-item
+    options:
+      size: "1x1"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img3
+  - type: component.grid-item
+    options:
+      size: "1x1"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img4
+  - type: component.grid-item
+    options:
+      size: "2x2"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img5
+  - type: component.grid-item
+    options:
+      size: "2x2"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img6
+  - type: component.grid-item
+    options:
+      size: "2x4"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img7
+  - type: component.grid-item
+    options:
+      size: "2x4"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img8
+  - type: component.grid-item
+    options:
+      size: "4x2"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img9
+  - type: component.grid-item
+    options:
+      size: "4x4"
+      children: 
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.datasources.images.img10
