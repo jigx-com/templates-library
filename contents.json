@@ -561,26 +561,26 @@
     },
     {
       "name": "Table with sorting",
-      "filePath": "templates/jigs/tables/tables-1/template.yaml",
-      "previewImgSrc": "templates/jigs/tables/tables-1/preview.png",
+      "filePath": "templates/jigs/tables/table-1/template.yaml",
+      "previewImgSrc": "templates/jigs/tables/table-1/preview.png",
       "templateRef": "jig-table",
       "files": [
         {
           "name": "roster",
-          "filePath": "templates/jigs/tables/tables-1/datasources.yaml",
+          "filePath": "templates/jigs/tables/table-1/datasources.yaml",
           "directory": "datasources"
         }
       ]
     },
     {
       "name": "Table with columnDefinitions",
-      "filePath": "templates/jigs/tables/tables-2/template.yaml",
-      "previewImgSrc": "templates/jigs/tables/tables-2/preview.png",
+      "filePath": "templates/jigs/tables/table-2/template.yaml",
+      "previewImgSrc": "templates/jigs/tables/table-2/preview.png",
       "templateRef": "jig-table",
       "files": [
         {
           "name": "sales-summary",
-          "filePath": "templates/jigs/tables/tables-2/datasources.yaml",
+          "filePath": "templates/jigs/tables/table-2/datasources.yaml",
           "directory": "datasources"
         }
       ]
