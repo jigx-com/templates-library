@@ -1,28 +1,27 @@
-sales-summary:
-  type: datasource.static
-  options:
-    data:
-      - id: 1
-        Product: Air Filter (16x25x1)
-        TotalRevenue: 1700
-        UnitsSold: 85
-      - id: 2
-        Product: Blower Motor
-        TotalRevenue: 1900
-        UnitsSold: 95
-      - id: 3
-        Product: Condenser Coil
-        TotalRevenue: 3000
-        UnitsSold: 150
-      - id: 4
-        Product: Thermostat
-        TotalRevenue: 2400
-        UnitsSold: 120
-      - id: 5
-        Product: Refrigerant (R-410A)
-        TotalRevenue: 4000
-        UnitsSold: 200
-      - id: 6
-        Product: Evaporator Coil
-        TotalRevenue: 900
-        UnitsSold: 45
+type: datasource.static
+options:
+  data:
+    - id: 1
+      Product: Air Filter (16x25x1)
+      TotalRevenue: 1700
+      UnitsSold: 85
+    - id: 2
+      Product: Blower Motor
+      TotalRevenue: 1900
+      UnitsSold: 95
+    - id: 3
+      Product: Condenser Coil
+      TotalRevenue: 3000
+      UnitsSold: 150
+    - id: 4
+      Product: Thermostat
+      TotalRevenue: 2400
+      UnitsSold: 120
+    - id: 5
+      Product: Refrigerant (R-410A)
+      TotalRevenue: 4000
+      UnitsSold: 200
+    - id: 6
+      Product: Evaporator Coil
+      TotalRevenue: 900
+      UnitsSold: 45
