@@ -1,11 +1,15 @@
-type: component.segmented-control
-instanceId: work
+type: component.section
 options:
-  data: =@ctx.datasources.content
-type: component.entity
-options:
+  title: Segmented-control with entity field
   children:
-    - type: component.entity-field
+    - type: component.segmented-control
+      instanceId: work
       options:
-        label: Task
-        value: =@ctx.components.work.state.value
+        data: =@ctx.datasources.content
+    - type: component.entity
+      options:
+        children:
+          - type: component.entity-field
+            options:
+              label: Task
+              value: =@ctx.components.work.state.value

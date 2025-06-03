@@ -1,53 +1,57 @@
-type: component.segmented-control
-instanceId: work
+type: component.section
 options:
-  initialValue: 2
-  data:
-    - title: Appointments
-      value: 1
-    - title: Inventory
-      value: 2
-    - title: Time Log
-      value: 3
-type: component.form
-instanceId: create-appointment
-when: =@ctx.components.work.state.value = 1
-options:
-  isDiscardChangesAlertEnabled: false
+  title: Segmented-control with initialValue
   children:
-    - type: component.text-field
-      instanceId: customer
+    - type: component.segmented-control
+      instanceId: work
       options:
-        label: Customer
-    - type: component.text-field
-      instanceId: detail
+        initialValue: 2
+        data:
+          - title: Appointments
+            value: 1
+          - title: Inventory
+            value: 2
+          - title: Time Log
+            value: 3
+    - type: component.form
+      instanceId: create-appointment
+      when: =@ctx.components.work.state.value = 1
       options:
-        label: Provide job detail
-        isMultiline: true
-    - type: component.date-picker
-      instanceId: appoint-date
+        isDiscardChangesAlertEnabled: false
+        children:
+          - type: component.text-field
+            instanceId: customer
+            options:
+              label: Customer
+          - type: component.text-field
+            instanceId: detail
+            options:
+              label: Provide job detail
+              isMultiline: true
+          - type: component.date-picker
+            instanceId: appoint-date
+            options:
+              label: Date of apopintment
+    - type: component.choice-field
+      instanceId: stock-inventory
+      when: =@ctx.components.work.state.value = 2
       options:
-        label: Date of apopintment
-type: component.choice-field
-instanceId: stock-inventory
-when: =@ctx.components.work.state.value = 2
-options:
-  label: Stock
-  data: =@ctx.datasources.content
-  item:
-    type: component.choice-field-item
-    options:
-      title: =@ctx.current.item.name
-      value: =@ctx.current.item.id
-type: component.field-row
-when: =@ctx.components.work.state.value = 3
-options:
-  children:
-    - type: component.date-picker
-      instanceId: time-start
+        label: Stock
+        data: =@ctx.datasources.content
+        item:
+          type: component.choice-field-item
+          options:
+            title: =@ctx.current.item.name
+            value: =@ctx.current.item.id
+    - type: component.field-row
+      when: =@ctx.components.work.state.value = 3
       options:
-        label: Start time
-    - type: component.date-picker
-      instanceId: time-end
-      options:
-        label: End time
+        children:
+          - type: component.date-picker
+            instanceId: time-start
+            options:
+              label: Start time
+          - type: component.date-picker
+            instanceId: time-end
+            options:
+              label: End time
