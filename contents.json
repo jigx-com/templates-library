@@ -676,7 +676,7 @@
       ]
     },
     {
-      "name": "Grid jig 1",
+      "name": "Custom Grid jig",
       "filePath": "templates/jigs/grid/grid-1/template.yaml",
       "previewImgSrc": "templates/jigs/grid/grid-1/preview.png",
       "templateRef": "jig-grid",
@@ -684,6 +684,19 @@
         {
           "name": "images",
           "filePath": "templates/jigs/grid/grid-1/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "Auto Grid jig",
+      "filePath": "templates/jigs/grid/grid-2/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-2/preview.png",
+      "templateRef": "jig-grid",
+      "files": [
+        {
+          "name": "images",
+          "filePath": "templates/jigs/grid/grid-2/datasources.yaml",
           "directory": "datasources"
         }
       ]
