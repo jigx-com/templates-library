@@ -1,64 +1,64 @@
-type: component.segmented-control
-instanceId: default-segment
-options:
-  initialValue: A
-  data:
-    - title: On Duty
-      value: A
-    - title: Available
-      value: B
-    - title: Off Duty
-      value: C
-type: component.list
-when: =@ctx.components.default-segment.state.value = "A"
-options:
-  data: =@ctx.datasources.team-a
-  maximumItemsToRender: 8
-  item:
-    type: component.list-item
-    options:
-      title: =@ctx.current.item.name
-      subtitle: ="Team " & @ctx.current.item.team
-      leftElement:
-        element: avatar
-        text: =$uppercase($substring($substringBefore(@ctx.current.item.name, " "), 0, 1) & $substring($substringAfter(@ctx.current.item.name, " ") , 0, 1) )
-      rightElement:
-        element: value
-        text: =@ctx.current.item.role
-        color: color1
+- type: component.segmented-control
+  instanceId: default-segment
+  options:
+    initialValue: A
+    data:
+      - title: On Duty
+        value: A
+      - title: Available
+        value: B
+      - title: Off Duty
+        value: C
+- type: component.list
+  when: =@ctx.components.default-segment.state.value = "A"
+  options:
+    data: =@ctx.datasources.team-a
+    maximumItemsToRender: 8
+    item:
+      type: component.list-item
+      options:
+        title: =@ctx.current.item.name
+        subtitle: ="Team " & @ctx.current.item.team
+        leftElement:
+          element: avatar
+          text: =$uppercase($substring($substringBefore(@ctx.current.item.name, " "), 0, 1) & $substring($substringAfter(@ctx.current.item.name, " ") , 0, 1) )
+        rightElement:
+          element: value
+          text: =@ctx.current.item.role
+          color: color1
 
-type: component.list
-when: =@ctx.components.default-segment.state.value = "B"
-options:
-  data: =@ctx.datasources.team-b
-  maximumItemsToRender: 8
-  item:
-    type: component.list-item
-    options:
-      title: =@ctx.current.item.name
-      subtitle: ="Team " & @ctx.current.item.team
-      leftElement:
-        element: avatar
-        text: =$uppercase($substring($substringBefore(@ctx.current.item.name, " "), 0, 1) & $substring($substringAfter(@ctx.current.item.name, " ") , 0, 1) )
-      rightElement:
-        element: value
-        text: =@ctx.current.item.role
-        color: color4
+- type: component.list
+  when: =@ctx.components.default-segment.state.value = "B"
+  options:
+    data: =@ctx.datasources.team-b
+    maximumItemsToRender: 8
+    item:
+      type: component.list-item
+      options:
+        title: =@ctx.current.item.name
+        subtitle: ="Team " & @ctx.current.item.team
+        leftElement:
+          element: avatar
+          text: =$uppercase($substring($substringBefore(@ctx.current.item.name, " "), 0, 1) & $substring($substringAfter(@ctx.current.item.name, " ") , 0, 1) )
+        rightElement:
+          element: value
+          text: =@ctx.current.item.role
+          color: color4
 
-type: component.list
-when: =@ctx.components.default-segment.state.value = "C"
-options:
-  data: =@ctx.datasources.team-c
-  maximumItemsToRender: 8
-  item:
-    type: component.list-item
-    options:
-      title: =@ctx.current.item.name
-      subtitle: ="Team " & @ctx.current.item.team
-      leftElement:
-        element: avatar
-        text: =$uppercase($substring($substringBefore(@ctx.current.item.name, " "), 0, 1) & $substring($substringAfter(@ctx.current.item.name, " ") , 0, 1) )
-      rightElement:
-        element: value
-        text: =@ctx.current.item.role
-        color: color7
+- type: component.list
+  when: =@ctx.components.default-segment.state.value = "C"
+  options:
+    data: =@ctx.datasources.team-c
+    maximumItemsToRender: 8
+    item:
+      type: component.list-item
+      options:
+        title: =@ctx.current.item.name
+        subtitle: ="Team " & @ctx.current.item.team
+        leftElement:
+          element: avatar
+          text: =$uppercase($substring($substringBefore(@ctx.current.item.name, " "), 0, 1) & $substring($substringAfter(@ctx.current.item.name, " ") , 0, 1) )
+        rightElement:
+          element: value
+          text: =@ctx.current.item.role
+          color: color7
