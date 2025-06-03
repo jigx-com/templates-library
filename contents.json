@@ -680,6 +680,7 @@
       "filePath": "templates/jigs/grid/grid-1/template.yaml",
       "previewImgSrc": "templates/jigs/grid/grid-1/preview.png",
       "templateRef": "jig-grid",
+      "groups": ["Grid"],
       "files": [
         {
           "name": "images",
@@ -693,6 +694,7 @@
       "filePath": "templates/jigs/grid/grid-2/template.yaml",
       "previewImgSrc": "templates/jigs/grid/grid-2/preview.png",
       "templateRef": "jig-grid",
+      "groups": ["Grid"],
       "files": [
         {
           "name": "cleaning",
