@@ -2080,7 +2080,10 @@
       "filePath": "templates/components/segmented-control/segmented-control-1/template.yaml",
       "previewImgSrc": "templates/components/segmented-control/segmented-control-1/preview.png",
       "datasource": "templates/components/segmented-control/segmented-control-1/datasource.yaml",
-      "templateRef": "jc-segmented-control"
+      "templateRef": "jc-entity-section",
+      "filter": {
+        "enableFor": ["component.segmented-control"]
+      }
     },
     {
       "name": "Segmented-control with when conditions",
