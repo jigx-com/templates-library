@@ -695,7 +695,7 @@
       "templateRef": "jig-grid",
       "files": [
         {
-          "name": "images",
+          "name": "cleaning",
           "filePath": "templates/jigs/grid/grid-2/datasources.yaml",
           "directory": "datasources"
         }
