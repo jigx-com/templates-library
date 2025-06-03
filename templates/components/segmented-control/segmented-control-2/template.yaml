@@ -1,14 +1,14 @@
-- type: component.segmented-control
-  instanceId: default-segment
-  options:
-    initialValue: A
-    data:
-      - title: On Duty
-        value: A
-      - title: Available
-        value: B
-      - title: Off Duty
-        value: C
+type: component.segmented-control
+instanceId: default-segment
+options:
+  initialValue: A
+  data:
+    - title: On Duty
+      value: A
+    - title: Available
+      value: B
+    - title: Off Duty
+      value: C
 - type: component.list
   when: =@ctx.components.default-segment.state.value = "A"
   options:
