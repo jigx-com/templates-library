@@ -1,0 +1,77 @@
+title: Custom Grid jig (custom icons & no titles)
+type: jig.grid
+
+children:
+  - type: component.grid-item
+    options:
+      size: "4x2"
+      children:
+        type: component.image
+        options:
+          source:
+            uri: https://images.unsplash.com/photo-1556221620-3616894469d9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdW50YWluJTIwYmlraW5nfGVufDB8fDB8fHww
+
+  - type: component.grid-item
+    options:
+      size: "2x2"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: placeholder
+          icon: mountain-bike-1
+          title: ""
+
+  - type: component.grid-item
+    options:
+      size: "1x1"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: placeholder
+          icon: biking-helmet
+          title: ""
+  - type: component.grid-item
+    options:
+      size: "2x2"
+      children:
+        type: component.image
+        options:
+          source:
+            uri: https://images.unsplash.com/photo-1594942940158-af338884ac6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG1vdW50YWluJTIwYmlraW5nfGVufDB8fDB8fHww
+  - type: component.grid-item
+    options:
+      size: "1x1"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: placeholder
+          icon: bike-fixing-service-1
+          title: ""
+  - type: component.grid-item
+    options:
+      size: "1x1"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: placeholder
+          icon: e-bike-charging-1
+          title: ""
+  - type: component.grid-item
+    options:
+      size: "1x1"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: placeholder
+          icon: mountain-bike-2
+          title: ""
+
+  - type: component.grid-item
+    options:
+      size: "2x2"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: placeholder
+          icon: rocky-mountain-height-altitude-2
+          title: ""

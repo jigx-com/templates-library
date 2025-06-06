@@ -1,0 +1,65 @@
+type: component.grid
+options:
+  children:
+    - type: component.grid-item
+      options:
+        size: "2x2"
+        children:
+          type: component.image
+          options:
+            source:
+              uri: https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29uc3RydWN0aW9ufGVufDB8fDB8fHww
+    - type: component.grid-item
+      options:
+        size: "2x2"
+        children:
+          type: component.image
+          options:
+            source:
+              uri: https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNvbnN0cnVjdGlvbnxlbnwwfHwwfHx8MA%3D%3D
+            title: Welding
+    - type: component.grid-item
+      options:
+        size: 1x1
+        children:
+          type: component.jig-widget
+          options:
+            jigId: placeholder
+    - type: component.grid-item
+      options:
+        size: "1x1"
+        children:
+          type: component.jig-widget
+          options:
+            jigId: placeholder
+            icon: delivery-truck-2
+            title: " "
+    - type: component.grid-item
+      options:
+        size: "1x1"
+        children:
+          type: component.jig-widget
+          options:
+            jigId: placeholder
+            icon: time-clock-file-add
+            title: Custom icon
+    - type: component.grid-item
+      options:
+        size: "1x1"
+        children:
+          type: component.jig-widget
+          options:
+            jigId: inspection
+            icon: air-quality-check-magnifying-glass
+            title: onPress
+            onPress:
+              type: action.info-modal
+              options:
+                modal:
+                  title: Inspection checklist
+                  description: Complete the manual inspection checklist
+                  element:
+                    type: icon
+                    icon: checklist-alternate
+                    color: warning
+                  buttonText: Exit

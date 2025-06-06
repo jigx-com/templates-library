@@ -704,6 +704,36 @@
       ]
     },
     {
+      "name": "Custom Grid jig (custom icons & titles)",
+      "filePath": "templates/jigs/grid/grid-3/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-3/preview.png",
+      "templateRef": "jig-grid",
+      "groups": ["Grid"],
+      "files": [
+        {
+          "name": "placeholder",
+          "filePath": "templates/jigs/grid/grid-3/element-1.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        }
+      ]
+    },
+    {
+      "name": "Custom Grid jig (custom icons & no titles)",
+      "filePath": "templates/jigs/grid/grid-4/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-4/preview.png",
+      "templateRef": "jig-grid",
+      "groups": ["Grid"],
+      "files": [
+        {
+          "name": "placeholder",
+          "filePath": "templates/jigs/grid/grid-4/element-1.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        }
+      ]
+    },
+    {
       "name": "Avatar Large Letter",
       "filePath": "templates/components/avatar/jig-component-avatar-1.yaml",
       "previewImgSrc": "templates/components/avatar/jig-component-avatar-1.jpg",
@@ -1220,6 +1250,19 @@
       "filePath": "templates/components/form/form-2/template.yaml",
       "previewImgSrc": "templates/components/form/form-2/preview.png",
       "templateRef": "jc-form"
+    },
+    {
+      "name": "Grid-item auto",
+      "filePath": "templates/components/grid/grid-item-1/template.yaml",
+      "previewImgSrc": "templates/components/grid/grid-item-1/preview.png",
+      "datasource": "templates/components/grid/grid-item-1/datasource.yaml",
+      "templateRef": "jc-grid"
+    },
+    {
+      "name": "Grid-item custom",
+      "filePath": "templates/components/grid/grid-item-2/template.yaml",
+      "previewImgSrc": "templates/components/grid/grid-item-2/preview.png",
+      "templateRef": "jc-grid"
     },
     {
       "name": "Form avatar field",
