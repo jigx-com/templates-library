@@ -4,13 +4,10 @@ content:
     data:
       - id: 1
         title: Home
-        icon: home-5g
-        value: 35 Sunset boulevard, Hollywood
+        value: 35 Sunset Boulevard, Hollywood
       - id: 2
         title: Schedule
-        icon: scheduled-phone-call
         value: Deliver parcel
       - id: 3
         title: Timesheet
-        icon: hourglass-1-alternate
-        value: ⏱️ record time spent on the job
+        value: ⏱️ Record time spent on the job
