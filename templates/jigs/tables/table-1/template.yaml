@@ -10,18 +10,20 @@ data: |
       ($lookup($l, @ctx.jig.state.sort.columnId) > $lookup($r, @ctx.jig.state.sort.columnId)) :
       ($lookup($l, @ctx.jig.state.sort.columnId) < $lookup($r, @ctx.jig.state.sort.columnId))
   })
-# Specific the initial column to sort on, either descending or ascending.
+
+# Specify the initial column to sort on, either descending or ascending.
 sort:
   columnId: Technician
   isDescending: true
 
-# Define the appearance and behavior of all table rows.
+# Define the appearance and behavior, such as onPress, of all table rows.
 item:
   type: component.table-row
   options:
     color:
       - when: false
         color: color1
+
 # Define the appearance of all table headers.
 tableHeader:
   type: component.table-header
@@ -29,6 +31,7 @@ tableHeader:
     color:
       - when: true
         color: color14
+
 # Define the appearance of all table footers.
 tableFooter:
   type: component.table-footer

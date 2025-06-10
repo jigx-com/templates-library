@@ -45,6 +45,7 @@ columnDefinition:
               format:
                 numberStyle: currency
                 currency: USD
+
   # In the third column,
   # format the column footer to display the total number of units sold.
   UnitsSold:
@@ -55,6 +56,7 @@ columnDefinition:
           type: component.text
           options:
             value: =$sum(@ctx.datasources.sales-summary.UnitsSold)
+
 # Specify the columns for the table.
 # Configure the columns to use the definition defined for each column.
 columns:
@@ -64,6 +66,7 @@ columns:
     columnDefinitionId: TotalRevenue
   - id: UnitsSold
     columnDefinitionId: UnitsSold
+
 # Define the color of the table header.
 tableHeader:
   type: component.table-header
@@ -71,6 +74,7 @@ tableHeader:
     color:
       - when: true
         color: color6
+
 # Define the color of the table footer.
 tableFooter:
   type: component.table-footer
