@@ -1,6 +1,7 @@
 type: component.expander
 options:
   variant: plain
+  divider: solid
   header:
     expandIcon:
       align: left

@@ -17,12 +17,12 @@ options:
           - type: component.entity-field
             options:
               label: Product
-              value: =@ctx.datasources.product-delivery.Item
+              value: =@ctx.datasources.product-delivery.item
           - type: component.entity-field
             options:
               label: Destination
               value: =@ctx.datasources.product-delivery.destination
           - type: component.entity-field
             options:
-              label: Destination
+              label: Expected Delivery
               value: =@ctx.datasources.product-delivery.expectedDelivery

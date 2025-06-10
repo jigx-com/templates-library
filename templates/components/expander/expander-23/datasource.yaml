@@ -4,7 +4,7 @@ product-delivery:
     data:
       - id: 1
         deliveryId: D003
-        Item: Steel Rebar (12mm x 6m)
+        item: Steel Rebar (12mm x 6m)
         destination: Museum District Expansion
         status: Delivered
         expectedDelivery: April 16

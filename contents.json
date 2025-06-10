@@ -1097,7 +1097,7 @@
       }
     },
     {
-      "name": "Expander with plain variant and icon alignment",
+      "name": "Expander with plain variant, solid divider, and icon alignment",
       "filePath": "templates/components/expander/expander-24/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-24/preview.png",
       "datasource": "templates/components/expander/expander-24/datasource.yaml",
