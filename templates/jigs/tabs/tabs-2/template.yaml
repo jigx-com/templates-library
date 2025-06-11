@@ -5,25 +5,25 @@ initialTabId: timelogs
 
 children:
   # Specify the jigs that will open in each tab.
-  - jigId: appointments-2
+  - jigId: appointments
     instanceId: appointments
     tab:
       type: component.tab-button
       options:
         title: Today
-  - jigId: inventory-2
+  - jigId: inventory
     instanceId: inventory
     tab:
       type: component.tab-button
       options:
         title: Stock
-  - jigId: timelogs-2
+  - jigId: timelogs
     instanceId: timelogs
     tab:
       type: component.tab-button
       options:
         title: Logs
-  - jigId: manuals-2
+  - jigId: manuals
     instanceId: manuals
     tab:
       type: component.tab-button
