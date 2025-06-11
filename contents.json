@@ -637,16 +637,16 @@
           "templateRef": "jig-list"
         },
         {
-          "name": "manuals",
+          "name": "timelogs",
           "filePath": "templates/jigs/tabs/tabs-3/element-3.yaml",
           "directory": "jigs",
-          "templateRef": "jig-document"
+          "templateRef": "jig-default"
         },
         {
-          "name": "timelogs",
+          "name": "manuals",
           "filePath": "templates/jigs/tabs/tabs-3/element-4.yaml",
           "directory": "jigs",
-          "templateRef": "jig-default"
+          "templateRef": "jig-document"
         }
       ]
     },
