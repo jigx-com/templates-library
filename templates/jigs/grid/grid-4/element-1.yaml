@@ -2,7 +2,7 @@ title: Placeholder
 type: jig.default
 
 placeholders:
-  - title: jig placehlolder
+  - title: jig placeholder
 
 children:
   - type: component.entity

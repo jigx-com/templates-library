@@ -1,6 +1,6 @@
 type: component.grid
 options:
-  data: =@ctx.datasources.products-items
+  data: =@ctx.datasources.product-items
   item:
     type: component.grid-item
     options:

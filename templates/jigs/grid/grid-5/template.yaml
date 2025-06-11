@@ -1,0 +1,67 @@
+title: Grid Widgets
+type: jig.grid
+
+children:
+  - type: component.grid-item
+    options:
+      size: "2x2"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: widget-4
+          widgetId: widgetAvatar
+          title: Avatar widget
+  - type: component.grid-item
+    options:
+      size: "2x4"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: widget-4
+          widgetId: widgetList
+          title: List widget
+  - type: component.grid-item
+    options:
+      size: "2x2"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: widget-4
+          widgetId: widgetLocation
+          title: Location widget
+  - type: component.grid-item
+    options:
+      size: "4x2"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: widget-4
+          widgetId: widgetGroup
+          title: Group widget
+  - type: component.grid-item
+    options:
+      size: "2x2"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: widget-4
+          widgetId: widgetImage
+          title: Image widget
+  - type: component.grid-item
+    options:
+      size: "2x2"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: widget-4
+          widgetId: widgetChart
+          title: Chart widget
+  - type: component.grid-item
+    options:
+      size: "2x4"
+      children:
+        type: component.jig-widget
+        options:
+          jigId: widget-4
+          widgetId: widgetValue
+          title: Value widget

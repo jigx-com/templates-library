@@ -676,20 +676,6 @@
       ]
     },
     {
-      "name": "Custom Grid jig",
-      "filePath": "templates/jigs/grid/grid-1/template.yaml",
-      "previewImgSrc": "templates/jigs/grid/grid-1/preview.png",
-      "templateRef": "jig-grid",
-      "groups": ["Grid"],
-      "files": [
-        {
-          "name": "images",
-          "filePath": "templates/jigs/grid/grid-1/datasources.yaml",
-          "directory": "datasources"
-        }
-      ]
-    },
-    {
       "name": "Auto Grid jig",
       "filePath": "templates/jigs/grid/grid-2/template.yaml",
       "previewImgSrc": "templates/jigs/grid/grid-2/preview.png",
@@ -704,7 +690,36 @@
       ]
     },
     {
-      "name": "Custom Grid jig (custom icons & titles)",
+      "name": "Custom Grid jig",
+      "filePath": "templates/jigs/grid/grid-1/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-1/preview.png",
+      "templateRef": "jig-grid",
+      "groups": ["Grid"],
+      "files": [
+        {
+          "name": "images",
+          "filePath": "templates/jigs/grid/grid-1/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "Custom Grid jig (Widgets)",
+      "filePath": "templates/jigs/grid/grid-5/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-5/preview.png",
+      "templateRef": "jig-grid",
+      "groups": ["Grid"],
+      "files": [
+        {
+          "name": "Grid widgets",
+          "filePath": "templates/jigs/grid/grid-5/element-1.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        }
+      ]
+    },
+    {
+      "name": "Custom Grid jig (custom icons, titles, onPress)",
       "filePath": "templates/jigs/grid/grid-3/template.yaml",
       "previewImgSrc": "templates/jigs/grid/grid-3/preview.png",
       "templateRef": "jig-grid",
@@ -719,7 +734,7 @@
       ]
     },
     {
-      "name": "Custom Grid jig (custom icons & no titles)",
+      "name": "Custom Grid jig (custom icons, no titles)",
       "filePath": "templates/jigs/grid/grid-4/template.yaml",
       "previewImgSrc": "templates/jigs/grid/grid-4/preview.png",
       "templateRef": "jig-grid",

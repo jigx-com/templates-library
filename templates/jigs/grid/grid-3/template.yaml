@@ -1,4 +1,4 @@
-title: Custom Grid jig (custom icons & titles)
+title: My Workday
 type: jig.grid
 
 children:
@@ -17,37 +17,59 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: placeholder
+          jigId: fuel-log
           icon: fuel-pump-reload
           title: Fuel
-
+          onPress:
+            type: action.open-media-picker
+            options:
+              mediaType: image
   - type: component.grid-item
     options:
       size: "1x1"
       children:
         type: component.jig-widget
         options:
-          jigId: placeholder
+          jigId: inspection
           icon: air-quality-check-magnifying-glass
           title: Checklist
+          onPress:
+            type: action.info-modal
+            options:
+              modal:
+                title: Inspection checklist
+                description: Complete the manual inspection checklist
+                element:
+                  type: icon
+                  icon: checklist-alternate
+                  color: warning
+                buttonText: Exit
   - type: component.grid-item
     options:
       size: "2x2"
       children:
         type: component.jig-widget
         options:
-          jigId: placeholder
+          jigId: delivery-list
           icon: delivery-person-motorcycle-1
           title: Deliveries
+          onPress:
+            type: action.open-map
+            options:
+              address: 1600 Amphitheatre Parkway, Mountain View, CA 94043
   - type: component.grid-item
     options:
       size: "1x1"
       children:
         type: component.jig-widget
         options:
-          jigId: placeholder
+          jigId: time-log
           icon: time-clock-circle-alternate
           title: Job card
+          onPress:
+            type: action.open-url
+            options:
+              url: https://jigx.com/solutions/construction/
   - type: component.grid-item
     options:
       size: "1x1"
