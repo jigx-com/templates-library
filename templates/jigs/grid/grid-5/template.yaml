@@ -8,7 +8,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: widgets
+          jigId: all-widgets
           widgetId: widgetAvatar
           title: Avatar widget
   - type: component.grid-item
@@ -17,7 +17,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: widgets
+          jigId: all-widgets
           widgetId: widgetList
           title: List widget
   - type: component.grid-item
@@ -26,7 +26,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: widgets
+          jigId: all-widgets
           widgetId: widgetLocation
           title: Location widget
   - type: component.grid-item
@@ -35,7 +35,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: widgets
+          jigId: all-widgets
           widgetId: widgetGroup
           title: Group widget
   - type: component.grid-item
@@ -44,7 +44,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: widgets
+          jigId: all-widgets
           widgetId: widgetImage
           title: Image widget
   - type: component.grid-item
@@ -53,7 +53,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: widgets
+          jigId: all-widgets
           widgetId: widgetChart
           title: Chart widget
   - type: component.grid-item
@@ -62,6 +62,6 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: widgets
+          jigId: all-widgets
           widgetId: widgetValue
           title: Value widget

@@ -17,7 +17,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: fuel-log
+          jigId: placeholder
           icon: fuel-pump-reload
           title: Fuel
           onPress:
@@ -30,7 +30,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: inspection
+          jigId: placeholder
           icon: air-quality-check-magnifying-glass
           title: Checklist
           onPress:
@@ -50,7 +50,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: delivery-list
+          jigId: placeholder
           icon: delivery-person-motorcycle-1
           title: Deliveries
           onPress:
@@ -63,7 +63,7 @@ children:
       children:
         type: component.jig-widget
         options:
-          jigId: time-log
+          jigId: placeholder
           icon: time-clock-circle-alternate
           title: Job card
           onPress:
