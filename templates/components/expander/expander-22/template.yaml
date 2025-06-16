@@ -1,0 +1,22 @@
+type: component.expander
+options:
+  variant: plain
+  divider: transparent
+  header:
+    centerElement:
+      type: component.titles
+      options:
+        title: =@ctx.datasources.product-delivery.destination
+        subtitle: =@ctx.datasources.product-delivery.deliveryId
+        icon: truck-1
+        iconColor: color2
+        align: right
+  children:
+    - type: component.list-item
+      options:
+        title: =@ctx.datasources.product-delivery.Item
+        subtitle: =@ctx.datasources.product-delivery.expectedDelivery
+        isContained: true
+        rightElement:
+          element: value
+          text: =@ctx.datasources.product-delivery.status

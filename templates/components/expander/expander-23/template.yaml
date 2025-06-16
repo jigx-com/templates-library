@@ -1,0 +1,28 @@
+type: component.expander
+options:
+  variant: emphasized
+  header:
+    centerElement:
+      type: component.stage
+      options:
+        right:
+          title: =@ctx.datasources.product-delivery.deliveryId
+        left:
+          title: =@ctx.datasources.product-delivery.status
+        icon: truck-cargo
+  children:
+    - type: component.entity
+      options:
+        children:
+          - type: component.entity-field
+            options:
+              label: Product
+              value: =@ctx.datasources.product-delivery.item
+          - type: component.entity-field
+            options:
+              label: Destination
+              value: =@ctx.datasources.product-delivery.destination
+          - type: component.entity-field
+            options:
+              label: Expected Delivery
+              value: =@ctx.datasources.product-delivery.expectedDelivery

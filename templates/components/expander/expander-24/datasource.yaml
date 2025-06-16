@@ -1,0 +1,10 @@
+product-delivery:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        deliveryId: D004
+        Item: Scaffolding Set
+        destination: East Downtown Warehouse
+        status: In transit
+        expectedDelivery: April 25
