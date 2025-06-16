@@ -1,5 +1,5 @@
 type: jig.tabs
-title: Swipeable tabs
+title: Work schedule
 isSwipeable: true
 areTabsScrollable: false
 initialTabId: week1
@@ -17,7 +17,7 @@ children:
         icon: number-one-circle
     # Provide the values for the inputs to the jig to display on the jig.
     inputs:
-      Team: HVAC Team
+      team: HVAC Team
       shift: Day
       hours: 8
       color: color8
@@ -32,7 +32,7 @@ children:
         icon: number-two-circle
     # Provide the values for the inputs to the jig to display on the jig.
     inputs:
-      Team: Electrical Team
+      team: Electrical Team
       shift: Night
       hours: 12
       color: color2
@@ -47,7 +47,7 @@ children:
         icon: number-three-circle
     # Provide the values for the inputs to the jig to display on the jig.
     inputs:
-      Team: Plumbing Team
+      team: Plumbing Team
       shift: Split
       hours: 6
       color: color4

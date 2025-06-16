@@ -1,0 +1,26 @@
+type: component.expander
+options:
+  variant: plain
+  divider: solid
+  header:
+    expandIcon:
+      align: left
+    centerElement:
+      type: component.stage
+      options:
+        right:
+          title: =@ctx.datasources.product-delivery.status
+        left:
+          title: =@ctx.datasources.product-delivery.deliveryId
+        icon: truck-cargo-1
+  children:
+    - type: component.entity
+      options:
+        children:
+          - type: component.entity-field
+            options:
+              label: Delivery date
+              value: =@ctx.datasources.product-delivery.expectedDelivery
+              rightIcon: calendar-3
+              style:
+                isWarning: true

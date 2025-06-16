@@ -192,7 +192,27 @@
       "name": "Full screen jig 2",
       "filePath": "templates/jigs/full-screen/full-screen-2/template.yaml",
       "previewImgSrc": "templates/jigs/full-screen/full-screen-2/preview.png",
-      "templateRef": "jig-full-screen"
+      "templateRef": "jig-full-screen",
+      "files": [
+        {
+          "name": "points",
+          "filePath": "templates/jigs/full-screen/full-screen-2/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "Full screen jig 3",
+      "filePath": "templates/jigs/full-screen/full-screen-3/template.yaml",
+      "previewImgSrc": "templates/jigs/full-screen/full-screen-3/preview.png",
+      "templateRef": "jig-full-screen",
+      "files": [
+        {
+          "name": "points",
+          "filePath": "templates/jigs/full-screen/full-screen-3/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
     },
     {
       "name": "List jig 1",
@@ -604,7 +624,7 @@
       "templateRef": "jig-tabs",
       "files": [
         {
-          "name": "type-default",
+          "name": "timecard",
           "filePath": "templates/jigs/tabs/tabs-1/element-1.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
@@ -618,28 +638,29 @@
       "templateRef": "jig-tabs",
       "files": [
         {
-          "name": "type-default",
+          "name": "appointments",
           "filePath": "templates/jigs/tabs/tabs-2/element-1.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
         },
         {
-          "name": "type-default",
+          "name": "inventory",
           "filePath": "templates/jigs/tabs/tabs-2/element-2.yaml",
           "directory": "jigs",
           "templateRef": "jig-list"
         },
         {
-          "name": "type-default",
-          "filePath": "templates/jigs/tabs/tabs-2/element-3.yaml",
-          "directory": "jigs",
-          "templateRef": "jig-document"
-        },
-        {
-          "name": "type-default",
+          "name": "timelogs",
           "filePath": "templates/jigs/tabs/tabs-2/element-4.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
+          },
+        {
+          
+          "name": "manuals",
+          "filePath": "templates/jigs/tabs/tabs-2/element-3.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-document"
         }
       ]
     },
@@ -650,28 +671,28 @@
       "templateRef": "jig-tabs",
       "files": [
         {
-          "name": "type-default",
+          "name": "appointments",
           "filePath": "templates/jigs/tabs/tabs-3/element-1.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
         },
         {
-          "name": "type-default",
+          "name": "inventory",
           "filePath": "templates/jigs/tabs/tabs-3/element-2.yaml",
           "directory": "jigs",
           "templateRef": "jig-list"
         },
         {
-          "name": "type-default",
+          "name": "timelogs",
           "filePath": "templates/jigs/tabs/tabs-3/element-3.yaml",
           "directory": "jigs",
-          "templateRef": "jig-document"
+          "templateRef": "jig-default"
         },
         {
-          "name": "type-default",
+          "name": "manuals",
           "filePath": "templates/jigs/tabs/tabs-3/element-4.yaml",
           "directory": "jigs",
-          "templateRef": "jig-default"
+          "templateRef": "jig-document"
         }
       ]
     },
@@ -864,6 +885,7 @@
       "name": "Card with location and entity field",
       "filePath": "templates/components/card/card-1/template.yaml",
       "previewImgSrc": "templates/components/card/card-1/preview.png",
+      "datasource": "templates/components/card/card-1/datasource.yaml",
       "templateRef": "jc-card"
     },
     {
@@ -1122,6 +1144,7 @@
       "name": "Expander with titles header and Location component",
       "filePath": "templates/components/expander/expander-8/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-8/preview.png",
+      "datasource": "templates/components/card/expander-8/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
         "enableFor": ["jig.default"]
@@ -1248,6 +1271,36 @@
       "filePath": "templates/components/expander/expander-21/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-21/preview.png",
       "datasource": "templates/components/expander/expander-21/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
+    },
+    {
+      "name": "Expander with plain variant and transparent divider",
+      "filePath": "templates/components/expander/expander-22/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-22/preview.png",
+      "datasource": "templates/components/expander/expander-22/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
+    },
+    {
+      "name": "Expander with emphasized variant",
+      "filePath": "templates/components/expander/expander-23/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-23/preview.png",
+      "datasource": "templates/components/expander/expander-23/datasource.yaml",
+      "templateRef": "jc-expander",
+      "filter": {
+        "enableFor": ["jig.default"]
+      }
+    },
+    {
+      "name": "Expander with plain variant, solid divider, and icon alignment",
+      "filePath": "templates/components/expander/expander-24/template.yaml",
+      "previewImgSrc": "templates/components/expander/expander-24/preview.png",
+      "datasource": "templates/components/expander/expander-24/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
         "enableFor": ["jig.default"]
@@ -1778,6 +1831,20 @@
       "filePath": "templates/components/location/location-4/template.yaml",
       "previewImgSrc": "templates/components/location/location-4/preview.png",
       "datasource": "templates/components/location/location-4/datasource.yaml",
+      "templateRef": "jc-location"
+    },
+    {
+      "name": "Location with radius",
+      "filePath": "templates/components/location/location-5/template.yaml",
+      "previewImgSrc": "templates/components/location/location-5/preview.png",
+      "datasource": "templates/components/location/location-5/datasource.yaml",
+      "templateRef": "jc-location"
+    },
+    {
+      "name": "Location with custom marker",
+      "filePath": "templates/components/location/location-6/template.yaml",
+      "previewImgSrc": "templates/components/location/location-6/preview.png",
+      "datasource": "templates/components/location/location-6/datasource.yaml",
       "templateRef": "jc-location"
     },
     {
@@ -2700,6 +2767,7 @@
     "jig-composite",
     "jig-document",
     "jig-grid",
-    "jig-table"
+    "jig-table",
+    "jig-tabs"
   ]
 }

@@ -2,7 +2,7 @@ title: Time-tracking
 type: jig.default
 # Define the inputs required in the jig, the content is set per tab.
 inputs:
-  Team:
+  team:
     type: string
     required: true
   shift:
@@ -20,7 +20,8 @@ children:
     instanceId: rotation
     options:
       # Use the input provided in the jig.tab to display the title.
-      title: =@ctx.jig.inputs.Team
+      title: =@ctx.jig.inputs.team
+      subtitle: Required project team
       # Use the input provided in the jig.tab to display the icon color.
       color: =@ctx.jig.inputs.color
       leftElement:
@@ -32,6 +33,7 @@ children:
     options:
       # Use the input provided in the jig.tab to display the shift value.
       title: =@ctx.jig.inputs.shift
+      subtitle: This week's shift allocation
       color: =@ctx.jig.inputs.color
       leftElement:
         element: icon
@@ -42,6 +44,7 @@ children:
     options:
       # Use the input provided in the jig.tab to display the hours worked.
       title: =@ctx.jig.inputs.hours
+      subtitle: Required shift hours
       color: =@ctx.jig.inputs.color
       leftElement:
         element: icon

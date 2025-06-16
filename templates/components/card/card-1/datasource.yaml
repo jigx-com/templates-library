@@ -1,0 +1,6 @@
+location:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        address: Manhattan, NY 10036, US

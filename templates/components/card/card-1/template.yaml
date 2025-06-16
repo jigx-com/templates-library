@@ -3,13 +3,26 @@ options:
   children:
     - type: component.location
       options:
-        address: Manhattan, NY 10036, US
-        zoomLevel: 10
-        isAnimationDisabled: false
+        viewPoint:
+          centerPosition: middle
+          address: =@ctx.datasources.location.address
+          zoomLevel: 10
+          isAnimationEnabled: false
+        markers:
+          data: =@ctx.datasources.location.address
+          item:
+            type: component.marker-item
+            options:
+              address: =@ctx.datasources.location.address
+              children:
+                type: component.icon
+                options:
+                  color: negative
+                  icon: end-marker
     - type: component.entity
       options:
         children:
           - type: component.entity-field
             options:
               label: Address
-              value: Manhattan, NY 10036, US
+              value: =@ctx.datasources.location.address

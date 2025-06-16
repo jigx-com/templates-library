@@ -21,22 +21,21 @@ children:
           options:
             children:
               - type: component.text-field
-                instanceId: firstName
+                instanceId: Name
                 options:
                   label: Name
-              - type: component.text-field
-                instanceId: lastName
+                  value: =@ctx.user.displayName
+              - type: component.email-field
+                instanceId: email
                 options:
-                  label: Last Name
-        - type: component.email-field
-          instanceId: email
-          options:
-            label: Email
+                  label: Email
+                  value: =@ctx.user.email
         - type: component.text-field
           instanceId: contact
           options:
             textContentType: telephoneNumber
             label: Contact number
+            value: =@ctx.user.phone
         - type: component.field-row
           options:
             children:

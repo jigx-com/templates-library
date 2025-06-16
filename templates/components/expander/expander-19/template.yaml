@@ -13,5 +13,18 @@ options:
   children:
     - type: component.location
       options:
-        address: Goat Island, Niagara Falls, NY 14303
+        viewPoint:
+          centerPosition: middle
+          address: Goat Island, Niagara Falls, NY 14303
+        markers:
+          data: ="Goat Island, Niagara Falls, NY 14303"
+          item:
+            type: component.marker-item
+            options:
+              address: Goat Island, Niagara Falls, NY 14303
+              children:
+                type: component.icon
+                options:
+                  color: negative
+                  icon: pin-map
   isInitiallyCollapsed: false
