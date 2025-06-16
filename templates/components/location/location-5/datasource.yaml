@@ -1,0 +1,6 @@
+points:
+  type: datasource.static
+  options:
+    data:
+      - latitude: 40.759412
+        longitude: -73.912306

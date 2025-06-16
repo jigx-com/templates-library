@@ -1,4 +1,4 @@
-title: Full screen location
+title: Location fullscreen
 type: jig.full-screen
 
 component:
@@ -9,9 +9,9 @@ component:
       centerPosition: middle
       latitude: 40.759412
       longitude: -73.912306
-      isAnimationEnabled: false
-      zoomLevel: 9
-    # Add icon markers for the addresses.
+      address: =@ctx.datasources.points
+      zoomLevel: 11
+    # Add the marker point that the radius will use as the center point.
     markers:
       data: =@ctx.datasources.points
       item:
@@ -19,10 +19,14 @@ component:
         options:
           latitude: =@ctx.current.item.latitude
           longitude: =@ctx.current.item.longitude
+          # Specify the radius units, size (value) and color.
+          radius:
+            isEnabled: true
+            # The value determines the radius circle, e.g. 4km.
+            value: 4
+            unit: kilometers
+            color: color4
           children:
             type: component.icon
             options:
               icon: end-marker
-    # Paths defined in a datasource in latitude and longitude.
-    paths:
-      data: =@ctx.datasources.points

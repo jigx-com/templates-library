@@ -1,5 +1,18 @@
 type: component.location
 options:
-  markersData: =@ctx.datasources.points.{"lat":lat, "lng":lng}[]
-  zoomLevel: 3
-  isAnimationDisabled: false
+  viewPoint:
+    centerPosition: middle
+    zoomLevel: 3
+    latitude: =@ctx.datasources.points[0].lat
+    longitude: =@ctx.datasources.points[0].lng
+  markers:
+    data: =@ctx.datasources.points
+    item:
+      type: component.marker-item
+      options:
+        latitude: =@ctx.current.item.lat
+        longitude: =@ctx.current.item.lng
+        children:
+          type: component.icon
+          options:
+            icon: end-marker

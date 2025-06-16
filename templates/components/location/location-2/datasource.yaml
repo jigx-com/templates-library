@@ -2,7 +2,9 @@ points:
   type: datasource.static
   options:
     data:
-      - lat: 40.759412
-        lng: -73.912306
-      - lat: 40.745368
-        lng: -74.057189
+      - latitude: 40.759412
+        longitude: -73.912306
+      - latitude: 40.745368
+        longitude: -74.057189
+      - latitude: 40.803495
+        longitude: -73.950694

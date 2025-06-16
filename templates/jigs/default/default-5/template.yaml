@@ -67,4 +67,6 @@ children:
                   value: =@ctx.datasources.company.street
   - type: component.location
     options:
-      address: =@ctx.datasources.company.city & ', ' & @ctx.datasources.company.street
+      viewPoint:
+        centerPosition: middle
+        address: =@ctx.datasources.company.city & ', ' & @ctx.datasources.company.street
