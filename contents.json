@@ -707,6 +707,7 @@
       "name": "Card with location and entity field",
       "filePath": "templates/components/card/card-1/template.yaml",
       "previewImgSrc": "templates/components/card/card-1/preview.png",
+      "datasource": "templates/components/card/card-1/datasource.yaml",
       "templateRef": "jc-card"
     },
     {
@@ -965,6 +966,7 @@
       "name": "Expander with titles header and Location component",
       "filePath": "templates/components/expander/expander-8/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-8/preview.png",
+      "datasource": "templates/components/card/expander-8/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
         "enableFor": ["jig.default"]

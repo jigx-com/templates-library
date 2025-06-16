@@ -1,9 +1,9 @@
 type: component.location
 options:
   viewPoint:
-    address:
-      "=@ctx.datasources.address.street & ',' & @ctx.datasources.address.city
-      & ',' & @ctx.datasources.address.country"
+    address: |
+      =@ctx.datasources.address.street & ',' & @ctx.datasources.address.city
+      & ',' & @ctx.datasources.address.country
   markers:
     data: =@ctx.datasources.location.address
     item:
