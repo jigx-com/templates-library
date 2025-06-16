@@ -580,6 +580,32 @@
       ]
     },
     {
+      "name": "Table with sorting",
+      "filePath": "templates/jigs/tables/table-1/template.yaml",
+      "previewImgSrc": "templates/jigs/tables/table-1/preview.png",
+      "templateRef": "jig-table",
+      "files": [
+        {
+          "name": "roster",
+          "filePath": "templates/jigs/tables/table-1/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "Table with columnDefinitions",
+      "filePath": "templates/jigs/tables/table-2/template.yaml",
+      "previewImgSrc": "templates/jigs/tables/table-2/preview.png",
+      "templateRef": "jig-table",
+      "files": [
+        {
+          "name": "sales-summary",
+          "filePath": "templates/jigs/tables/table-2/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
       "name": "Document jig 1",
       "filePath": "templates/jigs/document/document-1/template.yaml",
       "previewImgSrc": "templates/jigs/document/document-1/preview.jpeg",
@@ -667,6 +693,79 @@
           "filePath": "templates/jigs/tabs/tabs-3/element-4.yaml",
           "directory": "jigs",
           "templateRef": "jig-document"
+        }
+      ]
+    },
+    {
+      "name": "Auto Grid jig",
+      "filePath": "templates/jigs/grid/grid-2/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-2/preview.png",
+      "templateRef": "jig-grid",
+      "groups": ["Grid"],
+      "files": [
+        {
+          "name": "cleaning",
+          "filePath": "templates/jigs/grid/grid-2/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "Custom Grid jig",
+      "filePath": "templates/jigs/grid/grid-1/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-1/preview.png",
+      "templateRef": "jig-grid",
+      "groups": ["Grid"],
+      "files": [
+        {
+          "name": "images",
+          "filePath": "templates/jigs/grid/grid-1/datasources.yaml",
+          "directory": "datasources"
+        }
+      ]
+    },
+    {
+      "name": "Custom Grid jig (Widgets)",
+      "filePath": "templates/jigs/grid/grid-5/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-5/preview.png",
+      "templateRef": "jig-grid",
+      "groups": ["Grid"],
+      "files": [
+        {
+          "name": "all-widgets",
+          "filePath": "templates/jigs/grid/grid-5/element-1.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        }
+      ]
+    },
+    {
+      "name": "Custom Grid jig (custom icons, titles, onPress)",
+      "filePath": "templates/jigs/grid/grid-3/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-3/preview.png",
+      "templateRef": "jig-grid",
+      "groups": ["Grid"],
+      "files": [
+        {
+          "name": "placeholder",
+          "filePath": "templates/jigs/grid/grid-3/element-1.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
+        }
+      ]
+    },
+    {
+      "name": "Custom Grid jig (custom icons, no titles)",
+      "filePath": "templates/jigs/grid/grid-4/template.yaml",
+      "previewImgSrc": "templates/jigs/grid/grid-4/preview.png",
+      "templateRef": "jig-grid",
+      "groups": ["Grid"],
+      "files": [
+        {
+          "name": "placeholder",
+          "filePath": "templates/jigs/grid/grid-4/element-1.yaml",
+          "directory": "jigs",
+          "templateRef": "jig-default"
         }
       ]
     },
@@ -1219,6 +1318,19 @@
       "filePath": "templates/components/form/form-2/template.yaml",
       "previewImgSrc": "templates/components/form/form-2/preview.png",
       "templateRef": "jc-form"
+    },
+    {
+      "name": "Grid-item auto",
+      "filePath": "templates/components/grid/grid-item-1/template.yaml",
+      "previewImgSrc": "templates/components/grid/grid-item-1/preview.png",
+      "datasource": "templates/components/grid/grid-item-1/datasource.yaml",
+      "templateRef": "jc-grid"
+    },
+    {
+      "name": "Grid-item custom",
+      "filePath": "templates/components/grid/grid-item-2/template.yaml",
+      "previewImgSrc": "templates/components/grid/grid-item-2/preview.png",
+      "templateRef": "jc-grid"
     },
     {
       "name": "Form avatar field",
@@ -2089,6 +2201,27 @@
       "templateRef": "jc-list"
     },
     {
+      "name": "Segmented-control with entity-field",
+      "filePath": "templates/components/segmented-control/segmented-control-1/template.yaml",
+      "previewImgSrc": "templates/components/segmented-control/segmented-control-1/preview.png",
+      "datasource": "templates/components/segmented-control/segmented-control-1/datasource.yaml",
+      "templateRef": "jc-segmented-control"
+    },
+    {
+      "name": "Segmented-control with when conditions",
+      "filePath": "templates/components/segmented-control/segmented-control-2/template.yaml",
+      "previewImgSrc": "templates/components/segmented-control/segmented-control-2/preview.png",
+      "datasource": "templates/components/segmented-control/segmented-control-2/datasource.yaml",
+      "templateRef": "jc-segmented-control"
+    },
+    {
+      "name": "Segmented-control with intitialValue",
+      "filePath": "templates/components/segmented-control/segmented-control-3/template.yaml",
+      "previewImgSrc": "templates/components/segmented-control/segmented-control-3/preview.png",
+      "datasource": "templates/components/segmented-control/segmented-control-3/datasource.yaml",
+      "templateRef": "jc-segmented-control"
+    },
+    {
       "name": "Stepper in progress",
       "filePath": "templates/components/stepper/stepper-1/template.yaml",
       "previewImgSrc": "templates/components/stepper/stepper-1/preview.png",
@@ -2633,6 +2766,8 @@
     "jig-calendar",
     "jig-composite",
     "jig-document",
+    "jig-grid",
+    "jig-table",
     "jig-tabs"
   ]
 }

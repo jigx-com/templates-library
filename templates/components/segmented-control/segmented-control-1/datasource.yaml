@@ -1,0 +1,13 @@
+content:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        title: Home
+        value: 35 Sunset Boulevard, Hollywood
+      - id: 2
+        title: Schedule
+        value: Deliver parcel
+      - id: 3
+        title: Timesheet
+        value: ⏱️ Record time spent on the job

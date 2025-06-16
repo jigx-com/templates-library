@@ -1,0 +1,13 @@
+content:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        name: Electrical wire
+        icon: light-bulb
+      - id: 2
+        name: Bricks
+        icon: material-brick
+      - id: 3
+        name: Steel pipe
+        icon: steel-1

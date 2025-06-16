@@ -1,0 +1,48 @@
+title: Table with sorting
+type: jig.table
+# Specify that the table can be sorted.
+isSortable: true
+
+# Configure how the data can be sorted.
+data: |
+  =$sort(@ctx.datasources.roster, function($l, $r) {
+    @ctx.jig.state.sort.isDescending ?
+      ($lookup($l, @ctx.jig.state.sort.columnId) > $lookup($r, @ctx.jig.state.sort.columnId)) :
+      ($lookup($l, @ctx.jig.state.sort.columnId) < $lookup($r, @ctx.jig.state.sort.columnId))
+  })
+
+# Specify the initial column to sort on, either descending or ascending.
+sort:
+  columnId: Technician
+  isDescending: true
+
+# Define the appearance and behavior, such as onPress, of all table rows.
+item:
+  type: component.table-row
+  options:
+    color:
+      - when: false
+        color: color1
+
+# Define the appearance of all table headers.
+tableHeader:
+  type: component.table-header
+  options:
+    color:
+      - when: true
+        color: color14
+
+# Define the appearance of all table footers.
+tableFooter:
+  type: component.table-footer
+  options:
+    color:
+      - when: true
+        color: color14
+
+# Specify the required table columns.
+# The column names must match the datasource column names.
+columns:
+  - id: Technician
+  - id: Shift
+  - id: Area

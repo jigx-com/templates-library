@@ -1,0 +1,16 @@
+title: Cleaning services
+description: Available services in your area.
+# Use the grid jig type to create a gallery of images and titles.
+type: jig.grid
+# Define the datasource used to list the images and services.
+data: =@ctx.datasources.cleaning
+item:
+  type: component.grid-item
+  options:
+    size: "2x2"
+    children:
+      type: component.image
+      options:
+        title: =@ctx.current.item.area
+        source:
+          uri: =@ctx.current.item.image

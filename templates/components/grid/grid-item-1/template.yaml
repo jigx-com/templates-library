@@ -1,0 +1,14 @@
+type: component.grid
+options:
+  data: =@ctx.datasources.product-items
+  item:
+    type: component.grid-item
+    options:
+      size: 2x2
+      children:
+        type: component.image
+        options:
+          source:
+            uri: =@ctx.current.item.image
+          title: =@ctx.current.item.name
+          subtitle: =@ctx.current.item.price

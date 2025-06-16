@@ -1,0 +1,84 @@
+title: Table with columnDefinitions
+type: jig.table
+
+# Reference the defined datasource to use in the table.
+data: =@ctx.datasources.sales-summary
+
+# Component.table-row is required for data to display in the rows.
+item:
+  type: component.table-row
+
+# Define the specific layout for each column,
+# using the column id as the identifer.
+columnDefinition:
+  # Configure the first column's width,
+  # ensuring that all text is visible in the column.
+  Product:
+    width: regular
+  # In the second column,
+  # configure the width, which maximizes table layout,
+  # by using just the required space.
+  # Configure the cells to display the currency in each cell of the column.
+  # Format the column footer to display the total revenue,
+  # using an expression to add up the values in the column.
+  TotalRevenue:
+    width: small
+    cell:
+      type: component.table-cell
+      options:
+        children:
+          type: component.text
+          options:
+            value:
+              text: =@ctx.current.item.TotalRevenue
+              format:
+                numberStyle: currency
+                currency: USD
+    footer:
+      type: component.table-footer-cell
+      options:
+        children:
+          type: component.text
+          options:
+            value:
+              text: =$sum(@ctx.datasources.sales-summary.TotalRevenue)
+              format:
+                numberStyle: currency
+                currency: USD
+
+  # In the third column,
+  # format the column footer to display the total number of units sold.
+  UnitsSold:
+    footer:
+      type: component.table-footer-cell
+      options:
+        children:
+          type: component.text
+          options:
+            value: =$sum(@ctx.datasources.sales-summary.UnitsSold)
+
+# Specify the columns for the table.
+# Configure the columns to use the definition defined for each column.
+columns:
+  - id: Product
+    columnDefinitionId: Product
+  - id: TotalRevenue
+    columnDefinitionId: TotalRevenue
+  - id: UnitsSold
+    columnDefinitionId: UnitsSold
+
+# Define the color of the table header.
+tableHeader:
+  type: component.table-header
+  options:
+    color:
+      - when: true
+        color: color6
+
+# Define the color of the table footer.
+tableFooter:
+  type: component.table-footer
+  options:
+    color:
+      - when: true
+        color: color6

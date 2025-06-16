@@ -1,0 +1,262 @@
+title: all-widgets
+type: jig.default
+
+datasources:
+  series1:
+    type: datasource.static
+    options:
+      data:
+        - x: 1-7
+          y: 1000
+        - x: " "
+          y: 1120
+        - x: 15-21
+          y: 1101.3
+        - x: " "
+          y: 1079.8
+        - x: 29-31
+          y: 652.5
+  components:
+    type: datasource.static
+    options:
+      data:
+        - avatar-text: B
+          label-color: color4
+          name: Belantti
+          progress: 0.54
+          subtitle: APAC
+        - avatar-text: TT
+          label-color: color7
+          name: Ten Tulip
+          progress: 0.6
+          subtitle: APAC
+        - avatar-text: GS
+          label-color: color8
+          name: Giga Stride
+          progress: 0.21
+          subtitle: North America
+        - avatar-text: O
+          label-color: color9
+          name: Ovuga
+          progress: 0.45
+          subtitle: EMEA
+        - avatar-text: B
+          label-color: color10
+          name: Boostgo
+          progress: 0.8
+          subtitle: North America
+        - avatar-text: SA
+          label-color: color13
+          name: Sonic Automotive
+          progress: 0.22
+          subtitle: EMEA
+        - avatar-text: FL
+          label-color: color11
+          name: Foot Locker
+          progress: 0.47
+          subtitle: North America
+        - avatar-text: MM
+          label-color: color5
+          name: Mega Mile
+          progress: 0.78
+          subtitle: EMEA
+        - avatar-text: E
+          label-color: color3
+          name: Ellesti
+          progress: 1
+          subtitle: LATAM
+
+  missions:
+    type: datasource.static
+    options:
+      data:
+        - mission-name: RT45678
+          mission-priority: Priority 1
+          mission-progress: 0.72
+          mission-status: Active
+        - mission-name: RT56990
+          mission-priority: Priority 1
+          mission-progress: 0
+          mission-status: Waiting
+        - mission-name: RT45887
+          mission-priority: Priority 2
+          mission-progress: 0
+          mission-status: Waiting
+  landmarks:
+    type: datasource.static
+    options:
+      data:
+        - name: NY Museum
+          address: 131 W 55th St, New York
+          icon: end-marker
+children:
+  - type: component.entity
+    options:
+      children:
+        - type: component.entity-field
+          options:
+            label: Grid widgets
+            value: widgets
+widgets:
+  widgetChart:
+    type: widget.chart
+    options:
+      chart:
+        type: component.line-chart
+        options:
+          legend:
+            isHidden: false
+          plotOptions:
+            series:
+              marker:
+                isHidden: true
+          series:
+            - data: =@ctx.datasources.series1
+              dataLabels:
+                - isEnabled: true
+              layout: area-gradient
+          xAxis:
+            categories: =@ctx.datasources.series1.x
+            min: 0
+          yAxis:
+            isFirstLabelHidden: true
+            isFirstTickHidden: true
+            isHidden: false
+            labels:
+              format:
+                compactDisplay: short
+                notation: compact
+                numberStyle: currency
+            max: 1200
+            min: 600
+            tickAmount: 3
+      top:
+        type: component.trend
+        options:
+          title: $848.5
+          subtitle: Budget $1.000
+          style:
+            isValueBottom: false
+            isValueHidden: true
+  widgetList:
+    type: widget.list
+    options:
+      data: =@ctx.datasources.components
+      item:
+        type: component.list-item
+        options:
+          title: =@ctx.current.item.name
+          subtitle: =@ctx.current.item.subtitle
+          color:
+            - color: =@ctx.current.item.label-color
+              when: true
+          leftElement:
+            element: avatar
+            text: =@ctx.current.item.avatar-text
+          progress: =@ctx.current.item.progress
+
+  widgetValue:
+    type: widget.value
+    options:
+      align: center
+      bottom:
+        type: component.titles
+        options:
+          title: Jane Stevens
+          subtitle: +420 665 778 998
+          align: center
+          icon: phone
+          iconColor: color4
+      format:
+        dateFormat: HH:mm
+        unit: Meeting time
+      top:
+        type: component.titles
+        options:
+          title:
+            format:
+              dateFormat: l
+            text: 2022-10-27T14:41:13+0100
+          subtitle:
+            text: 60 Minutes
+          align: center
+          icon: calendar
+          iconColor: color9
+      value: 2022-10-27T14:00:14+0100
+
+  widgetLocation:
+    type: widget.location
+    options:
+      viewPoint:
+        centerPosition: middle
+        address: =@ctx.datasources.landmarks.address
+        zoomLevel: 9
+      top:
+        type: component.titles
+        options:
+          title: =@ctx.datasources.landmarks.name
+          icon: museum-art
+          style:
+            isWarning: true
+
+  widgetGroup:
+    type: widget.group
+    options:
+      children:
+        - type: widget.value
+          options:
+            align: right
+            bottom:
+              type: component.titles
+              options:
+                title: RT45678
+                subtitle: Active Mission
+                align: left
+            format:
+              unit: Missions
+            top:
+              type: component.titles
+              options:
+                title: Monday's Shift
+                subtitle: "Your Missions:"
+                align: left
+                icon: ambulance-helicopter
+            value: 5
+        - type: widget.list
+          options:
+            data: =@ctx.datasources.missions
+            item:
+              type: component.list-item
+              options:
+                title: =@ctx.current.item.mission-name
+                subtitle: =@ctx.current.item.mission-priority
+                label:
+                  color:
+                    - color: color2
+                      when: true
+                  isHidden: =(@ctx.current.item.mission-status = 'Active' ? false :true)
+                  title: =@ctx.current.item.mission-status
+                progress: =@ctx.current.item.mission-progress
+  widgetImage:
+    type: widget.image
+    options:
+      bottom:
+        type: component.titles
+        options:
+          title: Big Ben
+          subtitle: London, UK
+          icon: pin
+      isContentOverlaid: true
+      source:
+        uri: https://plus.unsplash.com/premium_photo-1661963258031-211e16a9426a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGxvbmRvbnxlbnwwfHwwfHx8MA%3D%3D
+  widgetAvatar:
+    type: widget.avatar
+    options:
+      bottom:
+        type: component.titles
+        options:
+          title: Lance Stevens
+          subtitle: React Web Developer
+          align: center
+      text: LS
+      uri: https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D

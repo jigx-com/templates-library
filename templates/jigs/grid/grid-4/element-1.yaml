@@ -1,0 +1,14 @@
+title: Placeholder
+type: jig.default
+
+placeholders:
+  - title: jig placeholder
+
+children:
+  - type: component.entity
+    options:
+      children:
+        - type: component.entity-field
+          options:
+            label: Placeholder
+            value: Placeholder
