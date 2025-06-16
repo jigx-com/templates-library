@@ -1144,7 +1144,7 @@
       "name": "Expander with titles header and Location component",
       "filePath": "templates/components/expander/expander-8/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-8/preview.png",
-      "datasource": "templates/components/card/expander-8/datasource.yaml",
+      "datasource": "templates/components/expander/expander-8/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
         "enableFor": ["jig.default"]
