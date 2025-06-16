@@ -1,0 +1,30 @@
+# Supporting jig - Second tab's corresponding jig
+title: Inventory
+description: Select the parts required for the job
+type: jig.list
+
+datasources:
+  inventory:
+    type: datasource.static
+    options:
+      data:
+        - id: 1
+          item: Compressor
+        - id: 2
+          item: Condenser Coil
+        - id: 3
+          item: Refrigerant
+        - id: 4
+          item: Expansion Valve
+        - id: 5
+          item: Fan Motor
+
+data: =@ctx.datasources.inventory
+item:
+  type: component.list-item
+  options:
+    leftElement:
+      element: icon
+      icon: tool-organizer-1
+      isDuotone: true
+    title: =@ctx.current.item.item
