@@ -1,5 +1,5 @@
-type: jig.tabs
 title: My work dashboard
+type: jig.tabs
 areTabsScrollable: false
 
 # Specify the jigs that will open in each tab.

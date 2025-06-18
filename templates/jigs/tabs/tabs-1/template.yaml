@@ -1,5 +1,5 @@
-type: jig.tabs
 title: Work schedule
+type: jig.tabs
 isSwipeable: true
 areTabsScrollable: false
 initialTabId: week1

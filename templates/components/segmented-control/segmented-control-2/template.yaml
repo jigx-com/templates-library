@@ -5,18 +5,17 @@ options:
     - type: component.segmented-control
       instanceId: default-segment
       options:
-        initialValue: A
+        initialValue: onDuty
         data:
           - title: On Duty
-            value: A
+            value: onDuty
           - title: Available
-            value: B
+            value: available
           - title: Off Duty
-            value: C
+            value: offDuty
     - type: component.list
-      when: =@ctx.components.default-segment.state.value = "A"
       options:
-        data: =@ctx.datasources.team-a
+        data: =@ctx.datasources.team-members[status = @ctx.components.default-segment.state.value]
         maximumItemsToRender: 8
         item:
           type: component.list-item
@@ -29,40 +28,10 @@ options:
             rightElement:
               element: value
               text: =@ctx.current.item.role
-              color: color1
-
-    - type: component.list
-      when: =@ctx.components.default-segment.state.value = "B"
-      options:
-        data: =@ctx.datasources.team-b
-        maximumItemsToRender: 8
-        item:
-          type: component.list-item
-          options:
-            title: =@ctx.current.item.name
-            subtitle: ="Team " & @ctx.current.item.team
-            leftElement:
-              element: avatar
-              text: =$uppercase($substring($substringBefore(@ctx.current.item.name, " "), 0, 1) & $substring($substringAfter(@ctx.current.item.name, " ") , 0, 1) )
-            rightElement:
-              element: value
-              text: =@ctx.current.item.role
-              color: color4
-
-    - type: component.list
-      when: =@ctx.components.default-segment.state.value = "C"
-      options:
-        data: =@ctx.datasources.team-c
-        maximumItemsToRender: 8
-        item:
-          type: component.list-item
-          options:
-            title: =@ctx.current.item.name
-            subtitle: ="Team " & @ctx.current.item.team
-            leftElement:
-              element: avatar
-              text: =$uppercase($substring($substringBefore(@ctx.current.item.name, " "), 0, 1) & $substring($substringAfter(@ctx.current.item.name, " ") , 0, 1) )
-            rightElement:
-              element: value
-              text: =@ctx.current.item.role
-              color: color7
+              color:
+                - when: =@ctx.current.item.status = 'onDuty'
+                  color: color1
+                - when: =@ctx.current.item.status = 'available'
+                  color: color4
+                - when: =@ctx.current.item.status = 'offDuty'
+                  color: color7

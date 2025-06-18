@@ -651,14 +651,14 @@
         },
         {
           "name": "timelogs",
-          "filePath": "templates/jigs/tabs/tabs-2/element-4.yaml",
+          "filePath": "templates/jigs/tabs/tabs-2/element-3.yaml",
           "directory": "jigs",
           "templateRef": "jig-default"
           },
         {
           
           "name": "manuals",
-          "filePath": "templates/jigs/tabs/tabs-2/element-3.yaml",
+          "filePath": "templates/jigs/tabs/tabs-2/element-4.yaml",
           "directory": "jigs",
           "templateRef": "jig-document"
         }
@@ -1251,6 +1251,7 @@
       "name": "Expander with stage header and Location component",
       "filePath": "templates/components/expander/expander-19/template.yaml",
       "previewImgSrc": "templates/components/expander/expander-19/preview.png",
+      "datasource": "templates/components/expander/expander-19/datasource.yaml",
       "templateRef": "jc-expander",
       "filter": {
         "enableFor": ["jig.default"]

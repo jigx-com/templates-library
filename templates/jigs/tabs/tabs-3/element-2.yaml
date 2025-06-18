@@ -23,8 +23,8 @@ data: =@ctx.datasources.inventory
 item:
   type: component.list-item
   options:
+    title: =@ctx.current.item.item
     leftElement:
       element: icon
       icon: tool-organizer-1
       isDuotone: true
-    title: =@ctx.current.item.item

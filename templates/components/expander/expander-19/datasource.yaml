@@ -1,0 +1,6 @@
+location-us:
+  type: datasource.static
+  options:
+    data:
+      - id: 1
+        address: Goat Island, Niagara Falls, NY 14303

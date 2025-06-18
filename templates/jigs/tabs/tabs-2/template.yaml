@@ -1,5 +1,5 @@
-type: jig.tabs
 title: Appointment details
+type: jig.tabs
 areTabsScrollable: true
 initialTabId: timelogs
 
