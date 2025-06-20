@@ -1,4 +1,4 @@
-team-a:
+team-members:
   type: datasource.static
   options:
     data:
@@ -6,52 +6,54 @@ team-a:
         name: Joe Grant
         role: Stock Clerk
         team: A
+        status: onDuty
       - id: 2
         name: Lily Pringle
         role: Cashier
         team: A
+        status: onDuty
       - id: 3
         name: Ellen Frank
         role: Manager
         team: A
-
-team-b:
-  type: datasource.static
-  options:
-    data:
-      - id: 1
+        status: onDuty
+      - id: 4
         name: Hank Frost
         role: Stock Clerk
         team: B
-      - id: 2
+        status: available
+      - id: 5
         name: Peter Smith
         role: Cashier
         team: B
-      - id: 3
+        status: available
+      - id: 6
         name: Tom Henderson
         role: Security
         team: B
-      - id: 4
+        status: available
+      - id: 7
         name: Rob Wentworth
         role: Manager
         team: B
-team-c:
-  type: datasource.static
-  options:
-    data:
-      - id: 1
+        status: available
+      - id: 8
         name: Anthony Russell
         role: Sales Assistant
         team: C
-      - id: 2
+        status: offDuty
+      - id: 9
         name: Bridgette Donald
         role: Manager
         team: C
-      - id: 3
+        status: offDuty
+      - id: 10
         name: Michael Trent
         role: Security
         team: C
-      - id: 4
+        status: offDuty
+      - id: 11
         name: Gillian Harpe
         role: Cashier
         team: C
+        status: offDuty

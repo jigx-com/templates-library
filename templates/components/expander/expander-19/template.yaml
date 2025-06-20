@@ -15,13 +15,13 @@ options:
       options:
         viewPoint:
           centerPosition: middle
-          address: Goat Island, Niagara Falls, NY 14303
+          address: =@ctx.datasources.location-us.address
         markers:
-          data: ="Goat Island, Niagara Falls, NY 14303"
+          data: =@ctx.datasources.location-us.address
           item:
             type: component.marker-item
             options:
-              address: Goat Island, Niagara Falls, NY 14303
+              address: =@ctx.datasources.location-us.address
               children:
                 type: component.icon
                 options:

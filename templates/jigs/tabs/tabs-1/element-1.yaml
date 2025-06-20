@@ -31,7 +31,7 @@ children:
   - type: component.list-item
     instanceId: work-day
     options:
-      # Use the input provided in the jig.tab to display the shift value.
+      # Use the input provided in the jig.tab to display the shift allocation.
       title: =@ctx.jig.inputs.shift
       subtitle: This week's shift allocation
       color: =@ctx.jig.inputs.color
@@ -42,7 +42,7 @@ children:
   - type: component.list-item
     instanceId: time
     options:
-      # Use the input provided in the jig.tab to display the hours worked.
+      # Use the input provided in the jig.tab to display the shift hours.
       title: =@ctx.jig.inputs.hours
       subtitle: Required shift hours
       color: =@ctx.jig.inputs.color

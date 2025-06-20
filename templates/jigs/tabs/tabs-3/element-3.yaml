@@ -48,10 +48,9 @@ children:
                 instanceId: shift-duration
                 options:
                   label: Log your shift duration
-                  initialValue: 14400
                   helperText: Standard shift is 4 hours
                   errorText: =@ctx.component.state.value > 14400 ? 'Shift time needs approval':''
                   hours:
-                    step: 4
+                    step: 1
                   minutes:
-                    step: 2
+                    step: 1

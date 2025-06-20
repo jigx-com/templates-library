@@ -14,7 +14,7 @@ options:
   children:
     - type: component.list-item
       options:
-        title: =@ctx.datasources.product-delivery.Item
+        title: =@ctx.datasources.product-delivery.item
         subtitle: =@ctx.datasources.product-delivery.expectedDelivery
         isContained: true
         rightElement:
