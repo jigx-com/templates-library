@@ -70,11 +70,11 @@ children:
           onPress:
             type: action.open-url
             options:
-              url: https://docs.jigx.com/examples/pUyK-web-view
+              url: https://docs.jigx.com/examples/readme/components/web-view
 
 actions:
   - children:
       - type: action.open-url
         options:
           title: Edit employee
-          url: https://docs.jigx.com/examples/execute-entity
+          url: https://docs.jigx.com/examples/readme/actions/execute-entity

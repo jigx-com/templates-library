@@ -64,7 +64,7 @@ actions:
       - type: action.open-url
         options:
           title: Buy products with low inventory
-          url: https://docs.jigx.com/examples/action-list
+          url: https://docs.jigx.com/examples/readme/actions/action-list
 
 summary:
   children:

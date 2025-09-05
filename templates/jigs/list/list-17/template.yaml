@@ -27,14 +27,14 @@ item:
         - onPress:
             type: action.open-url
             options:
-              url: https://docs.jigx.com/examples/go-to
+              url: https://docs.jigx.com/examples/readme/actions/go-to
           label: Primary Action
           color: primary
           icon: alarm-bell
         - onPress:
             type: action.open-url
             options:
-              url: https://docs.jigx.com/examples/go-to
+              url: https://docs.jigx.com/examples/readme/actions/go-to
           label: Secondary Action
           color: warning
           icon: alert-triangle
