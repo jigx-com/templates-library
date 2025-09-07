@@ -24,7 +24,6 @@ filter:
     - title: Lost
       value: Unsuccessful
 
-
 data: =$filter($filter(@ctx.datasources.components, function($v){$contains($string($v.name),$string(@ctx.jig.state.searchText != null ? @ctx.jig.state.searchText:'')) }), function($v, $a, $i) { @ctx.jig.state.filter = 'ALL' or $v.result = @ctx.jig.state.filter })[]
 item:
   type: component.list-item
@@ -43,7 +42,7 @@ item:
       isStrikeThrough: =(@ctx.current.item.status= 'Finished' ? true :false)
     rightElement:
       element: value
-      text: 
+      text:
         text: =@ctx.current.item.value
         format:
           numberStyle: currency
@@ -54,7 +53,7 @@ actions:
       - type: action.open-url
         options:
           title: Add new opportunity
-          url: https://docs.jigx.com/examples/submit-form
+          url: https://docs.jigx.com/examples/readme/actions/submit-form
 
 summary:
   children:

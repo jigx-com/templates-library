@@ -17,4 +17,4 @@ options:
         onPress:
           type: action.open-url
           options:
-            url: https://docs.jigx.com/examples/set-state
+            url: https://docs.jigx.com/examples/readme/actions/set-state

@@ -6,11 +6,11 @@ item:
   type: component.event
   options:
     title: =@ctx.current.item.title
-    from: 
+    from:
       text: =@ctx.current.item.eventStart
       format:
         dateFormat: lll
-    to: 
+    to:
       text: =@ctx.current.item.eventEnd
       format:
         dateFormat: lll
@@ -23,4 +23,4 @@ actions:
       - type: action.open-url
         options:
           title: Add appointment
-          url: https://docs.jigx.com/examples/submit-form
+          url: https://docs.jigx.com/examples/readme/actions/submit-form

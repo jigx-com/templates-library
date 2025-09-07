@@ -45,5 +45,4 @@ actions:
       - type: action.open-url
         options:
           title: Add
-          url: https://docs.jigx.com/examples/submit-form
-
+          url: https://docs.jigx.com/examples/readme/actions/submit-form
